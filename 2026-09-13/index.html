@@ -24,6 +24,7 @@
     .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
     h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
     .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
     details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
     footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
     .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
@@ -52,6 +53,7 @@
         <section><h3>未来方向</h3><ul><li>提取关联式和局部物性算法，在 SMR 螺旋管几何上对照 CFD 与系统程序，并量化压力、干度和曲率的不确定性。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 题目和摘要直接涉及螺旋盘管、局部压力/物性及系统程序实现；全文应提取管径、螺距、曲率、质量流率、干度、压力和拟合系数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>螺旋盘管蒸汽发生器<small>Helically Coiled Steam Generator, HCSG</small></h4><p>利用螺旋形换热管产生二次流并实现紧凑换热的蒸汽发生器，常用于小型模块化反应堆。</p><p class="context"><b>本文语境</b> 本文研究其管内两相流摩擦压降在系统程序中的预测。</p></div><div class="term"><h4>两相摩擦压降<small>Two-phase Frictional Pressure Drop</small></h4><p>气液两相共同流动时，壁面摩擦和相间作用引起的沿程压力损失。</p><p class="context"><b>本文语境</b> 它决定 HCSG 流动阻力和系统循环能力，是关联式的预测对象。</p></div><div class="term"><h4>局部更新物性<small>Locally Updated Properties</small></h4><p>沿流动路径根据局部压力、温度和干度重新计算密度、黏度等物性。</p><p class="context"><b>本文语境</b> 本文指出固定代表工况下有效的关联式嵌入 SPACE 后会受局部物性更新影响。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -78,6 +80,7 @@
         <section><h3>未来方向</h3><ul><li>将区域分辨率误差传递至包壳温度、热应力和热疲劳，形成 CFD—ANSYS 结构响应误差预算。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取四方程模型常数、近壁条件、两回路几何、网格分区、热边界和计算成本，可用于液态金属热工结构模型选型。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>铅铋共晶<small>Lead–Bismuth Eutectic, LBE</small></h4><p>铅和铋按共晶组成形成的液态金属冷却剂，沸点高、工作压力低，但存在腐蚀和特殊湍流传热问题。</p><p class="context"><b>本文语境</b> 本文以 LBE 回路的高雷诺数流动为模拟对象。</p></div><div class="term"><h4>高雷诺数<small>High Reynolds Number</small></h4><p>惯性力远强于黏性力的强湍流状态，通常意味着更宽的尺度范围和更高的数值分辨需求。</p><p class="context"><b>本文语境</b> 本文在这一条件下评价四方程湍流模型与混合分辨率方法。</p></div><div class="term"><h4>混合分辨率模拟<small>Hybrid-resolution Simulation</small></h4><p>在不同区域组合统计湍流模型与尺度解析方法，以兼顾近壁计算成本和非定常结构解析能力。</p><p class="context"><b>本文语境</b> 本文用它处理液态金属回路中的复杂湍流。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -104,6 +107,7 @@
         <section><h3>未来方向</h3><ul><li>把相场预测的孔隙率和晶粒结构映射为燃料热导率及蠕变参数，再与燃料棒温度—应力分析闭环。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取相场自由能、迁移率、温度梯度、孔径/气压和钉扎颗粒参数，用于燃料热物性演化模型。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>相场法<small>Phase-field Method</small></h4><p>用连续场变量描述孔隙、晶粒或相界面演化，无需显式追踪移动边界。</p><p class="context"><b>本文语境</b> 本文用相场变量模拟 UO₂ 中孔隙和晶界在温度梯度下的迁移。</p></div><div class="term"><h4>晶界<small>Grain Boundary</small></h4><p>不同晶体取向晶粒之间的界面，会影响扩散、力学性能和裂变气体输运。</p><p class="context"><b>本文语境</b> 本文关注晶界与孔隙的相互作用及其迁移。</p></div><div class="term"><h4>孔隙迁移<small>Pore Migration</small></h4><p>燃料孔隙在温度梯度、表面能和扩散作用下改变位置与形态的过程。</p><p class="context"><b>本文语境</b> 它是燃料微结构重排和局部热物性变化的重要机制。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -130,6 +134,7 @@
         <section><h3>未来方向</h3><ul><li>将阀门热环境、驱动机构载荷与老化失效率纳入 PSA，连接结构可靠性和全厂风险。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取六类设计构型、失效率、操作员动作、事件树和 CDF 分解，支持非能动系统设计权衡。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>概率安全评价<small>Probabilistic Safety Assessment, PSA</small></h4><p>以事件频率、设备失效概率和后果模型量化核设施风险的方法。</p><p class="context"><b>本文语境</b> 本文用 PSA 信息识别非能动安全系统中的关键失效路径。</p></div><div class="term"><h4>非能动安全系统<small>Passive Safety System</small></h4><p>依靠重力、自然循环、压差或储能等自然机制完成安全功能，尽量减少外部动力和主动控制依赖。</p><p class="context"><b>本文语境</b> 本文讨论其设计如何结合概率风险信息。</p></div><div class="term"><h4>失效安全<small>Fail-safe</small></h4><p>部件发生预期失效时，系统仍趋向安全状态或保持安全功能的设计原则。</p><p class="context"><b>本文语境</b> 本文关注阀门等部件失效后非能动系统如何维持安全。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -156,6 +161,7 @@
         <section><h3>未来方向</h3><ul><li>把壁面换热系数与压力脉动映射到燃料棒结构模型，评估两相流诱导振动和热疲劳。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 摘要给出72 bar、20个气泡尺寸组和 Fluent UDF；全文应提取组件几何、网格、成核/脱离模型、聚并破碎系数和热边界。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>欧拉两流体模型<small>Eulerian Two-fluid Model</small></h4><p>把气相和液相分别视为连续介质，并为每一相求解守恒方程的两相流模型。</p><p class="context"><b>本文语境</b> 本文用该模型计算全燃料组件内的沸腾流动。</p></div><div class="term"><h4>全燃料组件<small>Full Fuel Assembly</small></h4><p>包含完整棒束、格架和流道范围的组件级计算对象，而非单通道或局部子模型。</p><p class="context"><b>本文语境</b> 本文强调 SIRIUS-3D 对完整组件尺度的模拟。</p></div><div class="term"><h4>沸腾流<small>Boiling Flow</small></h4><p>冷却剂吸热后发生液汽相变的两相流动，涉及成核、气泡输运、相间传热等过程。</p><p class="context"><b>本文语境</b> 它决定组件温度、含汽率和临界热流风险。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -182,6 +188,7 @@
         <section><h3>未来方向</h3><ul><li>在统一局部热流基准下重新处理实验，并传播几何、修正因子和 LUT 统计不确定性。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 摘要披露峰均比1.59、螺距效应及多组偏差；全文应核对原始热流定义、截面几何、修正链和 LUT 不确定区间。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>临界热流密度<small>Critical Heat Flux, CHF</small></h4><p>沸腾换热由高效核态沸腾转向传热恶化前可承受的临界壁面热流密度。</p><p class="context"><b>本文语境</b> 本文质疑螺旋燃料 CHF 增强结论的比较方法。</p></div><div class="term"><h4>修正因子<small>Correction Factor</small></h4><p>把基准关联式或查表结果修正到特定几何、工况或实验条件的乘性或加性系数。</p><p class="context"><b>本文语境</b> 本文关注不同研究是否一致使用修正因子。</p></div><div class="term"><h4>查表不确定性<small>Lookup-table Uncertainty</small></h4><p>使用经验表格插值预测 CHF 时，由数据离散、插值和适用域产生的不确定度。</p><p class="context"><b>本文语境</b> 它会影响螺旋燃料与基准燃料的增益比较。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -208,6 +215,7 @@
         <section><h3>未来方向</h3><ul><li>把重构压力脉动和速度场映射到叶轮热应力、振动及腐蚀模型，并建立超出训练域的可信度判据。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取主泵几何、25个工况、CFD网格/湍流模型、POD阶数、PINN损失项和误差空间分布。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适当正交分解<small>Proper Orthogonal Decomposition, POD</small></h4><p>从高维流场快照中提取能量占优模态，用少量基函数表示主要流动结构。</p><p class="context"><b>本文语境</b> 本文用 POD 压缩铅冷快堆主泵流场。</p></div><div class="term"><h4>物理信息神经网络<small>Physics-informed Neural Network, PINN</small></h4><p>把控制方程、边界条件或守恒约束加入神经网络训练损失的模型。</p><p class="context"><b>本文语境</b> 本文用物理约束改善降阶流场重构。</p></div><div class="term"><h4>降阶模型<small>Reduced-order Model, ROM</small></h4><p>用低维变量近似高保真模型，以大幅降低重复计算时间。</p><p class="context"><b>本文语境</b> 本文目标是在保持关键流动特征的同时快速重构主泵流场。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -234,6 +242,7 @@
         <section><h3>未来方向</h3><ul><li>用 ANSYS 模态/随机振动和组件阵列试验校核低阶滤波机制，再评估格架磨损与疲劳。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取Π、CY定义、衰减模态边界条件、湍流谱和组件结构参数，适合建立ANSYS降阶随机振动模型。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>流固耦合<small>Fluid–Structure Interaction, FSI</small></h4><p>流体载荷引起结构运动，而结构运动又反过来改变流场的双向或单向耦合问题。</p><p class="context"><b>本文语境</b> 本文用它解释燃料组件受湍流激励产生的振动。</p></div><div class="term"><h4>湍流诱导振动<small>Turbulence-induced Vibration</small></h4><p>湍流压力脉动和随机涡结构对结构施加宽频激励而产生的振动。</p><p class="context"><b>本文语境</b> 本文关注堆芯燃料组件的低频响应。</p></div><div class="term"><h4>低频振动<small>Low-frequency Vibration</small></h4><p>频率较低、可能接近组件整体模态或大尺度流动波动频率的结构响应。</p><p class="context"><b>本文语境</b> 本文把它作为燃料组件完整性和磨损风险的关键现象。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -260,6 +269,7 @@
         <section><h3>未来方向</h3><ul><li>将组件尺度温度/压差作为 ANSYS 燃料组件热应力与变形边界，并研究变形引起的阻力和流量再分配反馈。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 摘要给出163组件、15.7 MPa、291.4 ℃、17,880 kg/s、3000 MWth、网格与验证指标；全文应提取各向异性阻力和换热封闭系数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>多孔介质模型<small>Porous-media Model</small></h4><p>将复杂棒束的阻力和换热作用体积平均为等效源项，降低全堆芯 CFD 网格成本。</p><p class="context"><b>本文语境</b> 本文用它表示 VVER-1000 堆芯组件区域。</p></div><div class="term"><h4>全堆芯 CFD<small>Full-core Computational Fluid Dynamics</small></h4><p>在整个反应堆堆芯尺度求解冷却剂流动和传热，而非只模拟单组件。</p><p class="context"><b>本文语境</b> 本文用其研究堆芯尺度流量与温度分布。</p></div><div class="term"><h4>VVER-1000<small>Water–Water Energetic Reactor, VVER-1000</small></h4><p>苏俄体系的约 1000 MWe 压水堆，采用六角形燃料组件。</p><p class="context"><b>本文语境</b> 本文的 CFD 几何与运行对象为该型堆芯。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -286,6 +296,7 @@
         <section><h3>未来方向</h3><ul><li>系统传播熔融物热物性、接触面积和氧化反应不确定性，并与热结构失效和下封头载荷分析衔接。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取节点耦合方程、界面换热、时间步、CORA-W2几何/材料及敏感性范围。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>堆芯熔融物<small>Core Melt</small></h4><p>严重事故中燃料、包壳和结构材料熔化并混合形成的高温物质。</p><p class="context"><b>本文语境</b> 本文模型追踪其迁移和传热。</p></div><div class="term"><h4>耦合传热<small>Coupled Heat Transfer</small></h4><p>同时考虑多个区域或物理过程之间的导热、对流、辐射和相变能量交换。</p><p class="context"><b>本文语境</b> 本文用它连接熔融物运动与周围结构热响应。</p></div><div class="term"><h4>严重事故<small>Severe Accident</small></h4><p>事故进展超过设计基准并可能发生堆芯显著损坏或熔化的状态。</p><p class="context"><b>本文语境</b> SCENES-CoreMelting 面向这一阶段的安全分析。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -312,6 +323,7 @@
         <section><h3>未来方向</h3><ul><li>在超出训练范围的瞬态中检验守恒和不确定性，并将预测换热/压力载荷用于燃料棒热应力分析。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取子通道几何、输入输出、两相关联式、训练/验证工况和误差指标。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Transformer<small>Transformer Neural Network</small></h4><p>利用自注意力机制学习序列或多变量之间长程依赖关系的神经网络结构。</p><p class="context"><b>本文语境</b> 本文用它从工况变量预测子通道热工水力特征。</p></div><div class="term"><h4>子通道分析<small>Subchannel Analysis</small></h4><p>把棒束流道划分为相互交换质量、动量和能量的子通道进行热工水力计算。</p><p class="context"><b>本文语境</b> 本文预测先进轻水堆和小型模块化堆的局部通道状态。</p></div><div class="term"><h4>两相流型<small>Two-phase Flow Regime</small></h4><p>气液两相在流道中的空间组织形态，如泡状流、弹状流或环状流。</p><p class="context"><b>本文语境</b> 它影响压降、含汽率、传热关联式和模型适用性。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -338,6 +350,7 @@
         <section><h3>未来方向</h3><ul><li>建立螺纹/密封面接触有限元模型，用温压循环、摩擦系数和松弛试验验证预紧力保持与泄漏阈值。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 摘要给出0–155 bar、室温至303 ℃、100 ℃跃变、5.7 N·m和106 N误差；全文应提取接头几何、材料、摩擦、力矩序列、泄漏判据和数据划分。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>反应堆压力容器<small>Reactor Pressure Vessel, RPV</small></h4><p>包容堆芯和一回路高温高压冷却剂的核级压力边界。</p><p class="context"><b>本文语境</b> 本文研究其底部贯穿件在高温高压下的密封可靠性。</p></div><div class="term"><h4>预紧力<small>Preload</small></h4><p>装配时预先施加在螺栓或密封件上的压紧载荷，用于维持接触压力和密封。</p><p class="context"><b>本文语境</b> 本文把预紧力作为泄漏预测和结构优化的重要变量。</p></div><div class="term"><h4>NRBO–XGBoost<small>Noise-resistant Bayesian Optimization with XGBoost</small></h4><p>把梯度提升树代理模型与抗噪贝叶斯优化结合的预测和寻优框架。</p><p class="context"><b>本文语境</b> 本文用它关联结构参数、工况与密封泄漏表现。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -364,6 +377,7 @@
         <section><h3>未来方向</h3><ul><li>建立涂层—基体界面热阻、残余应力和辐照退化的耦合寿命模型。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取硅基涂层组成、厚度、导热率、热膨胀系数、结合强度、辐照剂量与寿命模型。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>界面热阻<small>Interfacial Thermal Resistance</small></h4><p>热量穿过两种材料接触界面时，由微观接触不完全和物性突变产生的附加温差与热阻。</p><p class="context"><b>本文语境</b> 涂层需要降低热管与结构基体之间的界面热阻。</p></div><div class="term"><h4>热物性匹配<small>Thermophysical-property Matching</small></h4><p>使涂层与基体的导热率、热膨胀系数等性质相容，以减少热循环失配。</p><p class="context"><b>本文语境</b> 本文将其列为耐高温导热涂层的关键设计要求。</p></div><div class="term"><h4>辐照稳定性<small>Irradiation Stability</small></h4><p>材料在中子、γ射线等辐照下保持组织、界面和性能稳定的能力。</p><p class="context"><b>本文语境</b> 热管堆涂层长期服役必须考虑该性质。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -390,6 +404,7 @@
         <section><h3>未来方向</h3><ul><li>开展传感器布置优化和不确定性量化，并与ANSYS温度—应力数字孪生连接。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取组件几何、热管退化参数、测点布置、重构算法、边界条件和误差分布。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>温度场重构<small>Temperature-field Reconstruction</small></h4><p>利用有限测点和物理模型推断整个结构内部温度分布的反问题方法。</p><p class="context"><b>本文语境</b> 本文由热电偶数据重构燃料组件三维温度场。</p></div><div class="term"><h4>热电偶<small>Thermocouple</small></h4><p>利用两种导体接点的热电势随温度变化进行测温的传感器。</p><p class="context"><b>本文语境</b> 本文把堆内热电偶读数作为重构模型输入。</p></div><div class="term"><h4>热管性能退化<small>Heat-pipe Performance Degradation</small></h4><p>热管等效导热或输运能力因失效、腐蚀、工质变化等原因下降。</p><p class="context"><b>本文语境</b> 本文希望由外推的热管壁温识别这种退化。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -416,6 +431,7 @@
         <section><h3>未来方向</h3><ul><li>建立温度—氧浓度—氧化层厚度—热阻演化模型，并耦合管壁热应力与寿命。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取氧化物、温度/时间、液钠纯度、层厚、热阻和传热极限数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>氧化腐蚀<small>Oxidation Corrosion</small></h4><p>金属与含氧介质反应形成氧化物并伴随材料损耗或性能劣化的过程。</p><p class="context"><b>本文语境</b> 本文关注不锈钢热管内壁与高温液钠环境的反应。</p></div><div class="term"><h4>径向热阻<small>Radial Thermal Resistance</small></h4><p>热量沿热管壁厚或径向传递时受到的阻碍。</p><p class="context"><b>本文语境</b> 氧化层增厚会提高径向热阻并放大局部温差。</p></div><div class="term"><h4>传热极限<small>Heat-transfer Limit</small></h4><p>热管受毛细、声速、沸腾或携带等机制限制所能传输的最大热功率。</p><p class="context"><b>本文语境</b> 腐蚀形成的高热阻层可能使极限提前出现。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -442,6 +458,7 @@
         <section><h3>未来方向</h3><ul><li>建立两相启动瞬态模型并将壁温循环输入管壁热疲劳分析。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取热管尺寸、吸液芯、充液率、加热功率、测温位置及振荡幅频数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>充液量<small>Working-fluid Inventory / Fill Charge</small></h4><p>制造时封装在热管内的工质量，常以体积、质量或孔隙容积比例表示。</p><p class="context"><b>本文语境</b> 本文比较不同充液量对启动振荡和稳态传热的影响。</p></div><div class="term"><h4>液池<small>Liquid Pool</small></h4><p>过量液态工质在蒸发段底部积聚形成的液体区域。</p><p class="context"><b>本文语境</b> 高充液量形成的大液池会阻碍稳定蒸发。</p></div><div class="term"><h4>干涸—再润湿<small>Dryout–Rewetting</small></h4><p>加热壁面液膜消失后又被液体重新覆盖的循环过程。</p><p class="context"><b>本文语境</b> 本文用间歇性气泡导致的干涸与润湿解释温度振荡。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -468,6 +485,7 @@
         <section><h3>未来方向</h3><ul><li>加入换热器热应力、转子动力学和海洋姿态载荷，开展多目标系统—结构优化。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取功率、温压流量、换热器/透平尺寸、效率、布置与优化约束。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>超临界二氧化碳<small>Supercritical Carbon Dioxide, S-CO₂</small></h4><p>处于临界点以上、兼具气体流动性和较高密度的 CO₂ 工质。</p><p class="context"><b>本文语境</b> 本文用它构成与热管堆耦合的紧凑布雷顿循环。</p></div><div class="term"><h4>布雷顿循环<small>Brayton Cycle</small></h4><p>工质经压缩、加热、膨胀做功和冷却形成的闭式或开式动力循环。</p><p class="context"><b>本文语境</b> 本文优化热管堆向循环系统的能量转换。</p></div><div class="term"><h4>系统—设备协同设计<small>System–Component Co-design</small></h4><p>在系统参数和具体设备尺寸/性能之间反复迭代，而非先后独立设计。</p><p class="context"><b>本文语境</b> 本文用该方法实现温度匹配、效率和紧凑性的联合优化。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -494,6 +512,7 @@
         <section><h3>未来方向</h3><ul><li>将系统程序温度压力历程映射到燃料、包壳和换热器热应力模型。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取堆芯几何、He-Xe比例、循环压力/流量、反应性扰动及温度限值。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>氦氙混合工质<small>Helium–Xenon Mixture, He–Xe</small></h4><p>通过调节氦和氙比例平衡传热、压降和透平机械特性的气体冷却剂。</p><p class="context"><b>本文语境</b> 本文以 He–Xe 作为空间气冷堆及布雷顿循环工质。</p></div><div class="term"><h4>反应性反馈<small>Reactivity Feedback</small></h4><p>温度、密度等状态变化反过来改变中子增殖能力的效应。</p><p class="context"><b>本文语境</b> 反应性引入事故后，负反馈帮助系统过渡到新稳态。</p></div><div class="term"><h4>RELAP5-3D<small>Reactor Excursion and Leak Analysis Program 5-3D</small></h4><p>用于反应堆系统热工水力和事故瞬态分析的系统程序。</p><p class="context"><b>本文语境</b> 本文用它统一建立堆芯、透平、压气机和换热设备模型。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -520,6 +539,7 @@
         <section><h3>未来方向</h3><ul><li>用统一数据划分比较湍流模型和代理模型，并显式传播数字化误差。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 建议下载数据集及全文，提取装置几何、工况、纵向温度、质量流量、界面位置和数字化不确定度。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热分层<small>Thermal Stratification</small></h4><p>不同温度和密度流体在容器或管道内形成稳定或瞬态分层的现象。</p><p class="context"><b>本文语境</b> 本文汇集铅基快堆上腔室热分层实验与数值数据。</p></div><div class="term"><h4>曲线数字化<small>Plot Digitization</small></h4><p>从已发表图像中读取坐标点，把曲线恢复为可计算数据。</p><p class="context"><b>本文语境</b> 数据集使用 Origin 对历史文献曲线进行三次独立提取。</p></div><div class="term"><h4>基准数据集<small>Benchmark Dataset</small></h4><p>采用统一格式和元数据整理、可用于模型校准和交叉比较的数据集合。</p><p class="context"><b>本文语境</b> 本文数据集旨在支持湍流模型、系统程序和数据驱动方法验证。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -546,6 +566,7 @@
         <section><h3>未来方向</h3><ul><li>验证温度场映射和应力线性化，并加入热分层随机波动、焊缝与环境疲劳修正。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取管道尺寸/材料、冷热流工况、循环次数、网格、应力分类路径和疲劳曲线。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>应力分类<small>Stress Classification</small></h4><p>按一次膜应力、一次弯曲应力、二次应力等类别评定压力边界的规范方法。</p><p class="context"><b>本文语境</b> 本文依据 ASME 核一级设备规则校核管道强度。</p></div><div class="term"><h4>疲劳累积使用因子<small>Cumulative Usage Factor, CUF</small></h4><p>各载荷循环疲劳损伤份额的累计值；规范通常要求其不超过允许限值。</p><p class="context"><b>本文语境</b> 本文报告关键结构不连续处的使用因子小于 1。</p></div><div class="term"><h4>核一级承压设备<small>ASME Class 1 Pressure-retaining Component</small></h4><p>承担反应堆冷却剂压力边界、失效会显著影响核安全的最高安全等级设备。</p><p class="context"><b>本文语境</b> 本文研究对象按相应 ASME 设计分析流程评定。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -572,6 +593,7 @@
         <section><h3>未来方向</h3><ul><li>把三维温度场映射到ANSYS管道应力模型，评估保温终止处和泄漏瞬态的热疲劳。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取管径/壁厚、保温层、流速、温度、材料物性、网格与截面温差。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>非能动余热排出系统<small>Passive Residual Heat Removal System, PRHRS</small></h4><p>停堆后依靠自然循环等被动机制移除堆芯衰变热的系统。</p><p class="context"><b>本文语境</b> 本文研究其吸入管道内的热分层。</p></div><div class="term"><h4>共轭传热<small>Conjugate Heat Transfer, CHT</small></h4><p>同时求解流体对流和固体导热，并在固液界面满足温度与热流连续。</p><p class="context"><b>本文语境</b> 本文用它计算管内流体与管壁/保温结构的耦合温度。</p></div><div class="term"><h4>自然循环<small>Natural Circulation</small></h4><p>由冷热流体密度差和重力形成驱动力、无需泵的循环流动。</p><p class="context"><b>本文语境</b> 保温管段的温度保持能力关系到 PRHRS 的自然循环驱动力。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
@@ -598,6 +620,7 @@
         <section><h3>未来方向</h3><ul><li>在全正常运行初始域做不确定性分析，并将LPD历程耦合燃料—包壳接触和应力模型。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 全文应提取URWP边界、初始功率/燃耗范围、LPD、DNBR、停堆逻辑和PCI验收准则。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>芯块—包壳相互作用<small>Pellet–Cladding Interaction, PCI</small></h4><p>燃料芯块膨胀或开裂后与包壳接触并产生机械和化学载荷的现象。</p><p class="context"><b>本文语境</b> 本文评价二类瞬态期间的 PCI 保护裕量。</p></div><div class="term"><h4>偏离泡核沸腾比<small>Departure from Nucleate Boiling Ratio, DNBR</small></h4><p>临界热流与实际局部热流密度之比，用于衡量发生偏离泡核沸腾的裕量。</p><p class="context"><b>本文语境</b> 先进堆芯保护系统实时计算 DNBR 并据此触发保护。</p></div><div class="term"><h4>线功率密度<small>Linear Power Density, LPD</small></h4><p>单位燃料棒轴向长度产生的热功率，常用 W/cm 或 kW/m 表示。</p><p class="context"><b>本文语境</b> 本文以最大 LPD 表征燃料热负荷并进行在线保护。</p></div><div class="term"><h4>先进堆芯保护系统<small>Advanced Reactor Protection System, ARPS</small></h4><p>直接利用在线热工限值参数形成保护信号的堆芯保护系统。</p><p class="context"><b>本文语境</b> 本文比较 ARPS 与传统 ΔT 保护在 PCI 瞬态中的裕量。</p></div></div></section>
       <details>
         <summary>展开中英文摘要</summary>
         <div class="abstracts">
