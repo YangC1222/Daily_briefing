@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-09-26 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-09-26 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆与核—热—力多物理场耦合，面向 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-09-26</strong><span>本期日期</span></div><div class="stat"><strong>2</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>6</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 8</button><button data-filter="xmol">X-MOL 2</button><button data-filter="cqvip">维普 6</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="gamma-pc 方法中用于干式贮存装载优化的动态功能更新 updates to dynamic functions in the gamma-pc methodology for dry storage loading optimization 06 跨堆型方法与共性问题 nuclear technology · 2026-09-23 · kristy yancey spencer, peter stefanovic 乏燃料干式贮存 多目标优化 帕累托前沿 pareto front 多目标问题中无法在不损害另一目标的前提下改善任一目标的解集。 用于比较不同装载日程和分阶段搜索产生的折中方案。 初始热负荷 initial heat load 装罐时燃料衰变热形成的热负荷。 是本文同时优化的三个指标之一，不等于罐内峰值温度。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>06 跨堆型方法与共性问题</span><span>乏燃料干式贮存</span><span>多目标优化</span></div>
+          <h2>GAMMA-PC 方法中用于干式贮存装载优化的动态功能更新</h2>
+          <p class="title-en">Updates to Dynamic Functions in the GAMMA-PC Methodology for Dry Storage Loading Optimization</p>
+          <p class="meta">Nuclear Technology · 2026-09-23 · Kristy Yancey Spencer, Peter Stefanovic</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以乏燃料组件干式贮存装载为对象，联合优化罐数、初始热负荷和运输准备时间。</li><li>Comanche Peak 算例中，离散装载日程的优化表现与连续时间线相当或更好；分阶段搜索的解接近单次长搜索。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在既有 GAMMA-PC 算法中加入可自定义装载日程，并以离散装载日期和分阶段优化测试该功能。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给出不同热负荷不确定性、燃料历史与安全约束下的鲁棒性；需要阅读全文核对热工约束如何进入目标函数。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>将装载方案输出的衰变热分布映射到干式贮存罐温度和包壳最高温度模型，检验优化方案是否保持热安全裕量。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 建议下载全文核对衰变热、装载日程和罐体热限值的定义及 Comanche Peak 案例输入；它们可作为后续 ANSYS 热模型的候选边界，尚未验证。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>帕累托前沿<small>Pareto front</small></h4><p>多目标问题中无法在不损害另一目标的前提下改善任一目标的解集。</p><p class="context"><b>本文语境</b> 用于比较不同装载日程和分阶段搜索产生的折中方案。</p></div><div class="term"><h4>初始热负荷<small>initial heat load</small></h4><p>装罐时燃料衰变热形成的热负荷。</p><p class="context"><b>本文语境</b> 是本文同时优化的三个指标之一，不等于罐内峰值温度。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文介绍贪婪自适应多目标模因算法与部分聚类（GAMMA-PC）的更新。该进化算法用于在反应堆寿期内选择进入干式贮存的乏燃料组件，同时尽量减少贮存罐数量、平均初始热负荷和达到可运输状态所需的最长时间。美国能源部将该算法开发为 STANDARDS 乏燃料数据与分析工具的一部分。工具最近增加了用户自定义装载日程，研究据此比较默认连续时间线与便于排程的离散时间线。以 Comanche Peak 核电厂为例，离散方案设定了 2019 至 2025 年间的五个日期，此后每 24 个月装载一次。离散时间线下，GAMMA-PC 的表现与默认连续时间线相当或更好。研究还测试了分阶段优化：每阶段只运行总函数评估次数的五分之一，得到的解与单次长时间运行接近。这提示算法可能比原先预期更快接近帕累托前沿。更新增加了排程功能，并支持 GAMMA-PC 继续用于干式贮存装载与日程优化。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This article presents updates to the Greedy Adaptive Multi-Objective Memetic Algorithm with Partial Clustering (GAMMA-PC), an evolutionary algorithm designed to select used nuclear fuel assemblies for dry storage over a reactor’s lifetime. The algorithm simultaneously minimizes the number of canisters, the average initial heat load, and the maximum time to transportation readiness. The U.S. Department of Energy developed GAMMA-PC for integration with the STANDARDS used nuclear fuel data and analysis tool. The tool was recently updated to enable user-defined loading schedules. This functionality was tested by comparing GAMMA-PC’s performance using the default continuous timeline versus the new scheduling-friendly timeline.Comanche Peak Nuclear Power Plant was chosen as a test case. For the discrete schedule, five dates were provided from 2019 to 2025 followed by a loading frequency of every 24 months. GAMMA-PC performed as well as or better than status quo (i.e. the default continuous timeline) when using the discrete timeline. A staggered optimization approach was also tested to simulate how a utility might use the software. Each stage of the optimization ran one-fifth of the number of function evaluations, resulting in a solution that was comparable to the single longer run. This suggests that GAMMA-PC might not need as long to converge toward the Pareto front as originally expected. These improvements add a new functionality and demonstrate the continued usefulness of GAMMA-PC in dry storage loading and scheduling optimization.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://www.x-mol.com/paper/2103030436673826818" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1080/00295450.2026.2716592" target="_blank" rel="noopener">DOI ↗</a> <a href="https://api.openalex.org/works/https://doi.org/10.1080%2F00295450.2026.2716592" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="面向核应用的光电二极管宽量程伽马剂量率监测器开发与优化 development and optimization of a photodiode-based wide-range gamma dose rate monitor for nuclear applications 06 跨堆型方法与共性问题 nuclear technology · 2026-09-21 · sanjay singh, riya dey, niraj chaddha, liji s, s. anand, suresh kumar mk 核设施辐射监测 仪器校准 能量补偿滤片 energy-compensation filter 利用不同材料的光子衰减特性调平探测器对光子能量的响应。 本文采用铜和不锈钢分层滤片减少低能过响应。 剂量率线性 dose-rate linearity 输出读数随参考剂量率变化保持近似成比例的性质。 作者用 60co 源检验至 10 000 r/h 的响应。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>06 跨堆型方法与共性问题</span><span>核设施辐射监测</span><span>仪器校准</span></div>
+          <h2>面向核应用的光电二极管宽量程伽马剂量率监测器开发与优化</h2>
+          <p class="title-en">Development and Optimization of a Photodiode-Based Wide-Range Gamma Dose Rate Monitor for Nuclear Applications</p>
+          <p class="meta">Nuclear Technology · 2026-09-21 · Sanjay Singh, Riya Dey, Niraj Chaddha, Liji S, S. Anand, Suresh Kumar MK</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>FLUKA 模拟引导铜/不锈钢分层滤片设计，以抑制光电二极管低能过响应。</li><li>摘要称优化后在 100 keV–1.3 MeV 近乎能量无关；在最高 10 000 R/h 的 60Co 实验中相对参考值偏差处于 ±15% 内。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将分层能量补偿滤片的输运模拟和多源实验表征结合，用于宽量程便携伽马剂量率监测器。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未说明混合谱、辐照老化、温漂与长期现场校准误差；不能把单一 60Co 线性检验扩展为所有核设施工况均满足 ±15%。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>在不同混合辐射场和温度下做独立盲测，区分滤片几何、探测器温漂与电子学饱和的误差贡献。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>能量补偿滤片<small>energy-compensation filter</small></h4><p>利用不同材料的光子衰减特性调平探测器对光子能量的响应。</p><p class="context"><b>本文语境</b> 本文采用铜和不锈钢分层滤片减少低能过响应。</p></div><div class="term"><h4>剂量率线性<small>dose-rate linearity</small></h4><p>输出读数随参考剂量率变化保持近似成比例的性质。</p><p class="context"><b>本文语境</b> 作者用 60Co 源检验至 10 000 R/h 的响应。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在高辐射核设施中，准确测量伽马剂量率对辐射防护、环境监测和过程控制至关重要；测量系统还需具备灵活、便携和宽量程能力。本文开发并优化一种紧凑的光电二极管式宽动态范围伽马剂量率监测系统，面向高剂量率应用。研究重点是利用 FLUKA 辐射输运蒙特卡罗模拟设计能量补偿滤片，改善探测器的能量响应。未补偿探测器在低光子能量下因相互作用的能量依赖性出现明显过响应。为此，作者设计并优化铜与不锈钢分层构成的补偿滤片。实验采用 ISO 4037 的 80–250 kV 窄谱 X 射线束，以及 137Cs 和 60Co 伽马源表征。优化后的探测器在 100 keV 至 1.3 MeV 光子能量范围内响应近乎不随能量变化，实验与模拟预测吻合。利用 60Co 源开展至 10 000 R/h 的剂量率线性测量，探测器对参考值的偏差在 ±15% 以内。该系统可作为核燃料循环设施中传统电离室式宽量程剂量率监测器的一种紧凑、轻量、低功耗替代方案。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Accurate gamma dose rate measurement is essential for radiation protection, environmental monitoring, and process control in nuclear facilities operating under high-radiation conditions. One of the key requirements of a measurement system is operational flexibility, portability, and the capability to perform measurements over a wide range. In response to these requirements, this study presents the development and optimization of a compact photodiode-based gamma dose rate monitoring system with a wide dynamic range for high dose-rate applications. The work primarily focused on improving the detector energy response through the design and optimization of an energy-compensation filter using Monte Carlo simulations performed with the FLUKA radiation transport code. The uncompensated detector exhibited significant over-response at lower photon energies due to the energy dependence of photon interactions within the detector material. To mitigate this effect, a graded compensation filter comprising copper and stainless-steel layers was designed and optimized. Experimental characterization was carried out using ISO 4037 narrow-spectrum X-ray beam qualities of 80–250 kV, along with 137Cs and 60Co gamma-ray sources. The optimized detector configuration demonstrated a nearly energy-independent response over the photon-energy range from 100 keV to 1.3 MeV. Experimental measurements showed good agreement with simulation predictions, validating the proposed compensation methodology. Dose rate linearity measurements performed up to 10 000 R/h using a 60Co source demonstrated linear detector response with deviations within ±15% of reference values. The developed system offers a compact, lightweight, and low-power alternative to conventional ionization chamber-based monitors for wide-range gamma dose-rate measurements in nuclear fuel cycle facilities.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://www.x-mol.com/paper/2103030436308922373" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1080/00295450.2026.2726711" target="_blank" rel="noopener">DOI ↗</a> <a href="https://api.openalex.org/works/https://doi.org/10.1080%2F00295450.2026.2726711" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="c/c复合材料纤维取向对钎焊接头性能影响  02 热管堆 原子能科学技术 · 2026 · 董凯 邓建基 张赛楠 程仁政  适用边界 applicability domain 已有证据能够支持模型或结论的条件范围。 本条判断仅依据维普摘要；超出摘要工况须重新验证。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>02 热管堆</span></div>
+          <h2>C/C复合材料纤维取向对钎焊接头性能影响</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 董凯 邓建基 张赛楠 程仁政</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>AgCuTi 钎料连接 C/C 与铜，比较两种纤维取向；垂直钎焊面纤维取向的接头在 880℃、无压制备时获得室温剪切强度 33.19 MPa、热扩散系数 154.539 mm²/s。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把纤维各向异性同时映射到接头强度和导热性能，服务于空间热管堆散热翅片连接。</li></ul></section>
+        <section><h3>不足</h3><ul><li>该数值为特定制备与室温测试条件；循环热载荷、辐照及长期接头退化需阅读全文核查。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>建议精读接头几何、各向异性导热、温度相关强度和界面热阻，以建立翅片—金属连接热应力模型。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 建议精读接头几何、各向异性导热、温度相关强度和界面热阻，以建立翅片—金属连接热应力模型。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用边界<small>applicability domain</small></h4><p>已有证据能够支持模型或结论的条件范围。</p><p class="context"><b>本文语境</b> 本条判断仅依据维普摘要；超出摘要工况须重新验证。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>中间相沥青基C/C复合材料具有低密度、高热导率、高比模量及低热膨胀系数等优势,是空间热管反应堆散热翅片的备选材料,散热翅片涉及C/C复合材料与金属导热部件的钎焊连接,复合材料因纤维取向不同表现出各向异性,因此有必要研究纤维取向对钎焊接头性能的影响。本文采用AgCuTi钎料对两种不同纤维取向的C/C复合材料与Cu金属进行焊接,并研究了其对钎焊接头的微观结构、剪切强度、断面形貌及导热性能的影响。结果表明,采用垂直于钎焊表面纤维取向的接头性能最佳,兼具理想的力学性能及导热性能,在880℃/无压条件下制得的接头的室温剪切强度为33.19 MPa,室温热扩散系数为154.539 mm2/s,有望用于空间热管反应堆散热翅片的钎焊连接。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Mesophase pitch-based C/C composites,which offer advantages such as low density,high thermal conductivity,high specific modulus,and low coefficient of thermal expansion,are candidate materials for heat radiator fins in space heat-pipe reactors.Since space heat-pipe reactor design requires joining C/C composites to metal thermal components,brazing Cu to C/C composites has become a critical technical pathway for manufacturing high-performance fins.As the reinforcement phase and thermal conduction pathway in composites,fiber orientation significantly influences material properties,imparting pronounced anisotropy to characteristics such as thermal conductivity,coefficient of thermal expansion,and tensile strength.Thus,variations in fiber orientation within composites will inevitably affect joint performance.To address this objective,this study employed highly stable commercial AgCuTi filler metal to braze C/C composites with different fiber orientations to Cu metal.The microstructure,room temperature shear strength,fracture morphology,and thermal conduction properties of the brazed joints were systematically investigated.The results indicate that joints with fibers oriented perpendicular to the brazing surface(C/C⊥-Cu)exhibit the best performance.Under the condition of 880°C and without applied pressure,the room temperature shear strength reached 33.19 MPa(peak strength of 41.65 MPa),and the thermal diffusivity measured 154.539 mm2/s.In contrast,joints with fibers parallel to the brazing surface(C/C//-Cu)demonstrate inferior performance,with a significantly lower room temperature shear strength of only 14.71 MPa and a reduced thermal diffusivity of 84.581 mm2/s.Microstructural and fractographic analysis reveals that the brazed joints formed under this process can effectively absorb external loads due to the presence of highly plastic and dense Ag-based and Cu-based solid solutions.Concurrently,a continuous TiC layer formed on the C/C composite side ensures stable heterogeneous bonding between the metal and the C/C composite.The C/C⊥-Cu joint exhibits significantly superior strength to the C/C//-Cu joint.This difference stems from their distinct failure mechanisms:When subjected to shear stress perpendicular to the fiber orientation,the C/C⊥-Cu joint experiences crack propagation primarily within the TiC layer at the joint interface,as the fibers themselves possess higher shear resistance than the joint region.In contrast,the C/C//-Cu joint fails differently under stress parallel to the fiber direction.Cracks tend to initiate and propagate along interlaminar regions or between fiber bundles within the composite material.For 1D or 2D composites,interlaminar shear strength is typically lower than in-plane shear strength,making the C/C⊥-Cu joint more resistant to shear failure.Furthermore,braze filler infiltration provides additional pinning effects that enhance joint strength.The C/C⊥-Cu configuration facilitates better braze penetration,contributing to its higher shear strength.The C/C⊥-Cu joint exhibits both ideal mechanical properties and thermal conductivity,showing promise for use in brazing heat radiator fins for space heat-pipe reactors.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203871722" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="微型高温气冷堆失冷失压事故分析  03 气冷堆 科技视界 · 2026 · 胡钰琦 王贺南 袁媛 石雪垚 苟军利  适用边界 applicability domain 已有证据能够支持模型或结论的条件范围。 本条判断仅依据维普摘要；超出摘要工况须重新验证。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>03 气冷堆</span></div>
+          <h2>微型高温气冷堆失冷失压事故分析</h2>
+          
+          <p class="meta">科技视界 · 2026 · 胡钰琦 王贺南 袁媛 石雪垚 苟军利</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>一体化事故模型分析微型气冷堆失冷失压；摘要报告负反应性反馈可停堆，燃料峰温 1200℃、压力容器峰温 541.0℃。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对微型气冷堆把反应性与温度挑战工况放进同一事故分析框架。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未说明所有事故序列、参数不确定性及安全限值数值；“安全裕量大”需在指定堆型边界内理解。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>建议核对衰变热、导热/辐射边界与容器温度历程，独立复算热应力和结构安全裕度。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 建议核对衰变热、导热/辐射边界与容器温度历程，独立复算热应力和结构安全裕度。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用边界<small>applicability domain</small></h4><p>已有证据能够支持模型或结论的条件范围。</p><p class="context"><b>本文语境</b> 本条判断仅依据维普摘要；超出摘要工况须重新验证。</p></div></div></section>
+      <details>
+        <summary>查看摘要状态</summary>
+        <div class="abstracts">
+          <div><h3>摘要状态</h3><p>本文建立了一体化事故分析模型,从气冷微堆的三大安全功能出发,根据工程判断并参考其他高温气冷堆的研究经验,采用该模型对反应性和堆芯温度具有挑战性的气冷微堆失冷失压事故进行了计算分析。结果表明,气冷微堆具有极高的固有安全性,反应堆能够依靠负反应性反馈停堆,最高温度距离安全限值有较大裕量(堆芯燃料最高温度为1200℃、压力容器最高温度为541.0℃),反应堆能够长期处于安全稳定的状态。</p></div>
+          
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204190420" target="_blank" rel="noopener">查看来源 ↗</a><span>仅元数据 · 摘要未取得</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="高温气冷堆球床堆芯旁流特性数值模拟研究  03 气冷堆 中国核电 · 2026 · 郭劲松 刘伟 杨立新 赵婷 陈涛 刘宇航  适用边界 applicability domain 已有证据能够支持模型或结论的条件范围。 本条判断仅依据维普摘要；超出摘要工况须重新验证。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>03 气冷堆</span></div>
+          <h2>高温气冷堆球床堆芯旁流特性数值模拟研究</h2>
+          
+          <p class="meta">中国核电 · 2026 · 郭劲松 刘伟 杨立新 赵婷 陈涛 刘宇航</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>三维 CFD 同时考虑横缝、竖缝、方键及反射层；横缝增大提高旁流能力，降低堆芯中段主流量并使主流道温度上升。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把石墨碳砖固体导热与横缝旁流耦合，比较低旁流与强旁流条件下固体导热的不同作用。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给实验验证与缝隙范围；砖体位移、制造公差和辐照变形可能改变旁流，需全文核对。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>将热变形引起的缝宽变化反馈给流动模型，检验旁流—温度—变形闭环是否放大热点。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 将热变形引起的缝宽变化反馈给流动模型，检验旁流—温度—变形闭环是否放大热点。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用边界<small>applicability domain</small></h4><p>已有证据能够支持模型或结论的条件范围。</p><p class="context"><b>本文语境</b> 本条判断仅依据维普摘要；超出摘要工况须重新验证。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>球床式高温气冷堆的堆芯由数以万计的燃料球堆积而成,散体堆砌的石墨构件作为堆芯的支撑和反射层,其砖体间的缝隙是堆内旁流的典型路径。为研究横缝结构对堆内旁流特性的影响,本文构建了包含横缝、竖缝、方键及侧反射层的三维CFD模型,开展了不同横缝宽度与石墨碳砖流固耦合条件下的数值模拟。结果表明,横缝的存在显著增强了旁流通道的通流能力,随着缝隙宽度的增加,堆芯中段最小质量流量明显降低,流动呈现“分流—回流”的特征,使得主流道的冷却效率降低,温度升高。引入石墨碳砖后,在无旁流或低旁流工况下,石墨碳砖的导热效应显著提升了堆芯局部温度;而在强旁流下,固体导热作用被削弱,温度调节能力减弱。本研究揭示了横缝结构尺寸与固体热导行为之间的耦合机制,对高温气冷堆堆芯结构优化设计与热安全裕度评估具有重要的工程参考价值。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The core of a pebble-bed High-Temperature Gas-Cooled Reactor(HTGR)consists of tens of thousands of fuel spheres stacked together,with loosely assembled graphite components serving as both the support structure and reflector.The gaps between these graphite bricks represent key pathways for in-core bypass flow.To investigate the influence of horizontal gap structures on the characteristics of the in-core bypass flow,a three-dimensional CFD model incorporating horizontal gaps,vertical gaps,key positioning blocks,and side reflectors was developed.Numerical simulations were conducted under varying horizontal gap thicknesses and with or without the inclusion of solid graphite bricks in a conjugate heat transfer framework.The results indicate that the presence of horizontal gaps significantly enhances the flow capacity of bypass channels.As the gap thickness increases,the minimum mass flow rate in the mid-core region decreases markedly,and the flow pattern exhibits a distinct“diversion-recirculation”behavior,which reduces the cooling efficiency of the main flow channel and leads to elevated local temperatures.When graphite bricks are introduced,their thermal conductivity effect noticeably raises the core temperature under no or weak bypass conditions.However,under strong bypass flow,the effectiveness of solid heat conduction is diminished,and the ability to regulate temperature is weakened.This study reveals the coupling mechanism between horizontal gap dimensions and solid thermal conduction behavior,offering valuable engineering insights for the structural optimization and thermal safety margin assessment of HTGR cores.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203485970" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="高温气冷堆rpv锻件冲击韧性不合格分析  09 核反应堆材料 一重技术 · 2026 · 李亚菲 尹萍 刘福生 汪垠  适用边界 applicability domain 已有证据能够支持模型或结论的条件范围。 本条判断仅依据维普摘要；超出摘要工况须重新验证。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料</span></div>
+          <h2>高温气冷堆RPV锻件冲击韧性不合格分析</h2>
+          
+          <p class="meta">一重技术 · 2026 · 李亚菲 尹萍 刘福生 汪垠</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>对高温气冷堆 RPV 锻件低温冲击韧性不合格进行 SEM/EDS 断口检测，指出非金属夹杂物是主要原因。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把断口微观证据与制造工艺追溯关联，提出改进工艺措施。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未提供夹杂物定量分布、冲击功数值及改进后的复测结果。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>核对夹杂物尺寸和缺陷分布，将材料韧性离散性纳入容器断裂评估。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对夹杂物尺寸和缺陷分布，将材料韧性离散性纳入容器断裂评估。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用边界<small>applicability domain</small></h4><p>已有证据能够支持模型或结论的条件范围。</p><p class="context"><b>本文语境</b> 本条判断仅依据维普摘要；超出摘要工况须重新验证。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>某高温气冷堆反应堆压力容器(Reactor Pressure Vessel,RPV)筒体锻件的低温冲击韧性未满足技术条件要求。采用扫描电子显微镜(SEM)和能谱分析(EDS)对冲击试样断口进行检测,结果表明:钢中非金属夹杂物是导致冲击韧性不合格的主要原因。文章进一步分析了非金属夹杂物的来源,并提出了相应的工艺改进措施。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The low-temperature impact toughness of a cylindrical forging for the reactor pressure vessel(RPV)of a hightemperature gas-cooled reactor did not meet the specified technical requirements.Scanning electron microscopy(SEM)and energy dispersive X-ray spectroscopy(EDS)were employed to examine the fracture surface of the impact specimen.The results show that nonmetallic inclusions in the steel were the primary cause of the insufficient impact toughness.The sources of these inclusions are analyzed,and corresponding process improvement measures are proposed.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203534468" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="西安脉冲堆燃料棒三维热-力耦合特性研究  07 多物理场耦合（热工结构） 现代应用物理 · 2026 · 王召浩 胡田亮 恽迪 姜夺玉 李达 陈立新  适用边界 applicability domain 已有证据能够支持模型或结论的条件范围。 本条判断仅依据维普摘要；超出摘要工况须重新验证。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>西安脉冲堆燃料棒三维热-力耦合特性研究</h2>
+          
+          <p class="meta">现代应用物理 · 2026 · 王召浩 胡田亮 恽迪 姜夺玉 李达 陈立新</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MOOSE 三维热—力模型研究西安脉冲堆燃料棒；稳态约 3200 h 时燃料与包壳显著接触，脉冲时燃料温度急升、包壳与中心锆棒温升滞后，应力升高。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>比较不同力学边界约束对同一燃料棒三维应力分布的影响，强调仅固定底部的约束结果差异。</li></ul></section>
+        <section><h3>不足</h3><ul><li>针对特定 C10 燃料棒与工况；材料本构、网格、实验验证和约束代表性需阅读全文核实。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>将几何、接触和脉冲温度时程迁移到 ANSYS，与 MOOSE 结果对照并做边界条件敏感性分析。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 将几何、接触和脉冲温度时程迁移到 ANSYS，与 MOOSE 结果对照并做边界条件敏感性分析。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用边界<small>applicability domain</small></h4><p>已有证据能够支持模型或结论的条件范围。</p><p class="context"><b>本文语境</b> 本条判断仅依据维普摘要；超出摘要工况须重新验证。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为评估西安脉冲堆燃料棒的运行安全性,本文基于MOOSE(multiphysics object-oriented simulation environment)平台,开展了燃料棒的三维热-力耦合分析。通过耦合温度场与位移场,重点研究了不同力学边界条件对燃料棒应力分布的影响。针对特定燃料棒(C10),模拟其在1 a稳态运行后叠加脉冲工况下的响应。模拟结果表明:稳态运行时燃料棒温度分布呈显著的非对称性;脉冲工况下,燃料芯块温度急剧升高,包壳与中心锆棒的温升则存在滞后。力学分析表明,燃料与包壳在稳态运行约3200 h发生显著接触,间隙压力和体积随之变化,且脉冲工况导致燃料棒整体应力水平升高。研究发现边界约束条件对燃料棒内部应力分布具有决定性影响,采用仅固定底部的约束可显著降低整体应力水平。本文为西安脉冲堆燃料棒的安全评估提供了三维热-力耦合分析依据。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To evaluate the operational safety of fuel rods in the Xi&#x27;an Pulsed Reactor,a three-dimensional thermo-mechanical coupling characteristics of the fuel rods is analyzed using the multiphysics objectoriented simulation environment(MOOSE)platform.By coupling the temperature field and displacement field,this paper focused on the influence of different mechanical boundary conditions on the stress distribution of the fuel rod.For a specific fuel rod(C10),the response under pulsed conditions after one year of steady-state operation is simulated.The results indicate that during steady-state operation,the temperature distribution of fuel rods exhibits significant asymmetry.Under pulsed conditions,the fuel pellet temperature rises sharply,while the temperature rise of the cladding and the central zirconium rod exhibits a lag.Mechanical analysis shows that fuel-cladding mechanical interaction occurs after approximately 3200 hours of steady-state operation,leading to changes in gap pressure and volume,and the pulsed condition causes an increase in the overall stress level of the fuel rod.It is also found that boundary constraint conditions have a decisive influence on the internal stress distribution of the fuel rod,and adopting a constraint that fixes only the bottom can significantly reduce the overall stress level.This paper provides a basis for the 3D thermo-mechanical coupling analysis in the safety assessment of Xi&#x27;an Pulsed Reactor fuel rods.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203576698" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="燃料棒贮存区通风系统冷却性能评估及优化  07 多物理场耦合（热工结构） 暖通空调 · 2026 · 李篧鑫 张乐乐  适用边界 applicability domain 已有证据能够支持模型或结论的条件范围。 本条判断仅依据维普摘要；超出摘要工况须重新验证。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>燃料棒贮存区通风系统冷却性能评估及优化</h2>
+          
+          <p class="meta">暖通空调 · 2026 · 李篧鑫 张乐乐</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>Fluent 三维流—固模型评估燃料棒贮存区通风；下送上排方案的 z=4.1 m 截面平均温度在正常/事故工况分别为 49℃/66.8℃，换成上送下排虽改善均匀性但顶部平均温度约升 3℃。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>同时比较送排风布置和顶部管线受热风险，提出调整送风面积与风速的优化方向。</li></ul></section>
+        <section><h3>不足</h3><ul><li>结论属于该厂房布局和边界；摘要未给网格/实测比对及顶部管线具体温度限值。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>核对送风量、热源和管线材质，对顶部设备建立温度—应力安全评估。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对送风量、热源和管线材质，对顶部设备建立温度—应力安全评估。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用边界<small>applicability domain</small></h4><p>已有证据能够支持模型或结论的条件范围。</p><p class="context"><b>本文语境</b> 本条判断仅依据维普摘要；超出摘要工况须重新验证。</p></div></div></section>
+      <details>
+        <summary>查看摘要状态</summary>
+        <div class="abstracts">
+          <div><h3>摘要状态</h3><p>本文针对新燃料厂房燃料棒贮存区的通风系统进行数值模拟研究,分析了不同工况下温度场分布特性及通风优化方案的可行性。通过建立包含燃料棒的三维流-固耦合模型,采用Fluent软件,模拟了正常工况和事故工况下的热流场分布。结果表明,常规下送上排通风方案在正常工况下可将z=4.1 m截面平均温度控制在49℃,事故工况下温度可控制在66.8℃,均满足工艺要求。对调送排风口位置的上送下排方案虽改善了区域温度差异,但顶部平均温度升高约3℃,超出正常工况限值,可能影响贮存区上方管线安全。研究进一步提出优化建议,包括调整送风面积、提高风速以增强顶部降温效果。</p></div>
+          
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203881987" target="_blank" rel="noopener">查看来源 ↗</a><span>仅元数据 · 摘要未取得</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下为摘要驱动的研究策划，已与公开先行工作做快速定向核查；正式立项仍需系统检索和独立验证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>需要数据后可做</span><h3>衰变热装载优化与干式贮存罐最高温度的闭环验证</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>现有装载优化摘要以平均初始热负荷等指标评价方案，但未证明这些指标足以约束局部峰值包壳温度。</p></section>
+            <section><h4>为什么值得开展</h4><p>可把优化输出与可信热模型连接，形成可重复的安全约束检验方法；价值取决于真实装载和热边界数据。</p></section>
+            <section><h4>建议工作</h4><ol><li>取得论文完整目标函数、罐体几何和热负荷数据。</li><li>建立温度场模型，并针对每个帕累托解计算峰值包壳温度和不确定度。</li><li>与公开试验或基准算例交叉验证，比较平均热负荷和峰值温度的排序差异。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>证明或反驳平均热负荷可以替代局部热安全指标的适用范围。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>GAMMA-PC 论文 DOI 10.1080/00295450.2026.2716592 的摘要明确列出平均初始热负荷目标。</li></ul></div><div><h4>主要风险</h4><ul><li>罐内热工边界和装载数据不可得时，难以形成外部可验证结果。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">快速联网定向查新发现已有相邻模型和方法，选题应围绕明确的增量与验证数据。</p><p class="research-note">检索范围：DOI 匹配摘要、DOE/OSTI 或作者预印本；非穷尽检索。　检索时间：2026-09-27T08:20:51.996512+00:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>需要数据后可做</span><h3>衰变热装载优化与干式贮存罐最高温度的闭环验证</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 维持；已有热模型，创新应在耦合约束与不确定度。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>美国 DOE/Sandia 已开展装载乏燃料贮存容器热模型与温度裕度研究；不能把建一个罐体热模型称为创新。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>同一批优化装载方案在热边界不确定性下的峰值包壳温度鲁棒性尚需本文数据检验。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>先取得可复现的装载/热边界数据再立项。</p></section>
+            <section><h4>建议论文切口</h4><p>比较热负荷平均值约束与峰值包壳温度约束对帕累托解的影响。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>热模型对独立温度数据或公开基准误差报告。</li><li>不同装载方案的峰值温度与计算成本。</li></ul><h4>新颖性风险</h4><ul><li>储罐热模型和基本装载优化均已有较多工作。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://www.osti.gov/servlets/purl/1185563" target="_blank" rel="noopener">Thermal Modeling Capability Development for As-Loaded Commercial Used Nuclear Fuel Casks（2015）↗</a><p>已有装载罐热模型及热裕度计算。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。</aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
