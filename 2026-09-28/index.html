@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-09-28 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-09-28 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆与核—热—力多物理场耦合，面向 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-09-28</strong><span>本期日期</span></div><div class="stat"><strong>1</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>6</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 7</button><button data-filter="xmol">X-MOL 1</button><button data-filter="cqvip">维普 6</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="提高盖革–米勒剂量测量准确性：采用6 m石川法分析误差来源与改进流程 enhancing geiger-müller dosimetry accuracy: error source analysis and process improvement using the 6 m ishikawa method 核测量 · 不确定度管理 nuclear technology · 2026-09-25 · ghada ahmed khouqeer 核测量 辐射防护 死时间 dead time 记录一次事件后暂时无法记录后续事件的时间。 高计数率时漏计需按探测器适用模型修正。 扩展不确定度 expanded uncertainty 合成标准不确定度乘覆盖因子后的区间尺度。 本文k=2；与平均误差或仪器通用精度不同。 石川图 ishikawa diagram 按类别展示问题的潜在原因及联系。 本文6 m类别用于根因整理，不能单靠图定量确认因果贡献。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>核测量 · 不确定度管理</span><span>核测量</span><span>辐射防护</span></div>
+          <h2>提高盖革–米勒剂量测量准确性：采用6 M石川法分析误差来源与改进流程</h2>
+          <p class="title-en">Enhancing Geiger-Müller Dosimetry Accuracy: Error Source Analysis and Process Improvement Using the 6 M Ishikawa Method</p>
+          <p class="meta">Nuclear Technology · 2026-09-25 · Ghada Ahmed Khouqeer</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用6 M石川图梳理GM剂量测量误差来源，再以文献数据构建GUM不确定度预算和缓解优先级。</li><li>摘要报告95%水平、k=2的扩展不确定度约54%；死时间与能量/角度依赖为重点因素。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将定性根因图与定量不确定度预算连接，以诊断结果组织改进资源；不是新的GM探测器或已验证的现场校准系统。</li></ul></section>
+        <section><h3>不足</h3><ul><li>54%是作者所用文献数据与预算假设下的扩展不确定度，不能视为所有GM仪器的普遍测量误差。</li><li>12.5%与23%不可直接相加得到54%；需核对标准/扩展不确定度、覆盖因子、相关性与预算合成公式。</li><li>摘要未给出具体机型、辐射能谱、实测校准数据和修正后的误差；需要全文确认定量证据。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>强调全面管理不确定度，避免大不确定度掩盖流行病学和放射生物学剂量–响应关系；摘要未列出具体后续试验计划。</li><li>用具有已知参考剂量的能谱和剂量率工况校准死时间、能量及角度响应，并分离随机计数误差与系统偏差。</li><li>与HTGR核素热点预测对照前，应先建立探测器响应、屏蔽几何和空间取样模型。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对原始不确定度预算表、GM机型、能谱与死时间修正公式；摘要无法支持直接输入仪器校准参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>死时间<small>dead time</small></h4><p>记录一次事件后暂时无法记录后续事件的时间。</p><p class="context"><b>本文语境</b> 高计数率时漏计需按探测器适用模型修正。</p></div><div class="term"><h4>扩展不确定度<small>expanded uncertainty</small></h4><p>合成标准不确定度乘覆盖因子后的区间尺度。</p><p class="context"><b>本文语境</b> 本文k=2；与平均误差或仪器通用精度不同。</p></div><div class="term"><h4>石川图<small>Ishikawa diagram</small></h4><p>按类别展示问题的潜在原因及联系。</p><p class="context"><b>本文语境</b> 本文6 M类别用于根因整理，不能单靠图定量确认因果贡献。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>使用盖革–米勒（GM）剂量计进行准确的剂量测量，对辐射防护和研究至关重要。然而，这些测量受到众多不确定度来源的影响，可能降低剂量评估的可靠性。本研究应用石川图，系统识别和归类 GM 剂量测量误差的根本原因，以满足全面认识不确定度因素的需要。主要目标是以可视化方式梳理所有潜在误差来源，并建立定量不确定度预算，显示各来源的相对贡献。
+
+研究方法是构建因果图，将误差来源归入六大类：人员（操作技能、培训、定位）；设备（死时间、能量依赖性、高剂量率下的非线性、探测器老化）；方法（校准规程、本底扣除、修正程序）；材料（气体组成、滤片相互作用、探测器结构）；环境（温度、压力、湿度、电磁干扰、本底辐射）；测量（计数统计、刻度分辨率、辐射场均匀性）。
+
+依据文献数据、按照《测量不确定度表示指南》（GUM）建立的不确定度预算表明：在 95% 置信水平（k = 2）下，合成后的扩展不确定度约为 54%。主要贡献因素是未修正的死时间损失（约 12.5%），以及能量和角度依赖性（约 23%）。结构化的 6 M 分析显示，将石川图与符合 GUM 的定量不确定度预算结合，既能提供识别误差来源的诊断框架，也能形成纠正措施的优先级排序。
+
+这种整合建立了从定性根因分析到针对性缓解策略的系统路径，使资源能够投向对测量准确性影响最大的因素。研究结果强调，GM 剂量测量需要全面的不确定度管理，以支撑可靠的剂量评估；尤其在流行病学和放射生物学研究中，较大的不确定度可能掩盖剂量–响应关系。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Accurate dose measurement with Geiger-Müller (GM) dosimeters is essential for radiation protection and research, but these measurements are affected by numerous sources of uncertainty that can reduce the reliability of dose assessments. In this study, an Ishikawa diagram was applied to systematically identify and categorize the root causes of errors in GM dose measurements, addressing the need for a holistic understanding of uncertainty factors. The primary objective was to visually map all potential error sources and develop a quantitative uncertainty budget showing their relative contributions.The methodology involved constructing a cause-and-effect diagram that organized the error sources into six main categories: manpower (operator skills, training, positioning), machine (dead time, energy dependence, nonlinearity at high dose rates, detector aging), method (calibration protocol, background subtraction, correction procedures), material (gas composition, filter interactions, detector construction), mother nature (temperature, pressure, humidity, electromagnetic interference, background radiation), and measurement (counting statistics, scale resolution, field uniformity).An uncertainty budget, based on literature data and constructed in accordance with the Guide to the Expression of Uncertainty in Measurement (GUM), indicated a combined expanded uncertainty of approximately 54% at the 95% confidence level (k = 2). The main contributors were uncorrected dead-time losses (about 12.5%) and energy and angular dependence (about 23%). The structured 6 M analysis showed that combining the Ishikawa diagram with a quantitative GUM-compliant uncertainty budget provides both a diagnostic framework for identifying error sources and a prioritized hierarchy of corrective actions.This integration establishes a structured pathway from qualitative root-cause analysis to targeted mitigation strategies, enabling resources to be directed toward factors with the greatest effect on measurement accuracy. The findings emphasize the need for comprehensive uncertainty management in GM dosimetry to support reliable dose assessments, particularly in epidemiological and radiobiological studies where large uncertainties can obscure dose-response relationships.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://www.x-mol.com/paper/2103873007765434368" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1080/00295450.2026.2735650" target="_blank" rel="noopener">DOI ↗</a> <a href="https://api.openalex.org/works/https://doi.org/10.1080/00295450.2026.2735650" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="反应堆物理的模型降阶研究进展  pod/rom · 反应堆物理综述 核动力工程 · 2026 · 马宇 池泓航 王亚辉 谢宇辰 pod/rom · 反应堆物理综述 侵入式降阶 intrusive rom 把降阶基代入控制方程并投影，通常需要求解器或方程接口。 与仅学习参数到输出的非侵入式代理区分。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>POD/ROM · 反应堆物理综述</span><span>POD/ROM · 反应堆物理综述</span></div>
+          <h2>反应堆物理的模型降阶研究进展</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 马宇 池泓航 王亚辉 谢宇辰</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述模态空间的侵入式与非侵入式降阶，覆盖正问题快速预测和反问题在线堆芯监测。</li><li>提出多源数据、通用性与效率权衡、验证确认和工业数字孪生集成等研究建议。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>贡献在于核工程应用路线的梳理与比较，不能把综述建议计作已实现的新算法。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要不提供统一基准下的误差、训练成本或工业部署证据；不同技术路线的横向优劣需查全文。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>仅归纳摘要已写明的目标与应用；具体后续路线未在中文摘要列出。</li><li>建立同一公开核工程基准上的 POD-Galerkin、POD-插值与非线性代理比较，同时报告局部峰值误差、离线成本和外推失效。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对参考文献、标准化验证建议和各路线适用条件。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>侵入式降阶<small>intrusive ROM</small></h4><p>把降阶基代入控制方程并投影，通常需要求解器或方程接口。</p><p class="context"><b>本文语境</b> 与仅学习参数到输出的非侵入式代理区分。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在核反应堆数字孪生应用的研究趋势下,实现堆芯物理过程的实时或超实时准确计算已成为数智化反应堆的先决条件。本文综述了基于模态空间的模型降阶方法(包括侵入式和非侵入式)在核工程领域的研究进展,并重点分析了不同技术路线的应用潜力和挑战。首先,介绍了模型降阶方法的基本理论和分类,并对每一种模型降阶技术路线的特点进行了简要分析;接着,讨论了反应堆物理领域的模型降阶方法研究现状,包括正问题反应堆物理快速预测和反问题堆芯状态在线监测的模型降阶应用,并对不同场景下的关键技术和改进方案进行了分析;最后,结合当前模型降阶方法的研究现状提出了相应的研究建议和思考方向,包括多源数据综合利用、模型通用性与高效性的权衡、标准化验证体系与确认框架的建立、模型代码的国产化适配以及模型降阶的工业级数字孪生集成应用。本文的目标是为核工程领域的研究人员在模型降阶方面提供有价值的参考和借鉴,以期推动模型降阶方法在核工程领域的应用落地。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Under the research trend of digital twin applications in nuclear reactors,achieving accurate real-time or faster-than-real-time computation of core physical processes has become a prerequisite for intelligent digital reactors.This paper reviews the research progress in modal-spacebased reduced-order method(ROM)techniques,including both intrusive and non-intrusive approaches,in the field of nuclear engineering,with a focus on analyzing the potential and challenges of different technical routes.First,the fundamental theory and classification of ROM methods are introduced,along with a brief analysis of the characteristics of each technical route.Subsequently,the current state of ROM research in reactor physics is discussed,spanning forwardproblem rapid predictions and inverse-problem online core state monitoring;key technologies and enhancement strategies for different scenarios are also evaluated.Finally,based on the current research status of ROM methods,this paper proposes corresponding recommendations and future research directions,including the integrated use of multi-source data,balancing model generality and efficiency,establishing a standardized verification and validation framework,adapting model codes for domestic platforms,and integrating ROM into industrial-grade digital twin applications.This review aims to provide valuable references and insights for researchers in the nuclear engineering field regarding model order reduction,with a view to promoting the practical application of ROM methods in engineering.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204012314" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于降阶模型的反应堆压力容器保温结构传热性能逆优化设计  pod/rom · 压力容器保温结构 核技术 · 2026 · 赵杰 戴艳俊 王云刚 郭镇源 白帆 pod/rom · 压力容器保温结构 本征正交分解 pod 从快照场提取能够以少量模态表示主要变化的线性基。 本文用于多参数热场重构；模态能量保留并非峰值安全保证。 综合分数 fpod 作者定义的百分制无量纲多指标评价量。 59.2%的改善需按该分数定义解释。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>POD/ROM · 压力容器保温结构</span><span>POD/ROM · 压力容器保温结构</span></div>
+          <h2>基于降阶模型的反应堆压力容器保温结构传热性能逆优化设计</h2>
+          
+          <p class="meta">核技术 · 2026 · 赵杰 戴艳俊 王云刚 郭镇源 白帆</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以保温层外壁平均热流、平均温度和混凝土局部最高温度为目标，使用24组CFD快照重构275组工况并进行逆设计。</li><li>作者摘要报告平均R²&gt;0.95、MRD&lt;2.87%和约99%的CPU时间节省；综合分数97.4，对应组合2 mm–16℃–309.5℃。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将POD物理场重构与多目标综合评价结合，减少保温结构参数搜索的计算量；POD逆设计本身已有先行工作。</li></ul></section>
+        <section><h3>不足</h3><ul><li>59.2%是综合传热性能指标的改善，不能解释成热泄漏或最高温度下降59.2%。平均误差也不能保证局部峰值不被低估。</li><li>英文摘要另明确安装间隙、送风温度、RPV外壁温度三个变量，并给出最优工况的输出；中文摘要较简略。数值顺序和具体边界仍需全文核对。</li><li>24个快照能否覆盖设计空间、综合指标的权重与CPU节省是否含离线成本，摘要不足以判断。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>仅归纳摘要已写明的目标与应用；具体后续路线未在中文摘要列出。</li><li>研究带制造公差和边界不确定度的峰值温度/应力约束逆设计，以盲测误差和超限漏判率评价，并在超出训练域时回退到高保真求解。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 下载精读以核对24组工况、几何、边界条件、FPOD定义和权重，以及热场到结构载荷的映射。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>本征正交分解<small>POD</small></h4><p>从快照场提取能够以少量模态表示主要变化的线性基。</p><p class="context"><b>本文语境</b> 本文用于多参数热场重构；模态能量保留并非峰值安全保证。</p></div><div class="term"><h4>综合分数<small>FPOD</small></h4><p>作者定义的百分制无量纲多指标评价量。</p><p class="context"><b>本文语境</b> 59.2%的改善需按该分数定义解释。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为了改善反应堆压力容器(Reactor Pressure Vessel,RPV)保温结构在正常运行条件下的热泄漏现象,合理的参数设计对其安全运行至关重要。然而,传统的试错法设计低效,且难以从众多的变量中识别出最佳的参数组合。本文提出了一种基于本征正交分解(Proper Orthogonal Decomposition,POD)的逆设计方法,旨在提高RPV保温结构传热性能。首先,将保温层外壁平均热流(qave)、平均温度(Tave)以及混凝土局部最高温度(Tmax)作为优化目标,利用计算流体动力学(Computational Fluid Dynamics,CFD)方法生成24组工况作为POD快照。其次,利用验证后的POD方法重构了275组工况以反映设计变量与优化目标间的映射关系。最后,定义了一个百分制无量纲参数(FPOD)来评价其综合传热性能。研究结果表明:POD重构结果有效地保留了原始物理场信息,其预测的平均决定系数(R2)超过0.95,平均相对偏差(Mean Relative Deviation,MRD)低于2.87%。同时,相比于CFD方法能够节省约99%的CPU时间。结果表明:综合分数FPOD为97.4的变量组合(2 mm-16℃-309.5℃)性能最佳,与RPV保温结构原型设计相比综合传热性能提高了59.2%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">[Background]Thermal leakage in reactor pressure vessel(RPV)insulation structure poses safety risks,and traditional trial-and-error parameter optimization methods are inefficient for handling complex variables.[Purpose]This study aims to develop a proper orthogonal decomposition(POD)-based inverse design methodology to enhance the thermal performance of RPV insulation structure.[Methods]Firstly,three design variables(air supply temperature,RPV outer wall temperature,and installation gap)and their corresponding level numbers were systematically determined,and three optimization objectives were defined as average heat flux(qave),average temperature(Tave)on the RPV insulation&#x27;s outer wall,and maximum local temperature(Tmax)of the concrete.Then,a comprehensive dataset comprising 24 computational fluid dynamics(CFD)simulations was generated through full factorial design method,with these computational results employed as POD snapshots.Finally,the validated POD method was employed to reconstruct 275 working condition cases,and a dimensionless comprehensive score(FPOD)on a percentage scale was established to evaluate the overall heat transfer performance based on the three optimization objectives.[Results]Calculation results show the POD reconstruction achieved high fidelity is achieved by the POD reconstruction,with an average determination coefficient(R2)exceeding 0.95 and mean relative deviation(MRD)below 2.87%,while reducing CPU time is reduced by 99%compared to CFD.The optimal variable combination(2 mm-16℃-309.5℃)yieldeds a comprehensive score(FPOD)of 97.4,improving overall heat transfer performance by 59.2%over the original design.[Conclusions]Results of this study demonstrate that the POD-based inverse design methodology provides an efficient and accurate approach for RPV insulation structure optimization.The optimal parameter combination achieves significant improvements in thermal performance,with qavereduced to 84.89 W·m−2,Taveto 35.21℃,and Tmaxto 72.86℃,which significantly enhances the safety and operational efficiency of RPV insulation structure.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202700064" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="一种基于变分自编码器的核反应堆堆芯功率降阶计算方法  pod/rom · 堆芯功率与不确定度 四川大学学报（自然科学版） · 2026 · 陈栩帆 龚禾林 曾未 张世全 pod/rom · 堆芯功率与不确定度 变分自编码器 vae 通过概率潜变量与编码解码映射学习数据分布。 此处学习pod系数分布，概率输出需要独立校准。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>POD/ROM · 堆芯功率与不确定度</span><span>POD/ROM · 堆芯功率与不确定度</span></div>
+          <h2>一种基于变分自编码器的核反应堆堆芯功率降阶计算方法</h2>
+          
+          <p class="meta">四川大学学报（自然科学版） · 2026 · 陈栩帆 龚禾林 曾未 张世全</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>先用POD得到截断模态系数，再以VAE学习非线性潜在分布，建立物理参数到潜变量的映射，抽样重构功率场与预测区间。</li><li>验证对象为HPR1000模拟堆芯；作者报告较低潜空间维数下保持较高重构精度。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把线性模态预处理与概率潜空间表示结合，用于核堆芯相对功率场重构；不是直接求解POD-Galerkin中子学方程。</li></ul></section>
+        <section><h3>不足</h3><ul><li>潜变量抽样带来的区间不能自动代表核数据、边界、模型形式和测量误差的全部物理不确定度。</li><li>英文摘要额外提供CORCA-3D、5%高斯噪声和代表性设置下约1%误差；必须与中文摘要明确区分，并查全文核对区间覆盖率和噪声定义。</li><li>尚不能依据摘要认可事故瞬态、不同装载模式或分布外输入的可靠性。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>仅归纳摘要已写明的目标与应用；具体后续路线未在中文摘要列出。</li><li>针对独立装载模式与参数范围做分组盲测，比较POD-插值、POD-ANN与POD-VAE；检验功率峰值误差、区间覆盖和守恒后，再向热应力传播不确定度。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对POD截断、网络训练划分、真实参数范围、噪声模型、区间校准与完整计算成本。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>变分自编码器<small>VAE</small></h4><p>通过概率潜变量与编码解码映射学习数据分布。</p><p class="context"><b>本文语境</b> 此处学习POD系数分布，概率输出需要独立校准。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>三维相对功率分布是表征核反应堆堆芯中子学状态和空间功率非均匀性的重要物理量,其高保真计算依赖大规模数值求解,计算代价较高,难以满足快速评估、多次查询及不确定性量化等应用需求。本文针对堆芯相对功率场重构与不确定度量化问题提出了一种结合截断线性模态表示与变分自编码器的非线性降阶计算方法。在训练阶段,该方法首先将快照场通过POD(Proper Orthogonal Decomposition)投影到截断模态空间,得到低维模态系数,然后利用变分自编码器学习模态系数的非线性潜在分布,并训练由物理参数到潜空间变量的映射关系。在线应用阶段,该方法通过输入物理参数并映射得到潜变量分布,将潜变量抽样样本通过解码器实现功率场重构与不确定度分析。基于华龙一号HPR1000堆芯的仿真实验表明,相较于传统线性降维方法,该方法能够在更低潜空间维数下得到更高的重构精度,同时给出相应的不确定度估计与预测区间。本研究为核反应堆堆芯功率分布的快速代理建模与不确定性分析提供了一种可行途径,使后续数据同化和数字孪生成为可能,同时也为高维复杂物理场的非线性降阶建模与不确定度量化提供了思路。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Three-dimensional relative power distribution is an important physical quantity for characterizing the neutronic state of a reactor core and the spatial uniformity of core power.However,the high-fidelity calcu⁃lation of three-dimensional relative power distribution heavily relies on large-scale numerical simulations and is computationally expensive,which makes it difficult to satisfy the demands of rapid evaluation,repeatedquery tasks and uncertainty quantification in practical applications.To address this issue,a nonlinear reduced order method is developed for the reconstruction and uncertainty characterization of relative power fields by combining the truncated linear modal representation with the variational autoencoder.In the offline phase of the method,high-fidelity snapshot fields are first projected onto a truncated modal space by proper orthogonal decomposition(POD),to obtain the low-dimensional modal coefficients that retain the dominant physical structures of the original power field.Then,a variational autoencoder is employed to learn the nonlinear latent distribution of the modal coefficients,such that the high-dimensional relative power field can be represented and reconstructed in a more compact latent space.On this basis,a parameter-to-latent prediction network is further trained to establish the mapping from physical parameters to latent variables,and the reconstructed power field is obtained through the decoder together with the truncated modal basis.For the online application of the method,by inputting the parameters of physical model,the distribution of latent variables is first ob⁃tained and then sampled in the latent space.The method is able to propagate uncertainty from the latent repre⁃sentation to the reconstructed power field,thereby providing uncertainty estimates and confidence intervals for the prediction results.Simulation experiments are carried out for the steady-state three-dimensional rela⁃tive power distribution of the HPR1000 reactor core of Hualong One,where high-fidelity samples are gener⁃ated by CORCA-3D and 5%Gaussian noise is added to test the robustness of the method.It is shown that,in comparison with traditional linear reduced order modelling and neural-network-based methods,the method can maintain high reconstruction accuracy with much lower latent-space dimension,the relative error can be controlled close to 1%in the representative settings,while the uncertainty estimates are generally consistent with the local prediction quality and can reflect the reliability of the reconstructed results by providing the cor⁃responding confidence intervals.These results demonstrate that the method provides an effective approach for rapid reactor-core power restruction and uncertainty quantification.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204307758" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.19907/j.0490-6756.260078" target="_blank" rel="noopener">DOI ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="球床式高温气冷堆系统分析程序开发及应用  高温气冷堆 · 全回路瞬态 原子能科学技术 · 2026 · 伍钊 华英杰 吴攀 单建强 高温气冷堆 · 全回路瞬态 系统程序 system analysis code 以回路与设备模型求解整体热工水力动态。 anchor描述全一回路响应，不等价于局部高分辨率结构模型。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>高温气冷堆 · 全回路瞬态</span><span>高温气冷堆 · 全回路瞬态</span></div>
+          <h2>球床式高温气冷堆系统分析程序开发及应用</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 伍钊 华英杰 吴攀 单建强</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>ANCHOR以闭合一回路求解代替固定源项简化，并引入基于特性曲线的主氦风机分布参数模型。</li><li>在HTR-PM丧失正常给水且风机挡板关闭失效的事故工况下，分析强迫循环向自然循环过渡及压力、温度分布响应。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把关键回路部件与系统动态连接起来，识别全回路反馈及流动过渡机制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>作者称进行了多层验证，但中文摘要没有给出验证误差、数据来源和覆盖工况；可靠性属于待独立复核的作者结论。</li><li>本研究不是燃料或控制棒结构求解；将系统温度用于ANSYS还需局部换热、压力与时间空间映射。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>仅归纳摘要已写明的目标与应用；具体后续路线未在中文摘要列出。</li><li>围绕强迫/自然循环转换建立按流动状态切换的局部ROM，检验过渡时间、热点温度和结构应力是否被低估。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对风机曲线、闭环耦合边界、事故时程、多层验证数据及温度载荷映射。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>系统程序<small>system analysis code</small></h4><p>以回路与设备模型求解整体热工水力动态。</p><p class="context"><b>本文语境</b> ANCHOR描述全一回路响应，不等价于局部高分辨率结构模型。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对现有球床式高温气冷堆系统分析程序在完整一回路动态响应方面存在的不足,本文自主开发了系统级高保真瞬态分析程序ANCHOR。与将关键回路部件简化为固定源项的传统方法不同,本文构建了全回路闭合求解框架,引入基于风机特性曲线的主氦风机分布参数模型,实现了对一回路整体瞬态行为的精细模拟。经过从基础物理模型到整体系统的多层次验证,证明了ANCHOR的准确性与可靠性,进而将ANCHOR应用于高温气冷堆核电站示范工程(HTR-PM)丧失正常给水且主氦风机挡板关闭失效这一超设计基准事故工况。结果表明,ANCHOR成功捕捉并揭示了事故中从强迫循环到自然循环的完整过渡机制,以及该过程对系统压力和堆芯温度分布的关键影响。本文开发的ANCHOR,可作为球床式高温气冷堆安全设计与分析的自主化可靠工具。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The safety analysis of pebble-bed high-temperature gas-cooled reactor(PB-HTGR)relies heavily on high-fidelity system-level simulation tools.However,existing analysis codes face significant limitations in modeling the integrated transient response of the full primary circuit.Programs like TINTE,while well-validated for core physics,often simplify key primary loop components such as the main helium circulator and steam generator to fixed boundary conditions(source/sink terms).This simplification precludes the accurate simulation of dynamic interactions and feedback between these components and the core during transients.Other approaches,such as externally coupling detailed component models or adapting light water reactor system codes,introduce synchronization errors,architectural complexity,or fundamental model mismatches.To overcome these architectural limitations,this paper presented the independent development of ANCHOR,a novel system-level,highfidelity transient safety analysis code for PB-HTGR.The code was written in C++and adopted a modular architecture for flexibility.Its core advancement lied in two key aspects.First,it established a full primary circuit closed solving framework,integrating the core,hot/cold helium ducts,steam generator,and main helium circulator into a unified,dynamically coupled system model.Second,it introduced a distributed-parameter dynamic model for the main helium circulator,based on its characteristic performance curves.This model directly incorporated the circulator’s pressure rise and dissipation work into the momentum and energy conservation equations,replacing the traditional lumped-parameter source-term approach.This enables a physically realistic simulation of circulator transients(startup,shutdown,speed variation)and its coupling with the loop.The accuracy and reliability of ANCHOR were rigorously demonstrated through a hierarchical verification strategy.This included:benchmarking against the IAEA SANA experiment,confirming the accuracy of its packedbed effective thermal conductivity model;comparison with the HCP code for a reactivity-induced transient,validating its neutronics and thermal-hydraulic coupling;and system-level validation against the established TINTE code for a depressurized loss of forced cooling(DLOFC)accident in HTR-PM,showing excellent agreement in fuel temperatures.To showcase its capability in analyzing complex beyond-design-basis events,ANCHOR was applied to simulate a challenging accident scenario for the HTR-PM,a loss of normal feedwater combined with a failure of the main circulator baffle to close.The ANCHOR successfully captures the complete transition mechanism from forced circulation to reverse natural circulation within the primary loop.It elucidates the dynamic evolution of this natural circulation flow and its critical effects on system pressure and core temperature redistribution.All calculated temperatures remain well within safety limits.In conclusion,the ANCHOR,with its integrated loop architecture and high-fidelity component modeling,provides a robust,self-developed,and high-precision tool for the safety design and analysis of PB-HTGRs,effectively addressing gaps left by previous analysis methodologies.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202812100" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="高温气冷堆球床辐射传热连续动力学模型  高温气冷堆 · 球床辐射传热 核技术 · 2026 · 吴浩 桂南 杨星团 屠基元 姜胜耀 高温气冷堆 · 球床辐射传热 辐射角系数 view factor 表示离开一个表面的辐射到达另一个表面的几何比例。 微观颗粒交换与宏观连续辐射之间的连接量。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>高温气冷堆 · 球床辐射传热</span><span>高温气冷堆 · 球床辐射传热</span></div>
+          <h2>高温气冷堆球床辐射传热连续动力学模型</h2>
+          
+          <p class="meta">核技术 · 2026 · 吴浩 桂南 杨星团 屠基元 姜胜耀</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>从颗粒间辐射交换构建不依赖均匀性假设的解耦模型，将微观角系数映射到工程尺度连续动力学。</li><li>摘要报告黑体体系辐射交换因子约1.03、主要交换范围约2.5倍球径，并与大型球床实验温度分布比较。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对灰体发射率影响建立颗粒到连续介质的辐射描述，避免均匀有效辐射假设的偏差。</li></ul></section>
+        <section><h3>不足</h3><ul><li>约2.5倍球径是所研究条件下的交换范围，不能作为所有堆型、温度或堆积结构的通用截断半径。</li><li>摘要未提供温度误差、发射率范围、边界处理及实验不确定度；球床堆也并非所有工况均由辐射主导。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>仅归纳摘要已写明的目标与应用；具体后续路线未在中文摘要列出。</li><li>量化发射率、堆积非均匀性及边界截断误差向燃料热点和热应力的传播，比较局部POD与均匀等效导热模型。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对角系数映射、灰体发射率、实验边界和误差，特别是2.5球径截断的适用条件。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>辐射角系数<small>view factor</small></h4><p>表示离开一个表面的辐射到达另一个表面的几何比例。</p><p class="context"><b>本文语境</b> 微观颗粒交换与宏观连续辐射之间的连接量。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>高温气冷堆是先进的第四代核能系统,其球床中以辐射为主导的传热特性对堆芯热工行为具有关键影响。本文从微观颗粒间辐射交换机制出发,构建了无需均匀性假设的解耦辐射模型,并基于连续介质思想建立微观辐射角系数与宏观连续动力学之间的映射关系,形成适用于工程尺度的球床辐射连续动力学模型。该模型能够合理描述堆内复杂的辐射作用,解决了离散颗粒体系向连续介质模型过渡的跨尺度理论衔接问题。研究结果表明:对于黑体颗粒体系,模型预测的辐射交换因子约为1.03,与经验模型一致;对于灰体颗粒,若采用均匀有效辐射假设则难以反映发射率影响,预测结果明显偏离实验。模型进一步揭示,球床堆内的辐射交换主要集中在约2.5倍球径范围内。与大型球床实验的对比表明,该模型能够准确预测温度分布,具有良好的可靠性和工程适用性。本研究为理解堆芯辐射传热机理及开展热工设计与安全分析提供了新的理论工具。</p></div>
+          <div><h3>English abstract</h3><p lang="en">[Background]High-temperature gas-cooled reactors(HTGRs)are advanced Generation IV nuclear systems,in which radiation-dominated heat transfer within the pebble bed plays an important role in core thermalhydraulic behavior.[Purpose]This study aims to develop a decoupled radiation model,in which no assumption of radiosity uniformity is required for the microscopic radiative exchange between particles,and establish a mapping between microscopic radiative view factors and macroscopic continuum dynamics based on the continuum-medium framework.[Methods]The radiation transfer was governed by a radially decaying function in HTGR.The resulting local radiative flux was determined by summing over the contributions of all particles within the interaction range.Then a radiation continuum-dynamics model applicable to engineering-scale pebble beds was derived to accurately capture the complex radiative interactions in the core,resolving the cross-scale theoretical gap between discrete particle systems and continuum representations.Finally,this model was applied to a 10 MW High Temperature Gascooled Test Reactor(HTR-10)for evaluation.[Results]Results show that for blackbody pebbles,the predicted radiative exchange factor is approximately 1.03,consistent with empirical models;for gray pebbles,the commonly used uniform effective radiation assumption fails to capture emissivity effects and leads to significant deviations from experimental observations.The model further reveals that radiative exchange in pebble beds is mainly confined within roughly 2.5 particle diameters.[Conclusions]Comparison with large-scale pebble-bed experiments demonstrates that the proposed model can reliably predict temperature distributions and thus offers strong engineering applicability,providing a new theoretical tool for understanding radiative heat-transfer mechanisms in HTGR cores and for supporting thermal-hydraulic design and safety analysis.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265764" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="高温气冷堆主回路一维四区核素输运沉积模型开发  高温气冷堆 · 核素输运与辐射防护 核技术 · 2026 · 曹成昊 陈俊逸 沈绍宁 梁金刚 李川 曹建主 高温气冷堆 · 核素输运与辐射防护 集总参数 lumped parameter 用有限的整体状态量表示一个部件或区域。 能计算平均浓度，但可能遗漏局部沉积热点。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>高温气冷堆 · 核素输运与辐射防护</span><span>高温气冷堆 · 核素输运与辐射防护</span></div>
+          <h2>高温气冷堆主回路一维四区核素输运沉积模型开发</h2>
+          
+          <p class="meta">核技术 · 2026 · 曹成昊 陈俊逸 沈绍宁 梁金刚 李川 曹建主</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>保留惰性气体集总处理，对金属核素和碘建立主流、边界层、壁面和固相四区传质，捕捉局部沉积热点。</li><li>HTR-PM节点化计算考虑闭环、泄漏、净化和通风；作者发现蒸汽发生器预热段和蒸发段为热点，碘分布约3天后稳定。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>由平均浓度拓展到轴向输运及径向四区迁移，使局部放射性热点进入评估。</li></ul></section>
+        <section><h3>不足</h3><ul><li>约3天为本文工况的结果，不能推广为所有核素或运行条件的平衡时间。</li><li>摘要没有给出独立实测沉积数据、核素源项和传质系数不确定度；无法由摘要确认模型预测已通过现场验证。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>仅归纳摘要已写明的目标与应用；具体后续路线未在中文摘要列出。</li><li>把热点分布与探测器能量/方向响应和死时间修正连接，区分核素源项误差、沉积模型误差和GM测量误差，评价监测点布置。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对温度与沉积系数、源项时程、实际管道节点和验证数据；监测对照还需探测器响应与屏蔽几何。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>集总参数<small>lumped parameter</small></h4><p>用有限的整体状态量表示一个部件或区域。</p><p class="context"><b>本文语境</b> 能计算平均浓度，但可能遗漏局部沉积热点。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>高温气冷堆(High-temperature Gas-cooled Reactor,HTGR)一回路放射性热点对设备检修与放射性废物管理具有重要影响。堆芯释放的气载核素在回路中经历泄漏、净化、衰变和沉积等过程,它们的耦合作用决定回路的放射性分布。传统模型采用集总参数法评估核素平均浓度和总沉积活度,难以捕捉局部放射性热点。为此,本研究在惰性气体保持集总参数法的基础上,针对金属核素与碘的输运沉积特性引入核素四区传质机制,建立一维四区核素输运沉积模型。该模型描述核素沿管道轴向的流动,并刻画其在主流、边界层、壁面和固相的径向迁移。此外,本研究将该模型应用于高温气冷堆示范电站(High-temperature Gas-cooled Reactor Pebble-bed Module,HTR-PM)一回路的精细节点化剖分,考虑闭环回路、泄漏路径、氦净化系统和负压通风系统的影响,捕捉放射性热点。结果表明,金属核素因沉积作用强,沿流动方向浓度逐渐降低;碘因沉积较弱,初期循环碘不断积累,约3天后浓度分布稳定。蒸汽发生器预热段与蒸发段因沉积面积大、温度较低而成为放射性热点。氦净化系统再生使长寿命惰性气体的吸附量呈周期性变化,负压通风系统则将安全壳活度维持在较低水平。本研究为高温气冷堆辐射防护研究提供基础理论支持。</p></div>
+          <div><h3>English abstract</h3><p lang="en">[Background]Radioactive hotspots in the primary loop of High-temperature Gas-cooled Reactors(HTGRs)have a significant impact on equipment maintenance and radioactive waste management.Airborne radionuclides released from the reactor core undergo leakage,purification,decay,and plate-out processes in the loop,and the coupling of these processes determines the spatial distribution of radioactivity.Conventional lumpedparameter models are mainly used to evaluate average radionuclide concentrations and total plate-out activity,but they are insufficient for resolving local radioactive hotspots.[Purpose]This study aims to develop a refined radionuclide transport and plate-out model capable of capturing localized radioactive hotspots in the HTGR primary loop.[Methods]Firstly,a lumped-parameter treatment for inert gases was adopted,and a one-dimensional four-zone radionuclide transport and plate-out model was developed for metallic radionuclides and iodine by introducing a fourregion mass transfer mechanism.The axial radionuclide transport along the coolant flow direction and radial mass transfer among the bulk flow,boundary layer,wall surface,and solid phase were covered by this model.Then,the model was applied to a detailed nodalization of the primary loop of High-temperature Gas-cooled Reactor Pebble-bed Module(HTR-PM),taking into account the closed-loop configuration,leakage paths,the helium purification system,and the negative-pressure ventilation system.Finally,simulation calculation for localization of radioactive hotspots in the HTR-PM primary loop was performed.[Results]Simulation results show that metallic radionuclides exhibit strong plate-out behavior,leading to a gradual decrease in concentration along the flow direction.In contrast,iodine shows weaker plate-out,resulting in continuous accumulation during the initial stage of operation until a steady-state distribution is reached after approximately three days.The preheating and evaporation sections of the steam generator become radioactive hotspots due to their large plate-out surface area and relatively low temperatures.Regeneration of the helium purification system causes periodic variations in the adsorption of long-lived inert gases,while the negative-pressure ventilation system effectively maintains low activity levels within the containment.[Conclusions]The proposed one-dimensional four-zone transport and plate-out model enables effective prediction of radioactive hotspots in the HTGR primary loop,providing important source-term data for radiation protection analysis and maintenance planning of HTGR systems.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204390841" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下分模块并交叉提出可证伪研究切口；先核对前提、资源和已存在的同题工作，再判断是否值得开展。每篇中文条目也附有具体后续问题。</p><article class="opportunity">
+          <div class="opportunity-head"><span>有条件优先</span><h3>POD/ROM × 热工结构：面向安全峰值的保温结构逆设计</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>热场重构和保温逆设计已存在；可检验的增量是制造公差与边界扰动下对局部热点、结构应力和超限漏判的控制。</p></section>
+            <section><h4>为什么值得开展</h4><p>只有证明安全关键输出改善超过增加的离线/校准成本，才比平均场精度和提速更有研究价值。</p></section>
+            <section><h4>建议工作</h4><ol><li>先复现一处可获得几何和边界数据的保温接头，使用高保真热场—结构链。</li><li>固定快照预算，对比全局POD、局部POD和以峰值输出加权的基；独立盲测安装公差和边界变化。</li><li>报告最大温度与应力误差、超限漏判、离线/在线成本，并设计拒绝外推和高保真回退。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>量化平均场误差与安全峰值误差的脱钩。</li><li>给出在明确数据域内改善安全输出的算法/验证证据；若不能胜过基线，应缩小或否定该方案。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7202700064</li><li>联网已发现RPV保温POD逆设计与综合热可靠性评价、PCHE热结构POD-ANN；单纯换应用或提速的新颖性不足。</li></ul></div><div><h4>主要风险</h4><ul><li>几何、快照和高温材料数据未必公开；本机有MAPDL不代表有CFD训练数据。</li><li>峰值加权、局部基与稳健优化已有广泛研究，仍须系统查新。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>中期；数据决定可行性</span><h3>POD/VAE × 堆芯功率 × 燃料热结构：校准后再传播不确定度</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>功率场预测区间并不自动等价于热应力可靠区间；模态截断、潜变量误差及耦合模型偏差需分开评估。</p></section>
+            <section><h4>为什么值得开展</h4><p>在同一物理基准上把统计区间校准与燃料热点/应力漏判连接，比简单把VAE接到ANSYS更有价值。</p></section>
+            <section><h4>建议工作</h4><ol><li>用公开可复现小堆芯或组件基准，按装载或工况分组划分盲测集，避免同工况快照泄漏。</li><li>比较POD-插值、POD-ANN及POD-VAE，在独立数据上检查区间覆盖、宽度、功率归一和峰值。</li><li>将经过校准的功率场传播到燃料热结构，并单独加入材料和边界误差；比较高保真Monte Carlo参考。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>识别潜变量区间失校准造成的热点/应力低估。</li><li>在相同计算预算下证明物理约束与区间校准是否改善安全关键预测。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7204307758</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7204012314</li></ul></div><div><h4>主要风险</h4><ul><li>CORCA-3D/HPR1000快照可能不可获取；缺少数据则应改用公开基准。</li><li>潜空间不确定度不能代替完整物理不确定度；事故瞬态和接触非线性需另行验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>低优先级；需要测量条件</span><h3>气冷堆 × 核测量：热点预测与GM观测误差分离</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>四区沉积模型预测热点，而GM剂量计测得响应后的计数/剂量；两者之间存在能谱、屏蔽和空间观测映射。</p></section>
+            <section><h4>为什么值得开展</h4><p>若有合法现场或参考辐射源数据，可评估热点定位误差中源项、沉积和仪器响应的不同贡献。</p></section>
+            <section><h4>建议工作</h4><ol><li>先做核素活度到观测量的前向响应模型。</li><li>用独立校准数据修正死时间与能量响应，再比较热点位置与幅值。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>区分物理模型偏差与测量系统偏差，为监测点选择提供可检验依据。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://api.openalex.org/works/https://doi.org/10.1080/00295450.2026.2735650</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7204390841</li></ul></div><div><h4>主要风险</h4><ul><li>需要辐射源/现场数据、探测器标定及相关资质；目前未确认资源可获得。</li><li>不应把论文54%不确定度直接套到用户测量系统。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">定向查新已找到RPV保温逆设计/热可靠性、PCHE热结构POD-ANN和VAE概率ROM，故不能宣称上述方法组合首创。</p><p class="research-note">检索范围：原始出版社页面/摘要、作者arXiv预印本和期刊原始元数据；非穷尽检索。　检索时间：2026-09-28T04:08:40.228185+00:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>有条件优先</span><h3>POD/ROM × 热工结构：面向安全峰值的保温结构逆设计</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 取消“方法组合本身是创新”的前提，以可证伪的安全输出验证为切口。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>相关方法与核工程应用已存在，见下方原始论文或出版社来源。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>热场重构和保温逆设计已存在；可检验的增量是制造公差与边界扰动下对局部热点、结构应力和超限漏判的控制。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>方向有研究价值但不具备已证实的新颖性；独立数据和相同预算基线比较是进入下一阶段的条件。</p></section>
+            <section><h4>建议论文切口</h4><p>先复现一处可获得几何和边界数据的保温接头，使用高保真热场—结构链。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>固定快照预算，对比全局POD、局部POD和以峰值输出加权的基；独立盲测安装公差和边界变化。</li><li>报告最大温度与应力误差、超限漏判、离线/在线成本，并设计拒绝外推和高保真回退。</li></ul><h4>新颖性风险</h4><ul><li>几何、快照和高温材料数据未必公开；本机有MAPDL不代表有CFD训练数据。</li><li>峰值加权、局部基与稳健优化已有广泛研究，仍须系统查新。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.ress.2025.111901" target="_blank" rel="noopener">Proper orthogonal decomposition (POD)-based inverse optimization structural design and comprehensive thermal reliability assessment of RPV insulation structure（2026卷期；DOI登记2025）↗</a><p>出版社相关文章摘要已给出POD保温结构逆设计与综合热可靠性评价；并非本次提出的新方向。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2026.112203" target="_blank" rel="noopener">Application of POD-ANN reduced order model to fluid-thermal-structural coupling analysis in printed circuit heat exchangers（2026）↗</a><p>已将POD-ANN用于PCHE流热结构应力场预测，热结构降阶也已有直接核工程工作。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中期；数据决定可行性</span><h3>POD/VAE × 堆芯功率 × 燃料热结构：校准后再传播不确定度</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 取消“方法组合本身是创新”的前提，以可证伪的安全输出验证为切口。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>相关方法与核工程应用已存在，见下方原始论文或出版社来源。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>功率场预测区间并不自动等价于热应力可靠区间；模态截断、潜变量误差及耦合模型偏差需分开评估。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>方向有研究价值但不具备已证实的新颖性；独立数据和相同预算基线比较是进入下一阶段的条件。</p></section>
+            <section><h4>建议论文切口</h4><p>用公开可复现小堆芯或组件基准，按装载或工况分组划分盲测集，避免同工况快照泄漏。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>比较POD-插值、POD-ANN及POD-VAE，在独立数据上检查区间覆盖、宽度、功率归一和峰值。</li><li>将经过校准的功率场传播到燃料热结构，并单独加入材料和边界误差；比较高保真Monte Carlo参考。</li></ul><h4>新颖性风险</h4><ul><li>CORCA-3D/HPR1000快照可能不可获取；缺少数据则应改用公开基准。</li><li>潜空间不确定度不能代替完整物理不确定度；事故瞬态和接触非线性需另行验证。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://arxiv.org/abs/2304.12437" target="_blank" rel="noopener">VpROM: A novel Variational AutoEncoder-boosted Reduced Order Model for the treatment of parametric dependencies in nonlinear systems（2023预印本）↗</a><p>作者已以VAE表示参数相关降阶基并传播概率不确定度；非核工程，与今日功率代理路线不同但限制泛化首创性声明。</p></li><li><a href="https://cjournal.hep.com.cn/0490-6756/CN/10.19907/j.0490-6756.260078" target="_blank" rel="noopener">一种基于变分自编码器的核反应堆堆芯功率降阶计算方法（2026）↗</a><p>期刊原始页面核对题名、作者与DOI；堆芯功率POD/VAE已有直接对象工作。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。</aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
