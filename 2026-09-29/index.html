@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-09-29 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-09-29 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆与核—热—力多物理场耦合，面向 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-09-29</strong><span>本期日期</span></div><div class="stat"><strong>0</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>8</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 8</button><button data-filter="xmol">X-MOL 0</button><button data-filter="cqvip">维普 8</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><div id="papers">
+    <article class="paper-card" data-source="cqvip" data-search="国产新锆合金包壳管的内压蠕变性能  09 核反应堆材料 兵器材料科学与工程 · 2026 · 吴楠 高博 张鹏飞 俞海平 李小影 09 核反应堆材料 ansys热工结构 稳态蠕变速率 steady-state creep rate 材料在给定温度和应力下进入近似稳定蠕变阶段后的应变增长速率。 用于比较三种合金；不等价于寿命或爆破压力。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料</span><span>09 核反应堆材料</span><span>ANSYS热工结构</span></div>
+          <h2>国产新锆合金包壳管的内压蠕变性能</h2>
+          
+          <p class="meta">兵器材料科学与工程 · 2026 · 吴楠 高博 张鹏飞 俞海平 李小影</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>比较SZA-4、SZA-6与国产ZIRLO包壳管的内压蠕变；摘要列出343、385、450℃与80、125、150 MPa周向应力，试验持续200天。</li><li>作者报告温度和应力增大时蠕变应变增加，同条件下SZA-4稳态蠕变速率最低。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在同一试验体系中比较国产新锆合金的包壳管蠕变性能，为材料筛选提供数据；不能据摘要认定新的通用蠕变理论。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要的“分别”不能证明进行了全部九种温度—应力组合；需核对试验矩阵、样本重复和不确定度。</li><li>未提供蠕变速率、应力指数及激活能具体值，也未说明辐照、氢含量、织构与尺寸；不能直接生成ANSYS材料卡或推广至堆内。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>获取原始应变—时间曲线，拟合温度和应力相关蠕变模型，在保留独立工况的条件下预测包壳半径与间隙演化。</li><li>将材料参数误差传播到包壳接触压力与热阻；不同合金的试验不能无条件合并。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 已披露试验温度、周向应力和200天时长；核对管径/壁厚、内压换算、试验矩阵、蠕变曲线及拟合系数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>稳态蠕变速率<small>steady-state creep rate</small></h4><p>材料在给定温度和应力下进入近似稳定蠕变阶段后的应变增长速率。</p><p class="context"><b>本文语境</b> 用于比较三种合金；不等价于寿命或爆破压力。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文研究了国产新锆合金SZA-4和SZA-6合金包壳管的内压蠕变性能,并以国产ZIRLO合金为参比。试验在343,385,450℃下进行,周向应力分别为80,125,150 MPa,持续200天。结果表明:随着温度和应力的增大,内压蠕变应变增加,锆合金包壳管的抗内压蠕变性能降低。SZA-4合金的抗内压蠕变性能优于SZA-6和ZIRLO合金,其稳态蠕变速率在相同条件下最低。通过分析稳态蠕变速率、蠕变应力指数和蠕变激活能等指标,揭示了不同种类锆合金在不同试验条件下的内压蠕变机理。为自主化核燃料元件包壳材料的筛选与性能优化提供了参考。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This article investigated the internal pressure creep properties of domestically produced new zirconium alloys SZA-4 and SZA-6 for cladding tubes,with domestic ZIRLO alloy as a reference.The experiment was conducted at 343,385,and 450℃,with circumferential stresses of 80,125,and 150 MPa,respectively,for 200 days.The results indicate that with the increase of temperature and stress,the internal pressure creep strain increases,and the resistance to internal pressure creep of zirconium alloy cladding tubes decreases.The resistance to internal pressure creep of SZA-4 alloy is superior to that of SZA-6 and ZIRLO alloys,and its steady-state creep rate is the lowest under the same conditions.By analyzing indicators such as steadystate creep rate,creep stress index,and creep activation energy,the internal pressure creep mechanism of different types of zirconium alloys under different experimental conditions was revealed.This provides a reference for the screening and performance optimization of autonomous nuclear fuel element cladding materials.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202719712" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="乏燃料棒锆合金包壳环向拉伸性能分析  09 核反应堆材料 原子能科学技术 · 2026 · 汤琪 王烨霆 张恺 郭一帆 钱进 王华才 梁政强 09 核反应堆材料 ansys热工结构 环向拉伸 hoop tensile test 沿管周向评估力学性能的试验，夹具与试样形式影响应力和应变解释。 用于比较包壳材料状态；需核对标距和局部受力。 氢化物 hydride 氢与锆形成的相，其分布和取向可改变材料延性与断裂行为。 本文对照下影响较小并非否定其他条件下的脆化风险。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料</span><span>09 核反应堆材料</span><span>ANSYS热工结构</span></div>
+          <h2>乏燃料棒锆合金包壳环向拉伸性能分析</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 汤琪 王烨霆 张恺 郭一帆 钱进 王华才 梁政强</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用商业压水堆乏燃料棒包壳做环向拉伸，对比堆内辐照样品与渗氢未辐照样品。</li><li>本文条件下辐照提高强度但降低延性，高温促进塑性恢复；高氢未辐照样品断后伸长率在高温下超过40%、室温约20%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>通过实际乏燃料样品与渗氢参照建立辐照和吸氢影响的试验对照，提供材料状态与环向力学响应证据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“本文条件下辐照影响更大”不能推广为氢化物不危险；取向、含氢量、温度和应力状态可改变结果。</li><li>辐照与渗氢参照不是完备的辐照×氢含量析因试验；材料历史、织构和样品几何可能混杂。</li><li>断后伸长率受试样与测量定义影响，不宜直接当作复杂组件的局部断裂应变限值。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>用可核材料状态建立各向异性弹塑性/延性退化模型，分别拟合辐照和吸氢试验；通过独立环向试验或爆破数据验证。</li><li>在ANSYS包壳热结构模型中比较强度升高与延性降低对局部应变裕度的不同影响，避免只按屈服强度判定性能改善。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要给出材料状态和伸长率线索；核对合金牌号、温度、含氢量/取向、辐照剂量、拉伸夹具、应力—应变曲线及重复次数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>环向拉伸<small>hoop tensile test</small></h4><p>沿管周向评估力学性能的试验，夹具与试样形式影响应力和应变解释。</p><p class="context"><b>本文语境</b> 用于比较包壳材料状态；需核对标距和局部受力。</p></div><div class="term"><h4>氢化物<small>hydride</small></h4><p>氢与锆形成的相，其分布和取向可改变材料延性与断裂行为。</p><p class="context"><b>本文语境</b> 本文对照下影响较小并非否定其他条件下的脆化风险。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>压水堆燃料棒堆内服役过程中,包壳锆合金经受长时间中子辐照和高温冷却水腐蚀,导致材料力学性能发生显著变化。为探究辐照和吸氢对锆合金包壳力学性能的影响,本文以某商业压水堆乏燃料棒锆合金包壳为研究对象,通过环向拉伸实验系统对比堆内辐照样品、渗氢未辐照样品的环向拉伸性能。环向拉伸实验结果显示:辐照显著提高堆内锆合金强度,但延性变差;高温下锆合金塑性得到恢复,表现出韧性断裂特征。吸氢对锆合金强度和塑性的影响相对较小,在高温下高氢含量渗氢拉伸实验样品断后伸长率保持在40%以上,在室温下断后伸长率降至20%,但未显现明显脆性断裂特征。断口初步观察显示,辐照拉伸实验样品室温下呈脆性断裂特征,高温下出现杯锥状韧性断裂;而高氢含量的渗氢拉伸实验样品即使在室温下也未有明显脆性断裂特征。在本文实验条件下,辐照作用主导堆内锆合金力学性能变化,其强化和脆化效应大于氢化物的影响,辐照是影响堆内锆合金包壳力学性能的主要因素。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Zirconium alloys used as cladding in pressurized water reactor(PWR)fuel rods undergo significant mechanical properties changes due to prolonged neutron irradiation and high-temperature coolant corrosion during in-reactor service.This study examined the impacts of irradiation and hydrogen absorption on the mechanical properties of zirconium alloy cladding.Zirconium alloy cladding from spent fuel rods of a commercial pressurized water reactor served as the research subject.Hoop tensile tests were conducted in a hot cell facility to compare the mechanical properties of inreactor irradiated samples with those of out-of-reactor unirradiated but hydrogen-charged samples.The results demonstrate that irradiation substantially increases strength while reducing ductility,although elevated temperatures restore plasticity and promote ductile fracture modes.Hydrogen absorption exerts a comparatively limited influence:even at high hydrogen concentrations,specimens retain ductility elongations above 40%at elevated temperature and about 20%at room temperature,without evident brittle fracture.Fractographic observations confirm irradiation-induced brittle fracture at room temperature and ductile cup-cone fracture at elevated temperature,whereas hydrogen-charged specimens show no distinct brittle features.Under the present conditions,irradiation governs the mechanical property evolution of in-reactor zirconium alloys,with its strengthening and embrittlement effects exceeding those associated with hydride formation.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203596234" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.7538/yzk.2025.youxian.0530" target="_blank" rel="noopener">DOI ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于icoco规范的快堆燃料组件多物理场耦合性能分析方法  07 多物理场耦合（热工结构） 原子能科学技术 · 2026 · 杨广亮 刘振海 王浩煜 辛勇 李垣明 冯文培 董思凡 陈红丽 07 多物理场耦合（热工结构） ansys热工结构 icoco interface for code coupling 统一耦合程序调用和数据交换的接口规范。 负责程序接口组织，本身不保证耦合守恒或物理准确。 算符分离 operator splitting 把耦合演化分为依次求解的子问题。 计算组织更方便，但要核对时间分裂和反馈误差。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>ANSYS热工结构</span></div>
+          <h2>基于ICoCo规范的快堆燃料组件多物理场耦合性能分析方法</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 杨广亮 刘振海 王浩煜 辛勇 李垣明 冯文培 董思凡 陈红丽</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>通过ICoCo将KMC-Fueltra燃料性能程序与KMC-Subtra子通道程序耦合，采用算符分离、区域重叠和MEDCoupling映射。</li><li>ORNL-19瞬态算例中数据传递前后，包壳外表面温度一致；冷却剂温度和压力的最大相对偏差分别为0.15%与1.4%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>建立多根燃料棒并行耦合的半网格/全网格实现，并对关键传递量进行接口一致性核验。</li></ul></section>
+        <section><h3>不足</h3><ul><li>传递前后一致属于接口验证，不能单独证明整体物理预测准确；还需实验或独立基准确认。</li><li>最大值插值原则不自动保证热功率、质量或力的积分守恒，也不证明非线性反馈稳定。</li><li>摘要未提供耦合时间步敏感性、迭代收敛或计算成本；英文摘要对接口及并行实现描述更多，不能补写进中文原摘要。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>在相同燃料棒基准上比较最大值保持与守恒映射，跟踪温度峰值、积分热量和包壳应力误差。</li><li>在高保真耦合快照上建立POD代理，单独评估映射误差、时间分裂误差和降阶误差，采用残差或训练域检查触发回退。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要明确ORNL-19算例及温度/压力边界传递；核对几何、热源、网格对应、时间步、插值定义、误差分母和验证数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>ICoCo<small>Interface for Code Coupling</small></h4><p>统一耦合程序调用和数据交换的接口规范。</p><p class="context"><b>本文语境</b> 负责程序接口组织，本身不保证耦合守恒或物理准确。</p></div><div class="term"><h4>算符分离<small>operator splitting</small></h4><p>把耦合演化分为依次求解的子问题。</p><p class="context"><b>本文语境</b> 计算组织更方便，但要核对时间分裂和反馈误差。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为了获得更加准确的燃料棒热-力边界,基于ICoCo规范将燃料性能分析程序KMC-Fueltra和子通道分析程序KMC-Subtra进行耦合,开发了快堆燃料组件多物理场耦合性能分析程序。采用C++语言编写的Supervisor程序作为驱动耦合的主程序,时间耦合采用算符分离方案,空间耦合采用区域重叠方案,建立了多根燃料棒并行计算的半网格法和全网格法。基于MEDCoupling库实现网格映射和数据插值,插值原则采用最大值原则。选取ORNL-19燃料组件的瞬态算例对包壳外表面温度、冷却剂温度、冷却剂压力等耦合参数在数据传递前、后的一致性进行验证。结果表明,包壳外表面温度完全一致,冷却剂温度的最大相对误差为0.15%,冷却剂压力的最大相对误差为1.4%,可以证明耦合程序的正确性。本文研究可为液态金属冷却快堆燃料棒的多物理场耦合服役性能分析提供借鉴和指导。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The development of a multi-physics coupling program for the fast reactor fuel assembly was presented in this paper.The fuel performance analysis code KMC-Fueltra and the sub-channel analysis code KMC-Subtra were coupled based on the ICoCo interface to obtain more accurate thermomechanical boundary of fuel rods in the fuel performance analysis.KMC-Fueltra is a steady-state and transient performance analysis code developed for the fuel element in the liquid metal cooled fast reactor,aimed at predicting and evaluating the evolution of thermal,mechanical,and irradiation performance of the fuel element during service.KMC-Subtra is a sub-channel analysis code developed based on the thermal-hydraulic characteristics of lead-cooled fast reactors,used to calculate key parameters such as temperature and pressure of the coolant.ICoCo is a universal coupling interface that defines the essential functions required in a numerical simulation program.This allows the main code to arbitrarily call these functions when coupling with other codes,enabling operations such as time step advancement,mesh mapping,and data transfer.Numerical simulation programs must provide these functions to the ICoCo interface according to the evolution of the physical problem and specify the appropriate method to be called at specific times.The Supervisor code written in C++language was used as the main code to run the coupling program.KMC-Fueltra and KMC-Subtra were wrapped to different essential functions in the form of dynamic library or static library according to the ICoCo interface,which could be called by the Supervisor code.The operator separation scheme was used for time coupling,and the region overlap scheme was used for spatial coupling.The half-mesh method and full-mesh method,which could be chosen by the specific research problem and computer hardware condition,for parallel calculation of multiple fuel rods were established using OpenMPI library.The mesh mapping and data interpolation were implemented based on the MEDCoupling library,and the maximum value principle was used as the interpolation principle.The outer surface temperature of the cladding,the coolant temperature,and the coolant pressure were chosen as the coupling parameters between KMC-Fueltra and KMC-Subtra based on the physical equations.Verification of the data transfer interface of the coupling program was conducted with these three key parameters from the ORNL-19 fuel assembly benchmark case.The outer surface temperature of the cladding is completely consistent,the relative error of the coolant temperature is 0.15%,and the relative error of the coolant pressure is 1.4%,which can prove the accuracy of the coupling program.This study can provide reference and guidance for the multi-physics coupled service performance analysis of fuel rods in the liquid metal cooled fast reactor.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203596230" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.7538/yzk.2025.youxian.0514" target="_blank" rel="noopener">DOI ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="控制棒肿胀形貌及分布对落棒时间的影响分析研究  控制棒 · 肿胀与落棒裕度 中国核电 · 2026 · 吕志鹏 刘维超 方润杰 李长征 李伟才 辜培勇 控制棒 · 肿胀与落棒裕度 ansys热工结构 辐照肿胀 irradiation swelling 辐照引起材料体积或形状变化的一类机制。 吸收体膨胀可推动包壳外变形并影响间隙。 保守包络 conservative envelope 在限定对象和不确定度域内覆盖不利响应的分析结果。 最常见形貌不是天然的最坏情况。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>控制棒 · 肿胀与落棒裕度</span><span>控制棒 · 肿胀与落棒裕度</span><span>ANSYS热工结构</span></div>
+          <h2>控制棒肿胀形貌及分布对落棒时间的影响分析研究</h2>
+          
+          <p class="meta">中国核电 · 2026 · 吕志鹏 刘维超 方润杰 李长征 李伟才 辜培勇</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>依据在运机组控制棒池边检查结果建立典型肿胀形貌与轴向分布模型，分析形貌特征参数对落棒时间的影响。</li><li>重点对三角形肿胀的最大径向肿胀位置进行分析，以确定该形貌下保守落棒时间。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把现场肿胀形貌的离散性纳入简化落棒分析，改进只用单一最大直径描述的思路。</li></ul></section>
+        <section><h3>不足</h3><ul><li>最大概率轴向范围不等于最不利尾部；保守性结论只适用于作者检查的形貌和参数域。</li><li>摘要没有给出具体尺寸、摩擦、流体模型、时间变化或独立落棒试验误差；不能据此判定某机组剩余寿命。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>在同一控制棒型式内，结合形貌测量误差、偏心和导向间隙，检验概率代表范围是否遗漏低概率但高落棒阻力的组合。</li><li>比较最大直径、分段形貌和接触位置描述的预测能力；使用独立落棒试验而非同一模型结果判断保守包络。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要有形貌与轴向范围参数线索；核对池边数据、特征参数、导向间隙、阻力模型和落棒时间验证。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>辐照肿胀<small>irradiation swelling</small></h4><p>辐照引起材料体积或形状变化的一类机制。</p><p class="context"><b>本文语境</b> 吸收体膨胀可推动包壳外变形并影响间隙。</p></div><div class="term"><h4>保守包络<small>conservative envelope</small></h4><p>在限定对象和不确定度域内覆盖不利响应的分析结果。</p><p class="context"><b>本文语境</b> 最常见形貌不是天然的最坏情况。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>控制棒肿胀是影响控制棒使用寿命的关键影响因素,吸收体材料受辐照影响发生肿胀,导致控制棒包壳向外变形,当吸收体所受辐照达到一定程度后,使得控制棒发生肿胀,进而影响控制棒落棒时间,严重情况下会导致落棒时间超限,影响反应堆的安全运行。国内外的研究显示,控制棒的肿胀一般集中在吸收体的下端部区域,且控制棒的肿胀形貌具有一定的分散性。为了更好地研究不同肿胀形貌对落棒时间的影响,本文基于中广核在运机组控制棒池边检查结果,建立了几种典型肿胀形貌模型,并选取最大概率轴向肿胀范围,对不同类型肿胀形貌分别采用一系列特征参数,研究不同形貌下具体参数对落棒时间的影响规律。最后,通过控制棒三角形肿胀的最大径向肿胀位置进行特定分析以确定该形貌下保守的落棒时间。相关工作为获得契合机组运行实际的控制棒落棒时间的简化分析提供了依据。研究结果对制定控制棒运行策略、提升反应堆运行安全与经济性具有重要的指导意义。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The swelling of control rods is a critical factor affecting their service life.The absorption material undergoes swelling due to irradiation,causing the control rod cladding to deform outward.When the irradiation of the absorption body reaches a certain level,it leads to swelling of the control rod,which in turn affects the rod drop time.In severe cases,this can result in the drop time exceeding limits,affecting the safe operation of the reactor.Both domestic and international studies have shown that control rod swelling generally concentrates in the lower end region of the absorption body and exhibits a certain degree of dispersion in its swelling morphology.To better study the effects of different swelling morphologies on the drop time,this paper is based on the pool-side inspection results of the control rod in an in-service unit of CGN,several typical swelling morphologies are given,and the maximum probability axial swelling range is selected.It employs a series of characteristic parameters for different types of swelling shapes to investigate the influence of specific parameters on the drop time under various shapes.Finally,a specific analysis is performed through the maximum radial swelling location of the triangular swelling of the control rod to determine the conservative falling rod time under this morphology.This work provides a basis for obtaining a simplified analysis of control rod drop times that aligns with the actual operation of the unit.The study results are of significant guiding importance for formulating control rod operation strategies and enhancing the safety and economy of reactor operation.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203753490" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="控制棒驱动机构隔热套组件流致振动磨损研究  控制棒 · 流致振动与磨损 机械工程师 · 2026 · 陆子 沈平川 张珂 齐欢欢 黄茜 控制棒 · 流致振动与磨损 ansys热工结构 大涡模拟 large-eddy simulation (les) 直接解析较大湍流结构并对较小尺度建模的流体计算方法。 提供动态流体激励，但仍需网格/时步核验。 耗散能磨损 dissipated-energy wear model 用接触摩擦耗散与经标定系数估计材料损失的方法。 系数、接触状态和环境条件决定可迁移性。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>控制棒 · 流致振动与磨损</span><span>控制棒 · 流致振动与磨损</span><span>ANSYS热工结构</span></div>
+          <h2>控制棒驱动机构隔热套组件流致振动磨损研究</h2>
+          
+          <p class="meta">机械工程师 · 2026 · 陆子 沈平川 张珂 齐欢欢 黄茜</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以能量耗散模型预测隔热套磨损，用敏感性分析筛选参数，并以LES研究运行流场及渐进磨损。</li><li>摘要报告径向支承间隙增大时磨损加快；导向罩开槽后流速、旋涡及横向流体载荷降低，法兰和支承处磨损减少。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把流场、支承间隙与渐进磨损反馈串联，用于比较导向罩优化方案。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给出流速、间隙、磨损系数、改善百分比或实测磨损验证；“显著降低”不能自行换成定量寿命收益。</li><li>开槽可改变流阻、刚度和隔热功能，单独降低振动载荷不代表所有功能优化。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>建立温度相关支承间隙和磨损演化的接触模型，比较固定间隙与逐步更新间隙的响应差异。</li><li>POD快照应覆盖间隙变化及接触状态切换，以磨损功和接触峰值误差而非流场平均误差评价降阶；LES训练成本需单独计入。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 存在运行流场、径向间隙和能量耗散参数线索；核对LES网格/时步、激励谱、支承刚度、磨损系数及开槽后的隔热验证。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>大涡模拟<small>large-eddy simulation (LES)</small></h4><p>直接解析较大湍流结构并对较小尺度建模的流体计算方法。</p><p class="context"><b>本文语境</b> 提供动态流体激励，但仍需网格/时步核验。</p></div><div class="term"><h4>耗散能磨损<small>dissipated-energy wear model</small></h4><p>用接触摩擦耗散与经标定系数估计材料损失的方法。</p><p class="context"><b>本文语境</b> 系数、接触状态和环境条件决定可迁移性。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>控制棒驱动机构(Control Rod Drive Mechanism,CRDM)的隔热套组件易发生流致振动现象,从而产生磨损,使得反应堆运行安全受到威胁。因此,探究隔热套组件磨损机制并抑制其磨损是十分必要的。文中基于能量耗散理论建立了磨损预测模型,通过敏感性分析确认了影响隔热套组件磨损速度的关键参数;进一步采用LES方法对运行工况的隔热套组件开展数值模拟研究,并提出了渐进式磨损的计算方法;最后对比论证了隔热套导向罩开槽优化设计方案的可靠性和功能性。研究发现,隔热套组件径向支承处的间隙值会影响磨损速度,磨损速度随着间隙的增大而加快。改进后隔热套组件导向罩流场区域的流速下降,漩涡的形成被抑制,横向流体载荷大幅减弱,法兰与径向支承处的磨损体积显著降低。该研究结果可为CRDM隔热套组件磨损预测及优化设计提供重要理论支撑。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The thermal sleeve components of the control rod drive mechanism(CRDM)are prone to wear and tear due to flow-induced vibration,which can lead to safety hazards during reactor operation.Therefore,it is necessary to explore the wear mechanism of the heat insulation sleeve component and inhibit its wear.This paper establishes a wear prediction model based on energy dissipation theory,and confirms the key parameters that affect the wear speed of the thermal sleeve component through sensitivity analysis.Furthermore,the LES method is used to conduct numerical simulation research on the thermal sleeve component under operating conditions,and a progressive wear calculation method is proposed.Finally,the reliability and functionality of the optimized design scheme for slotting the thermal sleeveguide housing are compared and demonstrated.Research proves that the clearance value at the radial support of the thermal sleeve component has a significant impact on the wear rate,which accelerates with the increase of clearance.The improved thermal sleeve component reduces the flow velocity in the flow field area of the guide housing,suppresses vortex formation,significantly reduces the lateral fluid load,and significantly reduces the wear volume at the flange and radial support.The research results can provide important theoretical support for the wear prediction and optimal design of CRDM thermal sleeve components.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203999933" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于多体动力学的控制棒落棒过程动力学仿真与分析  控制棒 · 刚柔耦合落棒 动力学与控制学报 · 2026 · 张宇晨 高一鸣 武廷科 刘铸永 岳题 郑乐乐 控制棒 · 刚柔耦合落棒 ansys热工结构 刚柔耦合 rigid-flexible coupling 同时表示刚体运动和弹性变形的动力学建模。 变形影响导向间隙与接触；不能仅按刚体落下计算。 hertz接触 hertzian contact 基于一定几何与弹性假设的局部接触力学描述。 需核对薄壁、塑性或大接触区域是否适用。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>控制棒 · 刚柔耦合落棒</span><span>控制棒 · 刚柔耦合落棒</span><span>ANSYS热工结构</span></div>
+          <h2>基于多体动力学的控制棒落棒过程动力学仿真与分析</h2>
+          
+          <p class="meta">动力学与控制学报 · 2026 · 张宇晨 高一鸣 武廷科 刘铸永 岳题 郑乐乐</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>面向一种超临界堆组件建立控制棒—通道刚柔耦合多体模型，利用流固耦合数据拟合流体阻力与落棒速度关系。</li><li>用Hertz接触和库仑摩擦计算碰撞及摩擦，输出落棒时间/碰撞力，并与有限元结果比较，研究棒和通道变形的影响。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>通过阻力近似关系减少在线流体计算，并以刚柔耦合多体模型快速模拟接触落棒。</li></ul></section>
+        <section><h3>不足</h3><ul><li>与有限元模型一致是模型间对照，摘要未说明独立实验验证；两个模型共享假设时可能共同有偏差。</li><li>单一速度—阻力拟合可能不能覆盖偏心、间隙变化、非定常流动及其他堆型；Hertz接触与恒定摩擦的适用范围需核对。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>按间隙、形变和速度扩展阻力数据库，以未参与拟合的变形与接触组合盲测落棒时间。</li><li>对比当前近似、多参数代理和状态切换POD，以超时漏判、最大碰撞力及包含训练成本的提速评估增量。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要披露超临界堆对象、阻力拟合与接触/摩擦模型；核对几何、刚度、初始状态、流体工况、拟合范围与模型/试验对照。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>刚柔耦合<small>rigid-flexible coupling</small></h4><p>同时表示刚体运动和弹性变形的动力学建模。</p><p class="context"><b>本文语境</b> 变形影响导向间隙与接触；不能仅按刚体落下计算。</p></div><div class="term"><h4>Hertz接触<small>Hertzian contact</small></h4><p>基于一定几何与弹性假设的局部接触力学描述。</p><p class="context"><b>本文语境</b> 需核对薄壁、塑性或大接触区域是否适用。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在事故工况下,控制棒的下落规律及下落时间是核电站安全分析的重要内容.本文针对一种超临界堆控制棒组件,基于多体动力学理论,建立了控制棒与通道的多体系统刚柔耦合动力学模型.通过流固耦合计算数据,得到流体阻力与控制棒下落速度对应关系式.利用该流体阻力近似公式和所建的多体动力学模型,可以实时高效地计算控制棒在不同速度时的流体阻力.然后分别采用赫兹(Hertz)接触理论及库仑摩擦力理论计算碰撞力和摩擦力,对落棒过程进行了动力学仿真计算,得到落棒时间与碰撞力等关键数据,并通过与有限元模型计算结果的对比验证了多体动力学模型的正确性.然后分析了控制棒与通道变形对落棒过程的影响.本文所提出的基于多体动力学的建模方法,能够对控制棒落棒过程进行快速的动力学仿真分析,对控制棒与导向通道设计具有重要参考意义.</p></div>
+          <div><h3>English abstract</h3><p lang="en">The drop law and drop time of control rods have considerable significance for the safety analysis of nuclear power plants under accident conditions.In this paper,a rigid-flexible coupling dynamic model of control rod and guide channel is established for a control rod assembly in a supercritical reactor based on multibody dynamics theory.The corresponding relationship between fluid resistance and control rod dropping velocity is obtained by fluid-structure interaction simulation data,and an approximate formula of fluid resistance is given.The fluid resistance of the control rod at different velocities can be calculated efficiently using this approximate formula.Then Hertz contact theory and Coulomb friction theory are used to calculate the contact force and friction force respectively.Drop time and contact force are obtained by the dynamic simulation of dropping process.The correctness of multibody dynamic model is verified by comparison with the results of finite element model,and the influence of the deformations of control rod and guide channel on dropping process is analyzed.Dynamic simulation analysis of control rod dropping process can be efficiently carried out by the multibody dynamics modeling method presented in this paper,which has important reference significance for the design of control rods and guide channels.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204225018" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="压水堆燃料组件压紧板弹簧力学分析模型开发与验证  燃料组件 · 支承与压紧力 力学与实践 · 2026 · 刘亚妮 陈忠村 缪昕颖 彭遥 金鑫 燃料组件 · 支承与压紧力 ansys热工结构 水力提升力 hydraulic uplift force 冷却剂流动和压差对组件产生的向上合力。 需由压紧系统和有效重量抵抗。 辐照应力松弛 irradiation-induced stress relaxation 在辐照条件下应力随时间变化或降低的材料响应。 影响弹簧压紧能力，须与组件增长分别考虑。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>燃料组件 · 支承与压紧力</span><span>燃料组件 · 支承与压紧力</span><span>ANSYS热工结构</span></div>
+          <h2>压水堆燃料组件压紧板弹簧力学分析模型开发与验证</h2>
+          
+          <p class="meta">力学与实践 · 2026 · 刘亚妮 陈忠村 缪昕颖 彭遥 金鑫</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>考虑辐照、温度与板弹簧力学行为，开发CACTUS分析燃料组件压紧系统。</li><li>使用核电厂池边实测数据验证；摘要称预测能够包络实测，满足作者所用工程保守性要求。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提供包含堆内效应的板弹簧工程分析实现，并通过现场测量作对照。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“能够包络”没有说明包络方向与宽度；压紧力不足和过大均可能不利，不能把高估压紧力直接视为防跳动的保守估计。</li><li>摘要未给出最低压紧力、水力提升力、材料松弛参数或验证误差；软件填补国内工具空缺不等于物理方法首创。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>建立最低压紧裕度与最高轴向载荷/导向弯曲裕度的联合评价，分别验证有利与不利方向的包络。</li><li>在ANSYS支承模型中以温度、辐照松弛和组件增长为参数；用独立周期数据验证最不利力和变形，而不只比较平均值。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要有温度、辐照与池边验证线索；核对板弹簧几何、材料、本构、压紧特性曲线、包络定义和实测工况。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>水力提升力<small>hydraulic uplift force</small></h4><p>冷却剂流动和压差对组件产生的向上合力。</p><p class="context"><b>本文语境</b> 需由压紧系统和有效重量抵抗。</p></div><div class="term"><h4>辐照应力松弛<small>irradiation-induced stress relaxation</small></h4><p>在辐照条件下应力随时间变化或降低的材料响应。</p><p class="context"><b>本文语境</b> 影响弹簧压紧能力，须与组件增长分别考虑。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在反应堆运行期间,冷却剂流动所产生的水力提升力可能引起燃料组件向上跳动。为此,需在燃料组件上管座位置设置压紧系统,其核心部件为压紧板弹簧及相应的紧固螺钉。本文建立能够综合考虑辐照效应、温度效应与弹簧力学特性的力学分析模型,以评估压紧板弹簧在堆内辐照环境下的力学行为,并验证燃料组件压紧系统设计是否满足功能要求。基于该模型,开发了燃料组件压紧板弹簧力学分析软件(简称CACTUS),并采用核电厂池边检查实测数据对软件进行验证。软件计算结果能够包络电厂实测数据,满足工程应用中的保守性要求。该软件的自主研发解决了国内燃料组件压紧板弹簧力学分析工具缺失的问题,可为自主燃料组件顺利入堆提供支撑。</p></div>
+          <div><h3>English abstract</h3><p lang="en">During reactor operation,the hydraulic lift generated by coolant flow may cause fuel assemblies to bounce upward.To address this,a hold-down system must be installed at the upper nozzle of the fuel assembly,with its core components being the hold-down plate spring and corresponding fastening screws.This paper establishes a mechanical analysis model that comprehensively considers irradiation effects,temperature effects,and the mechanical properties of the spring to evaluate the mechanical behavior of the hold-down plate spring under in-reactor irradiation conditions,and to verify whether the design of the fuel assembly hold-down system meets functional requirements.Based on the above model,a mechanical analysis software for fuel assembly hold-down plate springs(referred to as&quot;CACTUS&quot;)was developed and validated using measured data from in-pool inspection at nuclear power plants.The software calculation results can envelop the actual measured data from power plants,satisfying the conservatism requirements in engineering applications.The independent development of this software addresses the lack of domestic tools for mechanical analysis of fuel assembly hold-down plate springs,providing support for the successful loading of independently developed fuel assemblies into reactors.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204283582" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.6052/1000-0879-26-046" target="_blank" rel="noopener">DOI ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="辐照后燃料组件格架宽度测量技术研究  燃料组件 · 变形测量与验证 科学技术创新 · 2026 · 阳雷 高三杰 杨帆 燃料组件 · 变形测量与验证 ansys热工结构 线性可变差动变压器 linear variable differential transformer (lvdt) 把位移转化为电信号的测量传感器。 这里测量格架宽度，系统误差还包含探头与定位。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>燃料组件 · 变形测量与验证</span><span>燃料组件 · 变形测量与验证</span><span>ANSYS热工结构</span></div>
+          <h2>辐照后燃料组件格架宽度测量技术研究</h2>
+          
+          <p class="meta">科学技术创新 · 2026 · 阳雷 高三杰 杨帆</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>面向辐照后燃料组件变形，研究格架宽度LVDT测量系统，并在宽度测量标样上作工艺试验。</li><li>作者认为系统功能和精度满足检查要求；该数据路线可用于组件变形评价。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把格架宽度检查的测量工艺与标样试验落实到组件变形评估。</li></ul></section>
+        <section><h3>不足</h3><ul><li>标样验证不能自动代表水下、辐照样品和远程操作场景下的综合测量精度。</li><li>摘要没有给出精度、测量范围、重复性或不确定度预算；单个格架宽度也不足以重建全组件弯曲或控制棒可插入性。</li></ul></section>
+        <section><h3>未来方向</h3><ul><li>摘要写明研究目标与应用价值，未列出具体后续研究计划。</li><li>建立标样到实际测量的温漂、探头接触和定位误差预算，将宽度观测映射到ANSYS变形预测的可比较输出。</li><li>将多高度格架宽度与位姿数据联合识别低阶形变参数，先检验可辨识性，再用于肿胀/弯曲与落棒裕度校准。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要披露标样与LVDT工艺试验；核对量程、精度、温漂、定位方式、标样校准和实际组件测量数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>线性可变差动变压器<small>linear variable differential transformer (LVDT)</small></h4><p>把位移转化为电信号的测量传感器。</p><p class="context"><b>本文语境</b> 这里测量格架宽度，系统误差还包含探头与定位。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核电站反应堆燃料组件在运行期间受到高温、高压和高辐射环境影响,可能会发生变形的情况。当变形严重时会导致装卸料困难、控制棒不能完全插入等安全事故。因此,对辐照后燃料组件的变形程度进行测量和评估是确保反应堆安全运行的有效手段,而燃料组件格架宽度变化程度是评价燃料组件变形程度的关键指标之一。本研究即是以燃料组件为对象,通过开展格架宽度LVDT测量技术研究,在格架宽度测量标样上进行工艺试验,确定了检查系统的功能性和测量精度满足检查要求,为后续对燃料组件变形程度进行综合评价提供了技术支撑。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The fuel assembly of nuclear power plant reactor may undergo deformation during operation due to the influence of high temperature,high pressure and high radiation environment.When the deformation is severe,it can lead to safety accidents such as difficulty in loading/unloading fuel assembly and incomplete insertion of control rods.Therefore,measuring and evaluating the degree of deformation of fuel assemblies after irradiation is an effective means to ensure the safe operation of reactors,and the degree of change in the width of fuel assembly grids is one of the key indicators for evaluating the degree of deformation of fuel assembly.This study focuses on the fuel assembly.Through conducting LVDT measurement technology research on grid width,process experiments were conducted on grid width measurement standard to determine that the functionality and measurement accuracy of the inspection system meet the inspection requirements.This provides technical support for the comprehensive evaluation of fuel assembly deformation in the future.</p></div>
+        </div>
+      </details>
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202749994" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">按核材料、控制棒、组件支承和耦合降阶四个模块给出课题，并检验错误前提、验证层次、成本与外推风险。以下POD方案为分析推导，不是今日论文已经实现的结果。</p><article class="opportunity">
+          <div class="opportunity-head"><span>中期；先确认材料数据</span><h3>核材料 × 热工结构：分开校准蠕变和延性，再检验间隙/应变裕度</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>合金蠕变比较与辐照/吸氢拉伸已有数据；可检验增量是材料状态误差如何改变包壳接触、热阻和局部应变裕度，而非再做一张材料优劣排序表。</p></section>
+            <section><h4>为什么值得开展</h4><p>在材料与试验对象一致、存在独立验证曲线时，可形成可复现的数据到构件响应链；缺少完整数据时不宜立刻做复杂多尺度模型。</p></section>
+            <section><h4>建议工作</h4><ol><li>下载核对两篇的牌号、织构、辐照/含氢状态和试验几何，不把不同材料与加载数据强行合并。</li><li>分别标定蠕变和环向弹塑性/延性模型，用独立温度—应力组合盲测。</li><li>将参数区间传入ANSYS燃料—包壳模型，报告温度、间隙、接触压力和局部应变误差，并区分材料误差与边界误差。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>识别强度改善与延性降低导致的不同工程后果。</li><li>给出材料不确定度对热接触和变形预测的敏感性与可验证适用域。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7202719712</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7203596234</li></ul></div><div><h4>主要风险</h4><ul><li>公开摘要不足以获得材料卡；辐照数据、热室试验和样品获取成本高。</li><li>已有BISON氢迁移与热机械模型和氢影响蠕变综述；仅把已有本构放入ANSYS缺乏方法新颖性。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>有条件优先；可从简化模型启动</span><h3>控制棒 × 测量 × POD/ROM：关注形貌尾部与接触切换的落棒超时漏判</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>肿胀形貌、多体落棒和流致磨损模型均已存在。可研究测量误差与少见形貌组合是否使快速模型漏判落棒超时，尤其是接触状态切换附近。</p></section>
+            <section><h4>为什么值得开展</h4><p>同一型式的独立试验与误差比较能支撑工程价值；仅把POD加到落棒仿真上不构成充分创新。</p></section>
+            <section><h4>建议工作</h4><ol><li>选定一种控制棒及导向型式，核实间隙、形貌、流体阻力和摩擦数据；不同堆型只作方法比较，不混用定量参数。</li><li>以已有多体/有限元模型为基线，扫描肿胀位置、偏心、间隙和温度，记录接触状态及落棒时间。</li><li>比较单全局基、按接触状态分组的局部POD与现有阻力拟合，在未参与训练的形貌上测试超时漏判、碰撞峰值及计算成本。</li><li>把几何测量不确定度单独传播；超出快照域或接触切换失稳时拒绝在线预测并回退高保真。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>识别概率代表形貌与最不利形貌之间的差距。</li><li>在固定训练预算下证明或否定状态分组对安全输出的改善。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7203753490</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7203999933</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7204225018</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7202749994</li></ul></div><div><h4>主要风险</h4><ul><li>池边几何与实际落棒试验未必公开；LVDT格架宽度不能直接代表控制棒肿胀。</li><li>Hertz/库仑简化、恒定磨损系数和同源模型对照可能共同有偏。</li><li>接触ROM、聚类及燃料接触超降阶已有工作，必须查新并报告训练与在线总成本。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>近期可做简化对照；实堆结论需数据</span><h3>燃料组件 × 支承：最低压紧能力与最高轴向载荷的联合裕度</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>压紧力模型与池边验证已存在；只追求更大的压紧力可能忽视导向管受压弯曲和控制棒插入裕度。需同时核对低力与高力两类不利边界。</p></section>
+            <section><h4>为什么值得开展</h4><p>在公开或授权几何下可先建立板弹簧—组件支承简化模型；有跨周期数据后才能形成可信工程参数或优化结论。</p></section>
+            <section><h4>建议工作</h4><ol><li>定义净压紧能力、水力提升力和轴向载荷的各自符号与评价量。</li><li>用温度、辐照松弛、组件增长和制造公差驱动ANSYS弹簧/导向模型，分开寻找最低压紧与最大弯曲工况。</li><li>用独立周期的力—位移及形变数据检验包络方向、宽度和超限漏判；再评估优化是否把一种风险转移成另一种。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>给出两类裕度竞争的参数边界，而非单一“保守力”曲线。</li><li>量化测量误差和材料松弛误差对支承设计判断的影响。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7204283582</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7202749994</li></ul></div><div><h4>主要风险</h4><ul><li>当前摘要缺少材料、松弛率和有效提升力数据；不应自行给出真实机组安全限值。</li><li>压紧力增长诱发导向弯曲已见机构报告；联合考虑本身不能声称首次。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>中期；确认高保真数据和接口</span><h3>耦合 × POD/ROM：同时控制接口守恒误差和安全峰值误差</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>ICoCo耦合及POD燃料热工预测已有先行工作；仍可检验最大值保持、守恒映射与降阶截断如何共同影响热点和应力，而不只是传递前后的一致性。</p></section>
+            <section><h4>为什么值得开展</h4><p>如果可在同一公开燃料棒基准上分解三类误差并提供拒绝预测策略，可形成验证方法贡献；接通接口或报告平均场提速不充分。</p></section>
+            <section><h4>建议工作</h4><ol><li>建立公开简化子通道—燃料热结构基准，先检查全阶耦合能量平衡及网格/时间步敏感性。</li><li>采集不同热源、入口边界与间隙状态的高保真快照，记录数据域；比较全局POD与分区/目标输出加权基，并说明能量截断不等于峰值保证。</li><li>在相同数据划分下比较接口映射与降阶组合，报告积分热量、最高温度/应力、拒绝率、离线和在线成本。</li><li>对接触闭合及训练域外参数设高保真回退，使用独立工况与可获得实验作交叉验证。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>把接口、时间分裂和ROM误差分开量化，避免小传递误差掩盖物理误差。</li><li>证明安全输出改进是否超过额外训练、映射与回退成本。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7203596230</li><li>https://qikan.cqvip.com/Qikan/Article/Detail?id=7202719712</li></ul></div><div><h4>主要风险</h4><ul><li>KMC程序与完整快照可得性未确认；本机MAPDL可用不代表子通道数据可用。</li><li>保守重映射和燃料POD代理已存在；残差估计、加权POD与超降阶均需更系统查新。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">定向查新确认氢—蠕变、三维氢化物预测、接触降阶、快速落棒、弹簧支承与守恒耦合已有直接工作；新颖性应落在可证伪的误差/安全输出增量。</p><p class="research-note">检索范围：出版社摘要、期刊原始元数据、INL机构出版记录/报告和SALOME官方文档。快速定向检索；部分DOI与Comptes Rendus页面访问失败，未绕过，使用其余可核原始来源。非穷尽检索。　检索时间：2026-09-29T06:15:46.455372+00:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中期；先确认材料数据</span><h3>核材料 × 热工结构：分开校准蠕变和延性，再检验间隙/应变裕度</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 保留可验证课题，取消“方法组合本身即创新”的前提；资源可得性决定是否启动。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>相关原始论文、机构报告或官方文档已实现该方向的重要基础，见下方代表性工作。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>合金蠕变比较与辐照/吸氢拉伸已有数据；可检验增量是材料状态误差如何改变包壳接触、热阻和局部应变裕度，而非再做一张材料优劣排序表。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>值得开展基准与数据可得性评估，尚未证明拟议增量新颖或优于已有方法；盲测失败应缩小或否定该方案。</p></section>
+            <section><h4>建议论文切口</h4><p>下载核对两篇的牌号、织构、辐照/含氢状态和试验几何，不把不同材料与加载数据强行合并。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>分别标定蠕变和环向弹塑性/延性模型，用独立温度—应力组合盲测。</li><li>将参数区间传入ANSYS燃料—包壳模型，报告温度、间隙、接触压力和局部应变误差，并区分材料误差与边界误差。</li></ul><h4>新颖性风险</h4><ul><li>公开摘要不足以获得材料卡；辐照数据、热室试验和样品获取成本高。</li><li>已有BISON氢迁移与热机械模型和氢影响蠕变综述；仅把已有本构放入ANSYS缺乏方法新颖性。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.jnucmat.2017.10.015" target="_blank" rel="noopener">Effects of hydrogen on thermal creep behaviour of Zircaloy fuel cladding（2018）↗</a><p>已综述氢与蠕变耦合，不能把该关联当作新发现。</p></li><li><a href="https://doi.org/10.1016/j.pnucene.2018.02.012" target="_blank" rel="noopener">Three-dimensional multi-physics modeling of hydrogen and hydride distribution in zirconium alloy cladding（2018）↗</a><p>已用BISON研究温度与氢化物分布；拟议研究需明确数据或验证增量。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>有条件优先；可从简化模型启动</span><h3>控制棒 × 测量 × POD/ROM：关注形貌尾部与接触切换的落棒超时漏判</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 保留可验证课题，取消“方法组合本身即创新”的前提；资源可得性决定是否启动。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>相关原始论文、机构报告或官方文档已实现该方向的重要基础，见下方代表性工作。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>肿胀形貌、多体落棒和流致磨损模型均已存在。可研究测量误差与少见形貌组合是否使快速模型漏判落棒超时，尤其是接触状态切换附近。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>值得开展基准与数据可得性评估，尚未证明拟议增量新颖或优于已有方法；盲测失败应缩小或否定该方案。</p></section>
+            <section><h4>建议论文切口</h4><p>选定一种控制棒及导向型式，核实间隙、形貌、流体阻力和摩擦数据；不同堆型只作方法比较，不混用定量参数。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>以已有多体/有限元模型为基线，扫描肿胀位置、偏心、间隙和温度，记录接触状态及落棒时间。</li><li>比较单全局基、按接触状态分组的局部POD与现有阻力拟合，在未参与训练的形貌上测试超时漏判、碰撞峰值及计算成本。</li><li>把几何测量不确定度单独传播；超出快照域或接触切换失稳时拒绝在线预测并回退高保真。</li></ul><h4>新颖性风险</h4><ul><li>池边几何与实际落棒试验未必公开；LVDT格架宽度不能直接代表控制棒肿胀。</li><li>Hertz/库仑简化、恒定磨损系数和同源模型对照可能共同有偏。</li><li>接触ROM、聚类及燃料接触超降阶已有工作，必须查新并报告训练与在线总成本。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.3390/math10091495" target="_blank" rel="noopener">Condition Number and Clustering-Based Efficiency Improvement of Reduced-Order Solvers for Contact Problems Using Lagrange Multipliers（2022）↗</a><p>包含核燃料芯块—包壳接触基准、POD/超降阶与聚类；局部接触降阶本身已有直接先例。</p></li><li><a href="https://doi.org/10.1016/j.nucengdes.2025.114555" target="_blank" rel="noopener">Dropping analysis of control rod in mobile liquid Pb-Bi micro-reactors under transportation load case（2026卷期）↗</a><p>已有复杂激励下的快速落棒动力学；其堆型与今日超临界堆不同，只作方法先例。</p></li><li><a href="https://inl.elsevierpure.com/en/publications/an-approach-to-grid-to-rod-fretting-wear-modeling-using-dynamic-m/" target="_blank" rel="noopener">An approach to grid-to-rod fretting wear modeling using dynamic mortar contact（2023）↗</a><p>BISON动态接触已关联燃料、包壳与格架行为；不是隔热套模型，但限制“耦合接触磨损”首创声明。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>近期可做简化对照；实堆结论需数据</span><h3>燃料组件 × 支承：最低压紧能力与最高轴向载荷的联合裕度</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 保留可验证课题，取消“方法组合本身即创新”的前提；资源可得性决定是否启动。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>相关原始论文、机构报告或官方文档已实现该方向的重要基础，见下方代表性工作。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>压紧力模型与池边验证已存在；只追求更大的压紧力可能忽视导向管受压弯曲和控制棒插入裕度。需同时核对低力与高力两类不利边界。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>值得开展基准与数据可得性评估，尚未证明拟议增量新颖或优于已有方法；盲测失败应缩小或否定该方案。</p></section>
+            <section><h4>建议论文切口</h4><p>定义净压紧能力、水力提升力和轴向载荷的各自符号与评价量。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>用温度、辐照松弛、组件增长和制造公差驱动ANSYS弹簧/导向模型，分开寻找最低压紧与最大弯曲工况。</li><li>用独立周期的力—位移及形变数据检验包络方向、宽度和超限漏判；再评估优化是否把一种风险转移成另一种。</li></ul><h4>新颖性风险</h4><ul><li>当前摘要缺少材料、松弛率和有效提升力数据；不应自行给出真实机组安全限值。</li><li>压紧力增长诱发导向弯曲已见机构报告；联合考虑本身不能声称首次。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://pubs.cstam.org.cn/article/doi/10.6052/1000-0879-26-046" target="_blank" rel="noopener">压水堆燃料组件压紧板弹簧力学分析模型开发与验证（2026）↗</a><p>核对期刊题名、作者、DOI与现场验证范围。</p></li><li><a href="https://inldigitallibrary.inl.gov/sites/STI/STI/Sort_129020.pdf" target="_blank" rel="noopener">INL/RPT-24-80116：燃料设计压紧能力与导向变形相关评估（2024报告编号；检索标签日期不作出版日期）↗</a><p>机构报告已指出组件增长/弹簧响应与高轴向载荷妨碍控制棒插入的联系；联合裕度不是空白。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中期；确认高保真数据和接口</span><h3>耦合 × POD/ROM：同时控制接口守恒误差和安全峰值误差</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 保留可验证课题，取消“方法组合本身即创新”的前提；资源可得性决定是否启动。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>相关原始论文、机构报告或官方文档已实现该方向的重要基础，见下方代表性工作。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>ICoCo耦合及POD燃料热工预测已有先行工作；仍可检验最大值保持、守恒映射与降阶截断如何共同影响热点和应力，而不只是传递前后的一致性。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>值得开展基准与数据可得性评估，尚未证明拟议增量新颖或优于已有方法；盲测失败应缩小或否定该方案。</p></section>
+            <section><h4>建议论文切口</h4><p>建立公开简化子通道—燃料热结构基准，先检查全阶耦合能量平衡及网格/时间步敏感性。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>采集不同热源、入口边界与间隙状态的高保真快照，记录数据域；比较全局POD与分区/目标输出加权基，并说明能量截断不等于峰值保证。</li><li>在相同数据划分下比较接口映射与降阶组合，报告积分热量、最高温度/应力、拒绝率、离线和在线成本。</li><li>对接触闭合及训练域外参数设高保真回退，使用独立工况与可获得实验作交叉验证。</li></ul><h4>新颖性风险</h4><ul><li>KMC程序与完整快照可得性未确认；本机MAPDL可用不代表子通道数据可用。</li><li>保守重映射和燃料POD代理已存在；残差估计、加权POD与超降阶均需更系统查新。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://yznkxjs.xml-journal.net/article/doi/10.7538/yzk.2025.youxian.0514" target="_blank" rel="noopener">基于ICoCo规范的快堆燃料组件多物理场耦合性能分析方法（2026卷期）↗</a><p>ICoCo程序耦合与接口一致性已有直接实现。</p></li><li><a href="https://docs.salome-platform.org/latest/dev/MEDCoupling/developer/classMEDCoupling_1_1OverlapDEC.html" target="_blank" rel="noopener">MEDCoupling OverlapDEC官方文档（本次访问版本9.16.0）↗</a><p>已有并行场守恒重映射；不能把使用该库作为新守恒方法。</p></li><li><a href="https://doi.org/10.1016/j.pnucene.2025.106032" target="_blank" rel="noopener">A novel reduced-order model and two-stage optimization strategy for high-efficiency predicting thermal-hydraulic behavior in a 6×6 fuel bundle（2026卷期）↗</a><p>燃料棒束POD加代理的参数预测已存在；需用耦合安全输出验证区分增量。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。</aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
