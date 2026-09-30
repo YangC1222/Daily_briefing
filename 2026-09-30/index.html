@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-09-30 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-09-30 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆与核—热—力多物理场耦合，面向 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-09-30</strong><span>本期日期</span></div><div class="stat"><strong>0</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>4</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 4</button><button data-filter="xmol">X-MOL 0</button><button data-filter="cqvip">维普 4</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">X-MOL关注列表（全部、核能）前2页核查；历史URL去重后的130条候选中，没有可凭完整摘要确认的新增目标核工程论文。英文正式入选0篇，低于10–15篇目标。</aside><div id="papers">
+    <article class="paper-card" data-source="cqvip" data-search="3d打印alsi10mg合金在超临界co2中的腐蚀行为 corrosion behavior of 3d printed alsi10mg alloy in supercritical co2 超临界 co₂ 与增材制造核材料 中国电机工程学报 · 2026年期次（非今日首发） · 郭亭山 王硕 陈雅娜 桂雍 赵钦新 梁志远 核材料与包壳 超临界co₂ 增材制造 超临界co₂ supercritical co₂ 温度和压力高于临界点的二氧化碳，物性随状态变化显著。 本研究在300℃、15 mpa下比较材料腐蚀。 偏析 segregation 合金元素或相在局部富集，可能导致膜层不均。 作者把铸造样品中mg₂si偏析与不连续氧化膜相联系。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>超临界 CO₂ 与增材制造核材料</span><span>核材料与包壳</span><span>超临界CO₂</span><span>增材制造</span></div>
+          <h2>3D打印AlSi10Mg合金在超临界CO2中的腐蚀行为</h2>
+          <p class="title-en">Corrosion Behavior of 3D Printed AlSi10Mg Alloy in Supercritical CO2</p>
+          <p class="meta">中国电机工程学报 · 2026年期次（非今日首发） · 郭亭山 王硕 陈雅娜 桂雍 赵钦新 梁志远</p>
+          <p class="meta">2026年未归档存量文献补读；发表日未核实</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>作者以分子动力学、热力学分析及腐蚀试验比较铸造与3D打印 AlSi10Mg 在300℃、15 MPa超临界CO₂中的表现。</li><li>摘要报告3D打印样品元素分布较均匀、Al₂O₃膜较连续，耐腐蚀与抗渗碳性优于铸造样品。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在同一超临界CO₂工况下把制造路线、偏析、氧化膜连续性与渗碳联系起来；这是作者报告的贡献，非领域首创判断。</li></ul></section>
+        <section><h3>不足</h3><ul><li>仅凭300℃、15 MPa的摘要结果，无法外推到更高温度、长期循环、受力或辐照后的包壳服役。</li><li>摘要称铝合金具有‘优异的热中子吸收能力’，但NIST给出天然铝27在2200 m/s中子的吸收截面约0.231 barn；这不足以支持‘优异吸收’这一未经限定的前提。材料位置、目标中子经济和合金成分必须重新界定。</li><li>未见腐蚀速率、膜厚、重复数及力学性能，不能直接作选材排名。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出后续研究计划。</li></ul><b>分析推导</b><ul><li>建立制造缺陷—氧化膜—热应力联合测试矩阵，测量长时腐蚀、热循环、蠕变与失效。</li><li>先核算中子吸收及活化，再比较铝合金在换热器与堆内构件等不同位置的适用性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对工况、暴露时长、腐蚀速率、膜厚及重复试验；优先复核‘热中子吸收能力’的材料依据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>超临界CO₂<small>supercritical CO₂</small></h4><p>温度和压力高于临界点的二氧化碳，物性随状态变化显著。</p><p class="context"><b>本文语境</b> 本研究在300℃、15 MPa下比较材料腐蚀。</p></div><div class="term"><h4>偏析<small>segregation</small></h4><p>合金元素或相在局部富集，可能导致膜层不均。</p><p class="context"><b>本文语境</b> 作者把铸造样品中Mg₂Si偏析与不连续氧化膜相联系。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铝合金因其优异的热中子吸收能力,在第4代核反应堆的包壳和堆芯结构中具有显著的应用潜力。该文采用分子动力学、热力学和腐蚀实验方法研究铸造和3D打印AlSi10Mg合金在300℃、15 MPa超临界CO2环境中的腐蚀行为。结果表明,铸造AlSi10Mg合金中Mg2Si的偏析行为导致其表面形成不连续、不完整的Al2O3氧化膜,而3D打印AlSi10Mg合金中Al、Si、Mg元素分布均匀,形成连续完整的Al2O3氧化膜。CO2分子在AlSi10Mg合金表面吸附后分解为CO分子和游离碳,部分CO气体分子弥散在富Al氧化膜附近的气体环境中。由于游离碳与Al和Si的成键键长过长,不能形成稳定的碳化物结构,导致碳以游离状态沉积在Al2O3氧化膜表面,无法渗透至氧化膜和基体中。因此,3D打印AlSi10Mg合金在超临界CO2环境中的耐腐蚀性能和抗渗碳性能优于铸造AlSi10Mg合金。研究结果可为第4代超临界CO2核反应堆材料遴选提供依据。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Aluminum alloys hassignificant application potential in the cladding and core structures of fourth-generation nuclear reactors due to their excellent thermal neutron absorption ability.Molecular dynamics,thermodynamic simulations,and corrosion experiments areemployed to investigate the corrosion behavior of the castand 3D printedAlSi10Mg alloy in a supercritical CO2at 300℃and 15 MPa.The results show that the segregation behavior of Mg2Si in the cast AlSi10Mg alloy leads to the formation of a discontinuous and incomplete Al2O3 oxide film on its surface,while the Al,Si and Mg elements in the 3D printed AlSi10Mg alloy are evenly distributed,forming a continuous and complete Al2O3 oxide film.CO2molecules decompose into CO molecules and free carbon after adsorption reaction on the surface of the AlSi10Mg alloy,and some CO gas molecules are dispersed in the gas environment near the Al-rich oxide film.Since the bond length of free carbon with Al and Si is too long,a stable carbide structure can’t be formed,resulting in carbon being deposited on the surface of the Al2O3 oxide film in a free state and unable to penetrate into the oxide film and the matrix.Therefore,the corrosion resistance and carburization resistance of the 3D printed AlSi10Mg alloy in asupercritical CO2environment are better than those of the cast AlSi10Mg alloy.The results can provide a basis for the selection of materials for the fourth-generation supercritical CO2nuclear reactor.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204021238" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="清洁能源中的炭石墨材料 carbon and graphite materials in clean energy 高温气冷堆与熔盐堆核石墨 炭素技术 · 2026年期次（非今日首发） · 传秀云 谷丽萍 气冷堆 熔盐堆 核石墨 核石墨 nuclear graphite 经纯度、微结构和性能控制并用于核设施的石墨材料。 其导热、尺寸和孔隙结构在辐照中演化。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>高温气冷堆与熔盐堆核石墨</span><span>气冷堆</span><span>熔盐堆</span><span>核石墨</span></div>
+          <h2>清洁能源中的炭石墨材料</h2>
+          <p class="title-en">Carbon and Graphite Materials in Clean Energy</p>
+          <p class="meta">炭素技术 · 2026年期次（非今日首发） · 传秀云 谷丽萍</p>
+          <p class="meta">2026年未归档存量文献补读；发表日未核实</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述熔盐堆与高温气冷堆核石墨的结构和性能要求，强调不同堆型、堆内外位置不能套用同一材料标准。</li><li>摘要提出堆内氚捕收、堆外氚去除与放射性核石墨废料处理是不同问题。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把材料选型按堆型和位置重新区分，并把核石墨废料处理纳入材料全寿期讨论；本文为综述而非新实验结果。</li></ul></section>
+        <section><h3>不足</h3><ul><li>‘堆芯内用于氚捕收的炭材料’的构件与工况未在摘要中充分界定，不能直接作为所有熔盐堆或气冷堆的设计要求。</li><li>未给辐照剂量、温度、孔隙率、尺寸变化和热导率数据，不能直接建立热—力寿命模型。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出后续研究计划。</li></ul><b>分析推导</b><ul><li>按堆型/构件位置建立石墨牌号、辐照引起的尺寸变化、导热退化与氧化环境的参数表。</li><li>把石墨服役评估与退役废料处理放在同一全寿期多目标框架，但分别建模验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对熔盐堆与高温气冷堆对应构件、氚行为条件及所引用的辐照尺寸稳定性证据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>核石墨<small>nuclear graphite</small></h4><p>经纯度、微结构和性能控制并用于核设施的石墨材料。</p><p class="context"><b>本文语境</b> 其导热、尺寸和孔隙结构在辐照中演化。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核能是高效稳定的先进清洁能源。本文以熔盐反应堆、高温气冷堆为例,综合分析主要核石墨材料的结构、性能特点。不同的堆型和使用位置对炭材料需求不同:熔盐裂变反应堆需要炭石墨材料,聚变堆则不一定需要。堆芯内、外对炭材料要求不同:堆芯内用于氚捕收的炭材料需满足更高的性能标准;堆芯外用于氚去除的炭材料要求相对低。核石墨废料体量巨大、有放射性,亟需高效处理方法。深入研究核石墨材料对于核能发展至关重要。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Nuclear energy is an efficient and stable advanced clean energy source.The structure,properties of nuclear graphite materials were introduced comprehensively with the examples molten salt reactors and high-temperature gas cooled reactors,respectively.Carbon materials should be varied in the type and location of nuclear reactors.It was required in molten salt fission reactors,not necessarily in fusion reactors,and different between inside and outside the reactor core due to different behavior of tritium and carbon.For capturing tritium inside reactor core,carbon materials have to be graphitized at high-temperature in order to maintain good dimensional stability under strong neutron radiation undergoing conditions,not outside the core in order to remove tritium.For the development of nuclear energy,it is crucial to explore effective methods to treat the wasted nuclear graphite blocks containing radioactive elements.By conducting in-depth research on the microstructure and properties of carbon materials,it is possible to develop high-performance nuclear graphite materials.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203930136" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="选区激光熔化奥氏体不锈钢316l基础耐蚀性能研究 basic corrosion resistance of selective-laser-melted austenitic stainless steel 316l（助手译名） 压水堆316l增材构件 冶金与材料 · 2026年期次（非今日首发） · 杨鸿 邓平 赵永福 邓洋 习佼 压水堆 核材料与包壳 增材制造 slm selective laser melting 粉末床上以激光逐层熔化的增材制造方法。 成形方向和热历史会改变316l组织与腐蚀行为。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>压水堆316L增材构件</span><span>压水堆</span><span>核材料与包壳</span><span>增材制造</span></div>
+          <h2>选区激光熔化奥氏体不锈钢316L基础耐蚀性能研究</h2>
+          <p class="title-en">Basic Corrosion Resistance of Selective-Laser-Melted Austenitic Stainless Steel 316L（助手译名）</p>
+          <p class="meta">冶金与材料 · 2026年期次（非今日首发） · 杨鸿 邓平 赵永福 邓洋 习佼</p>
+          <p class="meta">2026年未归档存量文献补读；发表日未核实</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>摘要比较选区激光熔化316L与316NG锻件的组织、缺陷和基础耐蚀性，报告试验条件下点蚀与晶间腐蚀表现较好。</li><li>作者指出晶粒形态和表面状态影响耐蚀性。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以压水堆构件为应用背景建立增材316L与锻件的基础耐蚀对照；摘要尚未显示堆内服役验证。</li></ul></section>
+        <section><h3>不足</h3><ul><li>‘耐蚀性优于316NG’仅限摘要所述基础试验；其他已发表研究表明长时敏化后SLM 316L点蚀性能可能低于传统316L，故不能作无条件结论。</li><li>未给水化学、表面处理、成形方向、孔隙率、辐照和应力腐蚀条件，亦不能认定核级可用。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出后续研究计划。</li></ul><b>分析推导</b><ul><li>做成形方向×热处理×表面加工×水化学的正交对照，并加入焊接/残余应力与循环载荷。</li><li>以独立样品验证腐蚀与力学性能的联合下限，而非只比较平均值。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对极化/晶间腐蚀试验介质、敏化条件、样品数、表面粗糙度及316NG参照的可比性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>SLM<small>selective laser melting</small></h4><p>粉末床上以激光逐层熔化的增材制造方法。</p><p class="context"><b>本文语境</b> 成形方向和热历史会改变316L组织与腐蚀行为。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>选区激光熔化成形金属材料具有精度高、表面质量好及致密度高等优势,可为核反应堆精密复杂构件制备带来颠覆性突破。奥氏体不锈钢316L是反应堆系统中最关键结构材料,应用极为广泛。而激光增材316L因独特的成形工艺,其组织性能完全不同于传统铸锻件材料,呈现出独特的腐蚀特性。文章针对压水堆关键结构材料316L不锈钢材料,开展了材料的微观组织、显微缺陷及基础耐蚀性研究。结果表明,选区激光熔化316L的组织细小,呈各向异性,耐点蚀性与耐晶间腐蚀性优于316NG锻件;晶粒形态及表面状态是影响耐蚀性的重要因素。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203894792" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="弥散强化钼合金及第二相调控研究进展 progress in dispersion-strengthened molybdenum alloys and second-phase control（助手译名） 空间堆高温结构材料 中国钼业 · 2026年期次（非今日首发） · 王强力 焦奔奇 陈浩 于利 辛昌 李尚义 任广鹏 殷涛 郭林江 胡忠武 张文 空间堆 核材料与包壳 热工结构 ods oxide dispersion strengthening 以细小氧化物颗粒抑制高温位错和晶界运动的强化方法。 钼合金第二相调控的一个分支。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>空间堆高温结构材料</span><span>空间堆</span><span>核材料与包壳</span><span>热工结构</span></div>
+          <h2>弥散强化钼合金及第二相调控研究进展</h2>
+          <p class="title-en">Progress in Dispersion-Strengthened Molybdenum Alloys and Second-Phase Control（助手译名）</p>
+          <p class="meta">中国钼业 · 2026年期次（非今日首发） · 王强力 焦奔奇 陈浩 于利 辛昌 李尚义 任广鹏 殷涛 郭林江 胡忠武 张文</p>
+          <p class="meta">2026年未归档存量文献补读；发表日未核实</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述ODS、CDS及复合第二相强化钼合金，讨论La₂O₃、Y₂O₃、Al₂O₃、ZrO₂、TiC与ZrC等颗粒及其分布、界面对性能的影响。</li><li>作者将高功率空间反应堆包壳与堆芯结构列为可能应用，尚非已认证的堆用材料。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将第二相种类、尺寸、晶内/晶间分布与界面关系整合为材料设计变量；属于综述归纳。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未提供可直接用于本构模型的温度相关强度、蠕变、断裂与辐照数据。</li><li>钼合金氧化、加工连接、辐照稳定性和质量成本尚需独立评价，不能以‘高耐热’推导整堆适用。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出后续研究计划。</li></ul><b>分析推导</b><ul><li>建立颗粒尺寸/分布—蠕变—热冲击的可验证模型，并设置未强化钼和其他高温合金对照。</li><li>在空间堆构件上同时评价热—力寿命、辐照、连接和质量惩罚。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对各第二相材料牌号、颗粒尺寸和制备方法；提取带温度与重复数的强度/蠕变数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>ODS<small>oxide dispersion strengthening</small></h4><p>以细小氧化物颗粒抑制高温位错和晶界运动的强化方法。</p><p class="context"><b>本文语境</b> 钼合金第二相调控的一个分支。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>第二相强化钼合金(ODS、CDS以及复合强化型)因其高强韧性、高耐热性和高的再结晶温度等特征,是一种很有前途的新型高性能耐热材料,在高温领域有广泛的应用前景,如高功率空间反应堆包壳及堆芯结构材料等。本文综述了加入不同氧化物和碳化物等第二相颗粒对钼合金微观组织和力学性能影响的研究结果。重点讨论了稀土氧化物La2O3和Y2O3、陶瓷氧化物Al2O3和ZrO2、难熔TiC和ZrC碳化物等单一或复合掺杂方式对Mo合金性能的影响。分析了第二相强化相的种类、大小、晶内/晶间分布情况以及与基体相界面关系对弥散强化钼合金性能的影响,讨论了不同掺杂技术获得高性能钼合金的特点。以期为通过添加第二相颗粒设计高性能钼合金的研究工作提供帮助,扩展钼合金的应用范围。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Second-phase strengthened molybdenum alloys(ODS,CDS,and composite-strengthened types)are promising new high-performance heat-resistant materials due to their high strength,toughness,heat resistance,and high recrystallization temperature.They have broad application prospects in high-temperature applications,such as high-power space reactor cladding and core structural materials.It focuses on discussing the impacts of single or composite doping methods involving rare earth oxides(La2O3 and Y2O3),ceramic oxides(Al2O3 and ZrO2),and refractory carbides(TiC and ZrC)on the performance of Mo alloys.The influence of the type,size,intragranular/intergranular distribution,and interfacial relationship with the matrix phase of the second-phase strengthening particles on the properties of dispersion-strengthened molybdenum alloys is analyzed,and the characteristics of different doping techniques for achieving high-performance molybdenum alloys are discussed.This study aims to provide insights into the design of high-performance Mo alloys by adding second-phase particles,thereby expanding the application range of Mo alloys.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202860679" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">本期依据4篇维普摘要与定向查新提出可证伪的问题。尤其不能沿用AlSi10Mg论文摘要中未经限定的‘优异热中子吸收’说法；NIST核数据提示其前提需要纠正。</p><article class="opportunity">
+          <div class="opportunity-head"><span>高（须先界定构件）</span><h3>增材核材料：制造缺陷到环境失效的可检验链条</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>现有摘要只在单一或基础环境比较腐蚀，缺跨制造路线的长期腐蚀—蠕变—热疲劳耦合数据。</p></section>
+            <section><h4>为什么值得开展</h4><p>可用构件位置明确、对照充分的试验和机制模型替代笼统材料优劣排名。</p></section>
+            <section><h4>建议工作</h4><ol><li>为AlSi10Mg或316L分别界定堆外换热器、堆内非燃料构件等应用位置，先做中子/活化及温度窗口核查。</li><li>设置成形方向、热处理、表面状态与暴露时间的析因试验，测膜连续性、腐蚀速率和残余强度。</li><li>用独立工况验证热—力—腐蚀模型，报告误差与失效边界。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>材料—工况适用域与不确定度，不依赖单一最佳试样。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>维普：AlSi10Mg超临界CO₂腐蚀与SLM 316L基础耐蚀两篇摘要。</li></ul></div><div><h4>主要风险</h4><ul><li>AlSi10Mg堆内应用前提、辐照数据和长期试验资源不足。</li><li>316L增材耐蚀研究已有大量先例，单纯重复基础试验新颖性低。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>中（方法需要具体物理场）</span><h3>核石墨或控制棒热结构的POD降阶模型</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>高保真热—力模型计算昂贵，但跨堆型、辐照态或接触状态的外推误差可能超过POD训练误差。</p></section>
+            <section><h4>为什么值得开展</h4><p>若在明确构件、瞬态与材料退化范围内给出可审计误差和加速比，能形成实用方法研究。</p></section>
+            <section><h4>建议工作</h4><ol><li>以高温气冷堆石墨块或控制棒导向管为单一原型，定义温度、位移、应力等输出以及工况参数。</li><li>建立高保真有限元数据集，比较全局POD、分区域POD与直接插值；保留未见过的工况和失效附近工况作外部验证。</li><li>加入残差或能量守恒指标触发全阶回退，报告离线训练成本、在线耗时与最大局部误差。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>有适用域与回退机制的热—力POD流程。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>维普：核石墨综述；German和Ragusa已有核反应堆物理POD先例。</li></ul></div><div><h4>主要风险</h4><ul><li>POD用于反应堆并非新颖；仅给平均误差和加速比不足以支持安全相关应用。</li><li>接触、开裂和辐照历史使固定基底失效。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">定向对照NIST核数据、IAEA核石墨资料与既有增材316L/POD研究，修正材料适用前提和新颖性表述。</p><p class="research-note">检索范围：NIST、IAEA、OSTI及期刊原始网页；针对4篇中文摘要的材料前提和POD已有工作，非系统综述。　检索时间：2026-09-30T10:25+08:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>高，但先限定构件</span><h3>增材核材料</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 撤回‘铝合金热中子吸收优异’作为普遍优势的前提。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>NIST列出天然Al27的2200 m/s吸收截面约0.231 barn；美国DOE既有增材316L核应用项目包括应力腐蚀、腐蚀疲劳和辐照。另一原始论文显示长时敏化后SLM 316L点蚀性能可能反转。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>应用位置明确的制造—微结构—环境—剩余强度关系。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>以腐蚀膜完整性和服役适用域作为问题，而非声称材料通用优势。</p></section>
+            <section><h4>建议论文切口</h4><p>增材316L在特定核水化学及热处理历史下的腐蚀—残余强度联合验证。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>对照锻件及至少两类热处理，给腐蚀/强度重复数和置信区间。</li></ul><h4>新颖性风险</h4><ul><li>已有DOE核用增材316L研发，基础腐蚀比较的新颖性有限。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://www.ncnr.nist.gov/resources/activation/scattering_table.html" target="_blank" rel="noopener">NIST Neutron Cross Sections（核数据表）↗</a><p>核查Al27热中子吸收前提。</p></li><li><a href="https://www.osti.gov/servlets/purl/1431212" target="_blank" rel="noopener">Environmental Cracking and Irradiation Resistant Stainless Steels by Additive Manufacturing（2018）↗</a><p>已有核用增材316L环境失效研究。</p></li><li><a href="https://www.cjmr.org/CN/volumn/volumn_2890.shtml" target="_blank" rel="noopener">SLM 316L与传统316L耐蚀对比（期刊原文）↗</a><p>长时敏化条件可能改变材料排序。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中</span><h3>核石墨×POD降阶</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 由‘应用POD’收窄为‘有误差控制的热—力退化模型’。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>核反应堆物理POD已有公开示例；IAEA资料指出石墨辐照引起尺寸与其他性质变化。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>辐照退化和构件接触状态跨参数变化时的降阶误差界定。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>POD本身不构成创新；状态转变附近的保真与回退验证才可能有价值。</p></section>
+            <section><h4>建议论文切口</h4><p>固定一个核石墨构件及服役窗口，做热—力POD与全阶回退的盲测。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>分训练、验证和外推工况报告局部最大误差、能量残差、离线成本与在线加速。</li></ul><h4>新颖性风险</h4><ul><li>已有核工程POD工作；无真实材料参数或验证数据会削弱贡献。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://www.osti.gov/servlets/purl/1801262" target="_blank" rel="noopener">Reduced-Order Modeling of Parameterized Multi-group Diffusion k-Eigenvalue Problems（2019）↗</a><p>证明核反应堆领域已有POD基线。</p></li><li><a href="https://nucleus.iaea.org/sites/graphiteknowledgebase/wiki/Guide_to_Graphite/Graphite%20Behaviour%20under%20Irradiation.aspx" target="_blank" rel="noopener">IAEA Graphite Behaviour under Irradiation（资料库）↗</a><p>明确辐照使石墨尺寸和性质演化。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>X-MOL全部及核能各前2页采集，240列表位置、历史URL过滤后130个独立候选；仅1条9月29日更新为太阳能疏水涂层，非核主题，其余近期条目无合格新增。刘晓晶课题组ORCID扫描7条、入选0条。未用不相关/旧文凑10–15篇；维普4篇为存量补读。无英文正式入选，OA PDF/SI待空集同步。未同步Zotero。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
