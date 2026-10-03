@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-03 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-03 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-03</strong><span>本期日期</span></div><div class="stat"><strong>10</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>1</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 11</button><button data-filter="xmol">X-MOL 10</button><button data-filter="cqvip">维普 1</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补做：从X-MOL已关注All和核能分组各4页共480条列表记录中筛选，结合详情页及全部历史DOI/题名去重，本日纳入10篇。包含近30天未读专题资料，保留真实来源发表日期和本次访问时间，不表示当天新发表或当天实际采集。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="铅铋反应堆冷却剂泵非定常流动能量耗散的熵产分析 entropy production analysis of unsteady flow-induced energy dissipation in a lead-bismuth reactor coolant pump 铅铋堆冷却剂泵与非定常流动 energy · 2026-09-30 · bin huang, hai-yang wang, xiang-song liu, xian-da xu, lu wang, peng-zhong wang  本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 本报告建议的后续对照方法，不表示作者使用了pod。 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>铅铋堆冷却剂泵与非定常流动</span></div>
+          <h2>铅铋反应堆冷却剂泵非定常流动能量耗散的熵产分析</h2>
+          <p class="title-en">Entropy production analysis of unsteady flow-induced energy dissipation in a lead-bismuth reactor coolant pump</p>
+          <p class="meta">Energy · 2026-09-30 · Bin Huang, Hai-Yang Wang, Xiang-Song Liu, Xian-Da Xu, Lu Wang, Peng-Zhong Wang</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>将涡结构、叶频脉动与区域熵产联系，损失主要来自叶轮和导叶。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>实验与非定常模拟共同用于识别铅铋泵的区域耗散机制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>60%湍流和30%壁面占比依赖熵产闭合与近壁网格，不能视作其他泵的通用常数。</li><li>摘要未说明模型试验流体与LBE的相似准则、误差及结构响应。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>将压力谱映射到泵与管路结构模态，联合约束效率、振动及热应力。</li><li>采用POD提取相干涡，并核查低能量模态对局部熵产和疲劳载荷的重要性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铅铋泵是第四代铅冷快堆的关键部件，其水力性能直接影响反应堆安全与能效。但泄漏涡、分离涡、尾流演化及转静干涉等复杂非定常现象会引起严重水力损失，使泵性能下降。本文结合模型实验与非定常数值模拟，研究混流式铅铋泵全工况下的流动不稳定和不可逆能量耗散机制。采用熵产理论定量识别损失来源，建立涡演化与能量耗散的关联。结果表明：（1）强熵产主要集中在叶片前后缘和叶顶间隙，这些区域强剪切、流动分离和湍流脉动使局部熵产率和能量损失较高。（2）转静干涉区压力脉动以62.5 Hz叶频为主，偏离设计工况时涡相互作用增强，高次谐波更显著。（3）叶轮和导叶贡献约90%的总水力损失，进出口区域约占10%；湍流熵产占主导、约60%，其次为壁面熵产、约30%，说明湍流脉动和壁面剪切是主要耗散来源。（4）总熵产在设计流量附近最小，对应最佳水力条件。低流量时，叶顶泄漏和轮毂涡增强，显著增加湍流耗散并加速效率降低。这些发现解释了非定常涡演化与能量损失的耦合，为铅冷快堆冷却剂泵水力优化及效率提高提供理论指导。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Lead-bismuth pump (LBP) is a critical component of Generation IV lead-cooled fast reactors, and its hydraulic performance directly determine the reactor safety and energy efficiency. However, complex unsteady phenomena such as leakage vortexes, separation vortexes, wake evolution and rotor-stator interaction (RSI) will induce severe hydraulic loss and deteriorate pump performance. This study combines model experiment and unsteady numerical simulations to investigate the flow instability and irreversible energy dissipation mechanisms of a mixed-flow LBP under full operating conditions. The entropy production theory is employed to quantitatively identify loss sources and establish the intrinsic correlation between vortex evolution and energy dissipation. The results indicate that: (1) Intense entropy production is mainly concentrated near the blade leading/trailing edges, tip clearance regions, where strong shear, flow separation, and turbulent fluctuations occur. Thereby leading to high local entropy production rate (LEPR) and severe energy loss. (2) The pressure pulsation in the RSI zone is dominated by blade passing frequency (62.5 Hz), while high-order harmonics become more significant under off-design conditions due to intensified vortex interaction. (3) Quantitative entropy production analysis reveals that the impeller and guide vane contribute approximately 90% of the total hydraulic loss, while the inlet and outlet domains only account for about 10%. Additionally, turbulent entropy production is dominant (about 60%), followed by wall entropy production (about 30%), confirming that turbulent fluctuation and wall shear effect are the main causes of energy dissipation. (4) The minimum total entropy production occurs near the design flow rate, corresponding to the optimal hydraulic condition. Under low-flow conditions, intensified tip leakage and hub vortexes significantly enhance turbulent dissipation and accelerate efficiency degradation. These findings provide physical insights into the coupling mechanism between unsteady vortex evolution and energy loss, offering some theoretical guidance for hydraulic optimization and efficiency improvement of lead-cooled fast reactor coolant pumps.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106335241536024576" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.energy.2026.142578" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106335241536024576" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于非接触感应流动层析的液态铅铋共晶流速测量设计 design of liquid lead-bismuth eutectic flow velocity measurement based on contactless inductive flow tomography 铅铋流动测量与反演 progress in nuclear energy · 2026-09-30 · zhen zhang, jiangtao jia, zhen wang, mingyue li, jie yu  铅铋共晶 lead–bismuth eutectic 低熔点铅铋混合物，可作液态金属冷却剂或熔体模拟物，用途不可混淆。 用于理解本文摘要中的物理对象或方法。 本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 本报告建议的后续对照方法，不表示作者使用了pod。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>铅铋流动测量与反演</span></div>
+          <h2>基于非接触感应流动层析的液态铅铋共晶流速测量设计</h2>
+          <p class="title-en">Design of liquid lead-bismuth eutectic flow velocity measurement based on contactless inductive flow tomography</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-30 · Zhen Zhang, Jiangtao Jia, Zhen Wang, Mingyue Li, Jie Yu</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>在相近传感器总数下比较空间分布，8×6在本文参考场中最佳。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对高温不透明LBE设计CIFT布局并考察噪声与复杂流场。</li></ul></section>
+        <section><h3>不足</h3><ul><li>参考场重建比较可能仍是数值验证，不能当作高温LBE实测精度。</li><li>布局排名依赖流场先验、磁场方向和正则化，并非通用最优。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>结合POD先验与传感器布局优化，用未参与训练的非对称流场检查可辨识性。</li><li>加入电导率温度漂移和磁传感器偏置，评估误差对热点预测的影响。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>铅铋共晶<small>Lead–Bismuth Eutectic</small></h4><p>低熔点铅铋混合物，可作液态金属冷却剂或熔体模拟物，用途不可混淆。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>液态铅铋共晶LBE作为铅冷快堆冷却剂，其速度分布是热工水力研究的关键参数。然而LBE高温、腐蚀性和不透明性给传统流速测量带来困难。为解决这一问题，本文采用非接触感应流动层析CIFT，设计适用于LBE的流速测量系统。通过比较参考速度场与重建算法得到的速度场，验证测量方案。在传感器总数相近条件下，比较12×4、10×5和8×6三种空间布置。结果显示，8×6布置的重建速度场与参考速度场符合程度最高。此外，在噪声和复杂流场条件下验证该系统的适用性。所提出设计及传感器配置分析，为未来LBE流速测量应用提供参考。</p></div>
+          <div><h3>English abstract</h3><p lang="en">liquid lead-bismuth eutectic (LBE) serves as the coolant for lead-cooled fast reactors (LFR), its velocity distribution is a critical parameter in thermal-hydraulic research. However, the high-temperature corrosivity and opacity of LBE pose significant challenges to the application of traditional flow velocity measurement methods. To address this issue, this study applies Contactless Inductive Flow Tomography (CIFT) and designs a measurement system applicable for LBE flow velocity measurement. The validity of the proposed measurement scheme is verified by comparing the reference velocity field with the velocity field reconstructed via the reconstruction algorithm. Maintaining a comparable total number of sensors, we compare three spatial arrangements: 12×4, 10×5, and 8×6. The results indicate that the 8×6 arrangement achieves the highest degree of agreement between the reconstructed and reference velocity field. Furthermore, the applicability of this measurement system is verified under noisy condition and within complex flow field. The proposed design scheme and sensor configuration analysis provide a valuable reference for the future application of CIFT in LBE flow measurement.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269514229624832" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106635" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269514229624832" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="乏燃料水池非能动冷却系统实验装置的运行特性 operational characteristics of the experimental test facility for the passive cooling system of spent fuel pools 非能动冷却与乏燃料安全 progress in nuclear energy · 2026-09-30 · ta van thuong, s.m. glukhov, o.l. tashlykov, d.e. shumkov, yu.v. volchikhina, nguyen dinh khuong  适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>非能动冷却与乏燃料安全</span></div>
+          <h2>乏燃料水池非能动冷却系统实验装置的运行特性</h2>
+          <p class="title-en">Operational characteristics of the experimental test facility for the passive cooling system of spent fuel pools</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-30 · Ta Van Thuong, S.M. Glukhov, O.L. Tashlykov, D.E. Shumkov, Yu.V. Volchikhina, Nguyen Dinh Khuong</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>测试多种充装与热虹吸模式，并以三维模型优化蒸发器流量分布。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把运行模式试验、蒸发器几何优化与水池安装安全评估结合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>‘不违反核安全要求’是作者对特定设计的判断，摘要未列出临界性、地震和水池结构约束。</li><li>未提供排热能力、启动时间和全尺寸缩放误差，不能据此认定工程可用。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>比较不同充装量的启动、间歇振荡和长期工质损失，建立全尺寸相似准则。</li><li>将热虹吸管路支承与水池地震位移耦合，检查冷却性能与结构完整性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>可靠排出乏燃料水池余热是核设施的重要安全要求，特别是研究堆，需要在正常及事故条件下安全储存乏燃料组件。本文给出为研究堆乏燃料水池中燃料组件设计的非能动余热排出系统试验装置的实验结果。采用理论与经验方法，描述装置主要热工水力参数、设计特征及实验方法，给出多种运行模式的测试结果，包括回路工质全充装、部分充装及环形热虹吸模式。实验结果确认所提出设计能够运行，并在不同热条件下有效排热。此外，进行了装置三维建模，识别不能直接目视检查的部件设计特征，并优化蒸发器模块配置，使工质流量分布更均匀。还理论评估了将装置作为非能动排热系统安装到乏燃料水池后的核安全影响。所得结果表明，所提系统的安装不导致违反核安全要求，可为研究堆水池全尺寸非能动冷却系统开发提供基础。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Ensuring reliable removal of residual heat from spent fuel pools is a key safety requirement for nuclear facilities, particularly for research reactors where the safe storage of spent fuel assemblies must be maintained under both normal and accident conditions. This paper presents the results of experimental studies of a test facility for a passive residual heat removal system designed for spent fuel assemblies in the spent fuel pool of a research nuclear reactor. The study employed both theoretical and empirical methods. The article describes the main thermal-hydraulic parameters and design features of the test facility and provides a description of the experimental methodology. The results of tests carried out under various operating modes of the facility are presented, including operation with full and partial filling of the circuit with the working fluid and operation in an annular thermosyphon mode. The experimental results confirm the operability of the proposed design and demonstrate the capability of the system to provide effective heat removal under different thermal conditions. In addition, three-dimensional modeling of the test facility was performed, which made it possible to identify design characteristics of components not accessible to visual inspection and to optimize the configuration of the evaporator module to ensure a more uniform distribution of the working fluid flow. A theoretical assessment of the impact of using this facility as part of a passive heat removal system on nuclear safety when installed in a spent fuel pool is also provided. The obtained results indicate that the installation of the proposed system does not lead to a violation of nuclear safety requirements and can serve as a basis for the development of a full-scale passive cooling system for spent fuel pools of research reactors.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269513579507712" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106634" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269513579507712" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="超临界co₂冷却三周期极小曲面晶格微堆的概念研究 conceptual study of a supercritical co2-cooled, triply periodic minimal surface lattice-based microreactor 微堆燃料几何与增材制造 progress in nuclear energy · 2026-09-30 · nicolas martin, silvino balderrama prieto, paul ferney  计算流体力学 computational fluid dynamics 通过离散流动与传热方程预测场量，仍依赖网格、闭合关系和边界验证。 用于理解本文摘要中的物理对象或方法。 本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 本报告建议的后续对照方法，不表示作者使用了pod。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>微堆燃料几何与增材制造</span></div>
+          <h2>超临界CO₂冷却三周期极小曲面晶格微堆的概念研究</h2>
+          <p class="title-en">Conceptual study of a supercritical CO2-cooled, triply periodic minimal surface lattice-based microreactor</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-30 · Nicolas Martin, Silvino Balderrama Prieto, Paul Ferney</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以相同材料比较几何，热性能改善与压降代价并存。</li><li>最多59%仅指所研究条件下满足峰温限制的功率密度，非净发电效率。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>跨CFD、MOOSE与蒙特卡罗程序评估复杂晶格堆芯。</li></ul></section>
+        <section><h3>不足</h3><ul><li>相同材料不一定保持相同燃料体积、库存和制造缺陷；需核对比较基准。</li><li>增材制造燃料的辐照、裂纹、检验及许可成本未由热性能结果证明。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>在相同燃料库存及泵功率下比较净功率、压降和最高温度。</li><li>将制造壁厚误差与粗糙度传播到热应力、热点及局部POD代理误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>计算流体力学<small>Computational Fluid Dynamics</small></h4><p>通过离散流动与传热方程预测场量，仍依赖网格、闭合关系和边界验证。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>增材制造进步使三周期极小曲面TPMS晶格等优化形状更适合用于换热器及核燃料元件。本文引入TPMS晶格形堆芯，与传统棒型设计比较。选择一个公开的快谱、超临界CO₂冷却、直接布雷顿循环棒型反应堆设计作为基准，并在TPMS堆芯中使用相同材料以公平比较。由于几何复杂，采用新的建模策略：结合高保真CFD、基于MOOSE的一维热工水力及三维传热，分析TPMS燃料热性能；在Serpent中采用非结构网格蒙特卡罗物理分析，并与OpenMC原生构造实体几何TPMS实现对照验证。对于快谱堆，TPMS与棒型几何在中子学上等效，但TPMS燃料改善换热，在满足最高材料温度限制时，功率密度最多提高59%。缺点是单位长度压降增加；将泵功率成本纳入微堆总发电量后，这一代价可能可以接受。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Advancements in additive manufacturing (AM) processes have made it increasingly feasible to consider optimized shapes such as triply periodic minimal surface (TPMS) lattices for heat transfer applications, ranging from heat exchanger designs to nuclear fuel elements. This study introduces a TPMS-lattice-shaped nuclear core and compares its performance against that of a traditional pin-based design. A publicly available design that relies on typical fuel pin elements for a fast spectrum, supercritical CO2 (sCO2)-cooled reactor with a direct Brayton cycle was selected as the reference design. The same core materials were used in the TPMS core to ensure a fair comparison between both geometries. Due to the complexity of this type of geometry, innovative modeling strategies were introduced. The thermal performance of the TPMS fuel element was analyzed using a computational scheme that combined high-fidelity computational fluid dynamics (CFD) with Multiphysics Object-Oriented Simulation Environment (MOOSE)-based 1D thermal hydraulics, coupled with 3D heat transfer. Monte Carlo reactor physics analyses using unstructured meshes in Serpent were employed to characterize the core performance and verified against a native constructive solid geometry TPMS lattice implementation in OpenMC. When it comes to fast spectrum reactors, TPMS geometries are neutronically equivalent to pin geometries. However, TPMS-based fuel elements offer improved heat transfer performance, enabling the power density to be increased up to 59% while still meeting the peak material temperature requirements. A downside of TPMS lattices is the additional pressure drop per unit length, which may be manageable when factoring the pumping power costs into the total energy generated by the proposed microreactor concept.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269510060486656" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106627" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269510060486656" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="高温气冷堆燃料的辐照—热—力耦合分析研究 research on irradiation-thermo-mechanical coupled analysis for htgr fuels triso燃料热力性能 nuclear engineering and design · 2026-09-30 · hao yang, bin zhang  三结构各向同性包覆颗粒 triso 以多层碳和碳化硅包覆燃料核，涂层应力与气体压力共同影响失效。 用于理解本文摘要中的物理对象或方法。 本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 本报告建议的后续对照方法，不表示作者使用了pod。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>TRISO燃料热力性能</span></div>
+          <h2>高温气冷堆燃料的辐照—热—力耦合分析研究</h2>
+          <p class="title-en">Research on irradiation-Thermo-mechanical coupled analysis for HTGR fuels</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-09-30 · Hao Yang, Bin Zhang</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>把传热、气体释放、涂层黏弹性及间隙变化沿全寿期连续耦合。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>强调辐照—储存—事故加热连续历史，而非彼此独立初始状态。</li></ul></section>
+        <section><h3>不足</h3><ul><li>程序间趋势一致不排除共享模型偏差，不能等同于独立失效概率实测验证。</li><li>球对称和PV型失效可能无法描述颗粒偏心、局部裂纹及制造缺陷。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>加入涂层厚度和偏心度随机分布，对照二维/三维局部应力与球对称预测。</li><li>构建历史依赖快照，比较POD对峰值涂层拉应力和失效尾部概率的保真度。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>三结构各向同性包覆颗粒<small>TRISO</small></h4><p>以多层碳和碳化硅包覆燃料核，涂层应力与气体压力共同影响失效。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>预测TRISO颗粒燃料热力响应，是高温气冷堆燃料性能评价的重要内容。本文开发球形TRISO燃料性能程序CoaPAC，耦合隐式传热、裂变气体与CO释放、黏弹性涂层力学、间隙演化以及压力容器PV型失效模型。首先以IAEA CRP-6力学测试算例验证CoaPAC，并与已发表燃料性能程序在HFRP4、HFR-EU1和NPR-1辐照条件下的结果比较。结果显示，CoaPAC再现关键热力变量的主要演化趋势，这些比较支持基本物理模块及耦合实现的一致性。随后将程序应用于包括辐照、储存和事故加热的复杂全寿期情景。结果表明，在连续复杂的运行历史下，程序能够合理描述各阶段TRISO颗粒的传热、气体组成、涂层应力及失效行为。作者认为，验证和比较支持程序准确性与可靠性，说明热力模型实现及处理复杂条件的能力，并明确后续程序开发的重点。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Predicting the thermo-mechanical response of TRISO particle fuel is important for fuel performance assessment in high-temperature gas-cooled reactors. This study developed CoaPAC (COated fuel Performance Analysis Code), a spherical TRISO fuel performance code that couples implicit heat transfer, fission gas and CO release, viscoelastic coating mechanics, gap evolution, and pressure-vessel (PV)-type failure models. First, CoaPAC was benchmarked against the IAEA CRP-6 mechanical test case, and its results were compared with published results from other fuel performance codes for the HFRP4, HFR-EU1, and NPR-1 irradiation conditions. The results show that CoaPAC reproduces the principal evolution trends of key thermo-mechanical variables, and the comparisons support the consistency of the basic physical modules and their coupled implementation. CoaPAC was then applied to a complex full-life-cycle scenario involving irradiation, storage, and accident heating. The results demonstrate that, under a continuous and complex operating history, CoaPAC can reasonably describe the coupled responses of TRISO particles, including heat transfer, gas composition, coating stress, and failure behavior at different stages. Therefore, the verification and comparison analyses conducted in this study support the accuracy and reliability of the code, demonstrate the reasonableness of its thermo-mechanical model implementation and its capability to handle complex conditions, and further clarify priorities for future code development.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106299942172897280" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115246" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106299942172897280" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="先进船用核电装置二回路动力循环偏工况性能比较 comparative assessment of the off-design performance of secondary-loop power cycles for advanced marine nuclear power plants 核动力系统与布雷顿循环 energy · 2026-09-30 · xingyan bian, xuan wang, kunfeng liang, lin wang, hua tian  适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>核动力系统与布雷顿循环</span></div>
+          <h2>先进船用核电装置二回路动力循环偏工况性能比较</h2>
+          <p class="title-en">Comparative assessment of the off-design performance of secondary-loop power cycles for advanced marine nuclear power plants</p>
+          <p class="meta">Energy · 2026-09-30 · Xingyan Bian, Xuan Wang, Kunfeng Liang, Lin Wang, Hua Tian</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>最高设计效率与最强偏工况适应性分别属于不同循环；需按航行负荷权衡。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在同一核热源与控制框架中比较五种循环动态表现。</li></ul></section>
+        <section><h3>不足</h3><ul><li>2.4和1.7是百分点，不是相对百分比；摘要未列设备体积、维护和海况影响。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>加入真实航行负荷分布、海水温度与设备重量，按全任务净发电量及控制成本排序。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>二回路动力循环对船用核电装置热效率及运行灵活性至关重要。推进需求与海水温度变化会使循环偏离设计工况，不同循环的偏工况表现不同。本文为五种典型循环建立动态模型和相应控制方案，以相同铅铋冷却快堆作热源，比较回热跨临界CO₂循环R-TCPC、再压缩跨临界CO₂循环RC-TCPC、回热超临界CO₂布雷顿循环R-SCBC、再压缩超临界CO₂布雷顿循环RC-SCBC和蒸汽朗肯循环SC。在冷源变化、部分负荷及耦合工况下分析性能，再评估热效率与偏工况适应性。结果显示，RC-TCPC在设计及高负荷条件下热效率最高，在100%与60%负荷时，分别比第二名SC高2.4和1.7个百分点。SC的偏工况适应性最强。研究为船用核电装置二回路选型提供依据。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Secondary-loop power cycles play a critical role in determining the thermal efficiency and operational flexibility of marine nuclear power plants. Variations in propulsion demand and seawater temperature shift secondary-loop power cycles away from design conditions, while different power cycles exhibit distinct off-design performance. To evaluate the applicability of different power cycles to marine nuclear power plants, dynamic models with corresponding control schemes were developed for five representative power cycles. The same lead-bismuth cooled fast reactor was used as the heat source for the five power cycles: the recuperated transcritical CO2 power cycle (R-TCPC), the recompression transcritical CO2 power cycle (RC-TCPC), the recuperated supercritical CO2 Brayton cycle (R-SCBC), the recompression supercritical CO2 Brayton cycle (RC-SCBC), and the steam Rankine cycle (SC). The off-design performance was then analyzed under cooling source variation, part-load operation, and coupled operating conditions, followed by an assessment of thermal efficiency and off-design adaptability. The results show that the RC-TCPC achieves the highest thermal efficiency under design and high-load conditions. At 100% and 60% load, the thermal efficiency of the RC-TCPC exceeds that of the second ranked SC by 2.4 and 1.7 percentage points, respectively. The SC also exhibits the strongest off-design adaptability. The findings provide a basis for selecting secondary-loop power cycles in marine nuclear power plants.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106335239480815616" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.energy.2026.142575" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106335239480815616" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="花瓣形燃料组件流动不稳定起始及流动换热特性的数值研究 numerical investigation on characteristics of onset of flow instability (ofi) and flow and heat transfer in petal-shape fuel assembly 燃料组件两相流动与安全裕量 annals of nuclear energy · 2026-09-21 · lipeng du, pengyue zhang, xiang chen, wenchao zhang, jianchuang sun, weihua cai  空隙率 void fraction 气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。 用于理解本文摘要中的物理对象或方法。 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>燃料组件两相流动与安全裕量</span></div>
+          <h2>花瓣形燃料组件流动不稳定起始及流动换热特性的数值研究</h2>
+          <p class="title-en">Numerical investigation on characteristics of onset of flow instability (OFI) and flow and heat transfer in petal-shape fuel assembly</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-09-21 · Lipeng Du, Pengyue Zhang, Xiang Chen, Wenchao Zhang, Jianchuang Sun, Weihua Cai</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>OFI后局部混合增强可能降低壁温，但不意味着系统不稳定值得主动利用。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把参数阈值与花瓣形流道涡结构及气泡输运相联系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>欧拉/RPI模型和边界压差条件决定阈值；摘要未给直接沸腾实验验证。</li><li>局部横流提升200%–300%并不代表总流量或安全裕量提升相同比例。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>用实验压差—流量曲线、空隙率及时间谱共同验证OFI，检查控制系统与流道弹性反馈。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>空隙率<small>void fraction</small></h4><p>气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>流动不稳定起始OFI表示两相系统由稳定转为不稳定的阈值，窄流道中提前发生OFI会增加核反应堆风险。本文采用欧拉两相流及RPI壁面沸腾模型，模拟花瓣形燃料组件过冷流动沸腾，分析运行参数对OFI阈值的机制，并解释其附近流场和换热。结果显示，加热功率提高时，OFI临界质量流量增加；入口过冷度影响相反，过冷度越高，临界质量流量越低。运行压力影响最显著，提高压力降低OFI临界质量流量，但提高不稳定所需临界空隙率。OFI前气泡主要附着加热壁面；之后涡流迅速把气泡从壁面运向通道中心，涡核出现气泡聚集。OFI后，尤其通道后半部出现强压差驱动的大尺度涡，增强子通道横向混合，局部横流速度提高200%–300%。强混合促进壁面向通道中心换热，使后半段截面温度更均匀，壁温低于较高流量条件，同时总体对流换热系数改善。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Onset of Flow Instability (OFI) marks the threshold at which a two-phase flow system transitions from stable to unstable operation. Particularly in narrow flow channels, the premature occurrence of this point will significantly elevate risks of nuclear reactors. Apply the models of Eulerian two-phase flow and the RPI wall boiling, the subcooled flow boiling in the petal-shaped fuel assembly is simulated. This study reveals the mechanism of key operating parameters affect the OFI point, and explains the flow field patterns and heat transfer characteristics near the OFI cases. The result show that when the heating power increases, the critical mass flow rate at the OFI increases, while the effect of inlet subcooling is opposite: the higher the subcooling, the lower the critical mass flow rate. Among all parameters, operating pressure has the most significant influence. An increase in operating pressure reduces the critical mass flow rate at the OFI, but raises the critical void fraction required for instability. Before the OFI, bubbles mainly adhere near the heated wall. After the OFI, the vortex flow rapidly detaches bubbles from the wall and transports them toward the channel center, while bubble accumulation appears in the vortex core region. After the OFI, large-scale vortex structures are generated in the channel, especially in the rear half. These vortices are driven by strong pressure differences and significantly enhance transverse mixing between subchannels, increasing the local cross flow velocity by 200%-300%. The intense mixing effectively promotes heat transfer from the wall to the channel center, resulting in a more uniform temperature distribution across the cross section in the rear half of the channel after OFI, and the wall temperature becomes lower than that under higher flow rate conditions, while the overall convective heat transfer coefficient is improved.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106199796831498240" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112865" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106199796831498240" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="人工智能融入核反应堆安全：机器学习增强cfd、概率安全评价与网络安全 integrating artificial intelligence into nuclear reactor safety: ml-augmented cfd, ai-enabled psa, and cybersecurity 核安全代理模型与验证 progress in nuclear energy · 2026-09-24 · luiz umberto rodrigues sica  计算流体力学 computational fluid dynamics 通过离散流动与传热方程预测场量，仍依赖网格、闭合关系和边界验证。 用于理解本文摘要中的物理对象或方法。 代理模型 surrogate model 近似高保真输入输出映射的低成本模型；训练域外误差必须单独评估。 用于理解本文摘要中的物理对象或方法。 本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 本报告建议的后续对照方法，不表示作者使用了pod。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>核安全代理模型与验证</span></div>
+          <h2>人工智能融入核反应堆安全：机器学习增强CFD、概率安全评价与网络安全</h2>
+          <p class="title-en">Integrating artificial intelligence into nuclear reactor safety: ML-augmented CFD, AI-enabled PSA, and cybersecurity</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-24 · Luiz Umberto Rodrigues Sica</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>代理误差、不确定性与网络故障需共同进入安全分析；快速预测不应直接获得安全信用。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将热工代理、动态PSA及网络—物理后果纳入全寿期治理视角；这是综述整理。</li></ul></section>
+        <section><h3>不足</h3><ul><li>框架综述不提供某个装置上AI安全增益的实测量化结果；跨堆型数据偏移仍未解决。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>以具体POD代理设计可审计的使用边界、分布外判定和高保真回退，并测量误报漏报及延迟成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>计算流体力学<small>Computational Fluid Dynamics</small></h4><p>通过离散流动与传热方程预测场量，仍依赖网格、闭合关系和边界验证。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>代理模型<small>surrogate model</small></h4><p>近似高保真输入输出映射的低成本模型；训练域外误差必须单独评估。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文结构化综述人工智能如何通过三个互补技术领域及共同支撑条件改变核电安全分析。首先讨论机器学习增强CFD和降阶热工水力模型，重点包括沸腾及临界热流密度闭合、界面输运、瞬态模拟和安全壳尺度混合，特别关注物理约束代理、验证确认与不确定度量化VVUQ，以及使高保真分析可信加速的最佳估计加不确定度BEPU实践。其次综述AI与概率安全评价PSA的集成，包括贝叶斯和混合图模型、动态事件树与故障树、学习辅助的人因可靠性，以及在线更新风险指标的数字孪生。第三讨论数字仪控系统网络安全，包括威胁路径、AI检测和响应、对抗鲁棒性及网络—物理后果与PSA耦合。这些领域结合不确定度和韧性AI新进展，并专门评估多机组、多灾害PSA：机组及模块依赖、共用结构系统部件和恢复资源、多机组事故序列，以及单一、组合和级联外部灾害。综述汇集比较证据，强调监管与可解释性要求，指出数据稀缺、小型模块堆、压水堆及沸水堆异质性，以及物理—数据集成的挑战。产出方法与数据集图谱，以及AI赋能PSA的全寿期治理框架，把预期用途、数据模型鉴定、PSA集成、配置控制、运行监测、重新鉴定和人工监督连接到可审计的决策关口。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This review provides a structured synthesis of how artificial intelligence (AI) is reshaping safety-critical analysis in nuclear power plants through three complementary technical domains and cross-cutting enablers. First, we examine machine learning (ML) augmentations to computational fluid dynamics (CFD) and reduced-order thermal–hydraulic models, focusing on boiling and critical heat flux (CHF) closures, interfacial transport, transient emulation, and containment-scale mixing. Particular attention is given to physics-constrained surrogates, verification, validation, and uncertainty quantification (VVUQ), and best-estimate plus uncertainty (BEPU) practices that enable credible acceleration of high-fidelity analyses. Second, we review AI integration within probabilistic safety assessment (PSA), covering Bayesian and hybrid graphical models, dynamic event and fault trees, human reliability analysis enhanced by learning-based support, and digital-twin frameworks that embed online updating of risk metrics. Third, we examine cybersecurity in digital instrumentation and control (I&amp;C) systems, including threat pathways, AI-enabled detection and response, adversarial model robustness, and the coupling of cyber–physical consequences with PSA. These technical strands are complemented by recent developments in uncertainty quantification and resilient AI, together with a dedicated assessment of multi-unit and multi-hazard PSA covering inter-unit and inter-module dependencies, shared structures, systems, components, and recovery resources, multi-unit accident sequences, and single, combined, and cascading external hazards. Across all domains, we consolidate comparative evidence, highlight regulatory and explainability requirements, and identify open challenges linked to data scarcity, plant heterogeneity across small modular reactor (SMR), pressurized water reactor (PWR), and boiling water reactor (BWR) designs, and physics–data integration. The outcome is a consolidated map of methods and datasets, together with a lifecycle governance framework for AI-enabled PSA that links intended use, data and model qualification, PSA integration, configuration control, operational monitoring, requalification, and human oversight to auditable decision gates.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269508705726464" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106622" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269508705726464" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="用于无人水下航行器的微型超临界co₂冷却压力管堆初步概念设计 preliminary conceptual design of a micro supercritical co2-cooled pressure-tube reactor for unmanned underwater vehicles 微型核动力与热工安全 annals of nuclear energy · 2026-09-18 · zhuhan ran, chang xu, hao yuan, pan wu, jianqiang shan  反应性 reactivity 表征中子增殖偏离临界程度的量，温度、几何及组成都会影响它。 用于理解本文摘要中的物理对象或方法。 空隙率 void fraction 气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。 用于理解本文摘要中的物理对象或方法。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>微型核动力与热工安全</span></div>
+          <h2>用于无人水下航行器的微型超临界CO₂冷却压力管堆初步概念设计</h2>
+          <p class="title-en">Preliminary conceptual design of a micro supercritical CO2-cooled pressure-tube reactor for unmanned underwater vehicles</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-09-18 · Zhuhan Ran, Chang Xu, Hao Yuan, Pan Wu, Jianqiang Shan</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>该概念依赖重水库存及冷却剂丧失后仍可用的慢化剂热汇。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将压力管、重水与sCO₂冷却用于微型水下核电源概念。</li></ul></section>
+        <section><h3>不足</h3><ul><li>温度低于预设温限不等同于长期蠕变、辐照与失水安全已验证；慢化剂可用性和最终热汇须核查。</li><li>25%富集及系统屏蔽、重量、运输和制造条件未由中子学结果解决。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>对慢化剂泄漏、热汇失效及压力管热变形做组合敏感性，核查结构裕量而非仅温度上限。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>反应性<small>reactivity</small></h4><p>表征中子增殖偏离临界程度的量，温度、几何及组成都会影响它。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>空隙率<small>void fraction</small></h4><p>气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核反应堆能量密度很高，可在紧凑密封系统中长时持续输出较高功率。作者认为以核能作为无人水下航行器主电源可克服续航限制。本文提出微型超临界CO₂冷却压力管堆概念，并开展堆芯物理及极端事故固有安全分析。设计热功率3.2 MW、寿命10年，采用重水慢化、25%富集UN燃料，以控制鼓和Gd₂O₃可燃毒物控制反应性。OpenMC结果显示负反馈特征，燃料温度系数−1.18 pcm/K，空泡反应性−1302 pcm，控制鼓提供keff&lt;0.95的停堆裕量。重水慢化使能谱偏向超热区，径向功率峰因子为1.044。FLUENT稳态热工分析中，正常运行最高包壳温度1063.7 K、最高燃料芯块温度1769.0 K，满足所定设计要求。对于大破口失水且失去应急堆芯冷却、冷却剂完全丧失的极端工况，模型显示衰变热可经辐射与导热从燃料棒传到慢化剂，再由慢化剂对流排出。此时最高包壳温度1578.0 K，低于所采用12YWT型ODS钢温限。作者认为设计满足紧凑、长寿期和固有安全要求，是有潜力的水下航行器堆芯概念。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Nuclear reactors possess extremely high energy density and can continuously deliver high power within a compact, sealed system over long periods. Utilizing nuclear power as the main power source for Unmanned Underwater Vehicles (UUVs) is an ideal solution to overcome endurance limitations and enable long-term deep-sea missions. This paper proposes a preliminary conceptual design of a micro supercritical carbon dioxide (S-CO2)-cooled pressure-tube reactor for UUVs, and conducts core physics calculations and inherent safety characteristic analyses under extreme accident conditions to validate the safety features of this reactor. The reactor has a thermal power of 3.2 MW and a design life of 10 years. It uses heavy water moderation with UN fuel (25% enrichment), with reactivity controlled by control drums and Gd2O3 burnable poison. Core neutronic calculations based on OpenMC show that the core exhibits negative feedback characteristics (fuel temperature coefficient of −1.18 pcm/K core, void reactivity of −1302 pcm), and the control drums provide sufficient shutdown margin (keff &lt; 0.95). Heavy water moderation shifts the neutron energy spectrum towards the epithermal region, with a radial power peaking factor of only 1.044. Steady-state thermal–hydraulic analysis conducted using FLUENT indicates that under normal operation, the maximum cladding temperature is 1063.7 K and the maximum fuel pellet temperature is 1769.0 K, meeting design requirements. Studies on the extreme condition of a large-break loss-of-coolant accident with loss of emergency core cooling system (LBLOCA/LOECC) resulting in complete coolant loss show that the reactor can transfer decay heat from the fuel rods to the moderator solely by radiation and conduction, and then effectively remove the decay heat through convective heat transfer in the moderator. Under such extreme accident conditions, the maximum cladding temperature is 1578.0 K, which is lower than the temperature limit of 12YWT-type ODS steel. The results demonstrate that this design meets the requirements for compactness, long life, and inherent safety, presenting a promising core design concept for UUVs.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106199794327498752" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112856" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106199794327498752" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="稳态压水堆条件下cr涂层事故容错燃料热裕量的综合分析 comprehensive analysis of thermal margins in cr-coated accident tolerant fuel under steady state pwr conditions 事故容错燃料与沸腾换热 progress in nuclear energy · 2026-09-17 · r. deepak selvakumar, salem m. alshehhi, ahmed k. alkaabi  空隙率 void fraction 气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。 用于理解本文摘要中的物理对象或方法。 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。">
+      <header class="paper-head">
+        <span class="number">10</span>
+        <div>
+          <div class="chips"><span>事故容错燃料与沸腾换热</span></div>
+          <h2>稳态压水堆条件下Cr涂层事故容错燃料热裕量的综合分析</h2>
+          <p class="title-en">Comprehensive analysis of thermal margins in Cr-coated accident tolerant fuel under steady state PWR conditions</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-17 · R. Deepak Selvakumar, Salem M. Alshehhi, Ahmed K. Alkaabi</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>模型中涂层引入小于3 K峰温变化；流量及功率影响远大于该涂层热惩罚。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>多区域导热与RPI两相模型联合分析Cr涂层燃料热裕量。</li></ul></section>
+        <section><h3>不足</h3><ul><li>稳态过冷沸腾不证明LOCA抗氧化、涂层脱落和寿命；不能仅由空隙率推定临界热流密度裕量。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>加入涂层粗糙度、润湿和厚度不确定性，以独立沸腾数据核对壁面闭合。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>空隙率<small>void fraction</small></h4><p>气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文对压水堆过冷沸腾条件下Cr涂层事故容错燃料棒开展三维共轭换热分析，评估热工水力性能及热裕量。在多区域OpenFOAM框架中耦合欧拉—欧拉双流体模型与RPI壁面热流分配，解析15.5 MPa下燃料导热、包壳涂层传热及液汽相互作用。名义工况入口速度5 m/s、过冷度40 K时，在1.604 m出现核态沸腾起始，最大空隙率0.0245，壁面过热度2.76 K，燃料峰温824.6 K，表现为稳定液相主导沸腾。Cr涂层热惩罚很小，峰温变化小于3 K。参数分析显示冷却剂质量通量主导沸腾稳定及热裕量：入口速度至少7 m/s时沸腾完全抑制；0.8 m/s低流量使空隙率达到0.69、燃料温度超过900 K。入口过冷度由5升至51 K使沸腾延后直至抑制，峰温仅变化约7 K，表明燃料导热热阻占主导。功率由70升至140 kW使沸腾提前、空隙率升至0.253，燃料峰温近线性升至约980 K。结果说明，Cr涂层保留稳态热工行为，而质量通量及功率水平主要控制沸腾稳定性和热裕量。</p></div>
+          <div><h3>English abstract</h3><p lang="en">A three-dimensional conjugate heat transfer (CHT) analysis of a chromium (Cr)-coated accident tolerant fuel (ATF) pin under pressurized water reactor (PWR) sub-cooled boiling (SCB) conditions is presented to assess thermal-hydraulic (TH) performance and thermal margins. A coupled Eulerian–Eulerian two-fluid model with the Rensselaer Polytechnic Institute (RPI) wall heat flux partitioning approach is implemented in a multi-region OpenFOAM® framework to resolve fuel conduction, cladding/coating heat transfer, and liquid–vapor interactions at 15.5 MPa. Under nominal operating conditions (Uin=5ms−1, ΔTsub=40K), onset of nucleate boiling (ONB) occurs at 1.604 m, with a maximum void fraction (VF) of 0.0245, wall superheat of 2.76 K, and peak fuel temperature (PFT) of 824.6 K, indicating stable liquid-dominated boiling. The Cr coating introduces a negligible thermal penalty, with less than 3 K change in PFT. Parametric analysis shows that coolant mass flux strongly governs boiling stability and thermal margins. Boiling is fully suppressed for Uin≥7ms−1, whereas low mass flux (0.8ms−1) produces VFs up to 0.69 and fuel temperatures above 900 K. Increasing inlet sub-cooling (SC) from 5 to 51 K delays and ultimately suppresses boiling, while PFT varies by only approximately 7 K, reflecting dominant fuel conduction resistance. Power escalation from 70 to 140 kW advances boiling inception and increases VF to 0.253, with PFT rising nearly linearly to approximately 980 K. Overall, the results demonstrate that Cr-coated ATF preserves steady-state TH behavior, while coolant mass flux and power level primarily govern boiling stability and thermal margins under PWR operation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本次未获得合法开放PDF；OpenAlex返回HTTP429，开放模式未解析到下载地址，全文检索尚不充分。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106220575862304768" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106596" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106220575862304768" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="深水池金属碎片床形成特性实验研究 experimental study of metal debris-bed formation in a deep water pool 燃料碎片与碎片床实验 原子能科学技术 · 2026 · 向延 张巍 李净松 施慧烈 房迪  本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 前两篇为作者采用的方法；碎片床篇为未来模型对照方法。 独立验证 independent validation 使用不参与模型构建或调参的数据检验预测。 避免训练工况重构精度被误称为工程可靠性。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>燃料碎片与碎片床实验</span></div>
+          <h2>深水池金属碎片床形成特性实验研究</h2>
+          <p class="title-en">Experimental Study of Metal Debris-Bed Formation in a Deep Water Pool</p>
+          <p class="meta">原子能科学技术 · 2026 · 向延 张巍 李净松 施慧烈 房迪</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以Sn、Sn-Bi、Zn及Fe-Sn模拟金属熔融物，记录射流、液滴碎裂和沉积，测量床形及孔隙率。</li><li>Fe-Sn形成低孔隙率结块，而部分低熔点模拟物形成大于90%孔隙率蜂窝结构，材料与沸腾机制影响显著。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>结合高速摄影、形貌和孔隙分布，比较多种金属模拟物的形成机制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>模拟Zr/Fe金属部分不等于代表含氧化物的完整堆芯熔融物；相似准则及孔隙率统计定义须全文复核。</li><li>英文摘要比中文摘要提供更多相似分析及蒸汽爆炸细节；这里保留两种原文，不把拼接文本伪装为原始中文摘要。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><p class="muted">摘要未披露</p><b>分析推导</b><ul><li>将结块与局部致密层输入再淹没模型，用渗透率、局部干涸和冷却前沿验证，避免只比较总体孔隙率。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 建议经授权自行精读全文，复核输入范围、相似条件、验证集及误差定义；未自动下载中文全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 前两篇为作者采用的方法；碎片床篇为未来模型对照方法。</p></div><div class="term"><h4>独立验证<small>independent validation</small></h4><p>使用不参与模型构建或调参的数据检验预测。</p><p class="context"><b>本文语境</b> 避免训练工况重构精度被误称为工程可靠性。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在沸水堆严重事故进程中,压力容器失效至使堆芯熔融物释放到下方地坑形成的深水池中,熔融物与冷却剂将不可避免发生燃料-冷却剂相互作用并形成碎片床,该过程危及安全壳的完整性。为了在经济安全的情况下还原原型中碎片床形成现象,本研究选用锡(Sn)、锡铋合金(Sn-Bi)、锌(Zn)、锡铁合金(FeSn)等金属材料作为实际堆芯熔融物(Zr/Fe混合物)的模拟物,通过高速摄像技术完整记录了熔融物射流破碎、液滴碎裂及碎片沉积聚合过程,并精确测定了碎片床的几何形貌特征、孔隙率分布以及碎片颗粒的形态学参数和粒径分布特征。实验结果表明,不同材料对碎片床的形成影响显著,尤其是高熔点金属(FeSn合金)表现出与低熔点金属截然不同的行为特性。Fe-Sn合金形成了大量结块且孔隙率极低的致密碎片床,与Sn、Zn、Sn-Bi形成的高孔隙率(&gt;90%)蜂窝状结构形成鲜明对比,主要归结于沸腾过程不一致。本研究为完善多组分熔融物体系下碎片床特性数据库提供了重要的实验依据,对深入理解熔融物材料组成对碎片床形成机制的影响具有重要科学价值。</p></div>
+          <div><h3>English abstract</h3><p lang="en">During severe accident progression in boiling water reactors(BWRs),reactor pressure vessel failure leads to the release of corium into the deep water pool of the containment pedestal,inevitably triggering fuel-coolant interactions(FCI)that form debris beds—a process threatening containment integrity.The characteristics of the resulting debris bed,including its porosity,morphology,and particle size distribution,critically determine the coolability of the molten material and the potential for steam explosions,thereby directly influencing the effectiveness of severe accident mitigation strategies.To reproduce prototypic debris bed formation phenomena under economically and safely feasible conditions,metallic simulants including tin(Sn),tin-bismuth alloy(Sn-Bi),zinc(Zn),and tin-iron alloy(Fe-Sn)were selected as representatives of actual corium compositions(Zr/Fe mixtures).The fragmentation processes of melt jets,droplet breakup,and debris sedimentation/agglomeration were comprehensively recorded using high-speed videography.The simulant materials were selected based on a simplified scaling analysis considering both hydrodynamic similarity(Froude number)and thermal similarity(modified Stefan number and Abe’s heat transfer regime maps),ensuring that the experimental observations are relevant to prototypical reactor conditions.Precise measurements were obtained for debris bed characteristics including geometric configuration,porosity distribution,as well as morphological parameters and particle size distribution of fragments.The experimental results reveal significant material-dependent behaviors:1)Steam explosion is observed exclusively in the Sn experiments,attributed to its high thermal conductivity combined with high superheat,which maintains the melt in a fully liquid state with excellent fluidity,enabling violent film boiling collapse and instantaneous heat transfer;2)The Fe-Sn alloy experiments produce uniquely dense debris beds with extensive agglomeration and low porosity,in stark contrast to the high-porosity(&gt;90%)honeycomb structures formed by low-melting-point simulants(Sn,Zn,Sn-Bi);3)Despite having comparable superheat levels,Fe-Sn exhibitsno steam explosion,instead undergoing mild film boiling that generated“externally solidified,internally liquid”particles that subsequently bonded upon settling.Analysis of the Fe-Sn results indicates that its intermediate superheat and stable film boiling regime lead to progressive surface solidification while maintaining a liquid core,with particle collision at the pool bottom rupturing the solid shells and allowing internal melt to weld adjacent particles together,forming dense agglomerates.This mechanism provides critical insights for prototypic reactor conditions,suggesting that the Zr/Fe components in actual corium may form similar dense,low-porosity layers that impede coolant penetration and threaten long-term coolability.The work provides crucial experimental data for enhancing the multicomponent corium debris bed database,offering significant scientific value for understanding the mechanisms by which melt material composition influences debris bed formation,fragmentation behavior,and steam explosion potential.These findings contribute to the development of more accurate severe accident models and inform the optimization of mitigation strategies for both BWRs and pressurized water reactors(PWRs)during the ex-vessel phase of severe accidents.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203871714" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">先检验假设、验证及成本，再讨论创新；不以方法组合或未经验证的性能数字保证研究价值。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证，尚非已证明创新</span><h3>传感器布局与局部热点保真度联合优化</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>平均温度重构准确未必能识别局部热点；将逆问题可辨识性和最差温度误差纳入布局优化。</p></section>
+            <section><h4>为什么值得开展</h4><p>价值在于可复现误差与适用边界证据；简单叠加POD、神经网络和已有工程对象不足以证明新颖性。</p></section>
+            <section><h4>建议工作</h4><ol><li>固定材料、几何及边界，建立高保真基准并保留独立验证工况。</li><li>对照全阶、全局POD及局部/分区方法，比较峰值、阈值与守恒残差。</li><li>把数据生成、训练及在线推断的全部成本纳入加速评价。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>给出能被独立复现的误差传播关系和失效边界。</li><li>明确何时降阶可用、何时必须回退高保真。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Design of liquid lead-bismuth eutectic flow velocity measurement based on contactless inductive flow tomography</li><li>Conceptual study of a supercritical CO2-cooled, triply periodic minimal surface lattice-based microreactor</li></ul></div><div><h4>主要风险</h4><ul><li>快照覆盖不足与训练/测试泄漏会夸大精度。</li><li>材料、气泡或接触模型偏差可能比降阶误差更大。</li><li>实验或高保真数据获取成本可能使在线加速失去项目总体收益。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">已核查POD核多物理耦合与碎片床形貌实验等原始研究。主要机会在局部极值、守恒映射、跨工况误差及实验验证。</p><p class="research-note">检索范围：出版商原始论文、Politecnico di Milano机构记录、OSTI研究原文；定向检索，不声称系统综述。　检索时间：2026-10-03T16:29:49.536097+00:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>有条件推进</span><h3>液态金属监测与燃料热工结构</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“方法组合即创新”的优先级，提高独立验证与局部极值误差研究。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>已有工作将POD用于核热工与中子学耦合；碎片床形貌、异质性与冷却关系也已有长期实验研究。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>平均温度重构准确未必能识别局部热点；将逆问题可辨识性和最差温度误差纳入布局优化。</li><li>跨工况独立验证、实测噪声及模型偏差的联合量化。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>该方向有工程问题驱动的研究价值，但当前摘要与快速检索不足以断言未被研究或保证发表。</p></section>
+            <section><h4>建议论文切口</h4><p>传感器布局与局部热点保真度联合优化</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>至少一个留出工况或独立实验。</li><li>峰值/事件阈值、守恒残差及总计算成本对照。</li><li>记录数据范围、采样与截断，报告失败案例。</li></ul><h4>新颖性风险</h4><ul><li>仅换堆型、网络或优化器而缺少新的可验证机制，可能只是应用复现。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://re.public.polimi.it/handle/11311/1193931" target="_blank" rel="noopener">Reduced order modeling for coupled thermal-hydraulics and reactor physics problems（2021）↗</a><p>机构原始记录表明POD与有限体积核多物理耦合已有先例。</p></li><li><a href="https://onlinelibrary.wiley.com/doi/10.1155/2023/9385756" target="_blank" rel="noopener">本模块的对标原始研究（既有工作）↗</a><p>用于核查热管耦合、碎片沉积实验或ANN-POD耦合的既有研究范围；不作为当天新增文献计数。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>不向Zotero同步。缺少完整摘要的候选排除；研究组公开记录无合格未读新增。回溯采集时间见逐篇accessed_at。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
