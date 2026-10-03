@@ -81,7 +81,7 @@
         <section><h3>核心观点</h3><ul><li>二维层流入口分配器的密度拓扑优化改善出口均匀性；关键数值为CV=5.08%、压降7.68 Pa。</li><li>原文高功率层流评估的具体部件指代不清，须全文核对，不应理解为整个换热器都保持层流。</li></ul></section>
         <section><h3>创新点</h3><ul><li>利用伴随梯度从自由挡板分布中寻找分叉拓扑，减少经验枚举。</li></ul></section>
         <section><h3>不足</h3><ul><li>二维层流6.8 kW概念验证不能证明三维高功率装置、制造公差与热应力下仍占优。</li><li>本次参数扫描中C1=0占优不证明压降惩罚通常无效；须排查尺度与目标归一化。</li></ul></section>
-        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>在三维热流固耦合中加入最小壁厚、制造半径及电磁泵功率约束。</li><li>用POD加速多工况优化，但独立检查最差出口流量和最高壁温。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者提出在额定工况下进一步进行三维湍流验证。</li></ul><b>分析推导</b><ul><li>在三维热流固耦合中加入最小壁厚、制造半径及电磁泵功率约束。</li><li>用POD加速多工况优化，但独立检查最差出口流量和最高壁温。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
       <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div></div></section>
@@ -255,7 +255,7 @@
         <section><h3>核心观点</h3><ul><li>复杂燃料几何采用直接三维全堆芯分析；瞬态安全与成本验证尚未完成。</li></ul></section>
         <section><h3>创新点</h3><ul><li>在相同堆芯尺度下比较材料及形状不同的三种燃料配置；首创性为作者自述。</li></ul></section>
         <section><h3>不足</h3><ul><li>材料与几何同时变化会混淆各自贡献；稳态中子学不证明升功率后仍有热机械安全裕量。</li></ul></section>
-        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>以相同燃料库存建立材料—几何正交对照，并联合评估压降、扭转与包壳热应力。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者明确保留详细瞬态安全评估和成本假设的进一步验证。</li></ul><b>分析推导</b><ul><li>以相同燃料库存建立材料—几何正交对照，并联合评估压降、扭转与包壳热应力。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
       <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>反应性<small>reactivity</small></h4><p>表征中子增殖偏离临界程度的量，温度、几何及组成都会影响它。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div></div></section>
@@ -284,7 +284,7 @@
         <section><h3>核心观点</h3><ul><li>双向几何更新改变热传递与蠕变演化，试验算例中的伸长误差明显减小。</li></ul></section>
         <section><h3>创新点</h3><ul><li>系统程序动态更新几何及传热面积，不仅把温度传给力学模型。</li></ul></section>
         <section><h3>不足</h3><ul><li>作者明确保留局部减薄热阻及堆尺度外推问题；两个算例不能解决材料蠕变模型泛化。</li></ul></section>
-        <section><h3>未来方向</h3><b>作者展望</b><ul><li>完整摘要未明确给出后续计划；不把本报告分析冒充作者计划。</li></ul><b>分析推导</b><ul><li>以体积与壁厚守恒闭合局部减薄反馈，并用独立温度历史检验失效时刻不确定性。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者明确指出局部壁厚减薄对径向热阻的反馈，以及一般堆尺度预测能力仍需评估。</li></ul><b>分析推导</b><ul><li>以体积与壁厚守恒闭合局部减薄反馈，并用独立温度历史检验失效时刻不确定性。</li></ul></section>
       </div>
       <div class="parameter-alert">⚑ 核对全文几何、材料与边界参数，验证数据及误差定义；仅尝试合法开放全文。</div>
       <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
