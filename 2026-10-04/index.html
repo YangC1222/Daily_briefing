@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-04 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-04 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-04</strong><span>本期日期</span></div><div class="stat"><strong>10</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>2</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 12</button><button data-filter="xmol">X-MOL 10</button><button data-filter="cqvip">维普 2</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">今日真实X-MOL会话检查All与核能各4页、共480条列表；去重后选入10篇近30天未读专题文献，标注回溯补充，真实来源Pub Date为9月17–30日。没有将其称为10月4日新发表；缺摘要、仅导言及历史重复条目排除。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="正常运行与流道堵塞条件下铅冷快堆组件绕丝转角的热工水力分析 thermal-hydraulic analysis of rotated wire wrap in lfr assembly under normal operation and flow blockage conditions 铅冷快堆与燃料组件热工 progress in nuclear energy · 2026-09-30 · zhibo gao, di wu, jinchao li, jie cheng, xu han, xiaobo zeng, jianjun wang 铅冷快堆与燃料组件热工 计算流体力学 computational fluid dynamics 通过离散流动与传热方程预测场量，仍依赖网格、闭合关系和边界验证。 用于理解本文摘要中的物理对象或方法。 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>铅冷快堆与燃料组件热工</span><span>铅冷快堆与燃料组件热工</span></div>
+          <h2>正常运行与流道堵塞条件下铅冷快堆组件绕丝转角的热工水力分析</h2>
+          <p class="title-en">Thermal-hydraulic analysis of rotated wire wrap in LFR assembly under normal operation and flow blockage conditions</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-30 · Zhibo Gao, Di Wu, Jinchao Li, Jie Cheng, Xu Han, Xiaobo Zeng, Jianjun Wang</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>19棒组件经实验和网格检查，转角与堵塞共同决定局部热点；摘要报告最大温升51 K。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>联合考察绕丝旋转方向、加热分布及堵塞轴向位置。</li></ul></section>
+        <section><h3>不足</h3><ul><li>51 K属于特定算例，不能作为普适堵塞裕量；摘要未给出真实绕丝变形与流固耦合。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>将热点温度映射到组件热应力子模型，对比平均温度误差与峰值应力误差；验证转角和堵塞位置的交互作用。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要可见19棒、SST k-ω、绕丝±60°/±120°及两种堵塞位置；数值几何、热源、流量及材料待全文核对，供热应力映射基准使用。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>计算流体力学<small>Computational Fluid Dynamics</small></h4><p>通过离散流动与传热方程预测场量，仍依赖网格、闭合关系和边界验证。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究利用CFD考察了19棒绕丝式铅基快堆（LFR）燃料组件在正常运行与流道堵塞条件下的热工水力行为。数值模型采用SST k-ω湍流模型，并利用NACIE-UP ADP10实验进行验证；温度与压降对比确认了网格独立性。研究考虑了两种加热方式（均匀加热与中心加热）以及中心绕丝的四种旋转角度（顺时针和逆时针各60°、120°）。结果表明，绕丝旋转会改变冷却剂的径向流动路径并削弱近壁换热，造成局部温升，且中心加热下更加明显。随后，在中心加热条件下模拟了不同轴向位置的两种堵塞情况。虽然流动恢复后，堵塞对温度分布的影响可忽略，但在堵塞末端，峰值温度可能升高最多51 K，具体取决于转角和轴向位置，受扰动流动区域的范围也随之变化。这些发现强调，当绕丝转动与堵塞事故同时存在时，应更加关注局部热工水力安全。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study presents a CFD investigation of thermal-hydraulic behavior in a 19-pin wire-wrapped lead-based fast reactor (LFR) fuel assembly under normal operation and flow blockage conditions. The numerical model is validated against the NACIE-UP ADP10 experiment using the SST k-ω turbulence model, with temperature and pressure drop comparisons confirming grid independence. Two heating modes (uniform and central) and four rotation angles of the central wire wrap (60° and 120° clockwise and counterclockwise) are considered. Results show that wire rotation modifies radial coolant paths and degrades near-wall heat transfer, causing localized temperature rises that are more pronounced under central heating. Subsequently, two blockage cases are simulated under central heating at different axial positions. Although blockage effects on temperature distribution become negligible after flow recovery, at the blockage end, peak temperatures can increase by up to 51 K depending on rotation angle and axial location, and the extent of the disturbed flow region also varies. These findings underscore the need for enhanced attention to local thermal-hydraulic safety when rotated wire wraps and blockage accidents coexist.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269512207970304" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106632" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269512207970304" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="cruo₄与cr₂uo₆结构和热力学性质的综合原子尺度研究 comprehensive atomistic investigation of the structural and thermodynamic properties of cruo4 and cr2uo6 核反应堆材料 nuclear engineering and technology · 2026-09-30 · hengfeng gong, daxi guo, lixiang wu, mingzhou chen, jiwei wang, jiaxiang xue, haixiang hu, pengliang liu, yuxiang zhang, liutao chen, guoliang zhang 核反应堆材料 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>核反应堆材料</span><span>核反应堆材料</span></div>
+          <h2>CrUO₄与Cr₂UO₆结构和热力学性质的综合原子尺度研究</h2>
+          <p class="title-en">Comprehensive Atomistic Investigation of the Structural and Thermodynamic Properties of CrUO4 and Cr2UO6</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-09-30 · Hengfeng GONG, Daxi GUO, Lixiang WU, Mingzhou CHEN, Jiwei WANG, Jiaxiang XUE, Haixiang HU, Pengliang LIU, Yuxiang ZHANG, Liutao CHEN, Guoliang ZHANG</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>DFT+U描述两种假设独立相的各向异性与缺陷能；作者明确仅为掺铬UO₂提供间接参考。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>统一比较弹性各向异性、电子态与点缺陷特征。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不可把假设相的理论延性指标当作真实辐照燃料的延性实测值；相稳定性、体积分数和缺陷演化均需验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>先核查相存在与稳定区间，再做各向异性物性到燃料热应力的敏感性传播；没有实验支持时不建立确定性材料卡。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究采用自旋极化DFT+U计算，考察Cr-U-O体系中CrUO₄与Cr₂UO₆化合物的热力学—力学性质以及辐照诱发缺陷演化。需要指出的是，本研究将这两种相视为彼此独立、假设性的化学实体。计算得到的晶格参数相对于实验和理论数据偏差为1%–2%，处于锕系氧化物模拟可接受的范围。两种化合物均具有明显的力学各向异性：正交晶系Cr₂UO₆对单轴压缩具有较强抵抗能力，而六方晶系CrUO₄的弹性刚度依赖取向。塑性指标（δ=B/C44）表明其具有良好延性；三维分析进一步证实了弹性模量、泊松比及硬度的各向异性。总态密度和分态密度揭示了Cr 3d、U 5f和O 2p轨道对成键的贡献。我们还计算了热力学参数和点缺陷能。与纯UO₂中以氧间隙原子占优势的情况不同，两种相中的铬间隙原子在能量上更有利。间隙缺陷显示负俘获能，其中铀空位具有最高的数值。本研究为理解CrUO₄与Cr₂UO₆自身的本征行为提供基础理论数据，并可能为先进掺铬UO₂核燃料体系的更广泛研究提供间接参考。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In this study, spin-polarized DFT+U calculations were performed to investigate thermo-mechanical properties and irradiation-induced defect evolution of CrUO4 and Cr2UO6 compounds within the Cr-U-O system. It should be noted that these two phases are treated as independent, hypothetical chemical entities in the present work. The calculated lattice parameters deviate from experimental and theoretical data by 1-2%, an acceptable range for actinide oxide simulations. Both compounds exhibit distinct mechanical anisotropy: orthorhombic Cr2UO6 strongly resist uniaxial compression, while hexagonal CrUO4 has orientation-dependent elastic stiffness. Plasticity indices (δ = B/C44) confirm their good ductility, and 3D analyses further verify anisotropy in elastic moduli, Poisson’s ratio and hardness. Total and partial density of states reveal the bonding contributions of Cr 3d, U 5f and O 2p orbitals. We also calculated thermodynamic parameters and point defect energies. Chromium interstitials are energetically favorable in both phases, unlike oxygen interstitials dominant in pure UO2. Interstitial defects show negative trap energies, where uranium vacancies possess the highest values. This work offers fundamental theoretical data for understanding the intrinsic behaviors of CrUO4 and Cr2UO6 themselves, which may provide indirect reference for broader studies on advanced Cr-doped UO2 nuclear fuel systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106308148966207488" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104754" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106308148966207488" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="uo₂裂变气体释放的扩散与再溶解模型评价 an evaluation of diffusivity and resolution models for fission gas release in uo2 核燃料行为与热工结构 nuclear engineering and design · 2026-09-29 · kaylee m. cunningham, christopher matthews, michael r. tonks 核燃料行为与热工结构 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>核燃料行为与热工结构</span><span>核燃料行为与热工结构</span></div>
+          <h2>UO₂裂变气体释放的扩散与再溶解模型评价</h2>
+          <p class="title-en">An evaluation of diffusivity and resolution models for fission gas release in UO2</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-09-29 · Kaylee M. Cunningham, Christopher Matthews, Michael R. Tonks</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>同一BISON输入下比较模型组合，机理组合在所选整体辐照实验上的释放偏差较低。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>统一模型选择与Bland–Altman偏差评价，减少不同模型研究之间的口径差异。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给出置信区间及实验数量；% FGR的差值口径须核查，偏差降低不能证明数据库外可靠性。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>传播扩散/再溶解选择的不确定性到棒内压、肿胀及间隙闭合；以独立辐照工况检验，而非只拟合终态释放。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对BISON输入、扩散/再溶解参数、辐照试验和偏差定义，建立燃料气体—间隙—应力链的不确定性对照。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>气体原子的行为受到核反应堆设计人员的特别关注，因为它在决定裂变气体释放与燃料肿胀方面起关键作用。为燃料性能程序使用，已有多种UO₂裂变气体扩散和再溶解模型，包括通过实验数据拟合的经验模型与描述物理行为的机理模型。本研究建立了统一方法：对若干轻水堆整体辐照实验，评价经验及机理扩散、再溶解模型对BISON所计算裂变气体释放的影响。通过将BISON计算的释放量与辐照实验的最终裂变气体释放量比较，评估模型准确性。对各模型组合的Bland–Altman分析表明，在其他输入参数固定时，Matthews扩散与Setyawan再溶解组成的机理组合具有较小偏差，为−0.028% FGR；历史上采用的经验组合，即Turnbull-D1–D2–D3扩散与White再溶解，其偏差为−1.938% FGR。这些结果为扩散和再溶解模型选择提供了比较依据，并表明机理模型可能提高与整体辐照实验的一致性，同时为预测现有实验数据库以外的裂变气体释放提供更具物理基础的框架。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Gas atom behavior is of particular interest to nuclear reactor designers as it plays a key role in determining fission gas release and fuel swelling. Various models have been developed for both the diffusivity and resolution of fission gas in UO2 for use in fuel performance codes, including both empirical models fitted to experimental data and mechanistic models that represent physical behaviors. This work establishes a consistent methodology for comparing empirical and mechanistic diffusivity and resolution models by evaluating their impact on calculated fission gas release in BISON for several integral light water reactor irradiation experiments. Model accuracies are assessed by comparing the BISON-calculated release with the final fission gas release from the irradiation experiments. Bland–Altman analyses of each combination of models indicate that the mechanistic combination of Matthews diffusivity and Setyawan resolution, with other input parameters fixed, has a lower bias of -0.028% FGR than the historically used empirical pairing, the Turnbull-D1–D2–D3 diffusivity with White resolution, which produces a bias of -1.938% FGR. These results provide a comparative basis for selecting diffusivity and resolution models and suggest that mechanistic models can improve agreement with integral irradiation experiments while offering a more physically based framework for predicting fission gas release beyond the existing experimental database.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106299934409240576" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115180" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106299934409240576" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="一体化小型模块化反应堆全厂断电热工水力现象的识别与排序 identification and ranking on thermal hydraulic phenomena in integrated smr during station blackout 先进反应堆安全与热工水力 nuclear engineering and design · 2026-09-26 · yusheng liu, chao xu, xiaojun qiu, lehan sun, jianping jing, sichao tan 先进反应堆安全与热工水力 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>先进反应堆安全与热工水力</span><span>先进反应堆安全与热工水力</span></div>
+          <h2>一体化小型模块化反应堆全厂断电热工水力现象的识别与排序</h2>
+          <p class="title-en">Identification and ranking on thermal hydraulic phenomena in integrated SMR during station blackout</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-09-26 · YuSheng Liu, Chao Xu, XiaoJun Qiu, LeHan Sun, JianPing Jing, SiChao Tan</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以RCS压力和堆芯液位为指标，按事故阶段利用响应面排序；OTSG管侧库存长期仍重要。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将专家识别和多参数响应面影响量连接到阶段性排序。</li></ul></section>
+        <section><h3>不足</h3><ul><li>响应面仍继承系统程序闭合关系和参数取值偏差；定量排序不等于消除主观性，也不涵盖未选评价指标。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>增加最高燃料温度和局部应力指标，比较不同采样域、模型偏差及指标权重下排序是否稳定。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>现象识别与排序表（PIRT）是核安全分析的系统性工具，广泛用于识别事故场景中的关键物理现象，并评估其重要性与认识程度。传统PIRT具有结构化分析的优点，但高度依赖专家主观判断，影响排序过程的客观性与可重复性。本研究主要关注典型小型模块化压水堆（SMPWR）全厂断电（SBO）事故中的热工水力现象，提出融合响应面分析（RSA）的现象重要性排序方法。建立一维数值模拟节点模型，模拟完整SBO事故过程，并表征和识别热工水力现象。采用多参数RSA，量化不同现象对两个主要评价量——反应堆冷却剂系统（RCS）压力与堆芯液位——的影响。将SBO划分为三个阶段，系统识别压力容器（RPV）、堆芯、直流蒸汽发生器（OTSG）及非能动安全系统等关键系统与部件中的重要现象。RSA结果表明，OTSG管侧存量变化、自然循环（NC）和汽液相互作用等对事故进程具有显著影响。尤其是即使在主要由应急堆芯冷却系统（ECCS）控制的长期冷却阶段，OTSG管侧参数仍通过余热排出系统（DHRS）持续影响堆芯液位与RCS压力。这些参数对SMPWR安全具有突出作用。与仅依赖专家判断的传统PIRT相比，结合RSA的PIRT显著提高了热工水力现象排序的客观性与可靠性。本研究不仅提出详细的SMPWR全厂断电PIRT，也为设计优化与实验验证提供重要依据。该方法可进一步促进小型模块化反应堆核安全分析中PIRT制定过程的科学性与客观性。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The Phenomena Identification and Ranking Table (PIRT), as a systematic tool in nuclear safety analysis, is widely used to identify key physical phenomena in accident scenarios and assess their importance and level of knowledge. Although the traditional PIRT method has the advantage of structured analysis, its strong reliance on experts&#x27; subjective judgments affects the objectivity and repeatability of ranking process. This study mainly focuses on thermal-hydraulic (T-H) phenomena occurring in a typical small modular pressurized water reactor (SMPWR) during station blackout (SBO) accident, and proposes a phenomena importance ranking method integrating response surface analysis (RSA). The one dimensional numerical simulation node model is established to simulate the entire SBO accident process, and to represent and identify the T-H phenomena. The multi-parameter RSA is conducted to quantify the impact of various T-H phenomena on two main figures of merit, namely the pressure of reactor coolant system (RCS) and the liquid level of core. The SBO accident is divided into three phases, and key phenomena in important systems and components such as reactor pressure vessel (RPV), core, once-through steam generator (OTSG), and passive safety systems are systematically identified. The results obtained by RSA indicate that phenomena such as tube-side inventory variation of OTSG, natural circulation (NC), and steam-liquid interaction have significant impacts on accident progress. Importantly, the tube-side parameters of OTSG continuously influence the core level and RCS pressure through the decay heat removal system (DHRS) even in the long-term cooling phase mainly dominated by emergency core cooling system (ECCS). The tube-side parameters of OTSG play prominent role in safety of SMPWRs. Compared with traditional PIRT method that solely relies on expert judgment, the PIRT in combination with RSA significantly enhances the objectivity and reliability of T-H phenomena ranking. Not only a detailed SBO PIRT for SMPWR is proposed in this investigation but also an important basis for design optimization and experimental verification are provided. This approach can be used to further promote the scientificity and objectivity of the PIRT development process in nuclear safety analysis for small modular reactors (SMRs).</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106299940214157312" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115232" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106299940214157312" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="参数化物理信息神经网络与有限差分耦合的先进热工水力系统数值方法 a numerical method for coupling parameterized physics-informed neural networks and fdm for advanced thermal-hydraulic system simulation pod降阶与反应堆多物理场快速仿真 nuclear engineering and design · 2026-09-26 · jeesuk shin, donggyun seo, sihyeong yu, joongoo jeon pod降阶与反应堆多物理场快速仿真 空隙率 void fraction 气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。 用于理解本文摘要中的物理对象或方法。 代理模型 surrogate model 近似高保真输入输出映射的低成本模型；训练域外误差必须单独评估。 用于理解本文摘要中的物理对象或方法。 本征正交分解 proper orthogonal decomposition 从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。 本报告建议的后续对照方法，不表示作者使用了pod。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>POD降阶与反应堆多物理场快速仿真</span><span>POD降阶与反应堆多物理场快速仿真</span></div>
+          <h2>参数化物理信息神经网络与有限差分耦合的先进热工水力系统数值方法</h2>
+          <p class="title-en">A numerical method for coupling parameterized physics-informed neural networks and FDM for advanced thermal-hydraulic system simulation</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-09-26 · Jeesuk Shin, Donggyun Seo, Sihyeong Yu, Joongoo Jeon</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用参数化PINN求动量、FDM推进质量，六箱排水算例在离散质量守恒前提下给出水位和速度误差。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>按单步重新锚定状态，将参数化神经代理与离散守恒方程分工。</li></ul></section>
+        <section><h3>不足</h3><ul><li>这是PINN/FDM而非POD；无数据不等于无训练成本，六箱排水验证不等于完整MELCOR严重事故验证，首创是作者自述。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>与守恒POD-Galerkin及纯FDM在同一留出工况对比，检查正性、总成本和阀门切换/相变导致的分布外失败。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对六水箱几何、流路阻力、初值及误差计算，作为POD与PINN/FDM守恒代理的同题基准。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>空隙率<small>void fraction</small></h4><p>气相在局部混合物体积中的占比，不等于碎片床固体堆积孔隙率。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>代理模型<small>surrogate model</small></h4><p>近似高保真输入输出映射的低成本模型；训练域外误差必须单独评估。</p><p class="context"><b>本文语境</b> 用于理解本文摘要中的物理对象或方法。</p></div><div class="term"><h4>本征正交分解<small>Proper Orthogonal Decomposition</small></h4><p>从快照中构建最优线性子空间；高能量保留率不保证峰值应力或阈值准确。</p><p class="context"><b>本文语境</b> 本报告建议的后续对照方法，不表示作者使用了POD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>利用MELCOR等系统程序进行严重事故分析对核安全评价不可或缺，但反复模拟的成本限制了参数研究与不确定性量化。数据驱动代理能加速分析，却需要大量模拟数据；物理信息神经网络（PINN）不需要训练数据，但每次参数改变都需重新训练，而且在长时间范围内会降低准确性。本研究以P2F方法——参数化PINN与有限差分法（FDM）耦合——处理MELCOR控制体流体动力学/流路（CVH/FL）模块，同时应对这两种限制。参数化节点分配PINN（NA-PINN）以水位差、初始速度和时间为输入，学习解流形，使单个训练好的网络能够作为所有流路动量方程的无数据代理。参数化NA-PINN与FDM求解器耦合，后者在每个时间步推进质量守恒方程，在离散意义下严格守恒质量，并以一次前向计算代替迭代非线性动量求解。由于网络仅在单个时间步内评估，并重新以FDM更新状态为锚点，因此避免了长时域训练限制。对于六水箱重力排水场景，在Δt=1.0 s时，水位平均绝对误差为9.32×10⁻⁵ m，速度误差为3.08×10⁻³ m/s。对于0.2–1.0 s的时间步长和五种初始条件，这一准确性无需重新训练或数据即可保持。据作者所知，这是首次将无数据参数化PINN与FDM求解器耦合用于热工水力系统程序建模。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Severe accident analysis with system codes such as MELCOR is indispensable for nuclear safety assessment, yet the cost of repeated simulations constrains parametric studies and uncertainty quantification. Data-driven surrogates accelerate these analyses but require large simulation datasets, whereas physics-informed neural networks (PINNs) require no training data yet must be retrained for every parameter change and lose accuracy over long horizons. This study addresses both limitations with the P2F method — Parameterized PINNs coupled with the finite difference method (FDM) — for MELCOR’s Control Volume Hydrodynamics/Flow Path (CVH/FL) module. A parameterized Node-Assigned PINN (NA-PINN) takes the water-level difference, initial velocity, and time as inputs, learning a solution manifold so that a single trained network serves as a data-free surrogate for the momentum equation at all flow paths. The parameterized NA-PINN is coupled with an FDM solver that advances the mass conservation equation at each time step, conserving mass exactly in the discrete sense while replacing the iterative nonlinear momentum solution with a single forward pass. Because the network is evaluated only within one time step and re-anchored to the FDM-updated state, the long-horizon training limitation is avoided. For a six-tank gravity-driven draining scenario, the water-level mean absolute error was 9.32×10−5 m and the velocity error 3.08×10−3 m/s at Δt=1.0 s. This accuracy holds for time steps from 0.2 to 1.0 s and five initial conditions without retraining or data. To the best of the authors’ knowledge, this is the first data-free parameterized PINN coupled with an FDM solver for thermal-hydraulic system-code modeling.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>开放 PDF 已下载并验证，保存于本地；不向 Zotero 同步</p>
+      <footer><a href="https://www.x-mol.com/paper/2106299938674847744" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115225" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106299938674847744" target="_blank" rel="noopener">摘要核验 ↗</a> <a href="https://arxiv.org/pdf/2604.02663" target="_blank" rel="noopener">开放PDF ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="nuclea：经严重事故程序验证的热力学数据库 nuclea: a thermodynamic database validated for severe accident codes 燃料碎片与碎片床 annals of nuclear energy · 2026-09-24 · m. barrachin, b. michel, b. piar, e. fischer 燃料碎片与碎片床 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>燃料碎片与碎片床</span><span>燃料碎片与碎片床</span></div>
+          <h2>NUCLEA：经严重事故程序验证的热力学数据库</h2>
+          <p class="title-en">NUCLEA: A thermodynamic database validated for severe accident codes</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-09-24 · M. Barrachin, B. Michel, B. Piar, E. Fischer</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>利用MASCA、ENTHALPY等实验评价堆芯熔融物热力学数据库；属于严重事故熔融物背景资料，并非碎片床冷却实验。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>从多实验计划界定数据库适用域及改进方向。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给出组成范围或误差数值；不能据此声称所有堆内外熔融物状态已验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者拟提出NUCLEA后续改进展望，但摘要未列具体项目。</li></ul><b>分析推导</b><ul><li>将相平衡与潜热不确定性传入碎片形成和再熔化模型，明确材料组分适用域与冷却边界。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文旨在通过与实验数据的对比分析，概述NUCLEA热力学数据库的验证情况。所选案例来自重要实验计划，尤其是OECD MASCA和欧盟ENTHALPY，以覆盖改善严重事故程序的多个重要主题，特别是堆芯熔融物在压力容器内外的演化。文中讨论了计算与测量的比较，总结了这一广泛验证工作取得的主要认识，并评估NUCLEA数据库当前对堆芯熔融物热力学的适用性。根据这些结果，界定了NUCLEA的有效适用域，并提出未来改进展望。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The objective of this article is to present an overview of the validation of the NUCLEA thermodynamic database through a comparative analysis with experimental data. These examples are selected from important experimental programs (notably OECD MASCA, EC ENTHALPY) in order to cover various important topics for improving severe accident codes, especially regarding the progression of corium inside or outside the vessel. The comparison between calculations and measurements is discussed, and the main lessons learned from this extensive validation work are summarized, along with an assessment of the current relevance of the NUCLEA database concerning the thermodynamics of corium. Based on these results, the validity domain of NUCLEA is defined, and prospects for future improvement are proposed.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：HTTP 403</p>
+      <footer><a href="https://www.x-mol.com/paper/2106199793102761984" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112851" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106199793102761984" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="人工智能技术在空间核反应堆系统中的应用 applications of artificial intelligence technology in space nuclear reactor systems 空间核电源与快速仿真 nuclear engineering and design · 2026-09-22 · shuo liu, kai zhang, dongdong xu, qiqian zhai, chenglong wang, lin qi, dalin zhang 空间核电源与快速仿真 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>空间核电源与快速仿真</span><span>空间核电源与快速仿真</span></div>
+          <h2>人工智能技术在空间核反应堆系统中的应用</h2>
+          <p class="title-en">Applications of artificial intelligence technology in space nuclear reactor systems</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-09-22 · Shuo Liu, Kai Zhang, Dongdong Xu, Qiqian Zhai, Chenglong Wang, Lin Qi, Dalin Zhang</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述将ROM与AI应用置于有限传感、星载算力和缺乏运行数据的约束中；主要证据来自模拟与地面研究。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>综合应用类别、技术成熟度与空间工程约束。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述不是在轨验证；不能用地面代理精度证明辐射环境下自主控制安全性。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者提出可信AI、物理信息学习、自适应数字孪生与自主运行框架等未来方向。</li></ul><b>分析推导</b><ul><li>先完成辐射扰动和传感缺失下的地面闭环验证，评估ROM失效检测及回退策略，而非直接以在轨自主为近期目标。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>空间核动力系统因其高能量密度、长时间发电能力以及不依赖地面环境条件等特点，作为未来深空探索的支撑技术受到越来越多关注。人工智能（AI）在解决空间核系统的关键挑战方面展示了相当潜力，包括智能设计优化、状态预测、故障诊断和自主运行。本综述系统介绍AI在空间核动力系统中的应用，重点关注当前能力、局限及未来发展方向。首先介绍空间核反应堆的分类、系统架构和代表性技术，以建立工程背景并识别推动AI应用的挑战。随后评述机器学习（ML）、智能优化算法（IOA）、深度学习（DL）、降阶模型（ROM）及数据同化（DA），重点关注其在空间核系统特有约束下的适用性，包括有限的传感能力、严格的尺寸/重量/功耗（SWaP）要求、辐射环境及稀缺运行数据。按系统设计优化、状态预测与数字孪生（DT）、故障诊断、健康管理及未来自主运行等方面讨论代表性AI应用，并评估AI赋能空间核系统应用的当前成熟度。现有研究主要依赖高保真模拟、地面示范及从地面核工程迁移的方法，空间核反应堆运行数据仍不可得。文中还讨论了星载计算受限、辐射诱发硬件退化、模型可靠性以及验证与确认（V&amp;V）要求等关键挑战。最后总结可信AI、物理信息学习、自适应数字孪生及智能自主运行框架等未来研究方向。本综述为理解空间核动力系统AI技术的现状与未来潜力提供参考。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Space nuclear power systems have attracted increasing attention as enabling technologies for future deep-space exploration because of their high energy density, long-duration power generation capability, and independence from terrestrial environmental conditions. Artificial intelligence (AI) has shown considerable potential for addressing key challenges in space nuclear systems, including intelligent design optimization, state prediction, fault diagnosis, and autonomous operation. This review provides a systematic overview of AI applications in space nuclear power systems, with particular emphasis on current capabilities, limitations, and future development directions. The classifications, system architectures, and representative technologies of space nuclear reactors are first introduced to establish the engineering context and identify the challenges that motivate AI integration. Machine learning (ML), intelligent optimization algorithm (IOA), deep learning (DL), reduced-order model (ROM), and data assimilation (DA) are reviewed with emphasis on their applicability under the specific constraints of space nuclear systems, including limited sensing capability, stringent size, weight, and power (SWaP) requirements, radiation environments, and scarce operational data. Representative AI applications are discussed in terms of system design optimization, state prediction and digital twins (DTs), fault diagnosis, health management, and prospective autonomous operation. The current maturity of AI-enabled applications in space nuclear systems is also assessed. Existing studies rely primarily on high-fidelity simulations, ground-based demonstrations, and transferable methodologies from terrestrial nuclear engineering, while operational data from space nuclear reactors remain unavailable. Key challenges associated with onboard computational limitations, radiation-induced hardware degradation, model reliability, and verification and validation (V&amp;V) requirements are also discussed. Future research directions toward trustworthy AI, physics-informed learning, adaptive digital twins, and intelligent autonomous operation frameworks are then summarized. This review provides a reference for understanding the current status and future potential of AI technologies in space nuclear power systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106245946812936192" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115207" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106245946812936192" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="采用改进mcci模型分析福岛第一核电站1号机组堆外事故阶段 analysis of the ex-vessel phase of the fukushima daichi unit 1 reactor accident using improved mcci tools that incorporate major modeling contributions by j.m. seiler 燃料碎片与碎片床 annals of nuclear energy · 2026-09-20 · m.t. farmer, s. mizokami, m. naitoh 燃料碎片与碎片床 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>燃料碎片与碎片床</span><span>燃料碎片与碎片床</span></div>
+          <h2>采用改进MCCI模型分析福岛第一核电站1号机组堆外事故阶段</h2>
+          <p class="title-en">Analysis of the ex-vessel phase of the Fukushima Daichi Unit 1 reactor accident using improved MCCI tools that incorporate major modeling contributions by J.M. Seiler</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-09-20 · M.T. Farmer, S. Mizokami, M. Naitoh</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>利用改进的铺展和MCCI/可冷却性模型重建1F1堆外序列，对照实际终态碎片证据。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将新取证信息与ROSAU模型进展纳入一体化序列分析。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给出终态吻合程度和参数可辨识性；终态匹配并不唯一证明事故全过程。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>联合终态形貌与时间信息开展反演，量化多组事故路径产生相同终态的非唯一性，再评价冷却模型。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>围绕2011年3月11日东日本大地震后福岛第一核电站三个受影响机组的严重事故演化，取证调查仍在继续，以加深理解和解释。作为相关工作的一部分，美国能源部于2016年资助一项研究，基于当时掌握的信息，采用阿贡国家实验室开发的MELTSPREAD和CORQUENCH程序考察1号机组（1F1）的堆外事故演化。此后，东京电力公司有效利用机器人和无人机技术，更清楚地了解安全壳内状况；对1F1而言，这些调查提供了与熔融物—混凝土相互作用（MCCI）有关的重要认识。与此同时，降低严重事故不确定性（ROSAU）计划利用实验认识，以及通过FACE、ARC-F等众多国际合作与计划共享的福岛发现，改进熔融物铺展与MCCI/碎片可冷却性模型。本研究旨在应用这些改进模型，对1F1堆外事故序列进行综合分析，以评价其复现东京电力公司所报告实际终态碎片状况的能力。分析范围从压力容器失效开始，经堆腔注水及随后的碎片冷却阶段，直至堆腔烧蚀停止。由于本文发表于纪念Jean-Marie Seiler的专刊，MCCI/可冷却性分析部分还指出了他在该领域的重要贡献，这些贡献已被CORQUENCH及其他严重事故程序采用。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Forensics investigations continue at Fukushima Daiichi related to understanding and interpreting severe accident progression at the three affected units following the Great East Japan Earthquake on March 11, 2011. As part of this work, the U.S. Department of Energy sponsored a study in 2016 to examine ex-vessel accident progression in Unit 1 (1F1) based on what was known at the time using the MELTSPREAD and CORQUENCH codes developed by Argonne National Laboratory. Since then, TEPCO has adeptly utilized robot and drone technologies to gain a clearer understanding of conditions within the reactor containments, and for 1F1, these investigations have provided important insights related to MCCI. In parallel, progress has been made on improving melt spreading and MCCI/debris coolability models as part of the Reduction of Severe Accident Uncertainties (ROSAU) program using insights from the experiments as well as findings at Fukushima shared through numerous international collaborations and programs (FACE, ARC-F, …). The objective of this work is to apply these improved models to perform an integrated analysis of the 1F1 ex-vessel accident sequence to gauge their ability to replicate actual end-state debris conditions reported by TEPCO. The analysis spans the time from vessel failure up through cavity flooding and the follow-on debris cooling phase until cavity ablation is arrested. Since this paper is published in a special edition commemorating Jean-Marie Seiler, the MCCI/coolability analysis portion of this work makes note of his key contributions in this field that have been implemented in CORQUENCH as well as other severe accident codes.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：HTTP 403</p>
+      <footer><a href="https://www.x-mol.com/paper/2106199792473616384" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112849" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106199792473616384" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="关键核材料激光焊接：机制、缺陷控制及先进技术综述 laser welding of critical nuclear materials: a review of mechanisms, defect control, and advanced techniques 核反应堆材料与热工结构 progress in nuclear energy · 2026-09-18 · fajie zhang, peilei zhang, chao fang, maolong zhang, qinghua lu, xunzuo su, peixuan lei 核反应堆材料与热工结构 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>核反应堆材料与热工结构</span><span>核反应堆材料与热工结构</span></div>
+          <h2>关键核材料激光焊接：机制、缺陷控制及先进技术综述</h2>
+          <p class="title-en">Laser welding of critical nuclear materials: A review of mechanisms, defect control, and advanced techniques</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-18 · Fajie Zhang, Peilei Zhang, Chao Fang, Maolong Zhang, Qinghua Lu, Xunzuo Su, Peixuan Lei</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述核级不锈钢、RAFM和锆合金激光焊接，覆盖水下/窄间隙工艺及残余应力模拟。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把核级材料、工艺缺陷与温度—残余应力预测联系起来。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有单一可复现热源参数或寿命数据；低热变形不等于残余应力可忽略，焊接与服役辐照需分开验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者展望高功率激光、智能控制与先进检测技术的发展，摘要未给出具体实验计划。</li></ul><b>分析推导</b><ul><li>用焊接残余应力作为服役热应力初始状态，在局部子模型中核验应力路径；优先取得热循环和残余应力测量。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>激光焊接对压水堆（PWR）、未来聚变堆（例如ITER）及第四代系统关键部件的制造和修复具有明显优势。其集中的能量密度、较小的热变形以及快速加工特点，使其十分适合关键核材料连接。本文系统评述激光焊接在以下材料中的应用：用于PWR一回路部件与堆内构件的奥氏体不锈钢（ASS）；聚变堆第一壁/包层模块主要候选材料低活化铁素体/马氏体（RAFM）钢；以及轻水堆燃料包壳和组件格架的标准材料锆合金。研究重点为焊接工艺、焊缝质量、缺陷控制和焊后处理对接头性能的影响。为满足核工业对堆内构件原位修复和厚壁压力容器连接的需求，综述了水下激光焊接与窄间隙激光焊接（NGLW）两项专门技术的近期进展。此外，总结了激光焊接数值模拟方法，重点包括核级材料的温度场预测、熔池行为、残余应力及应变演化、变形控制和工艺优化。展望未来，高功率激光、智能控制和先进检测技术的进步，正使激光焊接成为提高核电制造与维护安全性、寿命和效率的重要技术。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Laser welding offers distinct advantages for the fabrication and repair of critical components in Pressurized Water Reactors (PWRs), future Fusion Reactors (e.g., ITER), and Generation IV systems. Its concentrated energy density, minimal thermal distortion, and rapid processing speeds make it highly suitable for joining key nuclear materials. This paper systematically reviews the application of laser welding to: austenitic stainless steels (ASSs) used for PWR primary circuit components and reactor internals; reduced-activation ferritic/martensitic (RAFM) steels, the primary candidate for fusion reactor first wall/blanket modules; and zirconium alloys, the standard material for fuel cladding and assembly grids in light-water reactors. The study focuses on welding processes, weld quality, defect control, and the effects of post-weld treatments on joint performance. To meet nuclear industry demands for in-situ repairs of reactor internals and joining of thick-walled pressure vessels, recent advances in two specialized techniques—underwater laser welding and narrow-gap laser welding (NGLW)—are reviewed. In addition, numerical simulation methods for laser welding are summarized, with emphasis on thermal-field prediction, molten-pool behavior, residual stress and strain evolution, deformation control, and process optimization for nuclear-grade materials. Looking ahead, advancements in high-power lasers, intelligent control, and advanced inspection technologies are positioning laser welding as a cornerstone technology for enhancing the safety, longevity, and efficiency of nuclear power manufacturing and maintenance operations.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106220579305828352" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106617" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106220579305828352" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="面向球床堆分析的中子学、离散元、热工水力与voronoï网格耦合 coupling of neutronics, discrete element method, thermal-hydraulics and voronoï mesh for pebble bed reactor analysis 多物理场耦合（热工结构） annals of nuclear energy · 2026-09-17 · ludovic jantzen, yves robert, massimiliano fratoni 多物理场耦合（热工结构） 适用域 applicability domain 模型或实验经验证的参数、几何及运行状态范围。 不能把本篇特定算例的结论推广到全部堆型或事故。 敏感性分析 sensitivity analysis 衡量输入变化对输出的影响，须区分局部变化与跨机制变化。 用于评估摘要中设计或参数排名是否稳健。">
+      <header class="paper-head">
+        <span class="number">10</span>
+        <div>
+          <div class="chips"><span>多物理场耦合（热工结构）</span><span>多物理场耦合（热工结构）</span></div>
+          <h2>面向球床堆分析的中子学、离散元、热工水力与Voronoï网格耦合</h2>
+          <p class="title-en">Coupling of neutronics, discrete element method, thermal-hydraulics and Voronoï mesh for pebble bed reactor analysis</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-09-17 · Ludovic Jantzen, Yves Robert, Massimiliano Fratoni</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>Serpent—GeN-Foam—DEM用Voronoï映射连接，HTR-10平衡工况中逐球功率相对等温模型偏差达±20%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对球床非均匀性实现逐球温度/功率字段映射和反馈。</li></ul></section>
+        <section><h3>不足</h3><ul><li>±20%是与等温模型的差异，不是对实验的误差；高保真命名不替代独立验证，摘要没有应力求解。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出具体后续实验计划；独立建议见下一项。</li></ul><b>分析推导</b><ul><li>检查体积分配与总功率守恒，然后把逐球温度映射到结构模型；构建局部ROM并验证热点和映射误差的叠加。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对逐球几何、Voronoï映射权重、总功率守恒和耦合收敛，以免把字段映射误差当作物理效应。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>适用域<small>applicability domain</small></h4><p>模型或实验经验证的参数、几何及运行状态范围。</p><p class="context"><b>本文语境</b> 不能把本篇特定算例的结论推广到全部堆型或事故。</p></div><div class="term"><h4>敏感性分析<small>sensitivity analysis</small></h4><p>衡量输入变化对输出的影响，须区分局部变化与跨机制变化。</p><p class="context"><b>本文语境</b> 用于评估摘要中设计或参数排名是否稳健。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>球床堆（PBR）模拟通常采用均匀化的能谱分区，限制了功率分布、燃耗和温度等关键参数的准确性。为解决这一问题，扩展超高保真工具（HxF），通过耦合蒙特卡罗程序Serpent、多孔介质求解器GeN-Foam和离散元模型（DEM），纳入详细热反馈。研究开发了一种新的基于Voronoï的网格映射策略，使不同耦合求解器之间能够高效、准确地传递功率密度和温度场，并捕捉PBR堆芯固有的强空间非均匀性。方法应用于平衡状态的HTR-10反应堆。结果表明，所提方法能捕捉显著的堆内功率变化；与等温模型相比，逐球功率偏差可达±20%。此外，耦合模型给出了堆芯部件温度分布预测。该耦合框架实现球尺度上一致的多物理反馈，并表明基于Voronoï的耦合显著提高了PBR模拟保真度，为堆芯设计、安全分析和燃料管理提供可靠工具。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The simulation of pebble bed reactors (PBRs) is often simplified using homogenized spectral zones, limiting the accuracy of key parameters such as power distribution, fuel burnup and temperatures. To address this, the hyper-fidelity tool (HxF) is extended to incorporate detailed thermal feedback by coupling the Monte Carlo code Serpent with the porous media solver GeN-Foam and a discrete element model (DEM). A novel Voronoï-based mesh mapping strategy is developed to enable efficient and accurate transfer of power density and temperature fields between the coupled solvers, capturing the strong spatial heterogeneities inherent to PBR cores. The methodology is applied to the HTR-10 reactor at equilibrium conditions. Results show that the proposed approach captures significant intra-core power variations, with pebble-wise powers deviating by up to ±20% compared to the isothermal model. In addition, the coupled model provides a prediction of the temperature distributions for the core components. The coupling framework enables consistent multi-physics feedback at the pebble scale and demonstrate that the proposed Voronoï-based coupling significantly enhances the fidelity of PBR simulations, providing a robust tool for core design, safety analysis, and fuel management.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：HTTP 403</p>
+      <footer><a href="https://www.x-mol.com/paper/2106199784852566016" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112812" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106199784852566016" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="增材制造316l不锈钢在核电站环境中环境损伤行为的研究进展 environmental degradation of additively manufactured 316l stainless steel in nuclear power plant environments: a review 核反应堆材料 机械工程材料 · 2026 · 陈俊劼 刘浩 邹文杰 赵宙 吕战鹏 阙再青  环境损伤 environmental degradation 环境和应力共同改变材料完整性。 本文综述核环境下腐蚀与开裂。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>核反应堆材料</span></div>
+          <h2>增材制造316L不锈钢在核电站环境中环境损伤行为的研究进展</h2>
+          <p class="title-en">Environmental Degradation of Additively Manufactured 316L Stainless Steel in Nuclear Power Plant Environments: A Review</p>
+          <p class="meta">机械工程材料 · 2026 · 陈俊劼 刘浩 邹文杰 赵宙 吕战鹏 阙再青</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>比较LPBF及激光定向能量沉积316L与锻材，在轻水堆及sCO₂/LBE/熔盐环境下的腐蚀、辐照相关开裂和疲劳。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>按工艺—微结构—服役性能组织核环境损伤证据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要中的商业应用是作者综述陈述，本报告未独立核实具体部署；不能由应用推定长寿命资格验证已充分。</li><li>环境、工艺缺陷及残余应力相互作用，不能用普通室温拉伸数据代替辐照服役数据。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者展望工艺—微结构—性能关联研究；具体计划摘要未列明。</li></ul><b>分析推导</b><ul><li>把工艺残余应力和腐蚀减薄纳入组件支架局部热应力模型；先收集真实微结构、温度和寿命验证数据。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>环境损伤<small>environmental degradation</small></h4><p>环境和应力共同改变材料完整性。</p><p class="context"><b>本文语境</b> 本文综述核环境下腐蚀与开裂。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>随着增材制造技术的快速发展,增材制造316L不锈钢部件,如燃料碎片过滤器和燃料组件支架已在商业反应堆中得到实际应用。然而,增材制造固有的快速非平衡凝固过程致使316L不锈钢形成特征性微观结构,使其在核电站极端环境中的服役行为与锻造材料存在差异。介绍了激光粉末床熔融和激光定向能量沉积等2种增材制造工艺制备的316L不锈钢的显微组织,探讨了其在轻水堆高温水环境中的腐蚀、应力腐蚀开裂、辐照促进应力腐蚀开裂、腐蚀疲劳等损伤行为以及在先进堆换热介质环境的超临界CO2、铅铋共晶体、熔盐等中的高温氧化、溶解腐蚀、晶间腐蚀等损伤行为,以及与传统锻造材料的对比结果。最后,基于工艺-微观结构-服役性能的关联机制,对增材制造316L不锈钢在核能领域的未来研究方向进行了展望。</p></div>
+          <div><h3>English abstract</h3><p lang="en">With the rapid development of additive manufacturing technology,additively manufactured 316Lstainless steel components,such as fuel debris filters and fuel assembly supports,have been practically implemented incommercial reactors.However,the inherent rapid non-equilibrium solidification process of additive manufacturing resultsin the formation of characteristic microstructures in 316L stainless steel,leading to differences in its service behavior underextreme nuclear power plant environments compared to forged materials.The microstructure of 316L stainless steelfabricated by two additive manufacturing processes,laser powder bed fusion and laser-directed energy deposition,isreviewed.The degradation behaviors such as corrosion,stress corrosion cracking,irradiation-promoted stress corrosioncracking and corrosion fatigue in the high-temperature water environment of light water reactors,as well as high-temperature oxidation,dissolution corrosion and intergranular corrosion in the heat exchange medium environment ofadvanced reactors such as supercritical CO2,lead-bismuth eutectic and molten salt,and comparison results with traditionalforging materials are discussed.Finally,on the basis of the correlation mechanism of process-microstructure-serviceperformance,the future research directions of additive manufactured 316L stainless steel in the nuclear energy field areprospected.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203082855" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="溶液形式核燃料的反应性反馈特征分析 reactivity feedback characteristics of nuclear fuel in solution form 先进反应堆多物理反馈 科技视界 · 2026 · 刘佳艺 王帅 王云闯 周冰燕 陈长  气泡反应性反馈 bubble reactivity feedback 气泡改变中子泄漏等过程后引起反应性变化。 此处非均匀气泡与事故碎片床空隙不同。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>先进反应堆多物理反馈</span></div>
+          <h2>溶液形式核燃料的反应性反馈特征分析</h2>
+          <p class="title-en">Reactivity Feedback Characteristics of Nuclear Fuel in Solution Form</p>
+          <p class="meta">科技视界 · 2026 · 刘佳艺 王帅 王云闯 周冰燕 陈长</p>
+          
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>简化圆柱堆芯中温度反馈来自溶液膨胀、气泡泄漏和多普勒效应，气泡位置及含气率较粒径非均匀效应更重要。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在同一简化几何中分离慢化、温度及气泡空间分布影响。</li></ul></section>
+        <section><h3>不足</h3><ul><li>0.1–1.0 cm范围的弱粒径效应不能外推全部尺寸或气泡流态；摘要未给出反馈系数及验证误差。</li><li>裂变碎片指高能裂变产物，不等于严重事故燃料碎片/碎片床，本篇不得归入碎片床实验。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未说明具体未来计划。</li></ul><b>分析推导</b><ul><li>将位置敏感性与辐解气体产生、迁移及时间尺度耦合；比较同一总含气率下非均匀分布，验证反应性与温度场闭环。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>气泡反应性反馈<small>bubble reactivity feedback</small></h4><p>气泡改变中子泄漏等过程后引起反应性变化。</p><p class="context"><b>本文语境</b> 此处非均匀气泡与事故碎片床空隙不同。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>溶液形式的核燃料,使燃料与慢化剂均匀混合,并且裂变中子会直接接触溶液,高能的裂变碎片、中子、γ射线将会引发显著的水和其他溶液成分的辐照分解现象,产生诸多辐照分解气体。本文针对溶液燃料的上述特点,以简化的圆柱形堆芯为对象,建模计算并分析了燃料溶液的慢化特性、温度反馈和气泡反馈等。研究结果表明:燃料溶液的水铀比所处的欠慢化或过慢化状态对温度反馈基本没有影响;温度反馈主要由溶液体积膨胀、气泡对泄漏的影响和多普勒效应贡献;气泡反馈体现为泄漏率变化造成的反馈,相同体积的气泡在中子通量密度较高的位置影响更大,而在相同位置时,含气量越高,影响越大;气泡半径尺寸在0.1~1.0 cm范围内变化时,非均匀效应对气泡反馈的影响较小,反馈大小主要受含气率和气泡位置的影响。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Nuclear fuel in solution form uniformly mixes the fuel and moderator, and fission neutrons come into direct contact with the solution. High-energy fission fragments, neutrons and gamma rays induce substantial radiolysis of water and other solution constituents, producing various radiolytic gases. Considering these characteristics, this study models a simplified cylindrical core and calculates and analyzes the moderation characteristics, temperature feedback and bubble feedback of the fuel solution. The results indicate that whether the water-to-uranium ratio places the fuel solution in an under-moderated or over-moderated state has little influence on temperature feedback. Temperature feedback is mainly contributed by solution volume expansion, the effect of bubbles on leakage, and the Doppler effect. Bubble feedback manifests as feedback caused by changes in the leakage rate: bubbles of the same volume have a greater effect in regions of higher neutron flux, while at the same location a higher gas content produces a greater effect. When the bubble radius varies from 0.1 to 1.0 cm, heterogeneity has only a small effect on bubble feedback, whose magnitude mainly depends on gas volume fraction and bubble location.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204196261" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">先检验守恒、极值和物理闭合误差，再讨论降阶创新。</p><article class="opportunity">
+          <div class="opportunity-head"><span>有条件优先；先完成基准验证</span><h3>局部热点与守恒映射共同约束的组件热应力降阶</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>绕丝/堵塞引起局部温升，逐球耦合又涉及异网格传递；平均场误差不足以保证局部应力和安全裕量。尚未证明该具体组合是未研究空白。</p></section>
+            <section><h4>为什么值得开展</h4><p>价值须来自可复现的极值误差与失效边界，不能仅靠把POD用于新堆型。</p></section>
+            <section><h4>建议工作</h4><ol><li>先复现一个温度场和全阶结构模型，核对热源、材料及载荷。</li><li>对比全局POD、局部分区POD和保守映射；留出堵塞位置/幅度，评价峰值应力与功率守恒。</li><li>报告数据库、训练、映射和在线求解总成本，并通过子模型边界距离检查。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>量化热场重构和字段映射对局部应力误差的分量。</li><li>给出需要回退全阶模型的判据及失败工况。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Thermal-hydraulic analysis of rotated wire wrap in LFR assembly under normal operation and flow blockage conditions</li><li>A numerical method for coupling parameterized physics-informed neural networks and FDM for advanced thermal-hydraulic system simulation</li><li>Coupling of neutronics, discrete element method, thermal-hydraulics and Voronoï mesh for pebble bed reactor analysis</li><li>增材制造316L不锈钢在核电站环境中环境损伤行为的研究进展</li></ul></div><div><h4>主要风险</h4><ul><li>接触状态改变可能使线性POD子空间失效。</li><li>湍流闭合与材料偏差可能大于降阶误差。</li><li>若没有独立验证，仅快照重构不足以支持安全分析结论。</li><li>增材制造残余应力、腐蚀与辐照微结构需分别验证，不能直接采用锻材属性。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">核查原始核多物理降阶研究与官方子模型流程；不以方法组合断言首创。</p><p class="research-note">检索范围：出版商原始论文及Ansys官方帮助；快速定向查新，非穷尽检索。　检索时间：2026-10-04T04:13:05.801280+00:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>基准验证优先，创新性待系统查新</span><h3>局部热点与守恒映射共同约束的组件热应力降阶</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低单纯方法组合的优先级，提高极值、守恒与适用域检验。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2021年原始研究已经将降阶方法用于温度反馈耦合的核热工/中子学方程；Ansys标准子模型流程已有切边位移插值。今日论文已有Voronoï映射和参数化PINN/FDM守恒设计。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>局部应力误差的可分解来源与训练域外回退指标；这是待验证假设，非已确认空白。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可围绕小范围热工结构基准推进；避免把POD、子模型及异网格映射组合宣称首创。</p></section>
+            <section><h4>建议论文切口</h4><p>局部热点与守恒映射共同约束的组件热应力降阶</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>独立堵塞工况或实验数据。</li><li>全阶与降阶极值、守恒及总成本对照。</li><li>子模型切边移动与网格收敛检查。</li></ul><h4>新颖性风险</h4><ul><li>只有平均相对误差和在线耗时，可能掩盖热点与离线成本。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://www.sciencedirect.com/science/article/pii/S0149197021002626" target="_blank" rel="noopener">Reduced order modeling for coupled thermal-hydraulics and reactor physics problems（2021）↗</a><p>温度反馈核多物理降阶已有先例。</p></li><li><a href="https://ansyshelp.ansys.com/public/Views/Secured/corp/v242/en/ans_adv/Hlp_G_ADV4_2.html" target="_blank" rel="noopener">Ansys: Using Submodeling（2024 R2）↗</a><p>官方流程要求切边插值及边界距离核验，不能视为新方法。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>已按全历史DOI、规范化题名去重。不向Zotero同步。研究组公开精确ORCID检索7条、未发现合格未读新增。 中文材料论文与当日激光焊接综述可交叉研究工艺残余应力，但POD加速不能消除材料模型偏差。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
