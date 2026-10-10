@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-10 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-10 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-10</strong><span>本期日期</span></div><div class="stat"><strong>10</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>7</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 17</button><button data-filter="xmol">X-MOL 10</button><button data-filter="cqvip">维普 7</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">本次于2026-10-10核查并补写2026-10-10，不是重新发现的当日新论文。X-MOL All与核能各两页，175条去历史URL候选；增加分页遇到列表不刷新，未声称成功覆盖额外页。DOI/题名/URL跨历史与本批去重。近30天回溯明确标注；缺英文摘要或无核反应堆关系候选不凑数。正式可见摘要阅读10篇，中文独立7篇。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="快堆燃料组件高效三维有限元辐照变形模型的开发与验证 development and verification of an efficient 3-d finite element analysis model for irradiation deformation of the fast reactor fuel assembly 07 多物理场耦合（热工结构） nuclear engineering and technology · 2026-10-02 · haoyu wang, guangliang yang, zhifan zhou, junxian cao, yongzhong huang, jing zhang, yuanming li, lei shi 07 多物理场耦合（热工结构） 绑定约束 tie constraint 约束界面相对自由度的方法。 用于简化组件机械连接，不能替代真实滑移接触。 辐照肿胀 irradiation swelling 辐照引起的材料体积变化。 材料辐照行为通过用户子程序引入，具体本构待查。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>快堆燃料组件高效三维有限元辐照变形模型的开发与验证</h2>
+          <p class="title-en">Development and Verification of an Efficient 3-D Finite Element Analysis Model for Irradiation Deformation of the Fast Reactor Fuel Assembly</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-02 · Haoyu Wang, Guangliang Yang, Zhifan Zhou, Junxian Cao, Yongzhong Huang, Jing Zhang, Yuanming Li, Lei Shi</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用壳、梁与接触替代全实体结构，在不同规模的压缩/辐照基准中核验间隙及椭圆化；超过100倍加速仅对应7棒算例。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>贡献是保留周向及机械相互作用的结构简化和自动建模，而不是已完成POD。</li></ul></section>
+        <section><h3>不足</h3><ul><li>20%误差能否满足接触/流道安全裕量需要单独判断；127/169棒核验与7棒加速不是同一个试验。摘要未给出网格、耗时基线和材料不确定性。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>在相同计算预算下比较壳梁简化与POD，分别检验未见辐照梯度下最小间隙、椭圆化和峰值接触压力误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先下载：核对壳/梁截面、间隙、接触、辐照本构与127/169棒基准；20%误差及7棒加速分开复核。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>绑定约束<small>Tie constraint</small></h4><p>约束界面相对自由度的方法。</p><p class="context"><b>本文语境</b> 用于简化组件机械连接，不能替代真实滑移接触。</p></div><div class="term"><h4>辐照肿胀<small>Irradiation swelling</small></h4><p>辐照引起的材料体积变化。</p><p class="context"><b>本文语境</b> 材料辐照行为通过用户子程序引入，具体本构待查。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>现有快堆燃料组件性能分析面临高保真度与计算效率之间的平衡难题。本研究基于ABAQUS建立三维辐照变形分析模型，以应对这一矛盾。模型以壳单元模拟包壳和六角形组件盒，以梁单元模拟绕丝，并利用绑定约束、轴向连接器单元和通用接触简化复杂机械相互作用。通过用户子程序引入材料辐照行为和非均匀运行工况，同时开发参数化自动建模方法，以构建简化结构及机械相互作用。模型通过127棒燃料束堆外压缩试验和169棒燃料组件辐照变形基准算例核验，考察间隙变化、椭圆化等参数。结果较好一致，误差在20%以内。与BAMBOO中的简化模型相比，本模型对机械相互作用的模拟更准确，并能捕捉包壳周向效应；与全尺寸精细模型相比，在7棒燃料组件上得到相近结果，求解速度提高超过100倍。作者认为，该模型可靠、高效、易于扩展，可用于快堆燃料组件辐照变形分析和设计优化。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The existing performance analysis of the fast reactor fuel assembly faces the challenge of balancing high-fidelity and computational efficiency. This study develops a 3-D irradiation deformation analysis model based on ABAQUS to address this conflict. The model employs shell elements to simulate claddings and the hexagonal duct, beam elements for wrap wires, and simplifies complex mechanical interactions using Tie Constraint, Axial Connector element, and General Contact. User subroutines are implemented to incorporate material irradiation behaviors and the non-uniform operating conditions. A parametric automatic modeling method is also developed to construct simplified structures and mechanical interactions. The analysis model has been verified against out-of-pile compression test for a 127-pin fuel bundle and an irradiation deformation benchmark case for a 169-pin fuel assembly, with verification parameters such as gap variation and ovalization. Results demonstrate good agreement with errors within 20%. Furthermore, compared with the simplified model in BAMBOO, the present model demonstrates higher accuracy in the simulation of mechanical interactions and possesses the capability to capture cladding circumferential effects; compared with the full-scale detailed model, the present model achieves comparable results while improving solution speed by over 100-fold for a 7-pin fuel assembly. This model is reliable, efficient and easily extensible for irradiation deformation analysis and design optimization of fast reactor fuel assemblies.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2107996321444474880" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104736" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107996321444474880" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="面向熔盐堆应用的改进凝固模型 development of an improved solidification model for molten salt reactor applications 先进反应堆热工水力 nuclear engineering and technology · 2026-10-01 · oktari zaidi, yun je cho, byong jo yun, jae jun jeong 先进反应堆热工水力 热惯性 thermal inertia 材料储存热量并延缓温度变化的能力。 管壁能量方程使冻结速度减小。 半隐式离散 semi-implicit discretization 同时使用显式与隐式处理的时间离散。 用于控制体积凝固方程求解。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>先进反应堆热工水力</span><span>先进反应堆热工水力</span></div>
+          <h2>面向熔盐堆应用的改进凝固模型</h2>
+          <p class="title-en">Development of an improved solidification model for molten salt reactor applications</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-01 · Oktari Zaidi, Yun Je Cho, Byong Jo Yun, Jae Jun Jeong</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>管壁储热改变冻结时序，模型以水冻结试验验证；不能把水试验写成实际燃料盐验证。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在既有凝固模型中恢复管壁能量守恒与热惯性。</li></ul></section>
+        <section><h3>不足</h3><ul><li>盐物性、潜热、壁厚和流动区间未披露；水与FLiBe相似性及实际排盐系统堵塞判据待核对。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>做壁厚/热容/初始温度的冻结时间可识别性分析，先用水基准后用盐数据验证，再把壁温传递至ANSYS热应力。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先下载：管壁能量式、盐物性、壁厚、冻结实验和时间步；用于热—相变边界校核。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热惯性<small>Thermal inertia</small></h4><p>材料储存热量并延缓温度变化的能力。</p><p class="context"><b>本文语境</b> 管壁能量方程使冻结速度减小。</p></div><div class="term"><h4>半隐式离散<small>Semi-implicit discretization</small></h4><p>同时使用显式与隐式处理的时间离散。</p><p class="context"><b>本文语境</b> 用于控制体积凝固方程求解。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>流动系统中的熔盐冻结是熔盐堆的重要安全问题之一，因为排盐管路或非能动余热排出系统中的凝固可能堵塞应急冷却管路，使堆芯温度发生失控升高。为预测这一行为，本文开发可用于热工水力系统程序的改进凝固模型。在既有燃料盐冻结模型基础上，增加管壁能量方程，恢复原模型忽略的管壁热惯性。控制方程采用控制体积形式，并在MATLAB程序中使用半隐式数值方法求解和评估。首先对概念性FLiBe和水工况计算：不考虑管壁时复现原模型，计入管壁热惯性后预测冻结更慢。随后通过动态和静态水冻结试验验证，相比参考模型与测量数据更一致。结果表明，所提模型能够描述熔盐冻结物理，并为在MARS程序中开展熔盐堆安全分析提供有用基础。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The freezing of molten salt in flow systems is one of the major safety concerns for molten salt reactors (MSRs), since solidification in drain lines or passive heat removal systems can obstruct emergency cooling lines and trigger uncontrolled temperature excursions in the reactor core. To predict this behavior, an improved solidification model is developed, which can be adopted in thermal-hydraulic system codes. Building on an existing fuel salt freezing formulation, the present model adds an energy equation for the pipe wall to restore the wall thermal inertia that the earlier model neglects. The governing equations are cast in control-volume form with semi-implicit numerical solution and solved in a MATLAB program for assessment. The model is first applied to the conceptual FLiBe and water cases, where it reproduces the existing model without the wall and predicts slower freezing once the wall thermal inertia is included. The model is then validated against dynamic and static water-freezing experiments and showing better agreement with measured data than the reference models. The results indicate that the proposed model captures the physics of molten salt freezing and provides a useful basis for MSR safety analysis within the MARS code.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：HTTP 403</p>
+      <footer><a href="https://www.x-mol.com/paper/2107996321121513474" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104762" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107996321121513474" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="熔盐堆缓发中子先驱核漂移反应性的在线量化：在modelica/transform中以解析基准核验影子先驱核观测器 on-line quantification of delayed neutron precursor drift reactivity in molten salt reactors: a shadow-precursor observer verified against closed-form benchmarks in modelica/transform 先进反应堆热工水力 nuclear engineering and technology · 2026-10-01 · jaejin lee, seungyop paek 先进反应堆热工水力 缓发中子先驱核 delayed neutron precursor 衰变产生缓发中子的核素。 随循环燃料盐离开和返回堆芯。 反应性单位pcm per cent mille 反应性数值单位，1 pcm对应10的负5次方。 用于描述所给阶跃和漂移调制。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>先进反应堆热工水力</span><span>先进反应堆热工水力</span></div>
+          <h2>熔盐堆缓发中子先驱核漂移反应性的在线量化：在Modelica/TRANSFORM中以解析基准核验影子先驱核观测器</h2>
+          <p class="title-en">On-line quantification of delayed neutron precursor drift reactivity in molten salt reactors: A shadow-precursor observer verified against closed-form benchmarks in Modelica/TRANSFORM</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-01 · Jaejin Lee, SeungYop Paek</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>通过影子先驱核状态把漂移反应性与普通库存滞后分离；50 pcm、67.1 pcm与28%仅对应摘要指定阶跃。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>每组一个方程的非侵入式在线观测器及一致的解析核验体系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>实验无关、程序自身离散基准属于核验，不能等同独立实验验证；具体循环时间和参数敏感性未给出。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体后续实验计划；作者以无实验解析基准核验观测器。</li></ul><b>分析推导</b><ul><li>把流动漂移状态与热工ROM联接时，分别保留守恒与时滞；验证流量突变而非仅恒流阶跃。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>缓发中子先驱核<small>Delayed neutron precursor</small></h4><p>衰变产生缓发中子的核素。</p><p class="context"><b>本文语境</b> 随循环燃料盐离开和返回堆芯。</p></div><div class="term"><h4>反应性单位pcm<small>Per cent mille</small></h4><p>反应性数值单位，1 pcm对应10的负5次方。</p><p class="context"><b>本文语境</b> 用于描述所给阶跃和漂移调制。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>熔盐堆中，缓发中子先驱核随燃料盐漂移。系统程序能较好描述稳态后果，即有效缓发中子份额减小；但漂移反应性此前只能针对单一指数模态获得，或者只能在恒功率条件下在线获得，此时它等于库存读数β0−βeff(t)。功率变化的瞬态中，该读数混合了流动效应与普通先驱核滞后，而程序内置反应性有意不包含漂移通道。本文推导一种影子先驱核观测器，使任意功率历程下的漂移分量被分离为在线等效反应性；每组先驱核仅需一个微分方程，且无需侵入式修改。同时给出指数模态解析式及堆芯—回路几何的循环燃料反应堆倒时方程。在Modelica/TRANSFORM中执行的三层、不依赖实验的基准，利用程序自身离散方程的解析参考核验这三种结果：观测器精确恢复恒功率库存读数，并在自由功率流动瞬态下与倒时方程和指数模态参考一致。在恒定流量下施加+50 pcm阶跃时，观测器显示+67.1 pcm的漂移调制；常见的静态βeff替代会将该插入工况的反应堆周期高估28%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In molten salt reactors the delayed neutron precursors drift with the fuel salt. The steady-state consequences — a reduced effective delayed neutron fraction — are well captured by system codes, but the reactivity of the drift has been available only on a single exponential mode or, on-line, only at constant power, where it equals the inventory reading β0−βeff(t). In power-varying transients that reading conflates the flow effect with ordinary precursor lag, and the built-in reactivity of the codes deliberately omits the drift channel. This paper derives a shadow-precursor observer that isolates the drift component as an on-line equivalent reactivity for arbitrary power histories — one differential equation per precursor group, non-intrusive — together with an exponential-mode closed form and the circulating-fuel inhour relation for the core–loop geometry. A three-tier, experiment-free benchmark set executed in Modelica/TRANSFORM verifies all three against closed-form references in the code’s own discrete equations: the observer recovers the constant-power reading exactly and matches the inhour and exponential-mode references in free-power flow transients. Under a ＋50 pcm step at constant flow, the observer exposes a drift modulation of +67.1 pcm, and the common static-βeff substitution overestimates the period of that insertion by +28%.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：HTTP 403</p>
+      <footer><a href="https://www.x-mol.com/paper/2107996321100541952" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104741" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107996321100541952" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="用于水位监测并配有人机界面的无源光纤传感系统 passive optical fiber sensor system for water level monitoring with implementation of human-machine interface module 反应堆分析与验证 nuclear engineering and design · 2026-10-05 · gitae kim, jinjong seo, jaeyul choo, hoon-keun lee 反应堆分析与验证 空分复用 space division multiplexing 用不同空间通道传输信号。 四个传感器经光分路器复用。 瑞利后向散射 rayleigh backscattering 介质微小不均匀性导致的反向散射光。 双路径用于减轻远距离测量干扰。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>反应堆分析与验证</span><span>反应堆分析与验证</span></div>
+          <h2>用于水位监测并配有人机界面的无源光纤传感系统</h2>
+          <p class="title-en">Passive optical fiber sensor system for water level monitoring with implementation of human-machine interface module</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-05 · Gitae Kim, Jinjong Seo, Jaeyul Choo, Hoon-Keun Lee</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>实验室四点离散水位与约19 km传输验证，不是连续水位仪或核事故环境资格鉴定。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>双路径抑制回散射并结合离散水位HMI呈现。</li></ul></section>
+        <section><h3>不足</h3><ul><li>辐照、温湿度、浑浊、故障诊断覆盖及核安全独立性未说明；距离受探测器限制。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>检验光纤损伤与真实水位变化能否区分，报告漏报及共因故障，再考虑高温/辐照资格试验。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>空分复用<small>Space division multiplexing</small></h4><p>用不同空间通道传输信号。</p><p class="context"><b>本文语境</b> 四个传感器经光分路器复用。</p></div><div class="term"><h4>瑞利后向散射<small>Rayleigh backscattering</small></h4><p>介质微小不均匀性导致的反向散射光。</p><p class="context"><b>本文语境</b> 双路径用于减轻远距离测量干扰。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文展示基于空分复用的远程无源光纤水位传感系统，目标是核电厂乏燃料水池等极端环境。系统在实验室条件下评估，以说明其用于未来核安全仪表的可行性。系统采用宽带光源作为种子光，使用1×4光分路器对多个光纤传感器进行复用和解复用。四个传感器沿水池竖直方向安装在预设高度，通过光接收器测量各传感器反射光功率，即可实时判断这些预设位置对应的离散水位状态。为减轻远程传感中瑞利后向散射的影响，引入简单双路径配置。实验表明，系统可在约19 km距离上监测水位，其范围受探测器性能限制。另一方面，向操作人员提供直观、实时水位信息仍是重要挑战。因此还实现人机界面模块，在显示器上实时提供离散水位状态和系统状态，使操作人员直观监测当前水位，并进行趋势分析和异常状态识别。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In this paper, we demonstrate a remote passive optical fiber sensor system based on space division multiplexing for water level monitoring targeting to extreme environments, such as a spent fuel pool in nuclear power plant. The proposed system is evaluated under laboratory conditions to demonstrate its feasibility for future nuclear safety instrumentation applications. It employs a broadband light source as a seed light and a 1 × 4 optical splitter for multiplexing/demultiplexing multiple optical fiber sensors. Four sensors are vertically installed in a water pool at predefined heights. By measuring the reflected optical power from each sensor with an optical receiver, the discrete water level state corresponding to the predefined sensor positions can be determined in real-time. To mitigate the effect of Rayleigh backscattering in remote sensing, a simple dual-path configuration is introduced. Experimental results show that the proposed system can monitor water levels over a distance of approximately 19 km, limited by the performance of the detector. On the other hand, providing intuitive and real-time information for water level monitoring to operators remains a significant challenge. To address this issue, a human-machine interface (HMI) module is also implemented. By providing real-time information on the discrete water level states and system status through the HMI display, it enables operators to intuitively monitor the current water level status, as well as perform trend analysis and abnormal condition detection.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：HTTP 403</p>
+      <footer><a href="https://www.x-mol.com/paper/2108281200000118784" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115253" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2108281200000118784" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="严重背景噪声下基于声发射的断裂先兆检测：移动窗口ib值分析的稳健性 robustness of moving-window ib-value analysis for acoustic-emission-based fracture precursor detection under severe background noise 07 多物理场耦合（热工结构） nuclear engineering and technology · 2026-10-02 · doyun jung, byunyoung chung, youngchul choi 07 多物理场耦合（热工结构） 声发射 acoustic emission 材料局部能量释放产生的弹性波。 作为裂纹活动的观测信号。 事件窗口 hit-based moving window 以固定事件数而非固定时间长度更新的窗口。 100次事件窗口的实际延迟随事件频率改变。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>严重背景噪声下基于声发射的断裂先兆检测：移动窗口Ib值分析的稳健性</h2>
+          <p class="title-en">Robustness of moving-window Ib-value analysis for acoustic-emission-based fracture precursor detection under severe background noise</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-02 · Doyun Jung, Byunyoung Chung, Youngchul Choi</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>选择性删去低幅事件时Ib值更稳定，但报警已接近峰值应力，留给工程干预的时间可能很短。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>移动事件窗口及统计中心指标对阈值删失的抵抗能力。</li></ul></section>
+        <section><h3>不足</h3><ul><li>删事件不是实际波形混噪；SM45C单试样概念验证不代表核级材料在役性能。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者明确指出：波形叠加与参数畸变下的完整背景噪声稳健性需要进一步验证。</li></ul><b>分析推导</b><ul><li>对真实背景波形叠加、不同试样和载荷速率盲测；把窗口收集时间及可执行干预时间计入报警有效性。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>声发射<small>Acoustic emission</small></h4><p>材料局部能量释放产生的弹性波。</p><p class="context"><b>本文语境</b> 作为裂纹活动的观测信号。</p></div><div class="term"><h4>事件窗口<small>Hit-based moving window</small></h4><p>以固定事件数而非固定时间长度更新的窗口。</p><p class="context"><b>本文语境</b> 100次事件窗口的实际延迟随事件频率改变。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>运行中核电厂的噪声会掩盖微裂纹声发射信号，阻碍早期断裂先兆检测。本文提出移动窗口Ib值方法，并通过带缺口SM45C碳钢试样的概念验证拉伸试验核验。对按源位置筛选的651个裂纹信号，计算基于能量的b值（Aki最大似然法）和Ib值，并通过删除最多50%的低幅值数据模拟探测阈值提高。累积方法稀释了先兆信号，始终没有达到1.0报警判据；100次事件的移动窗口则立即捕捉到裂纹模式由剪切向拉伸的转变。随着噪声增加，低幅微裂纹信号被选择性丢失，存活率从100%降至40%，而宏观裂纹保持100%；b值最大偏差达到−19.8%，仅考察分布统计中心的Ib值仍保持在±4.9%以内。在0–40%的事件丢失范围内，Ib值仍在断裂前7.4–11.8 s越过判据，此时应力达到峰值的98.4–99.3%。因此，移动窗口Ib值对阈值提高导致的低幅声发射事件选择性丢失明显比b值不敏感。要推广为对完整背景噪声的稳健性，还必须进一步验证波形叠加和参数畸变等影响。</p></div>
+          <div><h3>English abstract</h3><p lang="en">noise in operating nuclear power plants masks the acoustic emission (AE) signals of micro-cracks and hinders early fracture-precursor detection. A moving-window Ib-value methodology is proposed and validated by a proof-of-concept tensile test on a notched SM45C carbon steel specimen. For 651 crack signals screened by source location, the energy-based b-value (Aki&#x27;s maximum likelihood method) and the Ib-value were evaluated, and detection-threshold elevation was emulated by removing up to 50% of the low-amplitude data. The cumulative approach diluted the precursor and never reached the alarm criterion of 1.0, whereas the 100-hit moving window immediately captured the shift of the crack mode from shear to tensile. Under increasing noise, low-amplitude micro-crack signals were selectively lost (survival 100% to 40%, against 100% for macro-cracks), biasing the b-value by up to −19.8%, while the Ib-value, which evaluates only the distribution&#x27;s statistical center, stayed within ±4.9%. Across 0–40% hit loss it still crossed the criterion 7.4–11.8 s before rupture, at 98.4–99.3% of peak stress. The moving-window Ib-value is therefore markedly less sensitive than the b-value to the selective loss of low-amplitude AE events caused by threshold elevation. Generalization to full background-noise robustness, which also involves waveform superposition and parameter distortion, requires further validation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2107996321142484996" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104755" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107996321142484996" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="北欧沸水堆严重事故情景的melcor与maap模拟比较 a comparative study on melcor and maap simulations of a severe accident scenario in a nordic boiling water reactor 严重事故与碎片床 nuclear engineering and design · 2026-10-01 · björn engström, roberta concilio hansson, weimin ma 严重事故与碎片床 全厂断电 station blackout 厂用交流电源全部丧失的事故情景。 作为两个系统程序的共同模拟触发。 过滤安全壳排气 filtered containment venting 经过过滤处理的安全壳压力释放。 比较其动作时序与动作后压力响应。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>严重事故与碎片床</span><span>严重事故与碎片床</span></div>
+          <h2>北欧沸水堆严重事故情景的MELCOR与MAAP模拟比较</h2>
+          <p class="title-en">A comparative study on MELCOR and MAAP simulations of a severe accident scenario in a Nordic boiling water reactor</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-01 · Björn Engström, Roberta Concilio Hansson, Weimin Ma</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>同一SBO情景的事件与容器响应对照表明，程序的池体模型可能改变排气后的压力周期。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将事件顺序、氢气与水池水力建模差异关联起来。</li></ul></section>
+        <section><h3>不足</h3><ul><li>两程序一致不等同实验验证；模型节点、排气控制与输入一致性尚需核实，3–4 h不是所有BWR的周期。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>作者明确建议进一步研究排气后的安全壳压力振荡。</li></ul><b>分析推导</b><ul><li>固定输入和排气逻辑后逐项替换池体模型，区分数值周期、控制周期和真实物理振荡。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 下载核对：节点化、排气阈值、池体水力闭合与氢气模型；不把程序交叉对照当实验验证。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>全厂断电<small>Station blackout</small></h4><p>厂用交流电源全部丧失的事故情景。</p><p class="context"><b>本文语境</b> 作为两个系统程序的共同模拟触发。</p></div><div class="term"><h4>过滤安全壳排气<small>Filtered containment venting</small></h4><p>经过过滤处理的安全壳压力释放。</p><p class="context"><b>本文语境</b> 比较其动作时序与动作后压力响应。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文比较使用MAAP和MELCOR程序对北欧沸水堆全厂断电情景进行的两项独立模拟，以更好理解一般程序差异，以及现有北欧沸水堆模型之间的差异。比较指标包括过滤安全壳排气动作前的事件时间序列、熔融物温度及迁移、反应堆压力容器压力、安全壳压力和氢气生成。在有限比较范围内，整体事故进程、燃料失效和压力容器下封头失效与EPRI和桑迪亚国家实验室此前MAAP–MELCOR对照研究的发现一致。相较MAAP，MELCOR模型预测压力容器破损和熔体排入安全壳更晚；MAAP则预测过滤排气系统更早动作，尽管MELCOR由于氢气积聚更多，预测容器失效后安全壳压力上升更快。两程序对排气后的安全壳响应也有差别：MELCOR预测明显的安全壳压力振荡，周期为3–4 h，原因是下干井和湿井水池流体动力学建模的差异。由于安全壳压力演变对安全具有重要意义，这一现象值得进一步研究。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study juxtaposes the results from two independent simulations of a station blackout scenario in a Nordic boiling water reactor (BWR) using the MAAP and MELCOR codes. The purpose is to better understand and analyse code differences in general and the existing MELCOR and MAAP models of a Nordic boiling water reactor (BWR) in particular. The figures of merit in the comparative study are chronology of events till the actuation of filtered containment venting (FCV), corium temperature and relocation, reactor pressure vessel (RPV) pressure, containment pressure and hydrogen generation. Observed from the limited scope of comparisons, the overall accident progression and the failures of fuels and RPV lower head are consistent with the findings of the MAAP-MELCOR crosswalk study previously performed by EPRI and Sandia National Laboratories (Luxat et al., 2016; Andrews et al., 2017). The MELCOR model predicted a later vessel breach and melt ejection into the containment than the MAAP model did, while the MAAP model predicted earlier actuation of the FCV system even though the MELCOR model showed a faster containment pressure increase after RPV failure due to greater hydrogen accumulation. The two codes also differed in their predictions of post-venting containment response, with the MELCOR simulation featuring a significant containment pressure oscillation with a cyclic period of 3–4 h, caused by difference in modelling of pool hydrodynamics in the lower drywell and the wetwell. Since containment pressure evolution is important to safety, this phenomenon merits further investigation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2108281198704078848" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115243" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2108281198704078848" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="中子能谱与可燃耗性对空间核反应堆谱移吸收体选择的影响 impact of neutron spectrum and burnability on the selection of spectral shift absorbers for space nuclear reactors 07 多物理场耦合（热工结构） nuclear engineering and design · 2026-10-01 · baihui jiang, jiayi zhang, ding she, jun sun, yu ji, jing zhao, zhihong liu, lei shi 07 多物理场耦合（热工结构） 谱移吸收体 spectral shift absorber 利用不同能谱下吸收能力差异实现工况选择性的吸收材料。 平衡发射事故与正常运行的反应性需求。 可燃耗性 burnability 吸收核素随中子照射被消耗的特性。 影响10年任务寿期末排序。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>中子能谱与可燃耗性对空间核反应堆谱移吸收体选择的影响</h2>
+          <p class="title-en">Impact of neutron spectrum and burnability on the selection of spectral shift absorbers for space nuclear reactors</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-01 · Baihui Jiang, Jiayi Zhang, Ding She, Jun Sun, Yu Ji, Jing Zhao, Zhihong Liu, Lei Shi</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>吸收体排序随能谱与寿期变化，不能给出跨堆型通用的单一最佳材料。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用能谱交叉解释事故吸收和运行惩罚的竞争，并把寿期末燃耗纳入比较。</li></ul></section>
+        <section><h3>不足</h3><ul><li>只给出中子学选择不能证明冲击后结构保持与材料稳定；材料热物性和膨胀相容性待查。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>将候选吸收体功率沉积和燃耗输入热—结构模型，验证寿期末温度、应力与几何保持对次临界裕量的影响。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先下载：吸收体布局、能谱、功率沉积及燃耗状态，用于材料参数→热—结构→几何反馈链。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>谱移吸收体<small>Spectral shift absorber</small></h4><p>利用不同能谱下吸收能力差异实现工况选择性的吸收材料。</p><p class="context"><b>本文语境</b> 平衡发射事故与正常运行的反应性需求。</p></div><div class="term"><h4>可燃耗性<small>Burnability</small></h4><p>吸收核素随中子照射被消耗的特性。</p><p class="context"><b>本文语境</b> 影响10年任务寿期末排序。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为确保发射中止事故中的次临界性，同时尽量降低运行反应性损失，谱移吸收体对空间核反应堆十分重要。但既有选择研究往往局限于具体堆型，并忽略全寿期可燃耗性，限制结论的普适性和可靠性。本文比较三种具有不同中子能谱的代表性反应堆，评估151Eu2O3、155Gd2O3、157Gd2O3、10B4C和151Eu10B6五种候选吸收体，并考虑1 MWth和5 MWth、持续10年的两种任务工况以分析燃耗影响。结果表明，吸收体效果强烈依赖中子能谱；效果排序可用提出的能谱交叉机制解释，该机制控制事故中通量抑制与正常运行通量损失之间的平衡。可燃耗性还影响寿期末表现，进而改变排序。在高燃耗任务的反应堆C中，10B4C超过151Eu2O3，成为更优选择。此外，虽然157Gd2O3在快能谱中的可燃耗性较差，但当交叉能量与共振区相匹配时，它在反应堆B中表现更优。这些结果表明，能谱特征和燃耗行为均显著影响选择，可为未来空间堆设计提供一般性指导。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To ensure subcriticality during launch abort accidents while minimizing operational reactivity penalties, Spectral Shift Absorbers (SSAs) are essential for space nuclear reactors. However, existing SSA selection studies are often limited to specific reactor designs and neglect the effects of lifetime burnability, thereby limiting the general applicability and reliability of their conclusions. In this work, the comparative analysis of SSA effectiveness is conducted for three representative reactors with different neutron energy spectra. Five candidate SSAs, including 151Eu2O3, 155Gd2O3, 157Gd2O3, 10B4C, and 151Eu10B6, are evaluated. Two mission profiles, 1 MWth and 5 MWth for 10 years, are considered to analyze burnability effects. The results indicate that SSA effectiveness is strongly dependent on the reactor neutron spectrum. The effectiveness ranking can be explained by a proposed spectral crossover mechanism, which governs the balance between accident flux suppression and operational flux penalty. Furthermore, SSA burnability influences end-of-life performance, thereby changing the SSA effectiveness rankings. As a result, 10B4C surpasses 151Eu2O3 as the superior SSA in the Reactor C with high burnup profiles. Besides, although 157Gd2O3 exhibits poor burnability in the fast spectra, it offers superior performance in the Reactor B where the crossover energy aligns with the resonance region. These findings demonstrate that both spectrum characteristics and burnability behavior have important influences in SSA selection, providing generalized guidance for future space reactor designs.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2108281197429010432" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115238" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2108281197429010432" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="小型模块化反应堆能否通过希腊非互联岛屿的成本初筛：相对燃油供电的基准评估及示例性可再生能源储能证据 can small modular reactors clear the cost screen for greek noninterconnected islands: a benchmark screening assessment against oil based supply with illustrative renewable storage evidence 小型模块化反应堆系统 progress in nuclear energy · 2026-10-06 · ioanna ananiadou, demetrios papacostas 小型模块化反应堆系统 平准化度电成本 levelized cost of electricity 全寿期折现成本与折现发电量之比。 仅用于机组成本筛选，不等同系统总成本。 利用率 utilization 实际使用容量或发电能力的程度。 岛屿负荷使利用率低于技术可用率。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>小型模块化反应堆系统</span><span>小型模块化反应堆系统</span></div>
+          <h2>小型模块化反应堆能否通过希腊非互联岛屿的成本初筛：相对燃油供电的基准评估及示例性可再生能源储能证据</h2>
+          <p class="title-en">Can small modular reactors clear the cost screen for Greek noninterconnected islands: A benchmark screening assessment against oil based supply with illustrative renewable storage evidence</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-06 · Ioanna Ananiadou, Demetrios Papacostas</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>技术可用率与岛屿实际利用率必须分开；论文自己明确不证明部署可行性。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>透明展示利用率与比较口径改变成本初筛结论。</li></ul></section>
+        <section><h3>不足</h3><ul><li>300 MWe代理对小岛可能过大；融资、备用、电网和系统可靠性成本尚不能由机组LCOE统一替代。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>在相同供电可靠性约束下做逐时调度和总系统成本比较，再谈部署，避免混比不同指标。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>平准化度电成本<small>Levelized cost of electricity</small></h4><p>全寿期折现成本与折现发电量之比。</p><p class="context"><b>本文语境</b> 仅用于机组成本筛选，不等同系统总成本。</p></div><div class="term"><h4>利用率<small>Utilization</small></h4><p>实际使用容量或发电能力的程度。</p><p class="context"><b>本文语境</b> 岛屿负荷使利用率低于技术可用率。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>希腊非互联岛屿具有特殊经济条件：部分岛屿仍依赖独立燃油发电，同时面临通过可再生能源、储能与电网互联实现脱碳的压力。本文回答一个有限的初筛问题：小型模块化反应堆的成本高于还是低于监管机构记录的继续独立岛屿供电成本，以及如何把这一结果与其他脱碳路径比较。研究使用希腊监管数据、经过同行评议的SMR成本参考，以及针对300 MWe代理机组的18种平准化度电成本情景矩阵，确定中心基准为193.57欧元/MWh，各情景结果为74.7–157.9欧元/MWh。这种有利结果仅在假设较高技术可用率这一机组参数时成立。当情景S1换算为更现实的40–50%岛屿利用率时，成本趋近基准；在40%利用率并加入示例性附加成本后，约为187.9欧元/MWh。讨论还引用经核实的希腊岛屿光伏与储能研究作示例比较，但这些只是方向性证据，不能与机组层面的SMR度电成本直接等量比较。本文并未证明部署可行性，也未证明优于带储能的可再生能源系统；仅表明，当替代情景是岛屿燃油发电时，不能仅按成本初筛排除SMR，而在现实低利用率下其成本优势会急剧缩小。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Greek noninterconnected islands remain economically distinctive because several still depend on autonomous oil based generation while facing pressure to decarbonize through renewables, storage, and interconnections. This article addresses a limited screening question. Do small modular reactors (SMRs) sit above or below the regulator documented cost of continued autonomous island supply, and how should that result be positioned against alternative decarbonization pathways. Using Greek regulatory data, peer reviewed SMR cost anchors, and an eighteen scenario levelized cost of electricity (LCOE) matrix for a 300 MWe proxy unit, the study identifies a central benchmark of 193.57 EUR per MWh and scenario results of 74.7 to 157.9 EUR per MWh. This favorable outcome holds only under the high technical availability assumed as a plant parameter. When Scenario S1 is translated into a more realistic island utilization of 40 to 50 percent, cost rises toward the benchmark, reaching about 187.9 EUR per MWh at 40 percent once the illustrative adders are applied. The discussion adds an illustrative comparison drawn from verified Greek island studies of photovoltaic and storage performance, presented as directional evidence that is not directly commensurate with plant level SMR LCOE. The article does not establish deployment feasibility or superiority over renewable systems with storage. It indicates only that SMRs cannot be excluded on cost screening grounds when the counterfactual is oil based island generation, while the margin narrows sharply under realistic low island utilization.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2108299678669090816" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106642" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2108299678669090816" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="轻水堆严重事故分析程序的演变：从wash-1400至今 the evolution of computer codes for the analysis of severe accidents in light water reactors, wash-1400 to present 严重事故与碎片床 nuclear engineering and design · 2026-10-03 · richard denning, randall gauntt, jeff gabor 严重事故与碎片床 配置管理 configuration management 管理软件版本、输入和变更以确保可追溯。 作为安全分析工具应用的必要背景。 soarca state-of-the-art reactor consequence analyses 美国核管会的先进反应堆后果分析项目。 被综述作为较近发展里程碑。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>严重事故与碎片床</span><span>严重事故与碎片床</span></div>
+          <h2>轻水堆严重事故分析程序的演变：从WASH-1400至今</h2>
+          <p class="title-en">The evolution of computer codes for the analysis of severe accidents in light water reactors, WASH-1400 to present</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-03 · Richard Denning, Randall Gauntt, Jeff Gabor</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述突出实验数据库、模型验证与配置管理共同成熟，不提供新的事故计算结果。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>整合美国程序与风险研究发展的历史脉络；并非全球穷尽综述。</li></ul></section>
+        <section><h3>不足</h3><ul><li>历史叙述不能替代当前具体代码版本和特定现象的验证证据。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>为碎片床/熔融物子模型建立版本—参数—实验验证矩阵，防止把整套程序成熟度转移到未验证子模型。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>配置管理<small>Configuration management</small></h4><p>管理软件版本、输入和变更以确保可追溯。</p><p class="context"><b>本文语境</b> 作为安全分析工具应用的必要背景。</p></div><div class="term"><h4>SOARCA<small>State-of-the-Art Reactor Consequence Analyses</small></h4><p>美国核管会的先进反应堆后果分析项目。</p><p class="context"><b>本文语境</b> 被综述作为较近发展里程碑。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文描述美国核管会及其承包商和美国核工业通过研究与模型开发，如何演进对轻水堆严重事故潜在后果的认识。主要里程碑包括布鲁克海文国家实验室在极有限实验数据库基础上支持WASH-740研究、原子能委员会承包商支持首次大规模量化严重事故公众风险的反应堆安全研究WASH-1400、后续NUREG-1150风险研究，以及较近的美国核管会SOARCA计划提供的认识。WASH-1400发布后不久发生的三哩岛2号机事故，促使监管机构及受监管行业研究严重事故的可能频率和后果。本文介绍美国核管会及其承包商、核工业（包括电力研究院）基于相关研究开发事故后果预测工具的过程。随时间发展，这些工具逐步成熟，经过研究结果验证，并建立一定水平的配置管理，因而可用于反应堆许可和监管中证明安全适当性。本文范围仅限于美国严重事故分析开发活动。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This paper describes the evolution of our understanding of the potential consequences of severe accidents in light water based on research and model development undertaken by the Nuclear Regulatory Commission through its contractors and by the U.S. nuclear industry. Major milestones were activities undertaken by Brookhaven National Laboratory in support of the WASH-740 study, based on a very limited experimental database, by AEC contractors in support of the Reactor Safety Study (WASH-1400), which was the first major attempt to quantify the risk to the public from severe accidents, to the follow-on NUREG-1150 risk study and most recently to the insights provided by the NRC&#x27;s SOARCA program. The Three Mile Island Unit-2 accident, which shortly followed after the release of WASH-1400, provided impetus to the regulatory authority and the regulated industry to perform research to better understand the potential frequency and consequences of severe accidents. This paper describes the development of the tools used to predict accident consequences based on research performed by the NRC (and its contractors) and by the nuclear industry (including the Electric Power Research Institute). Over time, these tools have matured, have been validated against research results, and have gained a level of configuration management enabling them to be used in demonstrating safety adequacy for the licensing and regulatory oversight of these reactors. This paper has been limited in its scope to severe accident analysis development activities in the U.S.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2108281194643992576" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115231" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2108281194643992576" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="环己基膦酸酯衍生物对锕系元素的萃取与配位行为 unfolding the extraction and coordination behavior of actinides by cyclohexyl phosphonate derivatives 核燃料循环 progress in nuclear energy · 2026-09-24 · puchakayala rajani, g. jegan, balija sreenivasulu, k. prabhakara rao, vemuri lakshmi ganesh, gopinadhanpillai gopakumar, c.v.s. brahmananda rao 核燃料循环 分配比 distribution ratio 溶质在两相平衡浓度之比。 实验萃取指标。 密度泛函理论 density functional theory 以电子密度计算电子结构的方法。 解释配位与取代基效应。">
+      <header class="paper-head">
+        <span class="number">10</span>
+        <div>
+          <div class="chips"><span>核燃料循环</span><span>核燃料循环</span></div>
+          <h2>环己基膦酸酯衍生物对锕系元素的萃取与配位行为</h2>
+          <p class="title-en">Unfolding the extraction and coordination behavior of actinides by cyclohexyl phosphonate derivatives</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-24 · Puchakayala Rajani, G. Jegan, Balija Sreenivasulu, K. Prabhakara Rao, Vemuri Lakshmi Ganesh, Gopinadhanpillai Gopakumar, C.V.S. Brahmananda Rao</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10核查/补写；近30天未读回溯补充或原日报译文修订，来源日期不等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>同条件PUREX基线下实验分配比与DFT结合趋势对照，未给相对提升数值。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将取代基结构、配位与萃取关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>辐照稳定性、工艺损失和放大成本待查；燃料循环不能归为碎片床冷却。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出明确未来计划。</li></ul><b>分析推导</b><ul><li>用实际料液和辐照老化检验选择性及物料平衡，不仅靠结合能排序。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>分配比<small>Distribution ratio</small></h4><p>溶质在两相平衡浓度之比。</p><p class="context"><b>本文语境</b> 实验萃取指标。</p></div><div class="term"><h4>密度泛函理论<small>Density functional theory</small></h4><p>以电子密度计算电子结构的方法。</p><p class="context"><b>本文语境</b> 解释配位与取代基效应。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>通过实验及量子化学计算，研究膦酸酯萃取剂碳链支化对从乏燃料裂变产物中选择性萃取锕系元素的影响。虽然膦酸酯萃取剂早已为人所知，但环己基膦酸酯萃取锕系元素的研究较少。本文评估二异丁基环己基膦酸酯DiBCyHeP和二仲丁基环己基膦酸酯DsBCyHeP两种萃取剂。进一步通过DFT研究配体与U(VI)、Pu(IV)等锕系元素的电子结构和络合行为，以解释烷基取代基变化造成的萃取差异。在相同条件下，将两种萃取剂对锕系元素与裂变产物的萃取性能，与商业PUREX溶剂1.1 M TBP/n-DD比较。实验测得的锕系分配比与相应金属—配体络合物计算结合亲和力较好一致。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The effect of branching in the carbon chain of phosphonate-based extractants on the selective extraction of actinides from fission products of spent nuclear fuel has been investigated experimentally and through quantum chemical calculations. Although phosphonate-based extractants have been known for a long time, only a few studies have reported the extraction of actinides using cyclohexyl phosphonates. In this study, two dialkylcyclohexyl phosphonate-based extractants, namely di-iso-butyl-cyclohexyl phosphonate (DiBCyHeP) and di-sec-butyl-cyclohexyl phosphonate (DsBCyHeP), were evaluated for the extraction of actinides. The difference in actinide extraction arising from variations in the alkyl chain substituents of the extractant molecules were further examined using density functional theory (DFT) computations to investigate the electronic structure and complexation behavior of the ligands with actinides such as U(VI) and Pu(IV). The extraction performance of DiBCyHeP and DsBCyHeP for actinides and fission products was compared with that of the commercially used PUREX solvent (1.1 M TBP/n-DD) under identical conditions. The experimentally measured distribution ratios for actinides showed good agreement with the computed binding affinities of the corresponding metal-ligand complexes.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269508026249216" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106618" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269508026249216" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="pecvd法制备锆合金包壳管表面sic涂层及性能研究 pecvd preparation and properties of sic coatings on zirconium-alloy cladding tubes 09 核反应堆材料（刘晓晶课题组重点） 热加工工艺 · 2025 · 卢永恒 刘伟 钱跃庆 孟莹 王炫力 李洋 宋希文 09 核反应堆材料（刘晓晶课题组重点） pecvd plasma-enhanced chemical vapour deposition 等离子体辅助、较低温度的气相沉积方法。 用于sic涂层制备。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料（刘晓晶课题组重点）</span><span>09 核反应堆材料（刘晓晶课题组重点）</span></div>
+          <h2>PECVD法制备锆合金包壳管表面SiC涂层及性能研究</h2>
+          <p class="title-en">PECVD preparation and properties of SiC coatings on zirconium-alloy cladding tubes</p>
+          <p class="meta">热加工工艺 · 2025 · 卢永恒 刘伟 钱跃庆 孟莹 王炫力 李洋 宋希文</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2025年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>低于约600℃最终退火温度沉积微晶SiC；相比CVD-SiC样品轴向抗拉强度提高约110 MPa。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>采用甲基硅烷单气源低温PECVD降低高温制备导致基底强度退化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>110 MPa相对CVD样品而非未涂层基底；事故氧化、辐照及热循环保持性能未披露。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>以同基底同厚度比较工艺、残余应力和循环脱层，将热阻与结合参数传递到ANSYS。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先下载沉积温度、厚度、附着、应力—应变及高温氧化数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>PECVD<small>Plasma-enhanced chemical vapour deposition</small></h4><p>等离子体辅助、较低温度的气相沉积方法。</p><p class="context"><b>本文语境</b> 用于SiC涂层制备。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>SiC是一种极具潜力的耐事故燃料包壳涂层材料。为避免锆合金包壳管强度的高温失效,需要开发SiC涂层的低温制备技术。采用等离子体增强化学气相沉积(PECVD)法,以甲基硅烷作为唯一反应气源,沉积温度低于锆合金最终退火温度(~600℃),在锆合金包壳管表面制出均匀致密的SiC涂层。利用X射线衍射仪、拉曼光谱仪、扫描电子显微镜、附着力划痕仪、万能试验机对锆合金包壳管SiC涂层的物相组成、微观形貌、结合强度和力学性能进行分析测试。结果表明:与常规化学气相沉积(CVD)制备技术相比,采用PECVD方法制备的SiC涂层为微晶态结构,涂层均匀、致密且光滑、平整,与锆合金包壳管基底结合良好。相比于CVD-SiC涂层样品,其轴向抗拉强度提高了约110 MPa,具有明显的性能优势。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">SiC is a potential coating material for accident resistant fuel cladding.In order to avoid high-temperature failure of the strength of zirconium alloy clad tube,it is necessary to develop low-temperature preparation technology for SiC coating.Plasma enhanced chemical vapor deposition(PECVD)method was used to prepare uniform and dense SiC coating on the surface of zirconium alloy clad tube,using methylsilane as the only reaction gas source,and the deposition temperature was lower than the final annealing temperature of zirconium alloy(-600℃).The phase composition,micromorphology,bonding strength and mechanical properties of the SiC coating on zirconium alloy clad tube were analyzed and tested using X-ray diffractometer,Raman spectrometer,scanning electron microscope,atomic force microscope,adhesion scratch tester and universal testing machine.The results show that compared with conventional chemical vapor deposition(CVD)preparation technique,the SiC coating prepared by PECVD method has a microcrystalline structure,and the coating is uniform,dense,smooth and flat,which has excellent bonding with the zirconium alloy clad tube substrate.Compared to the CVD-SiC coating,the axial tensile strength has been improved by about 110 MPa,with significant performance advantages.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202102274" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="锆合金表面复合陶瓷涂层的制备与性能表征 preparation and characterization of composite ceramic coatings on zirconium alloys 09 核反应堆材料（刘晓晶课题组重点） 表面技术 · 2025 · 朱燕辉 刘祥 张吉阜 陈嘉杰 陈东初 09 核反应堆材料（刘晓晶课题组重点） 微弧氧化 micro-arc oxidation 电解环境微放电形成陶瓷氧化膜。 与aps喷涂联合，ts模式优化底层。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料（刘晓晶课题组重点）</span><span>09 核反应堆材料（刘晓晶课题组重点）</span></div>
+          <h2>锆合金表面复合陶瓷涂层的制备与性能表征</h2>
+          <p class="title-en">Preparation and characterization of composite ceramic coatings on zirconium alloys</p>
+          <p class="meta">表面技术 · 2025 · 朱燕辉 刘祥 张吉阜 陈嘉杰 陈东初</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2025年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>TS微弧氧化底层形成ZrO2/Al0.52Zr0.48O1.74梯度结构，结合强度16 MPa；1200℃/4000 s中30 μm完整，80 μm因热应力剥落。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>工艺—底层微结构—复合涂层结合与厚度失效关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>16 MPa为结合测试，不自动作为所有界面损伤本构；30 μm较好只在所测工况，80 μm归因需验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>建立厚度/孔隙/界面热阻的热应力与脱层模型，留出另一厚度及热循环独立验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 最高优先：30/80 μm、1200℃、4000 s、UP/BP/TS与16/7/4 MPa数据；提取CTE、导热、界面及残余应力。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>微弧氧化<small>Micro-arc oxidation</small></h4><p>电解环境微放电形成陶瓷氧化膜。</p><p class="context"><b>本文语境</b> 与APS喷涂联合，TS模式优化底层。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>目的解决核反应堆锆合金包壳在高温水蒸气环境下的氧化腐蚀问题,采用原位陶瓷化技术构建复合陶瓷涂层,以提高锆合金的抗高温氧化性、耐水汽腐蚀性能及事故容错能力(ATF)。方法采用微弧氧化(MAO)与大气等离子喷涂(APS)相结合的工艺制备复合陶瓷涂层,并优化MAO底层膜结构。通过筛选不同微弧氧化电源模式,包括单向脉冲(UP)、双向脉冲(BP)、两步脉冲(TS),调整氧化膜的微观结构和成分。利用扫描电子显微镜(SEM)、X射线衍射(XRD)、X射线光电子能谱(XPS)等表征手段,分析MAO膜的微观形貌、物相组成及化学成分。同时,通过划痕试验、高温水汽腐蚀试验等测试复合陶瓷涂层的结合强度和抗高温氧化性能,以评估其服役性能。结果采用两步脉冲(TS)模式制备的MAO底层膜由ZrO2和Al0.52Zr0.48O1.74混合相组成,形成了梯度致密结构,显著降低了裂纹密度。基于TS模式制备的涂层的结合强度达到16 MPa,相较于UP(7 MPa)和BP(4 MPa)模式,分别提高了128%、300%。高温水汽腐蚀测试(1200℃、4000 s)结果表明,厚度为30μm的涂层的氧化增量速率最低,且结构完整,而80μm的涂层因热应力的累积,出现了剥落现象。结论通过调控微弧氧化过程中的电源模式,可优化MAO底层膜的结构和性能,实现喷涂沉积层与氧化膜的有效结合,从而在锆合金表面获得结合牢固、结构致密且厚度可控的复合陶瓷涂层,提高了它在核反应堆环境中的服役稳定性。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">To address the oxidation and corrosion challenges of zirconium alloy claddings in nuclear reactors under high-temperature steam environments,the work aims to employ in situ ceramicization technology to fabricate a composite ceramic coating,so as to enhance the high-temperature oxidation resistance,steam corrosion resistance,and accident tolerance performance(Accident Tolerant Fuel,ATF)of zirconium alloys.A hybrid fabrication process combining micro-arc oxidation(MAO)and atmospheric plasma spraying(APS)was developed to prepare the composite ceramic coating system,with particular emphasis on optimizing the microstructure of the MAO interlayer.The experimental protocol involved systematic screening of different MAO power supply modes,including unipolar pulse(UP),bipolar pulse(BP),and two-step pulse(TS),to regulate the microstructural evolution and compositional characteristics of the oxide layer.Subsequent APS deposition was performed to establish a multilayered protective architecture.Comprehensive material characterization techniques,such as scanning electron microscopy(SEM),X-ray diffraction(XRD),and X-ray photoelectron spectroscopy(XPS),were employed to analyze the morphological features,phase composition,and chemical states of the MAO-derived oxide layers.Mechanical integrity and environmental resistance were evaluated through scratch testing and high-temperature steam corrosion experiments,providing quantitative assessment of interfacial bonding strength and long-term durability.Experimental results demonstrate that the MAO base layer fabricated via the two-step pulse(TS)mode consists of a mixed phase of ZrO2 and Al0.52Zr0.48O1.74,forming a gradient dense structure that significantly reduces crack density.The coating prepared under the TS mode exhibits an interfacial bonding strength of 16 MPa,representing a 128%and 300%improvement compared to the unipolar pulse(UP,7 MPa)and bipolar pulse(BP,4 MPa)modes,respectively.High-temperature steam corrosion tests(1200℃,4000 s)reveal that the 30μm-thick coating shows the lowest oxidation weight gain rate and maintains structural integrity,while the 80μm-thick coating experiences spallation due to accumulated thermal stress.Microstructural analysis reveals that the TS power mode facilitates controlled plasma discharge behavior during MAO process,promoting the formation of a gradient oxide structure with reduced microcrack density and improves phase stability.The mechanism underlying performance enhancement can be attributed to two synergistic effects.Firstly,the MAO-derived oxide layer acts as an effective diffusion barrier,suppressing oxygen penetration and hydrogen absorption at the substrate-coating interface.Secondly,the tailored surface morphology and chemical compatibility of the MAO interlayer create favorable conditions for APS coating adhesion through mechanical interlocking and chemical bonding.By precisely regulating the electrical parameters during MAO process,this study establishes a methodology for achieving optimal interfacial compatibility between the metallic substrate and ceramic coating system and provides critical insights into surface engineering strategies for nuclear-grade zirconium alloys.The developed composite coating architecture demonstrates threefold advantages of enhanced interfacial integrity through MAO layer optimization,superior environmental resistance via multilayered ceramic protection,and controllable thickness for maintaining neutron economy in reactor applications.The TS-mode MAO process proves particularly effective in balancing coating density and residual stress distribution,addressing the longstanding challenge of ceramic coating spallation under thermal cycling conditions.Further investigation should focus on long-term stability assessment under simulated loss-of-coolant accident(LOCA)scenarios and neutron irradiation effects.Nevertheless,the current findings establish a viable pathway for developing advanced ATF cladding materials through hybrid surface modification techniques,potentially extending the operational safety margins of nuclear reactors under both normal and accident conditions.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7201608999" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.16490/j.cnki.issn.1001-3660.2025.15.008" target="_blank" rel="noopener">DOI ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="铀钼基金属燃料裂变与离子辐照效应比较的蒙特卡洛研究 monte carlo comparison of fission and ion-irradiation effects in uranium–molybdenum metallic fuel 09 核反应堆材料（刘晓晶课题组重点） 核动力工程 · 2025 · 任科宇 李文杰 孙丹 孔祥喆 冯琳娜 09 核反应堆材料（刘晓晶课题组重点） 离子模拟辐照 ion-irradiation surrogate 用离子束模拟部分堆内辐照损伤。 相似性受粒子种类和入射方式限制。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料（刘晓晶课题组重点）</span><span>09 核反应堆材料（刘晓晶课题组重点）</span></div>
+          <h2>铀钼基金属燃料裂变与离子辐照效应比较的蒙特卡洛研究</h2>
+          <p class="title-en">Monte Carlo comparison of fission and ion-irradiation effects in uranium–molybdenum metallic fuel</p>
+          <p class="meta">核动力工程 · 2025 · 任科宇 李文杰 孙丹 孔祥喆 冯琳娜</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2025年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>比较离子束与裂变碎片损伤，用有效系数建立累积量和速率量等效关系。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区分两种辐照方式的累积和速率效应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>裂变碎片是微观高能粒子，不是事故碎片床；注入深度、谱、剂量率与损伤恢复影响等效。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>以显微缺陷和热物性双重数据验证，避免单一dpa等效替代所有材料性能。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>离子模拟辐照<small>Ion-irradiation surrogate</small></h4><p>用离子束模拟部分堆内辐照损伤。</p><p class="context"><b>本文语境</b> 相似性受粒子种类和入射方式限制。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>重离子辐照是在堆外模拟裂变碎片产生的辐照损伤效应的快速研究手段。由于入射方式与离子种类的不同,离子辐照与燃料裂变反应的辐照效应相似性是采用重离子模拟堆内辐照时最关心的基础问题。本文采用了基于蒙特卡洛方法对离子束和裂变碎片在铀钼基金属燃料产生的一系列辐照损伤效应进行了量化比较,并利用有效系数建立了累积相关量和速率相关量两类辐照损伤效应的等效关系,从而为金属燃料模拟辐照试验设计和理解两种辐照方式下微观损伤机理提供理论依据。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">Heavy ion irradiation serves as a rapid experimental approach for out-of-pile simulation of irradiation damage effects induced by fission fragments.Due to the differences in incident methods and ion species,the similarity between ion irradiation effects and those induced by fuel fission reactions is a fundamental concern when using heavy ions to simulate in-pile irradiation.This study employs a Monte Carlo-based approach to quantitatively compare a series of irradiation damage effects generated by ion beams and fission fragments in U-Mo-based metallic fuels.An equivalence relationship between cumulative-related and rate-related irradiation damage effects is established by utilizing effective coefficients.This provides a theoretical basis for designing simulated irradiation tests on metallic fuels and understanding the microscopic damage mechanisms under both irradiation conditions.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202588928" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="辐照条件下uo2燃料裂纹愈合行为的分子动力学模拟研究 molecular dynamics of irradiation-induced crack healing in uo2 fuel 09 核反应堆材料（刘晓晶课题组重点） 核动力工程 · 2025 · 王栋 赵毅 吕俊男 龙冲生 09 核反应堆材料（刘晓晶课题组重点） 离位级联 displacement cascade 高能粒子引起一连串原子离位。 可能改变微裂纹的原子填充。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料（刘晓晶课题组重点）</span><span>09 核反应堆材料（刘晓晶课题组重点）</span></div>
+          <h2>辐照条件下UO2燃料裂纹愈合行为的分子动力学模拟研究</h2>
+          <p class="title-en">Molecular dynamics of irradiation-induced crack healing in UO2 fuel</p>
+          <p class="meta">核动力工程 · 2025 · 王栋 赵毅 吕俊男 龙冲生</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2025年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>模拟UO2微裂纹在离位级联下的结构演化，考察宽度、辐照损伤、温度及Zr团簇。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>通过裂纹能及原子填充分析辐照促进愈合机制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>原子尺度填充不自动等于宏观强度/导热恢复；弥散燃料背景不能等同真实事故碎片床。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>建立尺度桥接，将裂纹连通和热导变化传递至燃料温度/热应力，并用实验验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对势函数、晶向、温度、时间尺度、裂纹宽度和热导验证。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>离位级联<small>Displacement cascade</small></h4><p>高能粒子引起一连串原子离位。</p><p class="context"><b>本文语境</b> 可能改变微裂纹的原子填充。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>弥散型燃料辐照稳定性好,且具有固有安全性高、燃耗深、使用寿期长的特点,是一种应用前景广阔的核燃料。其制备过程中,陶瓷燃料颗粒因承受轧制压力引起开裂,在堆内辐照环境下,裂纹会发生愈合,显著影响陶瓷燃料后续的开裂行为。因此,理解裂纹愈合行为机理对弥散型燃料的研究意义重大。本研究采用分子动力学方法,模拟UO2中微裂纹在离位级联作用下的结构演化行为,并通过计算裂纹能和裂纹区域原子填充状态,分析裂纹宽度、辐照损伤、温度、Zr团簇等因素对裂纹愈合行为的影响规律,以证明辐照损伤和裂变碎片对裂纹愈合行为的促进作用,为理解辐照条件下弥散燃料的裂纹愈合机理提供了帮助。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">Due to its stable radiation performance,high inherent safety,high burnup and long lifetime,the dispersion fuel is one of the promising nuclear fuels.During the manufacture,the ceramic-fuel particles will crack due to the rolling pressure.Under in-pile irradiation conditions,these cracks undergo healing,which significantly affects the subsequent cracking behavior of the ceramic fuel.Thus,understanding the mechanism of crack healing is significant to the development of dispersion fuel.In this work,the evolution of micro-crack in UO2 under the effect of displacement cascade is investigated using molecular dynamics simulation.By calculating crack energy and the atomic filling state in the crack region,the influences of crack width,radiation damage,temperature,Zr clusters,and other factors on crack healing behavior are analyzed.The results reveal that the radiation and fission fragment could facilitate the healing of cracks,providing insights into the crack healing mechanism of dispersion fuel under irradiation conditions.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202588926" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="摇摆条件下3×3棒束腐蚀产物沉积生长特性研究 corrosion-product deposition on a 3×3 rod bundle under rolling motion 09 核反应堆材料（刘晓晶课题组重点） 核技术 · 2024 · 王国莲 刘晓晶 何辉 09 核反应堆材料（刘晓晶课题组重点） crud chalk river unidentified deposit 核燃料表面腐蚀产物沉积层。 空间及时间分布受摇摆影响。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料（刘晓晶课题组重点）</span><span>09 核反应堆材料（刘晓晶课题组重点）</span></div>
+          <h2>摇摆条件下3×3棒束腐蚀产物沉积生长特性研究</h2>
+          <p class="title-en">Corrosion-product deposition on a 3×3 rod bundle under rolling motion</p>
+          <p class="meta">核技术 · 2024 · 王国莲 刘晓晶 何辉</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2024年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>摇摆导致流速和壁温周期变化，增强切线方向剥蚀、削弱沉积；低位外围沉积厚，上部趋于一致且周向近椭圆。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>多尺度数据交换联接摇摆热工与CRUD生长。</li></ul></section>
+        <section><h3>不足</h3><ul><li>沉积模型验证、摇摆参数与热阻未披露，不能由沉积变薄直接推出包壳温度更安全。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>同摇摆时程验证周向沉积和壁温，再传递热阻与应力；POD需保留相位与局部峰。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先下载摇摆幅频、温度/流速、周向厚度和沉积—剥蚀闭合。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>CRUD<small>Chalk River unidentified deposit</small></h4><p>核燃料表面腐蚀产物沉积层。</p><p class="context"><b>本文语境</b> 空间及时间分布受摇摆影响。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>典型海洋摇摆对压水堆堆芯的热工水力特性有显著影响,从而导致一回路腐蚀产物的沉积生长规律发生变化。本文基于数据交换方法,通过多尺度耦合建立反应堆一回路系统模型,将摇摆条件下的冷却剂流动数学模型和腐蚀产物沉积生长模型加入模拟中,对摇摆条件下3×3棒束上腐蚀产物的生长过程进行了研究。结果表明,摇摆会导致冷却剂流速和棒外壁温发生周期性变化,流量脉动和温度波动会加剧摇摆切线方向上的剥蚀作用,削弱沉积过程。在轴向高度较低的通道截面上,靠近外围绝热壁面的棒表面上生长的多孔介质沉积层(Chalk River Unidentified Deposit,CRUD)最厚;在轴向高度较高的通道截面上,所有位置的棒上的CRUD分布规律趋于一致,并且在燃料棒周向的分布体现在极坐标系中呈现出趋近于椭圆形的规律。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">[Background]Oscillatory conditions significantly affect the thermal-hydraulic characteristics of floating reactors,leading to changes in the growth of chalk river unidentified deposit(CRUD).[Purpose]This study aims to investigates CRUD growth on fuel rod bundles under oscillatory conditions.[Methods]Firstly,based on the data exchange method,the one-dimensional system program RELAP5 and the CFD(Computational Fluid Dynamics)program ANSYS Fluent were coupled to simulate the primary loop,and mathematical models of coolant flow and corrosion product deposition growth under oscillatory conditions were added to the simulation.Then,CRUD growth calculations and coolant flow mathematical models under oscillatory conditions were embedded into the multiscale simulation.Finally,the influences of oscillatory conditions on flow characteristics in rod bundle channels,fuel rod wall temperature,and CRUD growth were analyzed.[Results]The simulation outcomes reveal that oscillation induces periodic variations in both the coolant flow rate and outer wall temperature of the rods.At lower axial heights,CRUD grows thicker on the rods near the peripheral wall.At higher axial heights,the CRUD distribution pattern tends to be consistent across all rods.The CRUD thickness distribution in the circumferential direction of the fuel rods tends to form an elliptical pattern in polar coordinates.[Conclusions]Fluctuations in flow rate and temperature can enhance erosion in the tangential direction of oscillation,diminish the deposition process,and result in varied CRUD distribution patterns at distinct positions.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7113430907" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="小堆crdm密封线圈辐照剂量率评估 radiation dose-rate assessment of a small-reactor crdm seal coil 07 多物理场耦合（热工结构） 强激光与粒子束 · 2025 · 陈志宏 07 多物理场耦合（热工结构） crdm control rod drive mechanism 驱动控制棒运动的机构。 所研究密封线圈处辐射源主要为n-16。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>小堆CRDM密封线圈辐照剂量率评估</h2>
+          <p class="title-en">Radiation dose-rate assessment of a small-reactor CRDM seal coil</p>
+          <p class="meta">强激光与粒子束 · 2025 · 陈志宏</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2025年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>指定小堆正常运行密封线圈剂量率4.1 Gy/h，主源为冷却剂N-16高能γ。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>明确源项贡献，支撑局部辐射环境设计。</li></ul></section>
+        <section><h3>不足</h3><ul><li>该值不能外推其他堆；累积剂量、屏蔽、辐射老化和热结构失效未披露。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>联合寿期累积剂量、温度和绝缘退化数据评估控制棒机构可靠性，区分剂量率与总剂量。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 下载源项、位置、屏蔽、功率、工况与材料辐射耐受限值。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>CRDM<small>Control rod drive mechanism</small></h4><p>驱动控制棒运动的机构。</p><p class="context"><b>本文语境</b> 所研究密封线圈处辐射源主要为N-16。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>提出了一种小型反应堆控制棒驱动机构(CRDM)密封线圈辐照剂量率的评估方法,阐明了剂量率计算中所考虑的辐射源项与计算模型,并给出了剂量率分析结果。计算表明:小堆正常运行期间CRDM密封线圈处辐照剂量率为4.1 Gy·h-1,主要源自冷却剂中N-16衰变产生的高能γ射线。冷却剂中裂变产物与活化腐蚀产物,以及堆芯裂变中子和γ射线的贡献可忽略。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">[Background]In small integrated reactors,the control rod drive mechanism(CRDM)is locatedwithin a high-intensity radiation field.The sealing coil of the CRDM may experience performance degradation due tointense irradiation,making accurate dose rate assessment essential for predicting maintenance cycles.[Purpose]Thisstudy aims to evaluate the irradiation dose rate at the CRDM sealing coil in a small reactor during normal operation,identifying the main contributors to the dose rate.[Methods]Radiation source terms,including core fission neutronsand photons,fission and activated corrosion products in the primary coolant,and activation product N-16,werecalculated.Computational models were developed using the Monte Carlo methods for photon transport and the point-kernel integration for dose rate evaluation.Conservative assumptions were applied to coolant density and sourcedistribution.[Results]The total dose rate at the CRDM sealing coil was found to be 4.1 Gy·h−1.N-16,produced vianeutron activation in the coolant,was the dominant contributor,accounting for nearly the entire dose.Contributionsfrom fission products,activated corrosion products,and core fission photons were negligible(less than 1%).[Conclusions]The irradiation dose rate at the CRDM sealing coil is primarily due to N-16 decay gamma rays,with themajority originating from coolant within a 1.5-meter thick region centered around the dose point.These results providea basis for predicting coil lifespan and planning replacement intervals.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202092433" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于物理去除方法的反应堆及一回路系统腐蚀产物过滤系统设计 design of a primary-circuit corrosion-product filtration system using physical removal 09 核反应堆材料（刘晓晶课题组重点） 东方电气评论 · 2024 · 苏志勇 曲德庆 龚剑 罗毅明 丁然 隆涛 09 核反应堆材料（刘晓晶课题组重点） 腐蚀产物 corrosion product 系统材料腐蚀产生的溶解物或颗粒。 悬浮颗粒通过过滤去除。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>09 核反应堆材料（刘晓晶课题组重点）</span><span>09 核反应堆材料（刘晓晶课题组重点）</span></div>
+          <h2>基于物理去除方法的反应堆及一回路系统腐蚀产物过滤系统设计</h2>
+          <p class="title-en">Design of a primary-circuit corrosion-product filtration system using physical removal</p>
+          <p class="meta">东方电气评论 · 2024 · 苏志勇 曲德庆 龚剑 罗毅明 丁然 隆涛</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-10实际检索的2024年未读专题回溯补充，不是当日新发表</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>并联支路碟片过滤，有限元计算单层固液分离，工程应用降低冷却剂总固。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>过滤支路与单层模拟结合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>去除总固不等于包壳CRUD/源项同幅降低；流量、压降、捕集效率和维护剂量未给出。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未提出具体可执行的未来计划。</li></ul><b>分析推导</b><ul><li>按粒径记录滤除与压降，验证主回路沉积和源项变化，计入维护废物及剂量成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对粒径效率、旁路流量、压降及运行验证。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>腐蚀产物<small>Corrosion product</small></h4><p>系统材料腐蚀产生的溶解物或颗粒。</p><p class="context"><b>本文语境</b> 悬浮颗粒通过过滤去除。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>随着核反应堆服役年限的增加,反应堆一回路系统的设备、管道、阀门内表面存在一定的剥落,形成腐蚀产物悬浮于冷却剂中,最终变为活化腐蚀产物。随着活化腐蚀产物的不断增加会造成冷却剂中总固水平增加和反应堆厂房内空间剂量水平升高,也会对设备的运行造成一定的影响。为解决这一问题,本文采用在一回路系统上增设并联支路,支路中设置腐蚀产物过滤系统,采用物理去除的方法不断对冷却剂过滤去除其内的腐蚀产物,进而降低冷却剂中的总固水平。对于腐蚀产物过滤系统的过滤器,采用碟片式结果,采用有限元方法进行了过滤器单层固液两相分离仿真。经工程应用验证表明,本文设计的腐蚀产物过滤系统可有效降低冷却剂中的总固水平,表明对去污冷却剂中的腐蚀产物效果明显。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；中英文详略可能不同，分别保留。</h3><p lang="en">With the increase of the service life of nuclear reactors,the inner surface of the equipment,pipes and valves of the reactor primary circuit system has some spalling,forming corrosion products suspended in the coolant and eventually becoming activated corrosion products.With the continuous increase of activated corrosion products,the total solid level in the coolant and the spatial dose level in the reactor building will increase,which will also have a certain impact on the operation of the equipment.In order to solve this problem,a parallel branch is added to the primary system,and a corrosion product filtration system is set up in the branch,and the corrosion products in the coolant are constantly filtered and removed by physical removal method,thus reducing the total solid level in the coolant.For the filter of corrosion product filtration system,the simulation of single-layer solid-liquid two-phase separation of the filter was carried out by finite element method using the disc results.The engineering application verification shows that the corrosion product filtration system designed in this paper can effectively reduce the total solid level in the coolant,indicating that the effect on the decontamination of corrosion products in the coolant is obvious.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7112608785" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">优先形成边界清晰、可独立验证的材料/几何→热工→结构链；简单增加POD或软件耦合并非新意。各建议为待验证的策划判断。</p><article class="opportunity">
+          <div class="opportunity-head"><span>中高：先完成数据可获得性审查</span><h3>燃料/吸收体结构简化与POD的误差—成本比较</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>壳梁简化与POD哪种能在相同预算下保留最小间隙、椭圆化和峰值接触？</p></section>
+            <section><h4>为什么值得开展</h4><p>潜在价值是针对明确未知量形成独立验证或误差控制贡献；不保证首创、发表或录用。</p></section>
+            <section><h4>建议工作</h4><ol><li>建立同一材料、几何及边界的ANSYS全阶基线；快照覆盖功率、冷却、辐照和接触状态，比较简化模型、加权POD与必要超降阶。</li><li>分别验证127/169棒核验与7棒成本基线，记录截断、局部温度/应力/间隙、在线总耗时与未见工况。</li><li>先核对所用原始数据、代码版本、边界和许可；按完整未见工况留出验证，避免逐节点随机划分造成数据泄漏。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>可复用、可追溯的验证数据及指标。</li><li>对适用区间、外推失效和参数不确定性的量化。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日快堆有限元简化、空间谱移吸收体及中文控制棒驱动机构。</li></ul></div><div><h4>主要风险</h4><ul><li>20%误差不自动满足裕量；超过100倍只对应7棒，不把软件改写等同创新。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>中高：先完成数据可获得性审查</span><h3>涂层厚度—界面热阻—热应力脱层的条件图</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>为什么同一复合陶瓷体系30 μm完整而80 μm剥落？</p></section>
+            <section><h4>为什么值得开展</h4><p>潜在价值是针对明确未知量形成独立验证或误差控制贡献；不保证首创、发表或录用。</p></section>
+            <section><h4>建议工作</h4><ol><li>测量导热、膨胀、孔隙、残余应力及界面参数，建立ANSYS热—结构/脱层模型，隔离厚度与工艺影响。</li><li>先复现1200℃/4000 s，留出另一厚度和热循环；验证壁温后再验证结合/剥落。</li><li>先核对所用原始数据、代码版本、边界和许可；按完整未见工况留出验证，避免逐节点随机划分造成数据泄漏。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>可复用、可追溯的验证数据及指标。</li><li>对适用区间、外推失效和参数不确定性的量化。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日中文PECVD SiC和TS微弧氧化复合陶瓷、燃料辐照损伤。</li></ul></div><div><h4>主要风险</h4><ul><li>结合强度不是界面断裂能；氧化和残余应力可能与热应力混淆。</li><li>材料和回路试验成本高，无独立脱层数据时仅做可识别性与不确定性。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>中高：先完成数据可获得性审查</span><h3>排盐壁面储热与冻结阻塞的耦合可靠性</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>管壁储热改变冻结时间，但能否改变真正的流道阻塞与应急排盐成功率？</p></section>
+            <section><h4>为什么值得开展</h4><p>潜在价值是针对明确未知量形成独立验证或误差控制贡献；不保证首创、发表或录用。</p></section>
+            <section><h4>建议工作</h4><ol><li>从管壁能量和盐凝固模型开始，对比无壁、有限壁厚及温度相关物性，映射冻结前沿和结构应力。</li><li>先水冻结基准后盐试验；核对壁厚、盐物性、初始温度、流量和堵塞判据，留出工况。</li><li>先核对所用原始数据、代码版本、边界和许可；按完整未见工况留出验证，避免逐节点随机划分造成数据泄漏。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>可复用、可追溯的验证数据及指标。</li><li>对适用区间、外推失效和参数不确定性的量化。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日改进凝固模型与MSR影子先驱核；二者均需时序核验。</li></ul></div><div><h4>主要风险</h4><ul><li>水试验不能直接证明燃料盐安全；既有冻结阀壁效应已有研究，模型加入管壁本身创新有限。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">已核对作者预印本、JAEA、出版社/ASME和FLOAT会议原始资料；参数化POD、变形热工迭代、床层淬冷及冻结阀壁效应均已有研究。保留的机会是特定边界下独立验证与误差控制。</p><p class="research-note">检索范围：2026-10-10实际定向检索与回看；仅快速查新，不是系统综述。学术检索MCP本会话未挂载，使用原始论文/机构资料；部分ScienceDirect直访失败，保留出版商索引结果且不声称全文阅读。　检索时间：2026-10-10T12:33:25.717959+08:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中高：先完成数据可获得性审查</span><h3>燃料/吸收体结构简化与POD的误差—成本比较</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 定向查新后，已有耦合或降阶不能再作为泛化首创新意；优先保留可独立验证的具体问题。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2017，BAMBOO–ASFRE已迭代交换变形与温度，不以软件耦合本身称首创。 2018/2019作者预印本；核电T形管热混合参数化POD已存在。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>壳梁简化与POD哪种能在相同预算下保留最小间隙、椭圆化和峰值接触？</li></ul></section>
+            <section><h4>二次研究判断</h4><p>这是待验证的研究策划推断，快速检索不能证明领域空白。</p></section>
+            <section><h4>建议论文切口</h4><p>建立同一材料、几何及边界的ANSYS全阶基线；快照覆盖功率、冷却、辐照和接触状态，比较简化模型、加权POD与必要超降阶。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>分别验证127/169棒核验与7棒成本基线，记录截断、局部温度/应力/间隙、在线总耗时与未见工况。</li><li>对照强基线并计入建模、快照、训练、输入准备、在线求解及回退的总成本。</li></ul><h4>新颖性风险</h4><ul><li>20%误差不自动满足裕量；超过100倍只对应7棒，不把软件改写等同创新。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://jopss.jaea.go.jp/search/servlet/search?5058159=&amp;language=1" target="_blank" rel="noopener">Analyses of deformation and thermal-hydraulics within a wire-wrapped fuel subassembly（）↗</a><p>2017，BAMBOO–ASFRE已迭代交换变形与温度，不以软件耦合本身称首创。</p></li><li><a href="https://arxiv.org/abs/1808.05175" target="_blank" rel="noopener">Parametric POD-Galerkin Model Order Reduction for Unsteady-State Heat Transfer Problems（）↗</a><p>2018/2019作者预印本；核电T形管热混合参数化POD已存在。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中高：先完成数据可获得性审查</span><h3>涂层厚度—界面热阻—热应力脱层的条件图</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 定向查新后，已有耦合或降阶不能再作为泛化首创新意；优先保留可独立验证的具体问题。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2022，温度梯度循环腐蚀已有实验平台；与静态等温腐蚀不同。 2026作者预印本，Cr涂层结构研究已有公开工作；不能泛称涂层热应力首次研究。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>为什么同一复合陶瓷体系30 μm完整而80 μm剥落？</li></ul></section>
+            <section><h4>二次研究判断</h4><p>这是待验证的研究策划推断，快速检索不能证明领域空白。</p></section>
+            <section><h4>建议论文切口</h4><p>测量导热、膨胀、孔隙、残余应力及界面参数，建立ANSYS热—结构/脱层模型，隔离厚度与工艺影响。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>先复现1200℃/4000 s，留出另一厚度和热循环；验证壁温后再验证结合/剥落。</li><li>对照强基线并计入建模、快照、训练、输入准备、在线求解及回退的总成本。</li></ul><h4>新颖性风险</h4><ul><li>结合强度不是界面断裂能；氧化和残余应力可能与热应力混淆。</li><li>材料和回路试验成本高，无独立脱层数据时仅做可识别性与不确定性。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://www.sciencedirect.com/science/article/pii/S2352492822011990" target="_blank" rel="noopener">Thermal gradient mass transport corrosion in NaCl-MgCl2 and MgCl2-NaCl-KCl molten salts（）↗</a><p>2022，温度梯度循环腐蚀已有实验平台；与静态等温腐蚀不同。</p></li><li><a href="https://arxiv.org/abs/2605.02531" target="_blank" rel="noopener">Preliminary Structural Study of Chromium Coatings for Nuclear Applications（）↗</a><p>2026作者预印本，Cr涂层结构研究已有公开工作；不能泛称涂层热应力首次研究。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中高：先完成数据可获得性审查</span><h3>排盐壁面储热与冻结阻塞的耦合可靠性</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 定向查新后，已有耦合或降阶不能再作为泛化首创新意；优先保留可独立验证的具体问题。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2021，壁厚影响冻结阀时间已有研究；不能将加管壁方程笼统称领域首创。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>管壁储热改变冻结时间，但能否改变真正的流道阻塞与应急排盐成功率？</li></ul></section>
+            <section><h4>二次研究判断</h4><p>这是待验证的研究策划推断，快速检索不能证明领域空白。</p></section>
+            <section><h4>建议论文切口</h4><p>从管壁能量和盐凝固模型开始，对比无壁、有限壁厚及温度相关物性，映射冻结前沿和结构应力。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>先水冻结基准后盐试验；核对壁厚、盐物性、初始温度、流量和堵塞判据，留出工况。</li><li>对照强基线并计入建模、快照、训练、输入准备、在线求解及回退的总成本。</li></ul><h4>新颖性风险</h4><ul><li>水试验不能直接证明燃料盐安全；既有冻结阀壁效应已有研究，模型加入管壁本身创新有限。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1115/ICONE28-64134" target="_blank" rel="noopener">Numerical Investigation of Safety System Parameters in Molten Salt Reactor: Wall Effect on Freeze Valve Opening Time（）↗</a><p>2021，壁厚影响冻结阀时间已有研究；不能将加管壁方程笼统称领域首创。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>跨日期去重，未取得DOI不编造。英文目标10–15篇，若相关未读摘要不足则如实保留实际数量；背景段局限明确。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
