@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-12 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-12 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-12</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>7</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 11</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 7</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">2026-10-13实际补做2026-10-12阅读：X-MOL All与核能组各4页、核能补查第5页近30天边界，共296条去历史URL候选并核对23篇详情；本批两天分配不同论文，本日4篇英文、7篇中文。英文低于10–15篇目标，原因是合格完整摘要与明确核工程联系不足；不以旧日报、缺摘要或无关论文凑数。英文为近30天回溯，中文旧年材料逐篇标注专题回溯。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="深穿透蒙卡模拟中用于全局方差减小的自适应空间卷积权窗平滑 adaptive spatial convolution weight window smoothing for global variance reduction in deep-penetration monte carlo simulations 11 中子输运方法（moc/蒙卡/确定论） annals of nuclear energy · 2026-10-01 · dengjian wu, junjun gong, zifu hao, junxiang mao, yuhang zhang, chengqiang liang 11 中子输运方法（moc/蒙卡/确定论） 权窗 weight window 按位置和能量控制粒子权重的分裂与轮盘赌策略。 本文优化下界估计和空间分布。 计算效率指标 figure of merit (fom) 输运计算中综合统计方差和计算耗时的效率指标，具体定义需与原文一致。 用于比较两个基准上的方法性能，非单独墙钟加速。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>深穿透蒙卡模拟中用于全局方差减小的自适应空间卷积权窗平滑</h2>
+          <p class="title-en">Adaptive spatial convolution weight window smoothing for global variance reduction in deep-penetration Monte Carlo simulations</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-01 · Dengjian Wu, Junjun Gong, Zifu Hao, Junxiang Mao, Yuhang Zhang, Chengqiang Liang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际补做；近30天未读回溯材料。日报日期是阅读归档日期，不是首次发现或首次在线发表日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用统计误差驱动的邻域平滑改善权窗分布，在两个屏蔽基准上提高FOM并减少重要性反转。</li><li>这是自耦合蒙卡权窗后处理；摘要没有说采用确定论共轭输运，不标成蒙卡—确定论耦合。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将噪声敏感的逐点权窗估计改为具有空间正则性的场估计。</li></ul></section>
+        <section><h3>不足</h3><ul><li>1.86/4.06倍仅对应所列基准和MAGIC参照；不是对任意屏蔽问题的加速保证。</li><li>卷积核、统计误差估计、材料界面保护和长历史尾分布的细节需查全文。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>比较MAGIC、ASCWWS与FW-CADIS在同一模型上的剂量偏差、方差、内存和长历史尾部；核对平滑是否抹去材料界面。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要给出两个验证基准和FOM倍数；下载后核对几何、群结构、误差估计、卷积核与权窗表，不能仅凭倍数选择生产模型。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>权窗<small>Weight window</small></h4><p>按位置和能量控制粒子权重的分裂与轮盘赌策略。</p><p class="context"><b>本文语境</b> 本文优化下界估计和空间分布。</p></div><div class="term"><h4>计算效率指标<small>Figure of merit (FOM)</small></h4><p>输运计算中综合统计方差和计算耗时的效率指标，具体定义需与原文一致。</p><p class="context"><b>本文语境</b> 用于比较两个基准上的方法性能，非单独墙钟加速。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在深穿透蒙特卡罗模拟中，权窗全局方差减小（WWGVR）方法的效率关键取决于权窗下界的准确性。自耦合蒙卡方法初始迭代中的统计波动常导致有偏的权窗估计，从而引发长历史问题。传统做法依赖经验参数施加强制约束。然而，这些参数在合理范围内对计算效率指标（FOM）的影响有限，说明效率瓶颈在于权窗分布是否合理，而非参数微调。为此，本文提出自适应空间卷积权窗平滑（ASCWWS）方法，使用误差自适应的邻域卷积核，对权窗场进行低通滤波和正则化，将点估计转为场估计，以抑制高频噪声并恢复物理一致的重要性梯度。在HBR-2和EURACOS基准上的验证表明，相对于传统MAGIC方法，ASCWWS分别使FOM提高到1.86倍和4.06倍，重要性反转的发生率降低超过31%。通过改善权窗分布质量，ASCWWS降低了对经验参数的依赖，并可作为后处理工具直接集成到现有自耦合蒙卡框架中，为高效模拟深穿透问题的WWGVR提供新途径。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In deep-penetration Monte Carlo simulations, the efficiency of the weight window global variance reduction (WWGVR) method critically depends on the accuracy of the lower weight window bounds. Statistical fluctuations during the initial iterations of self-coupled Monte Carlo method often lead to biased weight window estimates, triggering long-history problems. Conventional practice relies on empirical parameters as mandatory constraints. However, these parameters exert limited influence on Figure-of-Merit (FOM) within reasonable ranges, indicating that the efficiency bottleneck lies not in parameter fine-tuning but in the rationality of the weight window distribution. To address this, an Adaptive Spatial Convolution Weight Window Smoothing (ASCWWS) method is proposed, which employs an error-adaptive neighbourhood convolution kernel to achieve low-pass filtering and regularization of the weight window field, transforming point estimation into field estimation to suppress high-frequency noise and restore physically consistent importance gradients. Validation on the HBR-2 and EURACOS benchmarks shows that ASCWWS improves the FOM by factors of 1.86 and 4.06 compared to the conventional MAGIC method, respectively, with the incidence of importance inversion reduced by over 31%. By enhancing weight window distribution quality, ASCWWS reduces reliance on empirical parameters and can be directly integrated into existing self-coupled Monte Carlo method frameworks as a post-processing tool, offering a new pathway for efficient WWGVR simulation of deep-penetration problems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF尚未取得：OpenAlex限流（429），仓储未找到已验证文件，出版社访问受限。补充材料也未取得；不据此断言论文不是OA。</p>
+      <footer><a href="https://www.x-mol.com/paper/2107559002922823680" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112821" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107559002922823680" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于geant4可微优化的多探测器中子长计数器能量响应平坦化 geant4-based differentiable optimization for energy-response flattening of a multi-detector neutron long counter 11 中子输运方法（moc/蒙卡/确定论） nuclear engineering and technology · 2026-10-02 · ziyang gan, lizhen liang, bing hong, xiaohua li, cong yang, xin xu 11 中子输运方法（moc/蒙卡/确定论） 相对标准偏差 relative standard deviation (rsd) 标准偏差相对于均值的比例。 本文衡量合成能量响应的平坦度。 响应矩阵 response matrix 把输入能量/空间状态映射到探测输出的离散算子。 本篇连接能量、轴向位置与响应合成。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>基于Geant4可微优化的多探测器中子长计数器能量响应平坦化</h2>
+          <p class="title-en">Geant4-Based Differentiable Optimization for Energy-Response Flattening of a Multi-Detector Neutron Long Counter</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-02 · Ziyang Gan, Lizhen Liang, Bing Hong, Xiaohua Li, Cong Yang, Xin Xu</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际补做；近30天未读回溯材料。日报日期是阅读归档日期，不是首次发现或首次在线发表日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以Geant4能量—位置响应矩阵优化八个探测器位置，独立模拟验证RSD为2.84%。</li><li>属于核工程中子测量方法借鉴，非堆芯热工结构或在堆实验验证。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>比较组合搜索与连续可微优化，并独立核对优化位置上的响应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>独立验证仍为模拟；摘要未交代实物制造误差、探测效率标定和谱先验。</li><li>采样组合搜索不等于穷尽所有组合；不能认定连续优化找到全局最优。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>在相同预算下比较搜索策略，并把位置公差、热膨胀和能谱不确定性纳入响应鲁棒性分析。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要给出1 eV–20 MeV与K=8；下载核对探测位置、钨棒与慢化体几何、谱抽样及材料，温度/制造公差尚需另有证据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>相对标准偏差<small>Relative standard deviation (RSD)</small></h4><p>标准偏差相对于均值的比例。</p><p class="context"><b>本文语境</b> 本文衡量合成能量响应的平坦度。</p></div><div class="term"><h4>响应矩阵<small>Response matrix</small></h4><p>把输入能量/空间状态映射到探测输出的离散算子。</p><p class="context"><b>本文语境</b> 本篇连接能量、轴向位置与响应合成。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对宽能区注量测量中中子长计数器响应对能量的显著依赖，本文提出一种基于可微优化的方法，以平坦化多探测器中子长计数器的能量响应。建立多探测器长计数器的Geant4模型，并构建1 eV至20 MeV能量范围内的能量—位置响应矩阵。以合成响应的相对标准偏差（RSD）作为平坦度指标，比较离散组合搜索和可微连续优化两种方案。结果表明，多位置响应合成能够有效改善长计数器在宽能区的响应平坦度。对于K=8的探测器阵列，采样组合搜索基准找到的配置RSD为3.79%，而可微优化得到2.98%，说明在本文计算设置下RSD更低。此外，在长计数器的慢化体内嵌入钨棒，有助于改善总体响应平坦度。通过在八个优化轴向位置放置⁶Li微型探测器进行独立验证模拟，所得验证RSD为2.84%。本研究表明，所提方法能够有效改善多探测器长计数器的宽能区响应一致性，并为此类探测器系统的位置优化提供可复现的计算框架。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To address the significant energy dependence of long neutron counter responses in wide-energy-range fluence measurements, this paper proposes a differentiable-optimization-based method for flattening the energy response of a multi-detector long neutron counter. A Geant4 model of the multi-detector long counter was developed, and the energy–position response matrix of this detector was constructed for the energy range of 1 eV to 20 MeV. The relative standard deviation (RSD) of the synthesized response was used as the flatness metric, and two optimization approaches—discrete combinatorial search and differentiable continuous optimization—were compared. The results show that multi-position response synthesis effectively improves the response flatness of the long counter across a broad energy range. For a detector array with K = 8, the sampled combinatorial-search benchmark identified a configuration with an RSD of 3.79%, whereas differentiable optimization yielded 2.98%, indicating a lower RSD under the present calculation settings. Additionally, embedding tungsten rods in the moderator of a long neutron counter was found to improve the overall flatness of its response. Independent verification simulations were performed by placing 6Li micro-detectors at the eight optimized axial positions, yielding a verified RSD of 2.84%. This study demonstrates that the proposed method effectively enhances the wide-energy-range response consistency of the multi-detector long counter and provides a reproducible computational framework for position optimization in such detector systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF尚未取得：OpenAlex限流（429），仓储未找到已验证文件，出版社访问受限。补充材料也未取得；不据此断言论文不是OA。</p>
+      <footer><a href="https://www.x-mol.com/paper/2107996321754853376" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104756" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107996321754853376" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="使用⁶li玻璃闪烁探测器的中子飞行时间透射测量时变本底评估 evaluation of time-dependent background in neutron time-of-flight transmission measurements using a 6li-glass scintillation detector 11 中子输运方法（moc/蒙卡/确定论） nuclear engineering and technology · 2026-09-29 · jaehong lee, fabiana rossi, kota hironaka, cebastien joel guembou shouop, tomooki shiba, tadafumi sano, kazushi terada, jun-ichi hori 11 中子输运方法（moc/蒙卡/确定论） 飞行时间 time of flight (tof) 由粒子传播时间推断能量的测量方法。 本文在透射测量中分析随时间变化的本底。 脉冲高度门 pulse-height gate 按探测脉冲幅值筛选事件。 其本底估计仍可能包含俘获伽马贡献。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>使用⁶Li玻璃闪烁探测器的中子飞行时间透射测量时变本底评估</h2>
+          <p class="title-en">Evaluation of time-dependent background in neutron time-of-flight transmission measurements using a 6Li-glass scintillation detector</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-09-29 · Jaehong Lee, Fabiana Rossi, Kota Hironaka, Cebastien Joel Guembou Shouop, Tomooki Shiba, Tadafumi Sano, Kazushi Terada, Jun-ichi Hori</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际补做；近30天未读回溯材料。日报日期是阅读归档日期，不是首次发现或首次在线发表日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>相同实验条件下比较三种本底技术；滤片/吸收体可能低估，PH门在热能区可能高估。</li><li>用于核数据和输运验证测量，不把本底偏差误解释成截面或输运模型误差。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把不同本底估计方法的相反系统偏差与材料衰减、散射中子俘获机制关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给出误差大小、具体能量边界或修正公式，不自行补数值。</li><li>单一仪器/装置的比较不能直接推广到任意堆外探测器。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>利用可复现的本底实验估计测量系统误差，再与输运模型离散误差和蒙卡统计误差分别传播。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 实验装置和本底技术已披露；全文需提取飞行距离、滤片/吸收体厚度、PH门阈值、响应及不确定度表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>飞行时间<small>Time of flight (TOF)</small></h4><p>由粒子传播时间推断能量的测量方法。</p><p class="context"><b>本文语境</b> 本文在透射测量中分析随时间变化的本底。</p></div><div class="term"><h4>脉冲高度门<small>Pulse-height gate</small></h4><p>按探测脉冲幅值筛选事件。</p><p class="context"><b>本文语境</b> 其本底估计仍可能包含俘获伽马贡献。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>准确评估时变本底，对中子共振分析（NRA）中可靠的中子飞行时间（TOF）透射测量至关重要。本文在京都大学复合原子力科学研究所直线加速器（KURNS-LINAC），使用⁶Li玻璃闪烁探测器，实验研究中子透射测量中的时变本底。在相同测量条件下，比较黑共振、中子吸收体和脉冲高度（PH）门三种本底评估技术。结果表明，插入材料会衰减伽马射线，使共振滤片或中子吸收体技术得到的本底水平偏低。相反，PH门技术可能因散射热中子俘获产生的伽马射线，而在热能区高估本底。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Accurate evaluation of time-dependent background is essential for reliable neutron time-of-flight (TOF) transmission measurements in neutron resonance analysis (NRA). In this study, we experimentally investigated the time-dependent background in neutron transmission measurements utilizing a 6Li-glass scintillation detector at the Kyoto University, Institute for Integrated Radiation and Nuclear Science - Linear Accelerator (KURNS-LINAC). A comparative analysis was conducted on three background evaluation techniques, namely the black resonance, neutron absorber, and pulse-height (PH) gate techniques under identical measurement conditions. The results demonstrated that background levels obtained with resonance filters or neutron absorbers can be underestimated due to gamma-ray attenuation by the inserted materials. Conversely, the PH gate technique can overestimate the background in the thermal energy range due to gamma-rays produced by the capture of scattered thermal neutrons.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF尚未取得：OpenAlex限流（429），仓储未找到已验证文件，出版社访问受限。补充材料也未取得；不据此断言论文不是OA。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106308148349644800" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104753" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106308148349644800" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="日本面向快谱反应堆的反应堆物理研究发展回顾 the history of reactor physics studies for fast-spectrum reactor application in japan 11 中子输运方法（moc/蒙卡/确定论） nuclear engineering and design · 2026-09-19 · go chiba, kenji yokoyama, masahiro fukushima, taira hazama 11 中子输运方法（moc/蒙卡/确定论） 共振自屏蔽 resonance self-shielding 共振吸收改变局部谱，使有效截面不同于未屏蔽截面的现象。 本文梳理相应计算方法历史。 核数据调整 nuclear data adjustment 利用积分实验等证据约束核数据及其不确定性的方法。 本文强调理论与fca实验关系，不是随意校准截面。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>日本面向快谱反应堆的反应堆物理研究发展回顾</h2>
+          <p class="title-en">The history of reactor physics studies for fast-spectrum reactor application in Japan</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-09-19 · Go Chiba, Kenji Yokoyama, Masahiro Fukushima, Taira Hazama</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际补做；近30天未读回溯材料。日报日期是阅读归档日期，不是首次发现或首次在线发表日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述共振自屏蔽、双重非均匀、钠空泡流束与核数据调整的发展及实验基础。</li><li>这是方法史综述，不是当天提出或验证的新算法。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将快谱分析的模型发展与FCA实验、MONJU经验联系，为选基准和追溯方法假设提供线索。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有量化比较现行方法或给出完整基准清单。</li><li>历史综述中的“开创性”叙述未由本日报独立完成科学史优先权审核。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>追溯双重非均匀与空泡流束的原始基准，作为新MOC/蒙卡热变形耦合模型的验证层级。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>共振自屏蔽<small>Resonance self-shielding</small></h4><p>共振吸收改变局部谱，使有效截面不同于未屏蔽截面的现象。</p><p class="context"><b>本文语境</b> 本文梳理相应计算方法历史。</p></div><div class="term"><h4>核数据调整<small>Nuclear data adjustment</small></h4><p>利用积分实验等证据约束核数据及其不确定性的方法。</p><p class="context"><b>本文语境</b> 本文强调理论与FCA实验关系，不是随意校准截面。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文回顾日本面向快谱反应堆应用的反应堆物理研究历史。首先以Tone在非均匀栅格共振自屏蔽计算方面的开创性工作为起点，介绍20世纪70年代日本的研究环境。随后回顾动力反应堆中的双重非均匀性处理、用于准确共振自屏蔽处理的超细能群计算，以及纳入中子流束效应的钠空泡反应性计算。接着回顾核数据调整方法的理论发展，以及在快临界装置（FCA）开展的反应堆物理实验。最后讨论在日本快谱原型堆MONJU开发过程中获得的经验遗产。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The history of reactor physics studies for fast-spectrum reactor application in Japan is reviewed. As a starting point, Tone’s pioneering work on resonance self-shielding calculations for heterogeneous lattices is introduced to illustrate the research environment in the 1970s in Japan. Subsequent developments are then reviewed, including double heterogeneity treatment in power reactors, ultra-fine energy-group calculations for accurate resonance self-shielding treatment, and sodium void reactivity calculations incorporating the neutron streaming effect. Then, the theoretical development in nuclear data adjustment methodologies and reactor physics experiments carried out at the Fast Critical Assembly are reviewed. Finally the legacy acquired through the development of the Japanese prototype fast-spectrum reactor MONJU is referred.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF尚未取得：OpenAlex限流（429），仓储未找到已验证文件，出版社访问受限。补充材料也未取得；不据此断言论文不是OA。</p>
+      <footer><a href="https://www.x-mol.com/paper/2106245944757727232" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115199" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106245944757727232" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于神经网络的热管反应堆多物理场耦合快速预测 rapid prediction of multiphysics coupling in heat-pipe reactors using neural networks 07 多物理场耦合（热工结构） 原子能科学技术 · 2024 · 张俊达 刘晓晶 熊进标 柴翔 张滕飞 07 多物理场耦合（热工结构） 多物理场耦合 multiphysics coupling 多个物理场通过变量交换共同计算。 这里同时包含核、热与力。 代理模型 surrogate model 以较低计算成本近似高保真映射。 神经网络替代部分域，不天然继承守恒。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span></div>
+          <h2>基于神经网络的热管反应堆多物理场耦合快速预测</h2>
+          <p class="title-en">Rapid prediction of multiphysics coupling in heat-pipe reactors using neural networks</p>
+          <p class="meta">原子能科学技术 · 2024 · 张俊达 刘晓晶 熊进标 柴翔 张滕飞</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2024年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以Megapower核—热—力耦合框架的部分数值模块为神经网络代理；报告最大应力差≤2 MPa、燃料平均温度差≤3 K及6 h对4 min耗时。</li><li>这是2024年未读回溯基线，不是本日课题组新作；采用神经网络，不能改写成POD模型。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>按物理域替代模块而非将全部耦合黑箱化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给样本覆盖、极端事故外推、峰值应力误差和离线训练总成本；平均燃料温度误差不控制热点。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>比较神经网络与POD在热管失效、功率偏斜和结构约束变化时的闭环误差；先核对训练域。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 已披露Megapower、温度与应力误差和耗时；下载核对材料、热管边界、耦合迭代和离线训练成本。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>多物理场耦合<small>Multiphysics coupling</small></h4><p>多个物理场通过变量交换共同计算。</p><p class="context"><b>本文语境</b> 这里同时包含核、热与力。</p></div><div class="term"><h4>代理模型<small>Surrogate model</small></h4><p>以较低计算成本近似高保真映射。</p><p class="context"><b>本文语境</b> 神经网络替代部分域，不天然继承守恒。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文基于热管反应堆多物理场耦合分析框架,提出了一种基于数据驱动型神经网络构建的快速预测方案。该方案利用神经网络部分代替分析框架中的数值计算模块,实现核-热-力多物理场耦合迭代过程的高效求解。以Megapower作为分析对象,搭建了相应的神经网络模型构建快速预测方案并对其进行相关参数的预测,与传统数值计算方法对比。快速预测产生的关键参数和数值计算的结果差异很小,其中,最大应力差值不超过2 MPa,燃料平均温度差值不超过3 K。相同计算环境中,相比于数值计算需要6 h的计算时间,快速预测仅需4 min,计算时间降低了95%以上。基于上述结果,认为基于神经网络的快速预测方案具有准确性高、速度快的特点。配合其灵活性及对训练数据量要求低、可针对性的优化模型等特点,认为基于神经网络的快速预测方案是应对堆芯优化等大规模计算需求场景的优选方案。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">In the present study,a data-driven neural network methodology was proposed for the rapid prediction of multi-physics interactions in heat pipe reactors,and grounded in a comprehensive framework of multi-physics coupling.By leveraging neural networks,certain numerical computation modules within the framework were effectively replaced,which facilitated an efficient resolution of the iterative process inherent to the nuclear-thermal-mechanical multi-physics coupling.In the process of multi-physics coupling,there exists a sophisticated iterative mechanism,wherein the computational analyses of distinct physical domains largely function autonomously.When contemplating the integration of neural network paradigms as surrogates within the multi-physics coupling framework,it is pivotal to target the numerical computations intrinsic to individual physical domains.By deploying one or multiple neural network models as substitutes,this methodology not only sustains the scalability inherent to rapid predictive schemes but also attenuates the complexity associated with the neural network’s surrogate functionalities.Concurrently,this approach necessitates a reduced dataset for training,and through the amalgamation of diverse neural network models,markedly augments the adaptability of the overarching rapid predictive framework.Furthermore,multiple neural networks,operating autonomously,can be dynamically calibrated with respect to their training data volumes based on their predictive performance.This not only optimizes their predictive accuracy but also facilitates the cost-effective expansion of training datasets in accordance with specific model requirements.Taking“Megapower”as the subject of analysis,pertinent neural network models were constructed and employed for rapid predictive parameter estimation,with the results juxtaposed against traditional numerical computations.The discrepancies between the key parameters yielded by rapid predictions and those from numerical simulations were minimal.Specifically,the maximum stress differential does not exceed 2 MPa,and the average fuel temperature difference is less than 3 K.Notably,while numerical computations demand six hours of processing time,the rapid prediction on the same platform requires a mere 4 minutes,marking a reduction in computational time by over 95%.Given these outcomes,it can be posited that neural network-based rapid prediction schemes exhibit high precision and accelerated processing speeds.Coupled with their inherent flexibility and modest training data requirements,and the capacity for targeted model optimization,it is advocated that neural network-based rapid prediction serves as a preferred methodology for addressing challenges such as core optimization in scenarios that demand large-scale computations.Concurrently,the neural network models utilized in rapid predictions have less stringent computational resource requirements and offer greater adaptability to varied environments.Capitalizing on these attributes,in conjunction with contemporary compact mobile reactors,one can facilitate on-site deployments with relative ease.Such integrations pave the way for prompt alerts in accident scenarios,thereby enhancing the safety of the reactor core.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7112342493" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于随机介质中子输运的弥散颗粒燃料高保真共振及输运计算方法 high-fidelity resonance and transport calculations for dispersed particle fuel using stochastic-medium neutron transport 11 中子输运方法（moc/蒙卡/确定论） 原子能科学技术 · 2026 · 易思宇 刘宙宇 漆嘉乐 谢添舟 秦胜杰 汪量子 11 中子输运方法（moc/蒙卡/确定论） 双重非均匀性 double heterogeneity 颗粒与宏观燃料结构两个尺度的材料非均匀性。 本文同时处理多种颗粒。 特征线法 method of characteristics (moc) 沿特征线积分中子输运方程的确定论方法。 本文径向moc与轴向sn配合。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>基于随机介质中子输运的弥散颗粒燃料高保真共振及输运计算方法</h2>
+          <p class="title-en">High-fidelity resonance and transport calculations for dispersed particle fuel using stochastic-medium neutron transport</p>
+          <p class="meta">原子能科学技术 · 2026 · 易思宇 刘宙宇 漆嘉乐 谢添舟 秦胜杰 汪量子</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2026年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>NECP-X中组合Hébert/超细群自屏蔽、径向S-P/MOC与轴向SN均匀化，处理多颗粒混合的双重非均匀性。</li><li>棒型问题截面偏差&lt;1.8%、kinf偏差&lt;200 pcm；板堆keff偏差&lt;260 pcm、功率均方根偏差&lt;1%。蒙卡仅作显式颗粒参考。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把随机颗粒效应纳入全堆共振和2D/1D确定论输运。</li></ul></section>
+        <section><h3>不足</h3><ul><li>双重非均匀颗粒燃料不是严重事故碎片床；参照蒙卡不构成实时MC耦合。</li><li>所报误差限于列出算例；密集颗粒与热变形材料状态须重新验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>核对颗粒装填率、Dancoff因子与温度相关截面，追踪功率映射对燃料应力的传播。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 颗粒/栅元结构与温度截面有参数线索，下载后提取颗粒尺寸、装填率、矩阵材料和功率归一化。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>双重非均匀性<small>Double heterogeneity</small></h4><p>颗粒与宏观燃料结构两个尺度的材料非均匀性。</p><p class="context"><b>本文语境</b> 本文同时处理多种颗粒。</p></div><div class="term"><h4>特征线法<small>Method of characteristics (MOC)</small></h4><p>沿特征线积分中子输运方程的确定论方法。</p><p class="context"><b>本文语境</b> 本文径向MOC与轴向SN配合。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为在确定论中子学程序中构建燃料芯体内多种颗粒混合工况的双重非均匀性处理模块,实现弥散颗粒燃料全堆高保真中子学模拟计算,本研究从共振及输运计算两方面对传统方法进行改进。在共振计算部分,将Hébert模型与全局-局部耦合共振计算方法结合,构建含弥散颗粒的一维等效栅元,然后在等效栅元中采用Hébert模型和超细群方法计算获得有效自屏截面,实现全堆芯的高精度共振计算;在输运计算部分,基于二维一维耦合输运计算框架,在径向方向将Sanchez-Pomraning(S-P)方法添加到NECP-X的二维特征线方法(MOC)中,在轴向方向的一维SN计算及粗网有限差分计算中,添加考虑颗粒结构的均匀化模块,实现考虑弥散颗粒的三维输运计算。以采用颗粒显式建模的蒙特卡罗程序为参考,对棒束型燃料元件和板型反应堆堆芯问题进行了计算。在棒束型问题中,截面相对偏差小于1.8%,无限增殖因数(kinf)偏差小于200 pcm。在板堆芯问题中,有效增殖因数(keff)偏差小于260 pcm,功率均方根偏差在1%以内。以上结果表明,本研究建立的数值模拟方法能够用于弥散颗粒燃料的全堆高保真中子学计算。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">In the poison design scheme of dispersed particle fuel,there are situations in which TRISO fuel particles and BISO poison particles are mixed and dispersed into the SiC matrix.The common equivalent homogenization method based on the disadvantage factors has difficulty in handling the conditions where multiple types of particles coexist,while the stochastic medium neutron transport method has difficulty in dealing with large-scale calculation problems.To establish the double heterogeneity processing capability for multiple particle mixing in the fuel compact and achieve highfidelity neutronics simulation of the whole core loaded with dispersed particle fuel,this study adds a dispersed particle fuel processing module to the deterministic high-fidelity program NECP-X.The part of resonance calculation is based on the global-local coupling calculation framework.First,onedimensional(1D)equivalent models of plate or rod fuel elements were established through the conservation of the Dancoff factor.Then,in the equivalent model,the ultrafine group method was used to obtain the effective self-shielding cross-sections.Among them,the collision probabilities inside and between the particles and the matrix were obtained through the Hébert model.The part of transport calculation is based on the 2D/1D coupling transport method.In the radial direction,the Sanchez-Pomraning(S-P)method was incorporated into the 2D MOC(method of characteristic)calculation to account for randomly distributed particles and obtain the radial flux distribution at the particle and matrix locations.In the axial direction,the pin-based homogenization was adopted,and the particle structure was considered in the flux-weighted calculation of the homogenized cross-sections.Then,the axial flux distribution was obtained through 1D SN calculation.Similarly,the particle structure must be considered in the calculation of the homogenization parameters in the coarse-mesh finite difference method.In addition,the iterative format of the equivalent homogenized cross-sections was modified to ensure its convergence when the particle packing fractions are greater than 0.5.Taking the Monte Carlo program with explicit particle modeling as reference,calculations were carried out for rod-type fuel pin and plate-type reactor core problems.In the rod-type single pin problem,the bias of cross-sections are less than 1.8%,and the bias of infinite multiplication factors(kinf)are less than 200 pcm.In the platetype full core problem,the bias of effective multiplication factors(keff)are less than 260 pcm,and the RSE of power is within 1%.The calculation results show that the method in this paper can obtain highprecision results such as resonance self-shielding cross-sections,keff,and power distributions.Therefore,the numerical simulation method established in this study can be used for high-fidelity neutronics calculation of the entire reactor with dispersed particle fuel.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203871710" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于事件的蒙特卡罗粒子输运算法设计实现 design and implementation of an event-based monte carlo particle transport algorithm 11 中子输运方法（moc/蒙卡/确定论） 计算机工程与科学 · 2026 · 黎铁军 张建民 李雨函 杨博 11 中子输运方法（moc/蒙卡/确定论） 事件式输运 event-based transport 按输运事件类型组织粒子工作而非逐历史串行推进。 本篇针对并行体系结构优化。 性能代理程序 proxy application 保留关键计算特征的简化程序。 不替代完整核物理验证。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>基于事件的蒙特卡罗粒子输运算法设计实现</h2>
+          <p class="title-en">Design and implementation of an event-based Monte Carlo particle transport algorithm</p>
+          <p class="meta">计算机工程与科学 · 2026 · 黎铁军 张建民 李雨函 杨博</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2026年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>基于OpenMC实现事件式代理程序，模拟分支、访存与计算特征；代码量&lt;5%、运行时间约7.5%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提供研究众核体系结构性能的精简事件式工作负载。</li></ul></section>
+        <section><h3>不足</h3><ul><li>7.5%不是同一物理保真度下全功能OpenMC加速比；代理程序覆盖的计数器、核数据和物理分支待查。</li><li>作者“没有公开程序”是摘要论断，本日报未独立核实公开生态的优先权。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>增加真实屏蔽权窗和长历史负载，验证代理性能瓶颈与全功能程序排序是否一致。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>事件式输运<small>Event-based transport</small></h4><p>按输运事件类型组织粒子工作而非逐历史串行推进。</p><p class="context"><b>本文语境</b> 本篇针对并行体系结构优化。</p></div><div class="term"><h4>性能代理程序<small>Proxy application</small></h4><p>保留关键计算特征的简化程序。</p><p class="context"><b>本文语境</b> 不替代完整核物理验证。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>蒙特卡罗MC粒子输运程序是典型的高性能计算应用。MC粒子输运程序存在基于粒子历史与基于事件2种并行实现方法。代理程序是面向特定体系结构开展大型实际程序性能优化的重要基础,实现基于事件的MC代理程序对研究面向众核体系结构的性能优化非常重要。然而目前没有公开的基于事件方法的代理程序。基于开源项目OpenMC,对基于事件的蒙特卡罗粒子输运算法进行设计,实现了一个新的基于事件的MC粒子输运代理程序。实验结果表明,该代理程序能够有效模拟OpenMC的分支、访存及计算特征,且其代码量不到OpenMC代码量的5%,运行时间仅为OpenMC的7.5%,为基于事件算法的优化研究提供了高效易用的平台。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">Monte Carlo particle transport program is a typical high-performance computing(HPC)application.There are two parallel methods for MC particle transport programs:history-based method and event-based method.Proxy programs serve as a crucial foundation for optimizing the performance of large-scale practical programs tailored to specific architectures,and the implementation of an event-based MC proxy program is of great importance for researching performance optimization for many-core architectures.However,there are no publicly available event-based proxy programs.Based on the open source project OpenMC,an event-based Monte Carlo particle transport algorithm is designed,and then a new event-based MC proxy program is implemented.Experimental results show that this proxy program can effectively simulate the branching,memory access,and computational characteristics of OpenMC,with its code size being less than 5%of that of OpenMC.Moreover,its runtime is merely 7.5%of OpenMC’s,providing an efficient and user-friendly platform for optimization research based on event-based algorithms.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203217333" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于高阶轴向多项式展开的特征面方法 a characteristic-plane method with high-order axial polynomial expansion 11 中子输运方法（moc/蒙卡/确定论） 原子能科学技术 · 2026 · 杨睿 喻宏 胡赟 霍兴凯 11 中子输运方法（moc/蒙卡/确定论） 特征面方法 characteristic-plane method 在二维特征面上组织输运解的一类方法。 本篇不是普通二维moc与轴向解简单拼接。 响应矩阵 response matrix 将边界或源输入映射为输出通量的离散关系。 本文推导高阶展开的映射。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>基于高阶轴向多项式展开的特征面方法</h2>
+          <p class="title-en">A characteristic-plane method with high-order axial polynomial expansion</p>
+          <p class="meta">原子能科学技术 · 2026 · 杨睿 喻宏 胡赟 霍兴凯</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2026年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>轴向四阶/径向零阶展开特征面方程，推导响应矩阵并用Takeda、C5G7验证；轴向网格可放宽至10 cm和14.28 cm。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>利用轴向长几何的尺度差异减少层数与存储。</li></ul></section>
+        <section><h3>不足</h3><ul><li>数值稳定性和网格上限限于所列基准；控制棒尖端、强轴向异质和局部反馈应另测。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>将局部轴向高阶误差传播到功率与热应力，比较同误差条件下的真实成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 已给出展开阶次、基准和轴向网格；全文需核对角求积、径向网格、误差阈值与棒尖位置。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>特征面方法<small>Characteristic-plane method</small></h4><p>在二维特征面上组织输运解的一类方法。</p><p class="context"><b>本文语境</b> 本篇不是普通二维MOC与轴向解简单拼接。</p></div><div class="term"><h4>响应矩阵<small>Response matrix</small></h4><p>将边界或源输入映射为输出通量的离散关系。</p><p class="context"><b>本文语境</b> 本文推导高阶展开的映射。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>特征面方法相比于二维耦合方法,从理论上不需要引入耦合,保证了稳定性。但特征面方法求解对象是二维面方程,数学推导较为繁琐,很难做到高阶展开。考虑到在常见反应堆中燃料棒或板的轴向尺寸往往远大于径向尺寸,可以通过简化径向展开来提高轴向展开阶数,提出了一种基于轴向4阶和径向0阶多项式展开的特征面方法。首先分析了2种情形下的数学求解过程,推导得到响应矩阵和体通量的表示方法。其次设计迭代计算流程,开发计算程序。最后通过Takeda算例和C5G7算例验证本文方法的正确性。计算结果表明,借助于高阶轴向展开,Takeda算例的轴向网格尺寸可增大到10 cm,C5G7算例的轴向尺寸可增大到14.28 cm,显著提升了计算速度并降低存储需求。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">This study addresses the computational challenges associated with solving neutron transport equations in three-dimensional(3D)reactor cores,particularly in complex geometries where axial dimensions dominate radial dimensions.The method of characteristics(MOC)is widely used for their high precision,strong geometric adaptability,and suitability for parallel computing.However,conventional MOC faces significant limitations,including the requirement for fine axial grid discretization,which leads to high computational and storage demands.Additionally,while twodimensional MOC coupled with axial methods reduces resource requirements,it introduces geometric restrictions and potential instabilities due to coupling.To overcome these limitations,this study aims to develop an advanced deterministic method that combines the advantages of MOC with reduced computational overhead.By focusing on high-order axial polynomial expansion and simplified radial modeling,the study seeks to enhance computational efficiency while maintaining accuracy,particularly for reactors with elongated fuel rods or plates.A novel characteristic plane method based on high-order axial polynomial expansion was developed.The method simplified radial expansion to zero order while enabling fourth-order axial polynomial expansion.This method leveraged the observation that in typical reactors,the axial dimensions of fuel rods or plates were much larger than their radial dimensions,making axial grid refinement more critical.The mathematical derivation involved two distinct scenarios of neutron transport within characteristic surfaces,deriving response matrices,and establishing flux representations.An iterative calculation framework was designed to handle boundary conditions and enable parallel computation.The method was implemented in a computational program to validate its effectiveness.Numerical validation using the Takeda and C5G7 benchmarks demonstrates the method&#x27;s accuracy and efficiency.In the Takeda benchmark,the axial grid size is successfully increased to 10 cm,matching the core height without additional layering,while maintaining acceptable deviations in keff(e.g.,38.3 pcm for casel and-2.5 pcm for case2).Similarly,in the C5G7 benchmark,the axial grid size is extended to 14.28 cm,with keff deviations within acceptable ranges(e.g.,-66.5 pcm for C5G73D and-112 pcm for Unrodded).The method significantly reduces computational time and storage requirements.The proposed high-order axial polynomial expansion for characteristic plane method offers a robust solution for 3D neutron transport calculations.By simplifying radial expansion and enhancing axial resolution,the method achieves grid sizes comparable to traditional block methods(e.g.,10-21.42 cm),significantly improving computational efficiency without compromising accuracy.This method is particularly advantageous for reactors with elongated axial dimensions,providing a practical alternative to conventional methods that require finer grids.The method&#x27;s stability,efficiency,and accuracy make it a promising tool for modern reactor design and analysis.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202720431" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="vver型压水堆堆外探测器三维空间响应函数计算方法及其验证研究 calculation and verification of three-dimensional ex-core detector response functions for vver pressurized-water reactors 11 中子输运方法（moc/蒙卡/确定论） 核动力工程 · 2026 · 瞿平 白家赫 万承辉 叶刘锁 黄鹏 王建 吴宏春 11 中子输运方法（moc/蒙卡/确定论） 共轭输运 adjoint transport 从特定响应反推粒子重要性的输运计算。 响应截面为本文共轭源。 动态刻棒 dynamic rod-worth measurement 利用控制棒移动和探测信号评估棒价值的测量过程。 本篇使用电流实测作为独立证据。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>VVER型压水堆堆外探测器三维空间响应函数计算方法及其验证研究</h2>
+          <p class="title-en">Calculation and verification of three-dimensional ex-core detector response functions for VVER pressurized-water reactors</p>
+          <p class="meta">核动力工程 · 2026 · 瞿平 白家赫 万承辉 叶刘锁 黄鹏 王建 吴宏春</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2026年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>Hydra以探测器响应截面作共轭源，求VVER三维响应函数；与前向输运及动态刻棒电流实测比较，探测器响应最大相对误差1.6%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把共轭响应函数用于六角组件VVER堆外探测器并引入工业实测验证。</li></ul></section>
+        <section><h3>不足</h3><ul><li>1.6%不是任意动态刻棒阶段的误差界；燃耗依赖、温度与机械位移影响待查。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>研究导向/控制棒热位移对响应函数及反应性反演的影响，分离测量本底、模型和几何误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 实测电流和响应模型有明确线索；需下载几何、探测器谱响应、棒位轨迹、燃耗点及不确定度。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>共轭输运<small>Adjoint transport</small></h4><p>从特定响应反推粒子重要性的输运计算。</p><p class="context"><b>本文语境</b> 响应截面为本文共轭源。</p></div><div class="term"><h4>动态刻棒<small>Dynamic rod-worth measurement</small></h4><p>利用控制棒移动和探测信号评估棒价值的测量过程。</p><p class="context"><b>本文语境</b> 本篇使用电流实测作为独立证据。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对VVER型压水堆开展堆外探测器三维空间响应函数的高效精准计算方法研究。基于共轭中子输运理论的堆外探测器三维空间响应函数计算方法,采用Hydra程序建立空间响应函数计算物理模型,以堆外探测器响应截面为共轭源,通过共轭中子输运计算获得共轭中子通量密度,实现堆外探测器三维空间响应函数的计算。为实现方法验证,本文首先将共轭输运法获得的空间响应函数与前向输运法的结果进行对比验证,然后在设计燃耗步条件下对比两种空间响应函数获得的堆外探测器响应,最后基于VVER型压水堆动态刻棒试验的电流信号实测数据进行验证分析。结果表明:共轭输运法获得的空间响应函数及响应均与前向输运法的结果相符合,堆外探测器响应的最大相对误差为1.6%;基于共轭输运法的空间响应函数获得的动态刻棒过程堆外探测器电流信号计算值与前向输运法的结果及实测值吻合较好。因此,本文研究的方法能够实现六角形燃料组件VVER型压水堆的三维空间响应函数高精度高效率计算,具有工业应用价值。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">An efficient and accurate calculation method for the 3D spatial response function of ex-core detectors in VVER-type pressurized water reactor(PWR)is presented.Based on the adjoint neutron transport theory,a physical model is developed using the Hydra code.By utilizing the excore detector response cross-section as the adjoint source,the adjoint neutron flux density is calculated to derive the 3D spatial response function.To verify this method,the response function obtained via the adjoint transport approach is first compared with that from the forward transport method.Subsequently,the detector responses computed from both approaches are compared at design burnup steps.Finally,a verification analysis is performed based on the measured current signals obtained from the dynamic rod worth measurement(DRWM)of a VVER-type PWR.The results indicate that the spatial response function and the responses obtained by the adjoint transport method are consistent with those from the forward transport method,with the maximum relative error of the ex-core detector response being 1.6%.Furthermore,the detector current signals during the DRWM process,computed using the spatial response function derived from the adjoint transport method,are in good agreement with both the forward transport results and the experimental data.Consequently,the proposed method provides a highly accurate and efficient solution for calculating 3D spatial response functions for VVER-type PWR with hexagonal fuel assemblies,demonstrating significant potential for industrial applications.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203331254" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于非结构网格变分节块法的频域中子噪声数值模拟研究 frequency-domain neutron-noise simulation using an unstructured-mesh variational nodal method 11 中子输运方法（moc/蒙卡/确定论） 核动力工程 · 2026 · 李梓康 肖维 张滕飞 罗池旭 刘晓晶 11 中子输运方法（moc/蒙卡/确定论） 中子噪声 neutron noise 小扰动引起的中子场波动。 本篇用频域模型作间接监测。 一阶微扰 first-order perturbation 只保留扰动线性项的近似。 限定本篇误差结论的扰动幅度。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>基于非结构网格变分节块法的频域中子噪声数值模拟研究</h2>
+          <p class="title-en">Frequency-domain neutron-noise simulation using an unstructured-mesh variational nodal method</p>
+          <p class="meta">核动力工程 · 2026 · 李梓康 肖维 张滕飞 罗池旭 刘晓晶</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2026年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>VITAS中用一阶微扰与傅里叶变换建立频域噪声算法，MOX/C4V与时域比较；弱扰动下幅值误差&lt;2%、相位误差&lt;1%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>扩展非结构网格变分节块输运到频域中子噪声。</li></ul></section>
+        <section><h3>不足</h3><ul><li>一阶线性化仅适用弱扰动；不能推广到大幅流致振动或强非线性接触。</li><li>相位相对误差在接近零相位处定义需要全文核对。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>用热变形/振动计算提供扰动形态，以谱和相位检验信号反演可辨识性。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>中子噪声<small>Neutron noise</small></h4><p>小扰动引起的中子场波动。</p><p class="context"><b>本文语境</b> 本篇用频域模型作间接监测。</p></div><div class="term"><h4>一阶微扰<small>First-order perturbation</small></h4><p>只保留扰动线性项的近似。</p><p class="context"><b>本文语境</b> 限定本篇误差结论的扰动幅度。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>中子噪声是各类微小扰动作用下中子场涨落的现象,作为核反应堆的间接监测手段而逐渐受到关注。本文利用一阶微扰理论和傅里叶变换方法,建立了基于非结构网格变分节块法的频域中子噪声数值模拟方法,拓展了通用型中子输运计算程序VITAS的功能。针对混合氧化物燃料(MOX)算例和C4V基准题,采用与时域方法计算结果对比的方法,验证了频域方法的计算精度。数值结果表明,当扰动较微弱时,频域方法能够取得与已有的时域方法相当的精度,中子噪声幅值的相对误差小于2%,中子噪声相位的相对误差小于1%。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">Neutron noise refers to the fluctuation of the neutron field under various weak perturbations and has gradually gained attention as an indirect monitoring tool for nuclear reactors.This paper establishes a frequency-domain numerical simulation method for neutron noise based on the unstructured-grid variational nodal method using the first-order perturbation theory and Fourier transform techniques.This work extends the functionality of the general-purpose neutron transport code VITAS.The accuracy of the frequency-domain method is verified by comparing its results with those from time-domain methods in the MOX case and the C4V benchmark.Numerical results indicate that the frequency-domain method can achieve a precision comparable to the existing timedomain method under weak perturbations.The relative error in the amplitude of neutron noise is less than 2%,and the relative error in the phase of neutron noise is less than 1%.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202853145" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="可扩展蒙特卡罗粒子输运软件架构设计与实现 design and implementation of an extensible monte carlo particle transport software architecture 11 中子输运方法（moc/蒙卡/确定论） 强激光与粒子束 · 2026 · 李刚 李瑞 邓力 张爱清 11 中子输运方法（moc/蒙卡/确定论） 解算器库 solver library 提供可复用物理算法的程序库。 mcpt负责输运核心及二次开发接口。 耦合接口 coupling interface 在不同求解器间交换变量与单位的约定。 有接口不等于已经完成可信多物理验证。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>可扩展蒙特卡罗粒子输运软件架构设计与实现</h2>
+          <p class="title-en">Design and implementation of an extensible Monte Carlo particle transport software architecture</p>
+          <p class="meta">强激光与粒子束 · 2026 · 李刚 李瑞 邓力 张爱清</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">2026-10-13实际检索与补做的2026年未读专题回溯文献；非当日发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>将JMCT升级为平台并提供MCPT解算器库与7类接口；初步估算节省用户30%–95%编码工作量。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把粒子输运可扩展点与二次开发接口组织成库。</li></ul></section>
+        <section><h3>不足</h3><ul><li>节省编码工作量不是求解加速30%–95%；接口开放也不证明数值正确。</li><li>用户源码保护与联合编译的具体授权、可复现性待查。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出独立、明确的后续研究计划；本报告的建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>建立MCPT或其他开放输运接口与ANSYS温度/位移交换的契约测试，核对归一化和守恒。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>解算器库<small>Solver library</small></h4><p>提供可复用物理算法的程序库。</p><p class="context"><b>本文语境</b> MCPT负责输运核心及二次开发接口。</p></div><div class="term"><h4>耦合接口<small>Coupling interface</small></h4><p>在不同求解器间交换变量与单位的约定。</p><p class="context"><b>本文语境</b> 有接口不等于已经完成可信多物理验证。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>蒙特卡罗(MC)粒子输运方法应用概率论随机理论与数理统计知识研制相应程序,并借助计算机工具帮助核领域解决各种粒子输运物理问题。经过70多年的发展,MC粒子输运方法及软件已经逐步成熟,在核辐射屏蔽、核反应堆堆芯临界安全分析、核探测及核医学等传统领域广泛应用。JMCT软件是中物院高性能数值模拟软件中心推出的一款三维粒子输运蒙特卡罗软件,粒子类型支持中子、光子、电子及其耦合,具有可视化建模工具、通用输运算法和降方差技巧、全面性计数统计功能和超大规模并行计算能力,几何类型支撑组合几何体、结构网格及两者耦合,含有多群和连续两种能量模型,支持输运-燃耗-热工耦合计算。针对JMCT软件遇到功能开发、用户源码保护和代码持续发展维护等问题,从蒙特卡罗粒子输运方程入手,分析了蒙特卡罗粒子输运模拟过程中的可扩展点,创新设计了具有高可扩展性的蒙特卡罗输运软件架构。该架构设计在JMCT软件上落实,把JMCT软件升级成平台型软件,同时推出了蒙特卡罗粒子输运解算器库MCPT。MCPT对用户提供了7类二次开发接口,极大程序上支持了用户进行二次开发,而且提供了多种多样的成熟功能组件模块,可节省用户编码工作量。经初步评估,通过MCPT和用户自编代码的联合编译而产生用户专用定制的蒙特卡罗粒子输运模拟软件,可节省用户30%~95%的编码工作量,并能保护用户的代码权益。</p></div>
+          <div><h3>English abstract · 维普可见英文摘要原文；与中文原摘要详略不同，分别保留，不把中文原文误标为英文逐句译文。</h3><p lang="en">[Background]The Monte Carlo(MC)particle transport methodology incorporates stochasticprinciples derived from probability theory and mathematical statistics to establish computational frameworks.Thisapproach facilitates the numerical resolution of complex particle transport phenomena in nuclear systems.Over thecourse of seven decades of development,Monte Carlo particle transport theory and algorithms have reached a highlevel of technical maturity.This has resulted in the development of several specialized software packages,which arewidely applied in fields such as nuclear radiation shielding,reactor core criticality safety analysis,nuclear detection,and radiation medicine.[Purpose]JMCT is a 3D Monte Carlo particle transport software that supports neutrons,photons,electrons,and their coupling.It features visual modeling tools,general transport algorithms with variancereduction techniques,comprehensive tallying capabilities,and ultra-large-scale parallel computing power.JMCT hasbeen successfully applied to the simulation of reactor models such as the Ningde Nuclear Power Plant,CAP1400,CFR600,and Hualong One.Additionally,it has been introduced and procured by multiple institutions in the nuclearenergy sector,including the CGN Research Institute,Shanghai Nuclear Engineering Research and Design Institute(SNERDI),and the China Institute of Atomic Energy(CIAE).The JMCT software faces issues such as functionaldevelopment,code maintenance,and user source code protection.[Methods]Expandable points in the Monte Carlo particle transport simulation was identified by analyzing Monte Carlo particle transport equation.A highly expandableMonte Carlo transport software architecture was designed,enabling functional component modules to become highlycohesive and loosely coupled.This architecture significantly simplified development and maintenance while protectinguser-developed functional component source code.Based on this architecture,the Monte Carlo particle transportsolver library,MCPT,was developed.[Results]MCPT provides seven categories of secondary developmentinterfaces,substantially meeting users’customized development and source code protection requirements.It alsooffers various mature functional component modules that can reduce users’coding workload.Preliminary evaluationsindicate that developing personalized Monte Carlo particle transport simulation software using MCPT can save30%−95%of coding efforts.[Conclusions]JMCT has been reconstructed using MCPT.This transformation hassignificantly improved both expandability and maintainability.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204057818" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">先核对前提：MOC属于确定论；MOC/SN耦合不是蒙卡—确定论；数据标签来自蒙卡不等于实时闭环；负反应性不是热安全证明；平均/整体预测误差不能替代峰值应力、界面守恒或间隙验证。下列均为待查新、可被反例推翻的研究假设，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>近期可做：先建基准再查新</span><h3>面向未见边界/热管失效的热—结构降阶安全量误差控制</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>热管堆快速代理已存在；待验证的是在边界突变、功率偏斜和局部结构约束变化时，峰值应力/间隙误差能否被有效约束。</p></section>
+            <section><h4>为什么值得开展</h4><p>与ANSYS能力直接匹配。价值取决于独立工况、守恒和安全量验证，而不是重复POD或报告很高的整体拟合率；不保证发表。</p></section>
+            <section><h4>建议工作</h4><ol><li>以本次30/31课核对快照和误差链，明确这是教学基线而非研究创新。</li><li>建立含温度相关材料及可信热管边界的高保真模型，分别留出失效、极端功率和不同约束工况。</li><li>比较全局POD、分域/分状态POD和已有神经网络代理，分别记录训练、预测、内存及峰值安全量误差。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>可公开复现的工况划分和安全量误差基准。</li><li>若能优于合理基线，再形成守恒/失效感知的基更新或误差指示方法。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日中文Megapower神经代理、弱扰动中子噪声与三维软件接口阅读。</li></ul></div><div><h4>主要风险</h4><ul><li>真实热管失效边界和材料数据难获取；常物性两模态成功不会自动推广。</li><li>新算法可能只比未调优基线好；正式立项仍需系统查新。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>需响应函数及实测数据后开展</span><h3>控制棒热位移与堆外探测器响应反演的不确定性分离</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>已有共轭响应与动态刻棒验证；热位移、谱变化、测量本底偏差在反演中是否可区分，仍需针对可取得的工业数据核查。</p></section>
+            <section><h4>为什么值得开展</h4><p>可形成可辨识性及误差预算贡献，前提是有带棒位、温度和标定信息的数据；仅模拟曲线拟合价值有限。</p></section>
+            <section><h4>建议工作</h4><ol><li>用ANSYS得到热位移范围，建立棒位/几何扰动集合，不能把均温控制棒模型直接当实际棒形。</li><li>接入可信共轭响应函数，分别扰动中子谱、几何及本底估计。</li><li>比较响应残差、反演棒价值和置信区间，与独立实测轨迹核验。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>把仪器系统误差、统计误差和热几何误差分开量化。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日VVER共轭响应及1.6%参照误差、TOF本底技术的相反偏差、Geant4位置优化。</li></ul></div><div><h4>主要风险</h4><ul><li>缺乏实测或响应函数时，参数可能不可辨识。</li><li>TOF仪器与VVER探测器不是同一对象，误差不能直接照搬。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>中期：需要输运代码和可复现基准</span><h3>材料界面保护的权窗正则化与响应导向方差减小比较</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>ASCWWS平滑与FW-CADIS均已有成果；可检验缺口是强界面/热变形下，空间平滑是否损伤重要性梯度或产生长历史尾部。</p></section>
+            <section><h4>为什么值得开展</h4><p>可能形成算法与基准数据贡献，但与ANSYS主线距离较远；缺乏输运代码接口时不优先。</p></section>
+            <section><h4>建议工作</h4><ol><li>复现两个公开屏蔽基准，核对相同截面、源和精度预算。</li><li>比较无平滑、ASCWWS和FW-CADIS，记录剂量偏差、FOM、内存和长历史分布。</li><li>再加入来源可信的材料界面变化，尝试界面保护或误差感知平滑。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>跨方法同精度预算对照及平滑失效条件。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日ASCWWS和事件式MC代理阅读；FW-CADIS官方查新。</li></ul></div><div><h4>主要风险</h4><ul><li>不能把MAGIC比较倍数直接当FW-CADIS收益。</li><li>权窗训练和初始化成本容易被遗漏，极端路径统计需要足够预算。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">定向检索显示相关耦合、降阶、共轭重要性和碎片床粗粒化均已有工作。保留可验证的误差传播和安全量问题，降低缺数据及高实验成本方向的优先级。</p><p class="research-note">检索范围：2026-10-13实际检索：热管堆POD/ROM与热应力；CADIS/FW-CADIS；多材料/参数化PINN扩散；气冷堆温度反馈；DEM–VOF碎片床。来源为出版社公共索引/原始页面、ORNL官方资料及本批X-MOL/维普证据。部分页面打开返回403或验证，保留检索索引与来源链，不声称穷尽；未使用Scopus或Web of Science。　检索时间：2026-10-13T14:06:58.430603+08:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>近期可做：先建基准再查新</span><h3>面向未见边界/热管失效的热—结构降阶安全量误差控制</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 维持，但收窄至可独立检验的贡献</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>已有核热力耦合、神经代理、热应力多目标优化和瞬态ROM。因此“ANN/POD加ANSYS”本身新颖性不足。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>热管堆快速代理已存在；待验证的是在边界突变、功率偏斜和局部结构约束变化时，峰值应力/间隙误差能否被有效约束。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>与ANSYS能力直接匹配。价值取决于独立工况、守恒和安全量验证，而不是重复POD或报告很高的整体拟合率；不保证发表。</p></section>
+            <section><h4>建议论文切口</h4><p>以局部边界失效下的峰值应力与几何裕量为主要评价量，研究可拒绝范围外预测的降阶模型。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>网格和时间步分别收敛；材料和边界输入可追溯。</li><li>训练/测试按物理工况隔离，保留至少一个失效状态及独立高保真对照。</li><li>同时报告温升、应力、位移/间隙和能量平衡，完整核算离线成本。</li></ul><h4>新颖性风险</h4><ul><li>真实热管失效边界和材料数据难获取；常物性两模态成功不会自动推广。</li><li>新算法可能只比未调优基线好；正式立项仍需系统查新。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.energy.2025.135679" target="_blank" rel="noopener">Optimizing thermal stress distribution in heat-pipe-cooled microreactors using multi-physics data-driven methods（2025）↗</a><p>已有核—热—力耦合、神经网络代理和热应力多目标优化，单纯再做快速预测不足以主张新颖。此题名的核实DOI为135679，不采用题名不匹配的135704。</p></li><li><a href="https://www.sciencedirect.com/science/article/pii/S1359431125001164" target="_blank" rel="noopener">A novel method for transient analysis of heat pipe cooled reactor based on reduced order model（2025）↗</a><p>热管堆瞬态ROM已有研究；需围绕未见失效模式和安全量误差提出更窄贡献。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>需响应函数及实测数据后开展</span><h3>控制棒热位移与堆外探测器响应反演的不确定性分离</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 维持，但收窄至可独立检验的贡献</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>共轭输运与响应导向采样已有成熟方法，本日VVER研究已有工业信号验证；需要新的误差耦合或辨识问题。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>已有共轭响应与动态刻棒验证；热位移、谱变化、测量本底偏差在反演中是否可区分，仍需针对可取得的工业数据核查。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可形成可辨识性及误差预算贡献，前提是有带棒位、温度和标定信息的数据；仅模拟曲线拟合价值有限。</p></section>
+            <section><h4>建议论文切口</h4><p>检验温度引起的棒位误差能否与本底漂移分别估计，确定不可辨识的工况区域。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>独立棒位/温度测量，基线响应验证。</li><li>同一数据预算下比较联合与分离校正，报告反例和不可辨识区间。</li></ul><h4>新颖性风险</h4><ul><li>缺乏实测或响应函数时，参数可能不可辨识。</li><li>TOF仪器与VVER探测器不是同一对象，误差不能直接照搬。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://web.ornl.gov/~peplowde/p038.html" target="_blank" rel="noopener">FW-CADIS Method for Variance Reduction of Monte Carlo Calculations of Detailed Distributions and Multiple Localized Quantities（2009）↗</a><p>确定论引导的全局/多响应蒙卡方差减小已有明确方法基础，不将MC与确定论并置当作创新。</p></li><li><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203331254" target="_blank" rel="noopener">VVER型压水堆堆外探测器三维空间响应函数计算方法及其验证研究（2026）↗</a><p>本批已展开的维普原始摘要提供共轭响应与动态刻棒实测对照。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中期：需要输运代码和可复现基准</span><h3>材料界面保护的权窗正则化与响应导向方差减小比较</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 维持，但收窄至可独立检验的贡献</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>权窗空间正则化及确定论引导重要性均不是新概念，需围绕具体界面失效机制定位。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>ASCWWS平滑与FW-CADIS均已有成果；可检验缺口是强界面/热变形下，空间平滑是否损伤重要性梯度或产生长历史尾部。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可能形成算法与基准数据贡献，但与ANSYS主线距离较远；缺乏输运代码接口时不优先。</p></section>
+            <section><h4>建议论文切口</h4><p>对不同材料梯度/界面厚度，检验重要性反转率与长历史尾部是否存在稳定规律。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>最终蒙卡估计无偏性/统计稳定性检查。</li><li>固定内存、固定精度两类预算并列，至少两个几何不同的基准。</li></ul><h4>新颖性风险</h4><ul><li>不能把MAGIC比较倍数直接当FW-CADIS收益。</li><li>权窗训练和初始化成本容易被遗漏，极端路径统计需要足够预算。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2026.112821" target="_blank" rel="noopener">Adaptive spatial convolution weight window smoothing for global variance reduction in deep-penetration Monte Carlo simulations（2026）↗</a><p>本批阅读的自耦合蒙卡权窗平滑，尚需与确定论引导方法在相同预算下比较。</p></li><li><a href="https://web.ornl.gov/~peplowde/p038.html" target="_blank" rel="noopener">FW-CADIS Method for Variance Reduction of Monte Carlo Calculations of Detailed Distributions and Multiple Localized Quantities（2009）↗</a><p>确定论引导的全局/多响应蒙卡方差减小已有明确方法基础，不将MC与确定论并置当作创新。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><section class="research"><h2>待补摘要线索（不计阅读篇数）</h2><article class="opportunity"><details><summary>查看 15 篇待核对文献</summary><ol class="source-list"><li><a href="https://www.x-mol.com/paper/2107995950659612672" target="_blank" rel="noopener">Neutronic Investigation of Y 2 Sn 2 O 7 and Y 2 TiO 5 as Alternative Cladding Materials in a VVER-1200 Reactor Using the Serpent Monte Carlo Code ↗</a><p>10.1080/00295450.2026.2737536 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107996321272508419" target="_blank" rel="noopener">Validation of a Hybrid Physics-Informed Machine Learning Model for Mobile Radiation Detection Using Monte Carlo N-Particle Simulations ↗</a><p>10.1016/j.net.2026.104759 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2109450223633248256" target="_blank" rel="noopener">Exploring the effects of dual-layered Cr/Nb coating thickness on the corrosion and annealing response characteristics of an accident-tolerant Zr fuel cladding material ↗</a><p>10.1016/j.net.2026.104776 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2109450222110715904" target="_blank" rel="noopener">Transient Dynamic Response of a Thorium-Based Molten Salt Reactor Under Reactivity Insertion followed by Loss of Flow and Loss of Heat Sink ↗</a><p>10.1016/j.net.2026.104779 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106299940860080128" target="_blank" rel="noopener">Core characteristics of a modified pebble-bed high-temperature gas-cooled reactor design ↗</a><p>10.1016/j.nucengdes.2026.115233 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107995949728477184" target="_blank" rel="noopener">High-Fidelity Multiphysics Modeling of the Molten Salt Fast Reactor with Applications for Reduced-Order Models ↗</a><p>10.1080/00295450.2026.2735544 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2104365295019175940" target="_blank" rel="noopener">Response-dependent layer ordering in fixed-inventory compact neutron–photon shields: Exhaustive OpenMC benchmarks at 2.45 and 14.1 MeV ↗</a><p>10.1016/j.net.2026.104719 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106269510765129728" target="_blank" rel="noopener">Experimental study on flow pattern evolution characteristics of gas-liquid two-phase flow in a 3×3 rod bundle channel ↗</a><p>10.1016/j.pnucene.2026.106628 · 完整可见棒束两相摘要，但未进一步核实明确核反应堆对象；保持此前筛选标准，不计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2104365294964649985" target="_blank" rel="noopener">Axial Development of Local Void-Fraction and Fluid-Temperature Distributions in Low-Pressure Subcooled Boiling in a Vertical Internally Heated Annulus ↗</a><p>10.1016/j.net.2026.104740 · 详情可见摘要不足，且来源日期存在9月1日/列表9月25日差异；未核实日期含义，不计近30天正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106199791215325184" target="_blank" rel="noopener">The fission matrix method for criticality search in Heat-Pipe Micro Reactors ↗</a><p>10.1016/j.anucene.2026.112847 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106199795589984256" target="_blank" rel="noopener">Joint study on anomaly detection and remaining useful life prediction of ex-core neutron detector in nuclear power plant under interference factors ↗</a><p>10.1016/j.anucene.2026.112861 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2103030702181658626" target="_blank" rel="noopener">Study on four-quadrant performance testing and numerical simulation of a reactor coolant pump model ↗</a><p>10.1016/j.nucengdes.2026.115228 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2103030702156492800" target="_blank" rel="noopener">One dimensional model for the solid and mushy crust surrounding a terminal debris corium Pool ↗</a><p>10.1016/j.nucengdes.2026.115226 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106245946087321600" target="_blank" rel="noopener">Peridynamic assessment of damage evolution in a full UO2 fuel pellet under RIA-like equivalent thermal-expansion loading ↗</a><p>10.1016/j.nucengdes.2026.115205 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li><li><a href="https://www.x-mol.com/paper/2103030436057264128" target="_blank" rel="noopener">Heat Flux Partitioning Evaluation in Flow Boiling Interface Capturing Simulations ↗</a><p>10.1080/00295450.2026.2726702 · X-MOL仅元数据、背景段或缺少完整验证摘要；出版社补查遇验证或未取得正文，保留候选但不计阅读。</p></li></ol></details></article></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>DOI、规范题名、来源URL跨全部历史中英文日报、账本和本批两天去重。刘晓晶ORCID专项8条，无合格新作；12日中文阅读含核实为上海交大的2024年未读旧作，不把其称为新作。MOC/POD/碎片床检索已执行，但未取得合格新增POD或碎片床完整正式阅读；查新代表性作品另列、不计新增配额。补做时间统一2026-10-13，既不启用定时提醒，也不写Zotero或Notion。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
