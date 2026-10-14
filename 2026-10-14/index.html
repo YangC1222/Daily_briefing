@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-14 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-14 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-14</strong><span>本期日期</span></div><div class="stat"><strong>12</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>10</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 22</button><button data-filter="xmol">X-MOL 12</button><button data-filter="cqvip">维普 10</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">本日X-MOL All与核能组各4页，共300条去历史URL候选，核对24篇详情，正式纳入12篇完整英文摘要；维普33组查询纳入10篇中文专题回溯。英文来源标注2026-10-06至10-13，8天前文献标为近30天回溯。仅元数据、背景段、无完整摘要或缺核工程联系的候选不计阅读。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="采用leu+燃料实现长周期、高燃耗轻水小堆：无硼与含硼方案的堆芯—燃料性能耦合比较 enabling long-cycle, high-burnup light water smrs with leu+ fuel: a coupled core and fuel performance comparison of boron free and borated designs 07 多物理场耦合（热工结构） annals of nuclear energy · 2026-10-13 · chansoo lee, jooil yoon, youho lee 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 有效满功率日 effective full-power day (efpd) 将运行能量换算为满功率持续天数。 比较730与1043天循环。 燃料—包壳机械相互作用 pellet-cladding mechanical interaction (pcmi) 燃料变形与包壳接触产生的力学相互作用。 本文环向应力分析的相关机制；摘要未公开其具体算法。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>采用LEU+燃料实现长周期、高燃耗轻水小堆：无硼与含硼方案的堆芯—燃料性能耦合比较</h2>
+          <p class="title-en">Enabling long-cycle, high-burnup light water SMRs with LEU+ fuel: A coupled core and fuel performance comparison of boron free and borated designs</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-13 · Chansoo Lee, Jooil Yoon, Youho Lee</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>比较反应性控制方式如何经轴向燃耗、裂变气体和棒内压传递到环向应力。</li><li>30%卸出量降低是特定设计目标；65/80 MWd/kgU分别为棒平均和峰值节点指标，不能混用。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将长周期小堆的堆芯设计与燃料性能约束联合比较。</li></ul></section>
+        <section><h3>不足</h3><ul><li>仅支持摘要所列正常运行工况；事故和进一步燃耗扩展没有因此获证。</li><li>未说明接触算法、材料本构及燃料性能程序，不能称为Mechanical研究。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>以局部功率/燃耗峰值为边界，对燃料—包壳接触、棒内压与环向应力做联合敏感性分析。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要给出组件布置、燃耗、循环和压力/应力线索；精读核对轴向功率表、气体释放、内压和材料/接触假设。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>有效满功率日<small>Effective full-power day (EFPD)</small></h4><p>将运行能量换算为满功率持续天数。</p><p class="context"><b>本文语境</b> 比较730与1043天循环。</p></div><div class="term"><h4>燃料—包壳机械相互作用<small>Pellet-cladding mechanical interaction (PCMI)</small></h4><p>燃料变形与包壳接触产生的力学相互作用。</p><p class="context"><b>本文语境</b> 本文环向应力分析的相关机制；摘要未公开其具体算法。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>LEU+燃料供应链近期的发展，为延长轻水小型模块化反应堆（SMR）的卸料燃耗提供了新途径；这类堆由于中子泄漏较强，燃耗往往受到反应性的限制。本研究考察基于i-SMR的LEU+燃料堆芯概念，目标是在保持补充燃料组件数量相同的情况下，相比铀-235富集度低于5%的参考i-SMR，将年度乏燃料组件卸出量降低约30%，这相当于将循环长度从730个有效满功率日（EFPD）延长至1043个EFPD。研究设计并评估了无可溶硼（SBF）和使用可溶硼（SBU）两种方案。对于SBF方案，由于更依赖可燃吸收剂和控制棒，采用了含28根导向管及1根仪表管的17×17组件，并考虑包括富集钆配置在内的多种IGD吸收剂选项。虽然精心设计的SBF堆芯换料方案可以有效缓解环向应力，但控制棒引起的轴向燃耗不均匀，使燃料棒平均燃耗低于65 MWd/kgU时的峰值节点燃耗达到80 MWd/kgU，进而加快高局部燃耗下的裂变气体释放并提高棒内压力。SBU方案中，可溶硼在整个循环内提供全局反应性控制，降低了对控制棒插入的依赖，使燃耗更均匀，峰值节点燃耗及燃料性能变化趋势也更温和。总体而言，从正常运行的中子学与燃料性能角度，结果支持LEU+用于长周期SMR的技术可行性；但若继续追求超过本研究已评估燃耗水平（65 MWd/kgU）的燃耗扩展，SBF方案可能产生更严重的控制棒诱导燃耗不均匀。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Recent development of the LEU+ fuel supply chain enables new pathways to extend discharge burnup in light water SMRs, whose burnup is often reactivity-limited due to high neutron leakage. This study investigates LEU+ fueled core concepts for an i-SMR-based SMR with the objective of reducing annual spent fuel assembly discharge by approximately 30 % relative to the reference i-SMR with U-235 enrichment below 5 %, which corresponds to extending the cycle length from 730 to 1043 EFPD while maintaining the same number of feed fuel assemblies. Two variants are designed and assessed: a soluble-boron-free (SBF) core and a soluble-boron-used (SBU) core. For the SBF design, increased reliance on burnable absorbers and control rods motivates adoption of a 17 × 17 assembly with 28 guide tubes and 1 instrumentation tube, together with multiple IGD absorber options including enriched gadolinium configurations. Although a carefully designed shuffling scheme in the SBF core can effectively mitigate hoop stresses, control rod-driven axial depletion non-uniformity increases the peak nodal burnup to 80 MWd/kgU at rod average burnup below 65 MWd/kgU, accelerating fission gas release and rod internal pressure at high local burnup. In the SBU design, soluble boron provides cycle-long global reactivity control, reducing reliance on control rod insertion, yielding more uniform depletion behavior with moderated peak nodal burnup and fuel performance trends. Overall, the results support the technical viability of LEU+ for long-cycle SMR from the standpoint of neutronics and fuel performance under normal operation; however, the SBF implementation may induce increasing control rod-induced depletion non-uniformity when pursuing additional burnup extension beyond the burnup levels evaluated in this study (65 MWd/kgU).</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064442957115392" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112875" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064442957115392" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="三维燃料—冷却剂相互作用程序seina-3d预混合阶段模型的开发与验证 development and validation of the premixing-phase model in the three-dimensional fuel–coolant interaction code seina-3d 燃料碎片与碎片床 annals of nuclear energy · 2026-10-12 · ruiyu sun, qianxi xiao, ronghua chen, kui zhang, wenxi tian 燃料碎片与碎片床 燃料—冷却剂相互作用 fuel-coolant interaction (fci) 高温燃料/熔融物与冷却剂接触后的传热、破碎及可能的剧烈相互作用。 本篇研究其预混合阶段。 界面分段线性重构 piecewise linear interface calculation (plic) 用分段平面重构体积分数界面的数值方法。 与vof共同处理连续界面。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>燃料碎片与碎片床</span><span>燃料碎片与碎片床</span></div>
+          <h2>三维燃料—冷却剂相互作用程序SEINA-3D预混合阶段模型的开发与验证</h2>
+          <p class="title-en">Development and validation of the premixing-phase model in the three-dimensional fuel–coolant interaction code SEINA-3D</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-12 · Ruiyu Sun, Qianxi Xiao, Ronghua Chen, Kui Zhang, Wenxi Tian</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>核事故熔融物破碎与预混合的五场模型，具有数值基准及FARO原型材料条件验证。</li><li>本篇输出碎片粒径和预混合状态，不等同碎片床干涸/再淹没可冷却性模型。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将界面解析、分散碎片与相变闭合在统一三维框架下检验。</li></ul></section>
+        <section><h3>不足</h3><ul><li>0.18 MPa误差和2.2 MPa峰值只对应所列比较；气体源敏感性不能被省略。</li><li>摘要未提供粒径分布数表、模型闭合参数或爆炸触发模型。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>研究预混合输出向碎片床形成或结构压力载荷映射时的质量、能量和粒径不确定性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对FARO几何、材料、气体源、粒径分布与压力时程；仅有摘要数字还不能作为结构载荷输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>燃料—冷却剂相互作用<small>Fuel-coolant interaction (FCI)</small></h4><p>高温燃料/熔融物与冷却剂接触后的传热、破碎及可能的剧烈相互作用。</p><p class="context"><b>本文语境</b> 本篇研究其预混合阶段。</p></div><div class="term"><h4>界面分段线性重构<small>Piecewise linear interface calculation (PLIC)</small></h4><p>用分段平面重构体积分数界面的数值方法。</p><p class="context"><b>本文语境</b> 与VOF共同处理连续界面。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>燃料—冷却剂相互作用的预混合阶段，决定了后续蒸汽爆炸可利用的三维熔融物—水—蒸汽状态。本研究开发并验证了三维燃料—冷却剂相互作用程序SEINA-3D的预混合阶段模型。该模型在统一的基于压力的框架中推进五种相互耦合的欧拉材料场：液态冷却剂、蒸汽、连续熔融射流、熔融液滴和熔融碎片。混合有限体积/有限差分离散、显式/隐式推进以及改进的SIMPLEPC压力耦合构成数值核心；VOF–PLIC界面几何和连续表面力毛细模型解析连续界面，相间交换、破碎和相变闭合关系则耦合各材料场。Ransom水龙头问题、SPHERIC测试2以及三维上升气泡基准，验证了输运、自由表面和毛细处理；FARO L-24则在具有原型代表性的堆芯熔融物—水条件下验证了完整模型。在最细SPHERIC网格上，四条水位记录的归一化均方根误差（NRMSE）中位数为0.159，八条压力记录为0.139，第一次P1冲击幅值的再现误差不超过10.2%。上升气泡计算保持了气体体积，并将文献中的质心、速度、球形度和各方向尺度的终态量再现至5%以内。在FARO的15点压力比较中，仅考虑蒸汽的计算均方根误差约为0.18 MPa，并再现了约1.6 s时的约2.2 MPa峰值；加入L-24报告的氢气源后，后期压力提高约0.48 MPa，量化了蒸汽、非凝性气体和顶部空间闭合关系的耦合敏感性。计算还得到与试验后回收结果相符的材料存量、能量分配、空泡、方位非对称性及碎片粒径分布。这些结果确立了SEINA-3D的预混合模拟能力，并为蒸汽爆炸载荷分析提供三维混合物状态。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Premixing during a fuel–coolant interaction determines the three-dimensional melt–water–vapor state available to a subsequent steam explosion. This study develops and validates the premixing-phase model of the three-dimensional fuel–coolant interaction code SEINA-3D. The model advances five coupled Eulerian material fields—liquid coolant, vapor, connected melt jet, melt droplets, and melt fragments—in one pressure-based framework. Mixed finite-volume/finite-difference discretization, explicit/implicit advancement, and improved SIMPLEPC pressure coupling form the numerical core; VOF–PLIC interface geometry and continuum-surface-force capillarity resolve the connected interfaces; and interphase exchange, breakup, and phase-change closures couple the fields. The Ransom faucet problem, SPHERIC Test 2, and a three-dimensional rising-bubble benchmark verify the transport, free-surface, and capillary treatments, while FARO L-24 validates the complete model under prototypical corium–water conditions. On the finest SPHERIC grid, the median NRMSE is 0.159 over the four water-level records and 0.139 over the eight pressure records, and the first P1 impact amplitude is reproduced within 10.2 %. The rising-bubble calculation preserves the gas volume and reproduces the published centroid, velocity, sphericity, and directional-size endpoints to within 5 %. In the 15-point FARO pressure comparison, the steam-only calculation has an RMSE of about 0.18 MPa and reproduces the approximately 2.2 MPa peak near 1.6 s; adding the reported L-24 hydrogen source raises the late-time pressure by about 0.48 MPa and quantifies the coupled sensitivity of the steam, noncondensable-gas, and headspace closures. The calculation also yields the material inventories, energy partition, void, azimuthal asymmetry, and a debris-size distribution consistent with the post-test recovery. These results establish the premixing capability of SEINA-3D and provide three-dimensional mixture states for steam-explosion load analysis.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064459113574400" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112926" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064459113574400" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="用于反应堆快中子谱调整的贝叶斯正则化mlem混合方法 a bayesian regularized mlem hybrid approach for reactor fast-neutron spectrum adjustment 11 中子输运方法（moc/蒙卡/确定论） annals of nuclear energy · 2026-10-12 · cong liu, laiming wang, yixue chen, bin zhang 11 中子输运方法（moc/蒙卡/确定论） 最大似然期望最大化 maximum likelihood expectation maximization (mlem) 用期望和最大化迭代估计隐含参数的算法。 本文用于谱调整并加入贝叶斯正则化。 协方差 covariance 描述多个不确定量共同变化的矩阵量。 本文强调非对角关联传播。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>用于反应堆快中子谱调整的贝叶斯正则化MLEM混合方法</h2>
+          <p class="title-en">A Bayesian regularized MLEM hybrid approach for reactor fast-neutron spectrum adjustment</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-12 · Cong Liu, Laiming Wang, Yixue Chen, Bin Zhang</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>联合先验、响应和测量协方差调整快中子谱，为压力容器损伤评价提供输入。</li><li>这里的蒙卡是协方差抽样，不自动计为蒙卡—确定论输运耦合。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对非对角协方差传播与噪声放大问题组合贝叶斯和正则化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给出标准差降低幅度、先验敏感性或多基准结果。</li><li>谱调整改善不直接证明容器寿命预测准确。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>把谱后验传递到材料损伤与热结构参数时，分开统计误差、先验偏差与材料模型误差。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>最大似然期望最大化<small>Maximum likelihood expectation maximization (MLEM)</small></h4><p>用期望和最大化迭代估计隐含参数的算法。</p><p class="context"><b>本文语境</b> 本文用于谱调整并加入贝叶斯正则化。</p></div><div class="term"><h4>协方差<small>Covariance</small></h4><p>描述多个不确定量共同变化的矩阵量。</p><p class="context"><b>本文语境</b> 本文强调非对角关联传播。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>准确描述快中子能谱，是评估反应堆压力容器（RPV）辐照损伤的基本要求。常规最大似然期望最大化（MLEM）迭代调整算法在高精度谱调整中，常因无法严格传播协方差非对角项而可能产生谱伪影。为解决这些问题，本文提出贝叶斯正则化最大似然期望最大化（BR-MLEM）框架，将分层贝叶斯先验与自适应正则化结合。该方法系统地纳入先验谱、响应函数和测量的协方差矩阵，并采用基于奇异值分解（SVD）的蒙特卡罗抽样抑制噪声放大。在H. B. Robinson 2号机组基准上的应用表明，该算法能够生成物理一致的能谱，同时有效抑制标准MLEM迭代中出现的非物理畸变。调整后的计算比活度与实验剂量学数据高度一致，达到与广义最小二乘法相当的一致性，同时在高能区表现出更好的稳定性。后验不确定性分析显示，主要快中子能群的相对标准差显著降低。这些结果表明，BR-MLEM框架提高了注量估计的可信度，并为RPV寿命管理提供了有力工具。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Precise characterization of the fast-neutron energy spectrum constitutes a fundamental requirement for evaluating radiation damage in reactor pressure vessels (RPV). Conventional MLEM iterative adjustment algorithms applied to high-precision spectrum adjustment often result in potential spectral artifacts due to the inability to rigorously propagate off-diagonal covariance terms. A novel Bayesian Regularized Maximum Likelihood Expectation Maximization (BR-MLEM) framework is proposed to address these challenges by integrating hierarchical Bayesian priors with adaptive regularization. This methodology systematically incorporates covariance matrices associated with the prior spectrum, response functions, and measurements, employing singular value decomposition (SVD)-based Monte Carlo sampling to mitigate noise amplification. Application to the H. B. Robinson Unit 2 benchmark demonstrates the algorithm’s capability to produce physically consistent spectra while effectively suppressing non-physical distortions observed in standard MLEM iterations. The adjusted calculated specific activity exhibits excellent agreement with experimental dosimetry data, achieving consistency comparable to generalized least-squares methods but with superior stability in high-energy regions. Posterior uncertainty analysis reveals a significant reduction in relative standard deviations across primary fast-neutron energy groups. These findings confirm that the BR-MLEM framework enhances the fidelity of fluence estimation and provides a robust tool for RPV lifetime management.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064452402688000" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112909" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064452402688000" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="结合薄板样条与堆内探测器响应重构六角组件小堆功率 power reconstruction in hexagonal-assembly small reactor using thin-plate spline and in-core detector response 11 中子输运方法（moc/蒙卡/确定论） annals of nuclear energy · 2026-10-10 · hao yang, tianxiang wang, zhuo li, shengli chen 11 中子输运方法（moc/蒙卡/确定论） 薄板样条 thin-plate spline (tps) 一种以平滑性约束构造空间插值的数学方法。 本文用于三维功率重构；不是物理薄板结构求解。 响应函数 response function 描述源分布对测量量贡献的映射。 本文纳入探测器的局域敏感性。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>结合薄板样条与堆内探测器响应重构六角组件小堆功率</h2>
+          <p class="title-en">Power reconstruction in hexagonal-assembly small reactor using thin-plate spline and in-core detector response</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-10 · Hao Yang, Tianxiang Wang, Zhuo Li, Shengli Chen</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>先核对探测器局域响应，再做空间功率插值；忽略响应产生系统误差。</li><li>约15 cm和8%属于本文场景与判据描述，不能视为所有小堆的通用规范。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将响应函数纳入六角小堆的薄板样条功率重构。</li></ul></section>
+        <section><h3>不足</h3><ul><li>探测器布置、噪声、异常信号和留出场景未在摘要说明。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>把重构误差传播到局部热流和热应力，比较峰值误差与总体功率误差。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>薄板样条<small>Thin-plate spline (TPS)</small></h4><p>一种以平滑性约束构造空间插值的数学方法。</p><p class="context"><b>本文语境</b> 本文用于三维功率重构；不是物理薄板结构求解。</p></div><div class="term"><h4>响应函数<small>Response function</small></h4><p>描述源分布对测量量贡献的映射。</p><p class="context"><b>本文语境</b> 本文纳入探测器的局域敏感性。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>反应堆堆芯的三维功率分布（3DPD）是反映运行状态的重要指标，准确重构该分布对堆芯监测和安全运行至关重要。与常规大型反应堆相比，采用六角形燃料组件的小型反应堆具有更强的中子泄漏和更复杂的空间功率特征，因此功率重构更困难。针对这一问题，本研究采用薄板样条（TPS）方法结合堆内探测器响应函数，研究六角组件小型压水堆的3DPD。结果表明，堆内探测器响应具有很强的空间局域性；在径向上，其响应主要集中在第三圈邻近组件以内，约15 cm范围内。忽略探测器响应会导致显著的重构误差。纳入探测器响应函数后，TPS方法在不同燃耗水平下有效抑制重构偏差，使重构后的全部相对误差保持在通常采用的8%验收判据以内。该方法对六角燃料组件小堆的三维功率分布重构表现出良好适用性。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The three-dimensional power distribution (3DPD) of a reactor core is an important indicator of reactor operating conditions, and its accurate reconstruction is essential for core monitoring and safe operation. Compared with conventional large reactors, small reactors with hexagonal fuel assemblies exhibit stronger neutron leakage and more complex spatial power characteristics, increasing the difficulty of power reconstruction. To address this issue, this study investigates 3DPD in a hexagonal-assembly small pressurized water reactor using the thin-plate spline (TPS) method combined with in-core detector response functions. The results show that the in-core detector response exhibits strong spatial localization characteristics. Radially, the detector response is mainly concentrated within the third ring of neighboring assemblies (∼15 cm). Neglecting detector response leads to significant reconstruction errors. By incorporating detector response functions, the TPS method effectively suppresses reconstruction deviations under different burnup levels, keeping all post-reconstruction relative errors within the commonly adopted 8% acceptance criterion. The proposed method demonstrates good applicability to hexagonal fuel assembly 3DPD reconstruction in small reactors.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064458396348416" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112924" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064458396348416" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于热弹流润滑分析的核反应堆冷却剂泵可倾瓦推力轴承结构改进 structural improvement of tilting-pad thrust bearings in nuclear reactor coolant pumps based on thermal elastohydrodynamic lubrication analysis 07 多物理场耦合（热工结构） annals of nuclear energy · 2026-10-09 · fengyu lin, xiaojun liu, yuyan zhang, pengcheng du, lina si, tao wu 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 热弹流润滑 thermal elastohydrodynamic lubrication (tehl) 同时考虑流体润滑、温度变化与固体弹性变形的耦合问题。 本文用于核主泵轴承。 分区迭代耦合 partitioned iterative coupling 分别求解不同场并迭代交换界面量。 本文在每个物理时间步内交换油膜和瓦块响应。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>基于热弹流润滑分析的核反应堆冷却剂泵可倾瓦推力轴承结构改进</h2>
+          <p class="title-en">Structural improvement of tilting-pad thrust bearings in nuclear reactor coolant pumps based on thermal elastohydrodynamic lubrication analysis</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-09 · Fengyu Lin, Xiaojun Liu, Yuyan Zhang, Pengcheng Du, Lina Si, Tao Wu</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>直接命中新增接触方向：瓦背支点接触改变热弹性变形，反馈油膜压力、厚度和温度。</li><li>0.51/0.57/6 μm是特定轴承设计的优化结果，不能照搬控制棒或燃料格架。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将支点接触及热弹性变形纳入逐时间步的润滑—结构分区耦合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有明确采用ANSYS Mechanical；标为核工程方法可迁移，待全文核对。</li><li>接触支点理想化、摩擦、材料温度依赖和最小膜厚校核需查全文。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>比较支点刚性、弹性和接触开闭简化对膜厚/接触压力峰值的影响，并独立检查时间步和耦合收敛。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 重点核对支点接触、瓦块几何、油粘度/材料随温度变化、惰转历程及膜厚校核，可用于Mechanical接触简化对照。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热弹流润滑<small>Thermal elastohydrodynamic lubrication (TEHL)</small></h4><p>同时考虑流体润滑、温度变化与固体弹性变形的耦合问题。</p><p class="context"><b>本文语境</b> 本文用于核主泵轴承。</p></div><div class="term"><h4>分区迭代耦合<small>Partitioned iterative coupling</small></h4><p>分别求解不同场并迭代交换界面量。</p><p class="context"><b>本文语境</b> 本文在每个物理时间步内交换油膜和瓦块响应。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>作为核主泵的核心支承部件，可倾瓦推力轴承承受较大的轴向载荷，其润滑性能直接影响泵的运行可靠性。本研究考虑瓦背支点的接触效应，为油润滑、点支承可倾瓦推力轴承建立流体—结构耦合的热弹流润滑模型。在每一个物理时间步内，对油膜润滑场和瓦块热弹性变形场实施分区迭代耦合。基于该模型确定瓦块支点位置及瓦面轮廓的改进方案，并评估轴承在极端事故条件下的润滑性能。结果表明，瓦块热弹性变形显著影响油膜压力、膜厚及温度分布。综合考虑最大油膜压力、最小油膜厚度和最高油膜温度后，本研究轴承在径向偏置系数为0.51、周向偏置系数为0.57、抛物线瓦面轮廓高度为6 μm时，具有最佳综合润滑性能。优化结构还改善了惰转工况下的压力及膜厚分布，从而提升油膜安全裕度。本研究为反应堆冷却剂泵推力轴承的热弹流润滑分析、结构参数优化和瞬态停泵安全评价提供理论依据与数值方法支持。</p></div>
+          <div><h3>English abstract</h3><p lang="en">As a core supporting component of a nuclear main pump, the tilting-pad thrust bearing carries a large axial load, and its lubrication performance directly affects the operational reliability of the pump. This study develops a fluid–structure coupled thermal elastohydrodynamic lubrication model for an oil-lubricated point-supported tilting-pad thrust bearing by considering the contact effect at the pad-back pivot. Within each physical time step, partitioned iterative coupling is implemented between the oil-film lubrication field and the thermoelastic deformation field of the pad. Based on this model, improved schemes for the pad pivot position and pad surface profile are determined, and the lubrication performance of the bearing under extreme accident conditions is evaluated. The results show that thermoelastic deformation of the pad significantly affects the distributions of oil-film pressure, film thickness, and temperature. Considering the maximum oil-film pressure, minimum oil-film thickness, and maximum oil-film temperature, the bearing investigated in this study exhibits the best comprehensive lubrication performance when the radial offset coefficient is 0.51, the circumferential offset coefficient is 0.57, and the height of the parabolic pad surface profile is 6 μm. The optimized structure also improves the pressure and film thickness distributions during coast-down condition, thereby enhancing the oil-film safety margin. This study provides a theoretical basis and numerical method support for thermal elastohydrodynamic lubrication analysis, structural parameter optimization, and transient shutdown safety evaluation of tilting-pad thrust bearings in reactor coolant pumps.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064456987062272" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112918" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064456987062272" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="棱柱型气冷微堆综合热工水力试验设施intali的详细设计与建造 in-depth design and construction of an integrated thermal-hydraulic facility (intali) for a prismatic gas-cooled micro reactor 03 气冷堆 annals of nuclear energy · 2026-10-09 · zheng huang, miaoxin jiao, jian jiao 03 气冷堆 非能动堆芯冷却系统 passive core cooling system (pccs) 依赖自然过程而减少主动驱动需求的余热排出系统。 本文设施包含pccs模拟段。 未能紧急停堆预期瞬态 anticipated transient without scram (atws) 预期运行瞬态伴随紧急停堆未能动作的事故情景。 本文规划强制冷却丧失启动的模拟方法。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>03 气冷堆</span><span>03 气冷堆</span></div>
+          <h2>棱柱型气冷微堆综合热工水力试验设施INTALI的详细设计与建造</h2>
+          <p class="title-en">In-depth design and construction of an integrated thermal-hydraulic facility (INTALI) for a prismatic gas-cooled micro reactor</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-09 · Zheng Huang, Miaoxin Jiao, Jian Jiao</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>试验设施设计结合氦温解析模型、局部结构加肋和点堆反馈，为边界校核提供路径。</li><li>这是设计和试验前分析，不能把规划的测试当作已经完成的实验验证。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将试验布局、结构刚度改进与ATWS反馈模拟及不确定性处理共同设计。</li></ul></section>
+        <section><h3>不足</h3><ul><li>缩比相似性、榫卯接触和加强肋局部应力在摘要中没有完整参数。</li><li>仅管道温度低于限值不证明所有结构安全量达标。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要明确概述下一阶段测试计划；实际测试完成情况待后续论文核查。</li></ul><b>分析推导</b><ul><li>比较榫卯/加肋的实体与等效连接模型，利用测得的对流系数做热—结构验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读缩比准则、榫卯/肋板几何、温度测点、对流边界与误差预算，区分预试验预测和实测数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>非能动堆芯冷却系统<small>Passive core cooling system (PCCS)</small></h4><p>依赖自然过程而减少主动驱动需求的余热排出系统。</p><p class="context"><b>本文语境</b> 本文设施包含PCCS模拟段。</p></div><div class="term"><h4>未能紧急停堆预期瞬态<small>Anticipated transient without scram (ATWS)</small></h4><p>预期运行瞬态伴随紧急停堆未能动作的事故情景。</p><p class="context"><b>本文语境</b> 本文规划强制冷却丧失启动的模拟方法。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为支持一种新型气冷微型反应堆（GMR）的开发，研究设计了综合热工水力试验设施INTALI，用于考察原型运行条件和代表性事故情景下的传热与流动行为，为热工水力程序验证提供依据。INTALI由氦气循环回路及包含缩比模拟反应堆和非能动堆芯冷却系统（PCCS）的试验段组成。本文旨在最终确定设施设计和相应实验方法。首先，介绍装置总体配置与布局，并建立预测一次回路沿程氦气温度的解析模型；该温度对设施运行控制及管道完整性至关重要。额定工况的试验前计算表明，回路全部氦气温度低于管道安全限值，并参数化计算了加热功率及主流与保护流流量比的影响。其次，详细说明试验段结构设计，包括用于燃料组件对准的榫卯连接以及抑制旁路流的堆芯挡板。结构分析确认，加入四根加强肋提高了PCCS穹顶刚度。文中介绍反应堆及PCCS内热电偶的布局与安装；对照计算表明，混合器可有效增强主流和保护流的混合，降低反应堆出口温度。第三，提出模拟由强制冷却丧失引发的未能紧急停堆预期瞬态（ATWS）的实验方法。为纳入温度—反应性反馈，开发并验证了求解中子点堆动力学的计算模块。此外，制定数据处理与不确定性分析方法，从实验测量中导出三个关键量：氦气通过冷却通道的摩擦因子、反应堆与PCCS之间的换热率，以及反应堆压力容器壁面的对流换热系数。最后，概述设施当前建造状态和下一阶段计划开展的试验。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To support the development of an innovative gas-cooled micro reactor (GMR), an integrated thermal-hydraulic facility (INTALI) has been designed to investigate heat transfer and fluid behaviors under both prototypical operating conditions and representative accident scenarios, thus providing a basis for thermal-hydraulic code validation. The INTALI facility consists of a helium circulation loop and a test section containing a scaled-down simulated reactor and a passive core cooling system (PCCS). This paper aims to finalize the facility design and corresponding experimental methodology. Firstly, the overall configuration and layout of the apparatus were described. An analytical model was developed to predict the helium temperature distribution along the primary loop, which is critical to facility operational control and piping integrity. A pre-test calculation under nominal conditions indicates that all helium temperatures throughout the loop remain below the piping safety limit. Parametric calculations were performed to study the influences of both heating power and the flow rate ratio of the main flow to the protective flow. Secondly, the detailed structural designs of the test section were elaborated. Specific internal components within the reactor were designed, including tenon-mortise joints for fuel assembly alignment and core baffles to suppress bypass flow. Structural analysis confirms that incorporating four reinforced ribs improves the PCCS dome’s stiffness. The layout and the installation of thermocouples (TCs) within both the reactor and the PCCS were described. A comparative calculation demonstrates that the mixer effectively enhances mixing of the main and the protective flows, thus lowering the temperature at the reactor outlet. Thirdly, an experimental methodology was proposed to simulate an anticipated transient without scram (ATWS) accident initiated by loss of forced coolant. To incorporate the temperature-reactivity feedback, a computational module solving the neutron point kinetics model was developed and validated. Furthermore, dedicated data processing along with uncertainty analysis methods were formulated to derive key physical quantities from experimental measurements: 1) friction factor of helium through a coolant channel, 2) heat exchange rate between the reactor and the PCCS, and 3) convective heat transfer coefficient on the reactor pressure vessel (RPV) wall. Finally, the current status of facility construction and the planned testing program in the next stage are outlined.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064451681267712" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112907" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064451681267712" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="采用dvi注入的反应堆下降段逆流流动限制现象的实验与建模研究 experimental study and modeling investigation on counter-current flow limitation phenomenon in reactor downcomer with dvi injection 01 高功率堆 annals of nuclear energy · 2026-10-09 · qiqi yan, yiran xiong, ren liang, zhikang lin 01 高功率堆 直接容器注入 direct vessel injection (dvi) 将应急冷却水直接注入压力容器的布置。 本篇研究其下降段行为。 逆流流动限制 counter-current flow limitation (ccfl) 相向气液流动相互阻碍，使其中一相流量受限的现象。 本文发生于蒸汽上升和冷却水下降之间。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>01 高功率堆</span><span>01 高功率堆</span></div>
+          <h2>采用DVI注入的反应堆下降段逆流流动限制现象的实验与建模研究</h2>
+          <p class="title-en">Experimental study and modeling Investigation on counter-current flow limitation phenomenon in reactor downcomer with DVI injection</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-09 · Qiqi Yan, Yiran Xiong, Ren Liang, Zhikang Lin</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用缩比综合试验和系统程序比较下降段注入几何对逆流限制及旁路的作用。</li><li>安全裕度是作者对研究设计的结论，不能外推所有注入系统。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>围绕DVI特征给出试验与保守程序对照，并研究喷嘴高度/导流设计。</li></ul></section>
+        <section><h3>不足</h3><ul><li>保守性的量化范围、缩比误差和热结构载荷均未在摘要给出。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>将试验压力与温差映射至导流构件，分别检验流动效果和热应力代价。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要有喷嘴高度、流量及缩比试验线索，下载核对几何、工况和保守包络。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>直接容器注入<small>Direct vessel injection (DVI)</small></h4><p>将应急冷却水直接注入压力容器的布置。</p><p class="context"><b>本文语境</b> 本篇研究其下降段行为。</p></div><div class="term"><h4>逆流流动限制<small>Counter-current flow limitation (CCFL)</small></h4><p>相向气液流动相互阻碍，使其中一相流量受限的现象。</p><p class="context"><b>本文语境</b> 本文发生于蒸汽上升和冷却水下降之间。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在大破口失水事故（LBLOCA）的再充水阶段，堆芯区域产生的大量向上蒸汽进入反应堆下降段，使冷却水无法及时向下流入堆芯，形成逆流流动限制（CCFL）。HPR1000反应堆的非能动安全注入系统在压力容器（RPV）中采用直接容器注入（DVI）技术。与传统回路注入相比，DVI具有不同的注入特性，因此LBLOCA中的现象和过程也有所不同。为研究LBLOCA条件下具有DVI注入的RPV下降段CCFL气液两相特性，研究依据缩比准则及原型反应堆设计特征，设计建造了RPV综合试验设施，并开展实验和建模。实验获得了不同应急堆芯冷却剂（ECC）入口流量及堆芯蒸汽流量等条件下的数据。基于这些结果，使用LBLOCA专用分析程序CATHARE GB进行了保守分析。结果表明，降低DVI喷嘴轴向高度并设置DVI导流结构，可以有效抑制ECC旁路。本文用于DVI注入LBLOCA分析的CATHARE GB模型是保守的；现有反应堆已在RPV中采用DVI技术，ECC设计能够保持足够的安全裕度。</p></div>
+          <div><h3>English abstract</h3><p lang="en">During the refilling phase of a large-break loss-of-coolant accident (LBLOCA), the large upward flow of steam generated in the core region enters the reactor downcomer, causing the cooling water to fail to descend into the reactor core in time. This results in counter-current flow limitation (CCFL). The passive safety injection system of the HPR1000 reactor incorporates direct vessel injection (DVI) technology in the reactor pressure vessel (RPV). DVI has different injection characteristics compared to traditional loop injection, leading to differences in the phenomena and processes during a LBLOCA. To investigate the gas–liquid two-phase characteristics of the CCFL behavior in the RPV downcomer section with DVI injection under LBLOCA conditions, an RPV integral test facility was designed and constructed based on scaling criteria and the design features of the prototype reactor, and experimental and modeling studies were then performed. Emergency core coolant (ECC) experimental data were obtained under different inlet ECC flow rates, core steam flow rates, etc. Based on these experimental results, a conservative analysis was performed using the LBLOCA-specific analysis code — CATHARE GB. The results indicate that lowering the axial height of the DVI nozzle and installing a DVI flow diversion structure can effectively suppress ECC bypass. The CATHARE GB model used in the analysis of the LBLOCA analysis with DVI injection is conservative, and the current reactor incorporates DVI technology within the RPV. The ECC design can maintain an adequate safety margin.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064442260860928" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112831" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064442260860928" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于热量失配的核电厂反应堆—汽轮机协调控制策略 reactor turbine coordinated control strategy for nuclear power plants based on thermal-mismatch 01 高功率堆 annals of nuclear energy · 2026-10-08 · ming du, zhiyuan yao, xiaofei sun, xiangtian hou, tao yang, yuguang niu 01 高功率堆 前馈控制 feedforward control 根据扰动或需求预先调整控制量。 本文以热量失配提供前馈信号。 储热系数 heat-storage coefficient 描述温度变化与系统储存热量之间关系的参数。 本文按蒸汽发生器分区计算。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>01 高功率堆</span><span>01 高功率堆</span></div>
+          <h2>基于热量失配的核电厂反应堆—汽轮机协调控制策略</h2>
+          <p class="title-en">Reactor turbine coordinated control strategy for nuclear power plants based on thermal-mismatch</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-08 · Ming Du, Zhiyuan Yao, Xiaofei Sun, Xiangtian Hou, Tao Yang, Yuguang Niu</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用一二回路能量供需差构造前馈控制，并计算直流蒸汽发生器储热。</li><li>摘要只给温度响应改善，没有给热疲劳或结构寿命结论。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把热量失配与控制棒灵敏度联合纳入协调控制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未公开负荷变化速率、闭环稳定裕度和改进幅度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>将控制产生的温度历程作为结构边界，联合评价响应速度与热循环应力幅。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>前馈控制<small>Feedforward control</small></h4><p>根据扰动或需求预先调整控制量。</p><p class="context"><b>本文语境</b> 本文以热量失配提供前馈信号。</p></div><div class="term"><h4>储热系数<small>Heat-storage coefficient</small></h4><p>描述温度变化与系统储存热量之间关系的参数。</p><p class="context"><b>本文语境</b> 本文按蒸汽发生器分区计算。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>随着电力系统越来越依赖灵活性资源，核电将不可避免地参与电网负荷跟踪。为提高核电厂负荷跟踪运行中的动态响应，本文提出基于热量失配分析的反应堆—汽轮机协调控制策略。研究分析了采用“一堆两机”模式的压水堆（PWR）核电厂一、二回路之间的能量传递特性，分别构造二回路能量需求信号和一回路能量供应信号，并将二者之差定义为热量失配信号。结合压力—功率拟合系数和控制棒灵敏度系数，将该信号作为前馈量引入反应堆功率控制系统。此外，研究分析直流蒸汽发生器不同区域的储热计算方法，依据二次侧质量守恒确定区域边界长度，并最终建立储热系数的求解方式。最后，运行工况模拟表明，该策略明显改善了负荷变化期间一回路温度的动态响应。本文为提高压水堆核电厂负荷跟踪灵活性提供了一种有效协调控制方案。</p></div>
+          <div><h3>English abstract</h3><p lang="en">As power systems increasingly rely on flexibility resources, nuclear power will inevitably participate in grid load-following services. To improve the dynamic response performance of nuclear power plants during load-following operation, this paper proposes a reactor turbine coordinated control strategy based on thermal-mismatch analysis. The energy transfer characteristics between the primary and secondary loops of a pressurized water reactor (PWR) nuclear power plant operating in the “one reactor-two turbines” mode are analyzed. An energy-demand signal for the secondary loop and an energy-supply signal for the primary loop are constructed, and their difference is defined as the thermal-mismatch signal. By incorporating the pressure-power fitting coefficient and a control rod sensitivity coefficient, the thermal-mismatch signal is introduced into the reactor power control system as a feedforward signal. Furthermore, the heat-storage calculation methods of different regions in the once-through steam generator are analyzed. The boundary lengths are determined based on mass conservation on the secondary side, and the solution approach for the thermal storage coefficient is ultimately established. Finally, simulation results under operating conditions demonstrate that the strategy significantly improves the dynamic response of the primary-loop temperature during load variations. This paper provides an effective coordinated control scheme for enhancing the flexibility of PWR nuclear power plants in load-following operation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064449328263168" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112895" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064449328263168" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="模拟研究堆板型燃料窄矩形通道的直接加热试验设施设计与热工水力分析 design and thermal–hydraulic analysis of a directly heated test facility simulating plate type fuel with narrow rectangular channel for nuclear research reactors 07 多物理场耦合（热工结构） annals of nuclear energy · 2026-10-07 · vijaya kumar veluri, samiran sengupta, aniruddha ghosh 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 核态沸腾起始 onset of nucleate boiling (onb) 壁面开始出现核态沸腾的条件。 本文评价设施相对于onb的运行裕度。 堆外试验 out-of-pile experiment 不在运行堆内进行的模拟试验。 help用电加热代表燃料传热，非真实辐照燃料。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>模拟研究堆板型燃料窄矩形通道的直接加热试验设施设计与热工水力分析</h2>
+          <p class="title-en">Design and thermal–hydraulic analysis of a directly heated test facility simulating plate type fuel with narrow rectangular channel for nuclear research reactors</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-07 · Vijaya Kumar Veluri, Samiran Sengupta, Aniruddha Ghosh</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>五种窄通道间隙的试验设计，直接连接几何间隙与压降、温度和ONB裕度。</li><li>当前为稳态设计/预测框架，后续测量不作为已完成数据。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>为可变窄间隙设施建立多关联式对照和预期运行包络。</li></ul></section>
+        <section><h3>不足</h3><ul><li>没有由摘要证明每一种关联式均适用于全部流态；物性和入口效应需核对。</li><li>没有机械变形耦合，不能把几何设置等同实时流固反馈。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>将后续实验测量用于代表性窄矩形冷却通道的CFD验证。</li></ul><b>分析推导</b><ul><li>研究板热变形引起的间隙变化，比较固定间隙与迭代更新边界的热结构误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读五种间隙、Inconel材料、热流/流量范围及关联式适用条件，作为Mechanical板变形耦合基准候选。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>核态沸腾起始<small>Onset of nucleate boiling (ONB)</small></h4><p>壁面开始出现核态沸腾的条件。</p><p class="context"><b>本文语境</b> 本文评价设施相对于ONB的运行裕度。</p></div><div class="term"><h4>堆外试验<small>Out-of-pile experiment</small></h4><p>不在运行堆内进行的模拟试验。</p><p class="context"><b>本文语境</b> HELP用电加热代表燃料传热，非真实辐照燃料。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核研究堆通常使用板型燃料组件，冷却剂通过一组窄矩形通道带走堆芯热量。燃料板之间的通道间隙显著影响水力阻力、燃料温度及沸腾裕度，是决定正常运行、预期运行事件和事故期间安全性的关键设计参数之一。本文介绍板几何传热实验回路（HELP）的设计与开发；这是一套堆外试验设施，用于再现研究堆板型燃料组件的热工水力行为。设施采用直接加热的Inconel-625试验段，通道间隙分别为1.7、1.8、2.0、2.2和2.4 mm，覆盖研究堆常用窄间隙的较宽范围。研究建立了直接加热窄矩形通道试验设施的稳态设计框架，预测其水力及热性能。采用已有摩擦因子和传热关联式，包括Shah-London、Blasius、Petukhov、Gnielinski、Dittus-Boelter、Sudo及Ghione等提出的SULTAN-JHR闭合关系，评估压降、壁温、传热系数、轴向温度分布和核态沸腾起始（ONB）裕度。比较揭示了不同关联式间的差异，并确定设施的预期运行包络。该框架为后续实验测量及代表研究堆板型燃料窄矩形冷却通道的CFD验证提供理论基础。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Nuclear research reactors often use plate type fuel assemblies where coolant is passed through a set of narrow rectangular channels to transfer the heat from the reactor core. The channel gap between fuel plates strongly influences hydraulic resistance, fuel temperature, and the available margin to boiling, making it one of the key design parameters governing reactor safety during normal operation, anticipated operational occurrences, and accident conditions. This paper presents the design and development of the Heat-transfer Experiment Loop for Plate geometry (HELP), an out-of-pile test facility built to reproduce the thermal–hydraulic behaviour of plate-type fuel assemblies for research reactors. The facility employs a directly heated Inconel-625 test section with channel gaps of 1.7 mm, 1.8 mm, 2.0 mm, 2.2 mm and 2.4 mm, covering a large range of narrow gaps commonly adopted in research reactors. A steady-state design framework was established predicting hydraulic and thermal performance of a Directly Heated Test Facility simulating narrow rectangular channels. Pressure drop, wall temperature, heat-transfer coefficient, axial temperature distribution, and margin to onset of nucleate boiling (ONB) were evaluated using established friction-factor and heat-transfer correlations, including Shah-London, Blasius, Petukhov, Gnielinski, Dittus-Boelter, Sudo, and the SULTAN-JHR closures proposed by Ghione et al. The comparison highlights the variation among available correlations and defines the expected operating envelope of the facility. The resulting framework provides the theoretical basis for subsequent experimental measurements for validation of CFD simulations for narrow rectangular cooling channels representative of plate-type fuel for research reactors.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110057696821784576" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112913" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110057696821784576" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="面向超临界co₂气冷快堆中间换热器的凹凸管热工水力多目标优化 multi-objective optimization of thermo-hydraulic performance for dimpled–protruded tubes of an intermediate heat exchanger in sco2 gas fast reactor using machine learning and nsga-ii 03 气冷堆 annals of nuclear energy · 2026-10-07 · samuel olaoluwa oke, puzhen gao, adebimpe a. amosun, olatomide g. fadodun, deborah boluwatife omowunmi 03 气冷堆 帕累托最优 pareto optimality 多目标中不能改善某一目标而不损害其他目标的状态。 本文平衡nu、火用效率与fre。 性能评价准则 performance evaluation criterion (pec) 用约定方式综合传热收益与流动代价的指标。 本文指出nu提高与pec下降可同时发生，定义需查全文。">
+      <header class="paper-head">
+        <span class="number">10</span>
+        <div>
+          <div class="chips"><span>03 气冷堆</span><span>03 气冷堆</span></div>
+          <h2>面向超临界CO₂气冷快堆中间换热器的凹凸管热工水力多目标优化</h2>
+          <p class="title-en">Multi-objective optimization of thermo-hydraulic performance for dimpled–protruded tubes of an intermediate heat exchanger in SCO2 gas fast reactor using machine learning and NSGA-II</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-07 · Samuel Olaoluwa Oke, Puzhen Gao, Adebimpe A. Amosun, Olatomide G. Fadodun, Deborah Boluwatife Omowunmi</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>504组CFD驱动的代理和多目标优化，Nu提升不必然对应综合性能提升。</li><li>这是XGB等代理模型，不是摘要证实的POD降阶。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>联合热传递、水力代价及火用目标，保留帕累托权衡。</li></ul></section>
+        <section><h3>不足</h3><ul><li>未给实验验证、训练/测试分割和在线端到端成本。</li><li>未覆盖凹凸管局部应力、制造公差或冷却剂工况外推。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>向帕累托设计加入壁厚、公差及峰值热应力，比较低阶几何替代是否遗漏凹凸根部热点。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 下载核对504工况、凹凸几何、SCO₂物性、训练划分、壁热边界及局部应力扩展可用数据。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>帕累托最优<small>Pareto optimality</small></h4><p>多目标中不能改善某一目标而不损害其他目标的状态。</p><p class="context"><b>本文语境</b> 本文平衡Nu、火用效率与fRe。</p></div><div class="term"><h4>性能评价准则<small>Performance evaluation criterion (PEC)</small></h4><p>用约定方式综合传热收益与流动代价的指标。</p><p class="context"><b>本文语境</b> 本文指出Nu提高与PEC下降可同时发生，定义需查全文。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>换热器的热工水力性能由几何、流动条件和流体物性之间的耦合作用决定。本研究建立结合计算流体力学（CFD）、机器学习（ML）及多目标优化的混合框架，预测并优化超临界CO₂（SCO₂）在凹坑—凸起管（DPT）中的热工水力和火用性能，应用对象为SCO₂气冷快堆的中间换热器。研究通过改变雷诺数（Re）、普朗特数（Pr）、凹凸直径比（d/D）及凹凸朝向参数（θ/ω），生成含504个工况的CFD数据集，建立随机森林（RF）、极端梯度提升（XGB）和K近邻（KNN）模型，预测努塞尔数（Nu）、泊肃叶数（fRe）、性能评价准则（PEC）及火用效率（ηW-S）。所有模型均与CFD结果较好一致，其中XGB预测最准确，其次为RF。在Re=10000、d/D=0.15、θ/ω=0.33时，Pr由0.84增加至1.30，使Nu增加56%、PEC增加10%。d/D由0.10增加至0.25使Nu提高68%，但PEC降低16%，体现强化传热和水力性能间的权衡。研究将表现最好的XGB代理与非支配排序遗传算法II（NSGA-II）结合，在提高Nu和ηW-S的同时降低fRe。得到的帕累托最优解给出兼顾强化传热、火用性能和水力损失的参数组合。该CFD—ML—多目标优化框架为下一代核能系统先进换热器的热工水力设计与优化提供高效数据驱动途径。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The thermo–hydraulic performance of heat exchangers is governed by coupled interactions among geometry, flow conditions, and fluid properties. This study develops a hybrid framework integrating computational fluid dynamics (CFD), machine learning (ML) and multi-objective optimization framework to predict and optimize the thermo-hydraulic and exergy performance of supercritical CO2 (SCO2) flowing through dimpled-protruded tubes (DPTs) for intermediate heat exchangers in SCO2 gas-cooled fast reactors. A CFD dataset comprising 504 cases was generated by varying Reynolds number (Re), Prandtl number (Pr), diameter of dimple-protrusion (d/D), and dimple-protrusion orientation parameter (θ/ω). Random forest (RF), extreme gradient boosting (XGB), and K-nearest neighbours (KNN) models were developed to predict Nusselt number (Nu), Poiseuille number (fRe), performance evaluation criterion (PEC), and exergy efficiency (ηW-S). All models demonstrated good agreement with CFD results, with XGB achieving the highest predictive accuracy, followed by RF. At Re=10,000, d/D=0.15, and θ/ω=0.33, increasing Pr from 0.84 to 1.30 increased Nu by 56% and PEC by 10%. Increasing d/D from 0.10 to 0.25 enhanced Nu by 68 % but reduced PEC by 16 %, demonstrating the trade-off between heat-transfer enhancement and hydraulic performance. The best-performing XGB surrogate was coupled with the non-dominated sorting genetic algorithm II (NSGA-II) to simultaneously maximize Nu and ηW-S while minimizing fRe. The resulting Pareto-optimal solutions identify parameter combinations balancing heat-transfer enhancement, exergy performance, and hydraulic losses. The proposed CFD–ML–MOOP framework provides an efficient data-driven approach for the thermo-hydraulic design and optimization of advanced heat exchangers for next-generation nuclear energy systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110057694762381312" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112897" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110057694762381312" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="利用中子学加权核素存量偏差nwid实现输运—燃耗自适应耦合 adaptive coupling of transport and depletion using the neutronically weighted inventory deviation (nwid) metric 11 中子输运方法（moc/蒙卡/确定论） annals of nuclear energy · 2026-10-07 · abdullah m. alharbi, justin k. watson, paul k. romano, saqr m. alshogeathri 11 中子输运方法（moc/蒙卡/确定论） 中子学加权核素存量偏差 neutronically weighted inventory deviation (nwid) 以中子学重要性加权核素存量变化的跟踪指标。 本文据此触发输运重新求解。 pcm per cent mille (pcm) 反应性表述中常用的10⁻⁵量级单位。 摘要以pcm报告keff偏差，具体定义与参照需核对原文。">
+      <header class="paper-head">
+        <span class="number">11</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>利用中子学加权核素存量偏差NWID实现输运—燃耗自适应耦合</h2>
+          <p class="title-en">Adaptive coupling of transport and depletion using the neutronically weighted inventory deviation (NWID) metric</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-07 · Abdullah M. Alharbi, Justin K. Watson, Paul K. Romano, Saqr M. Alshogeathri</p>
+          <p class="meta">来源标注日期，未称首次在线发表；今日首次收录未读论文。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用重要性加权核素漂移触发输运更新，提供慢/快谱两个栅元对照。</li><li>3%是触发指标容差，不等于所有核素或安全量3%误差界。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以可低成本跟踪的指标控制输运—燃耗耦合更新频率。</li></ul></section>
+        <section><h3>不足</h3><ul><li>次数降低2.3/14.3倍只对应两个示范，不能把快谱性能迁移到热结构接触。</li><li>全堆、极端谱变化和停堆/重启条件未在摘要验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>借鉴事件触发更新思想，但为接触开闭和热应力定义独立误差指示量，不能直接套用NWID。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>中子学加权核素存量偏差<small>Neutronically weighted inventory deviation (NWID)</small></h4><p>以中子学重要性加权核素存量变化的跟踪指标。</p><p class="context"><b>本文语境</b> 本文据此触发输运重新求解。</p></div><div class="term"><h4>pcm<small>Per cent mille (pcm)</small></h4><p>反应性表述中常用的10⁻⁵量级单位。</p><p class="context"><b>本文语境</b> 摘要以pcm报告keff偏差，具体定义与参照需核对原文。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>多数燃耗引擎在每个燃耗区间都求解输运，即完全输运耦合燃耗；这是最高保真选项，但对包含许多区间的历史计算不切实际。有些引擎也提供较便宜的输运独立模式，但随着能谱漂移会损失精度。本文引入适用于区间内及跨区间燃耗问题的自适应耦合：仅当中子学加权核素存量偏差（NWID）指标超过用户设定的容差时，触发输运重算。NWID以中子学重要性加权核素存量漂移，在每个燃耗区间后计算，代价可忽略。对分别按非规则历程燃耗至45和131 MWd/kg的压水堆（PWR）及钠冷快堆（SFR）栅元演示表明，两系统寿期末基线NWID相差一个数量级，PWR为145%，SFR为14%；这与二者完全独立模式下核素存量误差的差异一致，也符合快系统能谱较稳定的特点。在两案例采用3% NWID容差时，相对于完全耦合参照，PWR整个燃耗历史的最大锕系核素误差为0.61%，最大裂变产物误差为0.58%，keff偏差为−45 pcm；SFR分别达到0.11%、0.10%和−19 pcm。上述基准结果是在PWR和SFR输运求解次数分别减少到原来的1/2.3和1/14.3时实现的，运行时间也相应减少。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Most depletion engines solve transport at every depletion interval (fully transport-coupled depletion), this is the highest-fidelity option but impractical for many-interval histories. Some engines also offer a cheaper transport-independent mode that loses accuracy as the spectrum drifts. This paper introduces adaptive coupling as a new option that applies to both within-interval and across-interval depletion problems, triggering transport recalculation only when the Neutronically Weighted Inventory Deviation (NWID) tracking metric exceeds a user-defined tolerance. NWID quantifies inventory drift weighted by neutronic importance and is computed after each depletion interval at negligible cost. Demonstrations on PWR and SFR pin cells depleted at an irregular schedule to 45 and 131 MWd/kg, respectively, show that end-of-life baseline NWID differs by an order of magnitude between the two systems (145% for the PWR versus 14% for the SFR), mirroring the gap in their fully independent inventory errors and consistent with the spectral rigidity of fast systems. At 3% NWID tolerance simulations for both cases, the PWR recovers 0.61% maximum actinide error, 0.58% maximum fission product error, and -45 pcm keff deviation throughout the depletion history all relative to the fully coupled reference. While the SFR achieves 0.11% actinide error, 0.10% fission product error, and a keff deviation of only -19 pcm. Benchmarking results presented above were achieved while reducing the number of transport solves by 2.3x and 14.3x for PWR and SFR, respectively, with proportional reductions in runtime.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110057687959220224" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112881" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110057687959220224" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于强连通分量的块求解器加速多节点流动燃料燃耗计算 a strongly connected component-based block solver for accelerated multi-node flowing-fuel depletion calculations 11 中子输运方法（moc/蒙卡/确定论） annals of nuclear energy · 2026-10-06 · yunfei zhang, guifeng zhu, rui yan, yang zou 11 中子输运方法（moc/蒙卡/确定论） 强连通分量 strongly connected component (scc) 有向图中各节点彼此可达的最大子集合。 用于燃耗矩阵图的分块。 切比雪夫有理逼近 chebyshev rational approximation method (cram) 通过有理函数近似矩阵指数以求解燃耗等刚性系统。 本文降低其复移位系统分解成本。">
+      <header class="paper-head">
+        <span class="number">12</span>
+        <div>
+          <div class="chips"><span>11 中子输运方法（MOC/蒙卡/确定论）</span><span>11 中子输运方法（MOC/蒙卡/确定论）</span></div>
+          <h2>基于强连通分量的块求解器加速多节点流动燃料燃耗计算</h2>
+          <p class="title-en">A strongly connected component-based block solver for accelerated multi-node flowing-fuel depletion calculations</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-06 · Yunfei Zhang, Guifeng Zhu, Rui Yan, Yang Zou</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">来源标注日期，未称首次在线发表；近30天未读回溯补充。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>图分块保留耦合，区别于通过删去物理通道或截断模态减维。</li><li>420.8/318.7倍是特定求解器指标，不宣称全流程均加速同样倍数。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>复用与CRAM极点无关的图结构，提高稀疏燃耗系统求解效率。</li></ul></section>
+        <section><h3>不足</h3><ul><li>最大SCC仍是瓶颈；聚合核素小误差不保证每个微量核素的相对误差。</li><li>这是流动燃料核素迁移，不自动称为中子输运算法。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>需要进一步处理最大强连通分量，以适应更大系统。</li></ul><b>分析推导</b><ul><li>对结构耦合矩阵可先研究稀疏求解/分区瓶颈，再判断是否需要几何简化或POD，三者成本应分开。</li></ul></section>
+      </div>
+      
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>强连通分量<small>Strongly connected component (SCC)</small></h4><p>有向图中各节点彼此可达的最大子集合。</p><p class="context"><b>本文语境</b> 用于燃耗矩阵图的分块。</p></div><div class="term"><h4>切比雪夫有理逼近<small>Chebyshev rational approximation method (CRAM)</small></h4><p>通过有理函数近似矩阵指数以求解燃耗等刚性系统。</p><p class="context"><b>本文语境</b> 本文降低其复移位系统分解成本。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>循环燃料系统的空间分辨燃耗计算，把核素嬗变与节点间迁移耦合，形成大型稀疏的空间—核素矩阵。因此，对复移位系统的反复分解可能主导切比雪夫有理逼近法（CRAM）的计算成本。本研究提出基于强连通分量（SCC）分解的直接块求解器，并在MACT中实现。研究将全局燃耗矩阵的非对角图分解为SCC并进行拓扑排序，把每个CRAM移位系统转为块下三角形式。由于依赖极点的移位只作用于对角项，同一图结构可被所有CRAM极点复用。由此得到的块前向求解保留全部嬗变和迁移耦合，在精确算术下与整体求解代数等价。研究考察了带功率节点比例、空间规模、流量、零功率衰变，以及由熔盐堆实验（MSRE）模型导出的源项历程。燃耗计算的求解器加速随空间规模增加，在30节点案例达到420.8倍；零功率衰变的加速则较温和。对于包含9个燃耗步及15个停堆后衰变步的30节点MSRE衍生源项历程，未合并SCC求解器（SCC-RAW）的求解器加速为318.7倍；报告的聚合存量最大相对误差在第14衰变步为2.41×10⁻¹⁰，全部核素衰变热最大误差在第15衰变步为5.87×10⁻⁷。剩余运行时间由最大SCC的分解主导。因此，该方法为耦合燃耗和迁移计算提供了高效、保持结构的求解器，但面对更大系统仍需进一步处理占主导的SCC。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Spatially resolved depletion calculations for circulating-fuel systems couple nuclide transmutation with inter-node transport and generate large sparse spatial–nuclide matrices. Repeated factorization of the complex shifted systems can therefore dominate the computational cost of the Chebyshev rational approximation method (CRAM). This study develops a direct block solver based on strongly connected component (SCC) decomposition and implements it in MACT. The off-diagonal graph of the global depletion matrix is decomposed into SCCs and topologically ordered, transforming each CRAM shifted system into block lower-triangular form. Because the pole-dependent shifts affect only the diagonal entries, the same graph structure can be reused for all CRAM poles. The resulting block-forward solution retains all transmutation and migration couplings and is algebraically equivalent to the monolithic solution in exact arithmetic. The method was assessed for powered-node fraction, spatial scale, flow rate, zero-power decay, and a source-term history derived from the Molten-Salt Reactor Experiment (MSRE) model. For burnup calculations, the solver speedup increased with spatial scale and reached 420.8 for the 30-node case, whereas zero-power decay showed more modest acceleration. In the 30-node MSRE-derived source-term history comprising nine burnup and 15 post-shutdown decay steps, the unmerged SCC solver (SCC-RAW) achieved a solver speedup of 318.7; the maximum relative error among the reported aggregate inventories was 2.41 × 10−10 at decay step 14, and the maximum all-nuclide decay-heat error was 5.87 × 10−7 at decay step 15. The remaining runtime was dominated by factorization of the largest SCC. The method therefore provides an efficient structure-preserving solver for coupled depletion and transport calculations, although further treatment of dominant SCCs is required for larger systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>PDF 获取状态：oa_resolution_failed</p>
+      <footer><a href="https://www.x-mol.com/paper/2110057696133918720" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112912" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110057696133918720" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="绕丝燃料棒接触分析及磨痕模拟方法研究 contact analysis and wear-scar simulation methods for wire-wrapped fuel rods 07 多物理场耦合（热工结构） 核动力工程 · 2025 · 黄永忠 曹俊贤 李垣明 陈平 王浩煜 肖忠 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 赫兹接触 hertzian contact 描述弹性体局部接触应力和接触区域的经典理论。 本文作为压力场参照。 archard磨损模型 archard wear model 将磨损与法向载荷、滑动距离及磨损参数联系的经验模型。 本文逐点积分磨痕。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>绕丝燃料棒接触分析及磨痕模拟方法研究</h2>
+          <p class="title-en">Contact analysis and wear-scar simulation methods for wire-wrapped fuel rods</p>
+          <p class="meta">核动力工程 · 2025 · 黄永忠 曹俊贤 李垣明 陈平 王浩煜 肖忠</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2025年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以赫兹理论和增广拉格朗日有限元对照接触压力，再以椭圆接触区扫掠和Archard积分预测磨痕。</li><li>振幅超过某值后最大磨深不再增大，是该模型条件下的结果，不表示磨损失效风险饱和。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把变化的接触位置与磨痕点位磨蚀积分连接。</li></ul></section>
+        <section><h3>不足</h3><ul><li>理论压力对照不代替长时间磨损实验；材料、磨损系数、振幅阈值和接触刚度未在摘要给值。</li><li>摘要未说明使用Mechanical，不能从增广拉格朗日算法猜软件。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>用二维/三维和梁/实体模型比较峰值压力、滑移距离与磨痕；独立校准磨损系数，避免用错误罚刚度拟合试验。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 重点下载：绕丝与包壳曲率、材料、压力场、网格、罚刚度、磨损系数及振幅/频率。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>赫兹接触<small>Hertzian contact</small></h4><p>描述弹性体局部接触应力和接触区域的经典理论。</p><p class="context"><b>本文语境</b> 本文作为压力场参照。</p></div><div class="term"><h4>Archard磨损模型<small>Archard wear model</small></h4><p>将磨损与法向载荷、滑动距离及磨损参数联系的经验模型。</p><p class="context"><b>本文语境</b> 本文逐点积分磨痕。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>微动磨蚀是核反应堆燃料棒破损失效的重要原因之一。本文针对绕丝燃料棒,首先基于赫兹接触理论建立了包壳与相邻绕丝的接触压力分布计算方法,并通过有限元模型和增广拉格朗日接触算法完成了包壳与相邻绕丝的接触有限元分析,有限元分析结果与理论计算结果符合较好。之后,对振动过程中包壳与相邻绕丝的接触位置变化分析,揭示了包壳与相邻绕丝之间磨蚀区域不断变化的磨蚀特性,确定了椭圆接触面扫掠形成的磨蚀区域。基于ARCHARD磨蚀模型,通过对磨痕内各个点在振动过程中的磨蚀量积分计算,实现了对磨痕形貌的模拟预测。最后,通过不同振幅的磨痕模拟分析发现,当振幅超过一定值后,最大磨蚀深度达到最大而不再增加。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">Fretting wear is one of the important reasons for the failure of fuel rod in nuclear power reactors.This study focuses on wire-wrapped fuel rods.Initially,a method for calculating the contact pressure distribution between the cladding and the adjacent wires was established based on Hertzian contact theory.At the same time,a finite element analysis method for the contacting analysis of cladding and adjacent wires was completed by the finite element model with augmented Lagrangian algorithm.The finite element results showed good agreement with the theoretical calculations.Subsequently,an analysis of the contact position changes between the cladding and the adjacent wires during fuel rod vibration revealed the varying wear characteristics in the contact region between them.This led to the identification of the wear region resulting from the elliptical contact surface&#x27;s sweeping motion.Based on the Archard wear model,by integrating the wear volume at each point within the wear trace during the vibration process,the simulation prediction of the wear scar morphology was achieved.Lastly,through simulations of wear scars with different amplitudes,it was found that after exceeding a certain amplitude threshold,the wear depth attains its maximum and no longer increases.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202473387" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="超临界水堆燃料棒流致振动简化模型 a simplified flow-induced vibration model for fuel rods in a supercritical water reactor 07 多物理场耦合（热工结构） 核科学与工程 · 2017 · 刘雨 陆道纲 汪喆 吴立村 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 功率谱密度 power spectral density (psd) 信号方差随频率的分布。 本文用其作为随机振动载荷。 等效弹簧 equivalent spring 用集中刚度代替分布支承的模型简化。 本文代替绕丝作用，其有效范围需标定。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>超临界水堆燃料棒流致振动简化模型</h2>
+          <p class="title-en">A simplified flow-induced vibration model for fuel rods in a supercritical water reactor</p>
+          <p class="meta">核科学与工程 · 2017 · 刘雨 陆道纲 汪喆 吴立村</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2017年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>将绕丝支承等效为弹簧，以有限元固有特性检验简化模型，再加载功率谱获得位移响应。</li><li>固有频率一致是有限证据；摘要自己指出接触非线性模型精度仍待实验验证。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>构建用于超临界水堆绕丝棒流致振动的弹簧简化模型。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给弹簧标定、模态误差、支承开闭或磨损验证；不把频率吻合等同局部接触正确。</li><li>来源“1δ”记法保留；没有原文定义时不擅自改成1σ。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>使用振幅/预紧/接触状态分层对照，检查弹簧是否需要单边或非线性特性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 专题回溯精读：绕丝支承刚度、频谱、边界、模态对照及1δ定义。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>功率谱密度<small>Power spectral density (PSD)</small></h4><p>信号方差随频率的分布。</p><p class="context"><b>本文语境</b> 本文用其作为随机振动载荷。</p></div><div class="term"><h4>等效弹簧<small>Equivalent spring</small></h4><p>用集中刚度代替分布支承的模型简化。</p><p class="context"><b>本文语境</b> 本文代替绕丝作用，其有效范围需标定。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在超临界水堆中,当超临界水流过带有绕丝的燃料棒时可能诱发其发生振动,使得燃料包壳发生疲劳现象。带有的接触的非线性有限元模型使得计算量大大增加,而且其计算精度仍有待实验验证。本文针对超临界水堆流致振动实验,将绕丝的影响简化为弹簧,建立燃料棒流致振动的简化模型,并通过有限元模型对燃料棒的固有特性进行分析,验证了模型的正确性。最后,以功率谱对模型加载,求得了超临界水堆燃料棒的位移响应和1δ解。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">In SCWR,the fuel rod with wire-wrap may vibrant caused by supercritical water,which leads to the fatigue damage of cladding.Caused by the contact issue in nonlinearity finite element,the calculation cost increases greatly,moreover,the computational accuracy remains to be verified by experiments.In regard to flow-induced vibration experiment in SCWR,this paper simplifies wire-wrap to spring and establishes a simplified model of the fuel rods for flow-induced vibration.The natural frequency of the fuel rod by the finite element model verifies the model.The displacement response and 1δsolution of the fuel rod in SCWR are obtained by loading PSD on the model.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=672568100" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="vver核电机组控制棒摩擦力试验装置研制与应用 development and application of a friction-force testing device for control rods in vver units 07 多物理场耦合（热工结构） 电工技术 · 2026 · 李高超 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 全行程测量 full-stroke measurement 沿完整运动距离采集响应。 本文避免仅在个别位置检查摩擦。 异常值滤波 outlier filtering 依据规则识别或平滑异常观测。 本篇需区分仪器噪声与真实接触峰值。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>VVER核电机组控制棒摩擦力试验装置研制与应用</h2>
+          <p class="title-en">Development and application of a friction-force testing device for control rods in VVER units</p>
+          <p class="meta">电工技术 · 2026 · 李高超</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2026年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>研制全行程自动摩擦试验装置并应用于多次大修；测量处理、滤波及实时显示是主要贡献。</li><li>仪器滤波不应自动删除真实接触突跳；安全和效率改进未给量化幅度。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将机械装置与自动控制及数据处理集成到大修摩擦试验。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要无测量不确定度、采样频率、滤波阈值及摩擦载荷范围。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>用含碰撞/卡涩特征的已知力信号评估滤波偏差，再与Mechanical接触反力对照。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读校准、采样、滤波与原始摩擦—位移曲线，不以处理后的平滑曲线直接拟合接触。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>全行程测量<small>Full-stroke measurement</small></h4><p>沿完整运动距离采集响应。</p><p class="context"><b>本文语境</b> 本文避免仅在个别位置检查摩擦。</p></div><div class="term"><h4>异常值滤波<small>Outlier filtering</small></h4><p>依据规则识别或平滑异常观测。</p><p class="context"><b>本文语境</b> 本篇需区分仪器噪声与真实接触峰值。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>VVER核电机组预防性维修大纲规定在大修期间需进行控制棒摩擦力试验。基于摩擦力试验对大修关键路径的重要作用,开展了摩擦力试验装置的研制,完成了对试验装置的机械设计和控制系统设计,实现了摩擦力试验全行程的自动化控制、测量数据的自动处理与实时显示。试验装置采用滤波算法,剔除了可能的偶发异常数据,提高了摩擦力试验装置的智能性。研制的摩擦力试验装置已在多次大修中成功应用,提高了作业效率和安全性,减小了作业人员的辐射受照剂量,同时降低了作业人员的劳动强度。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">The preventative maintenance programs for VVER nuclear power plant stipulate that control rod assembly friction force tests should be carried out during outage.Based on the important role of the friction force test in the critical path of outage,the development of the friction force tests device was carried out.In this paper,the mechanical design and control system design of the test device are completed,and the automatic control of the full stroke of the test is realized,and the automatic processing and real-time display of the measured datas are realized.The filter algorithm is used to eliminate the possible abnormal datas and improve the intelligence of the test device.The test device has been successfully applied in many outages,which improves the working efficiency and safety,reduces the radiation dose and labor intensity of the workers.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203714672" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于流体-多体动力学耦合方法的控制棒组件落棒行为仿真研究 simulation of control rod assembly drop using fluid–multibody dynamics coupling 07 多物理场耦合（热工结构） 原子能科学技术 · 2026 · 简文均 岳题 袁攀 任全耀 辛勇 孙坤 佘仲航 周明 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 多体动力学 multibody dynamics (mbd) 分析多部件连接、运动、碰撞和作用力的方法。 本文与流体场交换载荷和运动。 刚柔耦合 rigid-flexible coupling 同时包含刚体运动和柔性变形的力学建模。 本文用于控制棒组件结构柔性。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>基于流体-多体动力学耦合方法的控制棒组件落棒行为仿真研究</h2>
+          <p class="title-en">Simulation of control rod assembly drop using fluid–multibody dynamics coupling</p>
+          <p class="meta">原子能科学技术 · 2026 · 简文均 岳题 袁攀 任全耀 辛勇 孙坤 佘仲航 周明</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2026年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综合流体载荷、刚柔多体运动和接触摩擦，处理典型24棒组件落棒过程。</li><li>中英文摘要详略差异很大；英文新增的弹跳/卡涩表述单独保留，不将其伪装为中文逐句翻译。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以跨域数据传递联合流体与刚柔机械响应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有量化误差、时间步、耦合守恒或独立实验对照，不能据“更精准”就认定已达到高保真。</li><li>软件平台未给，不能直接称Mechanical教程复现。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>采用同一热变形与错对中条件，对刚体、柔性梁和局部实体接触模型作盲验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 重点下载：24棒/星形架参数、流体—多体接口、摩擦、支承和落棒验证曲线。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>多体动力学<small>Multibody dynamics (MBD)</small></h4><p>分析多部件连接、运动、碰撞和作用力的方法。</p><p class="context"><b>本文语境</b> 本文与流体场交换载荷和运动。</p></div><div class="term"><h4>刚柔耦合<small>Rigid-flexible coupling</small></h4><p>同时包含刚体运动和柔性变形的力学建模。</p><p class="context"><b>本文语境</b> 本文用于控制棒组件结构柔性。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>控制棒组件在核反应堆中承担调节功率与紧急停堆的核心功能,其落棒行为的可靠性直接影响反应堆的安全。典型控制棒组件由星形架、24根控制棒构成。落棒过程为控制棒组件从零初速开始,在重力作用下,下落至指定高度后连接柄下端面接触限位凸台的过程。然而,在高温、高压、高辐照及流致振动等复杂工况下,控制棒组件与导向通道的碰撞摩擦、柔性结构的振动效应,以及流动阻力的耦合作用,显著增加了理论模型预测的难度。针对此问题,本文提出一种考虑流体-刚柔耦合的多体动力学仿真方法,以典型控制棒组件为研究对象,建立综合考虑流体载荷与机械接触的落棒行为仿真模型。流体动力学部分通过流体仿真软件实现,机械碰撞摩擦力部分基于多体动力学软件建模,最终通过数据传递实现跨域耦合分析。研究结果表明,本文方法能更精准地模拟控制棒组件在复杂边界条件下的动态响应,更准确地预测落棒时间,为核反应堆安全分析与结构优化提供理论支持。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">The control rod assemblies perform the indispensable and critical function of power regulation and emergency shutdown in nuclear reactors,forming a fundamental safety barrier.The reliability of their free fall behavior,often referred to as the“drop time”directly impacts overall reactor safety and operational integrity.A typical control rod assembly consists of a central spider coupling and 24 individual neutron-absorbing control rods.The free fall process is defined as the assembly starting from an initial zero velocity,descending under the primary influence of gravity within a confined guide tube,and culminating in the contact between the lower end surface of the connector rod and the limit stop.However,accurately predicting this dynamic behavior presents significant theoretical and practical challenges.The operating environment within a reactor core is exceptionally complex,characterized by extreme conditions such as high temperature,high pressure,intense radiation fields,and pervasive flowinduced vibrations.These factors profoundly affect the assembly’s motion.Furthermore,the descent is governed by strongly coupled multi-physics phenomena.These include repeated collisions and friction between the control rod assembly and the surrounding guide channels,complex vibrational effects arising from the system’s inherent structural flexibility,and the significant,transient coupling effects with the surrounding fluid’s resistance.The intricate interplay of these factors dramatically increases the difficulty of creating accurate theoretical models using conventional analytical approaches.To address these limitations,a novel,high-fidelity and fluid-rigid-flexible coupled multibody dynamics simulation method was developed and implemented.This research focused specifically on a typical control rod assembly,establishing a comprehensive simulation model for its free fall behavior that explicitly integrates both transient fluid load effects and nonlinear mechanical contact interactions.For the fluid dynamics part,an advanced computational fluid dynamics(CFD)software was utilized to simulate the complex surrounding flow field,pressure distribution,and associated hydrodynamic forces acting on the moving assembly.This involved modeling the narrow annular gaps and the resulting viscous effects.Simultaneously,the detailed mechanical system,including the spider arms,individual rods,and their interactions with the guide channels,was modeled using a multibody dynamics(MBD)software.This model accurately captured contact forces,friction,and structural flexibility.A critical aspect of this approach was the implementation of a robust co-simulation strategy.This technique enabled real-time data exchange between the CFD and MBD solvers at each time step,thereby faithfully capturing the two-way coupled interactions between the fluid and the structure.The results demonstrate that our proposed coupled method provides a substantially more accurate and physically realistic simulation of the control rod assembly’s dynamic response under these challenging,complex boundary conditions.It successfully captures transient events like bouncing and jamming that are difficult to predict with decoupled models.Consequently,it achieves a more precise and reliable prediction of the total drop time,a key safety parameter.This work offers valuable,high-fidelity theoretical support for enhanced nuclear reactor safety analysis and provides critical,data-driven insights for the structural optimization of control rod drive mechanisms and guide tube designs.The developed methodology also establishes a reliable reference framework for peers investigating similar complex fluid-structure interaction problems in other tightly constrained engineering environments.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203871716" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="压水堆控制棒导向筒与堆芯上板间隙对控制棒落棒时间的影响研究 influence of the clearance between control rod guide tubes and the upper core plate on rod-drop time in a pwr 07 多物理场耦合（热工结构） 核安全 · 2025 · 莫少嘉 段远刚 陈永超 方健 刘言午 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 旁流 bypass flow 绕开目标流道或部件的流动。 本文受导向筒入口间隙控制。 横向水力载荷 lateral hydrodynamic load 流体对部件施加的横向作用力。 可能改变接触法向力并影响摩擦。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>压水堆控制棒导向筒与堆芯上板间隙对控制棒落棒时间的影响研究</h2>
+          <p class="title-en">Influence of the clearance between control rod guide tubes and the upper core plate on rod-drop time in a PWR</p>
+          <p class="meta">核安全 · 2025 · 莫少嘉 段远刚 陈永超 方健 刘言午</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2025年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>几何间隙2.60→10 mm使旁流比例约5.1%→18.1%，本文落棒时间增约5%；横向脉动与摩擦效应可使增幅更大。</li><li>这里是导向筒—上板流动间隙，不与控制棒—导向管机械间隙混为同一个参数。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把入口局部间隙引起的流场、水力载荷与落棒时间联系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摩擦系数变化与横向法向载荷变化应分别识别，不能直接把二者当同一物理量。</li><li>摘要没有完整参数范围/误差；5%不是普遍裕度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>原摘要建议加强相关位置振动与磨损监测并评估落棒影响。</li></ul><b>分析推导</b><ul><li>流体间隙与机械偏心独立扫描，评估法向载荷和接触摩擦对总时间/缓冲前时间的贡献。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对局部几何、间隙/旁流、压力场、摩擦处理、落棒判据与误差。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>旁流<small>Bypass flow</small></h4><p>绕开目标流道或部件的流动。</p><p class="context"><b>本文语境</b> 本文受导向筒入口间隙控制。</p></div><div class="term"><h4>横向水力载荷<small>Lateral hydrodynamic load</small></h4><p>流体对部件施加的横向作用力。</p><p class="context"><b>本文语境</b> 可能改变接触法向力并影响摩擦。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为研究控制棒导向筒与堆芯上板之间不同间隙尺寸下,导向筒入口区域及间隙区域的流场分布及对控制棒落棒时间的影响,本文采用计算流体动力学(CFD)方法,对典型压水堆(PWR)控制棒导向筒与堆芯上板局部区域的流场进行数值模拟,并开展了控制棒落棒时间计算。结果表明:当间隙尺寸从2.60mm增大到10mm时,间隙区域将出现明显射流现象,从间隙流出的旁流比例从原来的约5.1%增大到约18.1%。90°双孔管外侧位置和C形管位置的控制棒的水力载荷对间隙尺寸非常敏感,水力载荷明显增加,并出现脉动的横向流。间隙尺寸增大后,控制棒落棒时间增加约5%。在考虑间隙增加而引起的横向水力载荷增大(摩擦系数增加)的情况下,落棒时间增加更加明显,存在超出落棒时间准则值的风险。因此,建议对增大间隙尺寸的反应堆,在运行中加强对90°双孔管外侧位置和C形管位置控制棒导向筒入口区域至流水窗口之间振动和磨损的监测,充分评估其对控制棒落棒时间的影响。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">Computational fluid dynamics(CFD)methods are used for the numerical simulations on the local area of the control rod guide tube(CRGT)and the upper core plate of the reactor core in a PWR nuclear pow-er plant.The flow field distribution in the inlet area and gap position of the guide tube under different gap siz-es between the control rod guide tube and the upper plate of the core were studied.The results show that when the gap increases from 2.60 mm to 10 mm,a significant jet will be generated near the gap,and the proportion of side flow flowing out of the gap will increase from about 5.1%to about 18.1%.The control rods at the outer position of the 90°double hole tube and the C-shaped tube position are more significantly affected by the in-crease in gap,and will be subject to significantly increased or fluctuating lateral flow.In addition,as the gap increases,the time for the control rod to drop increases by about 5%.When considering the increase in later-al hydraulic load(friction coefficient)caused by the increase in clearance,the increase in rod drop time is more significant,and there is a risk of exceeding the rod drop time criterion value.Therefore,for reactors with large clearances,it is recommended to strengthen the monitoring of vibration and wear between the outer position of the 90°double hole tube and the C-shaped tube position control rod guide tube inlet area and the flow window during operation and service,and fully evaluate their impact on the increase of control rod drop time.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7200292886" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="cf2燃料组件多错对中值下摩擦力与落棒性能试验研究 friction and rod-drop tests of cf2 fuel assemblies under multiple misalignment levels 07 多物理场耦合（热工结构） 核技术 · 2025 · 王运生 卿海杰 祝文 肖林海 聂常华 田雪莲 马新光 史天蛟 陈夫进 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 错对中 misalignment 不同部件轴线或定位关系偏离理想对齐状态。 本文通过可调顶盖形成多个工况。 缓冲段 buffer section 运动末端减速和吸收动能的区段。 本文比较到缓冲口时间与总时间。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>CF2燃料组件多错对中值下摩擦力与落棒性能试验研究</h2>
+          <p class="title-en">Friction and rod-drop tests of CF2 fuel assemblies under multiple misalignment levels</p>
+          <p class="meta">核技术 · 2025 · 王运生 卿海杰 祝文 肖林海 聂常华 田雪莲 马新光 史天蛟 陈夫进</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2025年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>使用1:1模拟组件和可调顶盖，获得水/空气全行程多错对中摩擦及落棒数据。</li><li>最大错对中未卡棒仅证明所测工况；不是所有热态、磨损或事故工况均无卡涩。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>集成多错对中调节及全行程两介质试验，为简化模型标定提供候选数据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>中文摘要不含英文中的详细力值与时间；原文分别保留，不把英文扩展数字错误补为中文原文。</li><li>错对中定义、温度、流量及测量不确定度需要核实。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>独立留出错对中位置和介质条件，对等效摩擦/接触模型进行验证而非全数据拟合。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先下载1:1装置、错对中定义、力—位移/速度曲线、介质工况及误差预算。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>错对中<small>Misalignment</small></h4><p>不同部件轴线或定位关系偏离理想对齐状态。</p><p class="context"><b>本文语境</b> 本文通过可调顶盖形成多个工况。</p></div><div class="term"><h4>缓冲段<small>Buffer section</small></h4><p>运动末端减速和吸收动能的区段。</p><p class="context"><b>本文语境</b> 本文比较到缓冲口时间与总时间。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>CF(Chinese Fuel)系列燃料组件是中核集团自主研发的先进三代核电反应堆核心部件,为分析CF2燃料组件在多错对中值工况下,驱动线运动部件在水和空气中的摩擦力与落棒性能,采用1∶1的CF2模拟燃料组件配合自主设计研发的可调节旋转式顶盖,首次实现了多个错对中值的集成,能够对多个错对中值进行科学准确的调节。通过优化驱动机构性能研究方法,获取了驱动机构在水和空气两种介质中全行程、多错对中值工况下的摩擦力与落棒性能数据。结果表明:落棒总时间和棒到缓冲口时间均随着错对中值增加而增大,但缓冲时间基本保持一致。燃料组件与控制棒在最大错对中值工况下运行良好,摩擦力没有超过允许极限值,也未发生在大错对中值工况下的卡棒现象。该研究结果为CF系列燃料组件的设计定型、安全评定与软件开发提供了重要的试验依据,其方法可推广至后续CF3等燃料组件的科研项目中。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">[Background]CF(Chinese Fuel)series fuel assemblies are the core components of nuclear power independently developed by China National Nuclear Corporation(CNNC),which together with the drive mechanism,constitute an important part of a large pressurized water reactor which is related to the stability and safety of nuclear reactor operation.Development of any fuel assembly and related equipment must undergo friction and rod drop test to verify its structural integrity and the property.The traditional friction and rod drop performance test can only be carried out with small eccentricity to obtain the test data such as friction force and rod drop curve.It can&#x27;t be achieved to analyze and study the performance with multiple eccentricities,especially the larger eccentricity.And there are no more studies on comparative mechanical analysis of the friction force of the driving mechanism through full displacement and in the two media of water and air.[Purpose]This study aims to analyze the friction and rod drop performance of the drive line&#x27;s moving parts of the self-developed CF2 fuel assembly under water and air working conditions with different eccentricity.[Methods]A 1:1 simulated CF2 fuel assembly was used in the test with an independently-developed rotatable top cap.The integration of multiple eccentricity was initially implemented for scientific and accurate regulation.The method to study the performance of the driving mechanism was optimized.The friction force and rod drop performance data were obtained through the experiments of the driving mechanism in water and air through full displacement and under different eccentric conditions.[Results]Experimental results show that the friction force of control rod drop in the air at the lowest and highest positions is 26.5 N and 32.1 N,respectively when the eccentricity is 4.67 mm,whilst the two force values in the air at the lowest and highest position is 37.1 N and 39.2 N,respectively when the eccentricity is 9.4 mm.The friction force control rod drop in the motionless water at the lowest position and the highest position is 54.8 N and 39.5 N,respectively when the eccentricity is 4.67 mm whilst the two force values in the water are 62.8 N and 44.1 N,respectively when the eccentricity is 9.4 mm.As the control rod is gradually raised,the friction force in the air increases much more than that in static water.The maximum value in the air occurs at the highest position,while the maximum value in static water occurs at the lowest position.By comparing and analyzing the rod drop performance and parameters like velocity,displacement and vibration,it can be seen that with the continuous increase of the eccentricity,the friction during rod operation also increases correspondingly,and the maximum speed during rod drop gradually decreases.The data shows that the impact of the various eccentricities on the buffer time is small and the value can be basically consistent.The minimum rod drop time occurs when the eccentricity is 0 mm.The time for control rod reaching to the buffer port is 1.049 s,and the time reaching to the bottom is 1.477 s.[Conclusions]The numerical comparison of friction force between in the air and static water through full displacement and under multiple eccentricities has been carried out,the fuel assembly and control rod run well,the friction does not exceed the limit value,and no jamming of the rod occurs under the maximum eccentric condition.It can verify the rationality of the design of CF2 fuel assembly,providing an important test basis for the design,safety evaluation and software development of this series fuel assemblies.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7201144717" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="核反应堆内高温条件下膨胀对控制棒下落的影响分析 effect of thermal expansion on control rod drop at high temperature in a nuclear reactor 07 多物理场耦合（热工结构） 核动力工程 · 2024 · 陈昌义 席炎炎 鲁亚恒 吴炫龙 吴锋 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 热膨胀 thermal expansion 材料因温度变化发生尺寸变化。 本文改变棒/管相对几何。 流固耦合 fluid-structure interaction (fsi) 流体作用与结构响应相互影响的求解关系。 本文用于落棒过程。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>核反应堆内高温条件下膨胀对控制棒下落的影响分析</h2>
+          <p class="title-en">Effect of thermal expansion on control rod drop at high temperature in a nuclear reactor</p>
+          <p class="meta">核动力工程 · 2024 · 陈昌义 席炎炎 鲁亚恒 吴炫龙 吴锋</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2024年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>稳态热力有限元得到棒和导向管膨胀，再比较含/不含膨胀的落棒流固模型。</li><li>总时间与到缓冲段时间的影响不同；“一般情况下可忽略”仅是本文分析范围的结论。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把热变形输入落棒动力学作对照。</li></ul></section>
+        <section><h3>不足</h3><ul><li>没有给温度场、公差、偏心和摩擦参数；不能据平均热膨胀小就排除局部干涉。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>采用非均匀温度及最不利公差，检验轴对称均温简化何时失效。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对温度边界、材料热膨胀、相对间隙、模型维度及总/分段落棒时间。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热膨胀<small>Thermal expansion</small></h4><p>材料因温度变化发生尺寸变化。</p><p class="context"><b>本文语境</b> 本文改变棒/管相对几何。</p></div><div class="term"><h4>流固耦合<small>Fluid-structure interaction (FSI)</small></h4><p>流体作用与结构响应相互影响的求解关系。</p><p class="context"><b>本文语境</b> 本文用于落棒过程。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核反应堆内的高温环境会导致控制棒组件产生热膨胀现象,进而影响控制棒组件的下落时间。为研究热膨胀对控制棒组件下落的影响,建立考虑膨胀变形的控制棒下落流固耦合模型,求解控制棒组件下落过程的动力学方程。采用有限元对导向管和控制棒进行稳态热力耦合分析,得到高温条件下控制棒和导向管的膨胀变形。基于所建立模型比较考虑热膨胀和不考虑热膨胀条件下控制棒的下落动力学过程。分析结果表明,热膨胀现象延迟了控制棒整体下落时间,但对控制棒进入缓冲段入口的时间影响较小,因此在一般情况下热膨胀对落棒时间的影响可以忽略,但在工程中仍需要重视控制棒膨胀引起的后果。本文研究结果对控制棒结构设计以及控制棒堆内落棒时间分析有重要意义。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">The high temperature environment in the nuclear reactor will cause the thermal expansion of the control rod assembly,which will affect the falling time of the control rod assembly.In order to study the effect of thermal expansion on the drop of control rod assemblies,a fluid-structure coupling model for the drop of control rod assemblies was established considering expansion deformation,and the dynamic equations for the drop process of control rod assemblies were solved.The steady state thermodynamic coupling analysis of the guide tube and control rod is performed using finite element method to obtain the expansion deformation of the control rod and guide tube under high temperature conditions.Based on the established analytical model,the dynamic processes of control rod drop with and without expansion is compared.The analysis results show that the thermal expansion phenomenon delays the total drop time of the control rod,but has little impact on the drop time before the buffer section.Therefore,in general,the impact of thermal expansion on the drop time can be ignored,but the consequences caused by the control rod expansion still need to be paid attention to in the engineering design.The conclusion of this paper is important for the design of control rod and the analysis of in-pile control rod drop time.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7113115885" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="不同环境控制棒包壳–平面微动磨损有限元分析 finite-element analysis of control rod cladding–plane fretting wear in different environments 07 多物理场耦合（热工结构） 核科学与技术 · 2024 · 陈浩 刘维超 辜培勇 李长征 吴迪 周宣朴 宋子凡 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 任意拉格朗日—欧拉方法 arbitrary lagrangian–eulerian (ale) 允许网格运动与材料运动分离的数值方法。 用于磨损表面更新。 能量磨损模型 energy-based wear model 将磨损与接触摩擦耗散能量联系的模型。 本文使用实验摩擦及磨损系数。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>不同环境控制棒包壳–平面微动磨损有限元分析</h2>
+          <p class="title-en">Finite-element analysis of control rod cladding–plane fretting wear in different environments</p>
+          <p class="meta">核科学与技术 · 2024 · 陈浩 刘维超 辜培勇 李长征 吴迪 周宣朴 宋子凡</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2024年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>明确使用ABAQUS与能量磨损模型、UMESHMOTION和ALE更新磨损表面。</li><li>对比二维/三维后采用二维模型，并分析加速因子、摩擦及步长；直接命中新简化方向，但不是Mechanical原生研究。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将环境磨损系数、表面更新和模型维度对照结合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>二维适用性量化误差和实验系数迁移范围未在摘要给出。</li><li>液体润滑减磨结论依赖所研究工况，不能外推全部水化学/温度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>在Mechanical建立等价载荷/几何，先验证压力、滑移和耗散，再比较磨损模型与维度简化误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 重点下载二维/三维误差表、实验系数、接触算法、加速因子、网格和步长。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>任意拉格朗日—欧拉方法<small>Arbitrary Lagrangian–Eulerian (ALE)</small></h4><p>允许网格运动与材料运动分离的数值方法。</p><p class="context"><b>本文语境</b> 用于磨损表面更新。</p></div><div class="term"><h4>能量磨损模型<small>Energy-based wear model</small></h4><p>将磨损与接触摩擦耗散能量联系的模型。</p><p class="context"><b>本文语境</b> 本文使用实验摩擦及磨损系数。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>控制棒包壳的磨损问题在核反应堆的安全运行中扮演着至关重要的角色。本研究旨在深入探讨控制棒包壳的磨损机制及其影响因素,以提高反应堆的安全性和性能。本研究基于E. Marc等试验测量的摩擦系数和磨损系数,利用商业有限元分析软件ABAQUS,建立了控制棒包壳与接触区域的模型。分析过程中,采用能量磨损模型,同时借助UMESHMOTION子程序和ALE自适应网格方法,实现了磨损表面的动态更新。在确保计算结果准确性的前提下,对比了二维与三维模型,最终选择了计算效率更高的二维模型进行分析。本研究进一步探讨了加速因子、摩擦系数和分析步长对计算结果的影响,确立了合理的参数设置,为控制棒磨损演化规律的研究提供了基础。通过对不同工况下磨损深度分析,得出了如下主要结论:适当的液体润滑对于减少包壳磨损非常重要。研究结果不仅直观地展示了不同环境下的控制棒包壳磨损行为,而且为控制棒寿命预测和优化设计提供了宝贵的基础。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">The wear of control rod cladding plays a crucial role in the safe operation of nuclear reactors. This study aims to delve into the mechanisms of control rod cladding wear and its influencing factors to enhance reactor safety and performance. Utilizing friction and wear coefficients measured in experiments by E. Marc et al., a wear analysis model between control rod cladding and the contact area was established using the finite element analysis software ABAQUS. An energy model was applied, combined with the UMESHMOTION subroutine and ALE adaptive meshing method to achieve dynamic updating of the worn surface. After comparing two-dimensional and three-dimensional models, the more computationally efficient two-dimensional model was selected for analysis. Furthermore, this study explored the impacts of acceleration factors, friction coefficients, and analysis step sizes on computational results, establishing rational parameter settings and laying the groundwork for studying the evolution of control rod wear. Through analysis of wear depth under various work conditions, the following conclusions were drawn: Proper liquid lubrication is highly significant in reducing cladding wear. The research results not only intuitively demonstrate the cladding wear behavior of control rod cladding under different environments but also provide valuable references for predicting the lifespan and optimizing the design of control rod cladding.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=HS724632024003005" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="压水堆燃料组件格架弹簧松弛分析软件开发与验证 development and validation of grid-spring relaxation software for pwr fuel assemblies 07 多物理场耦合（热工结构） 力学与实践 · 2026 · 陈威林 陈忠村 金渊 金鑫 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 辐照蠕变 irradiation creep 材料在辐照及应力环境下的时间相关变形。 本文引起弹簧夹持力衰减。 计算包络 prediction envelope 由输入或模型变化形成的预测范围。 本文包住试验值，未说明概率意义。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>压水堆燃料组件格架弹簧松弛分析软件开发与验证</h2>
+          <p class="title-en">Development and validation of grid-spring relaxation software for PWR fuel assemblies</p>
+          <p class="meta">力学与实践 · 2026 · 陈威林 陈忠村 金渊 金鑫</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2026年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>BEGONIA考虑辐照蠕变、栅元尺寸和燃料棒外径变化，用拉棒试验核对辐照后夹持力。</li><li>平均相对偏差17.1%，所有测量在包络内；平均误差与包络覆盖是不同指标。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将辐照与几何变化联合传递至格架弹簧夹持力。</li></ul></section>
+        <section><h3>不足</h3><ul><li>未给样本数量、包络定义及概率校准；不能据包络全覆盖就保证极端工况。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>把夹持力退化接入单边弹簧/实体接触模型，验证滑移、磨损和振动局部响应。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 优先核对辐照蠕变参数、尺寸变化、拉棒测试、样本及17.1%误差定义。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>辐照蠕变<small>Irradiation creep</small></h4><p>材料在辐照及应力环境下的时间相关变形。</p><p class="context"><b>本文语境</b> 本文引起弹簧夹持力衰减。</p></div><div class="term"><h4>计算包络<small>Prediction envelope</small></h4><p>由输入或模型变化形成的预测范围。</p><p class="context"><b>本文语境</b> 本文包住试验值，未说明概率意义。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在辐照环境下,格架弹簧因中子辐照发生蠕变,导致夹持力随燃耗加深而衰减。本文研发了格架弹簧松弛分析软件,简称BEGONIA,综合考虑弹簧辐照蠕变、栅元尺寸变化以及燃料棒外径变化对弹簧弹性变形的影响,能够用于预测辐照后弹簧的夹持力。基于燃料棒的拉棒试验数据验证表明,辐照后夹持力计算值与测量值的平均相对偏差为17.1%,所有试验测量值均在软件计算的包络范围之内,表明计算模型具有较好的预测精度。该软件可为燃料组件格架性能评估与优化设计提供可靠支撑,具有良好工程应用前景。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">Under irradiation,the grid springs undergo creep deformation due to neutron irradiation,resulting in degradation of spring force with increasing burnup.This paper presents the development of a grid spring relaxation analysis software,named&quot;BEGONIA&quot;,which comprehensively considers the influence of irradiation creep,cell size variation,and fuel rod diameter variation on the elastic deformation of springs,enabling the prediction of spring force after irradiation.The verification based on the fuel rod pull-out test shows that the average relative deviation between calculated and measured post-irradiation spring force is 17.1%,and all the experimental values fall within the envelope range calculated by the software,indicating good predictive accuracy of the computational model.This software can provide reliable support for the performance evaluation and design optimization of fuel assembly grids,and has promising prospects for engineering applications.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204283584" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="压水堆燃料组件定位格架动刚度估算及误差来源分析 estimating dynamic stiffness and analyzing error sources for pwr spacer grids 07 多物理场耦合（热工结构） 原子能科学技术 · 2025 · 周鼎 黄聪彩 李天勇 乔红威 崔艺航 赵相吉 马建中 孙磊 07 多物理场耦合（热工结构） 反应堆热工结构：ansys mechanical接触与模型简化 动刚度 dynamic stiffness 在指定动态工况下表征力与变形关系的刚度量。 本文从撞击试验估计。 误差传播 error propagation 输入或中间变量的不确定性传到输出的过程。 本文不同层次响应呈放大或衰减。">
+      <header class="paper-head">
+        <span class="number">10</span>
+        <div>
+          <div class="chips"><span>07 多物理场耦合（热工结构）</span><span>07 多物理场耦合（热工结构）</span><span>反应堆热工结构：ANSYS Mechanical接触与模型简化</span></div>
+          <h2>压水堆燃料组件定位格架动刚度估算及误差来源分析</h2>
+          <p class="title-en">Estimating dynamic stiffness and analyzing error sources for PWR spacer grids</p>
+          <p class="meta">原子能科学技术 · 2025 · 周鼎 黄聪彩 李天勇 乔红威 崔艺航 赵相吉 马建中 孙磊</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">本日首次收录的2025年未读专题回溯文献；非当日新发表。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以冲击试验比较能量直接/迭代法与周期法，研究动刚度误差传递。</li><li>直接/迭代法最大相对偏差约12%/16%；内刚度误差放大而冲击力误差约5%，响应量间不能互相替代。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>同时分析估计方法差异与输入—内部刚度—载荷的误差链。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未提供完整接触非线性、公差、刚度定义或试验重复性。</li><li>5%冲击力误差不等于局部接触压力也误差5%。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未给出明确的独立后续计划；分析建议不冒充作者计划。</li></ul><b>分析推导</b><ul><li>对梁/弹簧替代模型设计多响应校准，要求既满足整体频率/冲击力也检验接触压力和局部变形。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读撞击速度/载荷时程、能量/周期法定义、内外刚度映射和误差预算。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>动刚度<small>Dynamic stiffness</small></h4><p>在指定动态工况下表征力与变形关系的刚度量。</p><p class="context"><b>本文语境</b> 本文从撞击试验估计。</p></div><div class="term"><h4>误差传播<small>Error propagation</small></h4><p>输入或中间变量的不确定性传到输出的过程。</p><p class="context"><b>本文语境</b> 本文不同层次响应呈放大或衰减。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>格架动刚度是表征格架动态力学性能、支撑事故工况下燃料组件结构安全分析的重要参数。当前格架动刚度主要通过格架动刚度试验测得撞击力及速度等力学参量估算,但是缺乏对不同估算方法的差异分析和误差来源讨论,导致在工程应用中尚未形成标准化评估方法。本文以某型格架为研究对象,开展格架动刚度试验,获得格架撞击载荷、撞击小车速度、撞击载荷脉冲周期等关键力学参数,分别采用能量法(包括直接法和迭代法)及周期法估算格架动刚度,分析不同方法的误差来源并讨论格架动刚度误差的传递特性。结果表明:基于小车撞击试验装置时,采用直接法和迭代法估算具有更高的稳定性,最大相对偏差分别达到12%和16%左右;格架动刚度误差将直接传递至内刚度并显著放大内刚度误差,但进一步传递至撞击力误差时回归到5%左右。本文结果可为格架动刚度测试和组件事故工况安全分析的准确性提供参考。</p></div>
+          <div><h3>English abstract · 维普详情页英文摘要原文；与中文原摘要详略不同，分别保持原文。</h3><p lang="en">Fuel assemblies are core components in pressurized water reactor(PWR),in which spacer grids serve as essential structural elements to support fuel rods,maintain fuel rod spacing,mix coolant,and resist external loads.The mechanical reliability of spacer grids is of great significance to ensure the integrity and safety of nuclear fuels,particularly under low-speed impact loads that may occur during transportation,handling,or accident scenarios.The dynamic stiffness of spacer grids is a key parameter that characterizes their ability to withstand dynamic forces and deformations,and a critical input for the safety analysis of fuel assemblies under accident conditions like seismic events or loss of coolant accident(LOCA).Currently,the estimation of dynamic stiffness for spacer grids primarily relies on dynamic stiffness testing,which involves measuring impact force,impact velocity,and the period of impact pulse.These measurements are used to derive the dynamic stiffness through various analytical methods.However,there is a lack of comprehensive discussions on the differences and error sources between different estimation methods.The gap in understanding has led to the absence of a standardized estimation procedure,which could potentially introduce uncertainties in the safety assessments of fuel assemblies.Addressing these uncertainties is crucial for improving the accuracy and reliability of dynamic stiffness estimations.In this paper,the dynamic stiffness testing of a specific type of spacer grid was conducted,aiming to obtain impact loads,impact velocity,and the period of impact pulse.Two primary approaches were employed to estimate the dynamic stiffness,i.e.,the energy-based method(including both direct and iterative calculations)and the periodic-based methods.The energy-based method estimates the dynamic stiffness of a spacer grid relying on the principle of energy conservation,while the periodic-based method relies on the period of an impact pulse.The error sources associated with each estimation method were discussed,respectively.A more stable estimation could be obtained by the energy-based method based on the current vehicle-impact testing system,where the relative error by direct or iterative calculations is around 12%or 16%.Additionally,the error transfer characteristics were thoroughly examined,which describe how errors in measured parameters affecting the calculations of other parameters in the model.A profound amplification effect could be expected when the error of external dynamic stiffness(the dynamic stiffness of a spacer grid obtained by the current testing)being transferred to internal dynamic stiffness.But the error would regress to around 5%when it further transfers to the estimation of impact loads of a fuel assembly.By identifying and quantifying these errors,the paper provides valuable insights into the improvement of the accuracy of dynamic stiffness estimations.This could further support more reliable safety assessments of fuel assemblies under accident conditions.</p></div>
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7200457485" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">优先做接触与简化模型的有效范围及误差基准；POD事件触发须取得非线性数据后再推进。碎片床/载荷跨尺度映射工作量大，列长期。以下是独立研究策划，不保证新颖性或发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>近期优先：先建立可复现误差基准</span><h3>接触状态约束下的反应堆部件模型简化有效范围</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>既有轴对称、梁/弹簧替代和接触研究很多；可检验缺口是开闭、偏心与热变形变化后，哪些简化仍能保持局部压力/磨损及峰值应力。</p></section>
+            <section><h4>为什么值得开展</h4><p>适合现有ANSYS能力，但只用Mechanical重新算相同案例或展示更少网格不足以形成贡献。</p></section>
+            <section><h4>建议工作</h4><ol><li>从本日绕丝接触、格架动刚度与二维/三维磨损对照选择一个部件，获取可用参数。</li><li>全实体参照分别独立验证；比较轴对称、梁/弹簧、局部子模型，避免把全模型称真值而无网格/实测校核。</li><li>留出未用于标定的预紧、偏心、温度和振幅，报告局部压力、峰值应力/位移、磨痕及成本。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>可复现实验/全模型对照数据和简化适用域。</li><li>若相对合理基线有效，提出状态感知的连接等效或误差指示量。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>中文绕丝接触/简化流致振动/二维三维磨损/格架动刚度</li><li>英文核主泵热弹流支点接触</li></ul></div><div><h4>主要风险</h4><ul><li>实验接触压力和磨损系数不易取得；参数反演可能不唯一。</li><li>模态或平均温度拟合很好仍会漏掉接触热点；二维简化已有大量相关工作。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>基准和数据取得后开展</span><h3>热—结构降阶模型的接触事件触发重算与失效识别</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>POD及非线性均匀化已有研究；待验证的是接触开闭、滑移或边界突变时，何时必须回到高保真求解才能控制峰值应力/间隙误差。</p></section>
+            <section><h4>为什么值得开展</h4><p>具有跨POD与Mechanical方向的潜在方法价值；必须优于全局POD和已有分状态基，不能只移植NWID名字。</p></section>
+            <section><h4>建议工作</h4><ol><li>建立含真实单边接触和温度相关材料的FOM，不把第31课线性两模态例子当复杂模型成果。</li><li>训练按物理工况划分，留出开闭转换和热边界突变。</li><li>比较全局/分状态POD与事件触发回退，记录误差、守恒和总成本。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>可拒绝范围外预测的触发指标及状态分区。</li><li>含离线求解、接触迭代、基更新的完整成本与安全量误差基准。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日NWID自适应耦合与SCC结构保持求解</li><li>中文非线性接触简化及辐照夹持力退化</li><li>前日POD训练/测试数据链</li></ul></div><div><h4>主要风险</h4><ul><li>接触不光滑可能导致频繁回退而失去加速。</li><li>事件控制已有相关方法，须系统查新并明确数学差异。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>长期：需要专用数据及多相求解能力</span><h3>事故碎片形成状态向碎片床或结构载荷映射的不确定性</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>预混合五场及DEM–VOF形成模型已有；待核实缺口是粒径/孔隙率和气体源不确定性在床形成、再淹没或结构载荷中的传播及守恒映射。</p></section>
+            <section><h4>为什么值得开展</h4><p>潜在跨分类研究，但工作量显著超过单个Mechanical接触例子，不将压力载荷映射或碎片床形成自动当可冷却创新。</p></section>
+            <section><h4>建议工作</h4><ol><li>明确对象是水冷堆熔融物还是钠冷快堆事故碎片，介质/物性不同不可直接拼接。</li><li>用公开预混合/形成基准验证粒径及质量能量，再选定只做结构压力或只做床形成的窄问题。</li><li>建立有出处的时空压力或粒径分布映射，并执行不确定性传播。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>守恒且可追溯的跨尺度数据接口。</li><li>如果独立验证通过，再讨论气体源与粒径变化对载荷/床形态的影响。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>本日SEINA-3D氢气源压力敏感性与碎片粒径</li><li>专项碎片床形成查新</li></ul></div><div><h4>主要风险</h4><ul><li>床层干涸/淬冷数据、物性和多相闭合难获取。</li><li>钠与水冷事故机理不一致；缩比压力不应直接作为原型载荷。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">联网快速查新确认PCMI验证、二维边界改进、组件降阶及碎片床形成已有工作。已按研究基础与数据成本重新排序；部分出版社403，依据公开原始概要或当日真实摘要，不冒充全文查新。</p><p class="research-note">检索范围：PCMI/轴对称边界/接触与简化验证：OECD/NEA、出版社概要；组件蠕变降阶与事件触发更新：原始出版社、当日NWID摘要；碎片床粗粒化形成与预混合：Taylor &amp; Francis、当日SEINA-3D摘要　检索时间：2026-10-14T18:37:46.776080+08:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>近期优先：先建立可复现误差基准</span><h3>接触状态约束下的反应堆部件模型简化有效范围</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 基于已有工作收窄创新主张和可实施范围</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>PCMI验证、裂纹轴对称边界、燃料组件降阶均已有基线。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>既有轴对称、梁/弹簧替代和接触研究很多；可检验缺口是开闭、偏心与热变形变化后，哪些简化仍能保持局部压力/磨损及峰值应力。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>适合现有ANSYS能力，但只用Mechanical重新算相同案例或展示更少网格不足以形成贡献。</p></section>
+            <section><h4>建议论文切口</h4><p>以开闭状态和非均匀载荷的局部响应误差为主要贡献，软件作为实现工具。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>峰值/平均量分开，热和机械连接分别核对。</li><li>罚刚度、接触网格、时间步与物理参数敏感性独立。</li><li>至少一个未参与拟合的实验或可信独立基准。</li></ul><h4>新颖性风险</h4><ul><li>实验接触压力和磨损系数不易取得；参数反演可能不唯一。</li><li>模态或平均温度拟合很好仍会漏掉接触热点；二维简化已有大量相关工作。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://www.oecd.org/en/publications/benchmark-study-on-pellet-cladding-mechanical-interaction-in-light-water-reactor-fuel-volume-2_05353d10-en.html" target="_blank" rel="noopener">Benchmark Study on Pellet-Cladding Mechanical Interaction in Light Water Reactor Fuel, Volume 2（2024）↗</a><p>已有多程序PCMI试验验证基准，平台选择不是新颖性。</p></li><li><a href="https://doi.org/10.1016/j.jnucmat.2025.156101" target="_blank" rel="noopener">An azimuthal contact and free-centerline boundary condition for cracked fuel pellets in 2D axisymmetric models（2025）↗</a><p>已有针对裂纹燃料二维轴对称边界的改进；不能把普通轴对称或接触替代称首创。本次出版社搜索索引可见概要，直连403，不声称阅读全文。</p></li><li><a href="https://doi.org/10.1016/j.nucengdes.2022.111828" target="_blank" rel="noopener">A new reduced order model to represent the creep induced fuel assembly bow in PWR cores（2022）↗</a><p>已有基于非线性均匀化的组件弯曲降阶，试图改进简单梁替代；单纯梁化或做POD不能主张首创。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>基准和数据取得后开展</span><h3>热—结构降阶模型的接触事件触发重算与失效识别</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 基于已有工作收窄创新主张和可实施范围</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>组件蠕变降阶与输运燃耗事件触发重算均已有研究，二维/梁化也非新方法。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>POD及非线性均匀化已有研究；待验证的是接触开闭、滑移或边界突变时，何时必须回到高保真求解才能控制峰值应力/间隙误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>具有跨POD与Mechanical方向的潜在方法价值；必须优于全局POD和已有分状态基，不能只移植NWID名字。</p></section>
+            <section><h4>建议论文切口</h4><p>为接触状态与局部安全量建立专属误差指示量，不把蒙卡/燃耗统计量直接搬用。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>相同预算和调优基线对照；独立工况测试。</li><li>应力/接触压力/间隙、能量/反力平衡共同检查。</li><li>包括最差工况、错误拒绝及错误接受率，不只报平均误差。</li></ul><h4>新颖性风险</h4><ul><li>接触不光滑可能导致频繁回退而失去加速。</li><li>事件控制已有相关方法，须系统查新并明确数学差异。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.nucengdes.2022.111828" target="_blank" rel="noopener">A new reduced order model to represent the creep induced fuel assembly bow in PWR cores（2022）↗</a><p>已有基于非线性均匀化的组件弯曲降阶，试图改进简单梁替代；单纯梁化或做POD不能主张首创。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2026.112881" target="_blank" rel="noopener">Adaptive coupling of transport and depletion using the neutronically weighted inventory deviation metric（2026）↗</a><p>本日阅读已有事件指标控制重算思想；是输运燃耗，不可未经推导直接替代接触误差指标。</p></li><li><a href="https://www.oecd.org/en/publications/benchmark-study-on-pellet-cladding-mechanical-interaction-in-light-water-reactor-fuel-volume-2_05353d10-en.html" target="_blank" rel="noopener">Benchmark Study on Pellet-Cladding Mechanical Interaction in Light Water Reactor Fuel, Volume 2（2024）↗</a><p>已有多程序PCMI试验验证基准，平台选择不是新颖性。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>长期：需要专用数据及多相求解能力</span><h3>事故碎片形成状态向碎片床或结构载荷映射的不确定性</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 基于已有工作收窄创新主张和可实施范围</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>预混合与粗粒化多相床形成均有新近研究；相关工作数量不能证明研究空白。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>预混合五场及DEM–VOF形成模型已有；待核实缺口是粒径/孔隙率和气体源不确定性在床形成、再淹没或结构载荷中的传播及守恒映射。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>潜在跨分类研究，但工作量显著超过单个Mechanical接触例子，不将压力载荷映射或碎片床形成自动当可冷却创新。</p></section>
+            <section><h4>建议论文切口</h4><p>先建立同介质的形成/载荷映射与误差预算，避免同时承诺蒸汽爆炸、床形成和可冷却全流程。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>质量/能量/粒径统计与已知基准一致。</li><li>气体源、网格和模型闭合分别敏感性分析。</li><li>压力映射核对时间分辨率、空间相关和结构局部峰值；床分析另需独立热工验证。</li></ul><h4>新颖性风险</h4><ul><li>床层干涸/淬冷数据、物性和多相闭合难获取。</li><li>钠与水冷事故机理不一致；缩比压力不应直接作为原型载荷。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2026.112926" target="_blank" rel="noopener">Development and validation of the premixing-phase model in SEINA-3D（2026）↗</a><p>本日五场预混合与FARO验证给出粒径、质量/能量和压力状态，不是碎片床可冷却验证。</p></li><li><a href="https://doi.org/10.1080/00223131.2026.2729212" target="_blank" rel="noopener">Numerical study of a coarse-grained DEM–VOF framework for debris bed formation（2026）↗</a><p>已有钠冷快堆事故碎片床形成的粗粒化多相框架；形成再现并不证明干涸可冷却性。本次可见摘要概要，全文直连访问失败。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><section class="research"><h2>待补摘要线索（不计阅读篇数）</h2><article class="opportunity"><details><summary>查看 12 篇待核对文献</summary><ol class="source-list"><li><a href="https://www.x-mol.com/paper/2107995950659612672" target="_blank" rel="noopener">Neutronic Investigation of Y 2 Sn 2 O 7 and Y 2 TiO 5 as Alternative Cladding Materials in a VVER-1200 Reactor Using the Serpent Monte Carlo Code ↗</a><p>10.1080/00295450.2026.2737536 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2110057695467024384" target="_blank" rel="noopener">Scattering-coupled adaptive source biasing for deep-penetration neutron arrival-spectrum calculations ↗</a><p>10.1016/j.anucene.2026.112910 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2109450223633248256" target="_blank" rel="noopener">Exploring the effects of dual-layered Cr/Nb coating thickness on the corrosion and annealing response characteristics of an accident-tolerant Zr fuel cladding material ↗</a><p>10.1016/j.net.2026.104776 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2109450222110715904" target="_blank" rel="noopener">Transient Dynamic Response of a Thorium-Based Molten Salt Reactor Under Reactivity Insertion followed by Loss of Flow and Loss of Heat Sink ↗</a><p>10.1016/j.net.2026.104779 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2107552681305583616" target="_blank" rel="noopener">Numerical study on direct contact condensation of countercurrent subcooled water-steam flow in a steam-filled vertical rectangular narrow channel ↗</a><p>10.1016/j.anucene.2026.112876 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2106299940860080128" target="_blank" rel="noopener">Core characteristics of a modified pebble-bed high-temperature gas-cooled reactor design ↗</a><p>10.1016/j.nucengdes.2026.115233 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2107995949728477184" target="_blank" rel="noopener">High-Fidelity Multiphysics Modeling of the Molten Salt Fast Reactor with Applications for Reduced-Order Models ↗</a><p>10.1080/00295450.2026.2735544 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2104365295019175940" target="_blank" rel="noopener">Response-dependent layer ordering in fixed-inventory compact neutron–photon shields: Exhaustive OpenMC benchmarks at 2.45 and 14.1 MeV ↗</a><p>10.1016/j.net.2026.104719 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2106222091918651392" target="_blank" rel="noopener">Temperature–based quantitative detection of micro–internal leakage in heat–cycle isolation valves of nuclear power plants ↗</a><p>10.1016/j.anucene.2026.112872 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2106199791215325184" target="_blank" rel="noopener">The fission matrix method for criticality search in Heat-Pipe Micro Reactors ↗</a><p>10.1016/j.anucene.2026.112847 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2103030702156492800" target="_blank" rel="noopener">One dimensional model for the solid and mushy crust surrounding a terminal debris corium Pool ↗</a><p>10.1016/j.nucengdes.2026.115226 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li><li><a href="https://www.x-mol.com/paper/2106245946087321600" target="_blank" rel="noopener">Peridynamic assessment of damage evolution in a full UO2 fuel pellet under RIA-like equivalent thermal-expansion loading ↗</a><p>10.1016/j.nucengdes.2026.115205 · 未纳入：缺完整摘要、仅背景或与优先核工程对象联系不足；未生成虚构翻译。</p></li></ol></details></article></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>全部历史中英文日报及账本按DOI、规范题名、来源URL去重，22篇本日记录无重复。课题组ORCID核查8条，无合格新增。POD/MOC/碎片床及新增接触主题均执行查询；本日无新增完整POD摘要及明确Mechanical原生英文论文，不用一般工业论文凑数。定时提醒保持暂停，未写Zotero/Notion。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
