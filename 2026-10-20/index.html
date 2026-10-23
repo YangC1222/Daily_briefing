@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-20 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-20 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-20</strong><span>本期日期</span></div><div class="stat"><strong>3</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>2</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 5</button><button data-filter="xmol">X-MOL 3</button><button data-filter="cqvip">维普 2</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-20，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文3篇、中文2篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="竖直窄矩形通道空泡份额及分布实验 experimental study of void fraction and its distribution characteristics in vertical narrow rectangular channels 窄通道共性实验 annals of nuclear energy · 2026-10-11 · teng wang, yuhao zhang, yuepeng ma, lu liu, tao zhang 窄通道共性实验 漂移流模型 drift-flux model 用相分布参数和相间滑移速度关联两相平均流量与空泡份额。 高速摄影数据和修正漂移流模型连接窄通道局部相分布与截面平均量。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>窄通道共性实验</span><span>窄通道共性实验</span></div>
+          <h2>竖直窄矩形通道空泡份额及分布实验</h2>
+          <p class="title-en">Experimental study of void fraction and its distribution characteristics in vertical narrow rectangular channels</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-11 · Teng Wang, Yuhao Zhang, Yuepeng Ma, Lu Liu, Tao Zhang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-20；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>高速摄影数据和修正漂移流模型连接窄通道局部相分布与截面平均量。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>同一测量框架比较两种宽高比及PDF形态变化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未明确具体堆型，本文仅作为板状通道共性热工方法；空气水条件不能直接替代高压沸腾。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>在同一几何上比较图像分割阈值引起的空泡份额偏差，再评价漂移流参数的迁移。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>漂移流模型<small>drift-flux model</small></h4><p>用相分布参数和相间滑移速度关联两相平均流量与空泡份额。</p><p class="context"><b>本文语境</b> 高速摄影数据和修正漂移流模型连接窄通道局部相分布与截面平均量。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>窄矩形通道两相流中的界面演化和流型转换受惯性、黏性、毛细力耦合作用影响，关系到紧凑换热。本文用高速摄影研究15×2 mm²和50×2 mm²竖直窄矩形通道内向上气液流，利用MATLAB图像处理识别流型并提取两相参数。识别四类流型，得到局部空泡份额分布和瞬时截面空泡份额的概率密度。空泡份额从壁面向中心持续增加；固定液速、增加气速时，概率密度由低空泡份额的尖峰向更高空泡份额的宽分布移动，主峰逐渐发展为双峰。提出修正漂移流模型预测时间平均截面空泡份额，对两通道与实验的误差均在10%以内。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Two-phase flow in narrow rectangular channels is of continued interest in multiphase flow research because of its importance in compact heat transfer applications. Gas-liquid flow in these geometries exhibits complex interfacial behavior and flow-regime transitions driven by the interactions of inertial, viscous, and capillary forces, which strongly affect heat and mass transfer performance. In this study, visualization experiments using high-speed photography were conducted to investigate vertical upward gas–liquid two-phase flow in narrow rectangular channels with cross-sectional dimensions of 15 × 2 mm2 and 50 × 2 mm2. A MATLAB-based image-processing procedure was used to identify flow patterns and extract two-phase flow parameters. Four distinct flow patterns were identified, and the corresponding local void fraction distributions and probability density functions (PDFs) of instantaneous cross-sectional void fraction were obtained. The results showed that the void fraction increased consistently from the wall toward the channel center. At a fixed liquid flow velocity, increasing the gas flow velocity shifted the PDF from a sharp peak at low void fraction to a broader distribution at higher void fraction, with the dominant peak gradually evolving into a bimodal distribution. A modified drift-flux model was developed to predict the time-averaged cross-sectional void fraction, and the predicted values agreed well with the experimental data, with errors within 10 % for both channels.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064459814023168" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112927" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064459814023168" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="模糊聚类辅助adaboost与随机森林预测chf critical heat flux prediction in water-cooled vertical tubes using fuzzy-clustering-assisted adaboost and random forest models chf数据与机器学习 annals of nuclear energy · 2026-10-09 · farhan labib arnab, tamim muhammad rayeed, ali mahdi, s.m. nymul hasan anik chf数据与机器学习 模糊c均值聚类 fuzzy c-means clustering 允许一个样本以不同隶属度属于多个簇的聚类方法。 模糊聚类对rf收益大于对adaboost的收益，且分区的物理意义尚不明确。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>CHF数据与机器学习</span><span>CHF数据与机器学习</span></div>
+          <h2>模糊聚类辅助AdaBoost与随机森林预测CHF</h2>
+          <p class="title-en">Critical heat flux prediction in water-cooled vertical tubes using fuzzy-clustering-assisted AdaBoost and random forest models</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-09 · Farhan Labib Arnab, Tamim Muhammad Rayeed, Ali Mahdi, S.M. Nymul Hasan Anik</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-20；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>模糊聚类对RF收益大于对AdaBoost的收益，且分区的物理意义尚不明确。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>比较同一数据划分下聚类与回归的组合效应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>固定随机划分不能证明跨实验来源泛化；出口含汽率是否由CHF反推必须逐源核查。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>进一步解释模糊聚类分区的物理意义。</li></ul><b>分析推导</b><ul><li>使用按实验室留一的验证，并去除由目标热平衡推导的输入，重新比较算法排序。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>模糊c均值聚类<small>fuzzy c-means clustering</small></h4><p>允许一个样本以不同隶属度属于多个簇的聚类方法。</p><p class="context"><b>本文语境</b> 模糊聚类对RF收益大于对AdaBoost的收益，且分区的物理意义尚不明确。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>水冷竖直管CHF准确预测关系到热工安全，许多关联式只适用于有限工况。本文以4384组实验，评估模糊c均值聚类（FCM）是否改善数据驱动CHF预测。输入为管径、加热长度、压力、质量通量、入口过冷度和出口含汽率。在固定70:30训练—测试划分上比较Elastic Net、K近邻、随机森林、AdaBoost及FCM辅助模型。独立模型用训练集五折交叉验证调参；FCM模型以内部分割联合优化聚类与回归。聚类输入不包含CHF，隶属度用于分解CHF目标。FCM-AdaBoost测试相对均方根误差rRMSE为18.1%，均方根相对误差RMSRE为11.7%，总体最优。FCM使RF的RMSRE从65.9%降至16.4%；相对独立AdaBoost从16.1%降至11.7%的改善较小。结果支持对本异质数据集采用模糊预聚类，但分区物理解释仍待研究。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Accurate prediction of critical heat flux (CHF) in water-cooled vertical tubes is essential for thermal–hydraulic safety, yet many empirical and mechanistic methods are valid only within restricted operating ranges. This study evaluates whether fuzzy c-means (FCM) clustering improves data-driven CHF prediction using 4,384 experimental observations from vertical round tubes. Six predictors were considered: tube diameter, heated length, pressure, mass flux, inlet subcooling, and exit quality. Elastic Net, k-nearest neighbors, random forests (RF), AdaBoost, FCM-assisted RF, and FCM-assisted AdaBoost were evaluated using a common fixed 70:30 training-test partition. Hyperparameters of the standalone models were optimized by five-fold cross-validation within the training set, whereas the FCM-assisted models used an internal fitting-validation split for joint optimization of the clustering and regression components. FCM membership values were used to decompose the CHF target without including CHF in the clustering inputs. FCM-assisted AdaBoost achieved the best test performance, with a relative root-mean-square error (rRMSE) of 18.1 % and a root-mean-square relative error (RMSRE) of 11.7 %. FCM markedly reduced the RMSRE of RF, from 65.9 % to 16.4 %, whereas the improvement over standalone AdaBoost was smaller (RMSRE: 16.1 % to 11.7 %). These results demonstrate that fuzzy pre-clustering can improve predictive performance for the present heterogeneous CHF dataset, although the physical interpretation of the resulting fuzzy partitions requires further investigation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064457687511040" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112922" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064457687511040" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="规范一致dod构建浮力自适应棒束降阶代理 a buoyancy-adaptive reduced-order surrogate for heated rod-bundle transients using gauge-consistent deep orthogonal decomposition pod/rom与棒束热工 annals of nuclear energy · 2026-10-09 · xinheng zhao, minjun peng, guangliang chen, xiang zhang pod/rom与棒束热工 规范一致基底 gauge-consistent basis 将表示同一子空间但旋转或符号不同的基底对齐，保证参数间系数可比较。 浮力自适应dod在相同系数映射器下改善横向二次流重构。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>POD/ROM与棒束热工</span><span>POD/ROM与棒束热工</span></div>
+          <h2>规范一致DOD构建浮力自适应棒束降阶代理</h2>
+          <p class="title-en">A buoyancy-adaptive reduced-order surrogate for heated rod-bundle transients using gauge-consistent deep orthogonal decomposition</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-09 · Xinheng Zhao, Minjun Peng, Guangliang Chen, Xiang Zhang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-20；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>浮力自适应DOD在相同系数映射器下改善横向二次流重构。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区分基底适应和系数回归，并以规范一致对齐缓解参数变化时基底旋转问题。</li></ul></section>
+        <section><h3>不足</h3><ul><li>作者仓库公开核心代码但未公开大型几何、网格与CFD快照；还需评价外推、守恒与热点误差。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>先复现公开代码接口，用自己可获得的棒束快照做POD/DOD同模态数对照，单列离线数据成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>规范一致基底<small>gauge-consistent basis</small></h4><p>将表示同一子空间但旋转或符号不同的基底对齐，保证参数间系数可比较。</p><p class="context"><b>本文语境</b> 浮力自适应DOD在相同系数映射器下改善横向二次流重构。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>加热棒束瞬态耦合流量、温度及浮升力驱动的二次流，难以由固定全局降阶基底表示。POD对近线性强迫对流有效，但混合对流中横向结构随浮力状态变化，需要自适应基底。本文以规范一致的深度正交分解（DOD）建立棒束瞬态热工水力代理，重构三分量速度及温度场，并耦合具有数据标定系数的冷却剂停留时间热滞后模型及准稳态水力闭合。以处理后的稳态工况及瞬态CFD评价。与使用相同系数映射器的全局POD相比，DOD更准确地重构浮力敏感的横向速度。在均匀及偏置加热下，流量降低与升高瞬态中均能捕获主要轴向流动和温度演化。研究展示浮力自适应基底重构非线性横向结构的收益，为棒束实时数字孪生从等温水力拓展至受热浮力瞬态提供路径。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Heated rod-bundle transients couple changes in flow rate, temperature, and buoyancy-driven secondary motion, making them difficult to represent with a fixed global reduced basis. Proper orthogonal decomposition (POD) works well for nearly linear forced-convection hydraulics, but the transverse structures that develop under mixed convection vary with the buoyancy state and require a basis that adapts to the operating condition. This study develops a buoyancy-adaptive reduced-order surrogate for transient rod-bundle thermal-hydraulics using gauge-consistent deep orthogonal decomposition (DOD). The surrogate reconstructs the three velocity components and the temperature field, and is coupled with a coolant-residence-time-based thermal-lag model with a data-calibrated prefactor and a quasi-steady hydraulic closure. It is evaluated against processed steady operating states and transient CFD simulations. Compared with a global POD using the same coefficient mapper, the DOD surrogate gives more accurate reconstructions of the buoyancy-sensitive transverse velocity components. Heated flow-decrease and flow-increase tests show that the surrogate captures the main axial-flow response and temperature evolution under both uniform and skewed heating conditions. These results demonstrate the benefit of buoyancy-adaptive reduced bases for reconstructing nonlinear transverse flow structures in heated rod-bundle transients and establish a practical route for extending real-time rod-bundle digital twins from isothermal hydraulics to heated buoyant transients.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064450011934720" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112896" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064450011934720" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于遗传算法与强化学习的核反应堆堆芯优化方法对比研究  反应堆中文研究 现代应用物理 · 2025 · 熊露磊 刘仕倡
+xiong lulei;liu shichang(college of nuclear science and technology,north china electric power university,beijing 100096,china)  强化学习 reinforcement learning 通过与环境交互、基于回报学习决策策略的方法。 遗传算法与强化学习分别搜索单棒富集度和堆芯组件排布，比较寻优和稳定性。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>基于遗传算法与强化学习的核反应堆堆芯优化方法对比研究</h2>
+          
+          <p class="meta">现代应用物理 · 2025 · 熊露磊 刘仕倡
+XIONG Lulei;LIU Shichang(College of Nuclear Science and Technology,North China Electric Power University,Beijing 100096,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>遗传算法与强化学习分别搜索单棒富集度和堆芯组件排布，比较寻优和稳定性。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用统一蒙卡环境和GA基线评估RL的潜力。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要仅称初步研究，未给采样预算、泛化误差和多次随机种子结果，不能认定RL优于GA。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>固定总输运调用数，跨初始装载重复试验，再加入峰值功率硬约束。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>强化学习<small>reinforcement learning</small></h4><p>通过与环境交互、基于回报学习决策策略的方法。</p><p class="context"><b>本文语境</b> 遗传算法与强化学习分别搜索单棒富集度和堆芯组件排布，比较寻优和稳定性。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为提升核反应堆堆芯设计的优化效率,本文开展了基于遗传算法(genetic algorithm,GA)与强化学习(reinforcement learning,RL)的中子学参数优化方法的初步研究。研究选取压水堆单燃料棒的富集度搜索与堆芯组件排布优化两大典型问题,结合蒙特卡罗中子输运方法,构建适用于强化学习求解的环境模型并分别采用GA和RL搜索寻优。以稳定基线的遗传算法作为对照,对比分析两种方法在搜索能力、收敛速度和结果稳定性等方面的差异。结果表明:强化学习在模型泛化能力与目标函数依赖性等方面显示出一定潜力。本文研究为强化学习在核反应堆优化设计中的应用提供了初步验证和方法基础并为后续多目标、动态约束下的堆芯智能优化提供了参考思路。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202648975" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="全堆芯三维时空动力学中子输运程序saafcgsn应用研究  反应堆中文研究 核动力工程 · 2025 · 姜夺玉 许鹏 江新标 胡田亮 王立鹏 曹璐 李达
+jiang duoyu;xu peng;jiang xinbiao;hu tianliang;wang lipeng;cao lu;li da(rocket force university of engineering,xi’an,710025,china;state key laboratory of intense pulsed radiation simulation and effect,northwest institute of nuclear technology,xi’an,710024,china)  jfnk jacobian-free newton–krylov 用矩阵向量作用近似避免显式形成jacobian的非线性求解方法。 moose中的saafcgsn以有限元和jfnk求解三维时空输运，用c5g7-td验证控制棒尖齿效应处理。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>全堆芯三维时空动力学中子输运程序SAAFCGSN应用研究</h2>
+          
+          <p class="meta">核动力工程 · 2025 · 姜夺玉 许鹏 江新标 胡田亮 王立鹏 曹璐 李达
+Jiang Duoyu;Xu Peng;Jiang Xinbiao;Hu Tianliang;Wang Lipeng;Cao Lu;Li Da(Rocket Force University of Engineering,Xi’an,710025,China;State Key Laboratory of Intense Pulsed Radiation Simulation and Effect,Northwest Institute of Nuclear Technology,Xi’an,710024,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MOOSE中的SAAFCGSN以有限元和JFNK求解三维时空输运，用C5G7-TD验证控制棒尖齿效应处理。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>残差形式连接稳态、瞬态输运和先驱核方程，降低显式Jacobian开销。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给局部功率误差、时间步收敛与总内存数值；本方法是SN而非MOC。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>以相同能群和时间步与MOC比较瞬态局部功率及包含迭代的成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>JFNK<small>Jacobian-free Newton–Krylov</small></h4><p>用矩阵向量作用近似避免显式形成Jacobian的非线性求解方法。</p><p class="context"><b>本文语境</b> MOOSE中的SAAFCGSN以有限元和JFNK求解三维时空输运，用C5G7-TD验证控制棒尖齿效应处理。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>当前为了应对新型先进小堆技术的发展,反应堆物理数值计算程序对三维全堆芯输运计算的要求不断提高。本文基于MOOSE平台开发了全堆芯三维时空动力学中子输运程序SAAFCGSN,该程序基于有限元方法实现空间变量离散,基于残差形式实现堆芯稳态、瞬态中子输运方程以及缓发中子先驱核方程的求解,采用JFNK方法避免直接求解Jacobin矩阵,从而提高计算速度,降低内存占用。为了检验程序的瞬态计算能力,本文使用经济发展与合作组织核能机构(OECD/NEA)C5G7-TD系列基准题验证了程序的可靠性,并与高保真确定论中子输运程序及蒙特卡罗程序模拟结果进行比较分析。研究表明,SAAFCGSN程序计算精度较高,可以有效处理控制棒尖齿效应,并得到详细的三维堆芯中子注量率分布,满足先进小堆的稳态及瞬态中子学计算需求。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7200081815" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>竖直窄矩形通道空泡份额及分布实验：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：摘要未明确具体堆型，本文仅作为板状通道共性热工方法；空气水条件不能直接替代高压沸腾。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>在同一几何上比较图像分割阈值引起的空泡份额偏差，再评价漂移流参数的迁移。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Experimental study of void fraction and its distribution characteristics in vertical narrow rectangular channels | 10.1016/j.anucene.2026.112927</li><li>高速摄影数据和修正漂移流模型连接窄通道局部相分布与截面平均量。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>有意义，但应限定为可验证的误差研究</span><h3>棒束浮力自适应降阶的验证边界</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 不把普通POD替代CFD本身视为新意</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>作者已经公开DOD核心训练和推理实现，包含参数相关基底、规范对齐及POD比较。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>在可获得的独立数据上检验热点温度、横向速度和守恒误差，而不仅是全局重构均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>复用方法的研究价值依赖独立验证、外推失效识别和实际热裕量关联。</p></section>
+            <section><h4>建议论文切口</h4><p>以少量公开或自建可验证棒束快照比较全局POD、分区POD与DOD在流量下降过程的最坏局部误差。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>按工况整组留出测试，并统计离线计算与训练成本。</li><li>核对原始数据库授权及取得条件。</li></ul><h4>新颖性风险</h4><ul><li>公开仓库并不含几何、网格和CFD快照，不能声称可一键完整复现。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://github.com/ripple-zxh/Buoyancy-Adaptive-DOD" target="_blank" rel="noopener">Buoyancy-Adaptive-DOD 作者代码仓库（2026核验；关联论文卷年2027）↗</a><p>核心方法已实现，大型几何/网格/快照需另行申请。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
