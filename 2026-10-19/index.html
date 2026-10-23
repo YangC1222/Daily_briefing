@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-19 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-19 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-19</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>2</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 6</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 2</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-19，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文4篇、中文2篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="考虑光学输运的geant4.11 ne213中子响应模拟与验证 high-precision simulation of ne213 neutron response using geant4.11 with integrated optical transport: validation against experiments and monte carlo codes 中子输运与测量 annals of nuclear energy · 2026-10-19 · ahad ghavami, mojtaba tajik 中子输运与测量 光学光子输运 optical photon transport 跟踪闪烁光子在材料、界面与光导中的传播和损失。 将中子反应与光导中的光学光子输运联合建模，并以实验及另一程序作比较。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>中子输运与测量</span><span>中子输运与测量</span></div>
+          <h2>考虑光学输运的GEANT4.11 NE213中子响应模拟与验证</h2>
+          <p class="title-en">High-precision simulation of NE213 neutron response using GEANT4.11 with integrated optical transport: Validation against experiments and Monte Carlo codes</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-19 · Ahad Ghavami, Mojtaba Tajik</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-19；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>将中子反应与光导中的光学光子输运联合建模，并以实验及另一程序作比较。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>贡献在于显式计入探测链光学响应，而非仅使用沉积能量。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给出各能点误差或光学表面参数不确定度；不能据此推广到任意探测器。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>固定中子源后分别扫描光导长度、表面反射参数，分离核数据和光学标定误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>光学光子输运<small>optical photon transport</small></h4><p>跟踪闪烁光子在材料、界面与光导中的传播和损失。</p><p class="context"><b>本文语境</b> 将中子反应与光导中的光学光子输运联合建模，并以实验及另一程序作比较。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究考虑探测器—光导组件中的光传输，精确模拟液态有机闪烁体NE213（BC501A）对15–800 MeV快中子的响应函数。以往研究主要计算带电粒子沉积能量而忽略光传输；本文采用集成光学物理过程的GEANT4.11，考察光导几何、长度以及抛光和涂覆层类型对探测效率的影响。将结果与实验数据及MCNPX-PHOTRACK计算比较。在所研究构型和能区内，GEANT4能较准确地重现光学特性和中子相互作用，显式模拟光学光子输运时与实验的一致性尤其得到改善。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This research work accurately simulates the response function of a liquid organic scintillator NE213 (BC501A) detector to fast neutrons in the energy range from 15 MeV to 800 MeV, taking into account the light transport within the detector-lightguide assembly. In contrast to previous studies, which mainly focused on the energy deposited by charged particles and neglected the light transport; this investigation uses the new GEANT4.11 code, which has integrated optical physics functions. This allows an investigation of the effects of the geometry, length, and type of polished and painted lightguide layers on the detection efficiency. The results are compared with experimental data and the output of the multipurpose code MCNPX-PHOTRACK. The analysis shows that the GEANT4 code has a high ability to reproduce optical features and neutron interactions accurately and shows improved agreement with experimental data in the investigated configuration and energy range, particularly when optical photon transport is explicitly modeled.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761111049940992" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112957" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761111049940992" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="绕丝棒束中液态铅铋湍流混合的数值研究 numerical investigation on turbulent mixing of liquid lead-bismuth in wire-wrapped rod bundles 液态金属堆热工 annals of nuclear energy · 2026-10-19 · sipeng wang, hang zhang, jin chen, bao-wen yang, jae-ho jeong, kun zhuang 液态金属堆热工 间隙法向速度脉动 gap-normal velocity fluctuation 速度随机脉动在相邻子通道间隙法向的分量。 19棒绕丝铅铋棒束的雷诺应力投影可区分横流与湍流交换，传统混合参数存在方向不同的偏差。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>液态金属堆热工</span><span>液态金属堆热工</span></div>
+          <h2>绕丝棒束中液态铅铋湍流混合的数值研究</h2>
+          <p class="title-en">Numerical investigation on turbulent mixing of liquid lead-bismuth in wire-wrapped rod bundles</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-19 · Sipeng Wang, Hang Zhang, Jin Chen, Bao-Wen Yang, Jae-Ho Jeong, Kun Zhuang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-19；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>19棒绕丝铅铋棒束的雷诺应力投影可区分横流与湍流交换，传统混合参数存在方向不同的偏差。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提供从局部应力张量到子通道混合参数的可解释映射。</li></ul></section>
+        <section><h3>不足</h3><ul><li>结论来自给定棒束及所测流量，不能把百分偏差作为所有棒束的通用修正量。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>用公开棒束温度数据检验局部混合参数修正对热点温度而非仅平均温度的改善。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>间隙法向速度脉动<small>gap-normal velocity fluctuation</small></h4><p>速度随机脉动在相邻子通道间隙法向的分量。</p><p class="context"><b>本文语境</b> 19棒绕丝铅铋棒束的雷诺应力投影可区分横流与湍流交换，传统混合参数存在方向不同的偏差。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>准确预测铅铋共晶反应堆子通道温度，需要区分定向横向流动与随机湍流混合。本文采用经实验温度和压降关联式评估的雷诺应力模型，计算19棒绕丝棒束。将完整雷诺应力张量投影到各间隙的局部法向，并在首个绕丝节距下游统计。对节距328 mm的棒束，入口区下游间隙法向速度脉动近似周期变化。节距平均法向脉动速度与节距平均横向流速的比值，在间隙1约为0.50、间隙3约为0.40、间隙5和7约为0.12，随测试质量流量变化较小。CFD得到的内部混合参数比Cheng–Todreas预测高8.48%–10.43%，外围扫掠参数则低18.31%–18.38%。该方法为间隙尺度CFD结果与子通道混合闭合关系建立了定量联系。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Accurate prediction of subchannel temperatures in lead–bismuth eutectic reactors requires distinguishing directed crossflow from stochastic turbulent mixing. A Reynolds stress model, assessed against experimental temperatures and pressure-drop correlations, was applied to a 19-rod wire-wrapped bundle. The complete Reynolds stress tensor was projected onto the local normal direction of each gap, and quantitative statistics were evaluated downstream of the first wire-wrap pitch. For the 328 mm-pitch bundle, gap-normal velocity fluctuations exhibit approximately periodic variations downstream of the entrance region. The ratios of the pitch-averaged gap-normal fluctuating velocity to the pitch-averaged crossflow velocity are approximately 0.50 for Gap 1, 0.40 for Gap 3, and 0.12 for Gaps 5 and 7, with only minor variation across the tested mass flow rates. The CFD-derived internal mixing parameters are 8.48%-10.43% higher than the Cheng-Todreas predictions, whereas the peripheral sweeping parameters are 18.31%-18.38% lower. The proposed method provides a quantitative link between gap-resolved CFD results and subchannel mixing closures.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761110378852352" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112954" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761110378852352" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="自然对流管外蒸汽—空气凝结的几何与热参数耦合效应 comprehensive analysis of the coupled effects of geometric-thermal parameters on external steam–air condensation under natural convection 核电非能动排热 annals of nuclear energy · 2026-10-19 · daiyong song, nan zhang, ruihan jing, jia guo, zhongning sun, haozhi bian 核电非能动排热 壁面过冷度 wall subcooling 蒸汽饱和温度与凝结壁面温度之差。 实验将几何、低过冷度和不凝气体影响联合考虑，给出适用范围内的凝结关联式。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>核电非能动排热</span><span>核电非能动排热</span></div>
+          <h2>自然对流管外蒸汽—空气凝结的几何与热参数耦合效应</h2>
+          <p class="title-en">Comprehensive analysis of the coupled effects of geometric-thermal parameters on external steam–air condensation under natural convection</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-19 · Daiyong Song, Nan Zhang, Ruihan Jing, Jia Guo, Zhongning Sun, Haozhi Bian</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-19；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>实验将几何、低过冷度和不凝气体影响联合考虑，给出适用范围内的凝结关联式。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>补充低过冷条件下多几何变量耦合的数据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>±25%是相对本组实验的偏差范围，不等于独立装置上的预测置信区间。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>留出一种管长或倾角作外部验证，检查关联式跨几何迁移误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>壁面过冷度<small>wall subcooling</small></h4><p>蒸汽饱和温度与凝结壁面温度之差。</p><p class="context"><b>本文语境</b> 实验将几何、低过冷度和不凝气体影响联合考虑，给出适用范围内的凝结关联式。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在不凝性气体存在时，管外蒸汽凝结是核电站性能与安全中的重要传热传质过程。已有实验主要研究单管的孤立几何参数，对低过冷度关注较少。本文在受控条件下，系统改变单根水平或倾斜管的长度、直径和倾角，研究蒸汽—空气混合物凝结。压力为0.2–0.6 MPa，空气质量分数0.13–0.89，壁面过冷度4.9–87.5 K。凝结换热系数随压力升高而增加，随空气浓度升高而单调下降；随管长增加先降后升，在3 m处最小；管径减小、姿态从竖直转向水平时换热系数单调增加。在低压、高空气份额且低过冷度条件下，换热系数与过冷度正相关，对较大管径或倾角的3 m管尤其明显。建立了适用于多种几何和较宽过冷度范围的经验关联式，与实验数据的偏差在±25%以内。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Steam condensation on the external surface of tubes in the presence of non-condensable gases is a critical heat and mass transfer process, playing a vital role in nuclear power plant performance and safety assurance. Although prior experimental work has largely centered on isolated geometric parameters using single-tube configurations, limited attention has been paid to low subcooling conditions. To address this gap, the present study conducts systematic experiments on steam–air mixture condensation over a single horizontal or inclined tube, systematically varying tube geometry including length, diameter, and inclination under controlled operating conditions. Experiments span a pressure range of 0.2 ∼ 0.6 MPa, air mass fraction from 0.13 to 0.89, and wall subcooling between 4.9 ∼ 87.5 K. Key findings reveal that the condensation heat transfer coefficient (CHTC) exhibits a positive correlation with system pressure but declines monotonically as the air concentration increases. With increasing tube length, the CHTC initially decreases and then recovers, reaches a minimum at 3 m. It increases monotonically with decreasing tube diameter and with a change in inclination from vertical to horizontal. Under low pressure and high air fraction, a positive correlation between the CHTC and subcooling is observed in the low subcooling regime, notably for the 3 m tube with larger diameters or inclinations. Moreover, an empirical correlation applicable to various geometric conditions and a wider subcooling range was developed. Comparisons against existing correlations show that its prediction error falls within ± 25% relative to the experimental data.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761104041259008" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112934" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761104041259008" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="gains：gpu加速的csg连续能量蒙特卡罗中子程序 introducing gains, a gpu-accelerated continuous energy csg based neutron monte carlo simulation code 蒙特卡罗与gpu annals of nuclear energy · 2026-10-19 · paul weimer, b. märkisch, c. reiter 蒙特卡罗与gpu 线程束分歧 warp divergence 同一gpu线程束走不同执行分支而降低并行效率的现象。 gpu事件—历史混合、截面采样和几何缓存共同提升连续能量蒙卡效率。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>蒙特卡罗与GPU</span><span>蒙特卡罗与GPU</span></div>
+          <h2>GAINS：GPU加速的CSG连续能量蒙特卡罗中子程序</h2>
+          <p class="title-en">Introducing GAINS, a GPU-accelerated continuous energy CSG based neutron Monte Carlo simulation code</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-19 · Paul Weimer, B. Märkisch, C. Reiter</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-19；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>GPU事件—历史混合、截面采样和几何缓存共同提升连续能量蒙卡效率。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>贡献是输运工作流与几何/核数据布局的联合设计，不是MOC方法。</li></ul></section>
+        <section><h3>不足</h3><ul><li>加速比依赖不同硬件平台；存在由截面重采样导致的可追踪偏差，不能只比较壁钟时间。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>用相同核数据、相同统计精度比较总时间和局部反应率，并单列预处理及显存开销。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>线程束分歧<small>warp divergence</small></h4><p>同一GPU线程束走不同执行分支而降低并行效率的现象。</p><p class="context"><b>本文语境</b> GPU事件—历史混合、截面采样和几何缓存共同提升连续能量蒙卡效率。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>GAINS是一款面向全堆芯临界性与中子学性能优化、基于构造实体几何（CSG）的GPU连续能量蒙特卡罗中子程序。它采用事件—历史混合流程抑制GPU线程束分歧，以预计算累积分布函数替代概率密度函数，采用直接索引数据布局，并将递归CSG遍历展开为基于栈的球面射线步进过程，还引入可定制的局部距离缓存。精度与性能在Pu-239 Jezebel、带可移动铪吸收体的圆柱燃料元件及全堆芯晶格工业基准上评估。相对参考结果的有效增殖因子偏差分别为21 pcm、各棒位平均40 pcm和28 pcm，主要归因于截面重采样误差使能谱偏硬。在RTX 4090上，1.36亿粒子历史在燃料元件及全堆芯基准中分别耗时23.26 s和271.48 s；相对双路Xeon、160线程的Serpent 2，加速比分别为47.2和6.1。开启缓存后分别达到57.6和8.2。该方法在与CPU CSG程序保持一致的同时，支持通用硬件上的快速优化迭代。</p></div>
+          <div><h3>English abstract</h3><p lang="en">GAINS is a GPU-accelerated Constructive Solid Geometry (CSG)-based continuous energy Monte Carlo neutron simulation code, designed for full core optimization, with regard to criticality and neutronics reactor performance. GAINS combines a hybrid event-history workflow to curb warp divergence, replaces Probability Density Functions (PDFs) with precomputed Cumulative Distribution Functions (CDFs), direct-indexed data layouts, and unrolls recursive CSG traversal into a stack-based scheme, which is evaluated using a spherical ray-march algorithm. Additionally, GAINS incorporates a localized and customizable distance cache. Accuracy and performance are assessed on three problems: the PU-239 Jezebel critical benchmark, a cylindrical fuel-element case (Base) with a movable hafnium absorber, and a full-core lattice industry benchmark. GAINS reproduces reference trends with small, traceable biases keff of 21 pcm (Jezebel), 40 pcm average across control-rod positions (Base), and 28 pcm (Benchmark), primarily attributable to resampling inaccuracies in cross-section data leading to a faster spectrum. On an RTX 4090, GAINS completes 136 million histories in 23.26 s (Base) and 271.48 s (Benchmark), achieving 47.2× and 6.1× speed-ups over Serpent 2 on a dual-Xeon (160-thread) node, with significantly better cost-to-performance. Enabling the cache increases these speed-ups to an overall speed-up of 57.6x - 8.2x, respectively. The resulting capability enables fast, accurate neutronics calculations suitable for optimization loops and rapid design iteration on commodity hardware, while maintaining agreement with CSG-based CPU codes.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761096248242176" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112919" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761096248242176" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="反应堆蒙特卡罗程序rmc在先进核能系统中的应用  反应堆中文研究 核动力工程 · 2026 · 李泽光 任禹铄 王侃 张大才 王慧富 刘国栋 曾国禹 苟元昊 胡英哲 江世航 陈哲川
+li zeguang;ren yushuo;wang kan;zhang dacai;wang huifu;liu guodong;zeng guoyu;gou yuanhao;hu yingzhe;jiang shihang;chen zhechuan(department of engineering physics,tsinghua university,beijing,100084,china;china institute of ocean engineering(tsing tao),beijing,100093,china)  rmc reactor monte carlo 用于反应堆及辐射输运分析的蒙特卡罗程序。 rmc综述涵盖gpu、屏蔽及多物理耦合在热管堆、气冷堆等先进核能系统的应用。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>反应堆蒙特卡罗程序RMC在先进核能系统中的应用</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 李泽光 任禹铄 王侃 张大才 王慧富 刘国栋 曾国禹 苟元昊 胡英哲 江世航 陈哲川
+Li Zeguang;Ren Yushuo;Wang Kan;Zhang Dacai;Wang Huifu;Liu Guodong;Zeng Guoyu;Gou Yuanhao;Hu Yingzhe;Jiang Shihang;Chen Zhechuan(Department of Engineering Physics,Tsinghua University,Beijing,100084,China;China Institute of Ocean Engineering(Tsing Tao),Beijing,100093,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC综述涵盖GPU、屏蔽及多物理耦合在热管堆、气冷堆等先进核能系统的应用。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以统一输运软件能力连接多堆型设计与安全分析。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述摘要没有给可复现输入、局部量误差及成本；不能当作独立基准验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>从综述追踪一个公开算例，分别复核几何、截面、统计和反馈耦合接口。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>RMC<small>Reactor Monte Carlo</small></h4><p>用于反应堆及辐射输运分析的蒙特卡罗程序。</p><p class="context"><b>本文语境</b> RMC综述涵盖GPU、屏蔽及多物理耦合在热管堆、气冷堆等先进核能系统的应用。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>随着全球能源需求增长与气候变化挑战日益严峻,先进核能系统因其高安全性、灵活性和可持续性成为未来能源体系的重要组成。然而,其复杂的几何结构、中子能谱及紧密的多物理耦合特性对传统核设计分析方法提出了更高要求。反应堆蒙特卡罗程序RMC作为一款高保真的中子-光子-电子输运软件,通过持续发展屏蔽计算、图形处理器(GPU)并行加速、多物理耦合等先进功能,显著提升了其在复杂几何处理、计算效率与多场耦合仿真方面的能力。本文系统介绍了RMC的发展历程、先进功能发展及其在热管堆、气冷堆、高参数堆、聚变装置等先进核能系统中的成功应用,展示了RMC在支持先进核能系统设计与安全分析中的重要作用,并展望了未来发展方向。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204625570" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于cosrmc的聚变堆全堆蒙特卡罗中子输运模拟研究  反应堆中文研究 现代应用物理 · 2025 · 田卓 赵若修 王振宇 白华亮 张显 刘仕倡 伍秋染 刘松林
+tian zhuo;zhao ruoxiu;wang zhenyu;bai hualiang;zhang xian;liu shichang;wu qiuran;liu songlin(school of nuclear science and engineering,north china electric power university,beijing 102206,china;institute of plasma physics,chinese academy of sciences,hefei 230031,china)  自动迭代权窗 automatically iterated weight windows 根据前次输运结果更新粒子分裂/轮盘阈值的减方差方式。 cosrmc对cfetr扇段与全堆开展输运，自动权窗使有计数网格占比从1.29%升至94.32%。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>基于cosRMC的聚变堆全堆蒙特卡罗中子输运模拟研究</h2>
+          
+          <p class="meta">现代应用物理 · 2025 · 田卓 赵若修 王振宇 白华亮 张显 刘仕倡 伍秋染 刘松林
+TIAN Zhuo;ZHAO Ruoxiu;WANG Zhenyu;BAI Hualiang;ZHANG Xian;LIU Shichang;WU Qiuran;LIU Songlin(School of Nuclear Science and Engineering,North China Electric Power University,Beijing 102206,China;Institute of Plasma Physics,Chinese Academy of Sciences,Hefei 230031,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>cosRMC对CFETR扇段与全堆开展输运，自动权窗使有计数网格占比从1.29%升至94.32%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>结合全堆复杂几何与迭代权窗改善深穿透覆盖。</li></ul></section>
+        <section><h3>不足</h3><ul><li>网格有计数不等于达到目标精度；多数偏差在±3σ内需结合σ大小判断。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>报告每网格相对误差和总FOM，比较权窗预处理成本及局部热点核热误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>自动迭代权窗<small>automatically iterated weight windows</small></h4><p>根据前次输运结果更新粒子分裂/轮盘阈值的减方差方式。</p><p class="context"><b>本文语境</b> cosRMC对CFETR扇段与全堆开展输运，自动权窗使有计数网格占比从1.29%升至94.32%。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>聚变堆因其几何复杂、中子能量高、堆芯空间大,对蒙特卡罗粒子输运模拟带来一定挑战。本文采用蒙特卡罗程序cosRMC建立了基于中国聚变工程试验堆(China Fusion Engineering Test Reactor,CFETR)超临界二氧化碳(sCO2)液态锂铅包层(COOL)的22.5°扇段模型(CFETR-COOL)及水冷陶瓷增殖剂包层(water-cooled ceramic breeder,WCCB)的360°全堆模型(CFETRWHOLE),计算了CFETR-COOL包层模块的中子注量、氚增殖比和核热沉积,并采用自动迭代权窗减方差方法计算了CFETR-WHOLE模型的中子注量空间分布。结果表明,cosRMC计算的包层模块的中子学参数与MCNP符合良好,大部分相对偏差在±3σ以内。通过权窗自动迭代减方差方法,CFETR-WHOLE模型的中子注量计数网格占比从1.29%提高到94.32%,得到了全堆的中子注量空间分布。本文工作充分证明了cosRMC具备开展大型聚变反应堆中子学模拟的能力。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7201879675" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>考虑光学输运的GEANT4.11 NE213中子响应模拟与验证：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：摘要没有给出各能点误差或光学表面参数不确定度；不能据此推广到任意探测器。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>固定中子源后分别扫描光导长度、表面反射参数，分离核数据和光学标定误差。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>High-precision simulation of NE213 neutron response using GEANT4.11 with integrated optical transport: Validation against experiments and Monte Carlo codes | 10.1016/j.anucene.2026.112957</li><li>将中子反应与光导中的光学光子输运联合建模，并以实验及另一程序作比较。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先考虑可公开验证的小算例</span><h3>核热源到热结构网格的误差传递</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 网格映射和功率归一化已有成熟实现，新意需来自误差预算</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>Cardinal的MeshTally已将OpenMC非结构网格计数连接到libMesh，并定义核热等响应的单位转换及相对误差输出。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>分离统计、空间计数、几何映射和结构简化误差，确定影响最高温度/应力的主要来源。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>软件接口本身不是创新；对极值响应提出可验证的容差与成本规则更有研究价值。</p></section>
+            <section><h4>建议论文切口</h4><p>从单棒或简单组件开始，固定总功率并改变计数分辨率，检查温度峰值位置和幅值的稳定性。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>映射前后积分功率守恒，并报告局部统计误差。</li><li>先有热传导解析/公开基准验证，再引入复杂接触。</li></ul><h4>新颖性风险</h4><ul><li>官方当前libMesh计数不支持随机射线所需的tracklength估计，不能假设各输运模式通用。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://cardinal.cels.anl.gov/source/tallies/MeshTally.html" target="_blank" rel="noopener">Cardinal MeshTally 官方文档（2026-10-23核验）↗</a><p>现有非结构计数、单位和统计误差接口。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
