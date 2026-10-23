@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-17 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-17 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-17</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>2</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 6</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 2</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-17，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文4篇、中文2篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="钴自给能中子探测器伽马本底电流的数值模拟 numerical simulation of gamma-induced background current in cobalt self-powered neutron detectors 堆内仪表与响应 annals of nuclear energy · 2026-10-17 · xiong wu, zhihong liu, jiasi yu, jieqiong jiang, li cai, xiangju zhang, zhiqiang cui 堆内仪表与响应 自给能中子探测器 self-powered neutron detector 利用辐射作用产生的电荷电流检测堆内辐射的探测器。 两步源谱传递和绝缘层细分用于量化钴spnd的伽马本底。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>堆内仪表与响应</span><span>堆内仪表与响应</span></div>
+          <h2>钴自给能中子探测器伽马本底电流的数值模拟</h2>
+          <p class="title-en">Numerical simulation of Gamma-Induced background current in cobalt Self-Powered neutron detectors</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-17 · Xiong Wu, Zhihong Liu, Jiasi Yu, Jieqiong Jiang, Li Cai, Xiangju Zhang, Zhiqiang Cui</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-17；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>两步源谱传递和绝缘层细分用于量化钴SPND的伽马本底。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把空间电荷与正负电子贡献纳入堆芯—探测器尺度连接。</li></ul></section>
+        <section><h3>不足</h3><ul><li>两种原型低于5%的结论只适用于文中条件，不证明任意寿期和谱场都可忽略伽马。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>测试燃耗变化后的伽马谱及绝缘层参数，建立干扰比例的适用边界。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>自给能中子探测器<small>self-powered neutron detector</small></h4><p>利用辐射作用产生的电荷电流检测堆内辐射的探测器。</p><p class="context"><b>本文语境</b> 两步源谱传递和绝缘层细分用于量化钴SPND的伽马本底。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>钴自给能中子探测器（SPND）因响应迅速，广泛用于压水堆保护系统。但堆内强伽马辐射会产生干扰电流，影响中子通量测量。本文提出高保真蒙特卡罗方法，采用反应堆—探测器两步耦合评估伽马本底电流：首先从典型压水堆精细模型获得探测位置的中子和伽马能谱，再作为精细SPND模型的源项，其中绝缘层分为50个径向层。模型显式区分正电子与电子贡献，并在电子输运中计入空间电荷效应。对ZTCo121和ZTCo122两种原型，伽马本底电流分别占总信号的2.56%和4.19%，均低于5%，对灵敏度的影响处于可接受工程不确定度内。与游泳池反应堆辐照实验的验证支持在初始灵敏度标定中忽略伽马干扰。该方法可拓展到其他瞬发响应SPND。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Cobalt self-powered neutron detectors (SPNDs) are widely used in pressurized water reactor (PWR) protection systems because of their prompt response characteristics. However, in-core cobalt SPNDs are exposed to intense gamma radiation that generates interfering currents, compromising the accuracy of neutron flux measurements. This paper presents a high-fidelity Monte Carlo (MC) simulation method that uses a two-step reactor–detector coupling strategy to evaluate the gamma-induced background current in cobalt SPNDs. The strategy first obtains the neutron and gamma energy spectra at the detector location from a detailed MC model of a typical PWR core, and then uses these spectra as the source term for a fine-scale SPND model with the insulator divided into 50 radial layers. The contributions of positrons and electrons are explicitly distinguished, and the space charge effect is incorporated into the electron transport calculation. Applied to two prototype cobalt SPNDs (ZTCo121 and ZTCo122), the method yields gamma-induced background current fractions of 2.56% and 4.19% of the total signal, both of which are below 5%. The resulting impact on detector sensitivity remains within the acceptable engineering uncertainty. Results validated against irradiation experiments performed in a swimming-pool reactor confirm that neglecting gamma interference in initial sensitivity calibration is justifiable. The method is general and extendable to other prompt-response SPNDs.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761109686792192" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112952" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761109686792192" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于分离涡模拟的铅铋平行三射流热混合研究 numerical study of thermal mixing characteristics in lead-bismuth parallel triple-jet based on detached eddy simulation 液态金属热混合与结构载荷 annals of nuclear energy · 2026-10-17 · wenzhen qiao, xingchen wang, weijie tang, rui zhang, jianquan liu, mingchen xia, yuanhao liu 液态金属热混合与结构载荷 热条纹 thermal striping 冷热流体混合引起构件温度反复波动的现象。 des以钠实验验证后分析铅铋三射流温度脉动，为热疲劳载荷提供入口。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>液态金属热混合与结构载荷</span><span>液态金属热混合与结构载荷</span></div>
+          <h2>基于分离涡模拟的铅铋平行三射流热混合研究</h2>
+          <p class="title-en">Numerical study of thermal mixing characteristics in lead-bismuth parallel triple-jet based on detached eddy simulation</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-17 · Wenzhen Qiao, Xingchen Wang, Weijie Tang, Rui Zhang, Jianquan Liu, Mingchen Xia, Yuanhao Liu</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-17；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>DES以钠实验验证后分析铅铋三射流温度脉动，为热疲劳载荷提供入口。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区分入口速度与温差对脉动频带和幅值的不同影响。</li></ul></section>
+        <section><h3>不足</h3><ul><li>钠验证向铅铋迁移仍受热物性影响；94%为估算成本，不代表所有网格和硬件。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>把温度脉动频谱传给Mechanical壁厚导热模型，比较平均温度替代与保留频谱时的疲劳载荷差异。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热条纹<small>thermal striping</small></h4><p>冷热流体混合引起构件温度反复波动的现象。</p><p class="context"><b>本文语境</b> DES以钠实验验证后分析铅铋三射流温度脉动，为热疲劳载荷提供入口。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铅冷快堆中，不同燃料组件流出的冷热铅铋共晶流体温差可超过100 K；它们在上腔室相互作用形成复杂射流，可能造成构件热条纹和热疲劳。常规RANS难以可靠捕获瞬态温度脉动，纯LES对多工况研究的成本较高。分离涡模拟（DES）结合近壁RANS与分离区LES，在分辨涡结构和效率之间折中。本文用DES研究平行三射流构型的冷热铅铋混合，先以液钠三射流实验验证，再考察入口流速和温差。入口流速升高增强射流惯性、推迟入口附近混合并扩展温度脉动频带；温差增大主要增强温度梯度和脉动强度，对总体流动结构及主频范围影响较小。与LES参考数据比较，DES能够重现温度脉动强度随工况变化的总体趋势和相近振幅范围，估算计算成本约低94%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In lead-cooled fast reactors (LFRs), the temperature difference between hot and cold lead–bismuth eutectic (LBE) streams from different fuel assemblies can exceed 100 K. Their interaction in the upper plenum generates complex turbulent jets, which may cause thermal striping and thermal fatigue in structural components, making thermal mixing critical to reactor safety. Conventional RANS methods struggle to reliably capture transient temperature fluctuations, while pure LES incurs prohibitively high computational cost for multi-condition engineering studies. Detached eddy simulation (DES), which combines near-wall Reynolds-averaged Navier–Stokes modeling with large eddy simulation in separated regions, strikes a practical balance between eddy-resolving capability and computational efficiency, providing an efficient approach for resolving large-scale turbulent structures and temperature fluctuations. In this study, DES was used to investigate the thermal mixing of hot and cold LBE coolant jets in a parallel triple-jet configuration. The method was validated against liquid-sodium triple-jet experimental data and then applied to examine the effects of inlet velocity and temperature difference. The results show that higher inlet velocity enhances jet inertia, delays near-inlet mixing, and broadens the frequency range of temperature fluctuations, whereas a larger temperature difference mainly increases temperature gradients and fluctuation intensity, with little influence on the overall flow structure and dominant frequency range. A reference comparison with LES data further demonstrates that DES can reproduce the overall dependence of temperature fluctuation intensity on the operating parameters with comparable fluctuation amplitude ranges, while requiring approximately 94 % lower estimated computational cost.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761108990537728" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112951" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761108990537728" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="表面凸起和凹陷对临界热流密度的影响 effect of geometric protrusions and depressions on critical heat flux density of the heating surface 事故冷却与热裕量 annals of nuclear energy · 2026-10-14 · zihao wang, yanxu huang, yunyu qiu, bin tan, byeongnam jo, jinbiao xiong, kai wang 事故冷却与热裕量 三相接触线钉扎 triple-phase contact-line pinning 固液气接触线受几何锐边或表面状态限制而难以移动的现象。 宏观表面缺陷通过滞汽与阻碍脱离两种机制降低chf。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>事故冷却与热裕量</span><span>事故冷却与热裕量</span></div>
+          <h2>表面凸起和凹陷对临界热流密度的影响</h2>
+          <p class="title-en">Effect of geometric protrusions and depressions on critical heat flux density of the heating surface</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-14 · Zihao Wang, Yanxu Huang, Yunyu Qiu, Bin Tan, Byeongnam Jo, Jinbiao Xiong, Kai Wang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-17；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>宏观表面缺陷通过滞汽与阻碍脱离两种机制降低CHF。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把理想光滑面假设转化为可实验验证的退化修正问题。</li></ul></section>
+        <section><h3>不足</h3><ul><li>作者明确要求更具代表性的IVR条件验证；不能把池沸腾降幅直接当作压力容器安全折减系数。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>在更具代表性的IVR-ERVC条件下验证后，再考虑表面退化惩罚系数。</li></ul><b>分析推导</b><ul><li>先比较曲率、加热方向和缺陷尺度，再与Mechanical热应力模型连接形成局部热裕量评估。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>三相接触线钉扎<small>triple-phase contact-line pinning</small></h4><p>固液气接触线受几何锐边或表面状态限制而难以移动的现象。</p><p class="context"><b>本文语境</b> 宏观表面缺陷通过滞汽与阻碍脱离两种机制降低CHF。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核电站熔融物堆内滞留—压力容器外部冷却（IVR-ERVC）策略中，临界热流密度（CHF）限制压力容器完整性。理想平面安全评估常忽略长期腐蚀和制造缺陷造成的宏观不规则性。本文以自主饱和池沸腾系统和高速摄影研究凸起、凹陷的影响。接近沸腾危机时，凸缺陷和凹缺陷使平均CHF分别降低约27.4%和16.7%。凹陷形成滞汽区，主要由加工锐边对三相接触线的钉扎导致气泡滞留和局部干涸；凸起则机械阻碍气泡脱离，使沸腾危机提前。在更能代表IVR-ERVC的条件下进一步验证后，可考虑把表面退化惩罚系数作为核安全分析的保守选项。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In the “Melted Reactor Retention and External Pressure Vessel Cooling (IVR-ERVC)” strategy for nuclear power plants, the Critical Heat Flux (CHF) serves as the critical limit for ensuring pressure vessel integrity. Traditional safety assessment procedures rely on an ideal flat surface assumption, neglecting macroscopic irregularities caused by corrosion and manufacturing defects during long-term operation. To address this issue, this study systematically investigated the impact mechanism of macroscopic irregularities on CHF using a self-developed saturated pool boiling experimental system and high-speed imaging technology. Results demonstrate that as the system approaches boiling crisis, macroscopic convex and concave defects reduce average CHF by approximately 27.4% and 16.7%, respectively. Mechanism analysis demonstrates that concave defects form a “steam trap, ”the vapor retention is attributed primarily to triple-phase contact line (TPL) pinning at the sharp machined edges, leading to bubble retention and localized drying; whereas convex defects impede bubble detachment through “mechanical obstruction,” resulting in premature CHF. Once validated under conditions more representative of IVR-ERVC, a “surface degradation penalty coefficient” may be considered in future nuclear safety analyses as a possible conservative option.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761104712347648" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112935" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761104712347648" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="将瞬发与缓发中子分群表示的点动力学 a note on neutron point kinetics with delayed neutrons and prompt neutrons as separate populations 反应堆动力学 annals of nuclear energy · 2026-10-14 · zi liang tan 反应堆动力学 相对产额 relative yield 以裂变产生量为基准定义缓发中子贡献的参数概念，应与瞬时种群比例区分。 分离两类中子粒子群不改变原点动力学一致性，但有助于解释β及扰动参数化。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>反应堆动力学</span><span>反应堆动力学</span></div>
+          <h2>将瞬发与缓发中子分群表示的点动力学</h2>
+          <p class="title-en">A note on neutron point kinetics with delayed neutrons and prompt neutrons as separate populations</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-14 · Zi Liang Tan</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-17；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>分离两类中子粒子群不改变原点动力学一致性，但有助于解释β及扰动参数化。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>贡献是物理量定义与时间尺度的理论澄清。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要只提出反应性参数化可能有不足，未给出通用工程误差界限。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>构造同反应性但不同裂变产生扰动的对照算例，检查功率瞬态是否可辨。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>相对产额<small>relative yield</small></h4><p>以裂变产生量为基准定义缓发中子贡献的参数概念，应与瞬时种群比例区分。</p><p class="context"><b>本文语境</b> 分离两类中子粒子群不改变原点动力学一致性，但有助于解释β及扰动参数化。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文建立将缓发中子与瞬发中子视为两个独立粒子群的点动力学理论，并证明这种分离表示与原始点动力学相容。理论用于三个方面：展示两类中子不同的演化时间尺度；定量讨论参数β的“缓发中子份额”与“相对产额”定义，并支持后者；以及提出一个可能的不足，即只用反应性作参数可能无法准确表示裂变产生扰动的真实物理效应。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This note describes the development of a theory of point kinetics with delayed neutrons and prompt neutrons as separated populations. The separated point kinetics are demonstrated to be consistent with the original point kinetics, and are used in three novel applications to: (1) visualise the separate evolution timescales of the two neutron populations, (2) allow us to comment quantitatively on the ‘delayed neutron fraction’ versus ’relative yield’ definitions of the parameter β in favour of the latter, and (3) suggest a possible deficiency that the use of reactivity as a parameter may not be able to accurately model the true physical effects of perturbations to fission production.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761095581347840" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112917" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761095581347840" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="“华龙一号”机组氧化净化辐射源项研究  反应堆中文研究 核科学与工程 · 2025 · 王纯 晏冰雪
+wang chun;yan bingxue(guangxi fangchenggang nuclear power co.,ltd.,fangchenggang of guangxi zhuang autonomous region 538001,china)  活化腐蚀产物 activated corrosion products 腐蚀产物经中子活化后在回路中迁移形成的辐射源。 华龙一号首修氧化净化的源项变化用于讨论主泵停运顺序和连续监测点位。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>“华龙一号”机组氧化净化辐射源项研究</h2>
+          
+          <p class="meta">核科学与工程 · 2025 · 王纯 晏冰雪
+WANG Chun;YAN Bingxue(Guangxi Fangchenggang Nuclear Power Co.,Ltd.,Fangchenggang of Guangxi Zhuang Autonomous Region 538001,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>华龙一号首修氧化净化的源项变化用于讨论主泵停运顺序和连续监测点位。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把工艺时间安排与实际系统源项变化联系起来。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给最优停泵阈值及多机组统计，不能作为通用操作规程。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>用更多大修周期对照源项、净化流量和总剂量，评价工期与剂量的权衡。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>活化腐蚀产物<small>activated corrosion products</small></h4><p>腐蚀产物经中子活化后在回路中迁移形成的辐射源。</p><p class="context"><b>本文语境</b> 华龙一号首修氧化净化的源项变化用于讨论主泵停运顺序和连续监测点位。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核电厂大修期间一回路冷却剂温度下降以及氧含量增加会导致活化腐蚀产物释放,为降低各系统辐射水平,可采用氧化净化的方式,通过注入双氧水使得活化腐蚀产物快速集中释放并通过化学容积与控制系统(RCV)净化系统去除。“华龙一号”机组作为三代核电机组与CPR1000机组存在较大差异,对于提前停运1~2台主泵对辐射源项变化的影响,停运最后一台主泵的时间以及连续监测点位选择等问题,相关标准仍有待进一步探索。大修期间氧化净化均作为关键路径控制,以便节省大修工期,同时,若氧化净化时间太短会导致大修机组辐射水平增加,不利于个人剂量控制。通过分析“华龙一号”机组在首次大修氧化净化期间反应堆冷却剂(RCP)、RCV、安全注入(RIS)系统的辐射源项变化趋势,探讨连续监测点位的选择、提前停运2台主泵的影响以及停运最后一台主泵的标准。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7201546823" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="vver型压水堆机组110mag辐射源项的控制策略与实践应用  反应堆中文研究 辐射研究与辐射工艺学报 · 2025 · 邸明乐 李中华 赵喜寰 陈全利
+di mingle;li zhonghua;zhao xihuan;chen quanli(jiangsu nuclear power corporation,lianyungang 222000,china)  110mag silver-110m 可影响停堆辐射场的银亚稳态放射性核素。 vver停堆后110mag形态变化引导辅助系统组合净化，文中净化效率91.6%。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>VVER型压水堆机组110mAg辐射源项的控制策略与实践应用</h2>
+          
+          <p class="meta">辐射研究与辐射工艺学报 · 2025 · 邸明乐 李中华 赵喜寰 陈全利
+DI Mingle;LI Zhonghua;ZHAO Xihuan;CHEN Quanli(Jiangsu Nuclear Power Corporation,Lianyungang 222000,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>VVER停堆后110mAg形态变化引导辅助系统组合净化，文中净化效率91.6%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将核素形态演化与不依赖主泵的净化路径结合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>辐射指数下降40%–60%和剂量减少约50人·mSv为所述实践，需查基准周期和同期干预。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>按相同系统边界归一化净化效率，区分化学形态、流量及停泵策略贡献。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>110mAg<small>silver-110m</small></h4><p>可影响停堆辐射场的银亚稳态放射性核素。</p><p class="context"><b>本文语境</b> VVER停堆后110mAg形态变化引导辅助系统组合净化，文中净化效率91.6%。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核电厂在运行过程中会产生一系列的辐射源项,主要有裂变产物、活化腐蚀产物等,对核电厂辐射场有着显著的影响,随着对58Co和60Co进行控制之后,一些核电厂停堆后辐射场的主要贡献者转变为110mAg,由于110mAg是一种强辐射核素,对辐射场的影响有着重要的贡献,占集体剂量的10%~15%。本文通过分析110mAg辐射影响及形态变化,结合水-水高能反应堆(VVER型)机组停堆期间的110mAg变化趋势,总结出在一回路氮气吹扫和解密封后,110mAg形态开始转变为离子态后大量释放规律,提出并实施了在此阶段不依靠主泵运行,而是通过多个辅助工艺系统组合运行新的净化工艺,实现了110mAg辐射源项的控制目的,有效降低了110mAg的辐射影响,其中一回路110mAg净化效率达到91.6%,反应堆厂房辐射指数下降40%~60%,大修集体剂量降低约50人∙mSv,对同类型机组具有较好的借鉴意义。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202108623" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>钴自给能中子探测器伽马本底电流的数值模拟：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：两种原型低于5%的结论只适用于文中条件，不证明任意寿期和谱场都可忽略伽马。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>测试燃耗变化后的伽马谱及绝缘层参数，建立干扰比例的适用边界。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Numerical simulation of Gamma-Induced background current in cobalt Self-Powered neutron detectors | 10.1016/j.anucene.2026.112952</li><li>两步源谱传递和绝缘层细分用于量化钴SPND的伽马本底。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先考虑可公开验证的小算例</span><h3>核热源到热结构网格的误差传递</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 网格映射和功率归一化已有成熟实现，新意需来自误差预算</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>Cardinal的MeshTally已将OpenMC非结构网格计数连接到libMesh，并定义核热等响应的单位转换及相对误差输出。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>分离统计、空间计数、几何映射和结构简化误差，确定影响最高温度/应力的主要来源。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>软件接口本身不是创新；对极值响应提出可验证的容差与成本规则更有研究价值。</p></section>
+            <section><h4>建议论文切口</h4><p>从单棒或简单组件开始，固定总功率并改变计数分辨率，检查温度峰值位置和幅值的稳定性。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>映射前后积分功率守恒，并报告局部统计误差。</li><li>先有热传导解析/公开基准验证，再引入复杂接触。</li></ul><h4>新颖性风险</h4><ul><li>官方当前libMesh计数不支持随机射线所需的tracklength估计，不能假设各输运模式通用。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://cardinal.cels.anl.gov/source/tallies/MeshTally.html" target="_blank" rel="noopener">Cardinal MeshTally 官方文档（2026-10-23核验）↗</a><p>现有非结构计数、单位和统计误差接口。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
