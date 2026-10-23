@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-15 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-15 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-15</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>3</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 7</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 3</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-15，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文4篇、中文3篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="mo含量对zircaloy-4高熵合金涂层性能的影响 nuclear reactor cladding enhancement via magnetron sputtering: examining the effects of increasing mo content in high-entropy coating on zircaloy-4 燃料包壳与涂层 annals of nuclear energy · 2026-10-15 · ubong eduok, jerzy szpunar 燃料包壳与涂层 事故容错燃料包壳 accident-tolerant fuel cladding 旨在改善异常或事故条件下耐受能力的燃料包壳体系。 mo含量存在最佳区间，增加难熔金属并不保证屏障性能单调提高。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>燃料包壳与涂层</span><span>燃料包壳与涂层</span></div>
+          <h2>Mo含量对Zircaloy-4高熵合金涂层性能的影响</h2>
+          <p class="title-en">Nuclear reactor cladding enhancement via magnetron sputtering: Examining the effects of increasing Mo content in high-entropy coating on Zircaloy-4</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-15 · Ubong Eduok, Jerzy Szpunar</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-15；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>Mo含量存在最佳区间，增加难熔金属并不保证屏障性能单调提高。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>联合水化学、退火及蒸汽试验评估高熵涂层成分效应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要对排序用了与符号方向不完全协调的措辞，本文按HEAMo1优于其余的顺序表述，定量结论须核对全文；未研究界面扩散。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>对最优成分补充热循环后的附着及裂纹试验，再做涂层—基体热膨胀失配分析。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>事故容错燃料包壳<small>accident-tolerant fuel cladding</small></h4><p>旨在改善异常或事故条件下耐受能力的燃料包壳体系。</p><p class="context"><b>本文语境</b> Mo含量存在最佳区间，增加难熔金属并不保证屏障性能单调提高。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>单金属中间层可保护标准锆合金管，是事故容错燃料包壳候选，但界面反应及共析出可能消耗保护层，降低长期有效性。本文研究CrFeNiMoAl多金属高熵合金涂层，重点考察难熔金属Mo在高温条件下的作用。用磁控溅射在Zircaloy-4上制备Mo含量0–30%的四种涂层HEAMo0–3，分别进行LiOH/H3BO3介质电化学试验、常压1200℃保温5 min的加速退火，以及360℃、18.6 MPa蒸汽腐蚀试验。适宜Mo含量有利于以体心立方纳米晶多相组织为主的结构，改善强度和屏障性能。摘要所列屏障性能由优到劣为HEAMo1（10.1% Mo）、HEAMo2（20.7%）、HEAMo3（30%）、HEAMo0（0%）。过高Mo使组织过饱和、涂层退化、Mo离子释放增加，并形成腐蚀离子通向锆基体的额外路径。本文不研究界面元素扩散，重点在冷却剂化学与涂层成分对下一代事故容错包壳耐久性的影响。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Single-metal interlayer coating systems reliably protect standard Zircaloy tubes, making them suitable candidates for accident-tolerant fuel (ATF) cladding in nuclear service environments. However, they also deplete during interfacial metallic interactions (e.g., during Nb-Zr interdiffusion) and co-precipitate (e.g., when Mo interlays between Cr and Zr), thereby losing their availability as protective coatings for long-term use. In the quest to address these shortcomings, the present study explores a multiple-metal-engineered high-entropy alloy (HEA) coating (CrFeNiMoAl), proposed as a reliable alternative, particularly based on Mo as a refractory metal, for testing under high-thermal conditions. Four coating variants with Mo content ranging from 0 to 30 % (HEAMo0-3) were deposited on Zircaloy-4 via magnetron sputtering. To examine their corrosion behavior, these coatings were comparatively tested under conditions simulating Pressurized Water Reactor (PWR) cooling systems via electrochemistry in LiOH/H3BO3, by accelerated annealing (1200 °C at atmospheric pressure for 5 min), and subcritical corrosion tests at 360 °C in 18.6 MPa steam. In addition to material strengthening, improved barrier performance is attributed to the optimal Mo content, which supports the presence of predominantly body-centered cubic (BCC) nanocrystalline multiphase structure. Barrier performance depends largely on Mo content in the following order of increasing strengths: HEAMo1 (with 10.1 % Mo) ˃ HEAMo2 (with 20.7 % Mo) ˃ HEAMo3 (with 30 % Mo) ˃ HEAMo0 (with 0 % Mo). Higher Mo content oversaturated the internal coating structure, leading to coating degradation, increased Mo-ion release, and the formation of additional pathways for corrosive ions to reach the Zr surface. This work does not aim to investigate interfacial elemental diffusion, as ample research already addresses this topic. The essential insight from the present study concerns the impact of coolant chemistry and coating content on the performance and durability of ATF-cladding materials for next-generation nuclear reactor fuel systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761108264923136" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112949" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761108264923136" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="失水与慢化剂排空下重水堆压力管换热及熔化 numerical investigations on heat transfer characteristics and melting behaviour of a phwr pressure tube under combined loca and moderator voiding 燃料通道热结构 annals of nuclear energy · 2026-10-15 · omkar pathak, abhinav, shivanshu, amrik kundu, subodh kumar yadav, mushtaque momin, mukesh sharma 燃料通道热结构 压力管—排管热耦合 pressure tube–calandria tube thermal coupling 压力管与其外部排管通过间隙、辐射或接触交换热量的过程。 单通道热耦合与相变分析显示熔化时间对热流高度敏感。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>燃料通道热结构</span><span>燃料通道热结构</span></div>
+          <h2>失水与慢化剂排空下重水堆压力管换热及熔化</h2>
+          <p class="title-en">Numerical investigations on heat transfer characteristics and melting behaviour of a PHWR pressure tube under combined LOCA and moderator voiding</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-15 · Omkar Pathak, Abhinav, Shivanshu, Amrik Kundu, Subodh Kumar Yadav, Mushtaque Momin, Mukesh Sharma</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-15；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>单通道热耦合与相变分析显示熔化时间对热流高度敏感。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提出TCI、NTR、MRI三个量化热状态和熔化进程的指标。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未提供相变实验验证及接触/辐射设置；该热流阈值不是其他堆型的安全限值。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>先复核辐射率、间隙热阻与熔化潜热对起始热流的敏感性，再讨论接触简化误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>压力管—排管热耦合<small>pressure tube–calandria tube thermal coupling</small></h4><p>压力管与其外部排管通过间隙、辐射或接触交换热量的过程。</p><p class="context"><b>本文语境</b> 单通道热耦合与相变分析显示熔化时间对热流高度敏感。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在印度压水重水堆中，严重失水事故伴应急堆芯冷却失效及慢化剂完全排空可能导致压力管失效。本文用ANSYS 2023 R1研究220 MWe机组单燃料通道的热行为、换热与熔化进程。稳态计算热流密度900–4950 W/m²，用于确定温度分布和熔化起始热流；瞬态相变计算取4400–4950 W/m²以确定熔化速率。压力管—排管组件存在明显温度不对称，压力管峰值温度从396.25℃升至2080.60℃，预测熔化起始热流约4400 W/m²。随热流增大，完全熔化时间从80 s降至8 s，熔化速率指数约增大一个数量级，表现出强非线性。提出压力管—排管热耦合指数TCI、归一化温度比NTR和熔化速率指数MRI，定量表征热脆弱性及熔化进程，为印度重水堆严重事故分析提供工程分析方法。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Failure of the Pressure tube under severe Loss of Coolant Accident (LOCA) with Emergency Core Cooling System (ECCS) failure and complete moderator voiding is a serious issue in Indian Pressurized Heavy Water Reactors (IPHWRs). The present study investigates the thermal behaviour, heat transfer characteristics, and melting progression of a single fuel channel of the 220 MWe IPHWR using ANSYS 2023 R1. The steady-state simulations were performed for heat fluxes ranging from 900 to 4950 W/m2 to determine the temperature distributions and to identify the melting initiation heat flux for the onset of melting, while the heat flux ranges 4400–4950 W/m2 were used for the transient phase change simulations to determine the melting rate. The results show that there is a significant temperature asymmetry within the pressure tube-calandria tube assembly. The peak temperature of the pressure tube was raised from 396.25°C to 2080.60°C and the melting initiation heat flux was predicted to be approximately 4400 W/m2. With increasing heat flux, the complete melting time decreased from 80 s to 8 s, with an increase of about ten in the Melting Rate Index (MRI), thus representing very non-linear melting behaviour. The proposed PT-CT Thermal Coupling Index (TCI), Normalized Temperature Ratio (NTR) and Melting Rate Index (MRI) are quantitative assessments of the thermal vulnerability and melting progress. The proposed approach will be useful for severe accident analysis and safety assessment of Indian PHWR systems for engineering applications.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761106893385728" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112940" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761106893385728" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="aleph燃耗程序中的（α,n）中子源项建模 modeling ([formula omitted],n) neutron source terms in the aleph depletion code 源项与核数据 annals of nuclear energy · 2026-10-15 · alexey stankovskiy, yurdunaz çelik, nadia messaoudi, gert van den eynde 源项与核数据 厚靶产额 thick-target yield 带电粒子在材料内充分慢化时沿其能损积分得到的反应产额。 重基体中阻止本领数据会使显式α输运的（α,n）产额产生系统偏差。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>源项与核数据</span><span>源项与核数据</span></div>
+          <h2>ALEPH燃耗程序中的（α,n）中子源项建模</h2>
+          <p class="title-en">Modeling ([formula omitted],n) neutron source terms in the ALEPH depletion code</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-15 · Alexey Stankovskiy, Yurdunaz Çelik, Nadia Messaoudi, Gert Van den Eynde</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-15；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>重基体中阻止本领数据会使显式α输运的（α,n）产额产生系统偏差。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把矩阵依赖的源强偏差与矩阵无关的能量分箱伪差分别定位。</li></ul></section>
+        <section><h3>不足</h3><ul><li>针对特定程序数据表的结论不能解读为所有版本MCNP普遍失效；必须核对版本和库。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>先以相同α初始谱比较阻止本领，再传播到屏蔽剂量，区分积分与微分误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>厚靶产额<small>thick-target yield</small></h4><p>带电粒子在材料内充分慢化时沿其能损积分得到的反应产额。</p><p class="context"><b>本文语境</b> 重基体中阻止本领数据会使显式α输运的（α,n）产额产生系统偏差。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文在ALEPH燃耗程序中评估（α,n）中子源项，对比重锕系氧化物基体的乏燃料与轻低原子序数基体的镅铍源。分别用解析厚靶产额及直接α粒子输运计算源强和α能谱。乏燃料中，ALEPH输运求解器MCNP给出的产额比厚靶法低16%，而镅铍源两者相差约1%以内。差异来自MCNP内部阻止本领表：在重基体中偏离已验证的SRIM与NIST ASTAR数据，在轻基体中则没有此问题。因此目前ALEPH中可靠的（α,n）源项应采用厚靶产额；重基体不宜用该MCNP α输运设置，若需显式输运，应选阻止本领经验证的程序，如PHITS。另外发现与基体无关的MCNP α注量能量分箱伪差：在相邻能箱间重新分配注量，不偏置积分量，仅影响微分能谱计数。利用PHITS屏蔽标定实验室模型，评估JENDL-5、JEFF-4.0、TENDL-2025中子发射谱对镅铍源周围剂量当量率H*(10)的影响，并与ISO 8529-1参考谱比较，结果支持JENDL-5作为ALEPH默认库。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The modeling of (α,n) neutron source terms in the ALEPH depletion code is assessed for two contrasting systems: spent nuclear fuel, a heavy actinide-oxide matrix, and an americium-beryllium (AmBe) source, a light low-Z matrix. In each, the source intensity and alpha spectrum are computed both by the analytic thick target yield and by direct alpha transport. For the spent fuel the yield from MCNP, ALEPH’s transport solver, falls 16% below the thick target yield, whereas for AmBe the two agree to within about 1%. The discrepancy is traced to MCNP’s internal stopping power table, which deviates from the validated SRIM and NIST ASTAR data in the heavy matrix but not the light one. The thick target yield is therefore at present the only reliable route to (α,n) source terms within ALEPH: MCNP alpha transport should not be used in heavy matrices, and an explicit transport estimate should come from a code with validated stopping powers, such as PHITS. A separate, matrix-independent energy-binning artifact in the MCNP alpha fluence spectrum is also identified; it redistributes fluence between neighboring bins without biasing integral quantities, and matters only when a differential spectrum is tallied. The neutron emission spectra from JENDL-5, JEFF-4.0 and TENDL-2025 are assessed through their effect on the ambient dose equivalent rate H*(10), computed for the AmBe source in a PHITS model of a shielded calibration laboratory and benchmarked against the reference ISO 8529-1 spectrum. The comparison supports JENDL-5 as the ALEPH default.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761096931913728" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112920" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761096931913728" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="openmodelica熔盐研究堆的启动、瞬态与功率相关响应 startup-to-criticality, transient dynamics, and power-dependent dynamics of a molten salt research reactor model in openmodelica 熔盐堆降阶动态 annals of nuclear energy · 2026-10-15 · ondrej chvala, visura pathirana, jonathan scherr, tomomichi umetani, kevin clarno 熔盐堆降阶动态 缓发中子先驱核迁移 delayed-neutron precursor drift 流动燃料携带先驱核离开或返回堆芯，改变缓发中子源空间和时间分布。 分区模型和燃料循环先驱核迁移共同影响熔盐研究堆的频率响应。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>熔盐堆降阶动态</span><span>熔盐堆降阶动态</span></div>
+          <h2>OpenModelica熔盐研究堆的启动、瞬态与功率相关响应</h2>
+          <p class="title-en">Startup-to-criticality, transient dynamics, and power-dependent dynamics of a Molten Salt Research Reactor model in OpenModelica</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-15 · Ondrej Chvala, Visura Pathirana, Jonathan Scherr, Tomomichi Umetani, Kevin Clarno</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-15；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>分区模型和燃料循环先驱核迁移共同影响熔盐研究堆的频率响应。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用同一可复现框架连接启动、强瞬态和小信号分析。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给出实验堆实测验证；集总节点和线性温度反馈可能限制大扰动适用性。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>比较单区和九区在同一扰动下的稳态偏差、峰值相位及响应时间，识别最小必要分区数。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>缓发中子先驱核迁移<small>delayed-neutron precursor drift</small></h4><p>流动燃料携带先驱核离开或返回堆芯，改变缓发中子源空间和时间分布。</p><p class="context"><b>本文语境</b> 分区模型和燃料循环先驱核迁移共同影响熔盐研究堆的频率响应。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文在OpenModelica中建立可复现的熔盐研究堆降阶动态模型，用于启动至临界、非线性阶跃瞬态及随功率变化的小信号响应。模型在统一框架内结合考虑循环燃料输运的修正点动力学、线性温度反应性反馈、分组衰变热和集总热工水力节点，可选单区或九区堆芯。启动分析采用分阶段外源辅助临界方案，逐步增加一次流量并量化缓发中子先驱核漂移补偿，最终排热爬坡阶段达到约1 MW。动态分析包括反应性阶跃、流量降低和失去排热，以及10⁻³–10¹ rad/s的多功率正弦扫频；每个频点检查稳定过程，在低功率下用锁相估计分离受迫响应与缓慢的功率—温度振荡。结果表明存在随工作点变化的谐振带通响应，功率升高使峰值进入扫频区。堆芯分区带来适度阻尼：额定功率下九区峰值增益比单区约低2.4 dB。开源实现把已有熔盐堆降阶动力学方法连接到透明、具有代码仓库支持的流程，适于设计阶段运行与控制研究。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This paper presents a reproducible reduced-order dynamic model of the Molten Salt Research Reactor (MSRR) in OpenModelica for three analyses: startup to criticality, nonlinear step transients, and power-dependent small-signal response. The model combines transport-aware modified point kinetics for circulating fuel, linear temperature-reactivity feedback, grouped decay-heat dynamics, and lumped thermal-hydraulic nodes in a shared framework with selectable one-region and nine-region core representations. The startup analysis examines a staged, source-assisted approach to criticality with progressive primary-flow increases, quantifying the associated delayed-neutron precursor drift compensation; the complete sequence reaches ∼1MW during the final heat-removal ramp. Dynamic simulations evaluate large step disturbances (reactivity insertions, flow reductions, and loss of heat rejection) alongside multi-power sinusoidal frequency sweeps from 10−3 to 101rad/s, supported by per-point settling checks and, at low power, a lock-in estimator that separates the forced response from a slow power–temperature oscillation. Results demonstrate an operating-point-dependent resonant (band-pass) response whose peak migrates into the sweep band with increasing power. Core segmentation introduces a modest damping effect, with the nine-region model exhibiting about 2.4dB lower peak gain than the one-region model at nominal power. The resulting open-source OpenModelica implementation links established reduced-order MSR dynamics methodology to a transparent, repository-backed workflow suitable for design-stage operational and control studies.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761094868316160" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112911" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761094868316160" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="先进小型一体化全自然循环压水堆关键安全特性整体性能试验研究  反应堆中文研究 原子能科学技术 · 2026 · 杨子江 刘镝 胡培政 任文星 曹克美 戚展飞
+yang zijiang;liu di;hu peizheng;ren wenxing;cao kemei;qi zhanfei(shanghai nuclear engineering research&amp;design institute co.,ltd.,shanghai 200233,china;shanghai key laboratory of passive safety technology for nuclear engineering,shanghai 200233,china)  h2ts hierarchical two-tiered scaling 先后分层分析系统与局部过程相似性的比例设计方法。 h2ts比例台架在供热堆失水及丧失三回路热阱工况中验证非能动应急冷却与余热排出响应。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>先进小型一体化全自然循环压水堆关键安全特性整体性能试验研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 杨子江 刘镝 胡培政 任文星 曹克美 戚展飞
+YANG Zijiang;LIU Di;HU Peizheng;REN Wenxing;CAO Kemei;QI Zhanfei(Shanghai Nuclear Engineering Research&amp;Design Institute Co.,Ltd.,Shanghai 200233,China;Shanghai Key Laboratory of Passive Safety Technology for Nuclear Engineering,Shanghai 200233,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>H2TS比例台架在供热堆失水及丧失三回路热阱工况中验证非能动应急冷却与余热排出响应。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用整体效应试验同时覆盖触发逻辑和自然循环排热路径。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给比例畸变、测量误差和全部瞬态曲线，台架结果不能直接等同原型全过程。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>用同一套程序参数同时预测LOCA与非LOCA工况，检查是否存在补偿调参。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>H2TS<small>hierarchical two-tiered scaling</small></h4><p>先后分层分析系统与局部过程相似性的比例设计方法。</p><p class="context"><b>本文语境</b> H2TS比例台架在供热堆失水及丧失三回路热阱工况中验证非能动应急冷却与余热排出响应。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对先进小型一体化全自然循环压水堆(简称供热堆),本文介绍了基于多级双层比例分析方法(H2TS)设计建造的整体性能试验台架,并开展了典型设计基准事故工况试验研究。该台架在主要几何布置、系统配置、专设安全设施及控制逻辑方面与原型堆保持相似性,能够表征供热堆典型瞬态和事故工况下的关键热工水力现象。选取稳压器顶部破口失水事故(LOCA)和丧失三回路热阱非LOCA两类工况开展整体性能试验。结果表明:在稳压器顶部破口LOCA工况下,非能动应急堆芯冷却(JNG)系统能够按设定逻辑触发,自动卸压与直接注射过程依次建立,事故进程中堆芯始终保持淹没状态;在丧失三回路热阱非LOCA工况下,非能动二次侧余热排出(NCR)系统能够投入运行,并建立自然循环余热排出路径,持续导出堆芯衰变热。试验结果验证了供热堆专设安全系统的响应特性及事故缓解逻辑,能为该类反应堆安全分析程序验证和安全审评提供整体效应试验依据。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204565191" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="微型堆空气布雷顿循环发电系统动态特性仿真研究  反应堆中文研究 舰船科学技术 · 2026 · 林千 张晓晴 汤春桃 翁娜
+lin qian;zhang xiaoqing;tang chuntao;weng na(department of general technology,shanghai nuclear engineering research and design institute co.,ltd.,shanghai 200030,china)  旁排阀 bypass valve 分流工质以调节机组运行状态的阀门。 微型堆与开式空气布雷顿循环耦合，旁排阀可用于负荷变化时的快速调节。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>微型堆空气布雷顿循环发电系统动态特性仿真研究</h2>
+          
+          <p class="meta">舰船科学技术 · 2026 · 林千 张晓晴 汤春桃 翁娜
+LIN Qian;ZHANG Xiaoqing;TANG Chuntao;WENG Na(Department of General Technology,Shanghai Nuclear Engineering Research and Design Institute Co.,Ltd.,Shanghai 200030,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>微型堆与开式空气布雷顿循环耦合，旁排阀可用于负荷变化时的快速调节。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>考察核热源、转速和负载之间的动态相互作用。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给验证试验、控制约束及部件效率地图，鲁棒性结论需限定仿真工况。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>增加执行器速率限制和压气机失速边界，比较旁排策略的温度峰值与效率。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>旁排阀<small>bypass valve</small></h4><p>分流工质以调节机组运行状态的阀门。</p><p class="context"><b>本文语境</b> 微型堆与开式空气布雷顿循环耦合，旁排阀可用于负荷变化时的快速调节。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核动力空气布雷顿系统具有结构紧凑、系统简单、无需补充循环工质和燃料等特性,适用于远洋舰船等应用场景。对耦合微型核反应堆的开式空气布雷顿循环发电系统进行仿真建模,研究该发电系统与核反应堆在自主功率升降、外部负荷变化等工况下的系统瞬态响应特性。通过全系统仿真分析,验证适配微型堆的空气布雷顿发电系统的核热功率变化、反应堆输出温度变化、发电系统转速变化、系统状态参数变化、电力输出与负载变化,以及相互耦合关系,并验证通过旁排阀开度来实现发电系统运行状态快速控制的响应特性。研究表明耦合微型核反应堆的空气布雷顿发电系统具有良好的灵活性与鲁棒性,能够充分适应低功率水平至高功率水平的全局需求,为微型堆发电系统的研究与开发提供指导。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204613387" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="谱移式反应性控制机理及谱移材料中子学性能研究  反应堆中文研究 核动力工程 · 2026 · 张龙龙 王连杰 卢迪 娄磊 张斌 赵晨
+zhang longlong;wang lianjie;lu di;lou lei;zhang bin;zhao chen(state key laboratory of advanced nuclear energy technology,nuclear power institute of china,chengdu,610213,china)  谱移 spectral shift 通过改变慢化条件调整中子能谱并调节反应性。 zrh1.6有较好的谱移调节能力，但过慢化及栅元效应可能使反馈趋正，气腔及beo填充可改善。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>谱移式反应性控制机理及谱移材料中子学性能研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 张龙龙 王连杰 卢迪 娄磊 张斌 赵晨
+Zhang Longlong;Wang Lianjie;Lu Di;Lou lei;Zhang Bin;Zhao Chen(State Key Laboratory of Advanced Nuclear Energy Technology,Nuclear Power Institute of China,Chengdu,610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>ZrH1.6有较好的谱移调节能力，但过慢化及栅元效应可能使反馈趋正，气腔及BeO填充可改善。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用能谱软化、谱移和贡献因子拆分材料对反应性的作用。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给出温度系数数值和工况包络，不能据优选材料结论推定所有堆芯反馈安全。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>以同一群常数和温度序列比较密度、气腔及棒径，分别核算谱移收益和反馈符号。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>谱移<small>spectral shift</small></h4><p>通过改变慢化条件调整中子能谱并调节反应性。</p><p class="context"><b>本文语境</b> ZrH1.6有较好的谱移调节能力，但过慢化及栅元效应可能使反馈趋正，气腔及BeO填充可改善。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>谱移式反应堆通过改变中子慢化性能来控制反应性,通过谱移材料的动作,实现反应堆中子能谱的调节。本文通过理论分析谱移式反应性控制机理,并提出一种谱移材料中子学性能评价方法,通过能谱软化因子、谱移因子以及谱移贡献因子,量化表征谱移材料对于能谱移动以及堆芯反应性的影响程度。选取典型谱移材料,对不同谱移材料的中子学性能进行了分析论证,确定ZrH1.6是优选的谱移慢化材料。在此基础上,开展了ZrH1.6谱移慢化材料对堆芯反应性控制能力及温度反馈效应的影响分析,研究表明,较粗的谱移慢化棒会因过慢化使中子能谱调节能力下降,同时ZrH1.6的“栅元效应”会使堆芯反应性反馈趋于正反馈效应。上述问题可以通过调整慢化棒材料密度、设置中心气腔等方式加以解决,其中气腔中填充BeO作为反射材料可以带来更好的能谱调节能力,同时减小固体慢化材料对温度反馈效应的影响。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204625607" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>Mo含量对Zircaloy-4高熵合金涂层性能的影响：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：摘要对排序用了与符号方向不完全协调的措辞，本文按HEAMo1优于其余的顺序表述，定量结论须核对全文；未研究界面扩散。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>对最优成分补充热循环后的附着及裂纹试验，再做涂层—基体热膨胀失配分析。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Nuclear reactor cladding enhancement via magnetron sputtering: Examining the effects of increasing Mo content in high-entropy coating on Zircaloy-4 | 10.1016/j.anucene.2026.112949</li><li>Mo含量存在最佳区间，增加难熔金属并不保证屏障性能单调提高。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先考虑可公开验证的小算例</span><h3>核热源到热结构网格的误差传递</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 网格映射和功率归一化已有成熟实现，新意需来自误差预算</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>Cardinal的MeshTally已将OpenMC非结构网格计数连接到libMesh，并定义核热等响应的单位转换及相对误差输出。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>分离统计、空间计数、几何映射和结构简化误差，确定影响最高温度/应力的主要来源。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>软件接口本身不是创新；对极值响应提出可验证的容差与成本规则更有研究价值。</p></section>
+            <section><h4>建议论文切口</h4><p>从单棒或简单组件开始，固定总功率并改变计数分辨率，检查温度峰值位置和幅值的稳定性。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>映射前后积分功率守恒，并报告局部统计误差。</li><li>先有热传导解析/公开基准验证，再引入复杂接触。</li></ul><h4>新颖性风险</h4><ul><li>官方当前libMesh计数不支持随机射线所需的tracklength估计，不能假设各输运模式通用。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://cardinal.cels.anl.gov/source/tallies/MeshTally.html" target="_blank" rel="noopener">Cardinal MeshTally 官方文档（2026-10-23核验）↗</a><p>现有非结构计数、单位和统计误差接口。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
