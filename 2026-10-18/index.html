@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-18 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-18 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-18</strong><span>本期日期</span></div><div class="stat"><strong>3</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>2</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 5</button><button data-filter="xmol">X-MOL 3</button><button data-filter="cqvip">维普 2</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-18，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文3篇、中文2篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="德黑兰研究堆中子谱下zr-90(n,2n)zr-89截面测量 measurement of the zr-90(n, 2n) zr-89 reaction cross section using fast neutron spectrum at the tehran research reactor (trr) 核数据实验验证 annals of nuclear energy · 2026-10-13 · s.m. mohammadi, s. bagheri, h. khalafi, r. khodabakhsh 核数据实验验证 谱平均截面 spectrum-averaged cross section 以给定中子能谱加权平均的反应截面，依赖能谱。 活化测量结合含燃耗堆芯模拟给出锆同位素谱平均反应截面。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>核数据实验验证</span><span>核数据实验验证</span></div>
+          <h2>德黑兰研究堆中子谱下Zr-90(n,2n)Zr-89截面测量</h2>
+          <p class="title-en">Measurement of the Zr-90(n, 2n) Zr-89 reaction cross section using fast neutron spectrum at the Tehran Research reactor (TRR)</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-13 · S.M. Mohammadi, S. Bagheri, H. Khalafi, R. Khodabakhsh</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-18；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>活化测量结合含燃耗堆芯模拟给出锆同位素谱平均反应截面。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把高阈反应测量与研究堆实际能谱及监测箔验证关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>谱平均截面不是单能微观截面，不能把1.73×10⁻⁵ barn直接代入任意能量点；不确定度11%。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>使用相同响应函数传播裂变谱不确定度，区分源谱变化和反应截面偏差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>谱平均截面<small>spectrum-averaged cross section</small></h4><p>以给定中子能谱加权平均的反应截面，依赖能谱。</p><p class="context"><b>本文语境</b> 活化测量结合含燃耗堆芯模拟给出锆同位素谱平均反应截面。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>较高阈值中子反应截面的准确测定关系到核模型和实际应用，也与IAEA CIELO改进U-235及U-238瞬发裂变谱的工作有关。本文在德黑兰研究堆中子谱下研究天然锆同位素，重点为阈值高于10 MeV的Zr-90(n,2n)Zr-89反应。锆箔及监测箔置于堆芯辐照箱，冷却后以高纯锗探测器测诱发活度。用计入燃耗的MCNPX堆芯模型估计箔片处中子通量，并以计算和实验反应率对照验证。测得Zr-90(n,2n)Zr-89谱平均截面1.73×10⁻⁵ barn，不确定度11%；Zr-94(n,γ)Zr-95和Zr-96(n,γ)Zr-97谱平均截面分别为4.18×10⁻²及8.04×10⁻² barn。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Accurate determination of threshold neutron-induced reaction cross sections at relatively high threshold energies is of fundamental importance for nuclear model development and practical applications in physics. In addition, the evaluation and re-evaluation of such cross sections are relevant to ongoing efforts to improve the prompt fission neutron spectra of U-235 and U-238 within the IAEA CIELO project. In this work, the reaction cross sections of natural zirconium isotopes were investigated, with particular emphasis on the threshold reaction Zr-90(n,2n) Zr-89, which has a threshold energy above 10 MeV, in the neutron spectrum of the Tehran Research Reactor. Zirconium and monitor foils were irradiated in an irradiation box located in the reactor core. After an appropriate cooling period, the induced activities of the irradiated samples were measured using a high-purity germanium detector. To accurately estimate the neutron flux on the foils, the reactor core was modeled using the MCNPX code while accounting for burnup effects. The calculated foil reaction rates were then compared with the experimental values to validate the computed neutron flux. The spectrum-averaged cross section of the Zr-90(n,2n) Zr-89 reaction was measured to be 1.73 × 10−5 barn with an uncertainty of 11%. The corresponding spectrum-averaged cross sections for the Zr-94(n,γ) Zr-95 and Zr-96(n,γ)Zr-97 reactions were 4.18 × 10−2 and 8.04 × 10−2 barn, respectively.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761106180354048" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112939" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761106180354048" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="摩洛哥triga mark ii研究堆中子活化分析综述 neutron activation analysis at the moroccan triga mark ii reactor: state of the art, methodological advances, applications and future perspectives 研究堆测量方法 annals of nuclear energy · 2026-10-13 · iliasse aarab, hamid bounouira, hamid amsil, abdelwahab badague, abedessamad didi, fouad taous 研究堆测量方法 k₀标准化 k-zero standardization 借助核常数及比较标准统一中子活化定量的一类方法。 综述triga研究堆inaa及仍处模拟阶段的pgnaa能力。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>研究堆测量方法</span><span>研究堆测量方法</span></div>
+          <h2>摩洛哥TRIGA MARK II研究堆中子活化分析综述</h2>
+          <p class="title-en">Neutron activation analysis at the Moroccan TRIGA MARK II reactor: state of the art, methodological advances, applications and future perspectives</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-13 · Iliasse Aarab, Hamid Bounouira, Hamid Amsil, Abdelwahab Badague, Abedessamad Didi, Fouad Taous</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-18；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述TRIGA研究堆INAA及仍处模拟阶段的PGNAA能力。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把标准化方法与互补探测路线整合为设施应用框架。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述摘要没有定量检出限或通用精度提升；PGNAA不能表述为已完成实验部署。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>核对同一标准样品的k₀-INAA与PGNAA响应矩阵，评估互补性和测量时间成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>k₀标准化<small>k-zero standardization</small></h4><p>借助核常数及比较标准统一中子活化定量的一类方法。</p><p class="context"><b>本文语境</b> 综述TRIGA研究堆INAA及仍处模拟阶段的PGNAA能力。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>中子活化分析具有高灵敏度、准确度和非破坏性，广泛用于多元素表征。本文综述摩洛哥CNESTEN的TRIGA MARK II研究堆相关工作，重点讨论仪器中子活化分析（INAA）的应用和方法进展，主要领域包括环境监测、食品安全、药用植物与地球化学。采用k₀标准化方法显著改善分析性能和可复现性。同时讨论目前仍处模拟阶段的瞬发伽马中子活化分析（PGNAA），将其作为能力拓展方向。INAA与PGNAA结合有望形成兼顾痕量分析及实时整体分析的互补平台。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Neutron Activation Analysis (NAA) is a powerful nuclear analytical technique widely used for multi-elemental characterization due to its high sensitivity, accuracy, and non-destructive nature. This review provides a comprehensive synthesis of studies conducted at the Moroccan TRIGA MARK II research reactor (CNESTEN), highlighting the applications and methodological advances of Instrumental Neutron Activation Analysis (INAA). Environmental monitoring, food safety, medicinal plant analysis, and geochemical investigations emerge as the main application domains. The implementation of the k0-standardization method has significantly improved analytical performance and reproducibility. In parallel, the development of Prompt Gamma Neutron Activation Analysis (PGNAA), currently in a simulation-based phase, is discussed as a strategic extension of analytical capabilities. The integration of INAA and PGNAA is expected to enable a complementary analytical platform for both trace-level and real-time bulk analysis.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761100694204416" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112929" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761100694204416" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="钠冷快堆t形接头入口脉动相位对热混合的影响 the effect of pulsating liquid sodium coolant inlets on flow structures and thermal mixing in a t-junction 热疲劳载荷来源 annals of nuclear energy · 2026-10-12 · ayodeji a. ala, john njoroge, oluwaseun talabi, junjie mao, bin ye 热疲劳载荷来源 热混合脉动相位 inlet pulsation phase 不同入口周期速度或温度变化之间的时间相对关系。 相位差改变混合强度及热脉动空间位置，平均出口温差不足以代表壁面疲劳载荷。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>热疲劳载荷来源</span><span>热疲劳载荷来源</span></div>
+          <h2>钠冷快堆T形接头入口脉动相位对热混合的影响</h2>
+          <p class="title-en">The effect of pulsating liquid sodium coolant inlets on flow structures and thermal mixing in a T-junction</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-12 · Ayodeji A. Ala, John Njoroge, Oluwaseun Talabi, Junjie Mao, Bin Ye</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-18；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>相位差改变混合强度及热脉动空间位置，平均出口温差不足以代表壁面疲劳载荷。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将入口同相/异相脉动与近壁热载荷变化联系起来。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给结构疲劳损伤计算；混合改善不必然意味着寿命延长。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>用相同平均流量比较壁面温度谱，经壁厚导热传递后再评价热应力。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热混合脉动相位<small>inlet pulsation phase</small></h4><p>不同入口周期速度或温度变化之间的时间相对关系。</p><p class="context"><b>本文语境</b> 相位差改变混合强度及热脉动空间位置，平均出口温差不足以代表壁面疲劳载荷。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>紧凑钠冷快堆二回路存在不同温度管流的混合。本文数值研究T形接头中两入口以4 s周期同相及异相脉动时的流动和热混合：主管与支管速度分别采用正弦—正弦和正弦—余弦变化。第一种情况动量比恒为3.57，第二种在1.73–7.38变化。两种情况下，T接头下游速度分布逐渐恢复为混合前形状，但异相工况两个半周期的分布不同。主管上部湍流强度变化大于下部；入口相差90°使沿轴向的温度及湍流强度波动增加。上半管热混合以动量相互作用为主，下半管以剪切层渐进对流为主。异相工况在75%的截面上表现出较低温度混合度指标，出口温差降低20%，说明混合更充分。90°相位差还使热脉动位置短时远离壁面，对接头损伤范围具有影响。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Mixing of two pipe streams at different temperatures features in the secondary circuit of compact sodium-cooled fast reactors. This study presents the numerical simulation of flow features and mixing characteristics in the T-junction with the inlets subjected to co-pulsating and out-of-phase pulsating flows over a 4-s flow cycle. The main and branch pipe inlets are subjected to sine-sine and sine-cosine velocity variations. The momentum ratio is constant (3.57) in the first case, but varies between 1.73 and 7.38 in the second. The velocity magnitude profile in both cases gradually recovers to its pre-mixing shape after the T-junction; however, the profiles differ between the two half-cycles in Case 2. Turbulence intensity varied more in the upper part than in the lower part of the main pipe. The 90o out-of-phase pulsating flow at the inlet resulted in increased temperature and turbulence intensity fluctuations along the flow axis. Momentum interactions dominate thermal mixing in the upper part of the pipe, while the lower half is dominated by gradual convection in the shear layers. The lower temperature mixing degree in 75% of the flow cross-section and 20% reduction in the temperature difference at the outlet show that more thermal mixing was achieved in Case 2. The 90° out-of-phase difference between the mixing inlets also causes the position of the thermal fluctuation to be momentarily away from the wall, which has implications for the extent of damage expected at the junction.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2110064444689362944" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112884" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110064444689362944" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="溶液堆燃料管理策略研究  反应堆中文研究 核动力工程 · 2026 · 周冰燕 王云闯 汪量子 王帅 李满仓 李庆
+zhou bingyan;wang yunchuang;wang liangzi;wang shuai;li mancang;li qing(national key laboratory of nuclear reactor technology,nuclear power institute of china,chengdu,610213,china)  输运—燃耗耦合 transport–depletion coupling 迭代计算中子反应率和核素库存随运行变化的过程。 溶液堆同位素提取造成的非燃耗损失可能超过燃耗损失，影响可持续运行寿期。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>溶液堆燃料管理策略研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 周冰燕 王云闯 汪量子 王帅 李满仓 李庆
+Zhou Bingyan;Wang Yunchuang;Wang Liangzi;Wang Shuai;Li Mancang;Li Qing(National Key Laboratory of Nuclear Reactor Technology,Nuclear Power Institute of China,Chengdu,610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>溶液堆同位素提取造成的非燃耗损失可能超过燃耗损失，影响可持续运行寿期。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>RMC连续多循环燃耗模型显式计入工艺燃料损耗。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未量化各损耗来源、核数据及实测验证，不能把所有溶液堆都视为同一损耗比例。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>对提取频率与非燃耗损耗分开扫描，用单位同位素产量耗料量评价燃料管理。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>输运—燃耗耦合<small>transport–depletion coupling</small></h4><p>迭代计算中子反应率和核素库存随运行变化的过程。</p><p class="context"><b>本文语境</b> 溶液堆同位素提取造成的非燃耗损失可能超过燃耗损失，影响可持续运行寿期。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为实现短半衰期的医用同位素生产,溶液堆需要频繁停堆进行同位素提取,使得单个燃料循环的持续时间较短,在反应堆运行寿命内需要实现上千乃至上万个循环的燃料管理;同时由于同位素提取等过程会造成燃料的额外损耗,使得溶液堆燃料管理十分复杂。针对上述特点,考虑溶液堆运行及同位素提取造成的燃料溶液损耗,利用反应堆蒙特卡罗程序RMC,结合中子输运-燃耗耦合计算,形成了可实现多循环连续计算的燃料管理计算模型。基于该模型开展的分析结果表明,寿期内非燃耗因素造成的易裂变核素损耗大于燃耗造成的损耗;在燃料总量一定的情况下,可通过降低非燃耗因素造成的损耗来提升燃料可维持的寿期。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204625572" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc的气冷空间堆坠落事故临界安全分析  反应堆中文研究 核动力工程 · 2026 · 胡炜彤 王振宇 刘仕倡 张晟豪 章明辉
+hu weitong;wang zhenyu;liu shichang;zhang shenghao;zhang minghui(school of nuclear science and engineering,north china electric power university,beijing,102206,china)  非结构网格输运 unstructured-mesh transport 以非规则网格表示材料空间并跟踪粒子输运。 rmc-um与变形网格连接，计算402棒he-xe气冷空间堆坠落后的临界性变化，始末keff增量876.7 pcm。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>基于RMC的气冷空间堆坠落事故临界安全分析</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 胡炜彤 王振宇 刘仕倡 张晟豪 章明辉
+Hu Weitong;Wang Zhenyu;Liu Shichang;Zhang Shenghao;Zhang Minghui(School of Nuclear Science and Engineering,North China Electric Power University,Beijing,102206,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC-UM与变形网格连接，计算402棒He-Xe气冷空间堆坠落后的临界性变化，始末keff增量876.7 pcm。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将冲击大变形几何直接传递给蒙卡输运并与其他几何路线比较。</li></ul></section>
+        <section><h3>不足</h3><ul><li>两程序一致性不替代冲击实验；时间节省依赖网格与硬件，不能解释为普遍93%加速。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>先验证质量守恒和材料映射，再分离接触力学不确定度、网格误差与蒙卡统计误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>非结构网格输运<small>unstructured-mesh transport</small></h4><p>以非规则网格表示材料空间并跟踪粒子输运。</p><p class="context"><b>本文语境</b> RMC-UM与变形网格连接，计算402棒He-Xe气冷空间堆坠落后的临界性变化，始末keff增量876.7 pcm。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>空间堆在发射失败后,因高速撞击可能重返临界状态进而引发严重的安全事故,是当前国际核安全与航天安全领域亟需重点解决的问题。本文基于非结构网格(UM)的蒙特卡罗粒子输运与有限元空气动力学仿真理论,研究在反应堆遭受冲击后造成堆芯大变形几何条件下的中子学参数变化。以美国“普罗米修斯”计划中的空间堆作为研究对象,该堆包含402根燃料棒、以He-Xe气体作为冷却剂。分析其在垂直撞击地面过程中反应性随时间变化的规律。结果表明:对于撞击前的初始堆芯,采用基于内部UM的反应堆蒙特卡罗程序RMC即RMC-UM与MCNP-UM计算的有效增殖系数(keff)均与传统构造实体几何(CSG)符合较好,RMC-UM读取网格时间及整体计算时间比MCNP-UM分别减少87%和93%;针对变形后的堆芯,分别采用RMC-UM与基于直接加速几何(DAG)蒙特卡罗方法的RMC-DAG开展中子输运计算,始末时刻的keff增量为876.7pcm(1pcm=10-5),keff均呈现先增加后逐步趋于稳定的趋势,两种方法结果符合良好。本研究为空间堆发射的临界安全分析提出了可行的方法,验证了RMC的内部UM功能应用于空间堆坠落事故等冲击动力学场景的准确性。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204625574" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>德黑兰研究堆中子谱下Zr-90(n,2n)Zr-89截面测量：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：谱平均截面不是单能微观截面，不能把1.73×10⁻⁵ barn直接代入任意能量点；不确定度11%。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>使用相同响应函数传播裂变谱不确定度，区分源谱变化和反应截面偏差。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Measurement of the Zr-90(n, 2n) Zr-89 reaction cross section using fast neutron spectrum at the Tehran Research reactor (TRR) | 10.1016/j.anucene.2026.112939</li><li>活化测量结合含燃耗堆芯模拟给出锆同位素谱平均反应截面。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先考虑可公开验证的小算例</span><h3>核热源到热结构网格的误差传递</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 网格映射和功率归一化已有成熟实现，新意需来自误差预算</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>Cardinal的MeshTally已将OpenMC非结构网格计数连接到libMesh，并定义核热等响应的单位转换及相对误差输出。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>分离统计、空间计数、几何映射和结构简化误差，确定影响最高温度/应力的主要来源。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>软件接口本身不是创新；对极值响应提出可验证的容差与成本规则更有研究价值。</p></section>
+            <section><h4>建议论文切口</h4><p>从单棒或简单组件开始，固定总功率并改变计数分辨率，检查温度峰值位置和幅值的稳定性。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>映射前后积分功率守恒，并报告局部统计误差。</li><li>先有热传导解析/公开基准验证，再引入复杂接触。</li></ul><h4>新颖性风险</h4><ul><li>官方当前libMesh计数不支持随机射线所需的tracklength估计，不能假设各输运模式通用。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://cardinal.cels.anl.gov/source/tallies/MeshTally.html" target="_blank" rel="noopener">Cardinal MeshTally 官方文档（2026-10-23核验）↗</a><p>现有非结构计数、单位和统计误差接口。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
