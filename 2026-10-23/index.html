@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-23 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-23 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-23</strong><span>本期日期</span></div><div class="stat"><strong>3</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>3</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 6</button><button data-filter="xmol">X-MOL 3</button><button data-filter="cqvip">维普 3</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-23，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文3篇、中文3篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="含储热的核能零液体排放热电联供系统可靠性 reliability assessment of nuclear powered zero-liquid-discharge cogeneration systems with thermal energy storage 核能系统可靠性 annals of nuclear energy · 2026-10-15 · asher jewell, michael j. wagner, saeed alhadhrami, steven prescott, ben lindley 核能系统可靠性 储热解耦 thermal energy storage decoupling 用储热缓冲使热源与用热过程不必同步运行。 储热解耦对可靠性的收益取决于工艺端故障率和储热自身可靠性。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>核能系统可靠性</span><span>核能系统可靠性</span></div>
+          <h2>含储热的核能零液体排放热电联供系统可靠性</h2>
+          <p class="title-en">Reliability assessment of nuclear powered zero-liquid-discharge cogeneration systems with thermal energy storage</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-15 · Asher Jewell, Michael J. Wagner, Saeed Alhadhrami, Steven Prescott, Ben Lindley</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-23；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>储热解耦对可靠性的收益取决于工艺端故障率和储热自身可靠性。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把热耦合设计与维护策略置于同一事件风险模型中比较。</li></ul></section>
+        <section><h3>不足</h3><ul><li>40%和65%是特定模型的最大改善幅度；故障率、维修时间及经济成本需查全文。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>以公开设备故障数据扫描储热容量和可靠性，找到解耦收益转负的边界。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>储热解耦<small>thermal energy storage decoupling</small></h4><p>用储热缓冲使热源与用热过程不必同步运行。</p><p class="context"><b>本文语境</b> 储热解耦对可靠性的收益取决于工艺端故障率和储热自身可靠性。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核能若与零液体排放海水淡化（ZLD）热耦合，可同时提供清洁电力、淡水并提取锂等矿物。ZLD消耗较多能量，而核能与淡化均为资本密集技术，耦合可能带来可靠性问题。本文评估不同维护策略，并考察用储热（TES）解耦、保持热独立性和降低停机的作用，使用EMRALD事件建模风险分析。研究设定下，对退化设备实施预防维护可使反应堆停机时间最多减少40%；用TES解耦动力循环与ZLD，最多可减少65%。收益取决于ZLD设备故障率，对本身可靠性较高的工艺热应用影响较小。储热设备需要具有高可靠性，否则其故障可能反使ZLD停机。研究展示EMRALD比较热电联供设计及维护策略可靠性的用途。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Nuclear power has the potential to simultaneously address demand for clean electricity, freshwater scarcity, and demand for valuable minerals, such as lithium, if it is thermally integrated with zero liquid discharge desalination (ZLD). ZLD is an energy-intensive process that desalinates seawater, mining its minerals and extracting freshwater such that no liquid is discharged. However, such nuclear-thermal integration could present challenges for the reliability of the combined system, given both nuclear and desalination are capital-intensive technologies. In this paper, the reliability of such a system is assessed for different maintenance strategies. Additionally, the impact of using thermal energy storage (TES) to decouple designs to maintain thermal independence and reduce downtime is investigated. The system is modeled in Event Modeling Risk Assessment using Linked Diagrams (EMRALD). We determined that performing preventative maintenance on degrading system components can reduce reactor downtime by as much as 40% and that introducing TES to decouple the power cycle from the ZLD reduces reactor downtime by as much as 65%. The impact of decoupling on reducing reactor downtime was found to depend on the component failure rates of the ZLD system, with such a strategy being less impactful for a higher reliability process heat application. High component reliabilities in the TES were found to be necessary to prevent increased downtime in the ZLD system, as failure in the TES could otherwise drive the ZLD system offline. Seeing these changes in system performance, this research shows how EMRALD can be used to compare the reliabilities of different cogenerating plant designs and maintenance strategies.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2112761102707470336" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112932" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112761102707470336" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="低压过冷沸腾环隙局部空泡份额与温度轴向演化 axial development of local void-fraction and fluid-temperature distributions in low-pressure subcooled boiling in a vertical internally heated annulus 沸腾模型验证 nuclear engineering and technology · 2026-09-25 · yeon-gun lee, il woong park, hyeonjo kim, changyong jung, hyoungjin na, sin kim 沸腾模型验证 壁面沸腾闭合 wall boiling closure 将未解析的汽泡生成、脱离与换热过程参数化的模型。 实验提供同一环隙中相分布、液体温度和壁温的联合验证信息。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>沸腾模型验证</span><span>沸腾模型验证</span></div>
+          <h2>低压过冷沸腾环隙局部空泡份额与温度轴向演化</h2>
+          <p class="title-en">Axial development of local void-fraction and fluid-temperature distributions in low-pressure subcooled boiling in a vertical internally heated annulus</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-09-25 · Yeon-Gun Lee, Il Woong Park, Hyeonjo Kim, Changyong Jung, Hyoungjin Na, Sin Kim</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-23；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>实验提供同一环隙中相分布、液体温度和壁温的联合验证信息。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>多位置多物理量数据使只拟合壁温的补偿误差更容易识别。</li></ul></section>
+        <section><h3>不足</h3><ul><li>只有六组低压工况，且摘要未说明原始数据获取方式；不能直接等同PWR高压范围。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>优先取得测点和误差条，用同一模型同时核对壁温与空泡份额而非分别调参。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>壁面沸腾闭合<small>wall boiling closure</small></h4><p>将未解析的汽泡生成、脱离与换热过程参数化的模型。</p><p class="context"><b>本文语境</b> 实验提供同一环隙中相分布、液体温度和壁温的联合验证信息。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>过冷沸腾中的界面结构与温度场耦合演化难以预测，可靠验证需要两者的局部测量。本文建立竖直内加热环隙低压过冷沸腾实验数据库：外管内径30 mm、加热棒直径10 mm、有效加热长2.0 m。六组工况覆盖热流198–377 kW/m²、质量通量376–680 kg/(m²·s)、入口过冷度12.3–15.8 K和出口压力115–202 kPa。将高速可视化与既有光纤探针局部空泡份额，以及多个轴向位置的径向液温、加热面温度测量结合，系统表征不同工况下界面、液温及壁面热响应的轴向耦合演化。该综合数据库可作为低压过冷沸腾壁面闭合与界面输运模型的CFD验证基准。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The coupled evolution of interfacial structure and thermal fields in subcooled boiling remains difficult to predict, and reliable model validation requires local measurements of both phase distribution and temperature. In this study, an extended experimental database was established for low-pressure subcooled boiling flow in a vertically oriented internally heated annulus. Water-steam subcooled boiling flow was generated between a 30 mm-inner-diameter outer tube and a 10 mm-diameter heated rod over an effective heating length of 2.0 m. Six test conditions were examined by varying wall heat flux, mass flux, inlet subcooling, and exit pressure over ranges of 198–377 kW/m2, 376–680 kg/m2s, 12.3–15.8 K, and 115–202 kPa, respectively. High-speed flow visualization was combined with previously measured local void fraction data obtained by optical fiber probes, together with measurements of radial fluid temperature profiles and heated surface temperatures at multiple axial locations. Based on these measurements, the coupled axial evolution of interfacial structure, fluid temperature distribution, and wall thermal response was systematically characterized under varying operating conditions. The resulting integrated dataset is expected to serve as a valuable benchmark for CFD-grade wall boiling closures and interfacial transport models for low-pressure subcooled boiling flows.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2104365294964649985" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104740" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2104365294964649985" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="3×3棒束气液两相流型演化实验 experimental study on flow pattern evolution characteristics of gas-liquid two-phase flow in a 3×3 rod bundle channel 棒束两相流实验 progress in nuclear energy · 2026-09-24 · jianchuang sun, songqi kang, junjie peng, liang guan, deshun chen, wenchao zhang, wentao wu, weihua cai 棒束两相流实验 气体表观速度 gas superficial velocity 将气相体积流率除以整个通道截面积得到的速度。 3×3棒束的光纤信号频谱与局部空泡份额共同辅助流型判定。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>棒束两相流实验</span><span>棒束两相流实验</span></div>
+          <h2>3×3棒束气液两相流型演化实验</h2>
+          <p class="title-en">Experimental study on flow pattern evolution characteristics of gas-liquid two-phase flow in a 3×3 rod bundle channel</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-09-24 · Jianchuang Sun, Songqi Kang, Junjie Peng, Liang Guan, Deshun Chen, Wenchao Zhang, Wentao Wu, Weihua Cai</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-23；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>3×3棒束的光纤信号频谱与局部空泡份额共同辅助流型判定。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用两种测量手段与组合判据定位流型边界差异。</li></ul></section>
+        <section><h3>不足</h3><ul><li>空气水缩比试验不能直接给高压蒸汽水CHF边界；原始探针数据开放程度待核。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>以工况留一验证流型识别，再检查低阶模态是否保留转换前的低频特征。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>气体表观速度<small>gas superficial velocity</small></h4><p>将气相体积流率除以整个通道截面积得到的速度。</p><p class="context"><b>本文语境</b> 3×3棒束的光纤信号频谱与局部空泡份额共同辅助流型判定。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对小尺度棒束通道两相流认识不足，本文用空气—水在3×3棒束中实验，结合高速摄影与自制双光纤探针，获取流型演化、局部相分布和信号时频特征。识别泡状、帽状泡、帽状湍动、搅混及细分散五类流型，并以组合判据建立流型图。总体转换顺序与既有竖直棒束判据一致，但个别边界存在差异；细分散边界的偏差随气体表观速度增大而减小。这些差异与棒束几何、气泡聚并破碎及局部扰动相关。空泡份额径向为中心峰型，平均气泡速度径向较均匀。泡状及细分散流呈宽频谱；帽状泡、帽状湍动和搅混流呈低频主峰，并有空间差异。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To address the insufficient understanding of two-phase flow characteristics in the small-scale rod bundle channels, this study takes air-water two-phase flow as the research object and carries out a systematic experimental investigation in a 3×3 rod bundle channel. High-speed imaging is combined with a self-developed dual-fiber optical probe system. Flow pattern evolution, local phase distribution, and the time-domain and frequency-domain characteristics of probe signals are obtained under different operating conditions. Five typical flow patterns are identified from the optical probe signals, including bubbly flow, cap-bubbly flow, cap-turbulent flow, churn flow, and finely dispersed flow. A flow regime map is established using a combined identification criterion. Compared with existing transition criteria for vertical rod bundles, the general sequence of flow-regime evolution is consistent, while noticeable differences are observed in individual transition boundaries. The deviation of the finely dispersed-flow boundary from the existing criterion decreases as the gas superficial velocity increases. These differences are associated with rod-bundle geometry, bubble coalescence and breakup, and local disturbances. The local measurements show a core-peaked radial distribution of void fraction, while the radial profile of mean bubble velocity remains relatively uniform. Frequency-domain analysis of the probe signals reveals distinct spectral characteristics for different flow patterns. Bubbly and finely dispersed flows exhibit broadband spectra, whereas cap-bubbly, cap-turbulent, and churn flows show dominant low-frequency peaks with spatial variations.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2106269510765129728" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106628" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2106269510765129728" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于三维特征线方法的矩形cmfd研究  moc特征线中子输运 核科学与技术 · 2025 · 杨缙卿 胡赟 单浩栋  cmfd coarse-mesh finite difference 以粗网低阶问题加速高阶输运迭代，而非替代输运物理。 ant-moc矩形cmfd在组件算例中节省10倍以上时间，均匀矩形网格时作者报告无损加速。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>MOC特征线中子输运</span></div>
+          <h2>基于三维特征线方法的矩形CMFD研究</h2>
+          
+          <p class="meta">核科学与技术 · 2025 · 杨缙卿 胡赟 单浩栋</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>ANT-MOC矩形CMFD在组件算例中节省10倍以上时间，均匀矩形网格时作者报告无损加速。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>实现三维MOC与矩形粗网加速的闭合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>无损指收敛解在所测设置中一致，不意味着角度、径迹及群常数无离散误差；缺全堆成本。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>固定收敛容差，联合扫描粗网尺寸与径迹间距，比较局部功率及总时间。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>CMFD<small>coarse-mesh finite difference</small></h4><p>以粗网低阶问题加速高阶输运迭代，而非替代输运物理。</p><p class="context"><b>本文语境</b> ANT-MOC矩形CMFD在组件算例中节省10倍以上时间，均匀矩形网格时作者报告无损加速。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>三维特征线方法(the Method of Characteristics, MOC)作为确定论方法,能够满足中子输运求解的计算要求,并且有着优秀的几何适应性、较高的计算精度、简洁易实现的计算模型及强大的并行潜力,但是在高保真、精细化建模的需求下,它对计算量有着巨大的需求,因此需要一个加速方法来提高程序的计算效率,而粗网有限差分方法(coarse mesh finite difference method, CMFD)作为使用的较多的加速方法,能够取得非常显著的加速效果。本次研究基于三维特征线程序ANT-MOC,并使用自建计算模型对CMFD的加速效率和加速精度进行验证,最终结果表明本次研究的矩形CMFD方法在计算组件级的几何模型时能够节省10倍以上的计算时间,且在均匀矩形网格划分的情况下能实现无损加速。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=HS724632025003004&amp;from=Qikan_Search_Index" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于特征线方法的控制转鼓反应性计算研究  moc特征线中子输运 核动力工程 · 2025 · 黄达宇 吴文斌 谢择怿 姬少斌 郑竞超 钟一鸣 宫兆虎 曾未
+huang dayu;wu wenbin;xie zeyi;ji shaobin;zheng jingchao;zhong yiming;gong zhaohu;zeng wei(sino-french institute of nuclear engineering and technology,sun yat-sen university,zhuhai,guangdong,519082,china;national key laboratory of nuclear reactor technology,nuclear power institute of china,chengdu,610213,china)  再启动 restart 利用前一计算状态作为新工况初值以减少迭代。 core-moc用csg、cmfd和再启动计算热管堆转鼓，四个关键角度keff与蒙卡最大偏差小于30 pcm。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>MOC特征线中子输运</span></div>
+          <h2>基于特征线方法的控制转鼓反应性计算研究</h2>
+          
+          <p class="meta">核动力工程 · 2025 · 黄达宇 吴文斌 谢择怿 姬少斌 郑竞超 钟一鸣 宫兆虎 曾未
+Huang Dayu;Wu Wenbin;Xie Zeyi;Ji Shaobin;Zheng Jingchao;Zhong Yiming;Gong Zhaohu;Zeng Wei(Sino-French Institute of Nuclear Engineering and Technology,Sun Yat-sen University,Zhuhai,Guangdong,519082,China;National Key Laboratory of Nuclear Reactor Technology,Nuclear Power Institute of China,Chengdu,610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>CORE-MOC用CSG、CMFD和再启动计算热管堆转鼓，四个关键角度keff与蒙卡最大偏差小于30 pcm。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把转鼓动态建模与上一状态再启动结合，分别比较静态及无再启动计算成本。</li></ul></section>
+        <section><h3>不足</h3><ul><li>只验证四角的keff不能保证全角度局部功率；4.48及4.96倍加速依赖各自基线。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>针对吸收体边缘掠过燃料的角度加密，联合检查轨迹、角度及转鼓角采样收敛。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>再启动<small>restart</small></h4><p>利用前一计算状态作为新工况初值以减少迭代。</p><p class="context"><b>本文语境</b> CORE-MOC用CSG、CMFD和再启动计算热管堆转鼓，四个关键角度keff与蒙卡最大偏差小于30 pcm。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>控制转鼓反应性控制方式在热管型先进反应堆中应用广泛,对控制转鼓精确建模并计算其对反应性的影响具有重要意义。本文采用特征线方法计算程序CORE-MOC,几何建模基于构造实体几何(CSG),输运计算采用特征线方法,并使用粗网有限差分(CMFD)方法和再启动方法加速计算,对控制转鼓进行模拟计算。基于C5G7基准题,在反射层组件中放置控制转鼓,构造了二维方形、三维方形、二维六角形转鼓C5G7基准题和热管堆堆芯基准题。针对转鼓C5G7基准题,进行了有效增殖因子keff计算和加速效果分析。数值结果表明,在关键的4个旋转角度上keff与蒙特卡罗结果对比最大偏差小于30pcm(1pcm=10-5);动态建模计算采用再启动方法相较于不采用再启动方法有4.48倍的加速比,相较于静态建模计算有4.96倍的加速比。因此,CORE-MOC程序计算控制转鼓反应性具有较高计算精度,再启动方法加速效果显著。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202473372&amp;from=Qikan_Search_Index" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="moc/sn耦合三维中子输运程序的并行优化  moc特征线中子输运 成都信息工程大学学报 · 2024 · 何琴 杨昊 周世杰 周航 文武
+he qin;yang hao;zhou shijie;zhou hang;en wu(college of computer science,chengdu university of information technology,chengdu,610225,china;school of information and software engineering,university of electronic science and technology of china,chengdu,610054,china)  moc/sn耦合 moc–discrete ordinates coupling 用不同输运离散方法分别处理径向和轴向并交换解。 kycore将径向moc与轴向sn耦合，mpi二维拓扑分离区域与输运并行，moc模块效率达到70%以上。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>MOC特征线中子输运</span></div>
+          <h2>MOC/SN耦合三维中子输运程序的并行优化</h2>
+          
+          <p class="meta">成都信息工程大学学报 · 2024 · 何琴 杨昊 周世杰 周航 文武
+HE Qin;YANG Hao;ZHOU Shijie;ZHOU Hang;EN Wu(College of Computer Science,Chengdu University of Information Technology,Chengdu,610225,China;School of Information and Software Engineering,University of Electronic Science and Technology of China,Chengdu,610054,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>KYCORE将径向MOC与轴向SN耦合，MPI二维拓扑分离区域与输运并行，MOC模块效率达到70%以上。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区域内能群任务自适应分配和动态负载均衡保留原区域分解。</li></ul></section>
+        <section><h3>不足</h3><ul><li>模块效率不等于全程序加速；通信、轨迹预处理与内存峰值需独立核算。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>在相同算例与资源上比较区域、能群两层并行，报告端到端强弱缩放。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>MOC/SN耦合<small>MOC–discrete ordinates coupling</small></h4><p>用不同输运离散方法分别处理径向和轴向并交换解。</p><p class="context"><b>本文语境</b> KYCORE将径向MOC与轴向SN耦合，MPI二维拓扑分离区域与输运并行，MOC模块效率达到70%以上。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>KYCORE程序是中国核动力研究设计院开发的径向特征线法与轴向离散纵标法耦合三维中子输运程序。KYCORE程序采用几何区域并行方法,可并行计算不同区域的数据。但由于其庞大的计算量以及内存占用量,KYCORE基于几何区域并行取得的时间增益不高,且程序无法再对区域中输运模块二级并行。MPI二维拓扑通信结构将不同维度的计算划分至不同通信域,适用于二维计算问题。将其应用至KYCORE程序,使几何区域和输运模块独立开,实现了在不破坏原有一维几何区域并行结构的情况下,可以进一步实现区域内部输运模块即二维维度上的并行优化。针对输运模块中的特征线法求解模块,特征线两级并行优化算法自适应地为各个进程划分能群计算任务,且各个进程动态负载均衡。针对C5G7基准例题测试,对于不同大小的算例,输运特征线法模块的并行效率达70%及以上,测试表明该结构与方法取得了明显的加速效果,具有精确性、高可扩展性。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7112006778" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>含储热的核能零液体排放热电联供系统可靠性：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：40%和65%是特定模型的最大改善幅度；故障率、维修时间及经济成本需查全文。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>以公开设备故障数据扫描储热容量和可靠性，找到解耦收益转负的边界。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Reliability assessment of nuclear powered zero-liquid-discharge cogeneration systems with thermal energy storage | 10.1016/j.anucene.2026.112932</li><li>储热解耦对可靠性的收益取决于工艺端故障率和储热自身可靠性。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>适中难度；先从二维转鼓基准开始</span><h3>MOC离散误差与转鼓局部功率</h3></div>
+          <p class="priority-change"><b>优先级变化</b> CMFD和再启动已有工作，不能把启用它们作为独立创新</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>OpenMOC官方输入文档已提供轨迹生成、角度数与间距控制；本批中文文献已有转鼓和三维CMFD验证。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>研究转鼓吸收边缘处径迹/角度分辨率对局部功率与反应性曲线的共同影响，并与蒙卡误差分开。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行切口是提出并验证工程误差容限或自适应采样，而非重写一个MOC程序。</p></section>
+            <section><h4>建议论文切口</h4><p>同一二维燃料—反射层转鼓模型中比较等间距与局部加密角度采样，固定核数据和收敛容差。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>同时报告keff、局部功率、径迹与角度收敛。</li><li>蒙卡参考保留统计不确定度，成本计入轨迹生成和再启动。</li></ul><h4>新颖性风险</h4><ul><li>四角keff一致不能推出全转角局部功率准确。</li><li>MOC本身属于确定论，不能把二者写为互斥方法。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://mit-crpg.github.io/OpenMOC/usersguide/input.html" target="_blank" rel="noopener">OpenMOC: Writing Python Input Files（官方方法文档；2026-10-23核验）↗</a><p>给出轨迹角度及间距等输入控制，说明这些已有标准实现。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><section class="research"><h2>待补摘要线索（不计阅读篇数）</h2><article class="opportunity"><details><summary>查看 19 篇待核对文献</summary><ol class="source-list"><li><a href="https://www.x-mol.com/paper/2107995950298902528" target="_blank" rel="noopener">Optimization of the Heat Transfer Model for Superheated Steam Condensation Inside Tubes and Its Evaluation with the SPACE Code ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107995950659612672" target="_blank" rel="noopener">Neutronic Investigation of Y 2 Sn 2 O 7 and Y 2 TiO 5 as Alternative Cladding Materials in a VVER-1200 Reactor Using the Serpent Monte Carlo Code ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107995950697361409" target="_blank" rel="noopener">Investigation of Performance of a Large-Scale Water-Based RCCS Under Varying Decay Heat Loads ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112014046923796491" target="_blank" rel="noopener">Catalyzed deuterium fusion neutron source for the transmutation of minor actinides, production of tritium, and electrical power generation ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112014046810550272" target="_blank" rel="noopener">Gaussian Process Regression-Based Prediction of Spatial Source-Term Distributions in Activated Bioshield Concrete Using Limited Sampling Data ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112014046768607240" target="_blank" rel="noopener">Toward Reliable Probabilistic CHF Prediction: Physical Interpretation and Evaluation of Epistemic–Aleatoric Uncertainty Decomposition ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112014046747635718" target="_blank" rel="noopener">Interfacial dissolution behavior of UO2 in carbonate-based groundwater environments ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112014046726664192" target="_blank" rel="noopener">Characterisation of Annular UO2 Pellets Fabricated Using Spark Plasma Sintering and Conventional Sintering ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2109450223633248256" target="_blank" rel="noopener">Exploring the effects of dual-layered Cr/Nb coating thickness on the corrosion and annealing response characteristics of an accident-tolerant Zr fuel cladding material ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2109450222110715904" target="_blank" rel="noopener">Transient Dynamic Response of a Thorium-Based Molten Salt Reactor Under Reactivity Insertion followed by Loss of Flow and Loss of Heat Sink ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2109450221775171584" target="_blank" rel="noopener">Experimental Study on Spray Activation in a Containment Atmosphere with Superheated Steam Conditions during a Design Basis Accident ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107996321234759680" target="_blank" rel="noopener">Observations regarding the construction of multipoint kinetics models from observational data ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107995949728477184" target="_blank" rel="noopener">High-Fidelity Multiphysics Modeling of the Molten Salt Fast Reactor with Applications for Reduced-Order Models ↗</a><p> · 来源页缺少可见摘要；公开渠道尚未补得，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112761107572862976" target="_blank" rel="noopener">Analysis of Th-U conversion and fission product characteristics in thorium-based molten salt reactor ↗</a><p>10.1016/j.anucene.2026.112947 · 可见文本只有背景/方法片段或不足以支持研究结果，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2112761097594613760" target="_blank" rel="noopener">Counterpart test for LSTF SBLOCA at the RPV upper head using ATLAS test facility ↗</a><p>10.1016/j.anucene.2026.112921 · 可见文本只有背景/方法片段或不足以支持研究结果，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2107996321272508419" target="_blank" rel="noopener">Validation of a Hybrid Physics-Informed Machine Learning Model for Mobile Radiation Detection Using Monte Carlo N-Particle Simulations ↗</a><p>10.1016/j.net.2026.104759 · 可见文本只有背景/方法片段或不足以支持研究结果，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106299940860080128" target="_blank" rel="noopener">Core characteristics of a modified pebble-bed high-temperature gas-cooled reactor design ↗</a><p>10.1016/j.nucengdes.2026.115233 · 可见文本只有背景/方法片段或不足以支持研究结果，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2104365295019175940" target="_blank" rel="noopener">Response-dependent layer ordering in fixed-inventory compact neutron–photon shields: Exhaustive OpenMC benchmarks at 2.45 and 14.1 MeV ↗</a><p>10.1016/j.net.2026.104719 · 可见文本只有背景/方法片段或不足以支持研究结果，未计正式阅读。</p></li><li><a href="https://www.x-mol.com/paper/2106222091918651392" target="_blank" rel="noopener">Temperature–based quantitative detection of micro–internal leakage in heat–cycle isolation valves of nuclear power plants ↗</a><p>10.1016/j.anucene.2026.112872 · 可见文本只有背景/方法片段或不足以支持研究结果，未计正式阅读。</p></li></ol></details></article></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
