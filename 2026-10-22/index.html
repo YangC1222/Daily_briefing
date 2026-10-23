@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-22 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-22 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-22</strong><span>本期日期</span></div><div class="stat"><strong>3</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>4</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 7</button><button data-filter="xmol">X-MOL 3</button><button data-filter="cqvip">维普 4</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯补充：归档日期2026-10-22，实际检索、摘要核验与整理日期均为2026-10-23。英文采用已授权的近30天未读窗口（2026-09-24至10-23），本期按来源日期不晚于归档日期分配；不是在该日完成的阅读，也不是当天新发清单。本期正式英文3篇、中文4篇，均低于10–15篇英文/5–10篇中文目标；保留缺额，不用重复、无摘要或不相关条目凑数。中文较早文献逐篇标为历史方法补充。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="深穿透中子到达谱的散射耦合自适应源偏置 scattering-coupled adaptive source biasing for deep-penetration neutron arrival-spectrum calculations 中子深穿透减方差 annals of nuclear energy · 2026-10-06 · linhe du, xiaoqiang li, peng li, yanbin wang, xinliang pang, xiong zhang 中子深穿透减方差 源偏置 source biasing 改变源采样分布并修正粒子权重，以提高目标响应采样效率。 源—到达能群散射耦合用于均衡各能群统计误差。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>中子深穿透减方差</span><span>中子深穿透减方差</span></div>
+          <h2>深穿透中子到达谱的散射耦合自适应源偏置</h2>
+          <p class="title-en">Scattering-coupled adaptive source biasing for deep-penetration neutron arrival-spectrum calculations</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-06 · Linhe Du, Xiaoqiang Li, Peng Li, Yanbin Wang, Xinliang Pang, Xiong Zhang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-22；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>源—到达能群散射耦合用于均衡各能群统计误差。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以响应矩阵和约束优化控制源偏置，保持权重无偏性。</li></ul></section>
+        <section><h3>不足</h3><ul><li>276倍来自大气源高算例，不是堆屏蔽或MOC加速结果；响应矩阵预计算成本需计入。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>在小型堆屏蔽基准上比较同精度总时间与能群尾部误差，单列响应矩阵成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>源偏置<small>source biasing</small></h4><p>改变源采样分布并修正粒子权重，以提高目标响应采样效率。</p><p class="context"><b>本文语境</b> 源—到达能群散射耦合用于均衡各能群统计误差。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>深穿透蒙卡中，源谱不均匀及能量相关输运使不同到达能群的相对不确定度可相差数十至数百倍。本文提出散射耦合自适应源偏置（SC-ASB），使用源—目标响应矩阵保留高能源中子散射到低到达能群的耦合。通过在归一化及双侧误差平衡约束下最小化相对统计误差之和得到偏置源，并以权重修正保留原始源期望。在大气中子输运算例中，误差分布及效率改善；源高15 km时品质因子为模拟输运的276倍。相对均匀源偏置，对不同源高适应性更好；相对权窗方法，更有效平衡各能群相对统计误差。该方法为分能谱深穿透中子输运提供减方差框架。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Reliable neutron arrival spectra are needed for space radiation assessment and radiation protection, but deep-penetration Monte Carlo calculations often yield highly uneven uncertainties across energy groups. In analog Monte Carlo simulations, the nonuniform source spectrum and the energy-dependent transport behavior of neutrons can lead to relative uncertainties that differ by tens or even hundreds of times among arrival energy groups. To address this imbalance in arrival-spectrum uncertainties for deep-penetration transport, this study proposes a scattering-coupled adaptive source biasing (SC-ASB) method that uses a source-to-target response matrix to retain scattering-induced coupling from high-energy source neutrons to lower-energy arrival groups. The biased source distribution is derived by minimizing the sum of relative statistical errors (RSEs) subject to normalization and two-sided error-balance constraints, while the original source expectation is preserved by weight correction. Atmospheric neutron transport calculations showed that SC-ASB improved the relative-error distribution and increased computational efficiency. For a 15 km source height case, the figure of merit was 276 times that of analog simulation. Compared with uniform source biasing, SC-ASB showed better adaptability across source heights. In contrast to the WW variance-reduction method, SC-ASB provides more effective balancing of the RSEs across different energy groups. The method provides a variance-reduction framework for spectrum-resolved deep-penetration neutron transport.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2110057695467024384" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112910" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110057695467024384" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="自动卸压系统喷淋管整体排放特性实验 experimental study on discharge behavior in automatic depressurization system: overall discharge characteristics of the sparger 事故卸压与结构载荷 annals of nuclear energy · 2026-10-06 · zhengrun shang, dufeng lv, pei yu, zhaoming meng, zhongning sun 事故卸压与结构载荷 平衡干度 equilibrium quality 依据热力平衡焓关系定义的蒸汽质量份额参数。 两相喷淋管排放的峰值压力振荡明显高于单相，且空间传播非单调。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>事故卸压与结构载荷</span><span>事故卸压与结构载荷</span></div>
+          <h2>自动卸压系统喷淋管整体排放特性实验</h2>
+          <p class="title-en">Experimental study on discharge behavior in automatic depressurization system: overall discharge characteristics of the sparger</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-06 · Zhengrun Shang, Dufeng Lv, Pei Yu, Zhaoming Meng, Zhongning Sun</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-22；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>两相喷淋管排放的峰值压力振荡明显高于单相，且空间传播非单调。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在原型参数基础上给出相态、干度与振荡传播的实验关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>峰值压力不是构件应力；缺少空间相位、载荷持续时间及结构边界不能直接计算疲劳。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>提取多点同步压力信号，比较等效静载与瞬态Mechanical载荷对支承应力的差异。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>平衡干度<small>equilibrium quality</small></h4><p>依据热力平衡焓关系定义的蒸汽质量份额参数。</p><p class="context"><b>本文语境</b> 两相喷淋管排放的峰值压力振荡明显高于单相，且空间传播非单调。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为研究自动卸压系统（ADS）实际运行中的高压两相排放，以原型喷淋管排放参数为依据，实验考察跑道形孔口喷淋管射流凝结导致的压力振荡。单相排放时，最大振荡随水温先增后减；蒸汽质量流量增加时，中高水温下振荡增强，低水温下变化不明显。两相排放水温高于90℃时，最大振荡随两相质量流量增大及平衡干度降低而增强。单相最大振荡123 kPa出现在凝结振荡区；两相最大398 kPa出现在不完全凝结区，后者更高。水箱内沿径向距孔口越远，最大振荡越小，衰减幅度也随距离减小；轴向则先降后升。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To investigate the high pressure two phase discharge characteristics of the sparger during the actual operation of automatic depressurization system (ADS), based on the discharge parameter conditions of the prototype sparger, the pressure oscillation behavior caused by the jet condensation of the racetrack orifices sparger was experimentally studied in this paper. The results show that under the condition of single phase discharge, the maximum oscillation increases first and then decreases with the increase of water temperature. With the increase of steam mass flow rate, it increases in the middle and high water temperature, and does not change significantly in the low water temperature. Under the condition of two phase discharge, when the water temperature is higher than 90 °C, the maximum oscillation increases with the increase of two phase mass flow rate and the decrease of equilibrium quality. Under single phase discharge conditions, the maximum oscillation appears in the condensation oscillation regime map, which is 123 kPa. Under the two phase discharge condition, it appears in the incomplete condensation regime map, which is 398 kPa. The maximum oscillation of the two phase condition is higher than that of the single phase condition. For the oscillation propagation law in the water tank, the maximum oscillation in the radial direction decreases with the increase of the distance from the sparger orifices, and the decrease amplitude decreases with the increase of the distance. In the axial direction, it shows a trend of decreasing first and then increasing.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2110057679016964096" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112829" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2110057679016964096" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="月面就地资源核能布雷顿系统的质量优化 mass analysis of supercritical nitrous oxide and helium in a recompression brayton cycle utilizing in-situ resources for lunar base energy system 空间核能系统 annals of nuclear energy · 2026-10-01 · xinyu miao, yongfa zhang, ling chen, haochun zhang 空间核能系统 系统比质量 specific mass 能源系统总质量与净输出电功率的比值。 系统级质量最优必须同时权衡核热源、屏蔽、换热和散热器。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>空间核能系统</span><span>空间核能系统</span></div>
+          <h2>月面就地资源核能布雷顿系统的质量优化</h2>
+          <p class="title-en">Mass analysis of supercritical nitrous oxide and helium in a recompression Brayton cycle utilizing in-situ resources for lunar base energy system</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-01 · Xinyu Miao, Yongfa Zhang, Ling Chen, Haochun Zhang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-22；实际检索和翻译2026-10-23；Pub Date仅为来源标注日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>系统级质量最优必须同时权衡核热源、屏蔽、换热和散热器。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将就地屏蔽资源与工质选择纳入同一质量优化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给出月面采集施工、低温物性和工质辐照稳定性成本；17.37 kg/kWe不是已建成装置性能。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作。</li></ul><b>分析推导</b><ul><li>引入就地屏蔽施工与散热器退化质量区间，检验最优方案对遗漏成本的稳定性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读核对几何尺寸、材料/核数据、边界条件、验证数据及误差定义；摘要不足以重建算例。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>系统比质量<small>specific mass</small></h4><p>能源系统总质量与净输出电功率的比值。</p><p class="context"><b>本文语境</b> 系统级质量最优必须同时权衡核热源、屏蔽、换热和散热器。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>月球基地基础设施、极区探测与月球车需要充分利用就地资源的能源系统，以减少从地球运送的质量。本文研究以超临界一氧化二氮和氦为工质的再压缩布雷顿循环，评估系统质量，并采用小型模块化反应堆预测给定循环工况下的最小质量堆。通过在反应堆、辐射屏蔽、循环机组、回热器及散热器之间权衡，优化系统质量和比质量。结果给出的系统比质量为17.37 kg/kWe。使用月球就地资源后，反应堆屏蔽质量和体积分别降低3.55%和14.20%。研究提出的能源方案以轻量、高效及连续供电为目标，面向月球基地应用。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The Moon is the only natural satellite of the Earth and also the closest celestial body to the Earth. The Moon is regarded as an outpost of deep space exploration. The construction of lunar base infrastructure, polar exploration, and rovers constitutes the first step for humans to venture into the Moon. In the process of constructing a lunar base, it is essential to establish an energy system that can fully utilize local resources. This system will reduce the weight of materials transported from Earth and ultimately solve the energy shortage problem on the Moon. A recompression Brayton cycle that utilizes in-situ resources, with supercritical nitrous oxide and helium as the working media, and evaluates the mass of the energy system. A small modular reactor is applied to predict the minimum-mass reactor suitable for the given cycle conditions. The system mass and specific mass optimization explored the trade-offs among the reactor, radiation shield, Brayton cycle unit, recuperator, and radiator to obtain the minimum mass of the lunar base energy system. The results indicate that the specific mass of the energy system is 17.37 kg∙kWe−1. In addition, it is found that, by utilizing in-situ lunar base resources, the mass and volume of the radiation shield for the reactor can be reduced by 3.55% and 14.20%, respectively. In conclusion, the proposed energy system scheme offers several advantages, including light weight, high efficiency, and continuous electricity supply, for application in lunar bases.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2107559002276900864" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112883" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2107559002276900864" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于速率理论的压水堆uo2燃料裂变气体辐照肿胀模型研究  反应堆中文研究 稀有金属材料与工程 · 2025 · 周毅 刘振海 肖忠 刘仕超 王浩煜 辛勇 孙丹 曾未 于俊崇
+zhou yi;liu zhenhai;xiao zhong;liu shichao;wang haoyu;xin yong;sun dan;zeng wei;yu junchong(state key laboratory of advanced nuclear energy technology,nuclear power institute of china,chengdu 610213,china)  速率理论 rate theory 用缺陷和粒子群产生、迁移、反应速率建立演化方程。 速率理论描述低高燃耗下晶内与晶界气体、点缺陷、晶粒细化及气孔聚合粗化，以实验初步验证气泡和孔隙率。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>基于速率理论的压水堆UO2燃料裂变气体辐照肿胀模型研究</h2>
+          
+          <p class="meta">稀有金属材料与工程 · 2025 · 周毅 刘振海 肖忠 刘仕超 王浩煜 辛勇 孙丹 曾未 于俊崇
+Zhou Yi;Liu Zhenhai;Xiao Zhong;Liu Shichao;Wang Haoyu;Xin Yong;Sun Dan;Zeng Wei;Yu Junchong(State Key Laboratory of Advanced Nuclear Energy Technology,Nuclear Power Institute of China,Chengdu 610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>速率理论描述低高燃耗下晶内与晶界气体、点缺陷、晶粒细化及气孔聚合粗化，以实验初步验证气泡和孔隙率。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将不同燃耗机制衔接到可求解的裂变气体肿胀模型。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要仅称初步验证，未给高燃耗参数可辨识性及燃料—包壳接触验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>把肿胀预测与间隙闭合模型单向连接，分别传播气体模型和接触热阻不确定度。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>速率理论<small>rate theory</small></h4><p>用缺陷和粒子群产生、迁移、反应速率建立演化方程。</p><p class="context"><b>本文语境</b> 速率理论描述低高燃耗下晶内与晶界气体、点缺陷、晶粒细化及气孔聚合粗化，以实验初步验证气泡和孔隙率。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>压水堆UO2燃料裂变气体导致的辐照肿胀会促使燃料-包壳接触、降低燃料热导率,是影响燃料元件性能的关键行为。基于速率理论,针对不同的燃耗范围,建立了裂变气体辐照肿胀模型。模型首先提出了低燃耗下晶内气体、晶界气体和点缺陷的控制方程,然后给出了高燃耗下考虑晶粒细化的晶内气体控制方程、晶界气孔非平衡态长大控制方程,并建立聚合粗化模型。在此基础上,采用COMSOL软件实现控制方程的求解。采用试验数据进行了模型初步验证,模型预测的气泡尺寸、气孔率与试验结果符合较好。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7201486469" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="空心绕丝燃料棒组件的热工水力特性分析  反应堆中文研究 热科学与技术 · 2025 · 姜文殊 卢涛
+jiang wenshu;lu tao(college of mechanical and electrical engineering,beijing university of chemical technology,beijing 100029,chin)  空心绕丝 hollow wire wrap 用可通流的中空绕丝同时提供定位与局部冷却。 空心带孔绕丝在特定流量或冷却剂热导高于绕丝时改善接触附近换热，且不显著增加压降。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>空心绕丝燃料棒组件的热工水力特性分析</h2>
+          
+          <p class="meta">热科学与技术 · 2025 · 姜文殊 卢涛
+JIANG Wenshu;LU Tao(College of Mechanical and Electrical Engineering,Beijing University of Chemical Technology,Beijing 100029,Chin)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>空心带孔绕丝在特定流量或冷却剂热导高于绕丝时改善接触附近换热，且不显著增加压降。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在保持定位及横流功能的同时引入绕丝内部冷却路径。</li></ul></section>
+        <section><h3>不足</h3><ul><li>收益存在流量和热导条件；摘要未验证薄壁强度、接触磨损与堵孔。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>以同压降或同泵功比较热点温度，再用Mechanical核查空心绕丝接触刚度和应力。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>空心绕丝<small>hollow wire wrap</small></h4><p>用可通流的中空绕丝同时提供定位与局部冷却。</p><p class="context"><b>本文语境</b> 空心带孔绕丝在特定流量或冷却剂热导高于绕丝时改善接触附近换热，且不显著增加压降。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为解决绕丝周围流动停滞导致的铅基反应堆燃料棒包壳温度热点问题,提出将实心绕丝改为空心绕丝结构,并在空心绕丝表面设置一系列孔洞供流体进出,增加绕丝内部流动,以提高绕丝与周围流体间的换热效果。结果表明:在满足原绕丝定位功能和促进冷却剂横流的前提下,当冷却剂流量到达一定值或冷却剂热导率高于绕丝材料热导率时,空心绕丝结构能够在不显著提高压降损失的基础上,提高包壳与冷却剂之间的对流换热能力,从而降低绕丝与燃料棒接触位置的最高温度,提高安全裕量,有利于铅基核反应堆的安全运行。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7200404065" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="大型螺旋缠绕管式换热组件抗震试验和分析方法研究  反应堆中文研究 压力容器 · 2025 · 陈琛 李晨 袁舒梦 张菲茜 门启明
+chen chen;li chen;yuan shumeng;zhang feixi;men qiming(shanghai nuclear engineering research&amp;design institute,shanghai 200030,china)  比例模化 scaled modelling 按相似准则构建缩尺试件保留关键动力学行为。 一体化反应堆大型螺旋缠绕管组件以比例振动台试验验证抗震简化模型，分析基本包络实验。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>大型螺旋缠绕管式换热组件抗震试验和分析方法研究</h2>
+          
+          <p class="meta">压力容器 · 2025 · 陈琛 李晨 袁舒梦 张菲茜 门启明
+CHEN Chen;LI Chen;YUAN Shumeng;ZHANG Feixi;MEN Qiming(Shanghai Nuclear Engineering Research&amp;Design Institute,Shanghai 200030,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">历史方法补充（非当天新发）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>一体化反应堆大型螺旋缠绕管组件以比例振动台试验验证抗震简化模型，分析基本包络实验。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用试验约束模型简化而非只比较有限元模型彼此。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给模态、阻尼、相似比和最大偏差，包络不等于所有部位均保守。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>比较完整与等效模型的频率、支承反力和局部应变，核查接触/间隙引入后的保守性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>比例模化<small>scaled modelling</small></h4><p>按相似准则构建缩尺试件保留关键动力学行为。</p><p class="context"><b>本文语境</b> 一体化反应堆大型螺旋缠绕管组件以比例振动台试验验证抗震简化模型，分析基本包络实验。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>螺旋缠绕管式换热组件作为一体化反应堆的重要组成部分,在地震载荷下结构完整性方面的研究较少。针对这一问题,基于已完成设计的某大型螺旋缠绕管式换热组件,设计制造比例模化的抗震试验件,并开展了地震台上的抗震试验,对大型螺旋缠绕管式抗震试验件进行抗震分析。结果表明,抗震分析结果和试验结果较为一致,同时抗震分析结果基本能够包络试验结果,并满足相关规范的结构完整性要求,验证了大型螺旋缠绕管式换热组件设计可行性和螺旋缠绕管式换热组件模型简化和分析方法的有效性。研究结果可为一体化反应堆换热组件的设计提供借鉴。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202533360" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="特种石墨在高温气冷堆堆芯构件中的应用性能及失效机制分析  反应堆中文研究 材料研究与应用 · 2026 · 吕鹏 纪斌 张宪国 李炳坤 冯奕钰 吕尊华
+lv peng;ji bin;zhang xianguo;li bingkun;feng yiyu;lv zunhua(school of materials science and engineering,shandong university of technology,zibo 255000,china;sichuan fucang new materials technology co.,ltd.,yibin 644000,china;fujian fucang new materials technology co.,ltd.,yong’an 366000,china;shandong huada new materials co.,ltd.,heze 274000,china)  辐照蠕变 irradiation creep 辐照环境下材料在应力作用下随剂量累积产生的时间相关变形。 ig-110和ft-101石墨物性随温度应力及辐照变化，1/4三维模型研究构件失效概率与寿期。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>反应堆中文研究</span></div>
+          <h2>特种石墨在高温气冷堆堆芯构件中的应用性能及失效机制分析</h2>
+          
+          <p class="meta">材料研究与应用 · 2026 · 吕鹏 纪斌 张宪国 李炳坤 冯奕钰 吕尊华
+LV Peng;JI Bin;ZHANG Xianguo;LI Bingkun;FENG Yiyu;LV Zunhua(School of Materials Science and Engineering,Shandong University of Technology,Zibo 255000,China;Sichuan FuCang New Materials Technology Co.,Ltd.,Yibin 644000,China;Fujian FuCang New Materials Technology Co.,Ltd.,Yong’an 366000,China;Shandong Huada New Materials Co.,Ltd.,Heze 274000,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">回溯补充（刊年已核，首次在线日期未核）；实际摘要核验2026-10-23</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>IG-110和FT-101石墨物性随温度应力及辐照变化，1/4三维模型研究构件失效概率与寿期。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将实测物性关联与辐照—热—力及概率失效评价连接。</li></ul></section>
+        <section><h3>不足</h3><ul><li>25.2–32.5年为文中蠕变假设下预测；对称边界、泊松比和失效分布可能主导寿命。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>先对比整模与1/4模型在非对称温度及支承偏差下的误差，再检验物性与蠕变假设。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文中的几何、边界、材料/核数据、验证数据及不确定度；摘要不能替代建模参数表。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>辐照蠕变<small>irradiation creep</small></h4><p>辐照环境下材料在应力作用下随剂量累积产生的时间相关变形。</p><p class="context"><b>本文语境</b> IG-110和FT-101石墨物性随温度应力及辐照变化，1/4三维模型研究构件失效概率与寿期。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核反应堆堆芯构件需要在高温、强辐照及复杂机械载荷的极端环境下长期服役。特种石墨因其优异的中子慢化性能、抗热冲击性能、耐高温化学稳定性等特性,广泛应用于制造关键堆芯构件。选用日本东洋碳素公司的IG-110和四川福碳新材料科技有限公司的FT-101两种特种石墨,研究二者热应力性能和辐照诱导的性能变化,分析特种石墨的失效机制,预测寿命。测试两种石墨的热膨胀系数随温度、压应力和拉应力变化的规律,基于测试结果,采用多元线性回归方法建立了特种石墨热膨胀系数与温度和应力间的关联模型,用于堆芯构件的热应力计算。同时研究了温度和压力对两种石墨弹性模量和抗压强度的影响,并建立了力学性能关联模型,用于堆芯构件的力学响应计算。研究辐照诱导对膨胀率和力学性能的影响,建立辐照性能关联模型,利用对称性建立1/4三维有限元模型进行石墨堆芯构件“辐照-热-力”多场耦合应力分析,评价使用风险。对FT-101特种石墨构件进行失效机制分析及寿命预测,通过实验与模拟,深入剖析了辐照及热应力引发失效等关键失效机制,并构建基于有限元法的失效概率评估模型。研究满功率年对失效概率的影响,进行了不同蠕变泊松比、一次蠕变的石墨构件寿命预测,可达25.2—32.5年。本研究为高温气冷堆石墨构件的优化设计、安全评定以及寿命预测提供重要的理论依据和技术支撑。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203940457" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">研究策划以本文献可验证边界为起点；以下属于分析建议，不构成首创性或录用保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先验证数据与边界</span><h3>深穿透中子到达谱的散射耦合自适应源偏置：可验证的延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>本次摘要阅读仍需解决的证据问题：276倍来自大气源高算例，不是堆屏蔽或MOC加速结果；响应矩阵预计算成本需计入。</p></section>
+            <section><h4>为什么值得开展</h4><p>将影响工程响应的误差来源量化，价值高于只更换求解器或算法。</p></section>
+            <section><h4>建议工作</h4><ol><li>在小型堆屏蔽基准上比较同精度总时间与能群尾部误差，单列响应矩阵成本。</li><li>先取得全文参数与合法验证数据，再确定最小算例及对照方法。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>输出可复现对照、适用条件和失效边界；是否具有新颖性仍须系统查新。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Scattering-coupled adaptive source biasing for deep-penetration neutron arrival-spectrum calculations | 10.1016/j.anucene.2026.112910</li><li>源—到达能群散射耦合用于均衡各能群统计误差。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要信息不足以保证模型可重建或预测可直接用于安全评价。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">先核对现有方法和公开实现，再限定本期候选研究边界。</p><p class="research-note">检索范围：X-MOL/维普真实页面及OpenMOC、Cardinal、作者代码仓库等定向检索；不是系统性查全。　检索时间：2026-10-23</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先考虑可公开验证的小算例</span><h3>核热源到热结构网格的误差传递</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 网格映射和功率归一化已有成熟实现，新意需来自误差预算</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>Cardinal的MeshTally已将OpenMC非结构网格计数连接到libMesh，并定义核热等响应的单位转换及相对误差输出。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>分离统计、空间计数、几何映射和结构简化误差，确定影响最高温度/应力的主要来源。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>软件接口本身不是创新；对极值响应提出可验证的容差与成本规则更有研究价值。</p></section>
+            <section><h4>建议论文切口</h4><p>从单棒或简单组件开始，固定总功率并改变计数分辨率，检查温度峰值位置和幅值的稳定性。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>映射前后积分功率守恒，并报告局部统计误差。</li><li>先有热传导解析/公开基准验证，再引入复杂接触。</li></ul><h4>新颖性风险</h4><ul><li>官方当前libMesh计数不支持随机射线所需的tracklength估计，不能假设各输运模式通用。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://cardinal.cels.anl.gov/source/tallies/MeshTally.html" target="_blank" rel="noopener">Cardinal MeshTally 官方文档（2026-10-23核验）↗</a><p>现有非结构计数、单位和统计误差接口。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>实际采集2026-10-23；核能与All关注期刊16页、960张卡片，未按URL入过历史报告的候选410条；英文初选53条逐项读源，结合DOI/规范题名/URL与全部历史中英文日报去重。维普采用真实浏览器检索、展开摘要。仅处理文献；不创建APDL课程，不同步Zotero，不恢复定时提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
