@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-25 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-25 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-25</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>4</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 8</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 4</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-10-25；实际检索、摘要核验、翻译和整理均为2026-10-29。本期英文4篇、中文4篇，低于10–15/5–10篇目标，保留缺额。英文采用近30天未读窗口2026-09-30至10-29；不冒称在归档当天已执行或当天首次发表。较早中文方法文献逐篇标历史基线。优先新型反应堆及RMC/ANSYS可验证问题，少量常规堆文献用作方法与验证基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="高速气冷空间堆绕丝燃料棒的流致振动 numerical study on flow-induced vibration characteristics of wire-wrapped fuel rods under high-speed gas coolant conditions 空间气冷堆流致振动 annals of nuclear energy · 2026-10-25 · minxing chen, mingxia liu, haidong liu, yuanming li, yongzhong huang, xinghong zhang, deqi chen 空间气冷堆流致振动 附加质量 added mass 流体随结构加速所表现的等效惯性，气体中往往弱于液体。 7棒束边缘棒响应不能由单棒响应代表；气体附加质量较弱而低频载荷主导。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>空间气冷堆流致振动</span><span>空间气冷堆流致振动</span></div>
+          <h2>高速气冷空间堆绕丝燃料棒的流致振动</h2>
+          <p class="title-en">Numerical study on flow-induced vibration characteristics of wire-wrapped fuel rods under high-speed gas coolant conditions</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-25 · Minxing Chen, Mingxia Liu, Haidong Liu, Yuanming Li, Yongzhong Huang, Xinghong Zhang, Deqi Chen</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-25；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>7棒束边缘棒响应不能由单棒响应代表；气体附加质量较弱而低频载荷主导。</li><li>作者实际方法：FSI框架；摘要未说明具体CFD与结构软件。</li><li>建议仿真问题：绕丝及端部约束简化是否使边缘棒位移产生非保守误差？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>分离干湿模态变化与流场激励，定位边缘棒这一局部薄弱位置。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给接触/约束、阻尼和实验验证，不能把约10.7 Hz当作普适固有频率。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent压力时序→Mechanical模态/瞬态结构；从单向耦合起步。</li><li>输入与最低验证要求：需棒径、绕丝螺距、支承约束、阻尼和30–50 m/s工况；先校核干模态，再对照7棒位移及压力谱。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需棒径、绕丝螺距、支承约束、阻尼和30–50 m/s工况；先校核干模态，再对照7棒位移及压力谱。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>附加质量<small>added mass</small></h4><p>流体随结构加速所表现的等效惯性，气体中往往弱于液体。</p><p class="context"><b>本文语境</b> 7棒束边缘棒响应不能由单棒响应代表；气体附加质量较弱而低频载荷主导。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>高速气体冷却时，空间核反应堆绕丝燃料棒受到复杂流动扰动和流致振动，可能影响组件完整性。本文建立流固耦合框架，研究入口速度30–50 m/s对单棒及7棒束的影响。流速增大使流动不均匀性增强；单棒绕丝导致局部加速和尾迹，压力脉动幅值由5.0×10² Pa增至1.3×10³ Pa；7棒束中尾迹相互作用和子通道混合进一步加强扰动。气体附加质量较小，湿模态频率仅略低于干模态，振型几乎不变。因此振动主要由低频流动激励控制，主频约10.7 Hz，与主要流动脉动一致。棒束空间响应不均匀，边缘棒位移明显大于单棒和中心棒。结果为高速气冷空间堆燃料组件安全和结构设计提供依据。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Under high-speed gas coolant conditions, wire-wrapped fuel rods in space nuclear reactors are subject to complex flow disturbances and flow-induced vibration (FIV), which may affect assembly integrity. A fluid–structure interaction (FSI) framework is developed to investigate the effects of inlet velocity (30–50 m/s) on the flow and vibration characteristics of both a single rod and a 7-pin bundle. Increasing inlet velocity enhances flow non-uniformity; for the single rod, wire-wrap induces local acceleration and wake formation, with pressure fluctuation amplitude increasing from 5.0 × 102 Pa to 1.3 × 103 Pa, while in the 7-pin bundle, wake interaction and subchannel mixing further intensify flow disturbances. Owing to the weak added-mass effect of the gas coolant, the wet modal frequencies are only slightly lower than the dry values, with nearly unchanged mode shapes, indicating negligible modification of structural dynamics. The vibration response is therefore governed by low-frequency flow excitation, with a dominant frequency of approximately 10.7 Hz consistent with the main flow fluctuation. The rod bundle exhibits strong spatial non-uniformity, where the edge rod displacement is markedly higher than that of the single rod and central rod. These results clarify the flow-induced vibration behavior governed by low-frequency flow excitation in wire-wrapped fuel rods under high-speed gas conditions and provide a basis for the safety and structural design of fuel assemblies in space gas-cooled reactor systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2115702541397536768" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112959" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2115702541397536768" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="液态铅铋小型离心泵叶轮的瞬态结构与疲劳 transient structural response and fatigue life prediction of a small centrifugal pump impeller in liquid lead-bismuth eutectic based on fluid–structure interaction 铅铋泵热工结构 annals of nuclear energy · 2026-10-23 · ke xu, shilin chen, wanli gao, meihua zeng, jun he, ziyan xie, jie yu 铅铋泵热工结构 miner累积损伤 palmgren–miner rule 按各应力幅循环次数与对应寿命比值累加的疲劳损伤近似。 全结构热点在轴侧过渡区，只看叶片应力会漏掉控制位置。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>铅铋泵热工结构</span><span>铅铋泵热工结构</span></div>
+          <h2>液态铅铋小型离心泵叶轮的瞬态结构与疲劳</h2>
+          <p class="title-en">Transient structural response and fatigue life prediction of a small centrifugal pump impeller in liquid lead-bismuth eutectic based on fluid–structure interaction</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-23 · Ke Xu, Shilin Chen, Wanli Gao, Meihua Zeng, Jun He, Ziyan Xie, Jie Yu</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-25；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>全结构热点在轴侧过渡区，只看叶片应力会漏掉控制位置。</li><li>作者实际方法：单向FSI、应力寿命和Miner累积损伤；软件名未说明。</li><li>建议仿真问题：删除轴或用固定叶根简化，会否错误识别最低寿命位置？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区分整模、叶片区域与路径应力，连接压力谱和疲劳位置。</li></ul></section>
+        <section><h3>不足</h3><ul><li>超高显示寿命不等于实测服役寿命；必须检查S-N曲线截止、均值修正、腐蚀及温度效应。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent瞬态压力→Mechanical完整叶轮轴与子模型对照。</li><li>输入与最低验证要求：需300℃材料曲线、连接约束、75 Hz压力时序；先比较模态和全结构热点，再讨论寿命。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需300℃材料曲线、连接约束、75 Hz压力时序；先比较模态和全结构热点，再讨论寿命。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Miner累积损伤<small>Palmgren–Miner rule</small></h4><p>按各应力幅循环次数与对应寿命比值累加的疲劳损伤近似。</p><p class="context"><b>本文语境</b> 全结构热点在轴侧过渡区，只看叶片应力会漏掉控制位置。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铅铋泵叶轮在高温液态金属中承受流体激励和循环应力。本文在300℃条件建立单向流固耦合，以稳态和非稳态CFD获得流场及压力脉动，将稳定后的瞬态压力映射到316LN叶轮—轴结构，采用应力—寿命法和Palmgren–Miner理论分析疲劳。主压力频率75 Hz，与叶片通过频率一致。全模型最大等效应力240.76 MPa位于轴—轮毂/后盖板过渡处；所提取叶片区域峰值53.48 MPa。叶根弧线路径显示应力集中局部且不同叶片有差异，最大路径应力51.95 MPa。全模型最短寿命热点在轴侧过渡区，叶轮本体大部分处于高寿命或超截止区域。显示的本体最大损伤2.073×10⁻¹⁰，最低寿命4.824×10¹⁰次，说明在当前载荷假设下有较大疲劳裕量。</p></div>
+          <div><h3>English abstract</h3><p lang="en">As the key rotating component of a reactor coolant pump, the impeller of a liquid lead-bismuth eutectic (LBE) pump must withstand fluid-induced excitation and cyclic stress under high-temperature liquid-metal conditions. In this study, a one-way fluid–structure interaction framework was established for a small centrifugal pump impeller operating in LBE at 300°C. Steady and unsteady CFD simulations were performed to obtain the internal flow field and pressure pulsations. Subsequently, the stabilized transient pressure load was mapped onto a 316LN stainless steel impeller–shaft model for structural and fatigue analyses using the stress-life method and Palmgren–Miner theory. The dominant pressure pulsation frequency was 75Hz, matching the blade-passing frequency and demonstrating that fluid–structure interaction acted as the primary excitation source. Following this, the global maximum equivalent stress reached 240.76MPa near the shaft–hub/back-shroud transition, whereas the extracted blade region showed a lower peak stress of 53.48MPa. A comparison of blade-root arc paths further confirmed that the blade-root stress concentration was highly localized and varied among different blades, with a maximum path stress of 51.95MPa. Fatigue analysis revealed that the whole-model minimum-life hotspot occurred near the shaft-side shaft–hub transition, while the impeller body remained mostly in a high-life or beyond-cutoff regime. The maximum displayed fatigue damage of the impeller body was 2.073 × 10-10, and the lowest displayed life was 4.824 × 1010 repeats, indicating sufficient fatigue margin under the present loading assumption.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2115702540680310784" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112955" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2115702540680310784" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="螺旋十字燃料的跨物理场证据与研究边界 state-of-the-art review of helical cruciform fuel concepts for current and next generation nuclear reactors 螺旋十字先进燃料 annals of nuclear energy · 2026-10-22 · hossam h. abdellatif, arsen s. iskhakov 螺旋十字先进燃料 hcf helical cruciform fuel 具有螺旋扭转十字截面的燃料概念，效益依赖构型与运行约束。 平均换热和局部温度/接触应力可朝不同方向变化，比较必须统一燃料量及泵功等约束。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>螺旋十字先进燃料</span><span>螺旋十字先进燃料</span></div>
+          <h2>螺旋十字燃料的跨物理场证据与研究边界</h2>
+          <p class="title-en">State-of-the-art review of helical cruciform fuel concepts for current and next generation nuclear reactors</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-22 · Hossam H. Abdellatif, Arsen S. Iskhakov</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-25；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>平均换热和局部温度/接触应力可朝不同方向变化，比较必须统一燃料量及泵功等约束。</li><li>作者实际方法：跨领域综述；不应声称作者统一使用RMC或ANSYS。</li><li>建议仿真问题：HCF在同泵功与同燃料量约束下是否仍降低热点及接触应力？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>从证据等级和比较基准审视HCF，而不是把复杂几何本身当优势。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述未找到证据不等于绝无相关实验；原始研究还需逐项检索核对。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC比较热源和反应性；Fluent+Mechanical比较相同约束下温度、压降和应力。</li><li>输入与最低验证要求：需几何扭距、等价比较基准、核数据和材料参数；先复现一个公开棒束试验再做耦合。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需几何扭距、等价比较基准、核数据和材料参数；先复现一个公开棒束试验再做耦合。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>HCF<small>helical cruciform fuel</small></h4><p>具有螺旋扭转十字截面的燃料概念，效益依赖构型与运行约束。</p><p class="context"><b>本文语境</b> 平均换热和局部温度/接触应力可朝不同方向变化，比较必须统一燃料量及泵功等约束。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>先进核系统对强化传热、安全裕量和紧凑堆芯的需求推动新燃料设计。本文综述螺旋十字燃料HCF的热工、中子学、热机械、辐照、堆型及制造，强调证据状态、比较基准和模型迁移。单相棒束中几何驱动横向扫掠的证据最一致，但工程收益取决于构型。HCF固有通道阻力可高于裸圆棒，取消格架又可能降低整组件总压降。平均换热改善可与周期性表面热流、壁温峰值并存。沸腾和CHF可能改善也可能恶化，受含汽率、扭距、功率和尺度影响。现代蒙卡、确定论及耦合方法能描述其几何，但反应性、循环、停堆裕量和功率取决于燃料量、富集度、慢化与吸收体等。热机械证据主要仍为数值模拟，显示材料相关的应力局部化、接触载荷、通道变形及塑性应变。已有制造经验，但未识别出代表性棒件辐照、商业制造控制及整体组件性能证据。现有关联和降阶模型仍受几何、物性、工况、目标量及评价基础限制。因此HCF应视为多种候选概念，收益须针对指定几何、材料、运行约束与堆型证明。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The pursuit of enhanced thermal performance, improved safety margins, and compact reactor configurations in advanced nuclear systems has stimulated renewed interest in novel fuel designs. Among these concepts, helical cruciform fuel (HCF) represents a promising innovation that integrates geometric complexity with enhanced functional performance. This review synthesizes findings across thermal hydraulics, neutronics, thermo-mechanics, irradiation behavior, reactor design, and fabrication, with emphasis on evidentiary status, comparison basis, model transferability, and research needs. Geometry-driven transverse sweeping is the most consistently demonstrated HCF mechanism in single-phase bundles, but its engineering consequences are configuration-dependent. Intrinsic HCF-channel resistance can exceed that of bare cylindrical rods, whereas eliminating spacer grids can reduce nominal complete-assembly pressure loss. Increased heat-transfer area and improved mean convection can coexist with periodic local maxima in surface heat flux and wall temperature. Boiling and critical heat flux studies report both improvement and deterioration depending on flow quality, twist pitch, power distribution, geometry, and bundle scale. Modern Monte Carlo, deterministic, and coupled methods can represent HCF geometries, but reactivity, cycle length, shutdown margin, and power distribution depend strongly on fuel inventory, enrichment, moderation, absorbers, and other design choices. Thermo-mechanical evidence remains predominantly numerical and indicates material-dependent stress localization, contact loading, channel deformation, and plastic strain. Fabrication experience exists, but evidence of representative HCF-rod irradiation, commercial-scale manufacturing control, and integral assembly performance was not identified. Existing correlations and reduced-order models generally remain specific to their geometry, property range, operating regime, target quantity, and assessment basis. HCF should therefore be treated as a class of distinct candidate concepts whose benefits must be established for a specified geometry, material system, operating constraint, and reactor application.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2113813284483510272" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112944" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113813284483510272" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="氟盐冷却球床的几何保真度与接触点处理 geometric fidelity, contact-point treatment, and thermal hydraulics in pebble-bed fhr: a review of pebble-bed modeling strategies fhr球床接触几何 progress in nuclear energy · 2026-10-11 · guangyuan jin, chaoyi chen, yongxing li, hongye he, yandong hou fhr球床接触几何 接触正则化 contact regularization 为可网格化而修改颗粒接近/接触处局部几何，可能改变流动及导热路径。 几何简化收益与误差取决于目标量和导热/对流主导程度。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>FHR球床接触几何</span><span>FHR球床接触几何</span></div>
+          <h2>氟盐冷却球床的几何保真度与接触点处理</h2>
+          <p class="title-en">Geometric fidelity, contact-point treatment, and thermal hydraulics in pebble-bed FHR: A review of pebble-bed modeling strategies</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-11 · Guangyuan Jin, Chaoyi Chen, Yongxing Li, Hongye He, Yandong Hou</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-25；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>几何简化收益与误差取决于目标量和导热/对流主导程度。</li><li>作者实际方法：球床建模策略综述。</li><li>建议仿真问题：正常冷却下看似无影响的接触简化，停流后是否显著改变热点？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把接触正则化和工程响应、验证尺度连成选择框架。</li></ul></section>
+        <section><h3>不足</h3><ul><li>CFD接触正则化不是机械接触本构；30%、23%等差异不能普遍外推。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent共轭传热或ANSYS导热比较间隙/桥接；机械接触热阻必须另行标定。</li><li>输入与最低验证要求：需规则床几何、接触半径、盐物性和边界；分别验证压降、稳态对流温度与停流导热温度。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需规则床几何、接触半径、盐物性和边界；分别验证压降、稳态对流温度与停流导热温度。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>接触正则化<small>contact regularization</small></h4><p>为可网格化而修改颗粒接近/接触处局部几何，可能改变流动及导热路径。</p><p class="context"><b>本文语境</b> 几何简化收益与误差取决于目标量和导热/对流主导程度。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>FHR结合TRISO燃料与低压液盐，球床热工对填充几何生成和计算正则化敏感。本文将堆积生成、接触点处理、壁效应、输运模型和实验验证连接到设计响应。区分规则SC/BCC/FCC与受限随机床，其连通性、各向异性和壁面分层机制不同；接触正则化则区分整体几何改变与局部间隙、重叠、桥接、截帽及混合方式。一个已发表规则床基准中，处理方式使压降变化约30%，纯导热最高球温变化23%；全功率热指标差异低于0.5%，加入对流后约0.3%。这些仅是特定研究敏感性，不是通用修正系数。综述把压降、速度和传热实验映射到可支持的尺度及范围，指出不存在对所有响应都最优的接触处理。水力筛查、局部热点及失去强迫循环要求不同的几何和热接触保真度，并提出相应决策框架。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Fluoride-salt-cooled high-temperature reactors (FHRs) combine tri-structural isotropic (TRISO) fuel with low-pressure liquid-salt cooling, but their pebble-bed thermal hydraulics are unusually sensitive to how the packed geometry is generated and regularized for computation. This review connects five modeling decisions—packing generation, contact-point treatment, wall-effect representation, transport-model selection, and experimental validation—to the quantities used in reactor design. Ordered simple-cubic, body-centred-cubic and face-centred-cubic beds are distinguished from confined random beds because their channel connectivity, anisotropy and wall layering arise through different mechanisms. Contact regularization is assessed by separating global geometry changes from local gap, overlap, bridge, cap and hybrid treatments. In a published structured-bed benchmark, the selected treatment changed pressure drop by about 30% and the conduction-only maximum pebble temperature by 23%; the corresponding differences fell below 0.5% for full-power thermal metrics and to 0.3% when convection was included. These values are study-specific sensitivity indicators, not universal correction factors. Evidence from pressure-drop, velocity and heat-transfer experiments is mapped to the model scale and operating range that it can support. The synthesis shows that no single contact treatment is optimal for every quantity of interest: hydraulic screening, local hot-spot prediction and passive-loss-of-forced-circulation analysis require different levels of geometric and thermal-contact fidelity. A decision framework is therefore proposed to link geometry, regularization, physics, validation and engineering use while making transferability limits explicit.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2114242107444310016" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106645" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2114242107444310016" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc程序的气冷微堆截面参数化方法研究  rmc与ansys仿真研究 核动力工程 · 2026 · 肖向 张鹏 刘国明 袁媛 张运荒
+xiao xiang;zhang peng;liu guoming;yuan yuan;zhang yunhuang(china nuclear power engineering co.,ltd.,beijing,100840,china)  sph superhomogenization 修正均匀化群常数以保留参考输运响应的等效方法。 rmc全堆典型点生成sph修正截面库，扩散计算约2.1 s，keff偏差小于200 pcm、功率小于2%。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于RMC程序的气冷微堆截面参数化方法研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 肖向 张鹏 刘国明 袁媛 张运荒
+Xiao Xiang;Zhang Peng;Liu Guoming;Yuan Yuan;Zhang Yunhuang(China Nuclear Power Engineering Co.,Ltd.,Beijing,100840,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC全堆典型点生成SPH修正截面库，扩散计算约2.1 s，keff偏差小于200 pcm、功率小于2%。</li><li>作者实际方法：RMC、SPH与扩散程序。</li><li>建议仿真问题：热形变或不均匀温度下参数化截面是否仍可靠？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用SPH及边界常数共同迭代改善气冷微堆均匀化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>须核对离线RMC成本、留出工况和强非线性棒位；单次秒级不含全生命周期成本。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC留出状态参考；ANSYS提供物理可行温度和位移，不仅随机扰动参数。</li><li>输入和最低验证：需参数覆盖、群结构、边界常数及热态参考；同时验证keff与局部功率。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需参数覆盖、群结构、边界常数及热态参考；同时验证keff与局部功率。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>SPH<small>superhomogenization</small></h4><p>修正均匀化群常数以保留参考输运响应的等效方法。</p><p class="context"><b>本文语境</b> RMC全堆典型点生成SPH修正截面库，扩散计算约2.1 s，keff偏差小于200 pcm、功率小于2%。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为解决蒙特卡罗程序计算量较大、耗时较长,难以实现气冷微堆任意运行状态下堆芯快速仿真与在线监测问题,本文提出了一种基于RMC程序的截面参数化方法,即采用RMC程序提前进行典型工况点的全堆计算,并结合超级均匀化(SPH)因子与边界常数耦合迭代修正组件均匀化截面,构建截面参数化数据库,再根据当前工况下的堆芯状态参数利用截面参数化方法获取当前状态下的截面数据,最后采用堆芯扩散程序进行全堆计算。数值结果表明,本文提出的截面参数化方法与一步法RMC程序的基准值相比,有效增殖系数keff相对偏差小于200pcm(1pcm=10-5),功率分布相对偏差小于2%,同时单次全堆计算时间约2.1 s,在保证计算精度的同时显著提升计算效率。本研究为气冷微堆的快速仿真分析和在线监测等提供了基础工具。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204245623" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc的材料温度微扰方法研究  rmc与ansys仿真研究 原子能科学技术 · 2026 · 王武 王侃 童朴 郭娟娟
+wang wu;wang kan;tong pu;guo juanjuan(china institute of nuclear industry stratgy,beijing 100048,china;department of engineering physics,tsinghua university,beijing 100084,china)  温度微扰 temperature perturbation 估计响应对材料温度的小变化敏感性。 rmc二阶温度微扰覆盖非热化同位素全能区，以big ten、vera-2b和venus-2温度敏感性验证。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于RMC的材料温度微扰方法研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 王武 王侃 童朴 郭娟娟
+WANG Wu;WANG Kan;TONG Pu;GUO Juanjuan(China Institute of Nuclear Industry Stratgy,Beijing 100048,China;Department of Engineering Physics,Tsinghua University,Beijing 100084,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC二阶温度微扰覆盖非热化同位素全能区，以Big Ten、VERA-2B和VENUS-2温度敏感性验证。</li><li>作者实际方法：RMC温度微扰、HDF5核数据库。</li><li>建议仿真问题：小温差有限差分在何种范围能代表局部温度反馈？</li><li>实施难度：中等，算法开发偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对共振区及不可分辨共振区实现截面温度导数。</li></ul></section>
+        <section><h3>不足</h3><ul><li>算法研发需改程序/核数据库；不能假定仅改输入卡即可调用。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：优先用现有RMC温度点对照；具备源码及模块后才考虑微扰功能。</li><li>输入和最低验证：需算法版本、温度扰动幅度、导数参考和蒙卡误差；避免差分噪声主导。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需算法版本、温度扰动幅度、导数参考和蒙卡误差；避免差分噪声主导。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>温度微扰<small>temperature perturbation</small></h4><p>估计响应对材料温度的小变化敏感性。</p><p class="context"><b>本文语境</b> RMC二阶温度微扰覆盖非热化同位素全能区，以Big Ten、VERA-2B和VENUS-2温度敏感性验证。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文基于RMC程序研究了适用于非热化同位素全能区的二阶材料温度微扰算法,提出了非热化同位素全能区截面温度导数求解方法。基于截面调整因子推导了低能区截面温度导数计算方法;介绍了基于高斯-厄米特求积技术的可分辨共振区截面温度导数求解方法;提出了等概率带概率表制作方法和基于等概率带概率表的不可分辨共振区截面温度导数求解方法,并基于HDF5格式的一种新结构中子核数据库实现了等概率带概率表的应用和不可分辨共振区截面温度导数的求解。然后将温度微扰算法应用到了Big Ten算例、VERA-2B算例和VENUS-2反应堆算例的燃料温度敏感性系数的计算中,通过使用燃料温度敏感性系数对其他燃料温度下的响应量计数预测的方法证明了算法的正确性以及在大规模复杂问题中的适用性。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204099246" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于不同评价核数据库与rmc程序的小微型气冷反应堆特征值分析  rmc与ansys仿真研究 强激光与粒子束 · 2026 · 胡馗 张鹏 周梦飞 张成龙 肖向 张运荒 冯致远
+hu kui;zhang peng;zhou mengfei;zhang chenglong;xiao xiang;zhang yunhuang;feng zhiyuan(china nuclear power engineering co,ltd,beijing 100840,china)  评价核数据库 evaluated nuclear data library 汇集经评价的核反应数据；版本变化可产生系统响应差异。 njoy2016处理不同评价库供rmc小型气冷快堆及微型htgr，快谱响应对库差异更敏感。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于不同评价核数据库与RMC程序的小微型气冷反应堆特征值分析</h2>
+          
+          <p class="meta">强激光与粒子束 · 2026 · 胡馗 张鹏 周梦飞 张成龙 肖向 张运荒 冯致远
+Hu Kui;Zhang peng;Zhou Mengfei;Zhang Chenglong;Xiao Xiang;Zhang Yunhuang;Feng Zhiyuan(China Nuclear Power Engineering Co,Ltd,Beijing 100840,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>NJOY2016处理不同评价库供RMC小型气冷快堆及微型HTGR，快谱响应对库差异更敏感。</li><li>作者实际方法：NJOY2016、RMC、MCNP库对照。</li><li>建议仿真问题：核数据库变化是否大于拟研究几何简化的反应性信号？</li><li>实施难度：较低至中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把数据处理验证与评价库差异分离。</li></ul></section>
+        <section><h3>不足</h3><ul><li>与MCNP官方库一致只支持处理流程，不证明物理值无偏；还需实验基准。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：先用RMC同模型同温度比较库，评估信噪比，再决定是否耦合ANSYS。</li><li>输入和最低验证：需可用库及处理链、统计误差；检验keff与关键核素反应率，不把pcm与相对百分数混用。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需可用库及处理链、统计误差；检验keff与关键核素反应率，不把pcm与相对百分数混用。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>评价核数据库<small>evaluated nuclear data library</small></h4><p>汇集经评价的核反应数据；版本变化可产生系统响应差异。</p><p class="context"><b>本文语境</b> NJOY2016处理不同评价库供RMC小型气冷快堆及微型HTGR，快谱响应对库差异更敏感。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>随着核数据处理程序和评价核数据库的不断发展、更新,现用的基于ENDF/B-VII.1评价核数据库和NJOY99程序自制的连续能量数据库有必要进行更新,以满足新型核反应堆设计需求。基于ENDF/B-VII.1、ENDF/B-VIII.1和JENDL-5.0评价核数据库,使用NJOY2016程序分别制作了蒙特卡罗程序使用的连续能量中子数据库和热散射律数据库,并使用反应堆蒙特卡罗程序RMC建模计算了自设的小型气冷快堆和微型高温气冷堆问题。以MCNP官方数据库计算结果为基准,两种反应堆自制数据库计算结果的偏差均在±100×10−5以内,表明ACE库制作流程过程正确可行。制作的b71、b81和j50三个数据库,对于小型气冷快堆,b71比b81计算结果偏低约400×10−5,j50比b81计算结果偏高约500×10−5;对于微型高温气冷堆,b71与b81计算结果偏差在±100×10−5以内,j50与b81计算结果偏差在±200×10−5以内。不同评价核数据库堆小型气冷快堆计算具有较大影响,这些影响主要来自于以下核素:239Pu的高能区截面,240Pu的中间能区截面,235U的高能区截面,(90)^Zr、(91)^Zr、(92)^Zr的高能区截面发生了变化。在堆芯设计时,受中高能区截面影响较大的快谱反应堆,需要考虑评价核数据库不同的影响。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204057819" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="气冷微堆控制棒效应计算方法研究  rmc与ansys仿真研究 核动力工程 · 2026 · 肖向 张鹏 袁媛 张运荒 刘国明
+xiao xiang;zhang peng;yuan yuan;zhang yunhuang;liu guoming(china nuclear power engineering co.,ltd.,beijing,100840,china)  棒尖效应 rod-tip effect 控制棒尖端附近强局部非均匀性对功率与离散误差的影响。 rmc棒位截面与sph修正后进行二次非线性插值，改善气冷微堆强吸收和泄漏下的快速计算。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>气冷微堆控制棒效应计算方法研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 肖向 张鹏 袁媛 张运荒 刘国明
+Xiao Xiang;Zhang Peng;Yuan Yuan;Zhang Yunhuang;Liu Guoming(China Nuclear Power Engineering Co.,Ltd.,Beijing,100840,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC棒位截面与SPH修正后进行二次非线性插值，改善气冷微堆强吸收和泄漏下的快速计算。</li><li>作者实际方法：RMC、SPH、非线性棒位插值。</li><li>建议仿真问题：棒尖附近局部功率误差是否被总体keff掩盖？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以部分棒位构建可用于未知棒位的非线性等效。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给误差数值，不能据“吻合”确定工程容差。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC精细棒位参考；把局部热源送ANSYS考察最高温度偏差。</li><li>输入和最低验证：需训练/留出棒位、群常数、轴向离散和统计误差；重点验证插值变化最剧烈处。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需训练/留出棒位、群常数、轴向离散和统计误差；重点验证插值变化最剧烈处。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>棒尖效应<small>rod-tip effect</small></h4><p>控制棒尖端附近强局部非均匀性对功率与离散误差的影响。</p><p class="context"><b>本文语境</b> RMC棒位截面与SPH修正后进行二次非线性插值，改善气冷微堆强吸收和泄漏下的快速计算。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为提升气冷微堆在控制棒插入工况下的计算精度,以克服传统方法因强吸收体与强泄漏效应导致的较大偏差,本研究提出了一种基于扩散均匀化的二次非线性截面插值方法。该方法首先利用蒙特卡罗程序RMC精确计算不同控制棒棒位下的少群截面参数;继而通过超级均匀化(SPH)因子对少群截面进行修正,并基于部分已知棒位的截面数据拟合出非线性插值函数,从而实现对任意未知棒位对应截面的快速、准确预测。计算结果表明,采用该插值方法得到的结果与“一步法”蒙特卡罗程序RMC参考解符合良好,验证了其高精度与可靠性。本研究建立的截面插值方法为气冷微堆的快速仿真分析与在线监测等应用提供了有效的关键基础工具。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203331256" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">优先能用小模型和可取得数据回答的问题，研究建议不构成可发表性保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先确认数据，再缩小模型</span><h3>高速气冷空间堆绕丝燃料棒的流致振动：可验证研究切口</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>摘要未给接触/约束、阻尼和实验验证，不能把约10.7 Hz当作普适固有频率。</p></section>
+            <section><h4>为什么值得开展</h4><p>量化模型假设对工程极值的影响；不把换软件或启用耦合等同创新。</p></section>
+            <section><h4>建议工作</h4><ol><li>绕丝及端部约束简化是否使边缘棒位移产生非保守误差？</li><li>Fluent压力时序→Mechanical模态/瞬态结构；从单向耦合起步。</li><li>需棒径、绕丝螺距、支承约束、阻尼和30–50 m/s工况；先校核干模态，再对照7棒位移及压力谱。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>给出适用范围、误差与成本的可复现对照，而非无证据的首创声明。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Numerical study on flow-induced vibration characteristics of wire-wrapped fuel rods under high-speed gas coolant conditions | 10.1016/j.anucene.2026.112959</li><li>7棒束边缘棒响应不能由单棒响应代表；气体附加质量较弱而低频载荷主导。</li></ul></div><div><h4>主要风险</h4><ul><li>必须先取得原始几何、参数、核数据/材料与验证数据；摘要不够重建模型。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">RMC—ANSYS耦合已有工作；前沿切口需具体到误差、接触/间隙、验证与成本。</p><p class="research-note">检索范围：X-MOL、维普、出版社和作者/机构公开页定向检索，不是系统综述。　检索时间：2026-10-29</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先小模型与公开基准；全寿期代码研发不作首题</span><h3>从RMC—ANSYS耦合转向可验证的模型简化误差</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“仅实现耦合”的新颖性，优先接触/间隙和局部极值误差。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2021卷年论文已用RMC、ANSYS Mechanical和APDL研究MegaPower核热力反馈；本批Cardinal工作进一步连接燃耗与辐照。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>限定几何和工况，分开核数据、统计、功率映射、接触和结构简化误差。</li><li>比较同等可验证精度下的成本，尤其最高温度、局部应力和反应性反馈。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>已有耦合是相关工作基线；有意义的增量须有明确误差问题和可取得的数据。</p></section>
+            <section><h4>建议论文切口</h4><p>先做单通道或小扇区的间隙热阻/几何更新对照，稳态验证后再考虑瞬态或辐照。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>核热源积分守恒、材料库存守恒、网格/统计收敛及热结构独立基准。</li><li>明确RMC版本/模块可得性，以及公开、授权或需申请的数据条件。</li></ul><h4>新颖性风险</h4><ul><li>算法或代码已研发不等于用户安装版本已具备功能。</li><li>数值程序间吻合不能冒称实验验证。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical固态堆核热力耦合（2021卷年，DOI含2020）↗</a><p>已存在RMC、ANSYS Mechanical及APDL连接；更换接口不是独立创新。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2026.112943" target="_blank" rel="noopener">热管堆随燃耗变化的Cardinal耦合（X-MOL标注2026-10-21；卷期不据此判定）↗</a><p>加入燃耗及辐照演化，构成进一步研究必须对照的现有工作。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮关注期刊核能8页、All4页；每页验证状态和内容变化。维普9组真实UI查询。历史日报、账本及本批按DOI、题名、URL去重。不把只有题名或背景的记录计阅读；不生成APDL、不入Zotero、不恢复提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
