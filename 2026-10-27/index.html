@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-27 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-27 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-27</strong><span>本期日期</span></div><div class="stat"><strong>3</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>4</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 7</button><button data-filter="xmol">X-MOL 3</button><button data-filter="cqvip">维普 4</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-10-27；实际检索、摘要核验、翻译和整理均为2026-10-29。本期英文3篇、中文4篇，低于10–15/5–10篇目标，保留缺额。英文采用近30天未读窗口2026-09-30至10-29；不冒称在归档当天已执行或当天首次发表。较早中文方法文献逐篇标历史基线。优先新型反应堆及RMC/ANSYS可验证问题，少量常规堆文献用作方法与验证基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="铅铋系统溶解氧控制与传质动力学 investigation into the oxygen-control behavior of dissolved oxygen in liquid lead–bismuth eutectic alloy 铅铋材料环境与传质 annals of nuclear energy · 2026-10-23 · ruixian liang, yu wang, huiping zhu, hao wu, haicai lyu, shengfei wang, zulong hao, yang liu, fang liu, fenglei niu 铅铋材料环境与传质 氧浓度窗口 oxygen-control window 在给定温度和材料条件下兼顾保护氧化层与避免沉积的运行范围。 氧控制需同时避免金属腐蚀和氧化物沉积。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>铅铋材料环境与传质</span><span>铅铋材料环境与传质</span></div>
+          <h2>铅铋系统溶解氧控制与传质动力学</h2>
+          <p class="title-en">Investigation into the oxygen-control behavior of dissolved oxygen in liquid lead–bismuth eutectic alloy</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-23 · Ruixian Liang, Yu Wang, Huiping Zhu, Hao Wu, Haicai Lyu, Shengfei Wang, Zulong Hao, Yang Liu, Fang Liu, Fenglei Niu</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-27；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>氧控制需同时避免金属腐蚀和氧化物沉积。</li><li>作者实际方法：铝球脱氧及气/固供氧实验和动力学建模。</li><li>建议仿真问题：非均匀温度下的氧传质会在哪里形成局部腐蚀风险？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将三种控制路线的实时测量转化为传质模型。</li></ul></section>
+        <section><h3>不足</h3><ul><li>实验目标浓度不等于所有温度材料下的通用安全窗口；摘要缺氧传感误差和长期循环数据。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent组分输运与自定义边界，先不同时耦合复杂腐蚀本构。</li><li>输入与最低验证要求：需温度、铝球面积、流量、氧势测量及动力学系数；用独立浓度时间曲线验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需温度、铝球面积、流量、氧势测量及动力学系数；用独立浓度时间曲线验证。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>氧浓度窗口<small>oxygen-control window</small></h4><p>在给定温度和材料条件下兼顾保护氧化层与避免沉积的运行范围。</p><p class="context"><b>本文语境</b> 氧控制需同时避免金属腐蚀和氧化物沉积。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铅铋中的氧具有双重作用：浓度过低易腐蚀结构材料，过高易形成不溶氧化物，两端均影响设备寿命。因此需将氧浓度控制在合理范围。本文用纯铝球把溶解氧降至约10⁻¹¹ wt%，再通过气相供氧及固相供氧提高至10⁻⁶–10⁻⁵ wt%。实验验证铝球脱氧可行，实时监测脱氧和供氧过程，并建立铝球脱氧、气相供氧、固相供氧三种传质动力学模型，为未来铅铋系统精确氧控制提供支持。</p></div>
+          <div><h3>English abstract</h3><p lang="en">For lead–bismuth eutectic alloy (LBE), oxygen is the key chemical element with dual reaction characteristics. When the oxygen concentration is too low, the reactor structural materials are prone to corrosion by the LBE. While when the oxygen concentration is too high, the LBE is likely to form insoluble solid oxides. Both of these extreme conditions can significantly affect the service life of reactor equipment. Therefore, the oxygen concentration in liquid LBE should be controlled within the reasonable range to ensure that the system is not contaminated and to achieve corrosion protection in high-temperature environments. LBE oxygen control technology is precisely used to dynamically maintain the balance of oxygen concentration in the system. Through experimental research in this paper, solid pure aluminum spheres were used to reduce the dissolved oxygen concentration in the LBE system to approximately the 10-11 wt% level, and then the oxygen concentration was increased to the range of 10-6–10-5 wt% through gaseous oxygenation and solid-phase oxygenation methods. The experiment confirmed the feasibility of using solid pure aluminum spheres for removing dissolved oxygen. By real-time monitoring of oxygen transport behavior during both deoxygenation and oxygenation processes, the oxygen mass transfer kinetic models were established for three scenarios: deoxygenation by aluminum spheres, gaseous oxygenation, and solid-phase oxygenation. This study systematically explored various oxygen control methods, providing technical support for the precise control of oxygen concentration in future LBE systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2113813415886860288" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112891" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113813415886860288" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="leu+乏燃料池棒式吸收体临界控制 a new approach to neutron absorber design for criticality safety of leu+ spent fuel pool 贮存临界安全方法参考 nuclear engineering and technology · 2026-10-20 · yujin yang, keon il cha, kyoon ho cha, hwasung yeom 贮存临界安全方法参考 临界安全裕量 criticality safety margin 经验证偏差和不确定度修正后，响应与限值之间的余量。 吸收体布置位置和形态可能比仅替换板式材料更影响效果。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>贮存临界安全方法参考</span><span>贮存临界安全方法参考</span></div>
+          <h2>LEU+乏燃料池棒式吸收体临界控制</h2>
+          <p class="title-en">A New Approach to Neutron Absorber Design for Criticality Safety of LEU+ Spent Fuel Pool</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-20 · Yujin Yang, Keon Il Cha, Kyoon Ho Cha, Hwasung Yeom</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-27；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>吸收体布置位置和形态可能比仅替换板式材料更影响效果。</li><li>作者实际方法：MCNP6.3；本文属于乏燃料贮存，非新型堆芯。</li><li>建议仿真问题：吸收棒偏心及间隙公差是否影响临界裕量？</li><li>实施难度：较低至中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在保持现有贮架的前提下比较导向管棒式吸收体。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未列完整异常工况、偏差裕量和燃耗信用；满足算例标准不等于工程许可。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC静态几何公差扫描；如涉及弯曲，再由Mechanical提供合理位移区间。</li><li>输入与最低验证要求：需水密度/硼浓度、吸收体几何及临界偏差验证；以公开基准校核程序。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需水密度/硼浓度、吸收体几何及临界偏差验证；以公开基准校核程序。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>临界安全裕量<small>criticality safety margin</small></h4><p>经验证偏差和不确定度修正后，响应与限值之间的余量。</p><p class="context"><b>本文语境</b> 吸收体布置位置和形态可能比仅替换板式材料更影响效果。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>延长运行循环可能使用5%–10%质量富集度LEU+燃料，其较高反应性挑战乏燃料池临界管理。本文保持AP1000一区贮架布置，提出在空控制棒导向管放棒式吸收体。用MCNP6.3在含硼和无硼水条件比较Gd2O3、Eu2O3、Sm2O3、Dy2O3、HfO2及SS304的板式/棒式配置。所提板式材料未优于传统B4C/Al；SS304棒可在至9%富集度条件保持所用次临界标准，10%则超过限值；B4C/Al棒在至10%条件满足标准。作者认为导向管位置SS304棒是有成本潜力的探索性方案。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Increasing fuel enrichment to 5–10 wt.% (LEU+) is required for extending operating fuel cycles of nuclear power plants. However, the elevated reactivity of LEU+ fuel challenges the criticality management of the spent fuel pool, where conventional plate-type B4C/Al absorbers have been utilized. This study proposes an exploratory criticality control strategy that maintains the existing rack configuration for Region I in AP1000 by accommodating rod-type absorbers in the vacant control rod guide tubes. Using MCNP 6.3, candidate absorber materials (Gd2O3, Eu2O3, Sm2O3, Dy2O3, HfO2, SS304) were evaluated as plate-type and rod-type configurations under both unborated and borated water conditions. Proposed plate-type absorbers showed no improvement over the conventional B4C/Al absorbers. In contrast, SS304 rod-type absorbers inserted into the existing vacant guide tubes maintained subcriticality up to 9 wt.%, while the 10 wt.% case exceeded the subcriticality limit. B4C/Al rod absorbers satisfied the subcriticality criteria at enrichments up to 10 wt.%. These findings indicate that the rod-type SS304 absorbers inserted into guide tube positions can be a cost-effective solution for the safe storage of LEU+ spent fuels in wet pools.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2113808812579500032" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104796" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113808812579500032" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="沸水堆格架对下游液滴沉积的强化 droplet deposition enhancement by ferrule and vaned grid spacers in bwr fuel assemblies 燃料格架与液滴沉积 nuclear engineering and design · 2026-10-20 · riichiro okawa, masahiro furuya, takahiro arai, tsugumasa iiyama 燃料格架与液滴沉积 液滴沉积 droplet deposition 气相携带液滴抵达燃料棒表面补充液膜的过程。 格架通过液滴湍扩散和液膜流出两种机制改变壁面补液。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>燃料格架与液滴沉积</span><span>燃料格架与液滴沉积</span></div>
+          <h2>沸水堆格架对下游液滴沉积的强化</h2>
+          <p class="title-en">Droplet deposition enhancement by ferrule and vaned grid spacers in BWR fuel assemblies</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-20 · Riichiro Okawa, Masahiro Furuya, Takahiro Arai, Tsugumasa Iiyama</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-27；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>格架通过液滴湍扩散和液膜流出两种机制改变壁面补液。</li><li>作者实际方法：BWR子通道液滴实验和沉积模型。</li><li>建议仿真问题：格架几何简化是否抹去近端沉积峰，进而误估局部干涸？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>按液滴尺度和空间位置区分沉积机制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>液滴沉积改善不直接等于给定幅度CHF提升；试验尺寸与流量须核实。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent液滴/壁膜模型；先验证液滴输运，不直接做完整CHF预测。</li><li>输入与最低验证要求：需水力直径、格架形状、粒径谱、速度和沉积分布，独立比较两个峰的位置及幅值。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需水力直径、格架形状、粒径谱、速度和沉积分布，独立比较两个峰的位置及幅值。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>液滴沉积<small>droplet deposition</small></h4><p>气相携带液滴抵达燃料棒表面补充液膜的过程。</p><p class="context"><b>本文语境</b> 格架通过液滴湍扩散和液膜流出两种机制改变壁面补液。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>BWR格架通过增强燃料棒液滴沉积影响CHF。本文以模拟中心子通道观察套环式及叶片格架下游液滴，将作用分为湍流促进与流出液膜效应。前者作用于分散流中的小滴：液滴直径除以水力直径小于0.008（套环）或0.02（叶片）时，下游沉积增强。沉积分布有近格架及远端两个峰，远端可超过10倍水力直径，位置随几何改变。流出效应作用于格架液膜生成的液滴，使出流角度范围增大，形成紧邻格架的陡峭沉积峰。基于实验分别建立两类格架沉积强化模型。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Spacers in a BWR fuel assembly have an effect of improving the critical heat flux (CHF) by enhancing droplet deposition on the fuel rod surface. In this study, the behavior of droplets in the downstream region for a ferrule-type spacer and a vaned grid-type spacer was observed with a test section simulating the center subchannel of a BWR fuel assembly. The effects of the spacer on droplets were defined as the “turbulent promotion effect” and the “run-off effect”. The former refers to an effect on droplets in the dispersed flow due to turbulence downstream caused by the spacer. The latter refers to an effect on droplets generated from the liquid film on the spacer structure. The turbulent promotion effect affected droplets in a diameter standardized by the hydraulic equivalent diameter of the sub-channel less than 0.008 (the ferrule-type spacer) and 0.02 (the vaned grid-type spacer), and enhanced their deposition on the fuel rod surface downstream of the spacer. The droplet deposition distribution downstream of the spacer had two peaks, one in the immediate vicinity of the spacer and the other farther downstream (over 10 times the hydraulic equivalent diameter of the sub-channel), and both frequencies depended on the geometry. The run-off effect affected droplets generated by the spacer varying their outflow angle widely, and the droplet deposition distribution had a steep peak in the immediate vicinity of the spacer. Based on the experimental results, a mathematical model of droplet deposition enhancement was developed for each spacer type.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2113808934180761600" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115266" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113808934180761600" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="压水堆核电厂反应堆压力容器快中子注量不确定度计算研究  rmc与ansys仿真研究 核动力工程 · 2026 · 张涛 文米琳 唐松乾 张峻逍 李禹昆 高明达 张大才 李杰 江世航 温兴坚
+zhang tao;wen milin;tang songqian;zhang junxiao;li yukun;gao mingda;zhang dacai;li jie;jiang shihang;wen xingjian(national key laboratory of nuclear reactor technology,nuclear power institute of china,chengdu,610213,china;department of engineering physics,tsinghua university,beijing,100084,china)  快注量 fast-neutron fluence 指定能阈以上中子通量在时间上的积分。 rmc v3.5分析华龙一号rpv快注量输入与输出不确定度，偏保守合成最大13.80%。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>压水堆核电厂反应堆压力容器快中子注量不确定度计算研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 张涛 文米琳 唐松乾 张峻逍 李禹昆 高明达 张大才 李杰 江世航 温兴坚
+Zhang Tao;Wen Milin;Tang Songqian;Zhang Junxiao;Li Yukun;Gao Mingda;Zhang Dacai;Li Jie;Jiang Shihang;Wen Xingjian(National Key Laboratory of Nuclear Reactor Technology,Nuclear Power Institute of China,Chengdu,610213,China;Department of Engineering Physics,Tsinghua University,Beijing,100084,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC V3.5分析华龙一号RPV快注量输入与输出不确定度，偏保守合成最大13.80%。</li><li>作者实际方法：RMC V3.5及不确定度合成。</li><li>建议仿真问题：新型堆屏蔽几何公差引起的注量变化是否显著？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将输入不确定性和输出统计量明确纳入注量评价。</li></ul></section>
+        <section><h3>不足</h3><ul><li>20%限值仅属文中依据，不能直接挪作新型堆或结构寿命标准；注量不直接等于损伤。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC屏蔽统计与参数扫描；ANSYS材料损伤需另有经验证本构。</li><li>输入和最低验证：需能阈、源项、几何、核数据和合成规则，核对相关性及活化测量。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需能阈、源项、几何、核数据和合成规则，核对相关性及活化测量。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>快注量<small>fast-neutron fluence</small></h4><p>指定能阈以上中子通量在时间上的积分。</p><p class="context"><b>本文语境</b> RMC V3.5分析华龙一号RPV快注量输入与输出不确定度，偏保守合成最大13.80%。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核反应堆压力容器(RPV)使用寿命决定着核电厂的运行寿命,对其状态的监督和评估十分重要。RPV所受快中子注量是影响其性能的重要指标,基于确定论或蒙特卡罗软件计算的压力容器快中子注量会受堆芯几何和软件参数等多种因素影响,必须评估计算结果的不确定度以确保计算结果准确可用。本文以“华龙一号”反应堆为研究对象,对使用国产反应堆蒙特卡罗软件RMC V3.5计算的RPV快中子注量的不确定度进行详细评估,分别计算了输入参数和输出结果的不确定度,并采取偏保守的不确定度合成方法。总不确定度的合成结果最大为13.80%,满足不确定度小于20%的限值要求,证明了软件模型参数输入和参数设置的合理性,为蒙特卡罗软件用于RPV快中子注量的不确定度分析提供了参考。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204625573" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="微型铅冷快堆堆芯控制策略设计及源项分析  rmc与ansys仿真研究 原子核物理评论 · 2025 · 孙国鹏 孟海燕 陈笑松 陈亮 鞠永芹 高志超 秦长平 屈雯莉 张勋超
+sun guopeng;meng haiyan;chen xiaosong;chen liang;ju yongqin;gao zhichao;qin changping;qu wenli;zhang xunchao(institute of modern physics,chinese academy of sciences,lanzhou 730000,china;school of nuclear science and technology,university of chinese academy of sciences,beijing 100049,china;state power investment corporation research institute,beijing 102209,china)  停堆价值 shutdown worth 控制构件引入的负反应性，需与其实际能否到位区分。 微型铅冷堆提出控制鼓与浮力安全块，并用蒙卡及origen2分析停堆控制和源项。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>微型铅冷快堆堆芯控制策略设计及源项分析</h2>
+          
+          <p class="meta">原子核物理评论 · 2025 · 孙国鹏 孟海燕 陈笑松 陈亮 鞠永芹 高志超 秦长平 屈雯莉 张勋超
+SUN Guopeng;MENG Haiyan;CHEN Xiaosong;CHEN Liang;JU Yongqin;GAO Zhichao;QIN Changping;QU Wenli;ZHANG Xunchao(Institute of Modern Physics,Chinese Academy of Sciences,Lanzhou 730000,China;School of Nuclear Science and Technology,University of Chinese Academy of Sciences,Beijing 100049,China;State Power Investment Corporation Research Institute,Beijing 102209,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>微型铅冷堆提出控制鼓与浮力安全块，并用蒙卡及ORIGEN2分析停堆控制和源项。</li><li>作者实际方法：蒙卡三维控制模型、ORIGEN2。</li><li>建议仿真问题：热变形或摩擦导致安全块停留不同位置时，停堆价值受多大影响？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>连接主动/非能动反应性控制与分区源项演化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>2025年基线；中子学停堆价值不证明机械动作可靠，摘要没有卡涩及失效概率验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Mechanical先估合理位移/摩擦区间；RMC对规定位置计算价值，避免承诺全动力学。</li><li>输入和最低验证：需安全块几何、间隙、驱动力及各位置反应性；机械和中子验证分开。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需安全块几何、间隙、驱动力及各位置反应性；机械和中子验证分开。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>停堆价值<small>shutdown worth</small></h4><p>控制构件引入的负反应性，需与其实际能否到位区分。</p><p class="context"><b>本文语境</b> 微型铅冷堆提出控制鼓与浮力安全块，并用蒙卡及ORIGEN2分析停堆控制和源项。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为应对微型铅冷快堆在紧凑尺寸和高泄漏环境下,传统插入式控制棒难以应用的挑战,本工作旨在设计并评估一套新型反应性控制策略,并对停堆后的源项进行系统分析,以确保其运行安全并为后续工程设计提供依据。本工作提出了一种由主动控制鼓(调节鼓与安全鼓)和非能动安全块组成的多级冗余反应性控制策略。该策略的创新性在于:利用堆外控制鼓实现对堆芯扰动小的精细调节与停堆,并引入基于浮力驱动的非能动安全块作为纵深防御的最终保障。研究采用蒙特卡罗程序对该控制系统的反应性价值进行三维精确建模,并结合ORIGEN2程序对分区布置的燃料组件进行10 a的停堆源项演化计算,保证了计算的物理一致性。计算结果表明控制策略具备充足的停堆裕量,在最保守工况下,控制鼓协同作用可使堆芯达到深度次临界;非能动安全块能在主动系统失效时确保安全停堆,显著提升了系统的固有安全性。源项分析明确了不同冷却阶段的主要贡献核素,得到了分区组件放射性活度、衰变热、中子源和γ源等关键信息。本工作所设计的创新性多级冗余控制策略,能够有效、可靠地实现微型铅冷快堆的反应性控制与安全停堆。本研究获得的乏燃料详细源项特性,特别是对不同冷却阶段和能量区间内关键贡献核素的精准识别,为相关堆型的屏蔽设计、乏燃料管理和安全评价提供了关键的物理依据和数据基础。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203144165" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="面向微型堆多物理耦合的mcnp连续型热中子截面在线产生技术  rmc与ansys仿真研究 强激光与粒子束 · 2025 · 王立鹏 邹璟杰 赵若修 曹璐 姜夺玉 胡田亮 刘仕倡
+wang lipeng;zou jingjie;zhao ruoxiu;cao lu;jiang duoyu;hu tianliang;liu shichang(northwest institute of nuclear technology,xi’an 710024,china;school of nuclear science and technology,shanghai jiao tong university,shanghai 200240,china;school of nuclear science and engineering,north china electric power university,beijing 102206,china)  热散射律 thermal scattering law 描述束缚原子热运动和结构对低能中子散射的影响。 mcnp在线热散射截面扩展针对zrhx，triga/topaz及单栅元mcnp-um—abaqus作验证。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>面向微型堆多物理耦合的MCNP连续型热中子截面在线产生技术</h2>
+          
+          <p class="meta">强激光与粒子束 · 2025 · 王立鹏 邹璟杰 赵若修 曹璐 姜夺玉 胡田亮 刘仕倡
+Wang Lipeng;Zou Jingjie;Zhao Ruoxiu;Cao Lu;Jiang Duoyu;Hu Tianliang;Liu Shichang(Northwest Institute of Nuclear Technology,Xi’an 710024,China;School of Nuclear Science and Technology,Shanghai Jiao Tong University,Shanghai 200240,China;School of Nuclear Science and Engineering,North China Electric Power University,Beijing 102206,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MCNP在线热散射截面扩展针对ZrHx，TRIGA/TOPAZ及单栅元MCNP-UM—ABAQUS作验证。</li><li>作者实际方法：MCNP在线热散射、ABAQUS。</li><li>建议仿真问题：仅更新燃料温度但固定慢化剂散射库时，气冷热谱微堆误差多大？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>补充在线多普勒之外的热散射温度反馈。</li></ul></section>
+        <section><h3>不足</h3><ul><li>2025年基线；新功能未必可直接取得；温度插值不是全部散射物理的替代。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC已有温度点/库范围内对照，ANSYS只提供经验证温度分布。</li><li>输入和最低验证：需散射律、温度覆盖、代码版本；先验证热谱基准及统计收敛。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需散射律、温度覆盖、代码版本；先验证热谱基准及统计收敛。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热散射律<small>thermal scattering law</small></h4><p>描述束缚原子热运动和结构对低能中子散射的影响。</p><p class="context"><b>本文语境</b> MCNP在线热散射截面扩展针对ZrHx，TRIGA/TOPAZ及单栅元MCNP-UM—ABAQUS作验证。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>微型反应堆在运行过程中具有紧密耦合的核热力响应特征,温度分布具有较强的不均匀性,当堆芯温度发生变化时,需要在线生成不同温度的反应截面,以达到快速模拟截面温度反馈的效果。MCNP的在线多普勒展宽使用较为普遍,但是它只针对可分辨共振区,对于热谱型反应堆,无法在线考虑热中子散射截面受温度的影响,为此,本文进行了基于统计学抽样MCNP连续型热中子散射截面在线计算功能的开发,针对耐高温慢化剂材料ZrHx中的H开展了在线多温度点截面的计算研究,对比了离散和连续型热中子散射截面差异,完成了TRIGA和TOPAZ反应堆有效增值因数(keff)的宏观验证,并将其功能应用到非结构网格MCNP与ABAQUS铀氢锆燃料单栅元核热耦合分析中。结果表明,开发的MCNP在线热中子截面计算产生的keff与采用NJOY离线库计算的keff较为一致,结合MCNP的非结构网格输运功能,可以精细考虑慢化剂材料不同位置的温度反馈效应,为微型固态堆高效的多物理耦合计算奠定重要的基础。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202092432" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="增材制造技术在小型模块化反应堆领域的应用现状与发展趋势  rmc与ansys仿真研究 电焊机 · 2026 · 郭子豪 邹尧磊 吴君
+guo zihao;zou yaolei;wu jun(china nuclear power technology research institute co.,ltd.,shenzhen 518031,china;harbin engineering university,harbin 150001,china)  增材制造各向异性 additive-manufacturing anisotropy 逐层成形造成的方向相关组织和力学性能。 综述金属增材制造在smr六路线中的材料、复杂部件及设备应用。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>增材制造技术在小型模块化反应堆领域的应用现状与发展趋势</h2>
+          
+          <p class="meta">电焊机 · 2026 · 郭子豪 邹尧磊 吴君
+GUO Zihao;ZOU Yaolei;WU Jun(China Nuclear Power Technology Research Institute Co.,Ltd.,Shenzhen 518031,China;Harbin Engineering University,Harbin 150001,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述金属增材制造在SMR六路线中的材料、复杂部件及设备应用。</li><li>作者实际方法：增材制造文献与项目调研。</li><li>建议仿真问题：支承件打印各向异性对ANSYS接触与疲劳预测影响多大？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>按堆型和研发链比较制造实践。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述不提供统一材料本构；不能把打印样件能力等同已核级认证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Mechanical使用实测方向相关物性；RMC仅在材料孔隙显著影响核响应时考虑。</li><li>输入和最低验证：需材料方向、孔隙、热处理和检测数据；先选公开试样数据，再推广部件。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需材料方向、孔隙、热处理和检测数据；先选公开试样数据，再推广部件。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>增材制造各向异性<small>additive-manufacturing anisotropy</small></h4><p>逐层成形造成的方向相关组织和力学性能。</p><p class="context"><b>本文语境</b> 综述金属增材制造在SMR六路线中的材料、复杂部件及设备应用。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>小型模块化反应堆作为一种在三代堆与四代堆技术基础上实现小型化与模块化的新兴核能技术,已成为全球核能科技创新热点。增材制造技术可以赋能小型模块化反应堆领域,支撑先进核材料的性能提升,助力复杂部件的设计制造,以及推动关键设备的批量化生产。首先,基于国际原子能机构的《小型模块化反应堆:2024年进展报告》所收录的反应堆名录,全面调研了增材制造技术在小型模块化反应堆技术开发中的应用现状,在小型模块化反应堆的六条技术路线下,横向对比各堆型方案应用了金属增材制造技术的材料、部件与设备,分析相较于传统制造技术实现的性能或经济效益提升。其次,围绕美国、俄罗斯、法国、英国、加拿大等传统核能强国的核能增材制造项目布局以及相关科研院所、高校的研究方向开展纵向研究,分析国际上金属增材制造技术在小型模块化反应堆领域的发展趋势。最终,结合横向对比与纵向研究,研判得出金属增材制造技术已在小型模块化反应堆领域积累良好的应用实践,包括氮化铀TRISO燃料、U3Si2燃料、全陶瓷微胶囊燃料等先进燃料以及镍基超合金、难熔金属基合金、碳化硼复合丝等先进核材料的生产,几何形状复杂的燃料组件底座与支架、控制阀等反应堆部件的制造,压力容器试件、印刷电路板式换热器等关键设备的制造。增材制造技术在小型模块化反应堆领域的发展将呈现从非核心部分到核心部分、从样件到部件再到模块的趋势。随着增材制造技术成熟度的提升和标准的建立,将形成从原料、打印设备、工艺到检测认证的完整产业链,推动具有广大市场前景的小型模块化反应堆领域的成本下降和规模化应用。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203466821" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">优先能用小模型和可取得数据回答的问题，研究建议不构成可发表性保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先确认数据，再缩小模型</span><h3>LEU+乏燃料池棒式吸收体临界控制：可验证研究切口</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>摘要未列完整异常工况、偏差裕量和燃耗信用；满足算例标准不等于工程许可。</p></section>
+            <section><h4>为什么值得开展</h4><p>量化模型假设对工程极值的影响；不把换软件或启用耦合等同创新。</p></section>
+            <section><h4>建议工作</h4><ol><li>吸收棒偏心及间隙公差是否影响临界裕量？</li><li>RMC静态几何公差扫描；如涉及弯曲，再由Mechanical提供合理位移区间。</li><li>需水密度/硼浓度、吸收体几何及临界偏差验证；以公开基准校核程序。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>给出适用范围、误差与成本的可复现对照，而非无证据的首创声明。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>A New Approach to Neutron Absorber Design for Criticality Safety of LEU+ Spent Fuel Pool | 10.1016/j.net.2026.104796</li><li>吸收体布置位置和形态可能比仅替换板式材料更影响效果。</li></ul></div><div><h4>主要风险</h4><ul><li>必须先取得原始几何、参数、核数据/材料与验证数据；摘要不够重建模型。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">RMC—ANSYS耦合已有工作；前沿切口需具体到误差、接触/间隙、验证与成本。</p><p class="research-note">检索范围：X-MOL、维普、出版社和作者/机构公开页定向检索，不是系统综述。　检索时间：2026-10-29</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先小模型与公开基准；全寿期代码研发不作首题</span><h3>从RMC—ANSYS耦合转向可验证的模型简化误差</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“仅实现耦合”的新颖性，优先接触/间隙和局部极值误差。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2021卷年论文已用RMC、ANSYS Mechanical和APDL研究MegaPower核热力反馈；本批Cardinal工作进一步连接燃耗与辐照。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>限定几何和工况，分开核数据、统计、功率映射、接触和结构简化误差。</li><li>比较同等可验证精度下的成本，尤其最高温度、局部应力和反应性反馈。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>已有耦合是相关工作基线；有意义的增量须有明确误差问题和可取得的数据。</p></section>
+            <section><h4>建议论文切口</h4><p>先做单通道或小扇区的间隙热阻/几何更新对照，稳态验证后再考虑瞬态或辐照。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>核热源积分守恒、材料库存守恒、网格/统计收敛及热结构独立基准。</li><li>明确RMC版本/模块可得性，以及公开、授权或需申请的数据条件。</li></ul><h4>新颖性风险</h4><ul><li>算法或代码已研发不等于用户安装版本已具备功能。</li><li>数值程序间吻合不能冒称实验验证。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical固态堆核热力耦合（2021卷年，DOI含2020）↗</a><p>已存在RMC、ANSYS Mechanical及APDL连接；更换接口不是独立创新。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2026.112943" target="_blank" rel="noopener">热管堆随燃耗变化的Cardinal耦合（X-MOL标注2026-10-21；卷期不据此判定）↗</a><p>加入燃耗及辐照演化，构成进一步研究必须对照的现有工作。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮关注期刊核能8页、All4页；每页验证状态和内容变化。维普9组真实UI查询。历史日报、账本及本批按DOI、题名、URL去重。不把只有题名或背景的记录计阅读；不生成APDL、不入Zotero、不恢复提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
