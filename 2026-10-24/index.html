@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-24 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-24 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-24</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>4</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 8</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 4</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-10-24；实际检索、摘要核验、翻译和整理均为2026-10-29。本期英文4篇、中文4篇，低于10–15/5–10篇目标，保留缺额。英文采用近30天未读窗口2026-09-30至10-29；不冒称在归档当天已执行或当天首次发表。较早中文方法文献逐篇标历史基线。优先新型反应堆及RMC/ANSYS可验证问题，少量常规堆文献用作方法与验证基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="船舶横摇下铅铋自然循环的动力系统缩比 application of dynamical system scaling method to transient response characteristics of lbe natural circulation under ship rolling motion 海洋铅铋自然循环 annals of nuclear energy · 2026-10-24 · jianing xu, zhen wang, shichao zhang, jingyu wang, taotao zhou, pei mou, jie yu, gang pei 海洋铅铋自然循环 dss dynamical system scaling 基于系统动态过程构造缩比相似性并评价畸变的方法。 fluent动量源项可用于横摇缩比分析，但不能只比较平均流量。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>海洋铅铋自然循环</span><span>海洋铅铋自然循环</span></div>
+          <h2>船舶横摇下铅铋自然循环的动力系统缩比</h2>
+          <p class="title-en">Application of Dynamical System Scaling method to transient response characteristics of LBE natural circulation under ship rolling motion</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-24 · Jianing Xu, Zhen Wang, Shichao Zhang, Jingyu Wang, Taotao Zhou, Pei Mou, Jie Yu, Gang Pei</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-24；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>Fluent动量源项可用于横摇缩比分析，但不能只比较平均流量。</li><li>作者实际方法：ANSYS Fluent，横摇以动量源项施加。</li><li>建议仿真问题：保持流量相似的缩比回路，局部壁温与热应力峰值是否仍失真？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将DSS用于瞬态横摇铅铋自然循环。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“合理范围”未在摘要量化；没有由此证明局部热分层和热应力也相似。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent横摇源项与瞬态热分析；Mechanical仅在热场验证后增加。</li><li>输入与最低验证要求：需几何缩比、周期/幅度、物性和热边界；比较瞬态相位、温度分布及实验误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需几何缩比、周期/幅度、物性和热边界；比较瞬态相位、温度分布及实验误差。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>DSS<small>Dynamical System Scaling</small></h4><p>基于系统动态过程构造缩比相似性并评价畸变的方法。</p><p class="context"><b>本文语境</b> Fluent动量源项可用于横摇缩比分析，但不能只比较平均流量。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为将动力系统缩比DSS理论扩展到瞬态海况，并支持横摇铅铋自然循环试验装置设计，本文初步评估瞬态横摇响应的缩比畸变。采用Fluent模拟不同横摇条件下的缩比铅铋循环，横摇由动量源项实现。分析表明，缩比模型保留原型的横摇周期与幅度，模型与原型测量时间相同。依据DSS设计的相似准则能够缩比简单横摇铅铋回路的整体自然循环，瞬态响应的平均畸变处于作者认为合理的范围。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To expand the application of Dynamical System Scaling (DSS) theory to the transient sea motions and provide the basis for the design of the scaled rolling Lead-Bismuth Eutectic (LBE) experimental devices, this new scaling analysis theory was preliminarily applied to assess the transient scaling distortion of the LBE natural circulation under the transient rolling response in this study. The Fluent code was used to simulate the transient LBE circulation process of the scaled-down models under different rolling cases, and the rolling cases were realized by the momentum source terms. The analysis shows that the scaled-down models preserve the rolling period and amplitude of the prototype, and the measurement time between the model and the prototype is the same. The similarity criteria designed according to the DSS method can effectively scale the overall natural circulation in the simple rolling LBE loop, and the average distortion of the transient response is within a reasonable range.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2115702542857154560" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112968" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2115702542857154560" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="双流体堆内热源分布对熔盐—液铅耦合传热的影响 coupled flow and heat transfer characteristics of molten salt and liquid lead in the dual fluid reactor under internal heat source 双流体堆核热源与传热 annals of nuclear energy · 2026-10-24 · minglong yue, jian deng, rui guo, minyang gui, ruifeng tian, sichao tan 双流体堆核热源与传热 内热源 internal volumetric heat source 在流体或固体体积内产生的热量，边界加热关联通常不能直接替代。 燃料盐内热源不能简单等效为传统壁面加热边界。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>双流体堆核热源与传热</span><span>双流体堆核热源与传热</span></div>
+          <h2>双流体堆内热源分布对熔盐—液铅耦合传热的影响</h2>
+          <p class="title-en">Coupled flow and heat transfer characteristics of molten salt and liquid lead in the dual fluid reactor under internal heat source</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-24 · Minglong Yue, Jian Deng, Rui Guo, Minyang Gui, Ruifeng Tian, Sichao Tan</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-24；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>燃料盐内热源不能简单等效为传统壁面加热边界。</li><li>作者实际方法：单通道稳态CFD；摘要未给软件名。</li><li>建议仿真问题：以均匀核热源代替真实轴向沉积，会怎样影响隔壁峰温及热应力？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将黏度变化和内热源修正纳入双流体通道闭合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>小拟合误差相对本研究CFD，并非独立反应堆实验；稳态分析不能证明瞬态热波动谱。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC给出归一化热源形状→Fluent共轭传热→Mechanical热应力；首先用规定余弦源验证映射。</li><li>输入与最低验证要求：需双流体几何、壁厚、物性、功率和Re范围；分开检验积分热源守恒与温度/压降。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需双流体几何、壁厚、物性、功率和Re范围；分开检验积分热源守恒与温度/压降。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>内热源<small>internal volumetric heat source</small></h4><p>在流体或固体体积内产生的热量，边界加热关联通常不能直接替代。</p><p class="context"><b>本文语境</b> 燃料盐内热源不能简单等效为传统壁面加热边界。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>双流体堆是一种先进熔盐堆概念，燃料盐内热源会改变其与液铅冷却剂的耦合流动和传热。本文对代表性单通道进行稳态CFD，考察热源强度及轴向分布。内热源增强浮升力、削弱近壁动量交换并增大摩擦因子，同时降低黏度、加速主流。余弦热源比均匀热源产生更强热变化，传统外加热通道关联式不能准确预测摩擦及Nu，后者被系统低估。加入黏度比和热源修正因子后，摩擦模型最大预测误差降至0.8%以内，Nu关联最大相对误差为3.82%。液铅Re对盐侧摩擦影响很小，但通过改变壁面热边界明显影响换热。结果为双流体堆热工设计提供关联及机理线索。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The Dual Fluid Reactor (DFR) is an advanced molten salt reactor concept. In its core, the internal heat source within the fuel salt fundamentally alters the coupled flow and heat transfer between the fuel salt and the lead coolant. In this study, steady-state CFD simulations were performed on a single representative channel of the DFR core to investigate the effects of heat source intensity and axial distribution on the flow structure and heat transfer performance. The results reveal that the internal heat source enhances buoyancy effects, weakening near-wall momentum exchange and increasing frictional factor, while also reducing viscosity and accelerating the mainstream flow. A cosine-distributed heat source induces stronger thermal fluctuations than a uniform one. Consequently, classical correlations for externally heated channels fail to predict the friction factor and Nusselt number, with the latter being systematically underestimated under internal heat source conditions. To address this, modified correlations were developed that explicitly incorporate a viscosity ratio and a heat source correction factor. The proposed friction factor model reduces the maximum prediction error to within 0.8%, and the modified Nusselt number correlation achieves a maximum relative error of 3.82%. Furthermore, the Reynolds number of the lead coolant has a negligible effect on the fuel salt’s friction factor but significantly influences its heat transfer by altering the wall thermal boundary condition. These findings provide validated correlations and mechanistic insights crucial for the thermal–hydraulic design and optimization of DFR cores.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2115702534686650368" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112936" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2115702534686650368" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="钠冷快堆自然循环的系统—cfd耦合与验证 development of a coupled analysis method for reactor plant thermal–hydraulic evaluation under natural circulation conditions 钠冷快堆非能动排热 nuclear engineering and design · 2026-10-20 · erina hamase, tatsuya fujisaki, takumi kawamura, yasuhiro miyake, norihiro doda, masaaki tanaka 钠冷快堆非能动排热 pracs/dracs auxiliary cooling systems 通过不同余热排出路径工作的非能动冷却系统，验证范围不能互相替代。 高阶耦合并不必然明显改变所有工况；pracs下与系统模型差异有限。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>钠冷快堆非能动排热</span><span>钠冷快堆非能动排热</span></div>
+          <h2>钠冷快堆自然循环的系统—CFD耦合与验证</h2>
+          <p class="title-en">Development of a coupled analysis method for reactor plant thermal–hydraulic evaluation under natural circulation conditions</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-20 · Erina Hamase, Tatsuya Fujisaki, Takumi Kawamura, Yasuhiro Miyake, Norihiro Doda, Masaaki Tanaka</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-24；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>高阶耦合并不必然明显改变所有工况；PRACS下与系统模型差异有限。</li><li>作者实际方法：Super-COPD+RV-CFD，局部嵌入子通道模型。</li><li>建议仿真问题：什么条件下局部三维热分层值得加入ANSYS结构载荷模型？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将子通道分辨率与系统/容器反馈组合，以钠装置瞬态验证。</li></ul></section>
+        <section><h3>不足</h3><ul><li>PRACS验证不能代替尚未验证的DRACS复杂工况；增加耦合复杂度需有误差收益证据。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent容器/简化回路模型→Mechanical壁温载荷，对照系统平均边界。</li><li>输入与最低验证要求：需PLANDTL-1几何、流量温度时序和测点误差；比较分层位置、瞬态相位及结构峰值。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需PLANDTL-1几何、流量温度时序和测点误差；比较分层位置、瞬态相位及结构峰值。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>PRACS/DRACS<small>auxiliary cooling systems</small></h4><p>通过不同余热排出路径工作的非能动冷却系统，验证范围不能互相替代。</p><p class="context"><b>本文语境</b> 高阶耦合并不必然明显改变所有工况；PRACS下与系统模型差异有限。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>钠冷快堆采用浸没式直接换热器排余热时，容器内热分层、堆芯出口射流和堆芯—腔室相互作用会影响温度及一次回路自然循环，回路流量又反馈局部温度。本文通过接口耦合系统程序Super-COPD与容器CFD，并在RV-CFD中加入组件子通道模型以降低成本。首先模拟PLANDTL-1钠实验装置从额定至自然循环的PRACS停堆瞬态，重现热分层、射流以及一次环路温度流量。与单独Super-COPD比较，在本PRACS工况下差异有限，因为局部三维热工影响较小。本研究是向D-DHX参与的DRACS工况扩展的第一步，后者预期有更复杂容器现象。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In a sodium-cooled fast reactor (SFR), thermal stratification, a sodium jet at the core outlet, and core–plenum interactions simultaneously occur in the reactor vessel (RV) under natural circulation (NC) decay heat removal when using a dipped-type direct heat exchanger (D-DHX). These localized three-dimensional (3D) thermal–hydraulic phenomena affect the temperature field in the RV, which consequently affects the NC flow rate in the primary loop. In turn, the NC flow feeds back into the temperature field in the RV. To accurately evaluate these mutual effects in the transient conditions of an SFR plant, a coupled analysis method combining the plant dynamics analysis code (system code) with the computational fluid dynamics (CFD) code for the 3D thermal hydraulics in the RV is necessary. In this study, we develop a coupled analysis framework by combining the Super-COPD system code for the primary loop flow with the CFD code for the RV using a coupling interface. In particular, we employ a CFD model for the RV (RV-CFD), which enables the simulation of 3D local phenomena in the RV with reduced computational cost while maintaining the prediction accuracy by incorporating the subchannel analysis model for assemblies. As a first step toward investigating the applicability of the coupled analysis method using Super-COPD and RV-CFD, we simulate a reactor scram transient behavior (from the rated operation to NC conditions) using the primary reactor auxiliary cooling system (PRACS) in the PLANDTL-1 sodium experimental apparatus. The result indicated that the coupled analysis successfully reproduced key RV thermal–hydraulic features, including thermal stratification and jet behavior, via feedback with the thermal hydraulics in the primary loop. In addition, the coupled analysis generally reproduces the temperature and flow behavior in the primary loop in agreement with experimental results. A comparison with overall plant analysis using Super-COPD alone reveals that the difference between the two approaches remains limited under the present PRACS operation case. This is attributed to the relatively small impact of 3D thermal hydraulics under this condition. However, the present study serves as an important first step toward applying the coupled analysis method to DRACS operation using D-DHX, where more complex phenomena are expected to occur in the RV.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2113808977801523200" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115281" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113808977801523200" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="浮动核电站空气—水并联非能动余热排出实验 experimental investigation on the thermal-hydraulic performance of an air–water parallel passive residual heat removal system 海洋核电非能动排热 nuclear engineering and design · 2026-10-07 · hecheng liang, xiaobo zeng, yifu wang, jinchao li, di wu, meng wang, xu han, jie cheng, jianjun wang 海洋核电非能动排热 并联排热 parallel passive heat removal 多个自然循环换热支路分担余热且相互影响的系统。 并联空气与水侧可形成排热分担，但分流比是工况相关量。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>海洋核电非能动排热</span><span>海洋核电非能动排热</span></div>
+          <h2>浮动核电站空气—水并联非能动余热排出实验</h2>
+          <p class="title-en">Experimental investigation on the thermal-hydraulic performance of an air–water parallel passive residual heat removal system</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-07 · Hecheng Liang, Xiaobo Zeng, Yifu Wang, Jinchao Li, Di Wu, Meng Wang, Xu Han, Jie Cheng, Jianjun Wang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-24；实际摘要核验和整理2026-10-29；来源日期不直接等于首次在线日期。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>并联空气与水侧可形成排热分担，但分流比是工况相关量。</li><li>作者实际方法：空气—水并联自然循环装置实验。</li><li>建议仿真问题：单侧换热退化时，分流重分配是否导致局部管壁热冲击？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以实验连接快速初期与长期节水排热。</li></ul></section>
+        <section><h3>不足</h3><ul><li>37%为流量份额不是热量份额；台架尺度不等于堆级能力，也未覆盖全部海况。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：Fluent或经验证的一维自然循环模型→Mechanical换热管瞬态温度。</li><li>输入与最低验证要求：需35–45 kW台架几何、压力、两侧流量和温度；验证分流及总热平衡后再谈退化工况。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需35–45 kW台架几何、压力、两侧流量和温度；验证分流及总热平衡后再谈退化工况。；摘要未披露的数值须从全文取得，不能自行补成文献参数。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>并联排热<small>parallel passive heat removal</small></h4><p>多个自然循环换热支路分担余热且相互影响的系统。</p><p class="context"><b>本文语境</b> 并联空气与水侧可形成排热分担，但分流比是工况相关量。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对海上浮动核电站长期排热和淡水受限，本文提出空气换热器与水换热器并联的非能动余热排出AWPRHRS。试验研究压力、自然循环和热工表现，以不同热负荷下热量再分配减少储水依赖。系统在早期较高热负荷时保持较大排热能力，后期可稳定长期冷却而不过度耗水。35–45 kW下准稳压力0.65–0.66 MPa，空气侧持续承担约37%总流量。方案结合水冷的快速初期排热和空冷的长期运行能力。</p></div>
+          <div><h3>English abstract</h3><p lang="en">To enhance the safety and long-term cooling performance of passive residual heat removal systems (PRHRS) in offshore floating nuclear power plants, an air–water parallel passive residual heat removal system (AWPRHRS) is proposed and experimentally investigated. The system combines an air-cooled heat exchanger (AHX) and a water-cooled heat exchanger (WHX) in parallel, enabling efficient redistribution of thermal loads under varying heat conditions and reducing reliance on stored cooling water. The experimental facility was designed to evaluate key operational characteristics, including pressure response, natural circulation behavior, and thermal–hydraulic performance. Results demonstrate that the AWPRHRS can maintain high heat removal capacity under early-stage high heat load and achieve stable, long-term cooling without excessive water consumption. Under heat loads ranging from 35 to 45 kW, the system reaches a quasi-steady-state pressure of 0.65–0.66 MPa, while the air-cooled subsystem consistently carries approximately 37% of the total flow. The AWPRHRS effectively integrates the advantages of water- and air-cooled subsystems, providing both rapid initial decay heat removal and reliable long-term operation in the freshwater-limited OFNP environments.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2114261909302947840" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115252" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2114261909302947840" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc非结构网格的燃耗计算方法研究  rmc与ansys仿真研究 核动力工程 · 2026 · 李杰 申鹏飞 王侃 李庆
+li jie;shen pengfei;wang kan;li qing(department of engineering physics,tsinghua university,beijing,100084,china;national key laboratory of nuclear reactor technology,nuclear power institute of china,chengdu,610213,china;college of science,national university of defense technology,changsha,410073,china)  非结构网格燃耗 unstructured-mesh depletion 在不规则网格表示的材料空间中求解核素演化。 rmc的um输运与depth燃耗内耦合，以krusty对照mcnp6，keff和核素演化一致。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于RMC非结构网格的燃耗计算方法研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 李杰 申鹏飞 王侃 李庆
+Li Jie;Shen Pengfei;Wang Kan;Li Qing(Department of Engineering Physics,Tsinghua University,Beijing,100084,China;National Key Laboratory of Nuclear Reactor Technology,Nuclear Power Institute of China,Chengdu,610213,China;College of Science,National University of Defense Technology,Changsha,410073,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC的UM输运与DEPTH燃耗内耦合，以KRUSTY对照MCNP6，keff和核素演化一致。</li><li>作者实际方法：RMC-UM、DEPTH、MCNP6。</li><li>建议仿真问题：热变形网格更新如何影响燃耗计数与核素守恒？</li><li>实施难度：中等偏高</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将复杂网格几何延伸到全寿期燃耗。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给速度内存数值；论文功能不等于当前可用版本已有同样接口。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：先RMC静态CSG/UM对照，再接ANSYS规定小变形，不从全寿期开发起步。</li><li>输入和最低验证：需KRUSTY输入、相同材料库存/核数据、网格质量；核对质量、功率与核素守恒。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需KRUSTY输入、相同材料库存/核数据、网格质量；核对质量、功率与核素守恒。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>非结构网格燃耗<small>unstructured-mesh depletion</small></h4><p>在不规则网格表示的材料空间中求解核素演化。</p><p class="context"><b>本文语境</b> RMC的UM输运与DEPTH燃耗内耦合，以KRUSTY对照MCNP6，keff和核素演化一致。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>非结构网格(UM)在复杂几何建模、精细计数统计及多物理耦合等方面具有优势,但现有蒙特卡罗程序在UM几何下的燃耗计算能力仍存在计算效率低的问题。为实现基于UM几何的反应堆全寿期模拟,本文研究了蒙特卡罗程序UM几何下的燃耗计算方法,基于自主堆用蒙特卡罗程序RMC已有的UM几何粒子输运与计数统计功能,通过内耦合点燃耗程序DEPTH,实现了UM几何下的燃耗计算功能。以KRUSTY反应堆为计算对象,为RMC和MCNP6建立相同的UM燃耗计算模型并进行对比验证。结果表明,RMC与MCNP6在各燃耗步下的有效增殖系数keff及重要核素质量变化均吻合良好,同时RMC在计算效率和内存占用方面均优于MCNP6,验证了RMC基于UM几何燃耗计算功能的正确性和实用性。本文的工作使得RMC能够直接基于UM几何对反应堆进行全寿期模拟,拓宽了RMC的适用范围和应用场景。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204110646" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="快堆物理计算验证矩阵的建立及rmc的适用性分析  rmc与ansys仿真研究 强激光与粒子束 · 2026 · 王博 黄义涵 娄磊 赵晨 张斌 王连杰
+wang bo;huang yihan;lou lei;zhao chen;zhang bin;wang lianjie(state key laboratory of advanced nuclear energy technology,nuclear power institute of china,chengdu 610213,china)  验证矩阵 validation matrix 按物理过程和工程响应组织的基准覆盖表。 为快堆建立覆盖几何、材料、keff、棒价值、空泡价值、温度系数和功率的rmc验证矩阵。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>快堆物理计算验证矩阵的建立及RMC的适用性分析</h2>
+          
+          <p class="meta">强激光与粒子束 · 2026 · 王博 黄义涵 娄磊 赵晨 张斌 王连杰
+Wang Bo;Huang Yihan;Lou Lei;Zhao Chen;Zhang Bin;Wang Lianjie(State Key Laboratory of Advanced Nuclear Energy Technology,Nuclear Power Institute of China,Chengdu 610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>为快堆建立覆盖几何、材料、keff、棒价值、空泡价值、温度系数和功率的RMC验证矩阵。</li><li>作者实际方法：快谱基准、实际堆芯、RMC。</li><li>建议仿真问题：哪些验证响应最能约束新型快堆的热形变反馈预测？</li><li>实施难度：较低至中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用多响应基准约束程序适用性。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“偏差较小”未量化，且基准获取可能有许可；不要只选最容易吻合的算例。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC先验证系数与局部功率，再接ANSYS规定变形。</li><li>输入和最低验证：需基准不确定度、适用材料与核数据版本；区分实验验证和程序间对比。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需基准不确定度、适用材料与核数据版本；区分实验验证和程序间对比。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>验证矩阵<small>validation matrix</small></h4><p>按物理过程和工程响应组织的基准覆盖表。</p><p class="context"><b>本文语境</b> 为快堆建立覆盖几何、材料、keff、棒价值、空泡价值、温度系数和功率的RMC验证矩阵。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>软件的测试验证是软件开发过程中必不可少的环节。由于快堆在燃料、能谱、工质等多方面与传统压水堆不同,需针对快堆重新建立软件测试验证矩阵。通过广泛调研并筛选国内外快谱基准实验、实际堆芯,建立了适用于快堆的验证矩阵,涵盖不同几何参数与材料参数,包括有效增殖系数、控制棒价值、空泡价值、各类反应性系数、功率分布等多种堆芯参数的验证。基于建立的验证矩阵,对蒙卡程序RMC在快堆物理计算上的适用性展开了分析。数值计算结果表明,RMC程序能够实现验证矩阵中所列各种堆芯参数的计算,计算结果与实测值相比偏差较小,计算精度高,适用于快堆物理计算。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204057822" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc和cfd的铀钼合金燃料辐照装置安全特性研究  rmc与ansys仿真研究 核动力工程 · 2026 · 陈茗域 郭玉川 王冠博 杨琰 谢炫廷 黎家铭 郭啸宇 郭斯茂 樊杰 唐彬 刘仕倡
+chen mingyu;guo yuchuan;wang guanbo;yang yan;xie xuanting;li jiaming;guo xiaoyu;guo simao;fan jie;tang bin;liu shichang(institute of nuclear physics and chemistry,china academy of engineering physics,mianyang,sichuan,621000,china;state key laboratory of neutron science and technology,mianyang,sichuan,621900,china;school of nuclear science and engineering,north china electric power university,beijing,102206,china)  核释热率 nuclear heating rate 中子及相关粒子作用形成的材料热源，应有一致单位与归一化。 rmc释热率驱动cfd，评估umo辐照装置额定和堵流工况，额定样品约850℃。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于RMC和CFD的铀钼合金燃料辐照装置安全特性研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 陈茗域 郭玉川 王冠博 杨琰 谢炫廷 黎家铭 郭啸宇 郭斯茂 樊杰 唐彬 刘仕倡
+Chen Mingyu;Guo Yuchuan;Wang Guanbo;Yang Yan;Xie Xuanting;Li Jiaming;Guo Xiaoyu;Guo Simao;Fan Jie;Tang Bin;Liu Shichang(Institute of Nuclear Physics and Chemistry,China Academy of Engineering Physics,Mianyang,Sichuan,621000,China;State Key Laboratory of Neutron Science and Technology,Mianyang,Sichuan,621900,China;School of Nuclear Science and Engineering,North China Electric Power University,Beijing,102206,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC释热率驱动CFD，评估UMo辐照装置额定和堵流工况，额定样品约850℃。</li><li>作者实际方法：RMC+CFD，摘要未指明CFD软件。</li><li>建议仿真问题：堵流下仅看温度，会否漏掉包壳/支承热应力？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将不同材料核释热与局部热工计算连接。</li></ul></section>
+        <section><h3>不足</h3><ul><li>低于熔点不等于满足蠕变、界面或实验装置许可限值；堵流仍有流量条件须明确。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC功率计数→Fluent温度→Mechanical接触与热应力，先固定堵塞几何。</li><li>输入和最低验证：需释热归一化、残余流量、间隙和材料温变性能；验证热平衡与壁温后再判应力。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需释热归一化、残余流量、间隙和材料温变性能；验证热平衡与壁温后再判应力。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>核释热率<small>nuclear heating rate</small></h4><p>中子及相关粒子作用形成的材料热源，应有一致单位与归一化。</p><p class="context"><b>本文语境</b> RMC释热率驱动CFD，评估UMo辐照装置额定和堵流工况，额定样品约850℃。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为满足紧凑尺寸、低重量、高可靠性要求,新型铀钼(UMo)合金燃料被视为空间核电源具有潜力的燃料类型之一。为推动该新型燃料工程应用,有必要开展面向UMo合金燃料的反应堆辐照实验,获得燃料辐照前后性能变化。本研究基于反应堆蒙特卡罗程序RMC与计算流体动力学(CFD)程序,开展典型UMo合金燃料辐照装置方案的安全特性研究。通过RMC精确计算获得不同材料释热率,再使用CFD程序进行流动传热模拟,分析辐照装置在额定工况与堵流事故工况下的传热状态及运行特征。研究表明,额定工况下燃料样品处于850℃的高温状态,各材料最高温度均远低于熔点,装置方案设计合理。即使在严重堵流事故条件下,极少流量的工质仍能安全带走辐照装置产生的热量,材料峰值温度均在安全温度范围内,仍然能保持安全性。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204625575" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc程序的气冷微堆扩散均匀化方法研究及验证  rmc与ansys仿真研究 核动力工程 · 2026 · 肖向 张鹏 袁媛 张运荒 刘国明
+xiao xiang;zhang peng;yuan yuan;zhang yunhuang;liu guoming(china nuclear power engineering co.,ltd.,beijing,100840,china)  群结构 energy-group structure 将连续能量划分为有限区间的离散设置。 rmc超组件25群sph截面配合六角扩散，燃耗/棒位keff偏差分别在100/300 pcm内，功率0.5%内，单状态约1 s。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于RMC程序的气冷微堆扩散均匀化方法研究及验证</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 肖向 张鹏 袁媛 张运荒 刘国明
+Xiao Xiang;Zhang Peng;Yuan Yuan;Zhang Yunhuang;Liu Guoming(China Nuclear Power Engineering Co.,Ltd.,Beijing,100840,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际摘要核验2026-10-29；以来源刊年为准</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC超组件25群SPH截面配合六角扩散，燃耗/棒位keff偏差分别在100/300 pcm内，功率0.5%内，单状态约1 s。</li><li>作者实际方法：RMC、SPH、六角扩散。</li><li>建议仿真问题：减少能群能否保持局部热点功率而非只保持keff？</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>结合强泄漏气冷微堆群结构对照与等效。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不同棒位结果不能替代未见温度或变形工况验证；需列离线成本。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确给出具体后续工作。</li></ul><b>分析推导</b><ul><li>建议工具路线：RMC逐群参考→ANSYS热分析评价功率误差对最高温度的传播。</li><li>输入和最低验证：需能群结构、泄漏边界、燃耗棒位和误差定义；以局部反应率/功率双验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 需能群结构、泄漏边界、燃耗棒位和误差定义；以局部反应率/功率双验证。；参数数值及可取得性须查全文。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>群结构<small>energy-group structure</small></h4><p>将连续能量划分为有限区间的离散设置。</p><p class="context"><b>本文语境</b> RMC超组件25群SPH截面配合六角扩散，燃耗/棒位keff偏差分别在100/300 pcm内，功率0.5%内，单状态约1 s。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为解决气冷微堆因其复杂的几何结构、材料分布和强泄漏特性而导致的传统堆芯计算困难,提出了一种基于扩散均匀化的计算方法。首先,采用蒙特卡罗程序RMC进行超组件计算,以获取组件的均匀化少群截面;随后,利用超级均匀化(SPH)因子对截面进行修正;最后,结合六角形堆芯扩散程序完成堆芯计算分析。此外,为提升计算精度与效率,本文系统对比了不同能群结构对计算结果的影响。数值结果表明,采用经SPH修正的25群截面时,不同燃耗深度点、不同控制棒棒位的有效增殖系数keff相对偏差分别在100pcm(1pcm=10−5)和300pcm以内,堆芯功率分布的相对偏差在0.5%以内,单个状态点的计算耗时约为1 s左右,堆芯计算结果与基准值吻合良好,且计算效率较高。综上,本研究为气冷微堆的核设计分析提供了一种可行且有效的技术思路。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203331252" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">优先能用小模型和可取得数据回答的问题，研究建议不构成可发表性保证。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先确认数据，再缩小模型</span><h3>浮动核电站空气—水并联非能动余热排出实验：可验证研究切口</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>37%为流量份额不是热量份额；台架尺度不等于堆级能力，也未覆盖全部海况。</p></section>
+            <section><h4>为什么值得开展</h4><p>量化模型假设对工程极值的影响；不把换软件或启用耦合等同创新。</p></section>
+            <section><h4>建议工作</h4><ol><li>单侧换热退化时，分流重分配是否导致局部管壁热冲击？</li><li>Fluent或经验证的一维自然循环模型→Mechanical换热管瞬态温度。</li><li>需35–45 kW台架几何、压力、两侧流量和温度；验证分流及总热平衡后再谈退化工况。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>给出适用范围、误差与成本的可复现对照，而非无证据的首创声明。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Experimental investigation on the thermal-hydraulic performance of an air–water parallel passive residual heat removal system | 10.1016/j.nucengdes.2026.115252</li><li>并联空气与水侧可形成排热分担，但分流比是工况相关量。</li></ul></div><div><h4>主要风险</h4><ul><li>必须先取得原始几何、参数、核数据/材料与验证数据；摘要不够重建模型。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">RMC—ANSYS耦合已有工作；前沿切口需具体到误差、接触/间隙、验证与成本。</p><p class="research-note">检索范围：X-MOL、维普、出版社和作者/机构公开页定向检索，不是系统综述。　检索时间：2026-10-29</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>优先小模型与公开基准；全寿期代码研发不作首题</span><h3>从RMC—ANSYS耦合转向可验证的模型简化误差</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“仅实现耦合”的新颖性，优先接触/间隙和局部极值误差。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>2021卷年论文已用RMC、ANSYS Mechanical和APDL研究MegaPower核热力反馈；本批Cardinal工作进一步连接燃耗与辐照。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>限定几何和工况，分开核数据、统计、功率映射、接触和结构简化误差。</li><li>比较同等可验证精度下的成本，尤其最高温度、局部应力和反应性反馈。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>已有耦合是相关工作基线；有意义的增量须有明确误差问题和可取得的数据。</p></section>
+            <section><h4>建议论文切口</h4><p>先做单通道或小扇区的间隙热阻/几何更新对照，稳态验证后再考虑瞬态或辐照。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>核热源积分守恒、材料库存守恒、网格/统计收敛及热结构独立基准。</li><li>明确RMC版本/模块可得性，以及公开、授权或需申请的数据条件。</li></ul><h4>新颖性风险</h4><ul><li>算法或代码已研发不等于用户安装版本已具备功能。</li><li>数值程序间吻合不能冒称实验验证。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical固态堆核热力耦合（2021卷年，DOI含2020）↗</a><p>已存在RMC、ANSYS Mechanical及APDL连接；更换接口不是独立创新。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2026.112943" target="_blank" rel="noopener">热管堆随燃耗变化的Cardinal耦合（X-MOL标注2026-10-21；卷期不据此判定）↗</a><p>加入燃耗及辐照演化，构成进一步研究必须对照的现有工作。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮关注期刊核能8页、All4页；每页验证状态和内容变化。维普9组真实UI查询。历史日报、账本及本批按DOI、题名、URL去重。不把只有题名或背景的记录计阅读；不生成APDL、不入Zotero、不恢复提醒。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
