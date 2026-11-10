@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-11-01 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-11-01 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-11-01</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>5</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 9</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 5</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-11-01；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文5篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="钠冷快堆双层管道的分布式温度泄漏检测 advanced leak detection technique using a distributed temperature sensing for a double-walled pipe for a sodium-cooled fast reactor rmc与ansys仿真研究 annals of nuclear energy · 2026-10-28 · ki ean nam, juheon kim, youngil cho, jewhan lee, hyungmo kim 新型反应堆 可验证仿真方法 distributed temperature sensing (dts) distributed temperature sensing (dts) 沿光纤分布获取温度的测量方式。 三点温度比与统计阈值结合，33 h无泄漏热循环未见误报，并给出分布式定位。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>钠冷快堆双层管道的分布式温度泄漏检测</h2>
+          <p class="title-en">Advanced leak detection technique using a distributed temperature sensing for a double-walled pipe for a sodium-cooled fast reactor</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-28 · Ki Ean Nam, Juheon Kim, Youngil Cho, Jewhan Lee, Hyungmo Kim</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>WALSUM水模拟试验用拉曼DTS识别0.1–7.0 mL/min、35–90℃泄漏；最低测试流量0.1 mL/min可检出，响应195–2579 s。</li><li>实施难度：中等，适合热接触/简化模型研究。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>三点温度比与统计阈值结合，33 h无泄漏热循环未见误报，并给出分布式定位。</li></ul></section>
+        <section><h3>不足</h3><ul><li>这是水替代试验，不是高温钠实验；±0.25 m为0.5 m分辨率推出的理论定位不确定度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>夹层接触热阻与环境热扰动对小泄漏检出延迟的影响能否量化？</li><li>需完整加热/冷却历史与测温噪声；比较误报、漏报及响应时间。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：0.1–7.0 mL/min、35–90℃、阈值0.03、空间分辨率0.5 m；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Distributed temperature sensing (DTS)<small>Distributed temperature sensing (DTS)</small></h4><p>沿光纤分布获取温度的测量方式。</p><p class="context"><b>本文语境</b> 三点温度比与统计阈值结合，33 h无泄漏热循环未见误报，并给出分布式定位。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>早期检测和定位钠泄漏对于确保钠冷快堆（SFR）管道系统的安全至关重要。双层管道可以减轻外部钠泄漏的影响；然而，传统的线式泄漏检测器提供的空间信息有限，并且可能受到泄漏流体与传感电极接触不完全的影响。本研究实验开发并验证了一种基于拉曼散射分布式温度传感（DTS）的双层管道定量泄漏检测和定位方法。我们搭建了一个水模拟试验装置WALSUM，用于模拟双层管道环形空间内的泄漏，并在0.1–7.0 mL/min的泄漏流量和35–90 °C的流体温度范围内评估了该方法的检测性能。为了提高泄漏识别对测量噪声和热瞬变的鲁棒性，我们将三点空间温度比值法与基于比值差标准偏差的统计检测准则相结合。基于无泄漏基线三个标准差的裕度，确定了0.03的临界阈值。实验结果表明，DTS系统能够检测到0.1 mL/min的最小测试泄漏速率，响应时间根据泄漏流量和流体温度的不同，范围为195至2579 s。随着泄漏流量和流体温度的增加，响应速度加快，泄漏引起的热信号也随之增强。在包含反复加热和冷却循环的33小时无泄漏瞬态测试中，未观察到误报。对比测试表明，在电极接触不良导致线型检测器失效的情况下，DTS系统仍能成功检测到泄漏事件。此外，基于DTS 0.5 m的空间分辨率，其分布式传感能力实现了泄漏定位，理论位置不确定度为±0.25 m。这些结果证明了拉曼-DTS技术在双壁SFR管道中定量分布式泄漏监测和定位方面的可行性，并为进一步开发应用于实际反应堆提供了基于实验的性能指标。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Early detection and localization of sodium leakage are important for ensuring the safety of sodium-cooled fast reactor (SFR) piping systems. Double-walled piping can mitigate the consequences of external sodium leakage; however, conventional wire-type leak detectors provide limited spatial information and may be affected by incomplete contact between the leaked fluid and sensing electrodes. This study experimentally develops and validates a quantitative leakage detection and localization methodology based on Raman-scattering distributed temperature sensing (DTS) for double-walled piping. A water-mockup test facility, WALSUM, was constructed to simulate leakage in the annular space of a double-walled pipe, and the detection performance was evaluated over leak flow rates of 0.1–7.0 mL/min and fluid temperatures of 35–90 °C. To improve the robustness of leakage identification against measurement noise and thermal transients, a three-point spatial temperature-ratio method was combined with a statistical detection criterion based on the standard deviation of the ratio difference. A critical threshold of 0.03 was established from a three-standard-deviation margin of the non-leakage baseline. The experimental results demonstrated that the DTS system detected the minimum tested leak rate of 0.1 mL/min, with response times ranging from 195 to 2,579 s depending on the leak flow rate and fluid temperature. The response became faster and the leakage-induced thermal signal increased with increasing leak flow rate and fluid temperature. During a 33 h non-leakage transient test involving repeated heating and cooling cycles, no false alarms were observed. In comparative tests, the DTS system successfully detected a leakage event under conditions where the wire-type detector was affected by incomplete electrode contact. In addition, the distributed sensing capability enabled leak localization with a theoretical positional uncertainty of ±0.25 m based on the 0.5 m spatial resolution of the DTS. These results demonstrate the feasibility of Raman-DTS for quantitative, distributed leakage monitoring and localization in double-walled SFR piping and provide experimentally based performance metrics for further development toward practical reactor applications.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116347065270546432" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112983" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116347065270546432" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于堆外探测器的微型堆功率分布重建 ex-core detector–based power distribution reconstruction for micro-reactors rmc与ansys仿真研究 nuclear engineering and design · 2026-10-25 · xiayu wang, youqi zheng, hongchun wu, xianan du, liangzhi cao 新型反应堆 可验证仿真方法 detector response function detector response function 给定源分布产生某探测器信号的映射关系。 针对紧凑微堆布局开展功率反演而非直接测芯内功率。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>基于堆外探测器的微型堆功率分布重建</h2>
+          <p class="title-en">Ex-core detector–based power distribution reconstruction for micro-reactors</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-25 · Xiayu Wang, Youqi Zheng, Hongchun Wu, Xianan Du, Liangzhi Cao</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>简化TOPAZ II以堆外响应函数设计探测器布置；所测工况RMS误差&lt;2%、最大相对误差&lt;4.5%。</li><li>实施难度：中等至偏高，适合小模型数值研究。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>针对紧凑微堆布局开展功率反演而非直接测芯内功率。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“只能用堆外”是该设计语境，不能推为所有微堆物理上不能装芯内探测器；噪声/独立实验未说明。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>温度和几何变化造成的响应矩阵漂移是否大于重建算法本身误差？</li><li>需响应矩阵、噪声、探测器位置和独立扰动；报告最大局部误差及失效工况。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Detector response function<small>Detector response function</small></h4><p>给定源分布产生某探测器信号的映射关系。</p><p class="context"><b>本文语境</b> 针对紧凑微堆布局开展功率反演而非直接测芯内功率。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>微型反应堆通常具有紧凑的堆芯结构，因此只能使用堆芯外探测器进行在线功率监测。有效的监测依赖于精确的堆芯功率分布重建。在此背景下，本文针对采用堆外探测器进行堆芯功率重建，提出了一种定制的算法框架。为验证该框架的有效性，本文以简化的TOPAZ II空间反应堆堆芯为例，利用堆外探测器的响应函数进行了可行性分析。基于分析结果，根据在线监测的特点和要求，提出了一种堆外探测器布置方案。后续在各种运行条件下的验证表明，重建结果的均方根误差低于2%，最大相对误差低于4.5%。这些结果表明，利用堆外探测器进行微型反应堆堆芯功率在线监测是可行的，可为未来反应堆堆芯监测系统的开发提供参考。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Micro-reactors typically feature compact core structures, so only ex-core detectors can be used for online power monitoring. The effective monitoring relies on accurate core power distribution reconstruction. In this context, this paper develops a tailored algorithm framework for the core power reconstruction with ex-core detectors. To illustrate this, the paper conducts a feasibility analysis utilizing the simplified TOPAZ II space reactor core, employing the detector response function of ex-core detectors. Building on the results of this analysis, an ex-core detector arrangement scheme was proposed according to the characteristics and requirements of online monitoring. Subsequent verification under various operating conditions demonstrated that the reconstruction achieved root mean square errors below 2% and maximum relative errors under 4.5%. These results show the viability of using ex-core detectors for online core power monitoring of micro-reactors, thereby providing a reference for the development of future reactor core monitoring systems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116386109421531136" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115282" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116386109421531136" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="铬当量对simp钢焊缝组织及力学性能的影响 the effect of chromium equivalent on the microstructure and mechanical properties of weld metal for simp steels rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-23 · yinglong zhang, jiankang huang, hongpeng zhang, chen dong, zhiguang wang, yuan he, shichen yan, leli chen, cunfeng yao, ding fan 新型反应堆 可验证仿真方法 chromium equivalent (creq) chromium equivalent (creq) 反映多种合金元素对组织形成作用的等效指标，不等于单独铬质量分数。 把焊材成分/焊接道次与高温力学性能联系。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>铬当量对SIMP钢焊缝组织及力学性能的影响</h2>
+          <p class="title-en">The effect of chromium equivalent on the microstructure and mechanical properties of weld metal for SIMP steels</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-23 · Yinglong Zhang, Jiankang Huang, Hongpeng Zhang, Chen Dong, Zhiguang Wang, Yuan He, Shichen Yan, Leli Chen, Cunfeng Yao, Ding Fan</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>三种低活化焊丝比较表明降低Creq减少δ铁素体；W3 Creq=8.276，冲击能68 J、室温抗拉790 MPa、550℃抗拉430 MPa。</li><li>实施难度：中等，适合参数传递，不涉及自研焊材。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把焊材成分/焊接道次与高温力学性能联系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>抗拉强度不是许用应力；辐照、铅铋腐蚀、蠕变和疲劳未在摘要给出。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>用母材统一物性替代焊缝温变曲线，会低估多少紧固/焊接构件局部应力？</li><li>需完整应力应变、热膨胀、热导率和高温持久数据；不可用UTS充当塑性曲线。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：Creq=8.276、68 J、790 MPa与550℃/430 MPa；完整本构待全文；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Chromium equivalent (Creq)<small>Chromium equivalent (Creq)</small></h4><p>反映多种合金元素对组织形成作用的等效指标，不等于单独铬质量分数。</p><p class="context"><b>本文语境</b> 把焊材成分/焊接道次与高温力学性能联系。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>SIMP钢是含约9–12 wt% Cr的低活化铁素体/马氏体合金，被关注用于铅冷快堆堆芯构件，但缺少专用低活化焊丝限制工程应用。本文按低活化设计原则制备三种不同铬当量Creq焊丝，系统研究其对δ铁素体残留、显微组织与焊缝力学性能的影响。降低Creq可抑制δ铁素体；Creq降至8.276时，焊缝近乎全马氏体，多层多道焊亦促进δ铁素体消除。δ铁素体增多使硬度、强度和高温延伸率下降，但室温延伸率无明显变化。W3焊丝Creq=8.276，不仅满足低活化要求，而且冲击能68 J、室温抗拉强度790 MPa、550℃抗拉强度430 MPa。结果为低活化铁素体/马氏体钢专用焊材开发提供指导。</p></div>
+          <div><h3>English abstract</h3><p lang="en">SIMP steel is a low-activation ferritic/martensitic alloy containing approximately 9–12 wt% Cr, which has attracted increasing interest for core components in lead-cooled fast reactors. However, its engineering application is limited by the lack of specialized low-activation welding wires. In this study, three low-activation welding wires with different chromium equivalents (Creq) were designed and fabricated based on low-activation alloy design principles. The effects of Creq variation on δ-ferrite retention, microstructural characteristics, and mechanical behavior of the weld metals were systematically investigated. The results indicate that reducing Creq effectively suppresses δ-ferrite formation. When Creq was decreased to 8.276, the weld metal exhibited an almost fully martensitic microstructure. In addition, the multilayer multi-pass welding process promoted the elimination of δ-ferrite in the weld metal. Increasing δ-ferrite content led to reductions in hardness, strength, and high-temperature elongation, whereas no clear change in room-temperature elongation was observed. Among the welding wires studied, the W3 welding wire with Creq of 8.276 not only meets the low activation requirement but also has an impact energy of 68 J, a room-temperature tensile strength of 790 MPa, and a tensile strength of 430 MPa at 550 °C. These findings provide valuable guidance for developing dedicated welding consumables for low-activation ferritic/martensitic steels.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>曾解析到开放全文候选；本轮复查遇TLS/连接中断，尚未取得可验证PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2113813674738331648" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104804" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113813674738331648" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="螺旋肋燃料棒应用于ap1000组件的中子学影响 analysis of the neutronics effect of spiral-ribbed fuel rods applied to ap1000 assemblies rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-27 · jincheng wang, zhijiang yuan, deping du, xunjian che, jianchuang sun, weihua cai 新型反应堆 可验证仿真方法 infinite multiplication factor (k∞) infinite multiplication factor (k∞) 忽略中子泄漏的无限介质增殖因子，不等于有限堆芯keff。 用lmdi-cf分解四因子贡献，比较几何与燃料效应。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>螺旋肋燃料棒应用于AP1000组件的中子学影响</h2>
+          <p class="title-en">Analysis of the neutronics effect of spiral-ribbed fuel rods applied to AP1000 assemblies</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-27 · Jincheng Wang, Zhijiang Yuan, Deping Du, Xunjian Che, Jianchuang Sun, Weihua Cai</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>OpenMC建立17×17螺旋肋组件并比较五种燃料；该几何降低k∞并软化能谱，U-50Zr寿期最长而排出燃耗不最高。</li><li>实施难度：中等至偏高，复杂几何与燃料资料是前提。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用LMDI-CF分解四因子贡献，比较几何与燃料效应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>自支承几何不自动证明接触/磨损合格；组件寿期与全堆循环寿期不同。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>自支承接触简化与棒间距扰动是否同时改变中子泄漏及局部热应力？</li><li>需燃料组成、密度、燃耗条件及接触参数；先排除材料库存改变造成的表观收益。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：17×17、五种燃料、k∞、EFPD与排出燃耗；全堆条件未给；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Infinite multiplication factor (k∞)<small>Infinite multiplication factor (k∞)</small></h4><p>忽略中子泄漏的无限介质增殖因子，不等于有限堆芯keff。</p><p class="context"><b>本文语境</b> 用LMDI-CF分解四因子贡献，比较几何与燃料效应。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>螺旋肋燃料棒比传统圆柱棒具有更大的表面积体积比，并可通过自支承接触取消定位格架。本文用OpenMC建立AP1000基础的17×17螺旋肋燃料组件，装入(²³⁸U+²³⁹Pu)O₂+AlSi、(²³²Th+²³³U)O₂+AlSi、(²³²Th+²³⁵U)O₂+AlSi、(²³⁵U+²³⁸U)O₂+AlSi及U-50Zr五种燃料。与传统圆柱组件比较，螺旋肋几何降低k∞并使能谱软化。采用LMDI-CF方法量化四因子贡献。其中(²³²Th+²³³U)O₂+AlSi的k∞最高，为1.83362，寿期780有效满功率日，反映钍—²³³U循环较好的中子经济性。U-50Zr能谱最硬，寿期最长为1920有效满功率日，比前者长146.15%；其排出燃耗143,914 MWd/tHM略低于前者147,153 MWd/tHM。结果为无格架螺旋肋组件燃料选择及中子学优化提供定量支持。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Spiral-ribbed fuel rods provide a larger surface area-to-volume ratio than conventional cylindrical rods and can eliminate spacer grids through self-supporting contact. In this study, an AP1000-based 17×17 spiral-ribbed fuel assembly is modeled using OpenMC and loaded with five fuels: (238U+239Pu)O2+AlSi, (232Th+233U)O2+AlSi, (232Th+235U)O2+AlSi, (235U+238U)O2+AlSi, and U-50Zr. Comparison with a conventional cylindrical assembly shows that the spiral-ribbed geometry reduces k∞ and softens the neutron spectrum. The LMDI-CF method is applied to quantify four-factor contributions. Among the fuels, (232Th+233U)O2+AlSi achieves the highest k∞ of 1.83362 and a lifetime of 780 EFPD, reflecting the favorable neutron economy of the thorium-233U cycle. U-50Zr exhibits the hardest neutron spectrum and the longest lifetime of 1920 EFPD, 146.15% longer than that of (232Th+233U)O2+AlSi. Its discharge burnup is 143,914 MWd/tHM, slightly lower than the 147,153 MWd/tHM of (232Th+233U)O2+AlSi. These results provide quantitative support for fuel selection and neutronic optimization of spacer-grid-free spiral-ribbed assemblies.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0curl: (35) Recv failure: Connection was reset
+</p>
+      <footer><a href="https://www.x-mol.com/paper/2116349400029868032" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104815" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116349400029868032" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="兆瓦级热管堆核动力系统数字样机设计  rmc与ansys仿真研究 原子能科学技术 · 2026 · 周子涵 郭啸宇 郭玉川 郭斯茂 唐彬 黄洪文 王冠博 刘仕倡 樊杰 王真朋 陈茗域
+zhou zihan;guo xiaoyu;guo yuchuan;guo simao;tang bin;huang hongwen;wang guanbo;liu shichang;fan jie;wang zhenpeng;chen mingyu(institute of nuclear physics and chemistry,china academy of engineering physics,mianyang 621900,china;school of nuclear science and engineering,north china electric power university,beijing 102206,china;national key laboratory of neutron science and technology,mianyang 621900,china)  数字样机 数字样机 以组件及系统数学模型表征设计和运行响应。 系统级模块把热管堆运行和故障响应放进统一动态模型。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>兆瓦级热管堆核动力系统数字样机设计</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 周子涵 郭啸宇 郭玉川 郭斯茂 唐彬 黄洪文 王冠博 刘仕倡 樊杰 王真朋 陈茗域
+ZHOU Zihan;GUO Xiaoyu;GUO Yuchuan;GUO Simao;TANG Bin;HUANG Hongwen;WANG Guanbo;LIU Shichang;FAN Jie;WANG Zhenpeng;CHEN Mingyu(Institute of Nuclear Physics and Chemistry,China Academy of Engineering Physics,Mianyang 621900,China;School of Nuclear Science and Engineering,North China Electric Power University,Beijing 102206,China;National Key Laboratory of Neutron Science and Technology,Mianyang 621900,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>兆瓦级热管堆数字样机采用Modelica；功率提升与控制波动分析偏差小于4%，并模拟单热管失效和部分冷却丧失。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>系统级模块把热管堆运行和故障响应放进统一动态模型。</li></ul></section>
+        <section><h3>不足</h3><ul><li>小于4%的比较不自动覆盖所有故障工况；摘要信息不足以独立确认全部安全裕量。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>系统级单热管失效边界能否保留固态堆芯局部最高温度？</li><li>需基准工况、热管导热规律及失效定义；检查能量守恒与边界时间分辨率。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：兆瓦级热管堆数字样机采用Modelica；功率提升与控制波动分析偏差小于4%，并模拟单热管失效和部分冷却丧失。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>数字样机<small>数字样机</small></h4><p>以组件及系统数学模型表征设计和运行响应。</p><p class="context"><b>本文语境</b> 系统级模块把热管堆运行和故障响应放进统一动态模型。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文以典型兆瓦级热管堆核动力系统为研究对象,针对兆瓦级核动力系统集成度高、强耦合及安全边界预估困难等问题,构建基于modelica语言的反应堆系统数字样机。基于所研发数字样机,开展了核动力系统反应堆功率线性提升与功率稳定性调节的数值模拟。计算表明,依靠反应性主动控制系统,反应堆功率、燃料峰值温度及热管吸热功率等主要参数波动能始终保持在4%以内。进一步地,分析了该核动力系统在单根热管失效、反应堆丧失部分冷却事故下的安全特性。计算发现,即使不采取控制棒紧急停堆或反应性主动调节策略,燃料峰值温度、热管峰值温度、最大热管输热功率等参数能始终保持在安全限值以下,反应堆安全性能得到有效保证。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204565201" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="棒束型气冷快堆几何形变反应性系数敏感性研究  rmc与ansys仿真研究 核科学与工程 · 2026 · 王金雨 梁冬盛 张梦森 车锐 张晟豪 刘仕倡 卢迪 马誉高 周觅 苏东川
+wang jinyu;liang dongsheng;zhang mengsen;che rui;zhang shenghao;liu shichang;lu di;ma yugao;zhou mi;su dongchuan(nuclear power institude of china,chengdu,sichuan prov.410513,china;china national nuclear corporation,beijing 100045,china;north china electric power university,beijing 102206,china)  几何反馈 几何反馈 温度引起几何与密度变化，进而改变中子输运和反应性。 分开燃料、格架与反射层变形的反应性效应。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>棒束型气冷快堆几何形变反应性系数敏感性研究</h2>
+          
+          <p class="meta">核科学与工程 · 2026 · 王金雨 梁冬盛 张梦森 车锐 张晟豪 刘仕倡 卢迪 马誉高 周觅 苏东川
+WANG Jinyu;LIANG Dongsheng;ZHANG Mengsen;CHE Rui;ZHANG Shenghao;LIU Shichang;LU Di;MA Yugao;ZHOU Mi;SU Dongchuan(Nuclear Power Institude of China,Chengdu,Sichuan Prov.410513,China;China National Nuclear Corporation,Beijing 100045,China;North China Electric Power University,Beijing 102206,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>648棒气冷堆研究几何变形反馈；真实热膨胀约0.5%–2%，另用5%变形作灵敏度探查，径向格架和轴向燃料变形影响明显。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>分开燃料、格架与反射层变形的反应性效应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>5%是探查幅度，不能当作真实预测变形；是否更新密度会显著影响结论。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>保持材料库存时，几何简化和密度更新分别贡献多少反应性偏差？</li><li>同温度、同库存、同核库比较；先做单方向解析膨胀和统计收敛。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：648棒气冷堆研究几何变形反馈；真实热膨胀约0.5%–2%，另用5%变形作灵敏度探查，径向格架和轴向燃料变形影响明显。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>几何反馈<small>几何反馈</small></h4><p>温度引起几何与密度变化，进而改变中子输运和反应性。</p><p class="context"><b>本文语境</b> 分开燃料、格架与反射层变形的反应性效应。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文针对棒束型气冷快堆开展几何形变反应性系数敏感性分析,通过建立包含648根燃料棒的三维堆芯模型,系统研究了燃料、栅板及反射层等关键结构的径向/轴向膨胀对有效增殖系数(keff)的影响规律。考虑各部件运行温度和热膨胀系数,由温度引起的热变形范围在0.5%~2%。采用蒙特卡罗程序分析了5%变形量引起的反应性变化规律,结果表明,上下栅板5%径向膨胀可导致keff下降3.791×10-2,燃料5%轴向膨胀使keff降低1.728×10-2;反射层轴向膨胀较径向膨胀敏感性高3倍,表现出显著的各向异性特征。研究揭示了几何形变中燃料元件轴向膨胀效应较元件径向膨胀更为敏感,特别是栅板径向膨胀对反应性影响最为显著,说明对于棒束型气冷快堆而言,泄漏是影响堆芯反应性的重要因素,为气冷快堆设计中几何形变补偿机制和安全分析提供了重要理论依据。该方法突破了传统密度等效法的局限性,实现了复杂几何形变的精细化建模,对棒束型气冷快堆物理设计优化具有指导意义。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203565859" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="小型气冷快堆堆芯几何形变中子学参数敏感性分析  rmc与ansys仿真研究 核技术 · 2026 · 梁冬盛 张梦森 王金雨 车锐 张晟豪 刘仕倡 卢迪 马誉高
+liang dongsheng;zhang mengsen;wang jinyu;che rui;zhang shenghao;liu shichang;lu di;ma yugao(school of nuclear science and engineering,north china electric power university,beijing 102206,china;nuclear power institute of china,chengdu 610213,china)  csg变形映射 csg变形映射 将结构变形用输运几何可接受的曲面或分区重新表达。 连接弯曲形态、棒价值、温度系数及功率热点变化。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>小型气冷快堆堆芯几何形变中子学参数敏感性分析</h2>
+          
+          <p class="meta">核技术 · 2026 · 梁冬盛 张梦森 王金雨 车锐 张晟豪 刘仕倡 卢迪 马誉高
+LIANG Dongsheng;ZHANG Mengsen;WANG Jinyu;CHE Rui;ZHANG Shenghao;LIU Shichang;LU Di;MA Yugao(School of Nuclear Science and Engineering,North China Electric Power University,Beijing 102206,China;Nuclear Power Institute of China,Chengdu 610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>小型气冷堆模型含7个六角及6个三角组件；RMC采用ENDF/B-VII.1，分析四种弯曲形变并更新密度。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>连接弯曲形态、棒价值、温度系数及功率热点变化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>既定弯曲形态不等于热结构实际形态；不能忽略几何变形与密度变化的联动。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>等效梁位移映射到中子几何时，热点预测损失有多大？</li><li>检查体积、质量、总功率守恒，比较局部功率及反应性并给统计误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：小型气冷堆模型含7个六角及6个三角组件；RMC采用ENDF/B-VII.1，分析四种弯曲形变并更新密度。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>CSG变形映射<small>CSG变形映射</small></h4><p>将结构变形用输运几何可接受的曲面或分区重新表达。</p><p class="context"><b>本文语境</b> 连接弯曲形态、棒价值、温度系数及功率热点变化。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>小型气冷快堆的燃料及栅格板等结构材料的变形引起的中子泄漏变化是反应性系数的主要来源。本研究针对小型气冷快堆堆芯在运行中潜在的几何形变问题,系统分析了关键中子学参数对几何形变的敏感性。研究基于ENDF/B-Ⅶ.1核数据库和RMC程序,建立了包含7个六边形组件盒、6个三角形组件盒、上下栅格板、反射层及外围径向构件的堆芯模型,并研究了一种自动化形变建模方法,实现了对燃料棒芯、燃料棒包壳、控制棒、组件盒、栅格板、反射层及外围构件等对象的径向膨胀、轴向膨胀,以及燃料棒向内、向外、同侧和向上开花型弯曲共4类弯曲形变的参数化建模。建模过程考虑了形变引起的材料密度变化。计算了堆芯在各类几何形变下的有效增殖系数keff、控制棒积分价值、温度反应性系数及热点因子,同时计算了各中子学参数的几何形变敏感性。结果表明,燃料弯曲、控制棒轴向膨胀及上下栅格板径向膨胀对控制棒积分价值影响较大;燃料径向膨胀、反射层轴向膨胀及组件盒径向膨胀对总温度反应性系数影响相对突出;燃料弯曲及上下栅格板径向膨胀对热点因子影响较大。研究指出了堆芯不同中子学参数敏感性较大的几何形变类型,为小型气冷快堆的安全分析设计优化提供了相关依据。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265787" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="氦氙气冷空间堆耦合布雷顿循环核电源系统瞬态特性分析  rmc与ansys仿真研究 原子能科学技术 · 2025 · 吴杨茂 唐思邈 朱隆祥 连强 张卢腾 马在勇 孙皖 潘良明
+wu yangmao;tang simiao;zhu longxiang;lian qiang;zhang luteng;ma zaiyong;sun wan;pan liangming(key laboratory of low-grade energy utilization technologies and systems,ministry of education,chongqing university,chongqing 400044,china;department of nuclear engineering and technology,chongqing university,chongqing 400044,china)  he–xe布雷顿循环 he–xe布雷顿循环 以氦氙混合气为工质的闭式气体动力循环。 将气冷微堆与转换系统控制响应相连。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>氦氙气冷空间堆耦合布雷顿循环核电源系统瞬态特性分析</h2>
+          
+          <p class="meta">原子能科学技术 · 2025 · 吴杨茂 唐思邈 朱隆祥 连强 张卢腾 马在勇 孙皖 潘良明
+WU Yangmao;TANG Simiao;ZHU Longxiang;LIAN Qiang;ZHANG Luteng;MA Zaiyong;SUN Wan;PAN Liangming(Key Laboratory of Low-grade Energy Utilization Technologies and Systems,Ministry of Education,Chongqing University,Chongqing 400044,China;Department of Nuclear Engineering and Technology,Chongqing University,Chongqing 400044,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2025年MAGNUS He–Xe布雷顿系统研究采用自编瞬态程序，分析转速与反应性调节。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将气冷微堆与转换系统控制响应相连。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给完整额定验证数据；特定正反应性控制效果不能推广成任意工况建议。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>受轴转速和材料温度约束时，功率爬升控制的热应力代价是什么？</li><li>核对系统惯性、换热器时间常数和控制限幅；需要独立动态数据。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2025年MAGNUS He–Xe布雷顿系统研究采用自编瞬态程序，分析转速与反应性调节。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>He–Xe布雷顿循环<small>He–Xe布雷顿循环</small></h4><p>以氦氙混合气为工质的闭式气体动力循环。</p><p class="context"><b>本文语境</b> 将气冷微堆与转换系统控制响应相连。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>空间核电源是未来空间任务的重要支撑,本文针对高温气冷堆耦合闭式布雷顿循环发电的兆瓦级先进气冷核能系统(MAGNUS),建立了一套合理完善的数学物理模型,包括反应堆模型、布雷顿热电转换系统模型以及热排放系统模型。采用稳定高效的数值计算方法进行求解,开发了一套瞬态系统分析程序。在对程序稳态及瞬态计算值进行验证后,对系统的典型事故工况进行瞬态分析,包括有保护措施和无保护措施的反应性引入事故、涡轮-发电机-压缩机(TAC)轴转速降低工况模拟。结果表明在反应堆中引入正反应性可提高系统的热循环效率;反应堆输出热量与系统负荷成正比,在保证堆芯安全的合理轴转速范围内,系统的温差损失能够更有效地将热能转化为电能,实现系统效率的提升。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7200909565" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="热管堆固态堆芯三维核热力耦合方法与分析  rmc与ansys仿真研究 原子能科学技术 · 2021 · 柴晓明 马誉高 韩文斌 谢碧衡 刘旻昀 余红星 黄善仿 刘余 杨韵佳 徐青蓝
+chai xiaoming;ma yugao;han wenbin;xie biheng;liu minyun;yu hongxing;huang shanfang;liu yu;yang yunjia;xu qinglan(science and technology on reactor system design technology laboratory,nuclear power institute of china,chengdu 610213,china;department of engineering physics,tsinghua university,beijing 100084,china)  热膨胀反应性 热膨胀反应性 材料尺寸和密度变化造成的反应性变化。 说明固态微堆几何反馈是主要反应性来源之一。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>热管堆固态堆芯三维核热力耦合方法与分析</h2>
+          
+          <p class="meta">原子能科学技术 · 2021 · 柴晓明 马誉高 韩文斌 谢碧衡 刘旻昀 余红星 黄善仿 刘余 杨韵佳 徐青蓝
+CHAI Xiaoming;MA Yugao;HAN Wenbin;XIE Biheng;LIU Minyun;YU Hongxing;HUANG Shanfang;LIU Yu;YANG Yunjia;XU Qinglan(Science and Technology on Reactor System Design Technology Laboratory,Nuclear Power Institute of China,Chengdu 610213,China;Department of Engineering Physics,Tsinghua University,Beijing 100084,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-01；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2021年KRUSTY三维动态几何研究给出冷热反馈约−850 pcm，约90%归因于热膨胀。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>说明固态微堆几何反馈是主要反应性来源之一。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未明确全部软件；−850 pcm及90%不能推广为所有热管堆常数。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>按均匀膨胀近似堆芯，能否保持真实非均匀位移的反馈？</li><li>复现KRUSTY定义和冷热状态，控制核库、密度及统计误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2021年KRUSTY三维动态几何研究给出冷热反馈约−850 pcm，约90%归因于热膨胀。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>热膨胀反应性<small>热膨胀反应性</small></h4><p>材料尺寸和密度变化造成的反应性变化。</p><p class="context"><b>本文语境</b> 说明固态微堆几何反馈是主要反应性来源之一。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>有别于传统堆芯,热管冷却反应堆(简称热管堆)固态堆芯具有高温热膨胀效应,该特性产生了中子物理/热工/力学(简称核热力)相互耦合的效应。本文根据固态堆芯热膨胀反应性反馈机制与热管传热过程,建立固态堆芯三维动态几何的核热力耦合方法。应用核热力耦合方法,对KRUSTY热管堆进行稳态分析。结果表明,正常工况下,堆芯从冷态到热态变化过程中,核热力反应性反馈约为-850 pcm,其中堆芯热膨胀效应约占总反馈的90%。核热力耦合分析表明,热膨胀效应是固态堆芯负反馈与自稳调节的主导效应,但另一方面,显著的热应力将威胁堆芯完整性从而影响反应堆安全。在热管堆的设计和运行过程中应重点关注固态堆芯材料的力学性能。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7105229690" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>钠冷快堆双层管道的分布式温度泄漏检测：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>这是水替代试验，不是高温钠实验；±0.25 m为0.5 m分辨率推出的理论定位不确定度。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>夹层接触热阻与环境热扰动对小泄漏检出延迟的影响能否量化？</li><li>建议Mechanical夹层热传导先复现水试验，再评估钠工况物性适用性；有流动才加Fluent。</li><li>需完整加热/冷却历史与测温噪声；比较误报、漏报及响应时间。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Advanced leak detection technique using a distributed temperature sensing for a double-walled pipe for a sodium-cooled fast reactor | 10.1016/j.anucene.2026.112983</li><li>WALSUM水模拟试验用拉曼DTS识别0.1–7.0 mL/min、35–90℃泄漏；最低测试流量0.1 mL/min可检出，响应195–2579 s。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>兆瓦级热管堆核动力系统数字样机设计：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>小于4%的比较不自动覆盖所有故障工况；摘要信息不足以独立确认全部安全裕量。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>系统级单热管失效边界能否保留固态堆芯局部最高温度？</li><li>从系统模型提取边界，ANSYS小扇区作局部温度/应力检查；不重建全系统起步。</li><li>需基准工况、热管导热规律及失效定义；检查能量守恒与边界时间分辨率。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>兆瓦级热管堆核动力系统数字样机设计 | </li><li>兆瓦级热管堆数字样机采用Modelica；功率提升与控制波动分析偏差小于4%，并模拟单热管失效和部分冷却丧失。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>夹层接触热阻与环境热扰动对小泄漏检出延迟的影响能否量化？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>建议Mechanical夹层热传导先复现水试验，再评估钠工况物性适用性；有流动才加Fluent。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>需完整加热/冷却历史与测温噪声；比较误报、漏报及响应时间。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2026.112983" target="_blank" rel="noopener">Advanced leak detection technique using a distributed temperature sensing for a double-walled pipe for a sodium-cooled fast reactor（Pub Date : 2026-10-28）↗</a><p>WALSUM水模拟试验用拉曼DTS识别0.1–7.0 mL/min、35–90℃泄漏；最低测试流量0.1 mL/min可检出，响应195–2579 s。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
