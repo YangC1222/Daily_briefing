@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-31 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-31 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-31</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>5</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 9</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 5</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-10-31；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文5篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="小型堆螺旋直流蒸汽发生器密度波振荡下结构分析第二部分 structural analysis of helically coiled once-through steam generator tubes in small modular reactors under density wave oscillation—part ii: application and analysis rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-27 · kyucheol jeong, gyeonghyeon cho, juae oh, kangheon lee, seongmin chang, jae-yoon jeong, kwanghyun ahn, hun sik han, hyung doh roh, jonghun yoon 新型反应堆 可验证仿真方法 fretting work rate fretting work rate 接触力与相对滑移运动形成的单位时间做功指标，不直接等于磨损体积。 把支承等效和dwo载荷用于结构与微动两类指标。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>小型堆螺旋直流蒸汽发生器密度波振荡下结构分析第二部分</h2>
+          <p class="title-en">Structural analysis of helically coiled once-through steam generator tubes in small modular reactors under density wave oscillation—part II: Application and analysis</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-27 · Kyucheol Jeong, Gyeonghyeon Cho, Juae Oh, Kangheon Lee, Seongmin Chang, Jae-Yoon Jeong, Kwanghyun Ahn, Hun Sik Han, Hyung Doh Roh, Jonghun Yoon</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>局部三维管—支承实体模型提取等效刚度给梁模型，评估塑性垮塌、局部失效、疲劳和微动功率；部分满功率情景超微动指南。</li><li>实施难度：中等；最适合作为接触与简化研究基线之一。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把支承等效和DWO载荷用于结构与微动两类指标。</li></ul></section>
+        <section><h3>不足</h3><ul><li>低功率满足判据不等于满功率无风险；模型等效与支承接触条件需核，摘要未指定结构软件。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>线性等效支承刚度何时无法保留间隙开闭及微动功率？</li><li>先复现静刚度、模态和反力，再比较接触滑移及循环功；不要仅看位移吻合。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：局部支承等效刚度、DWO幅值、功率、管几何、结构判据及微动指南；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Fretting work rate<small>Fretting work rate</small></h4><p>接触力与相对滑移运动形成的单位时间做功指标，不直接等于磨损体积。</p><p class="context"><b>本文语境</b> 把支承等效和DWO载荷用于结构与微动两类指标。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>最近开发了一种单向流固耦合框架[1]，用于评估螺旋盘绕式直流蒸汽发生器（H-OTSG）管在密度波振荡（DWO）下的结构完整性和微动磨损。本文针对不同反应堆功率、运行工况和流量振荡幅度，针对各种管几何形状和DWO工况，给出了案例研究结果。将基于局部三维实体管支撑模型获得的等效支撑刚度应用于梁模型。结构完整性评估包括塑性坍塌、局部失效和疲劳，而微动磨损则以微动功率评价。所有低功率工况均满足结构完整性准则，且微动功率均低于设定的限值。反应堆功率、运行工况和管几何形状对结构完整性和微动磨损的影响各不相同，而流量振荡幅度对微动磨损的影响大于对结构完整性的影响。在 100% 功率运行下，某些情况下微动功率超过了所采用的指导方针，尽管在这些情况下 DWO 的发生预计会受到限制。</p></div>
+          <div><h3>English abstract</h3><p lang="en">A one-way fluid-structure interaction framework was recently developed [1] to evaluate the structural integrity and fretting wear of helically coiled once-through steam generator (H-OTSG) tubes under density wave oscillation (DWO). This article presents case-study results for various tube geometries and DWO scenarios under varying reactor powers, operating conditions, and flow-rate oscillation amplitudes. An equivalent support stiffness obtained from a local three-dimensional solid tube-support model was applied to the beam model. Structural integrity was evaluated for plastic collapse, local failure, and fatigue, while fretting wear was evaluated using the fretting work rate. All low-power cases satisfied the structural integrity criteria, and the fretting work rates remained below the adopted guideline. Reactor power, operating condition, and tube geometry affected structural integrity and fretting wear differently, while flow-rate oscillation amplitude had a greater effect on fretting wear than on structural integrity. Under 100% power operation, the fretting work rate exceeded the adopted guideline in some scenarios, although the occurrence of DWO is expected to be limited in these cases.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116349400705150976" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104816" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116349400705150976" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="连续能核数据同化及中国实验快堆应用 research on continuous-energy nuclear data assimilation methods and its application on china experimental fast reactor (cefr) rmc与ansys仿真研究 progress in nuclear energy · 2026-10-26 · qingming he, jinlong huang, mohan wang, liangzhi cao, hongchun wu 新型反应堆 可验证仿真方法 nuclear data assimilation nuclear data assimilation 把核数据先验、协方差和积分实验联合用于调整核数据的统计过程。 避免多群同化的群结构依赖，并用留出试验检验迁移。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>连续能核数据同化及中国实验快堆应用</h2>
+          <p class="title-en">Research on continuous-energy nuclear data assimilation methods and its application on China Experimental Fast Reactor (CEFR)</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-26 · Qingming He, Jinlong Huang, Mohan Wang, Liangzhi Cao, Hongchun Wu</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>NECP-UNICORN实现连续能同化并传播到ACE；重算与线性响应相差≤12 pcm，留出CEFR试验后其keff偏差从583降到30 pcm。</li><li>实施难度：偏高，宜先做核库敏感性而非自行研发全套同化。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>避免多群同化的群结构依赖，并用留出试验检验迁移。</li></ul></section>
+        <section><h3>不足</h3><ul><li>调整范围内线性一致不保证广泛外推；协方差完整性及基准相关性仍关键。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>同化收益在不同快堆谱和留出系列基准中是否保持？</li><li>Jezebel与CEFR之外再留出基准，审查实验相关性、先验和协方差正定性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：Jezebel、CEFR、ACE、留出实验、能量相关协方差；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Nuclear data assimilation<small>Nuclear data assimilation</small></h4><p>把核数据先验、协方差和积分实验联合用于调整核数据的统计过程。</p><p class="context"><b>本文语境</b> 避免多群同化的群结构依赖，并用留出试验检验迁移。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核数据同化把先验核数据、协方差、灵敏度和积分实验纳入统一统计框架。传统实现多基于多群截面，增加对群结构和群平均方式的依赖。本文利用能量相关协方差和连续能灵敏度，在NECP-UNICORN中开发连续能核数据同化。先用Jezebel基准对照既有多群实现，再用于中国实验快堆CEFR，并把连续能调整因子传播到ACE格式核库以直接进行连续能蒙卡计算。调整库重算响应与相应线性响应预测之差不超过12 pcm。另一次样本外检验把CEFR实验排除在同化数据之外，CEFR keff偏差仍从583 pcm降至30 pcm。这支持该流程用于大尺度反应堆计算，并在本文调整范围内支持线性响应近似。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Nuclear data assimilation combines prior nuclear data, covariance information, sensitivity coefficients, and integral experimental results within a unified statistical framework. Conventional implementations are generally based on multigroup cross sections, which introduce additional dependence on the adopted group structure and group-averaging procedure. In this work, a continuous-energy (CE) nuclear data assimilation capability was developed in NECP-UNICORN using energy-dependent covariance information and CE sensitivity coefficients. The implementation was first verified with the Jezebel benchmark by comparison with the established multigroup implementation. The method was then applied to the China Experimental Fast Reactor (CEFR), and the CE assimilation adjustment factors were further propagated to ACE-format libraries for direct continuous-energy Monte Carlo calculations. The recalculated responses obtained with the adjusted ACE libraries differ from the corresponding linear-response predictions by no more than 12 pcm. In an additional out-of-sample test in which the CEFR experiment was excluded from the assimilation dataset, the CEFR keff deviation was reduced from 583 pcm to 30 pcm. These results demonstrate the applicability of the CE assimilation workflow to large-scale reactor calculations and support the linear-response approximation over the adjustment range considered in this work.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116356978822623232" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106666" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116356978822623232" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="铅冷快堆7棒绕丝组件热工水力特性的数值研究 numerical investigation of thermal–hydraulic characteristics in wire-wrapped 7-rod bundles for lead-cooled fast reactors rmc与ansys仿真研究 annals of nuclear energy · 2026-10-31 · syed qasvar abbas shah, ruifeng tian, hui cheng, wajahat hussain 新型反应堆 可验证仿真方法 turbulent prandtl number turbulent prandtl number 湍流动量扩散与热扩散的比值，是低pr液态金属换热的重要闭合参数。 同时比较绕丝截面、湍流pr处理及局部堵塞。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>铅冷快堆7棒绕丝组件热工水力特性的数值研究</h2>
+          <p class="title-en">Numerical investigation of thermal–hydraulic characteristics in wire-wrapped 7-rod bundles for lead-cooled fast reactors</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-31 · Syed Qasvar Abbas Shah, Ruifeng Tian, Hui Cheng, Wajahat Hussain</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>SST k–ω及温变LBE物性比较圆/三角/梯形绕丝。673.15 K、0.36 m/s、50 kW/m²下，三角丝混合较强但压降更高。</li><li>实施难度：中等，7棒稳态可先做。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>同时比较绕丝截面、湍流Pr处理及局部堵塞。</li></ul></section>
+        <section><h3>不足</h3><ul><li>400/600 mm方案还改变丝尺寸/水力直径，不能将差异全部归因螺距；直管验证也不是棒束局部验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>保持相同丝面积和水力直径后，绕丝截面优势是否仍成立？</li><li>要有棒束局部温度/压降实验；比较网格、低Pr闭合和阻塞位置，不用两个不同堵塞率作同等位置比较。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：673.15 K、0.36 m/s、50 kW/m²；400/600 mm配置及不同堵塞情景；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Turbulent Prandtl number<small>Turbulent Prandtl number</small></h4><p>湍流动量扩散与热扩散的比值，是低Pr液态金属换热的重要闭合参数。</p><p class="context"><b>本文语境</b> 同时比较绕丝截面、湍流Pr处理及局部堵塞。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铅铋共晶（LBE）冷却燃料组件对铅冷快堆很重要。本文研究带圆形、三角形及梯形绕丝的7棒束中LBE流动与换热。三维CFD采用SST k–ω湍流模型、温度相关LBE物性及湍流Pr数处理。入口温度673.15 K、速度0.36 m/s，棒表面均匀热流50,000 W/m²。通过竖直加热管内LBE向上流动实验评价模型，较好重现Nu–Pe趋势。考察绕丝几何、400与600 mm配置、湍流Pr处理及部分堵塞。400 mm螺距下，三角丝产生最强动量再分配和横向二次流，中心子通道TSEF峰值0.25–0.27，下游换热系数维持8000–9000 W/(m²·K)，但水力代价较高。圆丝速度和温度场较平滑，梯形丝阻力较小但横向混合弱、热积聚大。400 mm方案比600 mm换热更强，但比较同时受丝尺寸和水力直径差别影响。湍流Pr处理改变Nu大小而不改变轴向趋势。30%外围径向堵塞比15%中心轴向堵塞造成更强热不对称及水力扰动，下游部分恢复。结果有助于在强化换热、阻力与堵塞容忍度之间选择绕丝设计。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Lead-bismuth eutectic (LBE)-cooled fuel assemblies are important for lead-cooled fast reactors. This study investigates LBE flow and heat transfer in a 7-rod bundle with circular, triangular, and trapezoidal spacer wires. A three-dimensional CFD model used the SST (k)-(omega) turbulence model, temperature-dependent LBE properties, and turbulent Prandtl-number treatments. Simulations used an inlet temperature of 673.15 K, an inlet velocity of 0.36 m s−1, and a uniform rod-surface heat flux of 50,000 W m−2. The model was assessed against experimental data for upward LBE flow in a heated vertical tube and reproduced the Nusselt–Peclet trend satisfactorily. The effects of wire geometry, 400- and 600-mm configurations, turbulent Prandtl-number treatment, and partial blockage were examined. At 400 mm pitch, the triangular wire generated the strongest momentum redistribution and transverse secondary flow, with central-subchannel TSEF peaks of 0.25–0.27. It maintained a downstream heat-transfer coefficient of 8000–9000 W m m-2K−1, although with a higher hydraulic penalty. The circular wire produced smoother velocity and temperature fields, while the trapezoidal wire offered lower hydraulic resistance but weaker lateral mixing and greater thermal accumulation. The 400 mm configurations showed stronger heat-transfer performance than the 600 mm cases, although the comparison also reflects differences in wire dimensions and hydraulic diameter. The turbulent Prandtl-number treatment changed the predicted Nusselt-number magnitude without altering the axial trend. A 30% peripheral radial blockage caused stronger thermal asymmetry and hydraulic disturbance than a 15% central axial blockage, with partial downstream recovery. These findings support spacer-wire designs that balance heat-transfer enhancement, hydraulic resistance, and blockage tolerance.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119664291587305472" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112961" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119664291587305472" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="微型气冷快堆根轨迹稳定性分析与验证 stability analysis and verification of the micro gas-cooled fast reactor based on the root locus method rmc与ansys仿真研究 nuclear engineering and design · 2026-10-27 · rui che, binji wang, shenghao zhang, yugao ma, jinyu wang, shichang liu 新型反应堆 可验证仿真方法 root locus root locus 系统参数变化时闭环特征根在复平面上的轨迹。 把参数设计点与稳定区间对照，显示温度反馈的约束作用。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>微型气冷快堆根轨迹稳定性分析与验证</h2>
+          <p class="title-en">Stability analysis and verification of the micro gas-cooled fast reactor based on the root locus method</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-27 · Rui Che, Binji Wang, Shenghao Zhang, Yugao Ma, Jinyu Wang, Shichang Liu</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以Prometheus开放格架设计为参考，用Matlab一阶线性系统/状态空间研究三个温度反应性系数和流量的稳定区间。</li><li>实施难度：中等，可从低阶模型起步。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把参数设计点与稳定区间对照，显示温度反馈的约束作用。</li></ul></section>
+        <section><h3>不足</h3><ul><li>系统模型复核同一线性分析不等于实验；强非线性事故不能由局部根轨迹保证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>结构热膨胀反馈估算误差会使根轨迹稳定边界移动多少？</li><li>检查线性化范围、系数单位、热惯性和独立瞬态数据，扫描跨边界而非只标一个安全点。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Root locus<small>Root locus</small></h4><p>系统参数变化时闭环特征根在复平面上的轨迹。</p><p class="context"><b>本文语境</b> 把参数设计点与稳定区间对照，显示温度反馈的约束作用。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>微型气冷快堆（MGCFR）凭借其体积小、质量轻、热电转换效率高等优势，在深空探测等领域具有广阔的应用前景。因此，MGCFR的设计稳定性和安全性面临着更高的要求。稳定性分析是MGCFR设计和研究的基础，它决定了反应堆系统能否安全稳定运行。本文以普罗米修斯计划的开放格架反应堆设计为例，利用Matlab®构建了MGCFR的一阶线性系统模型。基于该系统模型，推导出了状态空间表示的稳定性分析模型。采用根轨迹法，定量分析了关键参数（包括三个反应性温度反馈系数和冷却剂流量）对系统稳定性的影响，并获得了这些关键参数的稳定区间。然后，利用系统模型验证了稳定性分析结果。分析和验证结果表明，反应性温度反馈能够使系统模型保持稳定状态。此外，所有关键参数的设计值都具有一定的安全裕度。然而，当关键参数值超出其稳定区间时，系统无法维持稳定运行。本研究为微型气冷快堆（MGCFR）的稳定性分析方法提供了参考。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The Micro Gas-Cooled Fast Reactor (MGCFR), by advantages of their small size and mass and high thermal-to-electric conversion efficiency, has broad potential application in scenarios such as deep space exploration. Therefore, the MGCFR is imposed higher requirements on its design stability and safety. Stability analysis is a fundamental aspect in the design and research of MGCFR, determining whether the reactor system can operate safely and stably. Referring to the open-lattice reactor design of Prometheus Project, this paper constructs a first-order linear system model of a MGCFR using Matlab®. A state-space representation is derived as the stability analysis model from the system model. Based on the root locus method, the effects of key parameters (including three reactivity temperature feedback coefficients and the coolant flow rate) on system stability are quantitatively analyzed, and the stable intervals of these key parameters are obtained. The stability analysis results are then verified using the system model. The analysis and verification results prove that the reactivity temperature feedback effects can maintain the system model in a stable state. Furthermore, the design values of all key parameters possess a certain safety margin. However, when the values of the key parameters lie outside their stable intervals, the system cannot maintain stable operation. This research provides a reference for stability analysis methods for MGCFRs.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116386110067453952" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115285" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116386110067453952" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于超细群essm的少群截面产生方法  rmc与ansys仿真研究 原子能科学技术 · 2026 · 吴云钦 杜夏楠 郑友琦 杨懿宸
+wu yunqin;du xianan;zheng youqi;yang yichen(xi’an jiaotong university,xi’an 710049,china)  essm essm 嵌入式自屏蔽处理；少群有效截面需考虑背景环境。 用moc固定源求背景输运并连接少群处理，兼顾共振与全堆效率。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于超细群ESSM的少群截面产生方法</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 吴云钦 杜夏楠 郑友琦 杨懿宸
+WU Yunqin;DU Xianan;ZHENG Youqi;YANG Yichen(Xi’an Jiaotong University,Xi’an 710049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>SARAX二维计算采用超细群ESSM少群截面；组件kinf与蒙卡差异小于200 pcm，堆芯差异−243 pcm，较Tone共振处理约快3倍。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用MOC固定源求背景输运并连接少群处理，兼顾共振与全堆效率。</li></ul></section>
+        <section><h3>不足</h3><ul><li>控制棒和滑动反射层误差不同；组件误差不能替代全堆局部功率误差。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>反射层位置变化时，少群截面误差会怎样传播到棒价值和功率峰值？</li><li>控制群结构、空间离散及蒙卡统计误差；逐层分离共振和扩散误差。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：SARAX二维计算采用超细群ESSM少群截面；组件kinf与蒙卡差异小于200 pcm，堆芯差异−243 pcm，较Tone共振处理约快3倍。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>ESSM<small>ESSM</small></h4><p>嵌入式自屏蔽处理；少群有效截面需考虑背景环境。</p><p class="context"><b>本文语境</b> 用MOC固定源求背景输运并连接少群处理，兼顾共振与全堆效率。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>随着新域新质能力的加速发展,新型反应堆的设计更加多样化,鉴于应用环境的限制,核动力空间堆、深海无人潜航器需要高度紧凑的核反应堆堆芯结构,对应的堆外控制体、燃料单元的异形结构都给传统反应堆物理计算方法提出了挑战。本文基于先进反应堆中子学分析计算程序系统SARAX开展复杂组件截面产生方法研究,开发了二维组件精细建模功能,采用超细群方法进行共振计算,采用基于嵌入自屏法结合特征线固定源求解计算背景截面,利用MOC求解器进行输运计算,进而产生堆用少群截面。以某热管反应堆方案为例,与连续能量的蒙特卡罗程序结果进行对比验证。计算结果显示,基于新方法获得的少群截面计算组件kinf与蒙特卡罗程序的偏差在200 pcm以内,堆芯keff偏差为-243 pcm。对于热管反应堆两套控制系统的棒价值计算,安全棒价值与参考解的相对偏差为-2.36%,滑动反射层价值与参考解的相对偏差为-0.31%,计算精度与蒙特卡罗程序吻合良好。同时,比较了ESSM与改进Tone方法的计算结果与计算效率,在保证计算精度的前提下,基于超细群ESSM的少群截面产生方法的共振计算效率提高到原先的3倍。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204715299" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="气冷快堆核数据敏感性与不确定性研究  rmc与ansys仿真研究 原子能科学技术 · 2025 · 张梦森 刘仕倡 周亚婧 张乐瑞 卢迪 王连杰
+zhang mengsen;liu shichang;zhou yajing;zhang lerui;lu di;wang lianjie(school of nuclear science and engineering,north china electric power university,beijing 102206,china;nuclear power institute of china,chengdu 610213,china)  核数据协方差 核数据协方差 描述核反应数据不确定性及数据间相关性的矩阵。 把核库差异与反应性系数不确定性放在先进堆背景中评价。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>气冷快堆核数据敏感性与不确定性研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2025 · 张梦森 刘仕倡 周亚婧 张乐瑞 卢迪 王连杰
+ZHANG Mengsen;LIU Shichang;ZHOU Yajing;ZHANG Lerui;LU Di;WANG Lianjie(School of Nuclear Science and Engineering,North China Electric Power University,Beijing 102206,China;Nuclear Power Institute of China,Chengdu 610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2025年气冷快堆核数据研究用RMC/MCNP分析ALLEGRO与GFR2400；多数结果相符，部分弹性散射及模型差异较突出。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把核库差异与反应性系数不确定性放在先进堆背景中评价。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不同程序与不同核库混用会混淆来源；不能把多数符合写为全部一致。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>结构材料散射核数据对温度反馈系数的贡献是否超过几何简化误差？</li><li>参考基准、协方差覆盖和差分温度幅度需保持可比。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2025年气冷快堆核数据研究用RMC/MCNP分析ALLEGRO与GFR2400；多数结果相符，部分弹性散射及模型差异较突出。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>核数据协方差<small>核数据协方差</small></h4><p>描述核反应数据不确定性及数据间相关性的矩阵。</p><p class="context"><b>本文语境</b> 把核库差异与反应性系数不确定性放在先进堆背景中评价。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核数据作为反应堆物理计算的输入参数,其敏感性和不确定性对堆芯物理计算尤为重要。本文以ALLEGRO、GFR2400气冷快堆为研究对象,使用RMC和MCNP程序分别计算了keff对ALLEGRO中Pu、U、Re、W等关键核素的敏感性,将不同程序的敏感性计算结果进行比较,发现除弹性散射外,其余反应截面的敏感性符合很好,验证了RMC在气冷快堆中的敏感性计算能力。使用RMC计算了GFR2400中Pu、U、Re、W等关键核素的敏感性和不确定性,并与公开文献的结果进行比较。结果表明,由于模型的差异,会出现部分核素-反应道的敏感性计算结果偏差较大,但不确定性计算结果符合较好,验证了RMC在气冷快堆中的不确定性计算能力。本文结果验证了RMC在计算核数据敏感性和不确定性上的应用,可为气冷快堆设计与核数据研究提供支持。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202112875" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="mcdesof瞬态计算模型开发与实验验证  rmc与ansys仿真研究 原子能科学技术 · 2026 · 李行健 朱庆福 周琦 宁通 李开健 杜子涵 徐健平 梁淑红 段宇轩
+li xingjian;zhu qingfu;zhou qi;ning tong;li kaijian;du zihan;xu jianping;liang shuhong;duan yuxuan(china institute of atomic energy,beijing 102413,china)  sph sph 超均匀化因子，用于改善均匀化模型与参考反应率的符合。 将蒙卡群常数和修正方法用于临界及次临界系统。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>MCDESOF瞬态计算模型开发与实验验证</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 李行健 朱庆福 周琦 宁通 李开健 杜子涵 徐健平 梁淑红 段宇轩
+LI Xingjian;ZHU Qingfu;ZHOU Qi;NING Tong;LI Kaijian;DU Zihan;XU Jianping;LIANG Shuhong;DUAN Yuxuan(China Institute of Atomic Energy,Beijing 102413,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MCDESOF2使用OpenMC多群截面与DESOF扩散，含输运、(n,xn)及SPH修正；棒实验多数误差在±5%，个别达±10%。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将蒙卡群常数和修正方法用于临界及次临界系统。</li></ul></section>
+        <section><h3>不足</h3><ul><li>强泄漏与局部吸收处扩散近似仍可能失效，不能省略个别较大误差。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>各修正项对强泄漏堆芯的棒价值与局部功率改善是否一致？</li><li>相同核库、同组结构、同边界；以输运参考及棒实验分别检查。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：MCDESOF2使用OpenMC多群截面与DESOF扩散，含输运、(n,xn)及SPH修正；棒实验多数误差在±5%，个别达±10%。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>SPH<small>SPH</small></h4><p>超均匀化因子，用于改善均匀化模型与参考反应率的符合。</p><p class="context"><b>本文语境</b> 将蒙卡群常数和修正方法用于临界及次临界系统。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为开展小型铅冷快堆(LFR)三维瞬态分析计算,基于两步法计算框架,以中国原子能科学研究院自主研发的MCDESOF1.0软件中的中子扩散求解器DESOF为基础,拓展形成了具有三维时空动力学及外源驱动模拟能力的MCDESOF2.0软件。该软件采用开源蒙特卡罗平台OpenMC生成多群截面常数,并通过输运修正、(n,xn)修正及超级均匀化方法进行截面等效处理,以保障扩散计算在小型强泄漏堆芯中的精度。依托中国原子能科学研究院铀棒栅临界实验装置的铅堆堆芯临界落棒、次临界提棒/降棒等系列反应性扰动实验数据,采用MCDESOF2.0软件对相应工况进行数值模拟。通过将计算结果与实验测量值进行对比,验证了瞬态计算模型的可靠性。结果表明,计算得到的通量变化趋势与实验结果总体一致,临界与次临界工况下各主要参数的计算结果与实验值的相对偏差基本在±5%以内,部分点位相对偏差在±10%左右,说明MCDESOF2.0软件能够较好地再现堆芯在反应性扰动下的瞬态响应特性,可为小型铅冷快堆瞬态行为分析及相关数值软件验证提供参考。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204545483" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于随机特征线方法的高保真辐射屏蔽计算程序theta研发及应用  rmc与ansys仿真研究 原子能科学技术 · 2026 · 张乾 秦帅 田湘椿 李嘉诚 李诗弘 张俊杰 姜浩驰 张楚添
+zhang qian;qin shuai;tian xiangchun;li jiacheng;li shihong;zhang junjie;jiang haochi;zhang chutian(zhejiang institute of modern physics,school of physics,zhejiang university,hangzhou 310058,china)  随机射线 随机射线 随机抽样射线并沿射线解输运的混合思路，需与传统粒子蒙卡区分。 以随机射线降低大空间输运成本并检验剂量响应。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于随机特征线方法的高保真辐射屏蔽计算程序THETA研发及应用</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 张乾 秦帅 田湘椿 李嘉诚 李诗弘 张俊杰 姜浩驰 张楚添
+ZHANG Qian;QIN Shuai;TIAN Xiangchun;LI Jiacheng;LI Shihong;ZHANG Junjie;JIANG Haochi;ZHANG Chutian(Zhejiang Institute of Modern Physics,School of Physics,Zhejiang University,Hangzhou 310058,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>THETA采用随机射线与确定论扫掠；VENUS-3、PCA和HBR-2剂量基准平均误差约5.4%或13.3%，权窗/GPU仍在发展。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以随机射线降低大空间输运成本并检验剂量响应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>随机射线不是普通粒子蒙卡，也不能假设RMC现装版本已经具有该算法。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>继续研发CAD/非结构网格、GPU并行、首次碰撞源及正/共轭随机射线与FW-CADIS权窗等功能；不能当作本地可用功能清单。</li></ul><b>分析推导</b><ul><li>随机射线的局部剂量误差能否被总体keff收敛掩盖？</li><li>使用公开剂量基准，核对响应函数、空间分区及计算成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：THETA采用随机射线与确定论扫掠；VENUS-3、PCA和HBR-2剂量基准平均误差约5.4%或13.3%，权窗/GPU仍在发展。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>随机射线<small>随机射线</small></h4><p>随机抽样射线并沿射线解输运的混合思路，需与传统粒子蒙卡区分。</p><p class="context"><b>本文语境</b> 以随机射线降低大空间输运成本并检验剂量响应。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>深穿透、强角各向异性及复杂三维几何条件下的中子输运,是核工程辐射屏蔽计算长期面临的关键难题。传统离散纵标方法具有较高的全局计算效率,但在强角各向异性问题中易产生射线效应;蒙特卡罗方法能够准确描述复杂几何和粒子输运过程,但在深穿透低通量区域存在严重的欠采样和统计效率下降问题。随机特征线方法(the random ray method,TRRM)在特征线方法框架中引入随机相空间求积,通过随机采样特征线的空间起点和飞行方向,并沿特征线执行确定性输运扫描,为兼顾上述两类方法的优势提供了新的技术途径。近年来,浙江大学围绕TRRM开展了系统研究,形成了从强角各向异性输运、深穿透计算、随机特征线生成、线性源近似,到三维输运程序THETA研发及工程验证的完整技术路线。研究表明,TRRM可有效消除固定离散角度导致的射线效应;在通量衰减6~7个数量级的深穿透区域仍能维持稳定统计精度,其相对于标准多群蒙特卡罗方法的计算品质因子提升可超过4个数量级。基于TRRM研发的THETA程序已完成由理论基准、VENUS-3和PCA-Replica实验基准到H.B.Robinson Unit 2(HBR-2)商用压水堆的逐级验证;在HBR-2问题中,压力容器内监督盒和压力容器外腔室剂量计的计算值与实验值的相对偏差平均值分别为5.4%和13.3%,同时在超过10个数量级的全局通量衰减范围内保持较均匀的统计不确定度。进一步引入线性源近似后,TRRM对细空间网格的依赖显著降低,可在保持计算精度的同时大幅减少存储和计算开销。在上述验证工作的基础上,THETA正进一步向复杂工程输运平台发展,已开展CAD-非结构网格随机特征线输运、History-based/Event-based GPU并行、首次碰撞源以及正向/共轭随机特征线与FW-CADIS权窗生成等功能研发。相关工作初步拓展了TRRM在复杂几何、异构高性能计算、数值稳定性及混合确定性-蒙特卡罗减方差等方向的应用能力。上述研究表明,TRRM正在由一种新型输运理论逐步发展为面向复杂三维核工程问题的高保真粒子输运计算技术体系。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204715293" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于随机特征线法的三维c5g7问题直接输运计算  rmc与ansys仿真研究 原子能科学技术 · 2025 · 宋佩涛 秦帅 张乾
+song peitao;qin shuai;zhang qian(china institute for radiation protection,taiyuan 030006,china;shanxi key laboratory for radiation safety and protection,taiyuan 030006,china;cnnc key laboratory for radiation protection technology,taiyuan 030006,china;zhejiang institute of modern physics,school of physics,zhejiang university,hangzhou 310027,china)  低差异序列 低差异序列 以较均匀覆盖采样空间的序列改善部分积分/抽样收敛。 区分全局与局部响应对抽样策略的不同收益。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于随机特征线法的三维C5G7问题直接输运计算</h2>
+          
+          <p class="meta">原子能科学技术 · 2025 · 宋佩涛 秦帅 张乾
+SONG Peitao;QIN Shuai;ZHANG Qian(China Institute for Radiation Protection,Taiyuan 030006,China;Shanxi Key Laboratory for Radiation Safety and Protection,Taiyuan 030006,China;CNNC Key Laboratory for Radiation Protection Technology,Taiyuan 030006,China;Zhejiang Institute of Modern Physics,School of Physics,Zhejiang University,Hangzhou 310027,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-31；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2025年随机特征线三维C5G7与多群蒙卡比较，keff偏差不超过20 pcm、棒功率偏差不超过1%；低差异序列改善keff收敛但对棒功率无明显效果。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区分全局与局部响应对抽样策略的不同收益。</li></ul></section>
+        <section><h3>不足</h3><ul><li>keff加速不能代表局部功率同样改善；随机射线参数仍需独立收敛。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>能否用局部功率误差而非keff制定射线抽样停止准则？</li><li>多随机种子、整算例留出；同时统计局部偏差和总运行成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2025年随机特征线三维C5G7与多群蒙卡比较，keff偏差不超过20 pcm、棒功率偏差不超过1%；低差异序列改善keff收敛但对棒功率无明显效果。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>低差异序列<small>低差异序列</small></h4><p>以较均匀覆盖采样空间的序列改善部分积分/抽样收敛。</p><p class="context"><b>本文语境</b> 区分全局与局部响应对抽样策略的不同收益。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>相比传统的确定论特征线法,随机特征线法通过实时生成和随机抽样特征线的方式,可以有效降低计算所需的内存和特征线密度,在三维堆芯问题的直接输运计算中有很大潜力。本文基于随机特征线法初步研发了三维中子输运计算程序,并对三维C5G7基准题进行了直接输运计算。其中,通过对随机特征线参数的敏感性分析确定最优参数组合;通过引入低差异序列抽样特征线提高计算的收敛速率。计算结果表明,随机特征线法和多群蒙特卡罗符合较好,其中有效增殖因数计算偏差不超过20 pcm,功率相对偏差不超过1%;在随机特征线法中使用低差异序列抽样可以显著提升有效增殖因数计算的收敛速率,但对棒功率计算无明显效果。本文研究验证了随机特征线法在三维输运计算中的准确性,针对特征线参数的敏感性分析和伪随机数的应用为进一步优化随机特征线法计算提供了有效途径。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7201235800" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>小型堆螺旋直流蒸汽发生器密度波振荡下结构分析第二部分：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>低功率满足判据不等于满功率无风险；模型等效与支承接触条件需核，摘要未指定结构软件。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>线性等效支承刚度何时无法保留间隙开闭及微动功率？</li><li>建议Mechanical实体—梁基准对照，逐项加入间隙/摩擦；流量激励用已校核系统模型。</li><li>先复现静刚度、模态和反力，再比较接触滑移及循环功；不要仅看位移吻合。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Structural analysis of helically coiled once-through steam generator tubes in small modular reactors under density wave oscillation—part II: Application and analysis | 10.1016/j.net.2026.104816</li><li>局部三维管—支承实体模型提取等效刚度给梁模型，评估塑性垮塌、局部失效、疲劳和微动功率；部分满功率情景超微动指南。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>基于超细群ESSM的少群截面产生方法：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>控制棒和滑动反射层误差不同；组件误差不能替代全堆局部功率误差。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>反射层位置变化时，少群截面误差会怎样传播到棒价值和功率峰值？</li><li>RMC作同核库参考；先复现组件，再比较反射层邻区的截面及功率。</li><li>控制群结构、空间离散及蒙卡统计误差；逐层分离共振和扩散误差。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>基于超细群ESSM的少群截面产生方法 | </li><li>SARAX二维计算采用超细群ESSM少群截面；组件kinf与蒙卡差异小于200 pcm，堆芯差异−243 pcm，较Tone共振处理约快3倍。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>线性等效支承刚度何时无法保留间隙开闭及微动功率？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>建议Mechanical实体—梁基准对照，逐项加入间隙/摩擦；流量激励用已校核系统模型。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>先复现静刚度、模态和反力，再比较接触滑移及循环功；不要仅看位移吻合。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.net.2026.104816" target="_blank" rel="noopener">Structural analysis of helically coiled once-through steam generator tubes in small modular reactors under density wave oscillation—part II: Application and analysis（Pub Date : 2026-10-27）↗</a><p>局部三维管—支承实体模型提取等效刚度给梁模型，评估塑性垮塌、局部失效、疲劳和微动功率；部分满功率情景超微动指南。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
