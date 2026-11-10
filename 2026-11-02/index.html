@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-11-02 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-11-02 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-11-02</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>5</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 9</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 5</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-11-02；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文5篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="螺旋十字燃料棒流致振动的les–tmm–msm降阶分析框架 a reduced-order les-tmm-msm flow-induced vibration analysis framework .part ⅰ: applied into helical cruciform fuel rods rmc与ansys仿真研究 annals of nuclear energy · 2026-11-02 · hongyu yang, yan guo, guangyun min, naibin jiang 新型反应堆 可验证仿真方法 transfer matrix method (tmm) transfer matrix method (tmm) 通过分段状态传递构造结构动力响应的方法，不等同于pod。 用结构响应降阶节省耦合成本，并比较位移和psd。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>螺旋十字燃料棒流致振动的LES–TMM–MSM降阶分析框架</h2>
+          <p class="title-en">A reduced-order LES-TMM-MSM flow-induced vibration analysis framework .part Ⅰ: applied into helical cruciform fuel rods</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-02 · Hongyu Yang, Yan Guo, Guangyun Min, Naibin Jiang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>LES激励+传递矩阵模态+模态叠加/Newmark-β重构，对Workbench前三干模态误差约0.15%、0.53%、1.34%，整体约6.29倍加速。</li><li>实施难度：中等至偏高；先梁模型可降低工作量。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用结构响应降阶节省耦合成本，并比较位移和PSD。</li></ul></section>
+        <section><h3>不足</h3><ul><li>代码对照不等于实验验证；干模态精度不能证明接触、湿模态、摩擦和非线性响应可靠。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>支承刚度、阻尼及间隙接触加入后，模态截断误差会在何种工况显著放大？</li><li>比较湿/干频率、位移PSD、模态截断和运行时间；需公开实验或可获得台架数据。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：前三阶干模态、瞬态位移、PSD及整体加速比；支承/阻尼待全文；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Transfer matrix method (TMM)<small>Transfer matrix method (TMM)</small></h4><p>通过分段状态传递构造结构动力响应的方法，不等同于POD。</p><p class="context"><b>本文语境</b> 用结构响应降阶节省耦合成本，并比较位移和PSD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>燃料棒流致振动（FIV）是影响反应堆结构完整性和运行安全的关键问题。基于ANSYS Workbench的常规流固耦合（FSI）方法通常能够准确预测振动，但计算成本较高。本研究为螺旋十字形燃料（HCF）棒建立降阶FSI框架。利用大涡模拟（LES）计算湍流激励力，以传递矩阵法（TMM）获得HCF棒模态特性，再用模态叠加法（MSM）结合Newmark-β法重构瞬态振动响应。通过与Workbench结果比较，评价精度和效率。所提TMM框架预测的前三阶干模态频率与Workbench模态分析相符，相对误差依次约0.15%、0.53%和1.34%；两种方法的瞬态位移响应及功率谱密度（PSD）接近。在保持相当预测精度的同时，框架实现约6.29倍整体计算加速。本文框架为HCF棒流致振动提供高效且准确的求解途径，有望用于燃料组件结构优化和安全评估。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Flow-induced vibration (FIV) of fuel rods is a critical issue affecting the structural integrity and operational safety of reactors. Although the conventional fluid–structure interaction (FSI) approach based on the ANSYS Workbench platform generally provides accurate vibration predictions, it incurs substantial computational cost. This study develops a reduced-order FSI framework for the FIV analysis of helical cruciform fuel (HCF) rods. The proposed framework employs large eddy simulation (LES) to compute the turbulent excitation forces. The modal characteristics of the HCF rod are obtained using the transfer matrix method (TMM), while the transient vibration response is reconstructed by the modal superposition method (MSM) combined with the Newmark-β method. The accuracy and computational efficiency of the framework are evaluated through a comparison with the results obtained from Workbench. The results show that the first three dry modal frequencies predicted by the proposed TMM framework agree well with the Workbench modal analysis results, with relative errors of approximately 0.15%, 0.53%, and 1.34%, respectively. The transient displacement responses and power spectral density (PSD) characteristics predicted by the two methods are in close agreement. Moreover, the proposed framework achieves an overall computational speedup ratio of approximately 6.29 while maintaining comparable prediction accuracy. The coupled framework proposed in this study provides an efficient and accurate solution approach for the FIV analysis of HCF rods, and serves as a highly promising computational tool for the structural optimization design and safety assessment of fuel assemblies.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119664308477767680" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112988" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119664308477767680" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="棱柱型高温气冷堆非能动安全的热工水力与自然循环综述 passive safety in prismatic htgrs: a comprehensive review of thermal hydraulics, natural circulation, and heat transfer mechanisms rmc与ansys仿真研究 progress in nuclear energy · 2026-10-26 · ahmed jasim, farooq ahmad, shoaib usman, rahman almusafir, muthanna al-dahhan 新型反应堆 可验证仿真方法 depressurized conduction cooldown (dcc) depressurized conduction cooldown (dcc) 失压条件下以导热和辐射等排出余热的冷却过程。 把多维自然循环、湍流和物性耦合作为模块堆/微堆验证缺口。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>棱柱型高温气冷堆非能动安全的热工水力与自然循环综述</h2>
+          <p class="title-en">Passive safety in prismatic HTGRs: A comprehensive review of thermal hydraulics, natural circulation, and heat transfer mechanisms</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-26 · Ahmed Jasim, Farooq Ahmad, Shoaib Usman, Rahman Almusafir, Muthanna Al-Dahhan</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>综述LOFA下PCC/DCC导热冷却的导热、辐射、浮升、旁流和腔室混合，整理氦气/石墨物性与换热关联式。</li><li>实施难度：中等；限定固体导热可先做。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把多维自然循环、湍流和物性耦合作为模块堆/微堆验证缺口。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述为方法地图，不能据“固有安全”略去具体堆型的旁流和边界验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>推进多维自然循环、湍流及热物性耦合等研究；具体模型和证据需阅读全文。</li></ul><b>分析推导</b><ul><li>石墨接触热阻、旁流及辐射简化对DCC最高温度各有多大影响？</li><li>优先选择可公开HTGR基准，检查PCC/DCC压力条件和温变物性，数据可得性逐项核查。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Depressurized conduction cooldown (DCC)<small>Depressurized conduction cooldown (DCC)</small></h4><p>失压条件下以导热和辐射等排出余热的冷却过程。</p><p class="context"><b>本文语境</b> 把多维自然循环、湍流和物性耦合作为模块堆/微堆验证缺口。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>高温气冷堆（HTGR）因其高效率、燃料完整性和非能动余热移除能力，成为第四代核反应堆的热门候选方案。本文全面综述了棱柱形HTGR在失流事故（LOFA）条件下的热工水力行为、自然循环现象和传热机制。重点关注实验研究和计算模型，这些研究阐明了带压及失压导热冷却（PCC/DCC）瞬态过程中的传导、辐射和浮力驱动的对流。本文还回顾了HTGR的历史和当前设计，以追溯非能动安全概念的演变。此外，本文还结合近期基准研究，分析了流动层流化、浮力和加速效应、旁路和腔室混合等关键现象。本文首先总结了现有的强制对流、混合对流和自然对流三种传热模式下的传热关联式，然后回顾了对建模精度至关重要的氦气和石墨热物理性质关联式。该综述指出了多维自然循环、湍流建模和物性耦合方面的研究空白，这些空白对于验证依赖于固有安全性和长期非能动冷却的下一代模块化和微型高温气冷堆（HTGR）设计至关重要。</p></div>
+          <div><h3>English abstract</h3><p lang="en">High-Temperature Gas-Cooled Reactors (HTGRs) are prominent Generation IV candidates owing to their high efficiency, fuel integrity, and capability for passive decay-heat removal. This paper provides a comprehensive review of thermal-hydraulic behavior, natural-circulation phenomena, and heat-transfer mechanisms in prismatic HTGRs under loss-of-flow accident (LOFA) conditions. Emphasis is placed on experimental investigations and computational modeling that clarify conduction, radiation, and buoyancy-driven convection during pressurized and depressurized conduction-cooldown (PCC/DCC) transients. Historical and current HTGR designs are surveyed to trace the evolution of passive-safety concepts. Key phenomena—such as flow laminarization, buoyancy and acceleration effects, bypass, and plenum mixing—are analyzed alongside recent benchmark studies. Existing heat-transfer correlations for forced, mixed, and natural-convection regimes are summarized, followed by a review of helium and graphite thermophysical-property correlations critical to modeling accuracy. The synthesis identifies research gaps in multi-dimensional natural circulation, turbulence modeling, and property coupling that remain central to validating next-generation modular and micro-HTGR designs relying on inherent safety and long-term passive cooling.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116356977354616832" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106663" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116356977354616832" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="基于内部调查解释福岛第一核电站1号机组事故的堆外阶段 internal-investigation-based interpretation for the ex-vessel phase of the fukushima daiichi unit 1 accident rmc与ansys仿真研究 annals of nuclear energy · 2026-11-02 · ikken sato, akifumi yamaji, xin li, kenta shimomura, takuya yamashita 新型反应堆 可验证仿真方法 molten core–concrete interaction (mcci) molten core–concrete interaction (mcci) 堆芯熔融物与混凝土之间的传热、烧蚀及化学相互作用。 将观测到的物质分布与可能的mcci热传递机制约束相连。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>基于内部调查解释福岛第一核电站1号机组事故的堆外阶段</h2>
+          <p class="title-en">Internal-investigation-based interpretation for the ex-vessel phase of the fukushima daiichi unit 1 accident</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-02 · Ikken Sato, Akifumi Yamaji, Xin Li, Kenta Shimomura, Takuya Yamashita</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>内部观测结合电厂数据和简化能量平衡支持估算构型：显著混凝土烧蚀可能集中于碎片迁移后约1.5天，长期排热需计入周围结构和气相途径。</li><li>实施难度：中等至偏高；数据反演风险高，宜做热路径界限。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将观测到的物质分布与可能的MCCI热传递机制约束相连。</li></ul></section>
+        <section><h3>不足</h3><ul><li>估算构型是相容解释而非唯一重建；“可能分离的二次熔融相”仍不确定。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>周围结构导热及气相换热对长期碎片/熔融物能量平衡的份额如何界定？</li><li>需观测时间、衰变热、物质质量及温度约束；多构型对照并报告不可辨识性。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：约1.5天早期烧蚀时段；材料分布/长期散热路径需核原始调查；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Molten core–concrete interaction (MCCI)<small>Molten core–concrete interaction (MCCI)</small></h4><p>堆芯熔融物与混凝土之间的传热、烧蚀及化学相互作用。</p><p class="context"><b>本文语境</b> 将观测到的物质分布与可能的MCCI热传递机制约束相连。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究基于福岛第一核电站1号机组的内部调查结果，提出了估算构型（EC），用于解释燃料碎片迁移至基座后熔融堆芯-混凝土相互作用（MCCI）相关的可能物质分布和传热条件。通过对电厂数据分析和简化的能量平衡评估，检验了这些构型与观测到的事故进程的一致性。结果表明，混凝土的大量烧蚀可能主要发生在碎片迁移后的最初1.5天内，主要集中在内裙和下部主安全壳围成的区域。研究还表明，部分源自混凝土的熔融物质可能以二次熔融相的形式存在，并与燃料碎片部分分离。在随后的长期阶段，其他散热机制——例如熔融物质内部的对流换热、基座和干井区域的气相换热以及通过周围结构的传热——可能有助于限制混凝土的进一步大规模侵蚀。总体而言，所提出的基于 EC 的框架提供了物理上一致的解释，将内部观测与电厂数据联系起来，并提出了传统 MCCI 分析中未明确表示的冷却过程。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Based on internal investigation results from Fukushima Daiichi Unit 1, this study proposes Estimated Configurations (ECs) to interpret possible material distributions and heat transfer conditions associated with molten core–concrete interaction (MCCI) after fuel debris relocation into the pedestal. Plant data analyses and simplified energy-balance evaluations were performed to examine their consistency with the observed accident progression.　The results indicate that substantial concrete ablation likely occurred mainly within approximately the first 1.5 days after debris relocation, primarily in the region bounded by the inner skirt and the lower primary containment vessel shell. They also suggest that part of the concrete-derived molten material may have existed as a secondary molten phase partially separated from the fuel debris.　For the subsequent long-term phase, additional heat removal mechanisms—such as convective heat transfer within molten materials, gas-phase heat transfer in the pedestal and drywell regions, and heat transfer through surrounding structures—may represent additional heat-removal mechanisms that could have contributed to limiting further large-scale concrete erosion.　Overall, the proposed EC-based framework provides a physically consistent interpretation linking internal observations with plant data and suggests cooling processes not explicitly represented in conventional MCCI analyses.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119664307794096128" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112982" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119664307794096128" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="核安全壳双金属半球壳的热力屈曲与缺陷容限 thermo-mechanical buckling and defect tolerance of bimetallic hemispherical shells for nuclear containment rmc与ansys仿真研究 nuclear engineering and design · 2026-11-02 · nur melisa natasha fairuz erwan, nur atiqah ramlan, nur asyikin ahmad nazri, mohd shahrom ismail 新型反应堆 可验证仿真方法 gmnia gmnia 同时考虑几何非线性、材料非线性和几何缺陷的结构分析。 把几何缺陷与温度相关材料软化同时纳入双金属失稳分析。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>核安全壳双金属半球壳的热力屈曲与缺陷容限</h2>
+          <p class="title-en">Thermo-mechanical buckling and defect tolerance of bimetallic hemispherical shells for nuclear containment</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-11-02 · Nur Melisa Natasha Fairuz Erwan, Nur Atiqah Ramlan, Nur Asyikin Ahmad Nazri, Mohd Shahrom Ismail</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>理想化铝6061-T6/钢半球壳GMNA/GMNIA研究表明，外钢层可提高较厚壳刚度；极薄壳和热软化/凹坑共同作用改变失稳机制。</li><li>实施难度：中等；有明确验证基准后可做。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把几何缺陷与温度相关材料软化同时纳入双金属失稳分析。</li></ul></section>
+        <section><h3>不足</h3><ul><li>核安全壳用途为理想化情景；界面连接、温变材料曲线及规范比较适用性需核，不能推为在役安全结论。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>粘结界面与可滑移界面假设对双金属壳热屈曲载荷的误差有多大？</li><li>解析壳屈曲基准和独立试验优先；网格、缺陷形状、温度与界面定义必须分开收敛。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：Al6061-T6/钢；R/t=136、≥500；w/t≤1，0–500℃；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>GMNIA<small>GMNIA</small></h4><p>同时考虑几何非线性、材料非线性和几何缺陷的结构分析。</p><p class="context"><b>本文语境</b> 把几何缺陷与温度相关材料软化同时纳入双金属失稳分析。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文研究铝6061-T6与钢构成的双金属半球壳，在极端外压及温度梯度下的非线性屈曲和缺陷敏感性，作为严重工业及核事故条件的理想化代表。几何与材料非线性分析（GMNA）表明，把高模量钢放在外侧显著增强抗弯刚度，并在较厚几何（R/t=136）下延迟极限点失稳。相反，当R/t≥500时，失效转为纯弹性几何失稳，单种材料屈服优势不再发挥作用。为评价严苛环境下的稳健性，采用GMNIA进一步加入局部凹坑及0–500℃的耦合热软化。在室温下，壳体对幅值不超过壳厚（w/t≤1.0）的缺陷有较好容忍度；但同时承受高温（T&gt;100℃）时，会发生热与几何协同失稳。两种金属的差异性热软化削弱双金属载荷分担，导致局部提前突跳。与工业规范对照显示，仅采用单一材料热折减标准可能得到严重不保守的预测，因此双金属压力容器和安全壳的分析设计需要耦合热—几何评价。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study investigates the non-linear buckling mechanics and imperfection sensitivity of bimetallic (Aluminum 6061-T6 and Steel) hemispherical shells subjected to extreme external pressure and thermal gradients, representing conditions typical of severe industrial and nuclear accident scenarios. Utilizing Geometrically and Materially Nonlinear Analysis (GMNA), the idealized parametric framework reveals that positioning the higher-modulus steel on the exterior significantly enhances flexural rigidity, delaying limit-point instability in thicker geometries (R/t = 136). Conversely, at extreme slenderness (R/t ≥ 500), failure transitions to purely elastic geometric instability, nullifying individual material yield advantages. To evaluate operational robustness under severe environments, the framework was extended via GMNIA to incorporate localized dimple imperfections and coupled thermal softening (0°C to 500°C). While the shells exhibit exceptional defect tolerance at ambient temperatures for imperfection amplitudes up to the shell thickness (w/t ≤ 1.0), simultaneous exposure to elevated temperatures (T &gt; 100°C) triggers a synergistic thermo-geometric collapse. Differential thermal softening of the constituent metals neutralizes the bimetallic load-sharing mechanism, forcing premature localized snap-through. Benchmarking against industrial codes demonstrates that relying on single-material thermal reduction standards yields dangerously non-conservative predictions, establishing the critical necessity for coupled thermo-geometric evaluations in the Design by Analysis (DbA) of bimetallic pressure and containment vessels.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119605738675646464" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115297" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119605738675646464" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="螺旋十字燃料棒束热力耦合特性研究  rmc与ansys仿真研究 核技术 · 2023 · 丛腾龙 刘峪洁 郭辉 肖瑶 顾汉洋
+cong tenglong;liu yujie;guo hui;xiao yao;gu hanyang(school of nuclear science and engineering,shanghai jiao tong university,shanghai 200240,china;college of nuclear science and technology,harbin engineering university,harbin 150009,china)  mises应力 mises应力 常用于延性材料屈服判断的等效应力，不能单独代表所有损伤。 揭示等效应力与塑性响应并非同向变化。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>螺旋十字燃料棒束热力耦合特性研究</h2>
+          
+          <p class="meta">核技术 · 2023 · 丛腾龙 刘峪洁 郭辉 肖瑶 顾汉洋
+CONG Tenglong;LIU Yujie;GUO Hui;XIAO Yao;GU Hanyang(School of Nuclear Science and Engineering,Shanghai Jiao Tong University,Shanghai 200240,China;College of Nuclear Science and Technology,Harbin Engineering University,Harbin 150009,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2023年HCF 3×3热机械研究显示翼尖接触与翼根径向温差重要；沸腾工况等效应力较低但塑性更明显。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>揭示等效应力与塑性响应并非同向变化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>RIA/LOCA下小于350 MPa和0.04仅是该算例结果，不能当所有HCF设计限值。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>以最大Mises应力优化会不会漏掉翼尖累积塑性？</li><li>需材料塑性、温变参数、初始间隙和载荷历史；检查接触网格。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2023年HCF 3×3热机械研究显示翼尖接触与翼根径向温差重要；沸腾工况等效应力较低但塑性更明显。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Mises应力<small>Mises应力</small></h4><p>常用于延性材料屈服判断的等效应力，不能单独代表所有损伤。</p><p class="context"><b>本文语境</b> 揭示等效应力与塑性响应并非同向变化。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>螺旋十字燃料(Helical-Cruciform Fuel,HCF)是一种革新形式的燃料组件,具有比传热面大、导热距离短、旋流交混强、无须格架支撑的特点,可提高堆芯功率密度。然而,HCF组件自支撑位置可能发生应力集中,导致包壳产生塑性变形甚至破裂。本文研究不同工况下HCF棒束热力耦合响应,以包含中心目标棒及周围的3×3棒束单元为计算域进行热力耦合分析,获得HCF组件的应力应变响应,评价包壳完整性。结果表明:HCF包壳外表面von Mises应力和塑性变形最大值总是出现在相邻燃料的接触位置;翼片顶部包壳应力受接触约束和包壳内外表面温差影响,肋部凹槽区域的应力与包壳径向温度梯度有关;相对于单相工况,饱和沸腾工况下HCF包壳塑性变形大但von Mises应力小;反应性引入事故和破口失水事故下,包壳的von Mises应力和塑性应变分别低于350 MPa和0.04,且包壳温度低于锆水反应温度。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7109737055" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="螺旋十字燃料组件热流力耦合特性数值模拟研究  rmc与ansys仿真研究 原子能科学技术 · 2023 · 刘峪洁 丛腾龙 肖瑶 郭辉 顾汉洋
+liu yujie;cong tenglong;xiao yao;guo hui;gu hanyang(college of nuclear science and technology,harbin engineering university,harbin 150001,china;school of nuclear science and engineering,shanghai jiao tong university,shanghai 200240,china)  过冷沸腾 过冷沸腾 主流温度低于饱和温度而壁面发生局部沸腾。 把局部换热与特殊燃料翼部应力联系起来。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>螺旋十字燃料组件热流力耦合特性数值模拟研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2023 · 刘峪洁 丛腾龙 肖瑶 郭辉 顾汉洋
+LIU Yujie;CONG Tenglong;XIAO Yao;GUO Hui;GU Hanyang(College of Nuclear Science and Technology,Harbin Engineering University,Harbin 150001,China;School of Nuclear Science and Engineering,Shanghai Jiao Tong University,Shanghai 200240,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2023年HCF热流固计算中，翼尖接触及翼根温度梯度控制响应；两相工况翼尖Mises应力约降30 MPa。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把局部换热与特殊燃料翼部应力联系起来。</li></ul></section>
+        <section><h3>不足</h3><ul><li>降低等效应力不代表塑性或疲劳必然改善；不同热边界需保持总功率可比。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>均匀换热系数会不会掩盖翼根应力和翼尖接触的竞争？</li><li>热源积分守恒、壁温实验、接触与塑性收敛依次核查。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2023年HCF热流固计算中，翼尖接触及翼根温度梯度控制响应；两相工况翼尖Mises应力约降30 MPa。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>过冷沸腾<small>过冷沸腾</small></h4><p>主流温度低于饱和温度而壁面发生局部沸腾。</p><p class="context"><b>本文语境</b> 把局部换热与特殊燃料翼部应力联系起来。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>作为一种新型反应堆燃料组件,螺旋十字燃料(HCF)组件具有导热距离短、交混强度高、无需定位格架等优势,可在保证反应堆安全裕度的同时提高堆芯功率,但其依靠相邻棒束接触形成的自支撑结构进行定位易使接触位置发生应力集中,危害包壳的完整性。针对这一问题,本文开展了典型HCF组件的热流力耦合特性研究,获得了单相对流和过冷沸腾条件下HCF组件的温度及应力应变分布。研究结果表明:HCF组件通道中心和包壳附近冷却剂的横流存在很大差异,影响了冷却剂温度和沸腾时空泡份额的分布;HCF组件包壳表面少量的气泡可增强冷却剂的传热能力;HCF组件肋片顶部(翼尖处)和肋片根部(翼根处)的热应力主要分别与接触约束和燃料内部的温度梯度有关;单相和两相工况中HCF组件包壳翼根处的Mises应力和翼尖处的塑性应变均相等,但两相工况中翼尖处的Mises应力较单相工况偏低30 MPa。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7109889069" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于流固热耦合的燃料元件包壳结构完整性分析  rmc与ansys仿真研究 核动力工程 · 2022 · 余航 赵新文 傅晟威 朱康
+yu hang;zhao xinwen;fu shengwei;zhu kang(college of nuclear science and technology,naval university of engineering,wuhan,430033,china)  等效支承 等效支承 用简化约束或弹簧替代真实支承结构，适用性依目标响应而定。 揭示支承方向性对换热与局部变形的共同作用。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于流固热耦合的燃料元件包壳结构完整性分析</h2>
+          
+          <p class="meta">核动力工程 · 2022 · 余航 赵新文 傅晟威 朱康
+Yu Hang;Zhao Xinwen;Fu Shengwei;Zhu Kang(College of Nuclear Science and Technology,Naval University of Engineering,Wuhan,430033,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2022年3×3燃料冷水试验/分析中，格架增强换热，包壳向凸点和弹簧方向弯曲，局部接触应力超过屈服。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>揭示支承方向性对换热与局部变形的共同作用。</li></ul></section>
+        <section><h3>不足</h3><ul><li>冷水条件不能直接代表高温辐照；接触奇异峰值和真实塑性必须区分。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>弹簧/凸点等效支承能保留包壳弯曲却丢失多少接触塑性？</li><li>测量弯曲形态和接触载荷；网格收敛指标采用面积/路径量而非单点峰值。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2022年3×3燃料冷水试验/分析中，格架增强换热，包壳向凸点和弹簧方向弯曲，局部接触应力超过屈服。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>等效支承<small>等效支承</small></h4><p>用简化约束或弹簧替代真实支承结构，适用性依目标响应而定。</p><p class="context"><b>本文语境</b> 揭示支承方向性对换热与局部变形的共同作用。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>反应堆系统发生瞬态工况时,冷却剂温度的瞬间大幅度变化会对燃料元件包壳结构完整性造成冲击,危及反应堆安全。本文以某压水堆3×3燃料组件为对象,采用流固热耦合方法对冷水事故下燃料组件的流动换热特性和燃料元件包壳温度、变形及应力进行了三维精细化模拟。结果表明:定位格架能够增强燃料棒表面的对流换热强度;包壳变形时向与刚凸接触的一侧折弯,向与弹簧接触的一侧凸起;包壳与定位格架接触部位的温度和最大等效应力随事故时间不断增大,且最大等效应力超过了包壳材料的屈服强度,将发生强度失效,影响其结构完整性。本文研究可为反应堆燃料元件包壳瞬态工况下的完整性评价提供借鉴。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7107718648" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="高预充压对un-fecral燃料棒性能影响分析  rmc与ansys仿真研究 科学技术创新 · 2023 · 何梁 张坤 陈平 高士鑫 尹春雨 胡超
+he liang;zhang kun;chen ping;gao shixin;yin chunyu;hu chao(science and technology on reactor system design technology laboratory,nuclear power institute of china,chengdu,china)  pci pci 芯块—包壳相互作用，涵盖接触和相关力学/化学效应。 揭示预充压力对接触和燃料行为的权衡。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>高预充压对UN-FeCrAl燃料棒性能影响分析</h2>
+          
+          <p class="meta">科学技术创新 · 2023 · 何梁 张坤 陈平 高士鑫 尹春雨 胡超
+He Liang;Zhang Kun;Chen Ping;Gao Shixin;Yin Chunyu;Hu Chao(Science and Technology on Reactor System Design Technology Laboratory,Nuclear Power Institute of China,Chengdu,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2023年UN/FeCrAl高预压研究用FUPAC延缓间隙闭合并减弱PCI，但内压提高。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>揭示预充压力对接触和燃料行为的权衡。</li></ul></section>
+        <section><h3>不足</h3><ul><li>给定算例寿末内压低于冷却剂压力，不保证其他燃耗和功率爬升仍满足。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>预充压力的最优值会否随功率爬升速率及包壳蠕变改变？</li><li>验证气隙热导、气体压力及蠕变；保留燃耗和气体释放数据边界。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2023年UN/FeCrAl高预压研究用FUPAC延缓间隙闭合并减弱PCI，但内压提高。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>PCI<small>PCI</small></h4><p>芯块—包壳相互作用，涵盖接触和相关力学/化学效应。</p><p class="context"><b>本文语境</b> 揭示预充压力对接触和燃料行为的权衡。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文采用FUPAC对高预充压设计下的UN-FeCrAl燃料棒在高燃耗下的性能进行了分析。分析结果表明,高预充压设计下可有效增大芯块-包壳间隙闭合时间,在稳态工况下可避免芯块-包壳发生接触,降低包壳发生PCI破损的风险,同时将导致燃料棒内压相对较大,但得益于UN燃料芯块燃料温度较低的优点,其寿期末的燃料棒内压仍低于冷却剂压力,可满足燃料棒内压设计要求;此外,高预充压设计对燃料温度、裂变气体释放率的影响较小,并有利于降低包壳Mises应力和应变。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7109906217" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="辐照蠕变对锆合金包壳管吸氢所致多场耦合行为的影响  rmc与ansys仿真研究 原子能科学技术 · 2017 · 汪秉忠 丁淑蓉 陈亮 李文杰 庞华  静水应力 静水应力 应力张量法向分量的平均值，可影响应力驱动扩散。 把应力松弛与局部氢致风险联系起来。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>辐照蠕变对锆合金包壳管吸氢所致多场耦合行为的影响</h2>
+          
+          <p class="meta">原子能科学技术 · 2017 · 汪秉忠 丁淑蓉 陈亮 李文杰 庞华</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-02；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2017年FEPG耦合氢扩散、氢化物和包壳蠕变；蠕变降低Mises应力却改变接触附近静水应力梯度和氢迁移。</li><li>实施难度：偏高；适合界定热机械模型遗漏机制。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把应力松弛与局部氢致风险联系起来。</li></ul></section>
+        <section><h3>不足</h3><ul><li>应力下降不等于氢损伤降低；多场参数和扩散时间尺度需独立约束。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>仅以等效应力评价包壳安全会漏掉哪些氢聚集趋势？</li><li>需氢扩散/溶解度及氢化物数据；先验证无接触扩散问题。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2017年FEPG耦合氢扩散、氢化物和包壳蠕变；蠕变降低Mises应力却改变接触附近静水应力梯度和氢迁移。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>静水应力<small>静水应力</small></h4><p>应力张量法向分量的平均值，可影响应力驱动扩散。</p><p class="context"><b>本文语境</b> 把应力松弛与局部氢致风险联系起来。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文考虑辐照效应,改进了锆合金包壳管内部的氢原子扩散-氢化物析出-热-力耦合行为的微分控制方程。根据多物理场等效积分弱形式和所建立的耦合计算方法,在FEPG软件平台编制文件,生成多场耦合计算的有限元程序,并对程序进行了验证。计算分析了辐照蠕变对锆合金包壳管堆内吸氢所致多场耦合行为演化的影响,结果表明:辐照蠕变导致包壳管内产生应力松弛,促使Mises应力显著降低,同时导致静水应力由负值转变为正值,进而影响氢原子的扩散;与不考虑辐照蠕变的结果进行对比,发现辐照蠕变会增大燃料芯块与包壳管局部接触区域的负的静水应力的绝对值及向外的静水应力梯度,导致接触区域内的氢原子浓度减小,接触区域周围的氢原子浓度增大。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=673216073" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>螺旋十字燃料棒流致振动的LES–TMM–MSM降阶分析框架：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>代码对照不等于实验验证；干模态精度不能证明接触、湿模态、摩擦和非线性响应可靠。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>支承刚度、阻尼及间隙接触加入后，模态截断误差会在何种工况显著放大？</li><li>建议Mechanical先复现干模态与等效梁，再逐项增加流体附加质量/支承；Fluent压力激励独立校核。</li><li>比较湿/干频率、位移PSD、模态截断和运行时间；需公开实验或可获得台架数据。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>A reduced-order LES-TMM-MSM flow-induced vibration analysis framework .part Ⅰ: applied into helical cruciform fuel rods | 10.1016/j.anucene.2026.112988</li><li>LES激励+传递矩阵模态+模态叠加/Newmark-β重构，对Workbench前三干模态误差约0.15%、0.53%、1.34%，整体约6.29倍加速。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>螺旋十字燃料棒束热力耦合特性研究：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>RIA/LOCA下小于350 MPa和0.04仅是该算例结果，不能当所有HCF设计限值。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>以最大Mises应力优化会不会漏掉翼尖累积塑性？</li><li>Mechanical同时跟踪接触状态、塑性应变和应力，比较单相/沸腾热边界。</li><li>需材料塑性、温变参数、初始间隙和载荷历史；检查接触网格。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>螺旋十字燃料棒束热力耦合特性研究 | </li><li>2023年HCF 3×3热机械研究显示翼尖接触与翼根径向温差重要；沸腾工况等效应力较低但塑性更明显。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>支承刚度、阻尼及间隙接触加入后，模态截断误差会在何种工况显著放大？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>建议Mechanical先复现干模态与等效梁，再逐项增加流体附加质量/支承；Fluent压力激励独立校核。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>比较湿/干频率、位移PSD、模态截断和运行时间；需公开实验或可获得台架数据。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2026.112988" target="_blank" rel="noopener">A reduced-order LES-TMM-MSM flow-induced vibration analysis framework .part Ⅰ: applied into helical cruciform fuel rods（Pub Date : 2026-11-02）↗</a><p>LES激励+传递矩阵模态+模态叠加/Newmark-β重构，对Workbench前三干模态误差约0.15%、0.53%、1.34%，整体约6.29倍加速。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
