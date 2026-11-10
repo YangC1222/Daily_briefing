@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-11-03 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-11-03 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-11-03</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>6</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 10</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 6</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-11-03；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文6篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="低模量碳气凝胶填孔增强熔盐堆核石墨抗熔盐渗透性 enhancing molten-salt impermeability of nuclear graphite via low-modulus carbon aerogel pore-filling for the applications in molten salt reactor rmc与ansys仿真研究 nuclear engineering and design · 2026-11-03 · huilei ma, zhoutong he, shancheng peng, yiyan li, xingtai zhou, cuilan ren 新型反应堆 可验证仿真方法 infiltration threshold pressure infiltration threshold pressure 熔盐开始侵入孔隙所需的压力阈值。 通过低模量填孔协调阻盐性能与石墨变形能力。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>低模量碳气凝胶填孔增强熔盐堆核石墨抗熔盐渗透性</h2>
+          <p class="title-en">Enhancing molten-salt impermeability of nuclear graphite via low-modulus carbon aerogel pore-filling for the applications in molten salt reactor</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-11-03 · Huilei Ma, Zhoutong He, Shancheng Peng, Yiyan Li, Xingtai Zhou, Cuilan Ren</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>真空加压浸渍间苯二酚—糠醛前驱体形成气凝胶；压汞和熔盐试验显示FLiBe渗入阈值压力提高，而应力应变及热膨胀基本不变。</li><li>实施难度：中等；适合参数传递问题，材料合成另属实验课题。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>通过低模量填孔协调阻盐性能与石墨变形能力。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要仅说“可能”容纳辐照尺寸变化，没有给出辐照后寿期验证；孔径/渗透率/模量数值待全文。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>填孔后热导率和辐照尺寸变化的不确定性是否抵消阻盐收益？</li><li>需处理前后热导率、膨胀和强度曲线；辐照数据若缺失只做范围分析。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Infiltration threshold pressure<small>Infiltration threshold pressure</small></h4><p>熔盐开始侵入孔隙所需的压力阈值。</p><p class="context"><b>本文语境</b> 通过低模量填孔协调阻盐性能与石墨变形能力。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在大多数熔盐反应堆（MSR）设计中，反应堆堆芯内的石墨慢化剂元件与熔融燃料盐直接接触，熔盐渗入石墨已成为一个主要问题。由于大多数现有的核石墨等级难以有效防止熔盐渗入，人们探索了各种后处理技术来提高其阻隔性能。本文提出了一种通过碳气凝胶填充孔隙来提高熔盐反应堆中石墨不渗透性的方法。该方法利用低粘度稀释的间苯二酚-糠醛溶液对核石墨进行真空压力渗透，然后进行一系列处理，将石墨孔隙中的溶液转化为碳气凝胶。研究结果表明，填充孔隙的石墨的孔径可调，并且熔盐渗入阈值压力可以显著提高，这已通过压汞实验和熔盐渗入实验得到证实。此外，经低模量碳气凝胶处理后，石墨样品的应力-应变曲线和热膨胀行为基本保持不变。填充碳气凝胶的低模量可能有助于适应快中子辐照过程中石墨的尺寸变化。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In most molten salt reactor (MSR) designs, the graphite moderator elements within the reactor core come into direct contact with the molten fuel salt, and molten salt infiltration in graphite has become a major concern. Since most existing nuclear graphite grades struggle to prevent molten salt infiltration, various post-treatment technologies have been explored to enhance their barrier performance. This work presents an approach to enhance the impermeability of graphite in MSRs through pore-filling with carbon aerogel. This method utilizes vacuum-pressure infiltration of nuclear graphite with a low-viscosity diluted resorcinol-furfural solution, followed by a series of treatments to convert the solution in the graphite pores into carbon aerogel. The findings indicate that the pore diameter of pore-filled graphite is tunable, and the threshold infiltration pressure of the FLiBe salt can be significantly increased, as demonstrated by the mercury intrusion and molten salt infiltration experiments. Furthermore, when treated with low-modulus carbon aerogel, the stress-strain curve and thermal expansion behavior of the graphite sample remained largely unchanged. The low modulus of the filled carbon aerogel may facilitate the accommodation of dimensional changes in the graphite during fast neutron irradiation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119605781285580800" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115300" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119605781285580800" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="排水后乏燃料组件及内部结构滞留水的定量分布 mapping trapped water in spent nuclear fuel assembly and its internal structures immediately after drainage rmc与ansys仿真研究 nuclear engineering and technology · 2026-11-03 · ji hwan lim, ju-chan lee, woo-seok choi, kyung-wook shin, nam-hee lee 新型反应堆 可验证仿真方法 residual water residual water 排水后因几何滞留、毛细力或液膜而残存的水。 定位占96%以上残水的活性棒段，并解释组合排水与停留时间的关系。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>排水后乏燃料组件及内部结构滞留水的定量分布</h2>
+          <p class="title-en">Mapping trapped water in spent nuclear fuel assembly and its internal structures immediately after drainage</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-11-03 · Ji Hwan Lim, Ju-chan Lee, Woo-Seok Choi, Kyung-Wook Shin, Nam-Hee Lee</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>PLUS7分部件排水试验比较重力、2 bar空气、2 bar氦气及氦气/水泵组合；总残水从8460.42 g降至3495.08 g，测量不确定量均标±20.30 g。</li><li>实施难度：偏高；薄膜尺度与整组件尺度差异大。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>定位占96%以上残水的活性棒段，并解释组合排水与停留时间的关系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不能把单一组件排水量直接外推到辐照后全装载；干燥真空、温度和蒸发边界另需验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>结构简化后能否保留棒束和格架的主要滞水位置及残水质量？</li><li>需组件结构、润湿角和排水时序；先质量平衡，再比较残水分区及不确定度。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：PLUS7；2 bar吹扫；总残水及分部件比例，原始时序待查；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Residual water<small>Residual water</small></h4><p>排水后因几何滞留、毛细力或液膜而残存的水。</p><p class="context"><b>本文语境</b> 定位占96%以上残水的活性棒段，并解释组合排水与停留时间的关系。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究定量评估了压水堆（PLUS7）燃料组件排水后残留的初始水量，这是决定乏核燃料干式储存真空干燥工艺效率和成功率的关键边界条件。为了研究流体动力学捕集机制，我们对系统模块化的组件（顶部和底部喷嘴、间隔栅格和活性燃料棒单元段）进行了多模式排水试验，包括重力排水、2 bar压缩空气吹扫、2 bar氦气吹扫以及氦气与水泵混合吹扫。结果表明，简单的重力排水会在全尺寸组件中残留高达8460.42 ± 20.30 g的水，因此必须采用主动加压排水。采用压缩空气吹扫后，总残留水量降至 3957.00 ± 20.30 g；而氦气吹扫由于其优异的扩散性和微流道渗透性，进一步将残留水量降至 3550.28 ± 20.30 g。值得注意的是，结合下游水泵和氦气的混合方法记录到最低的总残留水量，为 3495.08 ± 20.30 g。虽然水泵的液压阻力略微降低了小型单个部件的排水效率，但它显著延长了流体在占残留水量 96% 以上的大块活性燃料棒段中的停留时间，从而最大限度地延长了氦气气动剪切力的作用时间，有效去除粘性液膜。所建立的定量数据库提供了一种数据驱动的操作策略，可最大限度地减少残留水量，为长期干式储存许可的安全评估和工艺可靠性提供支持。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study quantitatively evaluates the initial residual water remaining after drainage in a pressurized water reactor (PLUS7) fuel assembly, a critical boundary condition determining the efficiency and success of the vacuum drying process in spent nuclear fuel dry storage. To investigate the hydrodynamic trapping mechanisms, multi-mode drainage tests—including gravity drainage, 2 bar compressed air purge, 2 bar helium gas purge, and a hybrid helium purge with a water pump—were conducted on systematically modularized assembly components (top and bottom nozzles, spacer grids, and active fuel rod unit sections). Results demonstrated that simple gravity drainage would leave a massive 8460.42 ± 20.30 g of water across a full-scale assembly, necessitating active pressurized drainage. The application of a compressed air purge reduced the total residual water to 3957.00 ± 20.30 g, whereas helium gas purging further decreased it to 3550.28 ± 20.30 g due to its superior diffusivity and micro-flow-channel penetrability. Notably, the hybrid method combining a downstream water pump and helium gas recorded the lowest total residual water of 3495.08 ± 20.30 g. Although the pump&#x27;s hydraulic resistance slightly degraded drainage efficiency in small single components, it significantly extended the flow residence time in the vast active fuel rod sections—which account for over 96% of the trapped water—thereby maximizing the duration of the helium gas&#x27;s aerodynamic shear force to effectively remove the viscous liquid film. The established quantitative database provides a data-driven operational strategy to minimize residual water, supporting safety evaluations and process reliability for long-term dry storage licensing.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119659251418017792" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104822" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119659251418017792" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="gpu显式移动粒子法模拟熔盐铺展与凝固 numerical analysis of molten salt spreading and solidification behavior using gpu-accelerated fully explicit moving particle method rmc与ansys仿真研究 annals of nuclear energy · 2026-10-27 · wiktor gronek, na young song, han young yoon 新型反应堆 可验证仿真方法 wettability wettability 液体与固体表面的润湿倾向，常以接触角表征。 在三维粒子框架中加入润湿与相变，并公开指出与参考程序的差异机制。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>GPU显式移动粒子法模拟熔盐铺展与凝固</h2>
+          <p class="title-en">Numerical analysis of molten salt spreading and solidification behavior using GPU-accelerated fully explicit moving particle method</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-27 · Wiktor Gronek, Na Young Song, Han Young Yoon</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>E-MPS模拟FLiNaK在钢板铺展，等温终态半径符合毛细—重力平衡；含凝固时终半径约降6%，但惯性受表面张力模型抑制。</li><li>实施难度：偏高；可先等温润湿基准。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>在三维粒子框架中加入润湿与相变，并公开指出与参考程序的差异机制。</li></ul></section>
+        <section><h3>不足</h3><ul><li>与MELTSPREAD/2D Fluent差异不是全部精度提升；需试验判断惯性阻尼偏差。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>二维/三维及表面张力处理各自对铺展半径和壁面热载荷影响多少？</li><li>毛细平衡解析解、铺展时序与凝固实验依次验证；接触角与物性需原始测量。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：FLiNaK/不锈钢、密度/表面张力/接触角及凝固；具体尺寸待核；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Wettability<small>Wettability</small></h4><p>液体与固体表面的润湿倾向，常以接触角表征。</p><p class="context"><b>本文语境</b> 在三维粒子框架中加入润湿与相变，并公开指出与参考程序的差异机制。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>人们对熔盐反应堆的兴趣重燃，促使人们研究泄漏事件中熔盐的铺展和凝固过程。本研究提出了一种基于GPU加速的全显式移动粒子方法（E-MPS），该方法考虑了表面张力、润湿性和相变模型。该模型应用于三维平面不锈钢板上的FLiNaK熔盐泄漏模拟，并获得了稳定的结果。在等温情况下，最终熔池半径与毛细—重力平衡的解析解吻合。考虑传热和凝固后，预测的前缘半径小于一维MELTSPREAD和二维ANSYS Fluent参考模拟的结果。在参考代码中，熔体惯性导致铺展超出静态平衡，而在E-MPS中，基于势的表面张力模型抑制了这种效应。灵敏度分析表明，密度、表面张力系数和接触角控制着铺展，而粘度和热导率的影响可以忽略不计。基底处的凝固使最终半径减小了约6%。 GPU 实现的计算成本与粒子数量呈线性关系，并且比多核 OpenMP CPU 实现快好几倍。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Renewed interest in Molten Salt Reactors motivates the study of molten salt spreading and solidification during leakage events. This study presents a GPU-accelerated fully explicit moving particle method (E-MPS) with surface tension, wettability and phase-change models. The model was applied to a FLiNaK spill onto a flat stainless-steel plate in full 3D and produced stable results. For the isothermal case, the final puddle radius agreed with the analytical capillary–gravity equilibrium. With heat transfer and solidification included, the predicted leading-edge radius was lower than in the 1D MELTSPREAD and 2D ANSYS Fluent reference simulations. In the reference codes, melt inertia carries the spreading beyond the static equilibrium, whereas in E-MPS this effect is damped by the potential-based surface tension model. A sensitivity study showed that density, surface tension coefficient and contact angle govern the spreading, while viscosity and thermal conductivity have a negligible effect. Solidification at the substrate reduces the final radius by about 6 %. The computational cost of the GPU implementation scales linearly with the number of particles, and it is several times faster than a multi-core OpenMP CPU implementation.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116347063198560256" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112977" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116347063198560256" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="铅铋冷却剂固态控氧的氧化铅溶解模型及实验验证 dissolution model and experimental verification of lead oxide for solid-state oxygen control in lead-bismuth coolant rmc与ansys仿真研究 progress in nuclear energy · 2026-10-28 · xian zeng, jinyu yue, peng lin, ziyi liang, yang zhang, qingzhi yan 新型反应堆 可验证仿真方法 solid-state oxygen control solid-state oxygen control 通过固体氧化物与液态金属传质调控溶解氧的技术。 把颗粒形状、传质流道和控氧稳定性联合研究。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>铅铋冷却剂固态控氧的氧化铅溶解模型及实验验证</h2>
+          <p class="title-en">Dissolution model and experimental verification of lead oxide for solid-state oxygen control in lead-bismuth coolant</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-28 · Xian Zeng, Jinyu Yue, Peng Lin, Ziyi Liang, Yang Zhang, Qingzhi Yan</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>制备球—柱形PbO颗粒与迷宫气动传质器，低Re溶解模型对实验偏差15.5%；温度影响强于流速。</li><li>实施难度：中等；化学闭合需数据。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把颗粒形状、传质流道和控氧稳定性联合研究。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“15.5%”误差定义、Re范围和中毒判据需原文；不能直接预测构件腐蚀寿命。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>流道简化是否会改变局部溶氧供应并导致结构表面腐蚀边界偏差？</li><li>取得颗粒面积、溶解速率、温度/流速和测量误差，不能只拟合出口均值。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：球—柱形PbO、低Re、温度和流速范围待核；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Solid-state oxygen control<small>Solid-state oxygen control</small></h4><p>通过固体氧化物与液态金属传质调控溶解氧的技术。</p><p class="context"><b>本文语境</b> 把颗粒形状、传质流道和控氧稳定性联合研究。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>液态铅铋合金中氧化铅颗粒的溶解特性是固态氧控制的关键因素之一。本研究采用粉末冶金法制备了高强度“球-柱”形氧化铅颗粒，并开发了一种迷宫式“气动驱动”传质器。通过数值模拟和实验分析，研究了低雷诺数下氧化铅颗粒的溶解和传质行为，并建立了低雷诺数范围内氧化铅颗粒的溶解模型。结果表明，该传质器的迷宫式流道设计能够稳定控制不同温度下的氧浓度，有效避免氧化铅颗粒的“中毒”现象。低雷诺数范围内“球-柱”形氧化铅颗粒的溶解模型与实验结果的偏差为15.5%，且氧化铅颗粒的溶解速率随温度升高而显著增加，其次是流速的影响。这项研究为后续铅铋快堆固态氧控制装置的设计奠定了基础。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Solubility properties of lead oxide particles in liquid lead-bismuth alloys are one of the keys to solid-state oxygen control. In this study, high-strength “spherical-cylindrical” lead oxide particles were prepared by powder metallurgy, and a labyrinth-type “pneumatic pressure-driven” mass exchanger was developed. Through numerical simulations and experimental analyses, the dissolution and mass transfer of lead oxide particles at low Reynolds numbers were investigated, and the dissolution model of lead oxide particles in the range of low Reynolds number was developed. The results show that the labyrinth flow channel design of the mass exchanger can stably control the oxygen concentration at different temperatures, which can effectively avoid the “poisoning” phenomenon of lead oxide particles. The deviation of the dissolution model of “spherical-cylindrical” lead oxide particles in the low Reynolds number interval from the experimental results is only 15.5%, and the dissolution rate of lead oxide particles increases significantly with the increase of temperature, followed by the effect of flow velocity. This study lays the foundation for the design of solid-state oxygen control device for the subsequent lead-bismuth fast reactor.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116356980982689792" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106669" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116356980982689792" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="钍基熔盐堆用熔盐小型原位紫外-可见吸收光谱装置研制  rmc与ansys仿真研究 核技术 · 2026 · 赵轩媛 沈冬月 应苏俊恒 朱鹏飞 付晓彬 黄海龙 费泽杰 葛敏 刘洪涛 钱渊
+zhao xuanyuan;shen dongyue;yingsu junheng;zhu pengfei;fu xiaobin;huang hailong;fei zejie;ge min;liu hongtao;qian yuan(shanghai university of engineering science,shanghai 201620,china;shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;university of shanghai for science and technology,shanghai 200093,china;state key laboratory of thorium energy,shanghai 201800,china)  uv–vis uv–vis 紫外—可见光谱，用于识别吸收特征和推断组分。 提供高温熔盐化学状态的原位测量途径。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>钍基熔盐堆用熔盐小型原位紫外-可见吸收光谱装置研制</h2>
+          
+          <p class="meta">核技术 · 2026 · 赵轩媛 沈冬月 应苏俊恒 朱鹏飞 付晓彬 黄海龙 费泽杰 葛敏 刘洪涛 钱渊
+ZHAO Xuanyuan;SHEN Dongyue;YINGSU Junheng;ZHU Pengfei;FU Xiaobin;HUANG Hailong;FEI Zejie;GE Min;LIU Hongtao;QIAN Yuan(Shanghai University of Engineering Science,Shanghai 201620,China;Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;University of Shanghai for Science and Technology,Shanghai 200093,China;State Key Laboratory of Thorium Energy,Shanghai 201800,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>熔盐原位紫外—可见装置在650℃FLiNaK/FLiBe中观测Cr3+动态，装置可稳定工作至800℃。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提供高温熔盐化学状态的原位测量途径。</li></ul></section>
+        <section><h3>不足</h3><ul><li>装置耐温不等于反应堆服役条件验证；信号还受温度均匀性及光路影响。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>加热与接触边界是否造成样品温度偏差并影响反演浓度？</li><li>热电偶/标定光谱与温度场交叉检查；报告材料耐蚀和密封边界。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：熔盐原位紫外—可见装置在650℃FLiNaK/FLiBe中观测Cr3+动态，装置可稳定工作至800℃。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>UV–Vis<small>UV–Vis</small></h4><p>紫外—可见光谱，用于识别吸收特征和推断组分。</p><p class="context"><b>本文语境</b> 提供高温熔盐化学状态的原位测量途径。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>氟化物熔盐作为钍基熔盐堆(Thorium Molten Salt Reactor,TMSR)的冷却剂和燃料载体,其微观结构决定宏观物理化学性质。紫外-可见(Ultraviolet-visible,UV-Vis)吸收光谱可有效探测熔体中金属离子的氧化态及局域配位环境。然而,高温(&gt;500℃)、强腐蚀性、高挥发性,以及对痕量H2O/O2的高度敏感,导致常规商用仪器无法正常工作。为此,本文研制了一套可工作于高温条件下适用于氟化物熔盐的原位紫外-可见吸收光谱装置。该装置核心为带光路通道的炉体,集成了可靠的惰性气氛保护、高精度温控、高效隔热与耐腐蚀结构。对该装置开展了系统性能验证,包括:温度校准、气氛保护性能评估、光谱性能对比,并在650℃下成功获取FLiNaK和FLiBe体系的特征光谱。同时实时监测了FLiBe中Cr3+的价态演变,验证了系统具备动态过程监测能力。结果表明:装置可在高达800℃条件下稳定运行,具备高温、强腐蚀环境下熔盐物种与氧化还原过程的原位表征能力。该装置为推进钍基熔盐堆熔盐化学及腐蚀机理的基础研究,提供了一个独特、关键且经过验证的测试平台。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265784" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="熔盐堆用镍基合金失效机理与改性策略研究进展  rmc与ansys仿真研究 金属学报 · 2026 · 王优 陈向阳 王煦嘉 汤春桃 沈朝 曾小勤
+wang you;chen xiangyang;wang xujia;tang chuntao;shen zhao;zeng xiaoqin(shanghai nuclear engineering research&amp;design institute co.ltd.,shanghai 200233,china;stage key laboratory of materials for advanced nuclear energy,shanghai nuclear engineering research&amp;design institute co.ltd.,shanghai 200233,china;school of materials science and engineering,shanghai jiao tong university,shanghai 200240,china)  晶界工程 晶界工程 通过控制晶界结构/分布改善材料性能的方法。 联合评价合金成分、组织与环境损伤。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>熔盐堆用镍基合金失效机理与改性策略研究进展</h2>
+          
+          <p class="meta">金属学报 · 2026 · 王优 陈向阳 王煦嘉 汤春桃 沈朝 曾小勤
+WANG You;CHEN Xiangyang;WANG Xujia;TANG Chuntao;SHEN Zhao;ZENG Xiaoqin(Shanghai Nuclear Engineering Research&amp;Design Institute Co.Ltd.,Shanghai 200233,China;Stage Key Laboratory of Materials for Advanced Nuclear Energy,Shanghai Nuclear Engineering Research&amp;Design Institute Co.Ltd.,Shanghai 200233,China;School of Materials Science and Engineering,Shanghai Jiao Tong University,Shanghai 200240,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>熔盐堆镍基合金综述涵盖选择性溶解、碲致开裂和辐照，以及Cr/Mo/W、ODS、晶界工程和Ni–W–SiC等路线。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>联合评价合金成分、组织与环境损伤。</li></ul></section>
+        <section><h3>不足</h3><ul><li>耐蚀、抗碲和辐照性能不能合并成单一“最佳材料”，长期本构仍缺约束。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>发展原位表征、智能设计及环境自适应技术，以提高长时服役能力。</li></ul><b>分析推导</b><ul><li>环境退化导致的延性与导热变化是否改变热应力控制部位？</li><li>以目标温度和盐化学条件的数据校核，不能跨环境直接搬用。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：熔盐堆镍基合金综述涵盖选择性溶解、碲致开裂和辐照，以及Cr/Mo/W、ODS、晶界工程和Ni–W–SiC等路线。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>晶界工程<small>晶界工程</small></h4><p>通过控制晶界结构/分布改善材料性能的方法。</p><p class="context"><b>本文语境</b> 联合评价合金成分、组织与环境损伤。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>熔盐堆作为第四代核能系统的重要堆型,其高温、强腐蚀和辐照耦合环境对结构材料的化学稳定性与服役可靠性提出严苛要求。镍基合金因具有高温相稳定性和低化学活性而成为关键候选材料,但仍面临选择性腐蚀溶解、碲致腐蚀开裂以及辐照加速腐蚀等一系列失效问题。本文系统综述了熔盐堆用镍基合金的多场耦合失效机理,并总结了“成分优化-第二相调控-晶界调控-涂层防护”四维协同改性体系。通过降低Cr含量、优化Mo/W比例抑制溶解;利用氧化物弥散强化颗粒俘获缺陷、阻断扩散;采用晶界工程(GBE)提高低Σ晶界比例,抑制Te渗透;并以Ni-W或SiC涂层形成终端屏障。最后指出,未来应发展原位表征、智能设计与环境自适应技术,实现镍基合金在熔盐堆中的长寿命服役。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204459914" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="熔盐堆降功率过程中温度负反馈效应的影响研究  rmc与ansys仿真研究 核技术 · 2026 · 王凯 陈贻炫 王超群 杨群 袁光鹏 韩钰 王子赟 何兆忠 赵秦财
+wang kai;chen yixuan;wang chaoqun;yang qun;yuan guangpeng;han yu;wang ziyun;he zhaozhong;zhao qincai(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china)  过冷正反应性 过冷正反应性 负温度系数系统降温时可能增加反应性。 揭示降功率中冷却和反应性控制的耦合反向效应。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>熔盐堆降功率过程中温度负反馈效应的影响研究</h2>
+          
+          <p class="meta">核技术 · 2026 · 王凯 陈贻炫 王超群 杨群 袁光鹏 韩钰 王子赟 何兆忠 赵秦财
+WANG Kai;CHEN Yixuan;WANG Chaoqun;YANG Qun;YUAN Guangpeng;HAN Yu;WANG Ziyun;HE Zhaozhong;ZHAO Qincai(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>改进RELAP5/MOD4研究熔盐堆降功率；过冷通过负温度系数引入正反应性，功率达到120%FP触发保护的情景需控制协调。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>揭示降功率中冷却和反应性控制的耦合反向效应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>负温度反馈不等于任意降温操作都无风险；结果依赖该系统与控制限值。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>减少功率超调与降低构件热应力能否用同一冷却/棒速策略兼顾？</li><li>核对反馈系数、控制器限幅、时滞及120%阈值的设计依据。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：改进RELAP5/MOD4研究熔盐堆降功率；过冷通过负温度系数引入正反应性，功率达到120%FP触发保护的情景需控制协调。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>过冷正反应性<small>过冷正反应性</small></h4><p>负温度系数系统降温时可能增加反应性。</p><p class="context"><b>本文语境</b> 揭示降功率中冷却和反应性控制的耦合反向效应。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>反应堆温度负反馈效应是保证反应堆稳定运行的关键因素之一,对抑制反应堆温度异常升高等具有良好效果,是反应堆重要的固有安全特性之一。熔盐堆具有较大的反应性温度系数,对功率升高或排热减小等原因引起的堆芯温度升高具有良好的抑制效果。但较大的反应性温度系数会对正常运行带来一定影响,尤其是在降功率过程中。若操作过程中由于设备故障或人因等导致温度降低过大时,在温度负反馈效应的作用下,将引入较大正反应性,导致功率快速升高,可能触发安全系统整定值进而引起紧急停堆。研究降功率过程中温度负反馈效应对堆芯功率的影响,为熔盐堆运行人员的安全操作和规程制定等提供依据。采用修改后的RELAP5/MOD4.0程序,建立熔盐堆分析模型,模拟分析在降功率过程中不同反应性引入量、插棒速度和空气流量下堆芯功率的变化趋势。引入的负反馈越大,功率波动也会越大,越容易触发功率保护限值(120%满功率(Full Power,FP));降低反应性的引入速度可以有效降低功率波动,反应性引入越慢,功率波动越小;降低空冷空气流量能够防止功率波动触发保护限值,但无法较好地抑制功率和堆芯温度的波动幅度。降低单次反应性引入量和引入速度,并合理地调节空冷系统空气流量,能够有效降低功率的波动,避免因功率波动而触发功率保护限值。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265788" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于cfd-pbm方法熔盐堆换热器内夹带气泡流动规律分析  rmc与ansys仿真研究 核技术 · 2026 · 王子业 朱贵凤 陈亮 梁晓琳 邹杨
+wang ziye;zhu guifeng;chen liang;liang xiaolin;zou yang(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;state key laboratory of thorium energy,shanghai 201800,china;university of chinese academy of sciences,beijing 100049,china)  pbm pbm 群体平衡模型，用于描述粒径群的生成、消失和转化。 用粒径群平衡解析气泡分布及聚并破碎。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于CFD-PBM方法熔盐堆换热器内夹带气泡流动规律分析</h2>
+          
+          <p class="meta">核技术 · 2026 · 王子业 朱贵凤 陈亮 梁晓琳 邹杨
+WANG Ziye;ZHU Guifeng;CHEN Liang;LIANG Xiaolin;ZOU Yang(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;State Key Laboratory of Thorium Energy,Shanghai 201800,China;University of Chinese Academy of Sciences,Beijing 100049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>熔盐堆换热器CFD–PBM研究结合iMUSIG，考察气含率、尺寸与速度；较大气泡和涡区易积聚，下游界面面积浓度下降。</li><li>实施难度：中等至偏高。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用粒径群平衡解析气泡分布及聚并破碎。</li></ul></section>
+        <section><h3>不足</h3><ul><li>模型验证数据不足，粒径闭合可能主导结论，不能直接据此制定去气效率。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>不同破碎/聚并核对局部空泡和换热温差的影响是否大于结构优化？</li><li>先用简单通道气泡尺寸/含气率实验验证；盐体系物性单独核对。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：熔盐堆换热器CFD–PBM研究结合iMUSIG，考察气含率、尺寸与速度；较大气泡和涡区易积聚，下游界面面积浓度下降。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>PBM<small>PBM</small></h4><p>群体平衡模型，用于描述粒径群的生成、消失和转化。</p><p class="context"><b>本文语境</b> 用粒径群平衡解析气泡分布及聚并破碎。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>夹带气泡的引入对熔盐堆(Molten Salt Reactor,MSR)反应性控制、换热性能以及难溶裂变产物的迁移产生影响。其中换热器中夹带气泡流动十分复杂,且缺少实验数据,边界条件与流动分布规律的关系并不明确,使得气泡对换热器内换热性能和难溶裂变产物迁移行为等研究难以进一步开展。本文运用计算流体力学(Computational Fluid Dynamics,CFD)手段,采用基于群体平衡模型(Population Balance Model,PBM)的非均匀多尺寸组离散形式(inhomogeneous Multiple Size Group Model,iMUSIG),分析了两种换热器在不同入口速度、气体份额和气泡尺寸边界条件下,从入口到出口的速度场、气体份额、气泡尺寸和界面面积浓度(Interfacial Area Concentration,IAC)分布。结果表明,两种换热器中流场具有相同的涡结构而具有类似的气体聚集现象;气泡尺寸增加促进了气体聚集,高流速促使气体向涡心聚集;高气体份额和更低的速度促进气泡聚并,尺寸增大;从入口到出口,界面面积浓度由于单位气体份额内气泡尺寸增大呈下降趋势,低气体份额和大气泡尺寸的界面面积浓度变化平稳。以上结果为熔盐换热器内夹带气泡带来的影响研究提供参考。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265785" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="熔盐堆应急排盐冷却系统换热管内层屏障破损传热影响  rmc与ansys仿真研究 核技术 · 2026 · 孙亮洁 梁荣健 蒋文涛 王超群 杨群 何兆忠 邹杨
+sun liangjie;liang rongjian;jiang wentao;wang chaoqun;yang qun;he zhaozhong;zou yang(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;university of chinese academy of sciences,beijing 100049,china)  非均匀热边界 非均匀热边界 随位置变化的温度或换热条件，可能产生局部应力集中。 把破损间隙流动与非均匀冷却相联系。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>熔盐堆应急排盐冷却系统换热管内层屏障破损传热影响</h2>
+          
+          <p class="meta">核技术 · 2026 · 孙亮洁 梁荣健 蒋文涛 王超群 杨群 何兆忠 邹杨
+SUN Liangjie;LIANG Rongjian;JIANG Wentao;WANG Chaoqun;YANG Qun;HE Zhaozhong;ZOU Yang(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;University of Chinese Academy of Sciences,Beijing 100049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MSRE排盐系统内屏障破损模型中，约18.4%的水流经过间隙，单元排热29.434 kW并出现外壁局部冷点。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把破损间隙流动与非均匀冷却相联系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>排热增强不等于屏障破损可以接受；局部温差、渗漏和结构风险须另评。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>将破损后的非均匀冷却替成均匀边界，会低估多少局部热应力？</li><li>需要间隙几何、分流测量及冷热边界；先检验质量与能量守恒。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：MSRE排盐系统内屏障破损模型中，约18.4%的水流经过间隙，单元排热29.434 kW并出现外壁局部冷点。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>非均匀热边界<small>非均匀热边界</small></h4><p>随位置变化的温度或换热条件，可能产生局部应力集中。</p><p class="context"><b>本文语境</b> 把破损间隙流动与非均匀冷却相联系。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>液体燃料熔盐堆是第四代先进核能系统的候选堆型之一,应急排盐冷却系统是其可设置的特殊安全设计。本文以熔盐实验堆(Molten Salt Reactor Experiment,MSRE)应急排盐冷却系统为研究对象,探究换热元件内层屏障破损对其正常余热导出功能的影响。该研究基于计算流体动力学(Computational Fluid Dynamics,CFD)模拟方法,通过构建传热和多相流动模型分析破损后的传热和流动现象,并对关键影响参数进行敏感性分析。结果表明,内层套管破损后,18.4%的冷却水从破损位置经气隙层流出,单根换热元件功率提升到29.434 kW,破损位置附近外层套管出现局部温度低点。敏感性分析结果表明,破损尺寸、破损位置和气隙层压力变化均会对换热元件传热产生明显影响,其中传热对破损尺寸的敏感性最强。该分析结果可以为熔盐堆应急排盐冷却系统工程设计提供研究数据。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202911791" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="熔盐堆用螺旋管换热器压降特性研究  rmc与ansys仿真研究 核技术 · 2026 · 卢昱 孔祥波 丁梦婷 李志军
+lu yu;kong xiangbo;ding mengting;li zhijun(shanghaitech university,shanghai 201210,china;shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;university of chinese academy of sciences,beijing 100049,china;state key laboratory of thorium energy,shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china)  留出验证 留出验证 将未参与拟合的工况单独用于检验模型预测。 将几何间距与雷诺数等因素用于工程关联。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>熔盐堆用螺旋管换热器压降特性研究</h2>
+          
+          <p class="meta">核技术 · 2026 · 卢昱 孔祥波 丁梦婷 李志军
+LU Yu;KONG Xiangbo;DING Mengting;LI Zhijun(ShanghaiTech University,Shanghai 201210,China;Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;University of Chinese Academy of Sciences,Beijing 100049,China;State Key Laboratory of Thorium Energy,Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-03；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>熔盐螺旋换热器压降关联以数值样本回归，摘要报告平均拟合误差0.62%和2.5%。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将几何间距与雷诺数等因素用于工程关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>回归拟合误差不是独立实验验证误差；须保留训练与测试工况边界。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>相同泵功约束下，压降关联不确定性会不会改变换热器几何排序？</li><li>需独立压降实验或外部数据，不用训练集优度证明泛化。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：熔盐螺旋换热器压降关联以数值样本回归，摘要报告平均拟合误差0.62%和2.5%。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>留出验证<small>留出验证</small></h4><p>将未参与拟合的工况单独用于检验模型预测。</p><p class="context"><b>本文语境</b> 将几何间距与雷诺数等因素用于工程关联。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>螺旋管换热器具有结构简单、紧凑度高、可适应较大温差换热的特点,可满足熔盐堆用换热器工况要求。目前针对高温熔盐工况下的螺旋管换热器热工水力特性的研究较少。本研究主要对熔盐工况下的螺旋管换热器管程与壳程的流动特性进行研究。通过数值模拟研究了不同流速及不同几何因素对管程与壳程的压降的影响,对所有变量进行无量纲化,用摩擦因子来表示压降。结果发现雷诺数和缠绕直径的增大会导致管程的摩擦因子降低,当雷诺数较低时缠绕直径对管程的压降影响较大,随着雷诺数增大流速对管程的压降影响逐渐明显。壳程摩擦因子随雷诺数、层间距和管间距的增大而减小,随层数而增大。其中层间距对壳程的摩擦因子影响最为显著,远大于层数与管间距对壳程摩擦因子的影响。根据模拟结果给出适用于熔盐工况下的管程与壳程的压降关系式,平均误差分别为0.62%和2.5%。所拟合的关系式能够较好地描述螺旋管式换热器管程与壳程的压降特性,可为后续设计提供理论依据。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265786" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>低模量碳气凝胶填孔增强熔盐堆核石墨抗熔盐渗透性：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>摘要仅说“可能”容纳辐照尺寸变化，没有给出辐照后寿期验证；孔径/渗透率/模量数值待全文。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>填孔后热导率和辐照尺寸变化的不确定性是否抵消阻盐收益？</li><li>建议Mechanical用实测温变物性比较石墨块热应力，渗流模型另校核；不能仅以未变模量假设辐照安全。</li><li>需处理前后热导率、膨胀和强度曲线；辐照数据若缺失只做范围分析。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Enhancing molten-salt impermeability of nuclear graphite via low-modulus carbon aerogel pore-filling for the applications in molten salt reactor | 10.1016/j.nucengdes.2026.115300</li><li>真空加压浸渍间苯二酚—糠醛前驱体形成气凝胶；压汞和熔盐试验显示FLiBe渗入阈值压力提高，而应力应变及热膨胀基本不变。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>钍基熔盐堆用熔盐小型原位紫外-可见吸收光谱装置研制：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>装置耐温不等于反应堆服役条件验证；信号还受温度均匀性及光路影响。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>加热与接触边界是否造成样品温度偏差并影响反演浓度？</li><li>ANSYS热分析评估测量池温度均匀性与接触热阻，不拟合未知化学动力学。</li><li>热电偶/标定光谱与温度场交叉检查；报告材料耐蚀和密封边界。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>钍基熔盐堆用熔盐小型原位紫外-可见吸收光谱装置研制 | </li><li>熔盐原位紫外—可见装置在650℃FLiNaK/FLiBe中观测Cr3+动态，装置可稳定工作至800℃。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>填孔后热导率和辐照尺寸变化的不确定性是否抵消阻盐收益？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>建议Mechanical用实测温变物性比较石墨块热应力，渗流模型另校核；不能仅以未变模量假设辐照安全。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>需处理前后热导率、膨胀和强度曲线；辐照数据若缺失只做范围分析。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.nucengdes.2026.115300" target="_blank" rel="noopener">Enhancing molten-salt impermeability of nuclear graphite via low-modulus carbon aerogel pore-filling for the applications in molten salt reactor（Pub Date : 2026-11-03）↗</a><p>真空加压浸渍间苯二酚—糠醛前驱体形成气凝胶；压汞和熔盐试验显示FLiBe渗入阈值压力提高，而应力应变及热膨胀基本不变。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
