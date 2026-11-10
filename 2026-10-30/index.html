@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-10-30 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-10-30 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-10-30</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>5</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 9</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 5</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-10-30；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文5篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="放电等离子烧结与常规烧结环形uo₂芯块的表征比较 characterisation of annular uo2 pellets fabricated using spark plasma sintering and conventional sintering rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-14 · anil prasad, andrew bergeron, charles liu, victoria szlachta, reeghan osmond, lukas bichler 新型反应堆 可验证仿真方法 near-net shaping near-net shaping 成形后尺寸已接近目标、减少后续加工的制造目标。 以环形内径复制测量评价工艺，给出与预期不同的结果。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>放电等离子烧结与常规烧结环形UO₂芯块的表征比较</h2>
+          <p class="title-en">Characterisation of annular UO2 pellets fabricated using spark plasma sintering and conventional sintering</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-14 · Anil Prasad, Andrew Bergeron, Charles Liu, Victoria Szlachta, Reeghan Osmond, Lukas Bichler</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>比较IXAF环形芯块密度、尺寸变化、微结构和晶粒；SPS并未比常规烧结更适合改善近净成形。</li><li>实施难度：中等，材料参数可得后适合小模型。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以环形内径复制测量评价工艺，给出与预期不同的结果。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不应把先进工艺默认更优；摘要无运行中热力验证及完整孔隙/尺寸分布。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>制造内径/密度散布会怎样改变双面冷却温峰和包壳接触？</li><li>需要内外径公差、热导率、密度及微结构数据；先验证空心圆柱导热。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Near-net shaping<small>Near-net shaping</small></h4><p>成形后尺寸已接近目标、减少后续加工的制造目标。</p><p class="context"><b>本文语境</b> 以环形内径复制测量评价工艺，给出与预期不同的结果。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>内外冷却环形燃料（IXAF）是一种新型核燃料概念，因其具有增强传热、降低峰值燃料温度（PFT）和减少裂变气体释放等诸多优势而备受关注。近年来，由于其增强的事故容错能力，该燃料概念获得了一定的发展势头。本研究比较了两种不同的IXAF制备工艺。放电等离子烧结（SPS）是一种新型粉末固结技术，与传统烧结（CS）相比，具有更好的近净成形能力。本研究对比了采用放电等离子烧结和传统烧结工艺制备的环形燃料芯块的表征结果。对烧结后的芯块进行了表征，比较了它们的密度、尺寸变化、微观结构和晶粒尺寸。采用一种新型的复制测量技术测量了烧结后芯块的内径并进行了比较。出乎意料的是，SPS技术在改善IXAF的近净成形方面不如CS有效。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Internally and EXternally cooled Annular Fuel (IXAF) is a novel nuclear fuel concept that is being researched due to several advantages such as enhanced heat transfer, lower Peak Fuel Temperature (PFT), and lower fission gas release. The fuel concept has gained some momentum recently due to its enhanced accident tolerance. In this study the fabrication of IXAF by two different processing routes are compared. Spark Plasma Sintering (SPS) is a novel powder consolidation technique with good near net shaping ability as compared to Conventional Sintering (CS). This publication compares the results obtained from the characterisation of annular pellets fabricated from Spark Plasma Sintering to that from conventional sintering. The as-sintered pellets were characterised to compare their densities, dimensional change, microstructure, and grain size. The internal diameter of the as-sintered pellets was measured by a novel replicate technique and compared. Unexpectedly, the SPS technique proved to be a less viable alternative to CS in improving the near net shaping of the IXAF.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2112014046726664192" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104775" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2112014046726664192" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="高钚含量caprix燃料棒辐照行为的多程序实验基准 benchmarking caprix pin behaviour under irradiation with high plutonium content: comparison with experimental data rmc与ansys仿真研究 nuclear engineering and design · 2026-10-16 · m.-m. desagulier, d. jaramillo-sierra, b. burger, l. argeles, m. stefanowska-skrodzka, j. lavarenne, v. dupont, e. deveaux, a. del nevo, e. brunetto, a. scolaro, j. gado, k. sturm, a. rineiski, l. luzzi, a. magni, d. pizzocri, k. mikityuk, a. jiménez-carrascosa, s. lemehov, v. matocha, s. bebjak, c. strmensky, v. blanc, n. chauvin 新型反应堆 可验证仿真方法 post-irradiation examination (pie) post-irradiation examination (pie) 辐照后对燃料尺寸、组织、气体或其他性能的检验。 以同一辐照棒定位燃料性能程序差异及可改进模型。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>高钚含量CAPRIX燃料棒辐照行为的多程序实验基准</h2>
+          <p class="title-en">Benchmarking CAPRIX pin behaviour under irradiation with high plutonium content: comparison with experimental data</p>
+          <p class="meta">Nuclear Engineering and Design · 2026-10-16 · M.-M. Desagulier, D. Jaramillo-Sierra, B. Burger, L. Argeles, M. Stefanowska-Skrodzka, J. Lavarenne, V. Dupont, E. Deveaux, A. Del Nevo, E. Brunetto, A. Scolaro, J. Gado, K. Sturm, A. Rineiski, L. Luzzi, A. Magni, D. Pizzocri, K. Mikityuk, A. Jiménez-Carrascosa, S. Lemehov, V. Matocha, S. Bebjak, C. Strmensky, V. Blanc, N. Chauvin</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>PuMMA第二阶段针对PHENIX中45% Pu的CAPRIX燃料，13机构/9国/8程序与辐照后检验比较，7程序改进参数或模型。</li><li>实施难度：中等至偏高；公开基准输入比PDF本身更关键。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以同一辐照棒定位燃料性能程序差异及可改进模型。</li></ul></section>
+        <section><h3>不足</h3><ul><li>X-MOL摘要较短；已用EPFL/SCK CEN机构记录补核尾段。拟合后接近PIE不等于独立预测验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>热物性、间隙及蠕变参数误差中，哪些可用少量PIE观测分别识别？</li><li>优先取得开放论文及基准输入，区分标定与留出观测；数据许可逐项确认。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：CAPRIX、45% Pu、13机构/8程序；需全文核具体工况及PIE；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Post-irradiation examination (PIE)<small>Post-irradiation examination (PIE)</small></h4><p>辐照后对燃料尺寸、组织、气体或其他性能的检验。</p><p class="context"><b>本文语境</b> 以同一辐照棒定位燃料性能程序差异及可改进模型。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本文介绍钚管理提升项目（PuMMA）基准研究第二阶段的结果，旨在提高高钚含量混合氧化物（MOX）燃料性能程序（FPC）的可靠性。本阶段模拟了在法国PHENIX反应堆开展的CAPRIX辐照实验，钚含量为45%。来自九个国家的十三家机构参与，使用八种不同燃料性能程序。其中七种程序通过优化参数和/或改进部分模型公式，增强了建模能力。随后将程序结果与辐照后检验（PIE）结果比较，以识别已取得的改进、仍存在的差异，并明确后续改进和发展的方向。本文展示CAPRIX燃料棒结果。尽管程序之间以及程序与实验之间仍存在差异，此项基准工作表明，各程序能够通过优化和改进模拟接近PIE结果。所采用的方法还形成了全面、细致的分析，据此可提出特定模型的发展思路。这显示燃料性能程序用于高钚含量燃料棒建模的潜力。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This paper presents the results of the second phase of the benchmark exercise in the Plutonium Management for More Agility project (PuMMA), which aims to enhance the reliability of fuel performance codes (FPCs) for Mixed Oxide (MOX) fuels with high plutonium content. This phase involved the simulation of the CAPRIX irradiation (45% of Pu) carried out in the PHENIX reactor in France. Thirteen organizations from nine countries participated, using eight different fuel performance codes. In this phase, 7 codes then improved its modelling by optimizing parameters and/or improving the formulation of some models involved in the computation. A comparative analysis was then conducted between the codes and the post-irradiation experimental (PIE) results, with the objective of identifying the improvements made, the discrepancies still observed, and to define future areas for improvement and development. The present paper demonstrates the results for the CAPRIX pin. The main results despite the discrepancies noted between the codes and/or with the experimental data, the work carried out through this benchmark has demonstrated the capacity of the codes to optimise/improve their simulation in order to approximate the PIE. Moreover, the methodology employed yielded a comprehensive and precise analysis, thus facilitating the suggestion of approaches to the development of specific models. This finding thus demonstrates the potential of fuel performance codes modelling pins with high Pu contents.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+</p>
+      <footer><a href="https://www.x-mol.com/paper/2114261911387516928" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.nucengdes.2026.115270" target="_blank" rel="noopener">DOI ↗</a> <a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="vver-1000蒸汽发生器排污系统主动维护与结构修改 proactive maintenance and structural modifications of vver-1000 steam generator blowdown systems to ensure long-term safety rmc与ansys仿真研究 progress in nuclear energy · 2026-10-16 · karel vidlák, vladimír mózer 新型反应堆 可验证仿真方法 stress corrosion cracking stress corrosion cracking 拉应力与特定腐蚀环境共同引起的裂纹扩展机制。 将二次侧劣化与预防维护及布局改进关联。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>VVER-1000蒸汽发生器排污系统主动维护与结构修改</h2>
+          <p class="title-en">Proactive maintenance and structural modifications of VVER-1000 steam generator blowdown systems to ensure long-term safety</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-16 · Karel Vidlák, Vladimír Mózer</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>结合运行经验识别点蚀、应力腐蚀、沉积和异物风险，提出诊断、水化学及管路修改协同维护。</li><li>实施难度：中等至偏高；工程数据取得成本高。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将二次侧劣化与预防维护及布局改进关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未给定量失效率和模型误差；属于工程经验线索，不能充当可复现结构基准。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>排污支管布局变化在改善流动的同时，会否增大局部热分层应力？</li><li>需现场温度、腐蚀厚度和维护记录；无法取得时不宜选为首篇论文。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Stress corrosion cracking<small>Stress corrosion cracking</small></h4><p>拉应力与特定腐蚀环境共同引起的裂纹扩展机制。</p><p class="context"><b>本文语境</b> 将二次侧劣化与预防维护及布局改进关联。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>VVER-1000压水反应堆的蒸汽发生器在隔离一回路和二回路以及安全地从反应堆堆芯移除热量方面发挥着至关重要的作用。本文系统地评估了蒸汽发生器二回路侧的劣化机制，重点关注连续排污和污泥清除系统，以确保其长期安全运行。基于某参考核电站的运行数据和经验，本文提出了一种从被动维护向主动预防性维护转变的方案。该方案结合了连续诊断、水化学管理、管道布局的技术改进以及基于风险的规划。研究识别了主要的损伤机制（点蚀、应力腐蚀开裂、检查孔内污泥积聚以及异物侵入），量化了它们对换热管完整性的影响，并提出了维持蒸汽发生器屏障功能的实用措施。这些措施的益处包括降低故障概率、稳定水化学状态、缩短停机时间以及提高一级安全等级部件的长期可靠性。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Steam generators of VVER-1000 pressurized water reactors play a crucial role in separating the primary and secondary circuits and safely removing heat from the reactor core. This paper systematically evaluates the degradation mechanisms on the secondary side of the steam generator, focusing on the continuous blowdown and sludge removal systems in the context of ensuring long-term safety functions. Based on operational data and experience from a reference nuclear power plant, a transition from reactive to proactive preventive maintenance is proposed. This approach combines continuous diagnostics, water chemistry management, technical modifications to piping layouts, and risk-based planning. The study identifies dominant damage mechanisms (pitting corrosion, stress corrosion cracking, sludge accumulation in inspection pockets, and foreign material ingress), quantifies their impact on the integrity of heat transfer tubes, and proposes practical measures to maintain the barrier function of the steam generator. The benefits include a reduced probability of failures, stabilization of the water chemistry regime, shortened outage durations, and improved long-term reliability of Safety Class 1 components.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2114242110065750016" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106647" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2114242110065750016" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="遗传算法与图神经网络代理混合优化核电管道支承 hybrid genetic algorithm with a gnn-based surrogate model for pipe support design optimization in nuclear power plant rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-22 · daeyoung jeong, sungryul kim 新型反应堆 可验证仿真方法 surrogate-assisted optimization surrogate-assisted optimization 用低成本代理筛选设计、以高保真模型确认关键候选的优化策略。 以全阶复核纠正代理优化的不可靠候选。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>遗传算法与图神经网络代理混合优化核电管道支承</h2>
+          <p class="title-en">Hybrid genetic algorithm with a GNN-based surrogate model for pipe support design optimization in nuclear power plant</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-22 · Daeyoung Jeong, Sungryul Kim</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>三种管系3600样本训练GNN；单代理优化存在约束误差，选择性PIPESTRESS重算后节省36.0–59.7%时间且保持相近应力比。</li><li>实施难度：中等；小管系更适合首个课题。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以全阶复核纠正代理优化的不可靠候选。</li></ul></section>
+        <section><h3>不足</h3><ul><li>泛化限于预定义管系中的新支承组合，不是任意新管路；ASME应力比不可随意换成von Mises峰值。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>等效支承/间隙模型误差会不会大于代理误差，并导致假可行方案？</li><li>规范应力分类、支承刚度、独立工况和约束违例率；保留全阶复算记录。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：3600样本、3种管系、支承类型、ASME应力比；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Surrogate-assisted optimization<small>Surrogate-assisted optimization</small></h4><p>用低成本代理筛选设计、以高保真模型确认关键候选的优化策略。</p><p class="context"><b>本文语境</b> 以全阶复核纠正代理优化的不可靠候选。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核电站管道系统的管道支架设计传统上依赖于工程经验，通过迭代管道应力分析进行，耗时耗力。本研究提出了一种混合优化框架，该框架结合了遗传算法（GA）、基于图神经网络（GNN）的代理模型和PIPESTRESS分析，用于管道支架优化。支架类型被定义为设计变量，而ASME规范的应力比则被用作设计约束。GA优化成功地减少了支架数量，同时保持了可接受的应力比水平。为了降低重复PIPESTRESS分析的计算成本，本研究利用管道几何形状和支架配置的图表示，开发了一种GNN代理模型。训练和验证使用了包含三种管道几何形状共3600个样本的数据集。该代理模型旨在评估预定义管道几何形状中未见过的支架配置，而不是任意的未见过的管道布局。尽管代理模型总体预测性能良好，但在某些评估指标上准确率较低，这些预测误差会影响单独使用图神经网络（GNN）时的优化结果。为了提高优化可靠性，本文提出了一种混合方法：首先使用GNN评估所有候选方案，然后使用PIPESTRESS对筛选出的方案进行重新分析。该方法在保持与传统基于PIPESTRESS的优化方法相当的支护配置和应力比水平的同时，将计算时间减少了36.0%至59.7%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Pipe support design for nuclear power plant piping systems is traditionally performed through iterative piping stress analyses based on engineering experience, requiring significant time and effort. This study proposes a hybrid optimization framework combining a Genetic Algorithm (GA), a Graph Neural Network (GNN)-based surrogate model, and PIPESTRESS analysis for pipe support optimization. Support types were defined as design variables, while ASME Code stress ratios were used as design constraints. GA optimization successfully reduced the number of supports while maintaining acceptable stress-ratio levels. To reduce the computational cost of repeated PIPESTRESS analyses, a GNN surrogate model was developed using graph representations of piping geometries and support configurations. A dataset consisting of 3600 samples from three piping geometries was used for training and validation. The surrogate model was developed to evaluate unseen support configurations within predefined piping geometries rather than arbitrary unseen piping layouts. Although the surrogate model showed good overall prediction performance, lower accuracy was observed for some evaluation criteria, and these prediction errors affected the optimization results when the GNN was used alone. To improve optimization reliability, a hybrid approach was introduced in which all candidates were evaluated by the GNN and selected candidates were reanalyzed using PIPESTRESS. The proposed method reduced computational time by 36.0–59.7% while maintaining support configurations and stress-ratio levels comparable to those obtained using conventional PIPESTRESS-based optimization.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2113813188589137920" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104803" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113813188589137920" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="gdal3c3含量对gdal3c3-316l中子屏蔽材料微观组织和力学性能影响研究  rmc与ansys仿真研究 原子能科学技术 · 2026 · 伊帆 黄群英 翟玉涛 董宣东 黄庭俊
+yi fan;huang qunying;zhai yutao;dong xuandong;huang tingjun(science island branch,graduate school of ustc,hefei 230026,china;institute of nuclear energy safety technology,hefei institutes of physical science,chinese academy of sciences,hefei 230031,china)  能谱依赖性 能谱依赖性 材料屏蔽响应随入射中子能量分布变化。 展示屏蔽增强与高温力学性能的配比权衡。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>GdAl3C3含量对GdAl3C3-316L中子屏蔽材料微观组织和力学性能影响研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 伊帆 黄群英 翟玉涛 董宣东 黄庭俊
+YI Fan;HUANG Qunying;ZHAI Yutao;DONG Xuandong;HUANG Tingjun(Science Island Branch,Graduate School of USTC,Hefei 230026,China;Institute of Nuclear Energy Safety Technology,Hefei Institutes of Physical Science,Chinese Academy of Sciences,Hefei 230031,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>GdAl3C3–316L复合材料中1.5 wt%配比在550℃的屈服强度为613.2 MPa、延伸率14.9%；5 wt%、0.9 mm条件下热中子屏蔽率95.84%。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>展示屏蔽增强与高温力学性能的配比权衡。</li></ul></section>
+        <section><h3>不足</h3><ul><li>热中子屏蔽率不能直接用于快堆宽谱屏蔽；不同最佳配比对应不同指标。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>在实际先进堆能谱下，屏蔽收益与温差应力代价的最优配比是否改变？</li><li>先复现原热中子测试及试样力学，再换能谱；明确密度和元素库存。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：GdAl3C3–316L复合材料中1.5 wt%配比在550℃的屈服强度为613.2 MPa、延伸率14.9%；5 wt%、0.9 mm条件下热中子屏蔽率95.84%。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>能谱依赖性<small>能谱依赖性</small></h4><p>材料屏蔽响应随入射中子能量分布变化。</p><p class="context"><b>本文语境</b> 展示屏蔽增强与高温力学性能的配比权衡。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>小型铅冷快堆具有紧凑化设计及高中子通量与高温运行环境等特点,亟需一种兼具优异高温力学和中子屏蔽性能的结构-功能一体化中子屏蔽材料。为解决传统中子屏蔽材料含硼钢和含钆钢高温力学与加工性能不足的问题,本文研究采用粉末冶金法制备了GdAl3C3添加量分别为0.5%、1.5%、3.0%和5.0%(质量分数)的GdAl3C3-316L金属基中子屏蔽材料样品,系统分析了其微观组织、室温和高温拉伸性能及中子屏蔽性能。结果表明:样品组织中原位生成多种Gd-Al-O三元氧化物并弥散分布于316L基体中。材料室温及高温拉伸性能随GdAl3C3添加量增加呈先增后降趋势,1.5%GdAl3C3-316L样品表现出较好的力学性能,550℃下其屈服强度为613.2 MPa,延伸率为14.9%。材料中子屏蔽性能随GdAl3C3添加量增加而提升,5.0%GdAl3C3-316L样品在0.9 mm厚度下的热中子屏蔽率达到95.84%。本文研究的GdAl3C3-316L合金作为结构-功能一体化中子屏蔽材料在小型铅冷快堆屏蔽系统中具有潜在应用前景。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204715305" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="压水堆燃料棒uo2燃料芯块与锆合金包壳化学相互作用层研究  rmc与ansys仿真研究 核技术 · 2023 · 王华才 杨大伟 程焕林 汤琪 王玮 钱进
+wang huacai;yang dawei;cheng huanlin;tang qi;wang wei;qian jin(china institute of atomic energy,beijing 102413,china)  界面层 界面层 两种材料相互作用形成的有限厚度区域，其性能可能异于母材。 提示燃料—包壳界面存在化学与力学共同作用。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>压水堆燃料棒UO2燃料芯块与锆合金包壳化学相互作用层研究</h2>
+          
+          <p class="meta">核技术 · 2023 · 王华才 杨大伟 程焕林 汤琪 王玮 钱进
+WANG Huacai;YANG Dawei;CHENG Huanlin;TANG Qi;WANG Wei;QIAN Jin(China Institute of Atomic Energy,Beijing 102413,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2023年约45 GWd/tU的UO2/Zr样品观察到14–19 μm U/Zr/O界面层，结合SEM/EDS/Raman分析。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提示燃料—包壳界面存在化学与力学共同作用。</li></ul></section>
+        <section><h3>不足</h3><ul><li>化学粘结层不能等同普通摩擦接触，也不能凭厚度直接给出界面强度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>从滑移接触转为部分粘结后，热点应力与传热误差如何变化？</li><li>需界面强度、导热和温度历史，避免从显微图像臆造参数。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2023年约45 GWd/tU的UO2/Zr样品观察到14–19 μm U/Zr/O界面层，结合SEM/EDS/Raman分析。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>界面层<small>界面层</small></h4><p>两种材料相互作用形成的有限厚度区域，其性能可能异于母材。</p><p class="context"><b>本文语境</b> 提示燃料—包壳界面存在化学与力学共同作用。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>反应堆运行期间,锆合金包壳与燃料接触后不断氧化,与燃料结合形成牢固的化学相互作用层,影响燃料间隙热导、包壳力学性能和燃料包壳机械相互作用。本文以压水堆核电站燃耗45 GWd·t U-1完整燃料棒为研究对象,利用金相显微镜(Metallographic Microscope)、扫描电子显微镜及能谱分析(Scanning Electron Microscopy-Energy Dispersive Spectroscopy,SEM-EDS)和热室内拉曼光谱(Raman Spectroscopy)方法对其化学相互作用层形貌及结构进行分析,国内首次获得堆内辐照后包壳和芯块化学相互作用层相关分析数据。结果表明:运行至45 GWd·t U-1燃耗后,燃料芯块与包壳间隙形成14~19μm的化学相互作用层,不同位置机械接触的时间顺序差异,导致作用层的不连续形成与长大。SEM-EDS结果表明,相互作用层呈“蠕虫”状形貌,且由U、Zr、O三元素构成形成混合相(U,Zr)Ox化合物,并且发现化学相互作用层由化学黏附和机械作用共同作用的结果。拉曼光谱显示,化学相互作用层主要由四方相氧化锆(t-ZrO2)和单斜相(m-ZrO2)相组成。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7110496521" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="u-50zr螺旋十字燃料热力耦合特性分析  rmc与ansys仿真研究 哈尔滨工程大学学报 · 2022 · 蔡孟珂 丛腾龙 顾汉洋
+cai mengke;cong tenglong;gu hanyang(school of mechanical engineering,shanghai jiao tong university,shanghai 200240,china)  孔隙率 孔隙率 孔隙体积占总体积的比例，可能同时影响导热和力学性能。 用材料孔隙状态连接热物性和结构响应。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>U-50Zr螺旋十字燃料热力耦合特性分析</h2>
+          
+          <p class="meta">哈尔滨工程大学学报 · 2022 · 蔡孟珂 丛腾龙 顾汉洋
+CAI Mengke;CONG Tenglong;GU Hanyang(School of Mechanical Engineering,Shanghai Jiao Tong University,Shanghai 200240,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2022年U-50Zr HCF研究由分子动力学提供孔隙相关E和导热参数，再进行有限元，算例峰值326.7 MPa。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用材料孔隙状态连接热物性和结构响应。</li></ul></section>
+        <section><h3>不足</h3><ul><li>与某断裂强度比较不足以证明循环完整性；原子尺度参数的尺寸/温度外推需验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>孔隙导致的导热降低与刚度降低，哪一项更控制翼根应力？</li><li>优先用同材料温度范围的实测数据，避免直接照搬MD常数。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2022年U-50Zr HCF研究由分子动力学提供孔隙相关E和导热参数，再进行有限元，算例峰值326.7 MPa。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>孔隙率<small>孔隙率</small></h4><p>孔隙体积占总体积的比例，可能同时影响导热和力学性能。</p><p class="context"><b>本文语境</b> 用材料孔隙状态连接热物性和结构响应。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为了提升现有压水堆的功率水平和安全裕量,本文提出了一种基于U-50Zr合金材料的螺旋十字燃料。本文基于分子动力学原理,对带孔隙U-50Zr合金的杨氏模量和热导率进行了预测;并将该预测结果植入到有限元多物理场耦合模拟中,对U-50Zr合金材料下螺旋十字燃料的热力性能进行了分析。分子动力学仿真结果显示:孔隙效应会降低U-50Zr合金材料的杨氏模量和热导率;但由于U-50Zr合金的辐照肿胀率和螺旋十字燃料温度较低,故辐照导致的孔隙效应并不明显,因此,燃料的温度场在整个寿期内较稳定。此外,在自接触影响下,螺旋十字燃料在包壳翼尖区域出现较大的应力峰值,且最大应力为326.7 MPa,低于锆合金材料的断裂极限。U-50Zr的螺旋十字燃料拥有不错的抗辐照热力响应特性,具备一定的应用前景。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7109181489" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于moose平台的uo2燃料性能分析  rmc与ansys仿真研究 材料导报 · 2022 · 王兆 张新虎 王召浩 王冠 惠永博 郑伟 丁阳 朱丽兵 邓勇军 傅先刚 恽迪 柳文波
+wang zhao;zhang xinhu;wang zhaohao;wang guan;xi yongbo;zheng wei;ding yang;zhu libing;deng yongjun;fu xiangang;yun di;liu wenbo(school of energy and power engineering,xi’an jiaotong university,xi’an 710049,china;nuclear power institute of china,chengdu 610213,china;institute of modern physics,chinese academy of sciences,lanzhou 730000,china;school of nuclear science and technology,university of chinese academy of sciences,beijing 100049,china;china nuclear power technology research institute co.,ltd.,shenzhen 518000,guangdong,china;shanghai nuclear engineering research and design institute,shanghai 200233,china;state key laboratory of multi-phase flow in power engineering,xi’an jiaotong university,xi’an 710049,china)  fgr fgr 裂变气体释放，会改变气隙组成、压力及热导。 将多种燃料演化过程纳入同一计算框架并用棒实验约束。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于MOOSE平台的UO2燃料性能分析</h2>
+          
+          <p class="meta">材料导报 · 2022 · 王兆 张新虎 王召浩 王冠 惠永博 郑伟 丁阳 朱丽兵 邓勇军 傅先刚 恽迪 柳文波
+WANG Zhao;ZHANG Xinhu;WANG Zhaohao;WANG Guan;XI Yongbo;ZHENG Wei;DING Yang;ZHU Libing;DENG Yongjun;FU Xiangang;YUN Di;LIU Wenbo(School of Energy and Power Engineering,Xi’an Jiaotong University,Xi’an 710049,China;Nuclear Power Institute of China,Chengdu 610213,China;Institute of Modern Physics,Chinese Academy of Sciences,Lanzhou 730000,China;School of Nuclear Science and Technology,University of Chinese Academy of Sciences,Beijing 100049,China;China Nuclear Power Technology Research Institute Co.,Ltd.,Shenzhen 518000,Guangdong,China;Shanghai Nuclear Engineering Research and Design Institute,Shanghai 200233,China;State Key Laboratory of Multi-phase Flow in Power Engineering,Xi’an Jiaotong University,Xi’an 710049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2022年MOOSE UO2燃料行为模型用Halden IFA-432 r1/IFA-513 r6比较，含辐照蠕变、裂变气释放及PCMI。</li><li>实施难度：中等至偏高；数据和本构可得性限制。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将多种燃料演化过程纳入同一计算框架并用棒实验约束。</li></ul></section>
+        <section><h3>不足</h3><ul><li>部分Halden原始数据可能需要授权；不能承诺公开可一键复现。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>仅做热机械简化时，忽略FGR对气隙热导的影响有多大？</li><li>先确认基准数据取得条件及量纲、功率历史，区分校准和独立验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2022年MOOSE UO2燃料行为模型用Halden IFA-432 r1/IFA-513 r6比较，含辐照蠕变、裂变气释放及PCMI。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>FGR<small>FGR</small></h4><p>裂变气体释放，会改变气隙组成、压力及热导。</p><p class="context"><b>本文语境</b> 将多种燃料演化过程纳入同一计算框架并用棒实验约束。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为了更好地模拟燃料棒辐照肿胀、辐照蠕变、热蠕变、裂变气体释放、芯块包壳力学接触(PCMI)等物理过程以及辐照-热-力等物理场之间的耦合,基于多物理场耦合(MOOSE)平台开发了一款适用于压水堆棒状UO;燃料的性能分析程序,利用Halden反应堆IFA-432r1、IFA-513r6实验数据进行了验证并对稳态与瞬态工况下的燃料性能进行了初步分析。结果表明,本工作开发的程序能较为准确地模拟反应堆运行过程中燃料棒的辐照-热学-力学行为、稳态运行工况下,在包壳外表面的轴向方向会出现周期性的应力峰;瞬态时,功率的突变会导致燃料芯块中心温度以及芯包接触压力发生显著变化,从而显著影响燃料棒的安全性。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7106869000" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="锆合金包壳和gh4169镍基合金的微动摩擦磨损性能研究  rmc与ansys仿真研究 核动力工程 · 2020 · 高雯
+gao wen(nuclear power institute of china,chengdu,610213,china)  微动 微动 接触表面间小幅重复相对运动，可能引起磨损和疲劳。 提供摩擦系数随表面状态变化的实验依据。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>锆合金包壳和GH4169镍基合金的微动摩擦磨损性能研究</h2>
+          
+          <p class="meta">核动力工程 · 2020 · 高雯
+Gao Wen(Nuclear Power Institute of China,Chengdu,610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-10-30；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2020年Zr-4/N36与GH4169微动试验表明，载荷和预氧化会改变摩擦，材料组合差异明显。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>提供摩擦系数随表面状态变化的实验依据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>固定摩擦系数模型可能忽略预氧化及载荷效应；实验条件不能直接外推辐照环境。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>使用常数μ会怎样改变格架接触滑移和微动功率排序？</li><li>匹配载荷、频率、温度、表面状态，分开摩擦和磨损率。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2020年Zr-4/N36与GH4169微动试验表明，载荷和预氧化会改变摩擦，材料组合差异明显。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>微动<small>微动</small></h4><p>接触表面间小幅重复相对运动，可能引起磨损和疲劳。</p><p class="context"><b>本文语境</b> 提供摩擦系数随表面状态变化的实验依据。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>燃料棒在冷却剂流过时易受到扰动而发生微振动,导致在格架弹簧与包壳管接触点附近产生微动摩擦磨损,严重时会导致燃料棒破损,放射性产物泄漏,从而影响核电厂安全运行,因而需要对燃料包壳的微动摩擦磨损性能进行充分研究。本研究旨在比较分析2种牌号、2种状态的锆合金(Zr-4)和N36与格架材料GH4169镍基合金在不同环境条件下的微动摩擦磨损性能,分析载荷、循环次数、环境条件对其摩擦磨损性能的影响,并结合磨损表面的形貌、成分分析结果,揭示其微动摩擦磨损机理。研究结果表明,微动摩擦磨损时摩擦系数随载荷的增加呈线性增加趋势;相同条件下,Zr-4/Zr-4摩擦副组合的微动摩擦系数最大,GH4169/N36摩擦副组合的微动摩擦系数最小;预氧化对材料的微动摩擦系数影响显著,预氧化态样品的摩擦系数均高于非预氧化态的样品。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7102726505" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>放电等离子烧结与常规烧结环形UO₂芯块的表征比较：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>不应把先进工艺默认更优；摘要无运行中热力验证及完整孔隙/尺寸分布。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>制造内径/密度散布会怎样改变双面冷却温峰和包壳接触？</li><li>建议Mechanical以测得尺寸/密度范围做环形单棒热力敏感性，不自行赋予SPS更好物性。</li><li>需要内外径公差、热导率、密度及微结构数据；先验证空心圆柱导热。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Characterisation of annular UO2 pellets fabricated using spark plasma sintering and conventional sintering | 10.1016/j.net.2026.104775</li><li>比较IXAF环形芯块密度、尺寸变化、微结构和晶粒；SPS并未比常规烧结更适合改善近净成形。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>GdAl3C3含量对GdAl3C3-316L中子屏蔽材料微观组织和力学性能影响研究：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>热中子屏蔽率不能直接用于快堆宽谱屏蔽；不同最佳配比对应不同指标。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>在实际先进堆能谱下，屏蔽收益与温差应力代价的最优配比是否改变？</li><li>RMC计算宽谱沉积/透射，Mechanical以实测温变物性计算应力。</li><li>先复现原热中子测试及试样力学，再换能谱；明确密度和元素库存。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>GdAl3C3含量对GdAl3C3-316L中子屏蔽材料微观组织和力学性能影响研究 | </li><li>GdAl3C3–316L复合材料中1.5 wt%配比在550℃的屈服强度为613.2 MPa、延伸率14.9%；5 wt%、0.9 mm条件下热中子屏蔽率95.84%。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>等效支承/间隙模型误差会不会大于代理误差，并导致假可行方案？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>建议Mechanical梁—局部实体对照后做少量代理筛选，每个最终设计全阶复核；不必先上GNN。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>规范应力分类、支承刚度、独立工况和约束违例率；保留全阶复算记录。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.net.2026.104803" target="_blank" rel="noopener">Hybrid genetic algorithm with a GNN-based surrogate model for pipe support design optimization in nuclear power plant（Pub Date : 2026-10-22）↗</a><p>三种管系3600样本训练GNN；单代理优化存在约束误差，选择性PIPESTRESS重算后节省36.0–59.7%时间且保持相近应力比。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
