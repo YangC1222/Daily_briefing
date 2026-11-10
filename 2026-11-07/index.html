@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-11-07 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-11-07 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-11-07</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>5</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 9</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 5</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-11-07；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文5篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="高温气冷小型堆与大型压水堆后端燃料循环指标比较 quantitative evaluation of backend nuclear fuel cycle metrics for an htgr-based smr compared with a conventional large pwr rmc与ansys仿真研究 progress in nuclear energy · 2026-10-24 · ji su kang, jae hak cheong 新型反应堆 可验证仿真方法 burnup (bu) burnup (bu) 单位初始重金属质量累计释放的能量，与燃烧效率不同。 把燃耗/初始富集度/冷却期联合传递到后端指标。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>高温气冷小型堆与大型压水堆后端燃料循环指标比较</h2>
+          <p class="title-en">Quantitative evaluation of backend nuclear fuel cycle metrics for an HTGR-based SMR compared with a conventional large PWR</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-24 · Ji Su Kang, Jae Hak Cheong</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>SCALE 6.3.1燃料柱代理比较质量、体积、衰变热、活度和毒性；HTGR乏燃料质量可较低但含石墨体积更大，指标更敏感于燃耗。</li><li>实施难度：中等至偏高，先固定燃料柱和冷却时间。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把燃耗/初始富集度/冷却期联合传递到后端指标。</li></ul></section>
+        <section><h3>不足</h3><ul><li>120–150 GWd/MTU和15–17 wt%仅为假设下指示区间，不是所有堆可行或许可推荐。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>后端热分析若按单位重金属或整块石墨归一化，储存热点评价有何差别？</li><li>需核素清单、燃耗历史和衰变库；对照公开后端数据，不能只看单一指标。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：燃耗、初始富集度、冷却时间及质量/体积/衰变热归一化；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Burnup (BU)<small>Burnup (BU)</small></h4><p>单位初始重金属质量累计释放的能量，与燃烧效率不同。</p><p class="context"><b>本文语境</b> 把燃耗/初始富集度/冷却期联合传递到后端指标。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>HTGR型SMR研发增多，其高燃耗TRISO燃料及石墨结构使乏燃料特性不同于大型PWR。棱柱燃料块是主要配置之一，但综合后端燃料循环评价仍有限。本文以SCALE 6.3.1建立基于设计的替代燃料柱模型，评价乏燃料质量、体积、衰变热、活度和放射毒性，并与参考PWR比较，考察燃耗BU、初始富集度IE和冷却时间CT。所采用假设下，大多数燃耗条件中HTGR型SMR乏燃料质量较低，但因石墨块及TRISO结构，其体积显著较大。后端指标对燃耗比对初始富集度更敏感。较高燃耗提高短期衰变热和放射毒性，但随着锕系核素贡献增大，可降低部分长期放射性指标。相对差异指标表明，在可行的燃耗和富集度组合及本文假设下，120–150 GWd/MTU和15–17 wt%可作为兼顾短期管理与长期处置的指示范围。研究可为HTGR型SMR的贮存、运输、后处理或循环利用及处置策略提供定量基础。</p></div>
+          <div><h3>English abstract</h3><p lang="en">With increasing interest in the development and deployment of high-temperature gas-cooled reactor (HTGR)- based small modular reactors (SMRs), their spent nuclear fuel (SNF) may exhibit characteristics different from those of conventional large PWRs because of high burnup (BU) TRISO fuel and graphite structures. Although prismatic block fuel is a major HTGR-based SMR fuel configuration, integrated backend nuclear fuel cycle (BNFC) assessments remain limited. In this study, BNFC metrics, including SNF mass, volume, decay heat, radioactivity, and radiotoxicity, were evaluated for an HTGR-based SMR using prismatic block fuel and compared with those of a reference PWR (Ref.PWR). A design-based surrogate fuel column model was developed using SCALE 6.3.1, and the effects of BU, initial enrichment (IE), and cooling time (CT) were examined. Under the adopted assumptions, the HTGR-based SMR tended to show lower SNF mass than the Ref.PWR under most BU conditions, whereas its SNF volume was substantially larger because of the graphite block and TRISO fuel structure. The BNFC metrics appeared more sensitive to BU than to IE. Higher BU tended to increase short-term decay heat and radiotoxicity, while reducing several long-term radiological metrics as actinide contributions became more important. The relative difference index suggested that 120–150 GWd/MTU and 15–17 wt% may represent an indicative range under the adopted assumptions for balancing short-term management requirements and long-term disposal implications when feasible BU and IE combinations are considered. This study can provide a quantitative basis for establishing SNF storage, transportation, reprocessing or recycling, and disposal strategies for HTGR-based SMRs.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116356980269658112" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106668" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116356980269658112" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="确定性双层采样与代理辅助不利工况识别的bepu分析 deterministic double-layer sampling with surrogate-assisted adverse case identification for reactor bepu analysis rmc与ansys仿真研究 progress in nuclear energy · 2026-10-24 · mengyan hu, yubo qi, chengcheng deng, zongyang li, jun yang 新型反应堆 可验证仿真方法 best-estimate plus uncertainty (bepu) best-estimate plus uncertainty (bepu) 最佳估计结合输入和模型不确定性评估的安全分析框架。 把系统动作逻辑与物理波动条件耦合，强调高保真追溯。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>确定性双层采样与代理辅助不利工况识别的BEPU分析</h2>
+          <p class="title-en">Deterministic double-layer sampling with surrogate-assisted adverse case identification for reactor BEPU analysis</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-10-24 · Mengyan Hu, Yubo Qi, Chengcheng Deng, Zongyang Li, Jun Yang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RELAP5模拟ESBWR主蒸汽管破裂，外层认知变量与内层随机变量联合传播；代理筛选后仍用全阶复算最不利工况。</li><li>实施难度：中等，适合仿真预算受限的研究。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把系统动作逻辑与物理波动条件耦合，强调高保真追溯。</li></ul></section>
+        <section><h3>不足</h3><ul><li>代理选中低水位不等于找到真实全局最小；原样本仍有更低逻辑工况。确定性采样不等于确定论中子输运。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>接触/支承不确定性与载荷情景联合传播，是否会漏掉单独敏感性分析未见的热点？</li><li>在可穷举小矩阵上核查遗漏率；把随机与认知不确定性、置信度分开。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：ESBWR MSLB；3个外层动作变量、衰变热/给水内层变量；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Best-estimate plus uncertainty (BEPU)<small>Best-estimate plus uncertainty (BEPU)</small></h4><p>最佳估计结合输入和模型不确定性评估的安全分析框架。</p><p class="context"><b>本文语境</b> 把系统动作逻辑与物理波动条件耦合，强调高保真追溯。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>最佳估计加不确定性（BEPU）分析需要同时处理与固有参数变异性相关的随机不确定性和因模型及系统运行信息不完整而产生的认知不确定性。直接嵌套随机抽样对于系统热工水力分析而言计算量巨大。本研究提出了一种简化的双层不确定性分析策略，该策略结合了确定性抽样和代理辅助的补充案例选择。该方法以经济简化型沸水反应堆（ESBWR）主蒸汽管破裂（MSLB）事故为例进行了验证，该事故使用RELAP5程序进行模拟。三个安全系统动作参数被视为外层认知变量，而衰变功率和给水流量被视为内层随机变量。首先，分别使用精细计算来验证物理子空间和逻辑子空间中的不利区域，然后将保留的变量联合传播，并使用RELAP5重新计算经代理筛选出的最不利组合。对于物理不确定性，所有四个由代理模型辅助的案例均位于最低的五个最低折算水位（MCL）响应值之间，将最低验证MCL值从5.792米降低至5.618米。对于逻辑不确定性，两个由代理模型选择的案例得到的MCL值分别为8.216米和8.226米，均低于153个样本集的四阶威尔克斯准则对应的第四小值8.303米，尽管原始样本中仍存在绝对最小值8.111米。联合传播进一步得到的MCL值低于单独进行物理或逻辑分析所得的值，表明执行场景与物理变异性之间存在条件耦合。所提出的策略在保持反应堆安全分析高保真验证和可追溯性的同时，提高了不利案例的识别率。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Best-estimate plus uncertainty (BEPU) analysis requires the combined treatment of aleatory uncertainty associated with inherent parameter variability and epistemic uncertainty arising from incomplete knowledge of models and system actuation. Direct nested random sampling is computationally expensive for system thermal-hydraulic analysis. This study develops a reduced double-layer uncertainty-analysis strategy combining deterministic sampling with surrogate-assisted supplementary case selection. The method is demonstrated for an Economic Simplified Boiling Water Reactor (ESBWR) hypothetical Main Steam Line Break (MSLB) accident simulated using RELAP5 code. Three safety-system actuation parameters are treated as outer-layer epistemic variables, while decay power and feedwater flow rate are treated as inner-layer aleatory variables. Separate refined calculations are first used to verify the adverse regions in the physical and logical subspaces, while the retained variables are then propagated jointly, and the most adverse surrogate-screened combinations are recalculated using RELAP5. For the physical uncertainties, all four surrogate-assisted cases were located among the five lowest minimum collapsed water level (MCL) responses, reducing the lowest verified MCL from 5.792 m to 5.618 m. For the logical uncertainties, the two surrogate-selected cases yielded MCL values of 8.216 and 8.226 m, both below the fourth-smallest value of 8.303 m associated with the fourth-order Wilks criterion for the 153-sample set, although the absolute minimum of 8.111 m remained in the original samples. Joint propagation further produced MCL values lower than those obtained from either isolated physical or logical analyses, indicating a conditional coupling between actuation scenarios and physical variability. The proposed strategy improves adverse-case identification while retaining high-fidelity verification and traceability for reactor safety analysis.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116356978113785856" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106664" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116356978113785856" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="紧凑整体式压水堆小破口事故中功率体积比的长期冷却影响 parametric study on the effect of power-to-volume ratio on long-term core cooling during small-break loss-of-coolant accidents in compact integral pressurized water reactors rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-24 · nakjun choi, hangjin jo 新型反应堆 可验证仿真方法 collapsed water level collapsed water level 按液体体积折算、不含两相膨胀效应的水位。 分开几何缩比和功率密度作用，量化紧凑化的排热代价。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>紧凑整体式压水堆小破口事故中功率体积比的长期冷却影响</h2>
+          <p class="title-en">Parametric study on the effect of power-to-volume ratio on long-term core cooling during small-break loss-of-coolant accidents in compact integral pressurized water reactors</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-24 · Nakjun Choi, HangJin Jo</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MARS-KS在3×3容积/功率矩阵中区分喷放与长期冷却：容积控制库存，q/V控制后期折算水位变化率。</li><li>实施难度：中等至偏高，适合尺度/边界研究。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>分开几何缩比和功率密度作用，量化紧凑化的排热代价。</li></ul></section>
+        <section><h3>不足</h3><ul><li>受控非能动系统条件不代表完整优化后的SMR；原摘要容积比例写法不清，不能自行改成另一个数。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>同功率体积比的不同几何能否保留局部热载荷与长期冷却裕量？</li><li>需破口/PSS输入、尺度准则与水位定义；体积比原文1:4/3须查方法表后使用。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：80/160/240 MWt；3×3矩阵；容积比例原始写法待核；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Collapsed water level<small>Collapsed water level</small></h4><p>按液体体积折算、不含两相膨胀效应的水位。</p><p class="context"><b>本文语境</b> 分开几何缩比和功率密度作用，量化紧凑化的排热代价。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>小型模块堆是大型核电站的替代选项，其设计和安全需要优化。本文用MARS-KS研究整体式PWR型SMR的容器容积及堆芯功率对小破口失冷事故的影响。在非能动安全系统条件受控的情况下，改变容积（原摘要比例为1:1、1:2、1:4/3）及功率80、160和240 MWt，形成3×3参数矩阵。瞬态分为喷放主导期与长期冷却期。喷放期排出冷却剂质量随容积缩放，分别为基准排出质量的51–52%及75–76%；几何缩比使水位下降近似随容积立方根变化，分别为基准降幅81%及91–92%。长期冷却期，折算水位变化率与功率体积比q/V呈线性关系。因此紧凑化通过两条路径影响SBLOCA：容积决定喷放后库存，q/V决定长期冷却。本文量化了SMR后续非能动安全系统尺寸设计需要补偿的紧凑化代价。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Small-modular reactors (SMRs) are alternatives to conventional large nuclear power plants. Consequently, their design characteristics and safety must be optimized. Herein, the effects of reactor vessel volume and core power on small-break loss-of-coolant accident (SBLOCA) in integral pressurized water reactor (iPWR)-type SMRs were investigated using the MARS-KS system code. A 3×3 parametric matrix was developed by varying the vessel volume (1:1, 1:2, and 1:4/3 scale) and core power (80, 160, and 240 MWt) under controlled passive safety system conditions. Governing mechanisms divided the transient into discharge-dominant and long-term cooling phases. During the discharge-dominant phase, the discharged coolant mass scales with the vessel volume (51–52 % and 75–76 % of the baseline discharged mass), whereas the resulting water-level reduction follows a cube-root dependence on the volume due to geometric scaling effects (81 % and 91–92 % of the baseline level drop). During the long-term cooling phase, the collapsed water-level change rate exhibits a linear correlation with the power-to-volume ratio (q/V). Therefore, the reactor compactness influences SBLOCA performance through two mechanisms: the volume determines the coolant inventory remaining after blowdown, whereas q/V governs the long-term cooling behavior. This work quantifies the compactness penalty that a later PSS sizing must compensate for SMRs.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116349397886578688" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104806" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116349397886578688" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="mcgeobridge：有限域内mcnp到gdml的几何语义保持转换 mcgeobridge: a bounded semantics-preserving method for mcnp-to-gdml geometry transfer rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-22 · minjuan liu, guyu deng, lingli song, zhiyi xie, jifeng li 新型反应堆 可验证仿真方法 geometry semantics geometry semantics 几何表达式对点属于哪个材料区域的定义，几何外观相似并不保证一致。 将几何转换支持范围、近似与材料完整性分开报告。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>MCGeoBridge：有限域内MCNP到GDML的几何语义保持转换</h2>
+          <p class="title-en">MCGeoBridge: A bounded semantics-preserving method for MCNP-to-GDML geometry transfer</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-22 · Minjuan Liu, Guyu Deng, Lingli Song, Zhiyi Xie, Jifeng Li</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>在9模型420单元上，以193318个点比较源表达式、内部求值与Geant4分类未见不一致；仅390单元有区分性采样。</li><li>实施难度：中等；工具适配超出纯按钮操作。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将几何转换支持范围、近似与材料完整性分开报告。</li></ul></section>
+        <section><h3>不足</h3><ul><li>有限点检查不等于全域数学证明；不保证未支持语法、全部晶格或材料映射均正确。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>几何共享给RMC/ANSYS时，哪些边界定向检查最能发现薄层和接触间隙丢失？</li><li>检查体积、材料库存、薄层边界及输运响应；保存未支持列表和近似标记。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Geometry semantics<small>Geometry semantics</small></h4><p>几何表达式对点属于哪个材料区域的定义，几何外观相似并不保证一致。</p><p class="context"><b>本文语境</b> 将几何转换支持范围、近似与材料完整性分开报告。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>MCNP 到 Geant4 的几何重用十分困难，因为 MCNP 通过定向曲面的布尔组合来定义区域，而 GDML 则要求在体积层次结构中使用有限实体。本文提出了一种名为 MCGeoBridge 的方法，该方法在输出标准 Geant4 GDML 的同时，保留了 MCNP 单元表达式在声明的有限域内的成员关系。它采用抽象语法树解析、对支持的补集进行保守归一化、对可约化的立方体、圆柱体和球体进行精确的图元恢复，以及对其他由曲面定义的叶节点进行有界布尔形式转换。验证过程结合了语言覆盖率统计、源表达式、转换后的实体以及独立的 Geant4 点分类检查。在九个回归模型和 420 个已解析的单元中，193,318 个全局点、单元局部点和边界指向点在内部评估器和 Geant4 中均与源分类结果一致；在既定协议下，420 个单元中有 390 个单元具有区分性样本。一个包含 70 个中等复杂度卡组的几何去重语料库生成了格式良好的 GDML 代码，其中包含有效的内部引用；近似状态、警告和源材料完整性分别报告。目标加载和导航检查评估了扩展晶格的情况。这些结果支持在声明的有限转换域内，所测试的支持案例的单元几何一致性。</p></div>
+          <div><h3>English abstract</h3><p lang="en">MCNP-to-Geant4 geometry reuse is difficult because MCNP defines regions by Boolean combinations of oriented surfaces, whereas GDML requires finite solids in a volume hierarchy. This work presents MCGeoBridge, a method that preserves MCNP cell-expression membership within a declared finite domain while emitting standard Geant4 GDML. It uses abstract-syntax-tree parsing, conservative normalization of supported complements, exact primitive recovery for reducible boxes, cylinders, and spheres, and bounded Boolean lowering of other surface-defined leaves. Validation combines language-coverage accounting with source-expression, converted-solid, and independent Geant4 point-classification checks. Across nine regression models and 420 resolved cells, 193,318 global, cell-local, and boundary-directed points produced no disagreement with source classification in either the internal evaluator or Geant4; 390 of 420 cells had discriminating samples under the stated protocol. A geometry-deduplicated corpus of 70 medium-complexity decks generated well-formed GDML with valid internal references; approximation status, warnings, and source-material completeness are reported separately. Destination loading and navigation checks assess expanded lattice cases. These results support per-cell geometry agreement for tested supported cases within the declared finite conversion domain.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2113813197346844672" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104773" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2113813197346844672" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="氦氙混合气体在矩形窄缝通道内流动传热特性数值研究  rmc与ansys仿真研究 原子能科学技术 · 2026 · 李长忠 李卓凡 仇子铖 王成龙 秋穗正
+li changzhong;li zhuofan;qiu zicheng;wang chenglong;qiu suizheng(school of nuclear science and technology,xi’an jiaotong university,xi’an 710049,china;state key laboratory of advanced nuclear energy technology,nuclear power institute of china,chengdu 610213,china)  nu nu 努塞尔数，表示对流换热与导热的相对强度。 把工质组成、几何和加热不对称性纳入适用范围比较。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>氦氙混合气体在矩形窄缝通道内流动传热特性数值研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 李长忠 李卓凡 仇子铖 王成龙 秋穗正
+LI Changzhong;LI Zhuofan;QIU Zicheng;WANG Chenglong;QIU Suizheng(School of Nuclear Science and Technology,Xi’an Jiaotong University,Xi’an 710049,China;State Key Laboratory of Advanced Nuclear Energy Technology,Nuclear Power Institute of China,Chengdu 610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>He–Xe矩形窄缝CFD表明，单侧加热允许热流较高；Dittus–Boelter可能高估Nu，氙份额和宽高比增加会降低换热。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把工质组成、几何和加热不对称性纳入适用范围比较。</li></ul></section>
+        <section><h3>不足</h3><ul><li>关联式偏差依赖工况；摘要未给湍流模型和完整验证范围，不能普遍否定该关联式。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>相同压降预算下，He–Xe窄缝的单/双侧热边界怎样改变壁温裕量？</li><li>需核对混合气物性、入口发展长度、网格和实验范围。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：He–Xe矩形窄缝CFD表明，单侧加热允许热流较高；Dittus–Boelter可能高估Nu，氙份额和宽高比增加会降低换热。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Nu<small>Nu</small></h4><p>努塞尔数，表示对流换热与导热的相对强度。</p><p class="context"><b>本文语境</b> 把工质组成、几何和加热不对称性纳入适用范围比较。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>氦氙混合气体在特定比例下传热性能优异、快中子吸收截面低、压缩性能良好,适合作为气冷快堆冷却剂和闭式布雷顿系统循环工质。窄缝通道在堆芯内广泛存在,其内部氦氙混合气体的流动传热特性直接影响反应堆的热工水力行为和系统安全特性。本文基于计算流体力学方法,研究分析了氦氙混合气体在矩形窄缝通道内的流动传热行为。以热工水力性能比为评价指标,探究了热工参数和通道参数,如加热方式、宽高比和粗糙度等,对其流动传热特性的影响。结果表明:窄缝通道单面加热时可承受更高的热流密度;Dittus-Boelter关联式显著高估努塞尔数;氙组分占比和宽高比增加会导致综合传热能力下降,压力则无显著影响;增加粗糙度可以强化换热,但影响程度相对有限。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204099240" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="端壁附面层抽吸在钍基熔盐堆中高负荷氦气压气机中的应用  rmc与ansys仿真研究 工程热物理学报 · 2026 · 田志涛 王馨乐 陈宇阳 辛建池 陆华伟
+tian zhitao;wang xinle;chen yuyang;xin jianchi;lu huawei(school of power and energy,nanchang hangkong university,nanchang 330063,china;naval architecture and ocean engineering college,dalian maritime university,dalian 116026,china)  净效率 净效率 扣除辅助设备能耗后系统有效输出与输入能量之比。 通过抽吸改变局部流动损失。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>端壁附面层抽吸在钍基熔盐堆中高负荷氦气压气机中的应用</h2>
+          
+          <p class="meta">工程热物理学报 · 2026 · 田志涛 王馨乐 陈宇阳 辛建池 陆华伟
+TIAN Zhitao;WANG Xinle;CHEN Yuyang;XIN Jianchi;LU Huawei(School of Power and Energy,Nanchang Hangkong University,Nanchang 330063,China;Naval Architecture and Ocean Engineering College,Dalian Maritime University,Dalian 116026,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>熔盐系统氦压缩机四级高负荷抽吸设计使预测压损降10.47%、压比升约0.13%。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>通过抽吸改变局部流动损失。</li></ul></section>
+        <section><h3>不足</h3><ul><li>抽吸并非免费收益；需要计入抽吸功、流量损失、控制和系统净效率。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>计入抽吸辅助能耗后，最佳抽吸率是否仍改善循环净功？</li><li>需完整质量守恒、压缩机性能图与抽吸边界验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：熔盐系统氦压缩机四级高负荷抽吸设计使预测压损降10.47%、压比升约0.13%。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>净效率<small>净效率</small></h4><p>扣除辅助设备能耗后系统有效输出与输入能量之比。</p><p class="context"><b>本文语境</b> 通过抽吸改变局部流动损失。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>氦气压气机是钍基熔盐反应堆热功转换系统的核心部件,其性能参数的优化对提升整个热功转换系统的安全性与稳定性具有关键作用。氦气压气机的高负荷设计方法有效提高了系统的压比和效率,但易引发静叶角区气流分离。为解决这一问题,本文在四级高负荷氦气压气机上引入附面层抽吸技术,采用数值分析的方法探究抽吸孔的轴向位置、周向位置、抽吸角度对整级压气机的影响。数值研究证实最佳的抽吸位置和角度可以将出口总压损失系数降低10.47%,总压比提升0.13%,可以延缓附面层分离起始点位置并减小角区范围。随着流量增大,压气机的改善效果越显著,其中在近失速点效率和总压比分别改善0.16%和0.052%,在堵塞点效率和总压比提升约0.29%和0.125%。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204620254" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于lbm的熔盐流动数值模拟程序开发与验证  rmc与ansys仿真研究 核技术 · 2026 · 包浩天 伍建辉 李珂欣 王超越 姚泽恩 韦峥 张宇 陈金根 蔡翔舟
+bao haotian;wu jianhui;li kexin;wang chaoyue;yao ze&#x27;en;wei zheng;zhang yu;chen jingen;cai xiangzhou(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;state key laboratory of thorium energy,shanghai 201800,china;school of nuclear science and technology,lanzhou university,lanzhou 730000,china;university of chinese academy of sciences,beijing 100049,china)  bgk bgk 以单松弛时间近似碰撞过程的lbm模型。 检验lbm用于熔盐管流的参数映射与稳定范围。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于LBM的熔盐流动数值模拟程序开发与验证</h2>
+          
+          <p class="meta">核技术 · 2026 · 包浩天 伍建辉 李珂欣 王超越 姚泽恩 韦峥 张宇 陈金根 蔡翔舟
+BAO Haotian;WU Jianhui;LI Kexin;WANG Chaoyue;YAO Ze&#x27;en;WEI Zheng;ZHANG Yu;CHEN Jingen;CAI Xiangzhou(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;State Key Laboratory of Thorium Energy,Shanghai 201800,China;School of Nuclear Science and Technology,Lanzhou University,Lanzhou 730000,China;University of Chinese Academy of Sciences,Beijing 100049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>D2Q9 BGK格子Boltzmann方法在方腔、方柱及MSRE管道101上验证；高Ma容易失稳，与解析对照R²约0.99。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>检验LBM用于熔盐管流的参数映射与稳定范围。</li></ul></section>
+        <section><h3>不足</h3><ul><li>二维流场吻合不等于裂变产物输运已验证；R²不能替代局部误差和守恒检查。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>LBM在低Ma映射约束下是否仍比常规CFD节省总成本？</li><li>核对Re/Ma映射、边界条件、解析解误差及运行成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：D2Q9 BGK格子Boltzmann方法在方腔、方柱及MSRE管道101上验证；高Ma容易失稳，与解析对照R²约0.99。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>BGK<small>BGK</small></h4><p>以单松弛时间近似碰撞过程的LBM模型。</p><p class="context"><b>本文语境</b> 检验LBM用于熔盐管流的参数映射与稳定范围。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>熔盐堆内裂变产物在多相环境下的迁移行为复杂,传统模型难以精准描述。本文旨在开发并验证基于介观格子Boltzmann方法(Lattice Boltzmann Method,LBM)的熔盐流动数值模拟程序,为熔盐堆内裂变产物迁移模拟提供可靠的流场。程序采用D2Q9模型与BGK(Bhatnagar-Gross-Krook)碰撞算子,将熔盐流动拆分为迁移与碰撞。以顶盖驱动流与方柱绕流算例为基准,通过与传统CFD的比对分析,验证了该模型在流动计算问题上的有效性。对熔盐堆实验(Molten Salt Reactor Experiment,MSRE)的燃料盐管道中的101管进行了模拟计算,结果表明:直接映射物理量将由于马赫数(Ma)过高而导致计算不稳定。由此本文进一步提出了基于物理约束的优化计算并扩展至多流速工况,结果表明:所有算例与理论解的决定系数R2均达到0.99,保证了工程尺度LBM计算的稳定性、准确性,为后续开展裂变产物迁移计算提供了可靠的流场基础。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204265770" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="超压工况下flibe熔盐浸渗对t220石墨组件中子学性能的影响  rmc与ansys仿真研究 核技术 · 2026 · 赵宏凯 伍建辉 李晓晓 余呈刚 周俊 陈金根 蔡翔舟
+zhao hongkai;wu jianhui;li xiaoxiao;yu chenggang;zhou jun;chen jingen;cai xiangzhou(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;national key laboratory of thorium energy,shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;university of chinese academy of sciences,beijing 100049,china)  浸渗功率反馈 浸渗功率反馈 盐进入石墨孔隙后改变中子环境与局部能量沉积。 揭示少量盐渗入可引起显著局部沉积变化。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>超压工况下FLiBe熔盐浸渗对T220石墨组件中子学性能的影响</h2>
+          
+          <p class="meta">核技术 · 2026 · 赵宏凯 伍建辉 李晓晓 余呈刚 周俊 陈金根 蔡翔舟
+ZHAO Hongkai;WU Jianhui;LI Xiaoxiao;YU Chenggang;ZHOU Jun;CHEN Jingen;CAI Xiangzhou(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;National Key Laboratory of Thorium Energy,Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;University of Chinese Academy of Sciences,Beijing 100049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>FLiBe渗透T220石墨以多孔模型和OpenMC耦合；400/450/500 kPa对应小质量渗入仍使石墨功率峰值增1.17/4.96/23.9%。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>揭示少量盐渗入可引起显著局部沉积变化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>百分比依赖渗入分布而非仅总质量；必须守恒材料库存，不能只改截面不改密度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>均匀涂抹渗透盐会低估多少石墨局部温差与热应力？</li><li>先核渗透实验、密度/体积/元素库存，再检查计数统计和热传导基准。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：FLiBe渗透T220石墨以多孔模型和OpenMC耦合；400/450/500 kPa对应小质量渗入仍使石墨功率峰值增1.17/4.96/23.9%。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>浸渗功率反馈<small>浸渗功率反馈</small></h4><p>盐进入石墨孔隙后改变中子环境与局部能量沉积。</p><p class="context"><b>本文语境</b> 揭示少量盐渗入可引起显著局部沉积变化。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>熔盐堆中,燃料熔盐与兼具慢化剂及结构材料功能的石墨直接接触。在堆芯运行过程中,熔盐回路或鼓泡系统堵塞可能导致堆内超压,致使熔盐压强超过石墨浸渗压强阈值,造成熔盐向石墨浸渗。浸入石墨内部的燃料熔盐会持续裂变、衰变以及发生中子俘获等中子学反应,影响堆芯的中子学性能。本文基于多孔介质理论的浸渗模型和蒙特卡罗程序OpenMC,建立了熔盐浸渗-中子学耦合方法,探究了熔盐堆堆芯在超压工况(400 kPa、450 kPa、500 kPa)下熔盐向T220石墨组件浸渗至平衡过程中熔盐在石墨内部的分布变化,并揭示了该过程对组件无限介质增殖系数、中子能谱及功率密度分布的影响规律。结果表明:FLiBe熔盐向T220石墨浸渗的质量与熔盐压强、平衡时间相关,三种超压工况下石墨内熔盐浸渗质量最高分别占组件总质量的0.011%、0.037%、0.134%;石墨中功率密度分布及能量沉积占比受渗入质量影响较为显著,三种超压工况下石墨内功率密度峰值相比未浸渗状态分别提高了1.17%、4.96%、23.9%,能量沉积占比相较于未浸渗时分别提高了3.36%、11.79%、40.37%;熔盐浸渗还将导致组件中的中子能谱硬化,致使三种超压工况下组件的无限介质增殖系数分别降低了9×10-4、2×10-3、7.5×10-3。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203638057" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="核热火箭发动机反应堆结构特性分析  rmc与ansys仿真研究 火箭推进 · 2024 · 赵润喆 吕征 解家春 霍红磊
+zhao runzhe;lyu zheng;xie jiachun;huo honglei(research institute of reactor engineering technology,china institute of atomic energy,beijing 102413,china)  cermet cermet 由陶瓷燃料与金属基体构成的复合燃料体系。 把发射力学环境和高温服役要求同时纳入设计背景。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>核热火箭发动机反应堆结构特性分析</h2>
+          
+          <p class="meta">火箭推进 · 2024 · 赵润喆 吕征 解家春 霍红磊
+ZHAO Runzhe;LYU Zheng;XIE Jiachun;HUO Honglei(Research Institute of Reactor Engineering Technology,China Institute of Atomic Energy,Beijing 102413,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-07；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2024年核热推进结构综述对比NERVA I/II及CERMET燃料结构与载荷问题。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把发射力学环境和高温服役要求同时纳入设计背景。</li></ul></section>
+        <section><h3>不足</h3><ul><li>综述中的不同堆型设计不能拼成同一验证算例，公开参数完整性需先核。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>能否用一个公开组件量化发射约束简化对高温应力预测的影响？</li><li>先取得可追溯几何、材料和约束；无公开试验时明确仅做数值验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2024年核热推进结构综述对比NERVA I/II及CERMET燃料结构与载荷问题。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>CERMET<small>CERMET</small></h4><p>由陶瓷燃料与金属基体构成的复合燃料体系。</p><p class="context"><b>本文语境</b> 把发射力学环境和高温服役要求同时纳入设计背景。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核热火箭具有推力大、比冲高的特点,在长距离、高载荷的空间任务中相较常规推进方式具有巨大优势。与地面常规反应堆相比,核热火箭反应堆尺寸、质量要求严格,同时运行温度高,热应力大,还需承受发射时的恶劣力学环境,因而需要合理稳固的结构设计。基于此需求开展调研总结,主要整理了美国NERVA-I型、NERVA-II型和CERMET燃料核热火箭反应堆的结构设计,梳理核热火箭反应堆典型结构设计,总结国外设计经验,为核热火箭方案迭代与实现提供参考。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7112880693" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>高温气冷小型堆与大型压水堆后端燃料循环指标比较：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>120–150 GWd/MTU和15–17 wt%仅为假设下指示区间，不是所有堆可行或许可推荐。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>后端热分析若按单位重金属或整块石墨归一化，储存热点评价有何差别？</li><li>建议RMC燃耗/核素源项与Mechanical储存导热分开验证，保持发电量和库存归一化一致。</li><li>需核素清单、燃耗历史和衰变库；对照公开后端数据，不能只看单一指标。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Quantitative evaluation of backend nuclear fuel cycle metrics for an HTGR-based SMR compared with a conventional large PWR | 10.1016/j.pnucene.2026.106668</li><li>SCALE 6.3.1燃料柱代理比较质量、体积、衰变热、活度和毒性；HTGR乏燃料质量可较低但含石墨体积更大，指标更敏感于燃耗。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>氦氙混合气体在矩形窄缝通道内流动传热特性数值研究：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>关联式偏差依赖工况；摘要未给湍流模型和完整验证范围，不能普遍否定该关联式。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>相同压降预算下，He–Xe窄缝的单/双侧热边界怎样改变壁温裕量？</li><li>Fluent求壁面温度和换热，再将非均匀温度传入Mechanical。</li><li>需核对混合气物性、入口发展长度、网格和实验范围。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>氦氙混合气体在矩形窄缝通道内流动传热特性数值研究 | </li><li>He–Xe矩形窄缝CFD表明，单侧加热允许热流较高；Dittus–Boelter可能高估Nu，氙份额和宽高比增加会降低换热。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>后端热分析若按单位重金属或整块石墨归一化，储存热点评价有何差别？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>建议RMC燃耗/核素源项与Mechanical储存导热分开验证，保持发电量和库存归一化一致。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>需核素清单、燃耗历史和衰变库；对照公开后端数据，不能只看单一指标。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.pnucene.2026.106668" target="_blank" rel="noopener">Quantitative evaluation of backend nuclear fuel cycle metrics for an HTGR-based SMR compared with a conventional large PWR（Pub Date : 2026-10-24）↗</a><p>SCALE 6.3.1燃料柱代理比较质量、体积、衰变热、活度和毒性；HTGR乏燃料质量可较低但含石墨体积更大，指标更敏感于燃耗。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
