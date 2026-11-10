@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-11-06 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-11-06 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-11-06</strong><span>本期日期</span></div><div class="stat"><strong>4</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>6</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 10</button><button data-filter="xmol">X-MOL 4</button><button data-filter="cqvip">维普 6</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">回溯归档批次2026-11-06；实际检索、摘要核验、翻译和整理均在2026-11-10。本期英文4篇、中文6篇；英文低于每日10–15篇目标，保留6篇缺额；中文达到5–10篇目标。英文来源窗口2026-10-12至11-10，并按来源标注日期不晚于归档日分配。不是在该日执行的阅读，也不是当天新发清单。较早中文文献逐篇标为历史方法/实验基线。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="中子符合环对先进堆新制haleu燃料核保障测量的性能评价 performance assessment of neutron coincidence collars for safeguards measurements of fresh high-assay low-enriched uranium advanced reactor fuels rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-29 · donny hartanto, jianwei hu, robert mcelroy jr. 新型反应堆 可验证仿真方法 nondestructive assay (nda) nondestructive assay (nda) 不破坏对象而测量核材料含量或性质的分析手段。 对三类先进燃料形态作共同筛查，指出现有仪器不可普遍直接迁移。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>中子符合环对先进堆新制HALEU燃料核保障测量的性能评价</h2>
+          <p class="title-en">Performance assessment of neutron coincidence collars for safeguards measurements of fresh high-assay low-enriched uranium advanced reactor fuels</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-29 · Donny Hartanto, Jianwei Hu, Robert McElroy Jr.</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>MCNP比较DOE先进堆项目10种设计中7种的符合环响应；几何、慢化与燃料形态使部分方案灵敏度不足。</li><li>实施难度：偏高；仪器响应与符合统计门槛较高。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>对三类先进燃料形态作共同筛查，指出现有仪器不可普遍直接迁移。</li></ul></section>
+        <section><h3>不足</h3><ul><li>具体HALEU几何和测量能力需原文；这不是提高富集度的设计建议，也不是全部先进堆核保障失败。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>燃料形态与探测器几何不匹配对响应可辨识性影响有多大？</li><li>需探测器响应函数、计数不确定性及实验；保持核保障研究边界。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：7/10种先进堆设计、HALEU 5–20 wt% ²³⁵U；具体燃料/仪器尺寸待核；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Nondestructive assay (NDA)<small>Nondestructive assay (NDA)</small></h4><p>不破坏对象而测量核材料含量或性质的分析手段。</p><p class="context"><b>本文语境</b> 对三类先进燃料形态作共同筛查，指出现有仪器不可普遍直接迁移。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>先进反应堆（AR）燃料元件在尺寸、成分和形状上与轻水反应堆（LWR）燃料显著不同，许多AR燃料元件采用高丰度低浓铀（HALEU，5–20 wt% 235U），这给将现有的无损检测（NDA）国际保障监督验证仪器应用于新的AR燃料元件带来了潜在挑战。我们利用蒙特卡罗N粒子模型，模拟了铀中子符合环II和快中子环的探测方法，评估了现有中子环技术对AR燃料元件的适用性。这些模型选取了美国能源部先进反应堆示范计划支持的10种设计中的7种，该计划为三种不同的AR燃料元件提供了通用的筛选比较。我们通过用贫铀替代燃料中的HALEU来模拟部分缺陷情况。相对于轻水堆组件，几种AR几何形状与探测器设计不兼容，导致响应较低，对富集度/可裂变物含量的灵敏度较弱，并且某些设计对部分缺陷的探测能力下降。灵敏度随燃料形态、慢化剂和元件尺寸的变化而显著变化。在某些情况下，如果没有特定设计的夹具或改进的操作模式，环状装置的响应不足以进行可靠的富集度验证或部分缺陷检测。这些发现表明，基于环状装置的验证方法并非普遍适用于AR燃料，某些类型的燃料需要采用替代或经过大幅改进的NDA方法。因此，需要尽早进行开发和鉴定，以满足保障监督的时间要求。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Advanced reactor (AR) fuel elements differ markedly from light water reactor (LWR) fuels in size, composition, and form, and many employ high-assay low-enriched uranium (HALEU, 5–20 wt % 235U), creating potential challenges in applying existing nondestructive assay (NDA) international safeguards verification instruments to fresh AR fuel elements. We evaluated the applicability of existing neutron collar technologies to AR fuel elements using Monte Carlo N-Particle models of Uranium Neutron Coincidence Collar-II and Fast Neutron Collar interrogations for elements representative of 7 of the 10 designs supported by the US DOE Advanced Reactor Demonstration Program, which provides a common screening comparison across three different AR fuel forms. Partial defect scenarios were simulated by substituting HALEU in the fuel with depleted uranium. Relative to LWR assemblies, several AR geometries were incompatible with detector designs and produced lower responses, yielding weak sensitivity to enrichment/fissile content and degraded detectability of partial defects for some designs. Sensitivities varied strongly with fuel form, moderation, and element dimensions. In several cases the collars’ responses were insufficient for reliable enrichment verification or partial defect detection without design-specific fixtures or modified operating modes. These findings indicate that collar-based verification is not universally transferable to AR fuels, and that alternative or significantly adapted NDA approaches will be required for some fuel types. Early development and qualifications are therefore needed to meet safeguards timelines.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2119659247068524544" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104809" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2119659247068524544" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="pratic小型堆启动循环的serpent2与cms5燃耗建模比较 serpent2 and cms5 depletion modelling of the pratic smr startup core benchmark rmc与ansys仿真研究 annals of nuclear energy · 2026-10-29 · jean-baptiste schuler, romain vuiart, franck bernard 新型反应堆 可验证仿真方法 energy condensation energy condensation 把细能群截面按谱加权合并成少群截面的处理。 区分能量处理、各向异性、节点扩散及反射层边界误差。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>PRATIC小型堆启动循环的SERPENT2与CMS5燃耗建模比较</h2>
+          <p class="title-en">SERPENT2 and CMS5 depletion modelling of the PRATIC SMR startup core benchmark</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-10-29 · Jean-Baptiste Schuler, Romain Vuiart, Franck Bernard</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>CMS5与SERPENT2从组件到全堆芯燃耗对照；钆耗尽期差异最大，2D约385 pcm、3D约600 pcm，增加能群/细化凝聚不能消除。</li><li>实施难度：中等至偏高，先组件避免全堆燃耗高成本。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>区分能量处理、各向异性、节点扩散及反射层边界误差。</li></ul></section>
+        <section><h3>不足</h3><ul><li>蒙卡不是无偏实验真值；准临界构型沿用SIMULATE5棒位，比较并不完全独立。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>钆燃耗期误差中，截面凝聚、泄漏边界和空间近似各贡献多少？</li><li>取得相同装载、可燃毒物及棒位；分开统计误差、燃耗步长和核库。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：586/95和586/19群、P3、2/4/8堆芯能群、钆耗尽区及反射层边界；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Energy condensation<small>Energy condensation</small></h4><p>把细能群截面按谱加权合并成少群截面的处理。</p><p class="context"><b>本文语境</b> 区分能量处理、各向异性、节点扩散及反射层边界误差。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>无可溶硼SMR堆芯依赖可燃吸收体和控制棒管理反应性，燃耗预测因此对中子学近似敏感。本文将两步CMS5确定论系统与连续能SERPENT2模型对照，覆盖PRATIC启动循环的组件到三维全芯燃耗。考虑全棒提出与准临界构型；后者将SIMULATE5的临界插棒位置施加到SERPENT2模型。考察能量凝聚和散射各向异性阶数。无限介质组件计算中P3散射已足够，CASMO5在586/95群达到能量收敛，相较586/19群的改善主要限于钆耗尽窗口。全芯尺度进一步细化超过586/19群的凝聚，对CASMO5 MxN及SIMULATE5截面生成无收益。SIMULATE5取决于堆芯能群数，4群与8群较接近，在循环初末比2群更接近SERPENT2。钆耗尽期的最大反应性差异在二维CASMO5 MxN约385 pcm，三维SIMULATE5约600 pcm，后者含额外节点扩散近似；更细凝聚或更多堆芯能群均未降低差异。黑反射层边界结果系统性地比无限反射层更接近SERPENT2。该蒙卡模型为PRATIC比较提供基线，也展示全芯蒙卡燃耗的计算限制。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Soluble-boron-free SMR cores rely strongly on burnable absorbers and control rods for reactivity management, making depletion predictions particularly sensitive to neutronic modelling approximations. This work compares the two-step CMS5 deterministic code system with a continuous-energy SERPENT2 Monte Carlo model of the PRATIC startup cycle, from assembly to three-dimensional full-core depletion. Both All Rods Out and pseudo-critical configurations are considered; in the latter, SIMULATE5 critical rod insertions are imposed on the SERPENT2 model. The deterministic energy condensation and scattering anisotropy order are investigated. At the infinite-medium assembly level, P3 scattering is sufficient and CASMO5 is converged in energy at 586/95 groups, the gain over 586/19 groups being mainly confined to the gadolinium depletion window. At the core scale, refining the condensation beyond 586/19 groups brings no benefit for the CASMO5 MxN calculation or for SIMULATE5 cross-section generation. The SIMULATE5 solution is driven by the number of energy groups at the core scale: four- and eight-group results agree closely and are closer to SERPENT2 than two-group results at beginning and end of cycle. The largest reactivity discrepancies with SERPENT2 occur during gadolinium depletion, reaching about 385 pcm in 2D CASMO5 MxN and 600 pcm in 3D SIMULATE5, the latter reflecting the additional nodal diffusion approximation. They are reduced neither by finer condensation nor by more core groups. The black reflector boundary condition lies systematically closer to SERPENT2 than the infinite reflector. The SERPENT2 model provides a comparison basis for the PRATIC benchmark and illustrates the computational constraints of full-core Monte Carlo depletion.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>曾解析到开放全文候选；本轮复查遇TLS/连接中断，尚未取得可验证PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2116347056043077632" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112950" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116347056043077632" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="巴基斯坦1号研究堆运行历史相关的蒙卡多循环燃耗分析 operational history-dependent monte carlo multi-cycle depletion analysis of pakistan research reactor-1 rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-26 · muhammad ahsan, muhammad sajjad, tayyab mahmood, muhammad rizwan ali 新型反应堆 可验证仿真方法 calculated-to-experimental ratio (c/e) calculated-to-experimental ratio (c/e) 计算结果与实验测量之比，接近1并须同时考虑两方不确定性。 显式处理多装载历史，避免统一轴向燃耗和均匀化结构假设。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>巴基斯坦1号研究堆运行历史相关的蒙卡多循环燃耗分析</h2>
+          <p class="title-en">Operational History-Dependent Monte Carlo Multi-Cycle Depletion Analysis of Pakistan Research Reactor-1</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-26 · Muhammad Ahsan, Muhammad Sajjad, Tayyab Mahmood, Muhammad Rizwan Ali</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>OpenMC保留逐燃料辐照历史，与运行测量及WIMS/CITATION比较；93装载反应性等偏差+61、−77、−16 pcm，93-A燃料通量C/E=0.72–1.13。</li><li>实施难度：偏高；历史数据常是瓶颈。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>显式处理多装载历史，避免统一轴向燃耗和均匀化结构假设。</li></ul></section>
+        <section><h3>不足</h3><ul><li>“首个”是作者表述，未作独立穷尽查新；0.72的局部C/E偏差不可被全局量吻合掩盖。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>逐燃料历史简化对局部功率峰和后续结构热载荷的影响多大？</li><li>需真实换料、停堆和功率历史；留出装载验证，不重复用标定数据当预测。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：几何、材料、边界及模型参数需阅读全文核对；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Calculated-to-experimental ratio (C/E)<small>Calculated-to-experimental ratio (C/E)</small></h4><p>计算结果与实验测量之比，接近1并须同时考虑两方不确定性。</p><p class="context"><b>本文语境</b> 显式处理多装载历史，避免统一轴向燃耗和均匀化结构假设。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>巴基斯坦研究堆-1 (PARR-1) 是一座材料试验堆 (MTR)，已使用确定性反应堆物理代码对其进行了广泛的分析。尽管一些研究已通过蒙特卡罗模型进行，但由于一些简化假设（例如外部多群燃耗、均匀化结构区域和均匀轴向燃耗假设）而受到限制。本研究利用 OpenMC 代码，开发了首个高保真度、三维、与运行历史相关的 PARR-1 蒙特卡罗模型，以弥补这些不足。本研究考虑了三种堆芯装药方案：首个低浓缩铀 (LEU) 高功率堆芯、93 号堆芯和 93-A 号堆芯。模拟结构旨在模拟实际运行程序。本研究进行了全面的三方基准测试，将 OpenMC 的预测结果与已有的实测运行数据和 WIMS/CITATION 确定性计算结果进行了比较。对于堆芯装载93，采用实验评价方法得到的OpenMC预测结果与测量结果吻合良好，超额反应性、停堆裕度和控制棒综合反应性价值的偏差分别为+61 pcm、-77 pcm和-16 pcm。计算得到的堆芯装载93-A的热中子通量分布与测量的空间趋势一致，燃料元件C/E比值在0.72至1.13之间。燃耗计算结果也重现了已报道的U-235在连续堆芯装载过程中的燃耗演化。总体而言，所建立的模型保留了燃料特定的辐照历史，并重现了PARR-1在多种运行工况下的中子行为。本研究建立了一个经过验证的、连续能量蒙特卡罗输运-燃耗框架，用于PARR-1多循环分析。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Pakistan Research Reactor-1 (PARR-1) is a Material Testing Reactor (MTR) that has been extensively analyzed using deterministic reactor physics codes. Although some studies have been performed through Monte Carlo models but they were limited by simplifications, such as external multi-group depletion, homogenized structural regions, and uniform axial burnup assumptions. This work addresses these gaps by developing the first high-fidelity, three-dimensional, operational history-dependent Monte Carlo model of PARR-1 using OpenMC code. Three core loadings considered in this work are the first Low-Enriched Uranium (LEU) based high power core, core loadings 93 and 93-A. Simulations were structured to mirror the physical operational procedures. A comprehensive three-way benchmarking was performed, evaluating OpenMC predictions against available measured operational data and WIMS/CITATION deterministic calculations. For Core Loading 93, the OpenMC predictions obtained using the experimental evaluation methodology agree closely with measurements, with differences of +61 pcm, -77 pcm, and -16 pcm for excess reactivity, shutdown margin, and combined control rod reactivity worth, respectively. The calculated thermal neutron flux distribution for Core Loading 93-A reproduces the measured spatial trends, with fuel-element C/E ratios ranging from 0.72 to 1.13. The depletion calculations also reproduce the reported U-235 burnup evolution across successive core loadings. Overall, the developed model preserves fuel-specific irradiation histories and reproduces the neutronic behavior of PARR-1 across multiple operational configurations. This study establishes a validated, continuous-energy Monte Carlo transport-depletion framework for multi-cycle PARR-1 analysis.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>本轮合法OA与SI检索未取得可验证PDF；不代表不存在开放版本</p>
+      <footer><a href="https://www.x-mol.com/paper/2116349398620581888" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104807" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116349398620581888" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="pragma评价无可溶硼小型堆的停堆能力 evaluation of the shutdown capability of a soluble boron-free small modular reactor by pragma rmc与ansys仿真研究 nuclear engineering and technology · 2026-10-24 · ikje noh, hyung jin shim 新型反应堆 可验证仿真方法 shutdown margin (sdm) shutdown margin (sdm) 停堆状态维持次临界的反应性裕量，定义和不确定性处理须一致。 对照直接keff与传统pwr反应性平衡中的不确定性约定，并考虑吸收体燃耗。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span><span>新型反应堆</span><span>可验证仿真方法</span></div>
+          <h2>PRAGMA评价无可溶硼小型堆的停堆能力</h2>
+          <p class="title-en">Evaluation of the shutdown capability of a soluble boron-free small modular reactor by PRAGMA</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-10-24 · Ikje Noh, Hyung Jin Shim</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际检索、摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>PRAGMA比较BANDI-60静态冷却情景，BOC均匀CZP最限制；直接keff=0.9819，对应SDM 1.85%Δρ，名义满足0.99参考准则。</li><li>实施难度：中等至偏高，不宜首题直接做许可评价。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>对照直接keff与传统PWR反应性平衡中的不确定性约定，并考虑吸收体燃耗。</li></ul></section>
+        <section><h3>不足</h3><ul><li>名义满足不等于含全部不确定性仍满足；不能将10%棒价值裕量视为无意义冗余。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确提出未来工作；以下建议为阅读分析。</li></ul><b>分析推导</b><ul><li>控制棒燃耗、几何热变形与核数据不确定性联合计入后，剩余停堆裕量多少？</li><li>一致的限值/置信度、统计误差和最不利棒假设；局部B-10燃耗需轴向分区。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数线索：BANDI-60、BOC/CZP、keff及轴向B-10耗损；建议核对方法、验证工况、原始数据和不确定性。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Shutdown margin (SDM)<small>Shutdown margin (SDM)</small></h4><p>停堆状态维持次临界的反应性裕量，定义和不确定性处理须一致。</p><p class="context"><b>本文语境</b> 对照直接keff与传统PWR反应性平衡中的不确定性约定，并考虑吸收体燃耗。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>无可溶硼堆芯具有较强负慢化剂温度系数，过冷会引入较大正反应性。没有可溶硼时，控制元件组件CEA须在停堆冷却期间独自维持次临界，因此完全插棒后的停堆裕量SDM是关键指标。本文以GPU蒙卡程序PRAGMA评价BANDI-60。静态研究的均匀和非对称冷却中，循环初BOC的均匀冷零功率CZP最限制。以传统PWR反应性平衡和类似BWR的直接keff评价两种框架计算，因为停堆功能由CEA承担。直接keff为0.9819，SDM为1.85%Δρ，名义比较满足参考准则keff&lt;0.99；反应性平衡仅因10%紧急停堆棒价值裕量这一PWR不确定性惯例而未满足准则。三个循环的CEA燃耗最多使SDM降低0.12%Δρ，但调节组底部四分之一段的B-10在一个循环内耗损32%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Soluble boron-free (SBF) cores exhibit a strongly negative moderator temperature coefficient, inserting a large positive reactivity during overcooling events. Without soluble boron, the control element assemblies (CEAs) alone must hold the core subcritical throughout the post-trip cooldown, making the shutdown margin (SDM) after complete rod insertion the key measure of shutdown capability. This study evaluates the SDM of the SBF BANDI-60 core with the GPU-based Monte Carlo code PRAGMA. Among the uniform and asymmetric cooldowns investigated in static calculations, the uniform cold zero power (CZP) state at the beginning of cycle (BOC) is limiting. The SDM at this state is evaluated in two frameworks: the reactivity balance of conventional PWRs and the direct evaluation of the effective multiplication factor (keff) as in boiling water reactors (BWRs), whose shutdown function the CEAs serve. The directly evaluated keff is 0.9819, an SDM of 1.85%Δρ, satisfying the reference acceptance criterion keff &lt; 0.99 in a nominal comparison; the reactivity balance falls short of the criterion only through its 10% scram-worth allowance, a PWR uncertainty convention. CEA depletion reduces the SDM by at most 0.12%Δρ over three cycles but drives the B-10 depletion of the regulating group&#x27;s bottom quarter to 32% within one cycle.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：&#x27;NoneType&#x27; object is not subscriptable</p>
+      <footer><a href="https://www.x-mol.com/paper/2116349394036207616" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104799" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2116349394036207616" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于rmc的cabri-like基准题计算研究  rmc与ansys仿真研究 强激光与粒子束 · 2026 · 李嘉懿 刘仕倡 夏羿
+li jiayi;liu shichang;xia yi(school of nuclear science and engineering,north china electric power university,beijing 102206,china;nuclear power institute of china,chengdu 610213,china)  tms tms 输运计算中的温度处理方法；具体实现依rmc版本核对。 形成快速反应性瞬态中功率—温度反馈的计算路线。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于RMC的CABRI-like基准题计算研究</h2>
+          
+          <p class="meta">强激光与粒子束 · 2026 · 李嘉懿 刘仕倡 夏羿
+Li Jiayi;Liu Shichang;Xia Yi(School of Nuclear Science and Engineering,North China Electric Power University,Beijing 102206,China;Nuclear Power Institute of China,Chengdu 610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>RMC的CABRI-like模型采用CSG几何、空间—时间动力学及TMS温度反馈；Python将实时功率转换为温度，模拟氦-3减压引入反应性的瞬态。</li><li>实施难度：中等至偏高；模块和瞬态基准是前提。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>形成快速反应性瞬态中功率—温度反馈的计算路线。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要没有给出数值误差和完整瞬态结果；只能作为方法路线阅读，不能称已达到实验精度。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>燃料温度空间平均与分区映射对功率脉冲峰值的差别有多大？</li><li>先取得CABRI-like定义和测量/参考结果，报告时间步、统计误差及温度映射守恒。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：RMC的CABRI-like模型采用CSG几何、空间—时间动力学及TMS温度反馈；Python将功率转换为温度，比较三种氦气压力瞬态。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>TMS<small>TMS</small></h4><p>输运计算中的温度处理方法；具体实现依RMC版本核对。</p><p class="context"><b>本文语境</b> 形成快速反应性瞬态中功率—温度反馈的计算路线。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>CABRI研究堆是位于CEA Cadarache的一座池式压水堆,该堆配备独特的He3瞬态棒系统,可通过快速减压引入剧烈反应性变化,产生与压水堆反应性引入事故(RIA)特征高度相似的极端功率脉冲,是国际上开展燃料瞬态行为研究的重要实验平台。本研究采用国产自主化蒙特卡罗粒子输运程序RMC,针对CABRIlike基准题堆芯结构开展了CSG几何建模与瞬态核热耦合计算,旨在提供一套基于RMC的独立数值结果,并与国际同类型程序的计算数据进行交叉对比,以验证基准题设置的合理性及结果的一致性。计算中,采用RMC时空动力学模块模拟He3减压引入反应性所引发的功率与温度随时间演化及径向分布,通过Python脚本将实时功率转化为燃料温度变化,并结合内置的TMS温度-截面反馈算法实现核热耦合,从而捕捉反应性引入期间因功率骤升导致的燃料温升、截面变化以及多普勒效应引发的功率偏移。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204057831" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于灵敏度/不确定度方法的快中子裂变的衰变热不确定度分析  rmc与ansys仿真研究 原子能科学技术 · 2024 · 王凤龙 杨勇 黄小龙
+wang fenglong;yang yong;huang xiaolong(department of nuclear engineering design,china institute of atomic energy,beijing 102413,china;department of nuclear physics,china institute of atomic energy,beijing 102413,china)  衰变热包络 衰变热包络 覆盖给定数据和假设不确定性的衰变热时间曲线范围。 指出衰变热的不确定性具有时间相关性，不能全时段用单一比例。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于灵敏度/不确定度方法的快中子裂变的衰变热不确定度分析</h2>
+          
+          <p class="meta">原子能科学技术 · 2024 · 王凤龙 杨勇 黄小龙
+WANG Fenglong;YANG yong;HUANG Xiaolong(Department of Nuclear Engineering Design,China Institute of Atomic Energy,Beijing 102413,China;Department of Nuclear Physics,China Institute of Atomic Energy,Beijing 102413,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2024年快裂变衰变热研究考察U-235/Pu-239灵敏度与不确定性；早期及极晚期误差较大，中间阶段较小。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>指出衰变热的不确定性具有时间相关性，不能全时段用单一比例。</li></ul></section>
+        <section><h3>不足</h3><ul><li>来源纯文本的时间指数格式丢失，未据此复述精确时标；需查PDF确认。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>非能动排热温度裕量对不同时间相关衰变热包络有多敏感？</li><li>核对核素、裂变谱、时间单位及协方差，并比较积分能量。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2024年快裂变衰变热研究考察U-235/Pu-239灵敏度与不确定性；早期及极晚期误差较大，中间阶段较小。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>衰变热包络<small>衰变热包络</small></h4><p>覆盖给定数据和假设不确定性的衰变热时间曲线范围。</p><p class="context"><b>本文语境</b> 指出衰变热的不确定性具有时间相关性，不能全时段用单一比例。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对传统轻水堆衰变热的计算标准不适用于快堆的问题,为此,本文采用灵敏度/不确定度(S/U)方法,在分析衰变热计算过程中由于核数据引入的不确定度的基础上,开展了快中子裂变的裂变产物衰变热不确定度计算方法研究,得到了1~1013 s时间范围内235U和239Pu的快中子裂变产物衰变热不确定度及其与半衰期、平均能量、裂变产额、分支比不确定度的关系。结果表明,在1~103 s以及108~1010 s时间范围内,235U和239Pu的快中子裂变产物衰变热不确定度为2%~10%;在103~108 s时间范围内,衰变热不确定度小于2%。本文建立的235U和239Pu的快中子裂变产物衰变热不确定度分析的方法流程以及不确定度标准数据,为后续钠冷快堆、铅冷快堆和气冷快堆衰变热的不确定度分析评价奠定了基础。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7113559558" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于pybind11的铅冷快堆核热耦合方法  rmc与ansys仿真研究 原子能科学技术 · 2026 · 王昌 魏经国 董思凡 张克凡 陈红丽
+wang chang;wei jingguo;dong sifan;zhang kefan;chen hongli(school of nuclear science and technology,university of science and technology of china,hefei 230026,china)  pybind11 pybind11 用于连接c++与python的绑定工具。 减少跨程序数据传递开销，形成系统耦合框架。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于Pybind11的铅冷快堆核热耦合方法</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 王昌 魏经国 董思凡 张克凡 陈红丽
+WANG Chang;WEI Jingguo;DONG Sifan;ZHANG Kefan;CHEN Hongli(School of Nuclear Science and Technology,University of Science and Technology of China,Hefei 230026,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>铅冷堆研究以Pybind11连接OpenMC、KMC-FBc与PKincore，采用内存/API交换并开展稳态和瞬态校核。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>减少跨程序数据传递开销，形成系统耦合框架。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未披露全部误差和基准细节；“建立接口”已存在，不能单独声称创新。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>耦合收敛容差是否比接口传输方式更决定局部温度和功率误差？</li><li>逐模块独立验证，记录总功率守恒、迭代残差和墙钟成本。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：铅冷堆研究以Pybind11连接OpenMC、KMC-FBc与PKincore，采用内存/API交换并开展稳态和瞬态校核。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>Pybind11<small>Pybind11</small></h4><p>用于连接C++与Python的绑定工具。</p><p class="context"><b>本文语境</b> 减少跨程序数据传递开销，形成系统耦合框架。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为满足铅冷快堆堆芯核热耦合计算的需求,本文基于Pybind11对蒙特卡罗程序OpenMC进行封装,利用其轻量高效的C++与Python无缝交互能力,实现跨语言的API调用与内存数据传递。在此基础上,将OpenMC与pin级全堆芯子通道程序KMC-FBc以及点堆动力学模型PK以内耦合方式集成,开发了核热耦合程序OpenMC/KMC-FBc/PK。该框架在保持蒙特卡罗与子通道计算精度的同时,引入点堆动力学模型用于高效求解堆芯瞬态功率变化。为了验证所提出的方法,进行了稳态和瞬态耦合计算,结果表明所开发的耦合计算程序有效可靠,能够准确描述堆芯功率分布和局部热工特性。本文开发的程序可为铅冷快堆的性能评估和安全分析提供可靠工具。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204289617" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于bamboo-lattice的双类型弥散颗粒燃料计算方法  rmc与ansys仿真研究 原子能科学技术 · 2025 · 袁安民 吴宏春 李云召 朱彤 于宾跃 方思聪 曲鸣 曹良志
+yuan anmin;wu hongchun;li yunzhao;zhu tong;yu binyue;fang sicong;qu ming;cao liangzhi(xi’an jiaotong university,xi’an 710049,china;research institute of nuclear power operations,wuhan 430000,china)  双重非均匀性 双重非均匀性 颗粒内细观结构与组件宏观结构共同影响输运的现象。 直接处理分层颗粒及双重非均匀性。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>基于Bamboo-Lattice的双类型弥散颗粒燃料计算方法</h2>
+          
+          <p class="meta">原子能科学技术 · 2025 · 袁安民 吴宏春 李云召 朱彤 于宾跃 方思聪 曲鸣 曹良志
+YUAN Anmin;WU Hongchun;LI Yunzhao;ZHU Tong;YU Binyue;FANG Sicong;QU Ming;CAO Liangzhi(Xi’an Jiaotong University,Xi’an 710049,China;Research Institute of Nuclear Power Operations,Wuhan 430000,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2025年Bamboo-Lattice以在线子群、Sanchez–Pomraning和MOC处理燃料/毒物双颗粒；自屏截面最大差异小于5%、keff小于300 pcm。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>直接处理分层颗粒及双重非均匀性。</li></ul></section>
+        <section><h3>不足</h3><ul><li>300 pcm及5%仅限所测体系，不能证明所有局部反应率或燃耗准确。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>同等keff精度的均匀化模型能否保持颗粒层内功率和毒物消耗？</li><li>固定颗粒库存和布局统计，分别检验反应率、层内通量与keff。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2025年Bamboo-Lattice以在线子群、Sanchez–Pomraning和MOC处理燃料/毒物双颗粒；自屏截面最大差异小于5%、keff小于300 pcm。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>双重非均匀性<small>双重非均匀性</small></h4><p>颗粒内细观结构与组件宏观结构共同影响输运的现象。</p><p class="context"><b>本文语境</b> 直接处理分层颗粒及双重非均匀性。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为了精确处理弥散颗粒燃料中燃料颗粒与可燃毒物颗粒共存时强烈的双重非均匀效应,本文基于Bamboo-Lattice程序,结合在线子群方法和Sanchez-Pomraning方法进行共振自屏计算,利用Sanchez-Pomraning方法和特征线方法(MOC)直接求解考虑弥散颗粒分层结构的中子输运方程,获取颗粒各层的中子通量信息和系统有效增殖因数(keff)。数值验证结果表明,与蒙特卡罗程序相比,本文方法计算得到的有效自屏截面最大相对偏差小于5%,keff最大偏差小于300 pcm。本文方法能有效处理弥散颗粒燃料中因燃料颗粒和可燃毒物颗粒共存时强烈的双重非均匀效应,为复杂弥散颗粒燃料组件的设计与分析提供了一种可靠的计算工具。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202327936" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="三维特征线中子学计算程序shark用于华龙一号堆芯建模和启动试验验证  rmc与ansys仿真研究 核动力工程 · 2024 · 王博 赵文博 张宏博 赵晨 陈长 刘琨 张乐瑞 宫兆虎 曾未 李庆
+wang bo;zhao wenbo;zhang hongbo;zhao chen;chen zhang;liu kun;zhang lerui;gong zhaohu;zeng wei;li qing(science and technology on reactor system design technology laboratory,nuclear power institute of china,chengdu,610213,china)  积分棒价值 积分棒价值 控制棒从一位置移动到另一位置造成的累计反应性变化。 将三维moc从理想基准推进到实际堆芯启动数据。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>三维特征线中子学计算程序SHARK用于华龙一号堆芯建模和启动试验验证</h2>
+          
+          <p class="meta">核动力工程 · 2024 · 王博 赵文博 张宏博 赵晨 陈长 刘琨 张乐瑞 宫兆虎 曾未 李庆
+Wang Bo;Zhao Wenbo;Zhang Hongbo;Zhao Chen;Chen Zhang;Liu Kun;Zhang Lerui;Gong Zhaohu;Zeng Wei;Li Qing(Science and Technology on Reactor System Design Technology Laboratory,Nuclear Power Institute of China,Chengdu,610213,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2024年SHARK三维MOC用华龙一号启动物理试验验证临界keff、控制棒积分价值及组件功率分布。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将三维MOC从理想基准推进到实际堆芯启动数据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要仅称符合良好，未给完整偏差及测量不确定性；工业数据不一定公开。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>同样的临界误差下，棒价值和组件功率哪项更能识别空间离散不足？</li><li>取得原文误差表和数据授权，分开反应性、棒价值与功率验证。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2024年SHARK三维MOC用华龙一号启动物理试验验证临界keff、控制棒积分价值及组件功率分布。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>积分棒价值<small>积分棒价值</small></h4><p>控制棒从一位置移动到另一位置造成的累计反应性变化。</p><p class="context"><b>本文语境</b> 将三维MOC从理想基准推进到实际堆芯启动数据。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为验证三维特征线中子学计算程序SHARK在大型压水堆上的准确性和适用性,以华龙一号的启动物理试验对SHARK程序进行验证。华龙一号是我国具有自主知识产权的三代核电压水堆堆型,验证内容包括临界有效增殖系数keff、控制棒积分价值以及组件功率分布。研究结果表明,临界有效增殖系数keff、组件功率分布结果与控制棒积分价值均与实测值符合良好。因此SHARK能够应用于数字化反应堆物理计算,具有良好的计算精度。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7200040484" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="异构并行的高阶散射特征线方法及其在临界实验装置模拟中的应用  rmc与ansys仿真研究 原子能科学技术 · 2024 · 邹航 陈莹 张乾 曹巍 张晋超 梁亮 宋佩涛 刘杰
+zou hang;chen ying;zhang qian;cao wei;zhang jinchao;liang liang;song peitao;liu jie(science and technology on parallel and distributed processing laboratory,national university of defense technology,changsha,410073,china;laboratory of software engineering for complex systems,changsha 410073,china;china institut of atomic energy,beijing 102413,china;laboratory for advanced nuclear energy theory and applications,zhejiang institute of modern physics,department of physics,zhejiang university,hangzhou 310030,china;fundamental science on nuclear safety and simulation technology laboratory,school of nuclear science and technology,harbin engineering university,harbin 150001,china;nuclear energy creative power co.,ltd.,xi’an 710077,china;china institute for radiation protection,taiyuan 030006,china)  各向异性散射 各向异性散射 粒子散射后的角分布不是各方向等概率。 将散射各向异性处理与异构性能约束结合。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>RMC与ANSYS仿真研究</span></div>
+          <h2>异构并行的高阶散射特征线方法及其在临界实验装置模拟中的应用</h2>
+          
+          <p class="meta">原子能科学技术 · 2024 · 邹航 陈莹 张乾 曹巍 张晋超 梁亮 宋佩涛 刘杰
+ZOU Hang;CHEN Ying;ZHANG Qian;CAO Wei;ZHANG Jinchao;LIANG Liang;SONG Peitao;LIU Jie(Science and Technology on Parallel and Distributed Processing Laboratory,National University of Defense Technology,Changsha,410073,China;Laboratory of Software Engineering for Complex Systems,Changsha 410073,China;China Institut of Atomic Energy,Beijing 102413,China;Laboratory for Advanced Nuclear Energy Theory and Applications,Zhejiang Institute of Modern Physics,Department of Physics,Zhejiang University,Hangzhou 310030,China;Fundamental Science on Nuclear Safety and Simulation Technology Laboratory,School of Nuclear Science and Technology,Harbin Engineering University,Harbin 150001,China;Nuclear Energy Creative Power Co.,Ltd.,Xi’an 710077,China;China Institute for Radiation Protection,Taiyuan 030006,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">归档批次2026-11-06；实际摘要核验和整理2026-11-10。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2024年异构并行高阶散射MOC在LCT011厚水反射层基准与蒙卡对照，同时分析显存负担。</li><li>实施难度：中等</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将散射各向异性处理与异构性能约束结合。</li></ul></section>
+        <section><h3>不足</h3><ul><li>同等精度需看具体响应；高阶散射增加源项和显存，不能只报告求解核加速。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未明确列出后续工作；不据此判断全文未讨论。</li></ul><b>分析推导</b><ul><li>反射层散射阶次对局部通量的收益是否值得GPU显存代价？</li><li>记录局部通量、反射层响应、峰值显存及端到端时间。</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 精读时核对几何、物性、边界、验证和不确定性；摘要参数线索：2024年异构并行高阶散射MOC在LCT011厚水反射层基准与蒙卡对照，同时分析显存负担。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>各向异性散射<small>各向异性散射</small></h4><p>粒子散射后的角分布不是各方向等概率。</p><p class="context"><b>本文语境</b> 将散射各向异性处理与异构性能约束结合。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在临界实验装置的物理计算中,由于较厚水反射层的存在,中子各向异性散射会对计算结果有重要影响。基于P1各向异性散射特征线方法(MOC),开发了能够处理各向异性散射的特征线输运计算程序,并实现了高阶散射特征线输运计算的高性能异构并行。为确认程序对临界实验装置的物理计算精度,本文选取LCT011临界实验基准进行堆芯物理计算,并与蒙特卡罗程序进行对比验证。各向异性源使得计算量与内存消耗均有显著增加,给异构系统带来较大的显存负担,因此本文进而对高阶散射输运求解器进行性能分析。数值结果表明:在高阶散射计算条件下,程序可达到蒙特卡罗程序的同等精度,且具有较高的计算效率。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7111261980" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下是基于可见摘要的研究建议；先解决数据与验证，再确认新颖性，不保证发表。</p><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>中子符合环对先进堆新制HALEU燃料核保障测量的性能评价：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>具体HALEU几何和测量能力需原文；这不是提高富集度的设计建议，也不是全部先进堆核保障失败。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>燃料形态与探测器几何不匹配对响应可辨识性影响有多大？</li><li>RMC仅在具备所需探测响应/符合统计能力时才可作迁移；先普通输运响应，不默认符合计数模块可用。</li><li>需探测器响应函数、计数不确定性及实验；保持核保障研究边界。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>Performance assessment of neutron coincidence collars for safeguards measurements of fresh high-assay low-enriched uranium advanced reactor fuels | 10.1016/j.net.2026.104809</li><li>MCNP比较DOE先进堆项目10种设计中7种的符合环响应；几何、慢化与燃料形态使部分方案灵敏度不足。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>先核验证据和数据可得性</span><h3>基于RMC的CABRI-like基准题计算研究：适度延伸</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>摘要没有给出数值误差和完整瞬态结果；只能作为方法路线阅读，不能称已达到实验精度。</p></section>
+            <section><h4>为什么值得开展</h4><p>把模型假设的影响落实到可复现误差、局部极值及计算成本；不是仅更换软件。</p></section>
+            <section><h4>建议工作</h4><ol><li>燃料温度空间平均与分区映射对功率脉冲峰值的差别有多大？</li><li>先确认本地RMC动力学和TMS模块可用；必要时用ANSYS瞬态导热提供温度分区。</li><li>先取得CABRI-like定义和测量/参考结果，报告时间步、统计误差及温度映射守恒。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>明确适用工况及失效边界；与已发表方法独立比较。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>基于RMC的CABRI-like基准题计算研究 | </li><li>RMC的CABRI-like模型采用CSG几何、空间—时间动力学及TMS温度反馈；Python将功率转换为温度，比较三种氦气压力瞬态。</li></ul></div><div><h4>主要风险</h4><ul><li>摘要阅读不足以承诺模型能复建或论文可录用；研究路线需要全文参数和独立验证。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">DOI题名已逐项Crossref核对；两处丢失公式按DOI记录恢复。现有耦合、降阶和等效支承工作限制了泛泛方法组合的新颖性。</p><p class="research-note">检索范围：X-MOL/维普真实页面、Crossref DOI记录、出版社定向检索、SCK CEN/KIT作者机构页；非系统性查全。　检索时间：2026-11-10</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>小算例、误差分离、局部响应优先</span><h3>已有模型基础上的可验证增量</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 降低“做耦合/加POD/换ANSYS即可创新”的判断。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>RMC与ANSYS Mechanical/APDL的固态堆耦合已有工作；本批论文进一步包括实体支承到梁刚度等效、全阶选择性校核、MOC与热工瞬态耦合及局部POD库。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>燃料形态与探测器几何不匹配对响应可辨识性影响有多大？</li><li>研究接触开闭、几何和功率映射误差对最高温度/局部应力的影响，而不只报告均方误差。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可行性取决于数据、模块和验证；普通接口或普通降阶本身的新颖性较弱。</p></section>
+            <section><h4>建议论文切口</h4><p>RMC仅在具备所需探测响应/符合统计能力时才可作迁移；先普通输运响应，不默认符合计数模块可用。</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>需探测器响应函数、计数不确定性及实验；保持核保障研究边界。</li><li>报告含快照/轨迹/数据处理的端到端成本，保留独立工况。</li></ul><h4>新颖性风险</h4><ul><li>程序互校不能冒称实验确认；作者研发功能不等于本地RMC可用。</li><li>公开论文或机构PDF不等于原始实验数据库可直接下载。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.net.2026.104809" target="_blank" rel="noopener">Performance assessment of neutron coincidence collars for safeguards measurements of fresh high-assay low-enriched uranium advanced reactor fuels（Pub Date : 2026-10-29）↗</a><p>MCNP比较DOE先进堆项目10种设计中7种的符合环响应；几何、慢化与燃料形态使部分方案灵敏度不足。</p></li><li><a href="https://doi.org/10.1016/j.anucene.2020.107923" target="_blank" rel="noopener">RMC与ANSYS Mechanical的固态堆核热力耦合基线（2021卷年；DOI含2020）↗</a><p>说明耦合路线已有，立项须围绕具体误差和新增证据。</p></li><li><a href="https://researchportal.sckcen.be/en/publications/benchmarking-caprix-pin-behaviour-under-irradiation-with-high-plu/" target="_blank" rel="noopener">CAPRIX燃料棒基准作者机构记录（2026；卷期12月，非检索日期）↗</a><p>补全摘要结论；多程序仍存在相互差异及与PIE差异，不应过度宣称验证成功。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本轮X-MOL核能10页与All2页，共720张卡片；后续翻页未更新时停止，不冒称查全。近30天134张候选，59条初选、57条详情读取成功，48篇正式入选。维普真实UI定向查询及补充MOC/接触热阻/碎化查询，66条展开摘要、65篇入选。按历史全部中英文日报及本批DOI、规范题名、URL去重。关注课题组定向检查未获新增合格材料；不据此称其无新论文。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
