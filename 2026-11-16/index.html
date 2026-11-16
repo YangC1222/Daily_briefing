@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026-11-16 先进反应堆每日文献阅读：X-MOL 英文文献与维普中文文献双语摘要、核心观点、创新点、不足和未来方向。">
+  <meta name="theme-color" content="#071827">
+  <title>2026-11-16 先进反应堆文献阅读</title>
+  <style>
+    :root{--ink:#e8f4f5;--muted:#93aeb5;--bg:#04111c;--panel:#0a2030;--line:#173c4d;--cyan:#59d9df;--blue:#3b82f6;--gold:#f6c85f;--paper:#f4fbfa;--dark:#08202c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 82% -5%,#123c50 0,transparent 36%),var(--bg);color:var(--ink);font:15px/1.75 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:inherit} .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line)} .eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,70px);line-height:1.05;max-width:900px;margin:14px 0 20px;letter-spacing:-.04em} .lede{max-width:760px;color:#bcd0d4;font-size:18px}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px} .stat strong{font-size:30px;display:block;color:white} .stat span{color:var(--muted)}
+    .toolbar{position:sticky;top:0;z-index:9;background:rgba(4,17,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .toolbar .shell{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap} button,.search{border:1px solid var(--line);background:#0b2434;color:var(--ink);border-radius:999px;padding:10px 15px;font:inherit}
+    button{cursor:pointer;font-weight:700} button.active{background:var(--cyan);color:#032029;border-color:var(--cyan)} .share{margin-left:auto;background:transparent}
+    .search{min-width:240px;flex:1;outline:none} .search:focus{border-color:var(--cyan)}
+    main{padding:36px 0 80px} .paper-card{background:var(--paper);color:var(--dark);border-radius:18px;padding:26px;margin:0 0 20px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .paper-head{display:grid;grid-template-columns:58px 1fr;gap:16px} .number{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--cyan);font-weight:900}
+    h2{font-size:24px;line-height:1.35;margin:8px 0 4px} .title-en{color:#4b6269;font-family:Georgia,serif;font-size:16px;margin:0 0 5px} .meta{color:#5f747b;margin:5px 0;font-size:13px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap} .chips span{background:#dceff0;color:#155362;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0} .analysis-grid section{background:white;border:1px solid #d9e8e8;border-radius:12px;padding:15px 18px}
+    h3{margin:0 0 7px;font-size:15px;color:#0c6170} ul{margin:0;padding-left:20px} li+li{margin-top:5px} .muted{color:#657a80}
+    .parameter-alert{border-left:4px solid var(--gold);background:#fff5d9;padding:10px 13px;margin:12px 0;border-radius:0 8px 8px 0}
+    .glossary{margin:22px 0;padding:18px;border:1px solid #c9dfdd;border-radius:14px;background:#edf8f6} .glossary>h3{font-size:17px;margin-bottom:12px} .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px} .term{background:white;border:1px solid #d7e7e5;border-radius:10px;padding:13px 14px} .term h4{margin:0 0 7px;color:#0a6470;font-size:15px} .term h4 small{display:block;color:#668087;font-weight:500;font-size:12px;margin-top:2px} .term p{margin:5px 0;font-size:14px} .term .context{color:#536c73} .term .context b{color:#0a6470;margin-right:4px}
+    .research{margin:54px 0 0;padding-top:42px;border-top:1px solid var(--line)} .research>h2{font-size:clamp(30px,5vw,48px);color:white;margin:8px 0} .research-lede{max-width:900px;color:#bed1d5;font-size:17px} .opportunity{margin:18px 0;padding:24px;background:#0b2434;border:1px solid #1c4c5f;border-radius:18px} .opportunity-head{display:flex;gap:14px;align-items:center} .opportunity-head span{flex:none;background:var(--gold);color:#352a08;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900} .opportunity-head h3{margin:0;color:white;font-size:22px} .opportunity-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px} .opportunity-grid section{background:#102d3e;border-radius:12px;padding:15px 18px} .opportunity h4{color:var(--cyan);margin:0 0 7px} .opportunity p,.opportunity li{color:#c3d6da} .opportunity details{border-top-color:#1d4a5c} .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px} .research-note{color:#91abb1;font-size:13px;margin-top:18px} .web-research{border-top-color:var(--cyan)} .web-opportunity{border-color:#287489} .priority-change{margin:12px 0 0;color:#9fd4d9!important} .priority-change b{color:var(--gold);margin-right:6px} .source-list{padding-left:21px} .source-list li{margin-bottom:12px} .source-list a{color:var(--cyan);font-weight:800;text-decoration:none} .source-list p{margin:3px 0 0}
+    details{border-top:1px solid #cfdfdf;margin-top:18px;padding-top:14px} summary{cursor:pointer;color:#116978;font-weight:800} .abstracts{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-top:15px} .abstracts p{margin:0;text-align:justify}
+    footer{display:flex;gap:14px;align-items:center;border-top:1px solid #cfdfdf;margin-top:18px;padding-top:13px;color:#64777c;font-size:13px} footer a{font-weight:800;color:#0b697a;text-decoration:none} footer span{margin-left:auto}
+    .method{margin-top:42px;border:1px solid var(--line);border-radius:14px;padding:22px;color:#b8cdd1} .empty{display:none;text-align:center;padding:70px 0;color:var(--muted)}
+    @media(max-width:720px){.hero{padding-top:46px}.shell{width:min(100% - 22px,1180px)}.share{margin-left:0}.search{order:3;flex-basis:100%}.paper-card{padding:18px}.paper-head{grid-template-columns:1fr}.number{width:38px;height:38px}.analysis-grid,.abstracts,.opportunity-grid,.evidence-grid{grid-template-columns:1fr}footer{flex-wrap:wrap}footer span{margin-left:0;width:100%}}
+    @media print{.toolbar{display:none}body{background:white;color:#111}.hero{color:#111}.paper-card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="shell"><div class="eyebrow">Daily Reactor Literature Brief</div><h1>先进反应堆<br>每日文献阅读</h1><p class="lede">聚焦地面动力堆、热管堆、气冷堆、燃料碎片/碎片床与核—热—力多物理场耦合，面向反应堆热工安全及 ANSYS 热工结构仿真的中英文摘要研读。</p><div class="stats"><div class="stat"><strong>2026-11-16</strong><span>本期日期</span></div><div class="stat"><strong>10</strong><span>X-MOL 英文文献</span></div><div class="stat"><strong>9</strong><span>维普中文文献</span></div></div></div></header>
+  <nav class="toolbar"><div class="shell"><button class="active" data-filter="all">全部 19</button><button data-filter="xmol">X-MOL 10</button><button data-filter="cqvip">维普 9</button><input class="search" id="search" placeholder="搜索题目、方向、期刊或作者" aria-label="搜索文献"><button class="share" id="share">分享本页</button></div></nav>
+  <main class="shell"><aside class="method">2026-11-16阅读归档；本次补充实际读取/审校2026-11-16。现有英文10篇、中文9篇；缺额英文0、中文0。本次英文限近30天未读，中文刊年2026优先，较早方法基线逐篇标年；历史论文不伪装成当日新发表。</aside><div id="papers">
+    <article class="paper-card" data-source="xmol" data-search="lpgpt：面向堆芯装载方案生成的领域自回归transformer lpgpt: a domain-specific autoregressive pretrained transformer for core loading pattern generation 中子输运与智能设计 annals of nuclear energy · 2026-11-11 · hailiang shi, changyou zhao, dechang cai, rong duan, jinfeng wei 中子输运与智能设计 焓升热通道因子 enthalpy-rise hot-channel factor 表征热通道焓升相对平均值的因子；其定义和限值须按堆型核对。 本文语境：lpgpt、pcm及公开三维扩散测试。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>中子输运与智能设计</span><span>中子输运与智能设计</span></div>
+          <h2>LPGPT：面向堆芯装载方案生成的领域自回归Transformer</h2>
+          <p class="title-en">LPGPT: A domain-specific autoregressive pretrained transformer for core loading pattern generation</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-11 · Hailiang Shi, Changyou Zhao, Dechang Cai, Rong Duan, Jinfeng Wei</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>小型压水堆1/8对称模型，20,043组PCM条件—装载对，生成128词元方案；代表例四项指标按目标改善，但最小轴向偏移存在权衡，公开扩散测试中MLP+GA更接近目标。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将多物理指标条件输入自回归装载候选生成器，并保留PCM后验核算。</li></ul></section>
+        <section><h3>不足</h3><ul><li>交叉熵0.24/0.23不等于满足安全约束的比例；未证明优于所有优化器，摘要明确给出MLP+GA更贴近目标的对照。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>生成式候选在局部峰值约束附近的误拒/误收，是否比传统优化更严重？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：小型压水堆1/8对称模型，20,043组PCM条件—装载对，生成128词元方案；代表例四项指标按目标改善，但最小轴向偏移存在权衡，公开扩散测试中MLP+GA更接近目标。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>焓升热通道因子<small>Enthalpy-rise hot-channel factor</small></h4><p>表征热通道焓升相对平均值的因子；其定义和限值须按堆型核对。</p><p class="context"><b>本文语境</b> 本文语境：LPGPT、PCM及公开三维扩散测试。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>堆芯装载方案（LP）设计是压水堆燃料管理的核心任务之一。工程中，方案构建高度依赖专家经验，并需在庞大的组合空间反复开展昂贵的堆芯物理计算，耗费人力且周期较长。本文提出LPGPT（装载方案生成预训练Transformer），在反应堆专属的条件—装载数据上从随机初始化开展自回归预训练，用于生成候选方案。以具有1/8堆芯对称性的代表性小型压水堆演示该方法。数据集包含PCM生成并评价的20,043组条件—装载对，词元级交叉熵训练和验证损失分别收敛至约0.24和0.23。LPGPT以焓升热通道因子FΔH、有效增殖因子、燃耗、最大和最小轴向偏移为条件，直接生成128词元的候选装载序列。PCM对代表性候选的评价显示，四项所要求的方向得到改善，但最小轴向偏移存在权衡。公开的三维扩散测试支持可复现的条件生成；MLP+GA与目标的符合程度更高。LPGPT支持先生成候选、再用PCM验证的流程。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Core loading pattern (LP) design is one of the central tasks in Pressurized Water Reactor (PWR) fuel management. In engineering practice, LP construction relies heavily on expert heuristics and repeated computationally expensive core physics calculations over a vast combinatorial search space, resulting in substantial manual effort and long turnaround times. This paper proposes LPGPT (Loading Pattern Generative Pretrained Transformer), a domain-specific Transformer autoregressively pretrained from random initialization on reactor-specific condition–LP data for candidate generation. The approach is demonstrated on a representative small PWR with 1/8 core symmetry. The dataset contains 20,043 condition–LP pairs generated and evaluated with PCM; the token-level cross-entropy training and validation losses converged to approximately 0.24 and 0.23, respectively. LPGPT directly generates 128-token candidate LP sequences conditioned on the enthalpy-rise hot-channel factor (FΔH), effective multiplication factor, burnup, maximum axial offset, and minimum axial offset. PCM evaluation of a representative candidate shows improvement in four requested directions, with a trade-off in minimum axial offset. A public three-dimensional diffusion test supports reproducible conditional generation; MLP+GA achieves closer target agreement. LPGPT supports candidate generation with subsequent PCM verification.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2122015927131451392" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.113002" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2122015927131451392" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="浅层解码多保真代理重建蒙卡中子通量场 shallow decoding strategies for reduced order modelling and multi-fidelity applied to monte carlo neutronics calculations pod降阶与反应堆多物理场快速仿真 annals of nuclear energy · 2026-11-11 · stefano riva, carolina introini pod降阶与反应堆多物理场快速仿真 多保真建模 multi-fidelity modelling 融合成本和精度不同的数据层级构造预测模型；各层级误差仍需量化。 本文语境：浅层解码网络、多保真蒙卡、triga mark ii。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>POD降阶与反应堆多物理场快速仿真</span><span>POD降阶与反应堆多物理场快速仿真</span></div>
+          <h2>浅层解码多保真代理重建蒙卡中子通量场</h2>
+          <p class="title-en">Shallow decoding strategies for reduced order modelling and multi-fidelity applied to Monte Carlo neutronics calculations</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-11 · Stefano Riva, Carolina Introini</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以TRIGA Mark II为对象，用控制棒位置/稀疏通量观测及低统计蒙卡数据构造浅层解码代理，少量高统计计算辅助修正，重建通量相对误差小于2%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将低统计样本的主要特征与少量高统计参考结合，降低中子通量场重建的高保真采样负担。</li></ul></section>
+        <section><h3>不足</h3><ul><li>小于2%的具体误差范数、局部峰值与留出工况摘要未说明；浅层解码网络不能直接等同POD-Galerkin方程降阶。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>低统计噪声被代理学习后，局部热源峰值误差会如何传入燃料最高温度？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：以TRIGA Mark II为对象，用控制棒位置/稀疏通量观测及低统计蒙卡数据构造浅层解码代理，少量高统计计算辅助修正，重建通量相对误差小于2%。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>多保真建模<small>Multi-fidelity modelling</small></h4><p>融合成本和精度不同的数据层级构造预测模型；各层级误差仍需量化。</p><p class="context"><b>本文语境</b> 本文语境：浅层解码网络、多保真蒙卡、TRIGA Mark II。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>蒙特卡罗方法是目前用于精确中子模拟的最先进方法，但这些高保真计算的计算成本对于多查询应用（例如设计、优化和灵敏度分析）而言可能难以承受。模拟的精度取决于粒子数量：对于低统计量（粒子数量少）的情况，计算成本通常较低，但结果会受到显著统计噪声的影响，这可能会损害结果的准确性；另一方面，对于高统计量的情况，结果更准确，但计算成本更高。为了将大量廉价的低统计量数据与稀缺的高统计量数据结合起来，本文提出了一种基于浅层解码器网络的多保真代理模型。浅层解码器网络是一类前馈神经网络，最初用于从稀疏传感器数据中重建流体，其架构简单，优先考虑快速训练、易于超参数调优以及学习基的物理可解释性。本文重点在于构建代理模型，利用输入参数（例如控制棒位置）或稀疏的中子通量测量数据，以及二者的结合，重建TRIGA Mark II反应堆堆芯中的中子通量场。研究表明，此类代理模型能够显著提高低保真度蒙特卡罗模拟的精度。通过从低统计量数据中提取主要特征，并利用少量高统计量模拟结果修正高保真度解，最终重建的中子通量场相对误差小于2%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Monte Carlo methods are the state-of-the-art for accurate neutronic simulations, but the computational costs associated with these high-fidelity calculations can be prohibitive for multi-query applications, such as design, optimization, and sensitivity analysis. The accuracy of the simulations depends on the number of particles: for low-statistics (few particles), the computational costs are generally lower, but the outcome is affected by a significant statistical noise, which can be detrimental for the accuracy of the results; on the other hand, for high-statistics, the results are more accurate, but the computational cost is higher. To merge the abundance of cheap low-statistics data with the scarcity of expensive high-statistics data, this work proposes a multi-fidelity surrogate model based on Shallow Decoder Networks, a class of feed-forward neural networks, originally proposed for fluid reconstruction from sparse sensor data, with a simple architecture that prioritizes fast training, easy hyperparameter tuning, and physical interpretability of the learned basis. In particular, this work focuses on generating surrogate models to reconstruct the neutron flux field in a TRIGA Mark II reactor core, using either input parameters (e.g., control rod positions) or sparse measurements of the neutron flux, as well as a combination of both. This work demonstrates that a surrogate model of this kind can be very useful in improving the accuracy of low-fidelity Monte Carlo simulations. By extracting dominant features from low-statistics data and correcting high-fidelity solutions with a small set of high-statistics simulations, a relative error of less than 2% is achieved in the reconstructed neutron flux field.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2122015917878816768" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112958" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2122015917878816768" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="loft与semiscale大破口试验的分阶段尺度适用性 time-resolved dimensionless analysis in extended scaling-up capability evaluation of loft and semiscale facilities 先进反应堆热工水力 progress in nuclear energy · 2026-11-10 · xueyan zhang, yixuan zhang, tao huang, chengcheng deng, jun yang 先进反应堆热工水力 整体试验装置 integral test facility 按选定缩比原则保留系统耦合现象的试验设施；不保证所有局部机制都相似。 本文语境：守恒方程无量纲化、现象尺度分析。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>先进反应堆热工水力</span><span>先进反应堆热工水力</span></div>
+          <h2>LOFT与Semiscale大破口试验的分阶段尺度适用性</h2>
+          <p class="title-en">Time-resolved dimensionless analysis in extended scaling-up capability evaluation of LOFT and Semiscale facilities</p>
+          <p class="meta">Progress in Nuclear Energy · 2026-11-10 · Xueyan Zhang, Yixuan Zhang, Tao Huang, Chengcheng Deng, Jun Yang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>以冷段双端大破口LOCA为对象，按归一化阶段时间比较LOFT三组及Semiscale S-06-03与非原型三回路PWR参考；相似性随喷放、再充水和再淹没机制改变。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用相似包络及时间覆盖适用率构建分阶段、分现象的试验放大适用图。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不是对某一原型电厂的直接确认；再淹没时间尺度相近时，相变描述量仍有持续偏差。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>用整体试验校准的换热边界，在哪些阶段不足以验证燃料局部温度？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：以冷段双端大破口LOCA为对象，按归一化阶段时间比较LOFT三组及Semiscale S-06-03与非原型三回路PWR参考；相似性随喷放、再充水和再淹没机制改变。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>整体试验装置<small>Integral test facility</small></h4><p>按选定缩比原则保留系统耦合现象的试验设施；不保证所有局部机制都相似。</p><p class="context"><b>本文语境</b> 本文语境：守恒方程无量纲化、现象尺度分析。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>整体试验装置（ITF）为验证热工水力安全分析程序提供了重要的瞬态数据，但由于各阶段尺度畸变和主导现象随时间的变化，其对全尺寸压水反应堆的适用性可能受到限制。本研究开发了一种时间分辨的无量纲分析框架，用于评估LOFT L2-3、L2-5和LP-LB-1以及Semiscale S-06-03数据的放大能力，并以非原型参考三回路压水堆在冷段双端大破口LOCA事故下的表现为例进行分析。无量纲群由系统级守恒方程和现象级尺度考虑推导而来，并使用相似性包络在归一化阶段时间内进行评估。引入适用率作为时间覆盖率指标，用于量化各阶段保持相似性的比例。结果表明，放大能力与阶段和机制密切相关：LOFT装置在泄压过程中对整体储量消耗具有较高的代表性，并且在系统级补充过程中具有更好的相似性；而 Semiscale装置则在特定散热或临界热通量/后临界热通量相关趋势方面提供了补充相似性。在再淹没过程中，时间尺度相似性仍然相对较高，但与相变相关的描述符则表现出持续的偏差。由此得到的适用性图谱为选择用于 LBLOCA 代码验证的 ITF 数据以及识别需要额外独立效应证据的机制提供了分阶段和特定现象的依据。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Integral test facilities (ITFs) provide essential transient data for validating thermal–hydraulic safety analysis codes, but their applicability to full-scale pressurized water reactors may be limited by phase-wise scaling distortions and time-dependent shifts of dominant phenomena. This study develops a time-resolved dimensionless analysis framework to evaluate the scale-up capability of LOFT L2-3, L2-5 and LP-LB-1 and Semiscale S-06-03 data against a non-prototype reference three-loop PWR under a cold-leg double-ended large-break LOCA. Dimensionless groups are derived from system-level conservation equations and phenomenon-level scaling considerations, and are evaluated over normalized phase time using a similarity envelope. An applicability rate is introduced as a time-coverage indicator to quantify the fraction of each phase in which similarity is maintained. The results show that scale-up capability is strongly phase- and mechanism-dependent: LOFT provides high representativeness for global inventory depletion during blowdown and better system-level refill similarity, whereas Semiscale offers complementary similarity for selected heat-removal or CHF/post-CHF-related trends. In reflood, time-scale similarity remains relatively high, but phase-change-related descriptors show persistent deviations. The resulting applicability map provides a phase-wise and phenomenon-specific basis for selecting ITF data for LBLOCA code validation and identifying mechanisms requiring additional separate-effect evidence.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2121237650737475584" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.pnucene.2026.106684" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2121237650737475584" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="含内部空洞的高配筋核安全壳剪力墙循环承载力 experimental and numerical investigation of shear capacity for concrete walls with high reinforcement ratio considering internal voids 核级结构与模型简化 nuclear engineering and technology · 2026-11-09 · hyeon-keun yang, yong-moon hwang, jae-wook jung 核级结构与模型简化 空洞面积比 void area ratio 给定评估截面中空洞面积所占比例；与体积孔隙率不能直接混用。 本文语境：六试件循环试验、有限元及参数分析；摘要未指定软件。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>核级结构与模型简化</span><span>核级结构与模型简化</span></div>
+          <h2>含内部空洞的高配筋核安全壳剪力墙循环承载力</h2>
+          <p class="title-en">Experimental and Numerical Investigation of Shear Capacity for Concrete Walls with High Reinforcement Ratio Considering Internal Voids</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-11-09 · Hyeon-Keun Yang, Yong-Moon Hwang, Jae-Wook Jung</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>六个循环加载试件显示全局响应近似时，内部空洞仍加速峰后退化和局部损伤；有限元模型报告5%以内误差，空洞面积比超过20%时强度下降更显著。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以试验—有限元联合分析给出空洞面积比与抗剪退化的评估关系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>5%误差对应响应指标和校准/验证拆分需全文核对；不能把全局吻合解释为局部裂缝也已准确。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>等效刚度模型何时能预测整体位移，却低估空洞附近局部损伤？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：六个循环加载试件显示全局响应近似时，内部空洞仍加速峰后退化和局部损伤；有限元模型报告5%以内误差，空洞面积比超过20%时强度下降更显著。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>空洞面积比<small>Void area ratio</small></h4><p>给定评估截面中空洞面积所占比例；与体积孔隙率不能直接混用。</p><p class="context"><b>本文语境</b> 本文语境：六试件循环试验、有限元及参数分析；摘要未指定软件。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核设施安全壳结构中高密度钢筋的配置，往往由于施工难度而导致内部出现意外空隙。本研究评估了高配筋率、低高宽比钢筋混凝土剪力墙的循环性能，重点关注这些施工引起的缺陷。通过一项综合性的实验和数值模拟研究，对六个试件进行了循环荷载试验，并将人工引入空隙作为主要变量。结果表明，整体响应基本保持不变，但空隙会显著加速峰后强度的退化，并通过破坏内部剪力传递机制而导致局部损伤。所建立的有限元模型经过验证，误差在5%以内，并被用于广泛的参数化研究。分析表明，空隙面积比是控制因素，强度呈线性下降，且当空隙面积比超过20%时，强度下降更为显著。基于这些发现，本文提出了一种实用的评估方法，用于量化剪切强度随空隙面积比的变化。本研究为包含内部缺陷的高配筋核设施的结构评估和维护提供了重要的指导。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The high density of reinforcement in nuclear containment structures often leads to unintentional internal voids due to construction difficulties. This study evaluates the cyclic performance of reinforced concrete shear walls with high reinforcement ratios and low aspect ratios, specifically addressing these construction-induced defects. Through a comprehensive experimental and numerical program, six specimens were tested under cyclic loading, with artificial voids introduced as primary variables. Results indicate that global responses remain similar, however voids significantly accelerate post-peak strength degradation and localize damage by disrupting internal shear transfer mechanisms. The developed finite element model, validated within a 5% error margin, was utilized for an extensive parametric study. The analysis identifies the void area ratio as the governing factor, showing a linear strength reduction that becomes more pronounced beyond a 20% ratio. Based on these findings, a practical evaluation-oriented approach is proposed to quantify shear strength reduction as a function of the void area ratio. This research provides essential guidance for the structural assessment and maintenance of heavily reinforced nuclear facilities containing internal defects.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：开放候选普通HTTPS下载失败：HTTPError</p>
+      <footer><a href="https://www.x-mol.com/paper/2121222387665219584" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104840" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2121222387665219584" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="hccp试验包层冷却板扩散连接与u形弯曲工艺 progress in the development of the cooling plate fabrication process and welding technology for the hccp tbm breeder unit 核反应堆材料与热工结构 nuclear engineering and technology · 2026-11-04 · hyoseong gwon, wongeun yi, sungyu kim, yi-hyun park, suntaek lim, mu-young ahn 核反应堆材料与热工结构 回弹 springback 成形载荷卸除后因弹性恢复产生的形状变化；不等于高温长期蠕变。 本文语境：工艺试验、有限元成形和三种激光系统焊接测试。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>核反应堆材料与热工结构</span><span>核反应堆材料与热工结构</span></div>
+          <h2>HCCP试验包层冷却板扩散连接与U形弯曲工艺</h2>
+          <p class="title-en">Progress in the development of the cooling plate fabrication process and welding technology for the HCCP TBM breeder unit</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-11-04 · Hyoseong Gwon, Wongeun Yi, Sungyu Kim, Yi-Hyun Park, Suntaek Lim, Mu-Young Ahn</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>EUROFER97在1150℃、12.5 MPa连接3 h；筛选热处理与弯曲模具，改进后单次冲压曲率容差小于2.5 mm、回弹小于1 mm，弯曲末态间隙是主导参数。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>将扩散连接、热处理、接触成形间隙及装配焊接组织为冷却板制造路线。</li></ul></section>
+        <section><h3>不足</h3><ul><li>满足所列拉伸/冲击/硬度/晶粒要求不等于服役热循环和辐照接头寿命已验证；曲率容差的几何定义需原文确认。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>成形接触和回弹的等效处理，会给后续冷却板热应力预测带来多大误差？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：EUROFER97在1150℃、12.5 MPa连接3 h；筛选热处理与弯曲模具，改进后单次冲压曲率容差小于2.5 mm、回弹小于1 mm，弯曲末态间隙是主导参数。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>回弹<small>Springback</small></h4><p>成形载荷卸除后因弹性恢复产生的形状变化；不等于高温长期蠕变。</p><p class="context"><b>本文语境</b> 本文语境：工艺试验、有限元成形和三种激光系统焊接测试。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>氦冷陶瓷球（HCCP）测试包层模块（TBM）由欧洲和韩国联合开发，其中韩国ITER负责增殖单元（BU）及其冷却板。为了替代特殊的电火花加工工艺，开发了一种结合传统加工和热压扩散连接的冷却板制造工艺。在该工艺中，EUROFER97材料在1150℃和12.5MPa的条件下焊接3小时。对扩散焊接接头进行了制造和评估，并进行了初始焊接后热处理。随后，对经过焊接和热处理历史的基体金属试样筛选了八种热处理条件；结果表明，两次正火后进行一次空冷回火即可满足RCC-MRx的拉伸、冲击、硬度和晶粒尺寸要求。对于U形弯曲工艺，选择模压弯曲而非三点弯曲，有限元分析表明，弯曲结束时的间隙是主要参数。改进后的模具仅需一次冲压即可实现曲率公差小于 2.5 mm 和回弹小于 1 mm。对于 BU 焊接，根据装配顺序定义了八个焊接组，使用三种激光系统进行的板上焊道试验表明，焊接运动和保护方式是关键因素，并证实了摆动功能对 RAFM 钢的适用性。</p></div>
+          <div><h3>English abstract</h3><p lang="en">The Helium Cooled Ceramic Pebble (HCCP) Test Blanket Module (TBM) is being developed jointly by Europe and Korea, with ITER Korea in charge of the breeder unit (BU) including its cooling plates. As an alternative to the special electrical discharge machining process, a cooling plate fabrication process combining conventional machining and hot-press diffusion bonding was developed, in which EUROFER97 was bonded at 1150 °C and 12.5 MPa for 3 h. Diffusion-bonded joints were fabricated and evaluated with initial post-bonding heat treatments, and eight heat treatment conditions were then screened on base metal specimens subjected to the bonding and heat treatment histories; double normalizing followed by single tempering with air cooling satisfied the RCC-MRx tensile, impact, hardness and grain size requirements. For the U-bending process, die press bending was selected over 3-point bending, and a finite element analysis identified the gap remaining at the end of bending as the dominant parameter; the improved dies achieved a curvature tolerance below 2.5 mm and a springback below 1 mm with a single press. For the BU welding, eight welding groups were defined from the assembly sequence, bead-on-plate tests with three laser systems showed that the welding motion and the shielding method are critical factors, and the applicability of the wobble function to the RAFM steel was confirmed.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>找到候选地址，但下载验证失败：开放候选普通HTTPS下载失败：HTTPError</p>
+      <footer><a href="https://www.x-mol.com/paper/2121222383542218752" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104834" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2121222383542218752" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="粒径分布对严重事故水池洗涤简化模型的影响 experimental evaluation of simplified radionuclide transport model predictions for pool scrubbing: importance of inlet particle size distributions 严重事故与放射性核素输运 nuclear engineering and technology · 2026-11-04 · kotaro miwa, munemichi kawaguchi 严重事故与放射性核素输运 去污因子 decontamination factor 通常为进入量与穿出量之比，具体质量/浓度及测量定义需一致。 本文语境：srt简化放射性核素输运模型与水池洗涤实验。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>严重事故与放射性核素输运</span><span>严重事故与放射性核素输运</span></div>
+          <h2>粒径分布对严重事故水池洗涤简化模型的影响</h2>
+          <p class="title-en">Experimental evaluation of simplified radionuclide transport model predictions for pool scrubbing: Importance of inlet particle size distributions</p>
+          <p class="meta">Nuclear Engineering and Technology · 2026-11-04 · Kotaro Miwa, Munemichi Kawaguchi</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>低速注气Cu/Al气溶胶试验中，单一代表粒径严重高估深水池去污因子；按入口粒径分布积分改善趋势，但最深处偏差仍为Cu−55%、Al−11%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>以粒径分布演化解释单粒径模型偏差，并用实验检验积分去污因子。</li></ul></section>
+        <section><h3>不足</h3><ul><li>趋势改善并不等于误差很小；水池气溶胶洗涤不是燃料碎片床再淹没，不能混入碎片床可冷却性结论。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>粒径离散的分组数和权重能否用较低成本保留出口亚微米尾部及去污因子？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：低速注气Cu/Al气溶胶试验中，单一代表粒径严重高估深水池去污因子；按入口粒径分布积分改善趋势，但最深处偏差仍为Cu−55%、Al−11%。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>去污因子<small>Decontamination factor</small></h4><p>通常为进入量与穿出量之比，具体质量/浓度及测量定义需一致。</p><p class="context"><b>本文语境</b> 本文语境：SRT简化放射性核素输运模型与水池洗涤实验。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究表明，将详细的初始粒径分布纳入池式洗涤模型能够有效提高核反应堆严重事故条件下去污因子（DF）预测的准确性。为了克服传统单一代表性粒径模型的显著不确定性，我们利用简化的放射性核素输运（SRT）模型，研究了结合初始粒径分布的粒径积分去污因子方法，并通过在低速气体注入条件下使用铜和铝气溶胶进行的池式洗涤实验对其进行了评估。结果表明，虽然两种气溶胶的去污因子均随池深增加而增大，但传统的单一代表性粒径模型严重高估了深层池中的去污因子。相比之下，结合初始粒径分布的粒径积分去污因子方法成功地重现了实验趋势。这一结果与物理行为相符：去除效率高的大颗粒在早期阶段被捕获，而难以在深层去除的亚微米颗粒则集中在气泡内。在最大池深处，尺寸积分 DF 与实验 DF 之间的偏差，Cu 为 -55%，Al 为 -11%。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study demonstrates that incorporating detailed initial particle size distributions into pool scrubbing models is effective for improving the accuracy of decontamination factor (DF) predictions under severe accident conditions in nuclear reactors. To overcome the significant uncertainties of conventional single-representative-diameter models, we investigated the size-integrated DF approach incorporating the initial particle size distribution using the Simplified Radionuclide Transport (SRT) model, evaluated against pool scrubbing experiments conducted under low-velocity gas injection conditions using Cu and Al aerosols. The results showed that while DFs increased with pool depth for both aerosols, the conventional single-representative-diameter model severely overestimated DFs at deeper pool levels. In contrast, the size-integrated DF approach incorporating the initial particle size distribution successfully reproduced the experimental trends. This result is consistent with the physical behavior in which large particles with high removal efficiency are captured at an early stage, while submicron particles, which are difficult to remove at greater depths, are concentrated within the bubbles. At the maximum pool depth, the deviations between the size-integrated DF and the experimental DF were −55% for Cu and −11% for Al.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2121222382892101632" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.net.2026.104829" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2121222382892101632" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="多区域中子扩散的xpinn与cmfd预训练源迭代 adaptive, xpinn-extended and cmfd-accelerated pinn source iteration framework for multi-region neutron diffusion eigenvalue problem 中子输运与确定论方法 annals of nuclear energy · 2026-11-04 · yun cao, kun zhuang, bin zhang, lianjie wang, jingen chen, sipeng wang 中子输运与确定论方法 粗网有限差分 coarse mesh finite difference 以粗网格低阶方程辅助高阶迭代的技术；本篇用于指导网络预训练。 本文语境：pinn源迭代、rar、自适应权重、xpinn、cmfd。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>中子输运与确定论方法</span><span>中子输运与确定论方法</span></div>
+          <h2>多区域中子扩散的XPINN与CMFD预训练源迭代</h2>
+          <p class="title-en">Adaptive, XPINN-Extended and CMFD-Accelerated PINN source iteration framework for multi-region neutron diffusion eigenvalue problem</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-04 · Yun Cao, Kun Zhuang, Bin Zhang, Lianjie Wang, JinGen Chen, Sipeng Wang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>弱非均匀算例自适应权重使平均keff误差低于100 pcm；强非均匀TWIGL中XPINN较单网络改善超一个量级。10 cm粗网格预训练使时间从19分24秒降到5分48秒。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>组合残差自适应采样、区域子网络与CMFD指导预训练，改善所测扩散特征值问题的精度及训练收敛。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不是中子输运MOC算法；keff小误差不保证界面通量/电流守恒或变形几何预测准确，摘要未给真实热结构闭环验证。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>对于小幅热变形，区域接口守恒和局部功率误差是否比特征值更限制PINN可用性？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：弱非均匀算例自适应权重使平均keff误差低于100 pcm；强非均匀TWIGL中XPINN较单网络改善超一个量级。10 cm粗网格预训练使时间从19分24秒降到5分48秒。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>粗网有限差分<small>Coarse Mesh Finite Difference</small></h4><p>以粗网格低阶方程辅助高阶迭代的技术；本篇用于指导网络预训练。</p><p class="context"><b>本文语境</b> 本文语境：PINN源迭代、RAR、自适应权重、XPINN、CMFD。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>在先进小型反应堆设计中，结构变形造成的几何变化对反应性的影响正受到更多关注。基于空间离散的确定论方法，在网格生成及变形网格数据映射方面存在局限。随着人工智能发展，物理信息神经网络（PINN）提供了一种不依赖特定网格的科学计算途径。然而，纯物理驱动的单网络PINN在多区域特征值问题中仍有精度有限、收敛缓慢的问题。本文针对中子扩散特征值问题建立PINN源迭代框架，并从训练和网络结构两方面提出精度与收敛改进方法。对弱非均匀多区域问题，采用基于残差的自适应重采样（RAR）和自适应权重策略，提高求解精度及收敛稳定性。对中子通量梯度显著的强非均匀问题，采用扩展PINN（XPINN）使多个子网络协同预测。此外，提出CMFD指导的加速方法，利用粗网有限差分（CMFD）解指导预训练。数值结果显示，训练层面的策略能改善弱非均匀问题的预测，其中自适应权重改善最明显，使平均keff误差降至100 pcm以下。对强非均匀TWIGL基准，XPINN的keff预测较单网络PINN改善一个数量级以上。在CMFD指导方法中，各预训练策略均在保持keff准确预测的同时改善源迭代效率。与没有CMFD预训练的基线PINN相比，当粗网格尺寸为10 cm时，“更新Q和keff”策略将总训练时间由19分24秒减至5分48秒，加速比为3.34；粗网格细化至5 cm或1 cm时，加速比均高于6.0。这表明该框架可有效改善多区域中子扩散特征值问题的精度和收敛效率。</p></div>
+          <div><h3>English abstract</h3><p lang="en">In advanced small reactor design, the effect of geometry change caused by deformation on reactivity is receiving increasing attention. Deterministic methods based on spatial discretization face limitations in mesh generation and deformed-mesh data mapping for geometric deformation. With the advancement of artificial intelligence technology, physics-informed neural networks (PINNs) provide a promising mesh-agnostic alternative for scientific computing. However, purely physics-driven single-network PINNs still suffer from limited accuracy and slow convergence in multi-region eigenvalue problems. In this study, a PINN-based source iteration framework was developed for neutron diffusion eigenvalue problems, and accuracy-enhancement and convergence-acceleration methods were proposed at the training and network-architecture levels. For multi-region problems with weak heterogeneity, Residual-based Adaptive Resampling (RAR) and an Adaptive Weight strategy were employed to improve solution accuracy and convergence stability. For strongly heterogeneous problems with significant neutron flux gradients, the Extended Physics-Informed Neural Network (XPINN) framework was adopted to enable collaborative prediction by multiple subnetworks. In addition, a CMFD-informed acceleration method was proposed, in which coarse-mesh solutions obtained by the Coarse Mesh Finite Difference (CMFD) method are used to guide pretraining. Numerical results show that the training-level strategies can improve the prediction accuracy for weakly heterogeneous problems, and for these problems the Adaptive Weight strategy gives the most significant improvement, reducing the mean keff error to below 100 pcm. For the TWIGL benchmark with strong heterogeneity, XPINN improves the keff prediction by more than one order of magnitude compared with the single-network PINN. In the proposed CMFD-informed method, all pretraining strategies improve the convergence efficiency of source iteration while maintaining accurate keff prediction. Compared with the baseline PINN model without CMFD pretraining, the Updated Q and keff strategy reduces the total training time from 19 min 24 s to 5 min 48 s when the coarse-mesh size is 10 cm, corresponding to a speedup ratio of 3.34. When the coarse-mesh size is refined to 5 cm or 1 cm, the speedup ratios are higher than 6.0. These results demonstrate that the proposed framework provides an effective PINN-based solution for improving both accuracy and convergence efficiency in multi-region neutron diffusion eigenvalue problems.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2120221679969120256" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112998" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2120221679969120256" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="fbtr碳化硼中子毒物组件烧结过滤器水力试验 evaluation of filtration characteristics of sintered porous filters used for b4c neutron poison sub-assemblies of fast breeder test reactor (fbtr) 先进反应堆部件与热工水力 annals of nuclear energy · 2026-11-04 · usha pujala, subramanian venkatesan, niraj ganesh jamdade, naga sivayya dudala, sriramachandra aithal, venkatraman balasubramaniam 先进反应堆部件与热工水力 绝对过滤精度 absolute filter rating 规定试验下可截留粒径的指标，其效率阈值和试验方法需明示。 本文语境：水基单/多分散psl过滤试验、mastersizer和显微镜。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>先进反应堆部件与热工水力</span><span>先进反应堆部件与热工水力</span></div>
+          <h2>FBTR碳化硼中子毒物组件烧结过滤器水力试验</h2>
+          <p class="title-en">Evaluation of filtration characteristics of sintered porous filters used for B4C neutron poison sub-assemblies of Fast Breeder Test Reactor (FBTR)</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-04 · Usha Pujala, Subramanian Venkatesan, Niraj Ganesh Jamdade, Naga Sivayya Dudala, Sriramachandra Aithal, Venkatraman Balasubramaniam</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>水基实验以1 L/(h·cm²)、每毫米厚度18±2 mbar水头及截留&gt;14 μm为验收条件，考察7、9、14.9和20 μm PSL颗粒及流量随时间变化。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>通过粒径分析与显微成像提供过滤器单组件层面的流动和截留鉴定证据。</li></ul></section>
+        <section><h3>不足</h3><ul><li>水基规定试验不能直接证明FBTR服役介质中的长期堵塞和可靠性；PSL不能未经相似分析替代B4C碎屑。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>用恒定渗透率替代渐进堵塞，会在何时低估毒物组件压降？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：水基实验以1 L/(h·cm²)、每毫米厚度18±2 mbar水头及截留&gt;14 μm为验收条件，考察7、9、14.9和20 μm PSL颗粒及流量随时间变化。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>绝对过滤精度<small>Absolute filter rating</small></h4><p>规定试验下可截留粒径的指标，其效率阈值和试验方法需明示。</p><p class="context"><b>本文语境</b> 本文语境：水基单/多分散PSL过滤试验、MASTERSIZER和显微镜。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究对拟用于快中子增殖试验堆（FBTR）B4C中子毒物子组件的烧结金属多孔过滤器，开展系统的实验室尺度流动和颗粒过滤试验。投入堆芯使用前的规定验收条件是：以水为试验液，在每毫米过滤器厚度18±2 mbar静压头下维持1 L/(h·cm²)流量，并截留大于14 μm的颗粒。文献显示，烧结过滤器尚未用于精确的粒径选择性分离；关于其过滤特性、特别是能穿透多孔介质的最大粒径，研究仍稀少。为此，采用多种非侵入方法，考察不同粒径（7、9、14.9和20 μm）及浓度的水悬浮单分散/多分散聚苯乙烯乳胶（PSL）颗粒对流量、截留和绝对过滤精度的影响。在恒定静压头下，分析有无颗粒进料时滤液流量随时间的变化。通过MASTERSIZER表征进料和滤液粒径分布，离线估算过滤效率；进一步对滤液显微成像，确认14.9及20 μm颗粒的截留。本研究提供规定水基试验下的单组件流动和过滤鉴定证据；其对FBTR长期服役的适用性仍依赖既定毒物子组件水力设计及规定鉴定框架。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study presents a systematic laboratory-scale investigation of the flow and particle filtration characteristics of the sintered metal porous filter component intended for use in B4C neutron poison sub-assemblies of the Fast Breeder Test Reactor (FBTR). The acceptance criteria specified for testing the filters before use in the core environment are, with water as the test liquid, maintaining a flow rate of 1 L/hr-cm2 at a static head of 18 ± 2 mbar per mm of filter thickness and retaining particles &gt;14 μm. The literature shows that sintered filters have not been used for precise size-selective separation. The existing literature remains sparse on their filtration characteristics, specifically the maximum size of particle capable of penetrating the porous medium. In this context, this study employed various non-invasive methodologies to evaluate the effects of water suspended monodisperse / polydisperse polystyrene latex (PSL) particles of different sizes (7, 9, 14.9, 20 μm) and concentrations on flow rate, particle retention, and absolute rating of the filters. The temporal variation in the filtrate flow rate is analyzed with and without particle suspension feeds under a constant static head. Filtration efficiencies are estimated offline using MASTERSIZER, by characterizing particle size distributions in feed and filtrates. Further microscope analysis of the filtrate is carried out to image the particles suspended and ascertain the retention of 14.9 and 20 µm particles. This study provides single component-level qualification evidence of the flow and filtration characteristics of sintered filters with water-based tests prescribed, while the applicability to FBTR service for long-term behavior relies on the established poison-subassembly hydraulic design and the prescribed qualification framework.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2120221676370407424" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112976" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2120221676370407424" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="核电结构重复大质量冲击中的无黏结后张预应力板 dynamic response of rc and unbonded pt concrete panels under repetitive high-mass drop-weight impacts 核级结构与模型简化 annals of nuclear energy · 2026-11-04 · seong ryong ahn, jin ho ahn, yongjae yu, thomas h.-k. kang 核级结构与模型简化 恢复系数 coefficient of restitution 碰撞后与碰撞前相对速度的比值，具体方向和定义影响能量/冲量估计。 本文语境：大型rc/pt板落锤试验和sdof框架。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>核级结构与模型简化</span><span>核级结构与模型简化</span></div>
+          <h2>核电结构重复大质量冲击中的无黏结后张预应力板</h2>
+          <p class="title-en">Dynamic response of RC and unbonded PT concrete panels under repetitive high-mass drop-weight impacts</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-04 · Seong Ryong Ahn, Jin Ho Ahn, Yongjae Yu, Thomas H.-K. Kang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>2211 kg落锤重复冲击中，后张预应力板较RC板减小最大/残余挠度；恢复系数不可忽略，单自由度分段关系在本数据集重构最大挠度误差小于1%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用恢复系数—等效刚度关系修正冲击能量与冲量传递，并给出对应最大挠度表达式。</li></ul></section>
+        <section><h3>不足</h3><ul><li>小于1%属于研究数据集内重构，不是外部预测误差；台架碰撞也不覆盖海啸碎片真实形状/流体耦合。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>保留等效刚度但忽略反弹的单自由度简化，会怎样改变重复撞击后的残余响应？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：2211 kg落锤重复冲击中，后张预应力板较RC板减小最大/残余挠度；恢复系数不可忽略，单自由度分段关系在本数据集重构最大挠度误差小于1%。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>恢复系数<small>Coefficient of restitution</small></h4><p>碰撞后与碰撞前相对速度的比值，具体方向和定义影响能量/冲量估计。</p><p class="context"><b>本文语境</b> 本文语境：大型RC/PT板落锤试验和SDOF框架。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>本研究通过实验研究了钢筋混凝土（RC）和无黏结后张预应力（PT）混凝土板在重复低速、大质量冲击下的冲击性能和韧性，模拟了海啸碎片撞击核电站（NPP）结构的情况。实验采用大型板，其设计旨在模拟核电站安全壳墙体，并施加由2211 kg落锤以递增高度进行的重复冲击加载方案。研究全面记录了无黏结后张预应力对刚度退化、挠度分布、损伤演化、预应力筋受力以及应变历程的影响。结果表明，在裂缝控制、损伤抑制和韧性方面，PT板的性能明显优于RC板，其最大挠度和残余挠度均显著更小。此外，还观察到不可忽略的恢复系数（COR），表明忽略回弹效应会导致对传递的冲击能量和冲量的显著误判。因此，本文开发了一种基于单自由度（SDOF）的框架，用于建立COR与等效刚度之间的经验分段线性关系，以及相应的最大挠度表达式。所提出的关系能够捕捉到观察到的实验趋势，并在所研究的数据集范围内，以小于1%的偏差重构测量的最大挠度。研究结果定量地表明，无黏结后张预应力是提高混凝土结构抗冲击性能的有效方法，为关键基础设施的安全评估提供了一个可靠的实验和分析框架。</p></div>
+          <div><h3>English abstract</h3><p lang="en">This study experimentally investigates the impact performance and resilience of reinforced concrete (RC) and unbonded post-tensioned (PT) concrete panels under repetitive low-velocity, high-mass impacts, simulating tsunami debris collisions with nuclear power plant (NPP) structures. Large-scale panels, designed to replicate NPP containment walls, were subjected to a loading protocol involving repeated impacts from a 2,211 kg drop-weight at incrementally increasing heights. The effects of unbonded post-tensioning on stiffness degradation, deflection profiles, damage evolution, tendon forces, and strain histories were comprehensively documented. Results indicate that the PT panel exhibited markedly superior performance over the RC panel in terms of crack control, damage mitigation, and resilience, with significantly smaller maximum and residual deflections. A non-negligible coefficient of restitution (COR) was observed, indicating that neglecting the rebound effect leads to a significant misestimation of the transferred impact energy and impulse. Consequently, an SDOF-based framework was developed to establish an empirical piecewise-linear relationship between the COR and equivalent stiffness, along with a corresponding maximum-deflection expression. The proposed relationships captured the observed experimental trends and reconstructed the measured maximum deflections with deviations of less than 1% within the investigated dataset. The findings quantitatively establish that unbonded post-tensioning is a highly effective method for enhancing the high-mass impact resistance of concrete structures, providing a robust experimental and analytical framework for the safety assessment of critical infrastructure.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2120221675707707392" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112975" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2120221675707707392" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="xmol" data-search="跨工况蒸汽发生器水位与空泡率联合预测 robust water level prediction for steam generators across multiple operating conditions: a condition-adaptive deep learning approach 先进反应堆监测与代理模型 annals of nuclear energy · 2026-11-04 · biaoxin wang, sixuan huang, yuzhuo yin, yuang jiang, mei lin, qiuwang wang 先进反应堆监测与代理模型 逐特征线性调制 feature-wise linear modulation 按条件对中间特征进行缩放和平移以调节模型响应的方法。 本文语境：六自由度缩比试验、transformer–lstm–film。">
+      <header class="paper-head">
+        <span class="number">10</span>
+        <div>
+          <div class="chips"><span>先进反应堆监测与代理模型</span><span>先进反应堆监测与代理模型</span></div>
+          <h2>跨工况蒸汽发生器水位与空泡率联合预测</h2>
+          <p class="title-en">Robust water level prediction for steam generators across multiple operating conditions: a condition-adaptive deep learning approach</p>
+          <p class="meta">Annals of Nuclear Energy · 2026-11-04 · Biaoxin Wang, Sixuan Huang, Yuzhuo Yin, Yuang Jiang, Mei Lin, Qiuwang Wang</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">近30天未读回溯；实际采集/审校2026-11-16。X-MOL Pub Date不等于首次在线日期；Crossref期次年可能为2027，不据此假定首次发表日。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>六自由度缩比平台211组稳态/事故数据，Transformer–LSTM–FiLM相较对照水位和空泡率MSE最多降44.4%及62.5%，事故工况报告96.1%准确率。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用可视化空泡率和逐特征线性调制适应蒸汽管道破裂引起的状态变化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>96.1%的准确率定义和独立划分需全文核对；缩比运动平台不能直接证明实际机组的事故可靠性。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>可见摘要未明确列出作者未来计划。</li></ul><b>分析推导</b><ul><li>按运动状态和事故批次留出后，数据驱动水位预测能否保持精度？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 摘要参数/验证线索：六自由度缩比平台211组稳态/事故数据，Transformer–LSTM–FiLM相较对照水位和空泡率MSE最多降44.4%及62.5%，事故工况报告96.1%准确率。；精读核对几何、物性、工况、误差定义及原始数据是否公开。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>逐特征线性调制<small>Feature-wise Linear Modulation</small></h4><p>按条件对中间特征进行缩放和平移以调节模型响应的方法。</p><p class="context"><b>本文语境</b> 本文语境：六自由度缩比试验、Transformer–LSTM–FiLM。</p></div></div></section>
+      <details>
+        <summary>展开中英文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>蒸汽发生器是核电系统中关键的热交换接口，维持水位稳定对于运行安全至关重要。然而，诸如主蒸汽管道破裂（MSLB）等复杂瞬态过程会引发严重的“收缩-膨胀”效应。这些效应会导致“虚假水位”现象，使得传统的监测方法失效。为了缓解此类工况下剧烈热工水力状态转变造成的预测性能下降，本研究提出了一种工况自适应深度学习框架。我们搭建了一个安装在六自由度（6-DOF）平台上的缩比实验装置，用于生成涵盖稳态和事故场景的高保真数据集（211组数据）。关键在于，我们通过可视化分析提取了空泡率特征，以量化相变动力学。我们开发了一个Transformer-LSTM-FiLM模型，并采用特征线性调制（FiLM）实现动态跨工况自适应。实验结果表明，该模型显著优于现有先进模型（例如 TimesNet、TCN），水位和空泡率的均方误差 (MSE) 分别降低了高达 44.4% 和 62.5%。该模型在事故条件下达到了 96.1% 的准确率，支持其在智能核安全监测中的应用价值。</p></div>
+          <div><h3>English abstract</h3><p lang="en">Steam generators serve as critical heat exchange interfaces in nuclear power systems, where maintaining water level stability is essential for operational safety. However, complex transients, such as a Main Steam Line Break (MSLB), induce severe “shrink-and-swell” effects. These effects cause “false water level” phenomena, rendering traditional monitoring methods ineffective. To mitigate predictive performance degradation caused by severe thermal–hydraulic state transitions under such conditions, this study proposes a condition-adaptive deep learning framework. A scaled experimental facility mounted on a six-degrees-of-freedom (6-DOF) platform was constructed to generate a high-fidelity dataset (211 groups) covering both steady-state and accident scenarios. Crucially, void fraction features were extracted via visual analysis to quantify phase-change dynamics. A Transformer–LSTM–FiLM model was developed, employing Feature-wise Linear Modulation (FiLM) for dynamic cross-condition adaptation. Experimental results demonstrate significant superiority over state-of-the-art models (e.g., TimesNet, TCN), reducing the Mean Squared Error (MSE) for water level and void fraction by up to 44.4% and 62.5%, respectively. The model achieves 96.1% accuracy under accident conditions, supporting its applicability to intelligent nuclear safety monitoring.</p></div>
+        </div>
+      </details>
+      <p class="meta"><b>全文PDF：</b>未找到可下载的合法开放 PDF</p>
+      <footer><a href="https://www.x-mol.com/paper/2120221673858019328" target="_blank" rel="noopener">查看来源 ↗</a> <a href="https://doi.org/10.1016/j.anucene.2026.112960" target="_blank" rel="noopener">DOI ↗</a> <a href="https://www.x-mol.com/paper/2120221673858019328" target="_blank" rel="noopener">摘要核验 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="热管堆堆芯基体结构高温力学行为分析  热管堆热工结构 核动力工程 · 2023 · 田俊 苏东川 李辉 熊夫睿 刘长军 毕鹏华 谈建平
+tian jun;su dongchuan;li hui;xiong furui;liu changjun;bi penghua;tan jianping(science and technology on reactor system design technology laboratory,nuclear power institute of china,chengdu,610213,china;school of mechanical and power engineering,east china university of science and technology,shanghai,200237,china) 热管堆热工结构 塑性垮塌 plastic collapse 载荷导致结构大范围塑性失稳的一类极限状态，不等同长期蠕变破坏。 高温试验与基体数值分析。">
+      <header class="paper-head">
+        <span class="number">01</span>
+        <div>
+          <div class="chips"><span>热管堆热工结构</span><span>热管堆热工结构</span></div>
+          <h2>热管堆堆芯基体结构高温力学行为分析</h2>
+          
+          <p class="meta">核动力工程 · 2023 · 田俊 苏东川 李辉 熊夫睿 刘长军 毕鹏华 谈建平
+Tian Jun;Su Dongchuan;Li Hui;Xiong Furui;Liu Changjun;Bi Penghua;Tan Jianping(Science and Technology on Reactor System Design Technology Laboratory,Nuclear Power Institute of China,Chengdu,610213,China;School of Mechanical and Power Engineering,East China University of Science and Technology,Shanghai,200237,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>简化多孔基体高温试验结合Megapower 5 MWth设计参数，对正常和单根热管失效两工况分析，所测条件下未见静强度或塑性垮塌失效。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>试验与数值响应共同约束热管堆基体高温强度判断。</li></ul></section>
+        <section><h3>不足</h3><ul><li>不能由两个试验工况推断长期蠕变、热疲劳或多根热管失效安全；摘要未指定ANSYS。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>均匀热接触边界能否同时复现正常和热管失效工况的局部温度/应变？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：简化多孔基体高温试验结合Megapower 5 MWth设计参数，对正常和单根热管失效两工况分析，所测条件下未见静强度或塑性垮塌失效。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>塑性垮塌<small>Plastic collapse</small></h4><p>载荷导致结构大范围塑性失稳的一类极限状态，不等同长期蠕变破坏。</p><p class="context"><b>本文语境</b> 高温试验与基体数值分析。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>为研究热管堆堆芯基体结构高温下的热应力失效行为,以简化的多孔基体结构为研究对象,结合Megapower 5 MW(热功率)热管堆的设计参数,制定了正常工况和异常工况2种工况下的高温试验方案,其中异常工况考虑了单根热管失效。宏观检测结果显示基体结构未发生明显的变形与失效,结合数值分析方法获得了基体结构在2种工况条件下的温度分布和应力-应变响应,进一步说明了在试验条件下基体结构并不会发生静强度失效和塑性垮塌失效。本研究为明确热管堆堆芯基体结构的强度设计准则奠定了基础。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7108958613" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="kilopower热管堆临界装置物理设计研究  热管堆中子学设计 核动力工程 · 2026 · 肖启冬 张鹏展 杨历军 刘凯凯 金志威 郭佳欣 张振洋 夏兆东 胡古
+xiao qidong;zhang pengzhan;yang lijun;liu kaikai;jin zhiwei;guo jiaxin;zhang zhenyang;xia zhaodong;hu gu(department of reactor engineering technology,china institute of atomic energy,beijing,102413,china;department of nuclear engineering design,china institute of atomic energy,beijing,102413,china) 热管堆中子学设计 物理相似性 neutronic similarity 模型与目标系统在指定中子学响应上的接近程度，不代表所有响应均等效。 krusty实验资料分析与临界装置物理设计。">
+      <header class="paper-head">
+        <span class="number">02</span>
+        <div>
+          <div class="chips"><span>热管堆中子学设计</span><span>热管堆中子学设计</span></div>
+          <h2>Kilopower热管堆临界装置物理设计研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 肖启冬 张鹏展 杨历军 刘凯凯 金志威 郭佳欣 张振洋 夏兆东 胡古
+Xiao Qidong;Zhang Pengzhan;Yang Lijun;Liu Kaikai;Jin Zhiwei;Guo Jiaxin;Zhang Zhenyang;Xia Zhaodong;Hu Gu(Department of Reactor Engineering Technology,China Institute of Atomic Energy,Beijing,102413,China;Department of Nuclear Engineering Design,China Institute of Atomic Energy,Beijing,102413,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>围绕Kilopower临界装置提出堆芯模拟、实验需求和安全三方面物理设计要求，摘要称设计满足要求。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>面向专门临界装置的物理相似性与实验任务联合设计。</li></ul></section>
+        <section><h3>不足</h3><ul><li>设计满足要求是作者结论，摘要无完整数值或实测确认；KRUSTY满功率实验不等于本装置已建成。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>保留相似反应性时，局部通量/功率分布是否也相似？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：围绕Kilopower临界装置提出堆芯模拟、实验需求和安全三方面物理设计要求，摘要称设计满足要求。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>物理相似性<small>Neutronic similarity</small></h4><p>模型与目标系统在指定中子学响应上的接近程度，不代表所有响应均等效。</p><p class="context"><b>本文语境</b> KRUSTY实验资料分析与临界装置物理设计。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>Kilopower热管堆地面原型堆KRUSTY主要用于开展28 h满功率实验,并开展组件级临界实验。由于KRUSTY反应堆不是临界装置,不具备全面开展空间堆临界实验的能力,有必要针对Kilopower热管堆设计专门的临界装置,使其具备全面开展中子物理特性实验和特殊临界安全实验的能力。本研究分析了KRUSTY反应堆的组件级临界实验,依据国内临界装置相关法律法规和实际经验,提出了Kilopower热管堆临界装置物理设计要求,从堆芯模拟、实验需求和安全要求3个方面开展了物理设计研究。研究结果表明,设计的临界装置满足全部物理设计要求。因此,本研究提出的Kilopower热管堆临界装置物理设计方法可推广用于空间堆临界装置的物理设计。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7202853150" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="镍基合金在740℃液态钠中的腐蚀行为研究  热管材料与热工结构 核动力工程 · 2026 · 刘春松 段振刚 文青龙 向宏陈 李强
+liu chunsong;duan zhengang;wen qinglong;xiang hongchen;li qiang(department of nuclear engineering and technology,school of energy and power engineering,chongqing university,chongqing,400044,china;key laboratory of low-grade energy utilization technologies and systems,ministry of education,chongqing university,chongqing,400044,china;institute of nuclear energy and technology innovation,chongqing university,chongqing,400044,china) 热管材料与热工结构 溶解腐蚀 dissolution corrosion 合金组分向液体介质中溶解迁移的腐蚀过程。 液钠腐蚀试验、sem/xrd。">
+      <header class="paper-head">
+        <span class="number">03</span>
+        <div>
+          <div class="chips"><span>热管材料与热工结构</span><span>热管材料与热工结构</span></div>
+          <h2>镍基合金在740℃液态钠中的腐蚀行为研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 刘春松 段振刚 文青龙 向宏陈 李强
+Liu Chunsong;Duan Zhengang;Wen Qinglong;Xiang Hongchen;Li Qiang(Department of Nuclear Engineering and Technology,School of Energy and Power Engineering,Chongqing University,Chongqing,400044,China;Key Laboratory of Low-grade Energy Utilization Technologies and Systems,Ministry of Education,Chongqing University,Chongqing,400044,China;Institute of Nuclear Energy and Technology Innovation,Chongqing University,Chongqing,400044,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>740℃液钠3000 h试验以溶解腐蚀为主，速率约50.72 μm/a；Ni持续溶解，Cr氧化膜后期脱落，Mo富集可延缓过程。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>给出高温钠环境下腐蚀时长、元素迁移与表层保护变化的关联。</li></ul></section>
+        <section><h3>不足</h3><ul><li>单温度和3000 h不能无界线性外推寿命；流动、氧含量及合金牌号需全文核对。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>均匀减薄与局部腐蚀形貌对管壳热应力预测的差别有多大？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：740℃液钠3000 h试验以溶解腐蚀为主，速率约50.72 μm/a；Ni持续溶解，Cr氧化膜后期脱落，Mo富集可延缓过程。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>溶解腐蚀<small>Dissolution corrosion</small></h4><p>合金组分向液体介质中溶解迁移的腐蚀过程。</p><p class="context"><b>本文语境</b> 液钠腐蚀试验、SEM/XRD。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>镍基合金作为潜在的高温热管管壳材料,其与碱金属钠的相容性问题备受关注。本文开展了镍基合金在740℃液态钠中3000 h的腐蚀试验,利用扫描电子显微镜(SEM)、X射线衍射仪(XRD)等表征方法,分析了不同腐蚀时长的镍基合金微观形貌及元素分布。结果表明:镍基合金在高温液态钠中以溶解腐蚀为主,腐蚀速率约为50.72μm/a,腐蚀深度与腐蚀时间呈线性关系;在高温液态钠环境中,镍基合金中的Ni持续溶解扩散,并在腐蚀过程中起主导作用;Cr在腐蚀初期表现为溶解氧化,与液态钠中的氧在试样表面生成NaCrO2氧化膜,而在腐蚀后期主要表现为选择性溶解扩散。试样表面形成的氧化膜随腐蚀的持续进行而脱落。此外,Mo富集行为对本试验结果产生一定影响,镍基合金试样表面形成了Mo富集颗粒,其尺寸随着腐蚀时间的增加而增大;Mo富集颗粒在一定程度上抑制了Ni的溶解扩散,并延缓试样表面氧化膜的脱落,从而对基体起到一定保护作用。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204012325" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="基于gpu并行的烧结-干道复合吸液芯渗透率格子boltzmann模拟研究  热管吸液芯模型简化 原子能科学技术 · 2026 · 侯郡任 吴卓科 蒋顺利 马誉高 张璜 黄善仿 王侃
+hou junren;wu zhuoke;jiang shunli;ma yugao;zhang huang;huang shanfang;wang kan(department of engineering physics,tsinghua university,beijing 100084,china;school of energy and environment,southeast university,nanjing 210096,china;nuclear power institute of china,chengdu 610213,china;institute of nuclear and new energy technology,tsinghua university,beijing 100084,china) 热管吸液芯模型简化 渗透率 permeability 多孔介质在给定流动条件下传导流体的能力参数。 gpu-lbm、随机多孔几何与渗透率模型。">
+      <header class="paper-head">
+        <span class="number">04</span>
+        <div>
+          <div class="chips"><span>热管吸液芯模型简化</span><span>热管吸液芯模型简化</span></div>
+          <h2>基于GPU并行的烧结-干道复合吸液芯渗透率格子Boltzmann模拟研究</h2>
+          
+          <p class="meta">原子能科学技术 · 2026 · 侯郡任 吴卓科 蒋顺利 马誉高 张璜 黄善仿 王侃
+HOU Junren;WU Zhuoke;JIANG Shunli;MA Yugao;ZHANG Huang;HUANG Shanfang;WANG Kan(Department of Engineering Physics,Tsinghua University,Beijing 100084,China;School of Energy and Environment,Southeast University,Nanjing 210096,China;Nuclear Power Institute of China,Chengdu 610213,China;Institute of Nuclear and New Energy Technology,Tsinghua University,Beijing 100084,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>850℃液钠LBM分析显示干道增大使流动从渗流主导转为管流主导；独立流动预测与模拟最大差11.4%，交换流使模拟渗透率系统偏高。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>识别干道—多孔体交换造成的独立性假设偏差。</li></ul></section>
+        <section><h3>不足</h3><ul><li>11.4%是模型与LBM互校，不是实验误差；单一渗透率不覆盖毛细极限及相变。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>并联渗透率等效在何种孔隙率/干道尺寸下不能保持压降？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：850℃液钠LBM分析显示干道增大使流动从渗流主导转为管流主导；独立流动预测与模拟最大差11.4%，交换流使模拟渗透率系统偏高。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>渗透率<small>Permeability</small></h4><p>多孔介质在给定流动条件下传导流体的能力参数。</p><p class="context"><b>本文语境</b> GPU-LBM、随机多孔几何与渗透率模型。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>针对先进热管堆对高性能吸液芯的迫切需求,基于GPU并行对850°C 液态钠在吸液芯中的渗透率开展了格子Boltzmann模拟。利用四参数随机生长方法生成烧结多孔介质,分析表明其渗透率随孔隙率(ε)的增大而增大,随初始种子分布(Sd)的增大而减小。研究发现,烧结-干道复合吸液芯的渗透率随干道直径增大显著提高,流动机制会逐渐从多孔介质渗流主导转变为干道管流主导。基于流动独立性假设建立了渗透率预测模型,预测值与模拟结果吻合良好,最大相对误差为11.4%。同时发现由于干道与烧结介质之间的流体交换,模拟值会系统性高于预测值。这体现为等效干道直径大于实际直径,该差值随ε的增大而增加,随Sd的增大而减小。本文研究为复合吸液芯的优化设计提供了理论见解与模型支持。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204565186" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="熔盐热管温差发电耦合传热特性研究  熔盐热管与热阻简化 核技术 · 2026 · 徐志哲 陈兴伟 戴叶 邹杨
+xu zhizhe;chen xingwei;dai ye;zou yang(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;shanghaitech university,shanghai 201210,china;national key laboratory of thorium energy,shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china) 熔盐热管与热阻简化 等效导热率 effective thermal conductivity 在特定结构和边界下概括总传热的等效参数，未必是材料固有性质。 高温热管—温差发电实验及热阻网络。">
+      <header class="paper-head">
+        <span class="number">05</span>
+        <div>
+          <div class="chips"><span>熔盐热管与热阻简化</span><span>熔盐热管与热阻简化</span></div>
+          <h2>熔盐热管温差发电耦合传热特性研究</h2>
+          
+          <p class="meta">核技术 · 2026 · 徐志哲 陈兴伟 戴叶 邹杨
+XU Zhizhe;CHEN Xingwei;DAI Ye;ZOU Yang(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;ShanghaiTech University,Shanghai 201210,China;National Key Laboratory of Thorium Energy,Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>热态加盐启动试验在700℃得到含辐射/自然对流的等效导热率11.2 W/(m·K)；总网络热阻误差44.9%，温差发电热阻0.51 K/W占总量87.3%。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>用分段热阻实验揭示温差发电端是主要瓶颈，并量化简化模型失配。</li></ul></section>
+        <section><h3>不足</h3><ul><li>等效导热率包含几何和自然对流贡献，不能当作熔盐本征材料导热率；19.3%局部热阻误差仍不小。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>常数热阻能否跨启动和稳态同时成立？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：热态加盐启动试验在700℃得到含辐射/自然对流的等效导热率11.2 W/(m·K)；总网络热阻误差44.9%，温差发电热阻0.51 K/W占总量87.3%。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>等效导热率<small>Effective thermal conductivity</small></h4><p>在特定结构和边界下概括总传热的等效参数，未必是材料固有性质。</p><p class="context"><b>本文语境</b> 高温热管—温差发电实验及热阻网络。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>热管微型熔盐堆适用于深海堆、空间堆等特种应用。为有效验证微型熔盐堆的设计方案、关键技术及系统集成能力,本文搭建了高温热管传热实验装置,深入开展了热管启动特性、热管温差发电耦合传热等方面的研究。实验中,实验装置在实验中进行热态加盐启动,实验结果的分析表明,因辐射传热与自然对流的作用,700℃下熔盐等效热导率达11.2 W·(m·K)-1。传热实验装置的热阻网络模型,其模型热阻与实验结果误差为44.9%,说明该模型存在局限性;但熔盐热管热阻与实验结果仅相差19.3%,热阻网络法与实验结合的方法仍具可行性。温差发电系统传热热阻为0.51 K·W-1,占总热阻的87.3%,优化温差发电传热是提高熔盐堆传热效率的关键。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203913770" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="铅铋堆sgtr事故下传热管束区域内压力波传播三维特性研究  铅铋堆事故载荷与结构 核动力工程 · 2026 · 辜峙钘 余红星 黄代顺 严明宇 申亚欧 严钰淋 余光辉
+gu zhixing;yu hongxing;huang daishun;yan mingyu;shen ya’ou;yan yulin;yu guanghui(national key laboratory of nuclear reactor technology,nuclear power institute of china,chengdu,610213,china;applied nuclear technology in geosciences key laboratory of sichuan province(chengdu university of technology),chengdu,610059,china) 铅铋堆事故载荷与结构 sgtr steam generator tube rupture 蒸汽发生器传热管破裂事故；介质和压差决定具体过程。 自研三维sgtr事故程序。">
+      <header class="paper-head">
+        <span class="number">06</span>
+        <div>
+          <div class="chips"><span>铅铋堆事故载荷与结构</span><span>铅铋堆事故载荷与结构</span></div>
+          <h2>铅铋堆SGTR事故下传热管束区域内压力波传播三维特性研究</h2>
+          
+          <p class="meta">核动力工程 · 2026 · 辜峙钘 余红星 黄代顺 严明宇 申亚欧 严钰淋 余光辉
+Gu Zhixing;Yu Hongxing;Huang Daishun;Yan Mingyu;Shen Ya’ou;Yan Yulin;Yu Guanghui(National Key Laboratory of Nuclear Reactor Technology,Nuclear Power Institute of China,Chengdu,610213,China;Applied Nuclear Technology in Geosciences Key Laboratory of Sichuan Province(Chengdu University of Technology),Chengdu,610059,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>三维专用程序显示SGTR压力波在管束中反射叠加；破口越大、间隙越小或管径越大，峰值压力越高，管径作用较弱。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>分离复杂管束几何因素对压力波局部峰值的影响。</li></ul></section>
+        <section><h3>不足</h3><ul><li>摘要未交代独立实验验证和完整工况范围；压力峰值不能直接等于结构最大应力。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>均匀化管束压力边界是否错过局部叠加冲击？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：三维专用程序显示SGTR压力波在管束中反射叠加；破口越大、间隙越小或管径越大，峰值压力越高，管径作用较弱。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>SGTR<small>Steam Generator Tube Rupture</small></h4><p>蒸汽发生器传热管破裂事故；介质和压差决定具体过程。</p><p class="context"><b>本文语境</b> 自研三维SGTR事故程序。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>铅铋堆蒸汽发生器传热管破裂(SGTR)事故涉及复杂压力波传播行为,可能威胁堆内结构安全。针对该类事故,探明其复杂三维结构环境下压力波传播特性和影响机制对铅铋堆热工安全设计极为重要。为此,利用研究团队开发的一款铅铋堆SGTR事故分析三维专用程序,聚焦主换热器内部复杂几何空间内的压力波三维传播演化过程开展了数值模拟,并探究了不同传热管破口尺寸、管束间隙尺寸及管径尺寸对压力波传播行为的影响规律。研究发现:压力波在三维管束空间内存在复杂的传播、反射与叠加现象,破口尺寸越大、管束间隙越小、管径越大均导致最大峰值压力上升,但管径影响相对较弱。本文相关研究成果可为我国铅铋堆SGTR事故安全分析和主换热器优化设计提供数据支撑。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204012321" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="核电厂蒸汽发生器二次侧异物磨损分析  接触与磨损 化工装备技术 · 2026 · 王威 孙悦恒 刘兴 陈孟 杨星
+wang wei;sun yueheng;liu xing;chen meng;yang xing(shandong nuclear power co.,ltd.,yantai,shandong,265199;shanghai nuclear engineering research&amp;design institute co.,ltd.,shanghai,200233) 接触与磨损 穿壁时间 time to through-wall wear 磨损深度达到壁厚的预测时间，依赖载荷和磨损规律。 磨损机理与接触方程解析预测。">
+      <header class="paper-head">
+        <span class="number">07</span>
+        <div>
+          <div class="chips"><span>接触与磨损</span><span>接触与磨损</span></div>
+          <h2>核电厂蒸汽发生器二次侧异物磨损分析</h2>
+          
+          <p class="meta">化工装备技术 · 2026 · 王威 孙悦恒 刘兴 陈孟 杨星
+WANG Wei;SUN Yueheng;LIU Xing;CHEN Meng;YANG Xing(Shandong Nuclear Power Co.,Ltd.,Yantai,Shandong,265199;Shanghai Nuclear Engineering Research&amp;Design Institute Co.,Ltd.,Shanghai,200233)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>用圆柱异物三维磨损接触方程推导管壁减薄及穿壁时间，所给工况预测899 d。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>把接触几何和减薄速率连接到一维线性穿壁时间估计。</li></ul></section>
+        <section><h3>不足</h3><ul><li>899 d是特定参数下的计算预测，非通用更换周期；摘要无独立磨损试验及系数置信区间。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>接触载荷变化和间歇接触何时使线性减薄寿命模型失效？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：用圆柱异物三维磨损接触方程推导管壁减薄及穿壁时间，所给工况预测899 d。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>穿壁时间<small>Time to through-wall wear</small></h4><p>磨损深度达到壁厚的预测时间，依赖载荷和磨损规律。</p><p class="context"><b>本文语境</b> 磨损机理与接触方程解析预测。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>核电厂蒸汽发生器传热管因异物侵入导致磨损是影响核安全的关键问题。传热管磨损破损后,放射性物质可能泄漏至二回路系统,进而引发非计划停堆及次生危害。为了准确评估传热管的服役寿命,本研究基于磨损机理分析,建立了传热管穿壁时间的预测模型,并通过圆柱形异物的三维磨损接触方程,推导了传热管壁厚减薄速率的计算公式,求解得到穿壁破坏时间。结果表明,在给定工况参数下,目标传热管的预估穿壁破坏时间为899 d。该模型实现了对一维线性磨损过程的量化表征的目的。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7203005098" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="高温时效对incoloy 800h合金室温低周疲劳性能的影响  核材料与疲劳 热力发电 · 2026 · 唐丽英 周荣灿 李江 李季
+tang liying;zhou rongcan;li jiang;li ji(xi’an thermal power research institute co.,ltd.,xi’an 710054,china) 核材料与疲劳 低周疲劳 low-cycle fatigue 显著循环塑性下以应变幅控制描述的疲劳行为。 室温低周疲劳和sem。">
+      <header class="paper-head">
+        <span class="number">08</span>
+        <div>
+          <div class="chips"><span>核材料与疲劳</span><span>核材料与疲劳</span></div>
+          <h2>高温时效对Incoloy 800H合金室温低周疲劳性能的影响</h2>
+          
+          <p class="meta">热力发电 · 2026 · 唐丽英 周荣灿 李江 李季
+Tang Liying;Zhou Rongcan;Li Jiang;Li Ji(Xi’an Thermal Power Research Institute Co.,Ltd.,Xi’an 710054,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>800H在675℃氦气中时效10000 h后，室温LCF寿命提升35%–56%；0.4%–1.0%应变幅下先硬化后软化并稳定。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>比较供货态与时效态材料微结构及室温应变寿命关系。</li></ul></section>
+        <section><h3>不足</h3><ul><li>高温时效后在室温测试，不是675℃疲劳；不能据此保证服役高温寿命提高。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>误用室温时效后疲劳曲线，会给高温构件寿命评估带来何种偏差？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：800H在675℃氦气中时效10000 h后，室温LCF寿命提升35%–56%；0.4%–1.0%应变幅下先硬化后软化并稳定。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>低周疲劳<small>Low-cycle fatigue</small></h4><p>显著循环塑性下以应变幅控制描述的疲劳行为。</p><p class="context"><b>本文语境</b> 室温低周疲劳和SEM。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>我国首台高温气冷堆核电机组蒸汽发生器传热管采用国产Incoloy 800H合金(800H合金),本文对供货态和在675℃氦气保护条件下时效10000 h后的800H合金传热管进行了室温低周疲劳(low-cycle fatigue,LCF)试验,利用场发射扫描电子显微镜(SEM)观察了800H合金的微观组织和疲劳试样断口形貌。结果表明:供货态和时效态800H合金的室温LCF性能均遵循Manson-Coffin方程;与供货态相比,时效态800H合金疲劳寿命提升35%~56%,这与时效态800H合金析出细小第二相导致材料强度增大有关;在0.4%~1.0%应变幅下,供货态和时效态800H合金均先发生循环硬化,随后循环软化,接着达到循环稳定;疲劳裂纹优先在表面缺陷处萌生,穿晶扩展。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204667389" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article>
+    <article class="paper-card" data-source="cqvip" data-search="柔性管在熔盐介质中的流致振动行为研究  熔盐堆流固耦合 核技术 · 2026 · 樊辉青 邹杨 陈玉爽 傅瑶
+fan huiqing;zou yang;chen yushuang;fu yao(shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;state key laboratory of thorium energy,shanghai institute of applied physics,chinese academy of sciences,shanghai 201800,china;university of chinese academy of sciences,beijing 100049,china) 熔盐堆流固耦合 流弹失稳 fluidelastic instability 流体力与结构运动反馈导致的失稳机制，与简单外激涡振不同。 三维双向流固耦合与动网格。">
+      <header class="paper-head">
+        <span class="number">09</span>
+        <div>
+          <div class="chips"><span>熔盐堆流固耦合</span><span>熔盐堆流固耦合</span></div>
+          <h2>柔性管在熔盐介质中的流致振动行为研究</h2>
+          
+          <p class="meta">核技术 · 2026 · 樊辉青 邹杨 陈玉爽 傅瑶
+FAN Huiqing;ZOU Yang;CHEN Yushuang;FU Yao(Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;State Key Laboratory of Thorium Energy,Shanghai Institute of Applied Physics,Chinese Academy of Sciences,Shanghai 201800,China;University of Chinese Academy of Sciences,Beijing 100049,China)</p>
+          <p class="meta">回溯补充（以来源年份/日期为准）</p><p class="meta">实际读取/审校2026-11-16，按刊年区分近期论文与较早方法基线；不称历史日期当时已执行。</p>
+        </div>
+      </header>
+      <div class="analysis-grid">
+        <section><h3>核心观点</h3><ul><li>三维双向FSI结合动网格并以Weaver数据校核；熔盐直管束依次出现抖振、横向涡振、流弹失稳，先流向后双向失稳。</li></ul></section>
+        <section><h3>创新点</h3><ul><li>刻画不同速度区间主导激励机制及失稳方向变化。</li></ul></section>
+        <section><h3>不足</h3><ul><li>Weaver基准验证不等于真实高温熔盐全工况试验；直管段不能替代完整U形弯管和实际支承。</li></ul></section>
+        <section><h3>未来方向</h3><b>作者展望</b><ul><li>摘要未具体展开作者后续计划。</li></ul><b>分析推导</b><ul><li>用等效梁支承替代接触实体，是否改变首个失稳方向？</li></ul></section>
+      </div>
+      <div class="parameter-alert">⚑ 核对全文参数及数据授权：三维双向FSI结合动网格并以Weaver数据校核；熔盐直管束依次出现抖振、横向涡振、流弹失稳，先流向后双向失稳。；摘要线索不是已经确认的仿真输入。</div>
+      <section class="glossary"><h3>专有名词解释</h3><div class="term-grid"><div class="term"><h4>流弹失稳<small>Fluidelastic instability</small></h4><p>流体力与结构运动反馈导致的失稳机制，与简单外激涡振不同。</p><p class="context"><b>本文语境</b> 三维双向流固耦合与动网格。</p></div></div></section>
+      <details>
+        <summary>查看中文摘要</summary>
+        <div class="abstracts">
+          <div><h3>中文摘要</h3><p>U型管换热器是钍基熔盐堆(Thorium-based Molten Salt Reactor,TMSR)的关键设备之一,其传热管完整性直接关乎核电站安全稳定运行。为了研究传热管的流致振动行为机制,为TMSR换热器传热管束流致振动分析提供理论依据,本文基于双向流固耦合方法,结合动网格技术建立了三维数值模拟方法,借助Weaver的试验数据验证了该方法的可靠性。在此基础上,采用该方法对TMSR U型管换热器直管束在熔盐介质下的流致振动特性开展研究。结果表明,柔性管的流致振动行为可划分为三个阶段,各阶段振动特性差异显著:1)小幅微动阶段,柔性管振动微弱,该阶段以湍流抖振为主导机制;2)横向振动主导阶段,柔性管振动以横向振动为主,流向振动微弱,涡激振动是该阶段的主导激励机制;3)非线性振动阶段,该阶段的主导机制为流弹失稳,熔盐介质下柔性管的失稳模式首先表现为流向失稳,随着流速增大,由单向失稳转变为双向失稳。此研究验证了数值模拟方法用于模拟传热管束流致振动行为的可行性,为后续TMSR U型管换热器管束流致振动分析奠定了理论基础。</p></div>
+          
+        </div>
+      </details>
+      
+      <footer><a href="https://qikan.cqvip.com/Qikan/Article/Detail?id=7204390833" target="_blank" rel="noopener">查看来源 ↗</a><span>依据摘要研读 · 未阅读全文</span></footer>
+    </article></div><div class="empty" id="empty">没有找到匹配的文献。</div><section class="research"><div class="eyebrow">ANALYSIS · 基于当日摘要的独立判断</div><h2>研究判断与发文机会</h2><p class="research-lede">以下为11月16日整批补充中英文摘要的综合判断，引用可能跨归档日期；不冒称历史日期已完成查新。</p><article class="opportunity">
+          <div class="opportunity-head"><span>优先：已有试验线索，但须先取得参数</span><h3>热管堆局部热阻与几何简化误差的验证边界</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>已有接触热阻全耦合预测，尚需检验常数热阻/等效几何在正常与失效工况间迁移时的最坏局部误差。</p></section>
+            <section><h4>为什么值得开展</h4><p>可形成明确适用边界及误差预算，难度低于自研整堆耦合求解器。</p></section>
+            <section><h4>建议工作</h4><ol><li>取得高温基体试验边界和测点；先验证温度和应变。</li><li>比较实体孔道、分区热阻与常数热阻；正常工况标定、失效工况独立验证。</li><li>材料退化、接触和边界误差分开扫描。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>给出峰值温度/应力及热点位置的简化容限。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>中文：热管堆堆芯基体结构高温力学行为分析（2023）</li><li>中文：熔盐热管温差发电耦合传热特性研究（2026），总网络热阻误差44.9%。</li><li>英文：HCCP冷却板制造中的成形末态间隙与回弹（10.1016/j.net.2026.104834）。</li></ul></div><div><h4>主要风险</h4><ul><li>不能把建接触模型本身称为首创；原始试验数据尚未确认公开。</li><li>热阻反标可能补偿错误对流/辐射边界；试验未失效不证明长期寿命。</li></ul></div></div></details>
+        </article><article class="opportunity">
+          <div class="opportunity-head"><span>取得高统计参考后可做；先单棒/小组件</span><h3>蒙卡低统计代理到热源热点的误差传播</h3></div>
+          <div class="opportunity-grid">
+            <section><h4>研究空白</h4><p>多保真通量重建已有&lt;2%结果，但该误差不直接保证功率守恒和最高燃料温度精度。</p></section>
+            <section><h4>为什么值得开展</h4><p>通过局部工程指标及统计—空间映射误差分解，形成比单纯更换网络更明确的贡献。</p></section>
+            <section><h4>建议工作</h4><ol><li>RMC采用独立种子及分组棒位生成参考；保留计数不确定度。</li><li>固定积分功率，比较均匀/分区/代理热源，先用解析导热校核ANSYS。</li><li>按工况留出，报告最坏热点误差、统计区间与含离线阶段的成本。</li></ol></section>
+            <section><h4>可形成的论文贡献</h4><ul><li>建立热源空间分辨率、噪声与温度误差之间的可验证选择规则。</li></ul></section>
+          </div>
+          <details><summary>查看当日文献依据与主要风险</summary><div class="evidence-grid"><div><h4>当日文献依据</h4><ul><li>10.1016/j.anucene.2026.112958：TRIGA多保真浅层解码。</li><li>10.1016/j.anucene.2026.112998：特征值精度与局部通量验证需分开。</li><li>中文：MCAT已实现COMSOL/ARSAC/RMC耦合，不能把接口本身作为新意。</li></ul></div><div><h4>主要风险</h4><ul><li>通量不是自动等同裂变功率，须使用正确的响应及归一化。</li><li>随机噪声泄漏、留出不足或只有程序互校，会使结论不成立。</li></ul></div></div></details>
+        </article><p class="research-note">这些判断用于筛选课题，不等同于系统性查新或论文可发表性保证。正式立项前仍需阅读全文、检索同题工作并确认可获得的几何、材料、边界条件与验证数据。</p></section><section class="research web-research"><div class="eyebrow">WEB PRIOR-ART SCAN · 联网查新后的二次判断</div><h2>相关工作查新与二次研究判断</h2><p class="research-lede">Crossref定向元数据检索与本批真实摘要互补。通用搜索/DOI页面访问失败；磨损查询遇429后停止该源。新颖性判断均为候选，未宣称系统性穷尽。</p><p class="research-note">检索范围：热管堆热接触热阻/热力耦合；蒙卡多保真通量/功率映射；每主题Crossref前8条，筛除无关；磨损检索失败保留记录。　检索时间：2026-11-16T05:45:22.725113+00:00</p><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>保留高优先级，但降低方法首创新颖性预期</span><h3>热管堆局部热阻与几何简化误差的验证边界</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 定向检索已发现2025年热管堆热接触热阻全热力耦合预测题名。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>本批中文基体高温试验和热阻网络已有验证/误差报告；Crossref还检出全耦合热接触热阻和热管失效研究。题名级工作尚需阅读全文确认覆盖范围。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>对独立失效工况量化常数热阻、等效几何对局部极值的共同误差，而非复刻耦合接口。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>可能有意义的切口是可验证的适用边界；当前查新不足以确认尚无人做过。</p></section>
+            <section><h4>建议论文切口</h4><p>热管堆局部热阻与几何简化误差的验证边界</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>同一试验正常/异常工况分开标定验证。</li><li>力热平衡、网格和接触刚度独立检查，取得原文参数及材料数据。</li></ul><h4>新颖性风险</h4><ul><li>不能把建接触模型本身称为首创；原始试验数据尚未确认公开。</li><li>热阻反标可能补偿错误对流/辐射边界；试验未失效不证明长期寿命。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.tsep.2025.104028" target="_blank" rel="noopener">Prediction of thermal contact resistance of heat pipe cooled reactor using a fully thermo-mechanical coupling method（[[2025, 10]]）↗</a><p>出版社登记题名级线索；未取得完整摘要的条目，不据此推断具体性能。</p></li><li><a href="https://doi.org/10.1016/j.heliyon.2024.e25343" target="_blank" rel="noopener">Non-uniform fuel distribution and thermo-mechanical analysis of a 1 MW thermal power micronuclear heat pipe reactor（[[2024, 2]]）↗</a><p>出版社登记题名级线索；未取得完整摘要的条目，不据此推断具体性能。</p></li></ol></div></div></details>
+        </article><article class="opportunity web-opportunity">
+          <div class="opportunity-head"><span>中优先级，缩小到守恒映射与局部误差</span><h3>蒙卡低统计代理到热源热点的误差传播</h3></div>
+          <p class="priority-change"><b>优先级变化</b> 多保真浅层解码和全局归一化的DMD加速均已有题名记录。</p>
+          <div class="opportunity-grid">
+            <section><h4>相关工作已经做到哪里</h4><p>已读摘要在TRIGA上融合低/高统计蒙卡通量；Crossref检出2026年DMD与全局归一化的耦合加速题名。后者仅核对元数据，未声称已复现其方法。</p></section>
+            <section><h4>仍有研究价值的缺口</h4><ul><li>按棒位分组留出，检验局部热源峰值误差和最高温度误差是否同向。</li></ul></section>
+            <section><h4>二次研究判断</h4><p>直接用新网络替代POD的意义较弱；误差预算和独立热基准更值得优先。</p></section>
+            <section><h4>建议论文切口</h4><p>蒙卡低统计代理到热源热点的误差传播</p></section>
+          </div>
+          <details><summary>查看最低验证要求、新颖性风险与代表性工作</summary><div class="evidence-grid"><div><h4>最低验证要求</h4><ul><li>独立高统计种子，固定总功率。</li><li>解析/公开导热基准、局部极值和离线/在线总成本。</li></ul><h4>新颖性风险</h4><ul><li>通量不是自动等同裂变功率，须使用正确的响应及归一化。</li><li>随机噪声泄漏、留出不足或只有程序互校，会使结论不成立。</li></ul></div><div><h4>代表性工作</h4><ol class="source-list"><li><a href="https://doi.org/10.1016/j.anucene.2026.112958" target="_blank" rel="noopener">Shallow decoding strategies for reduced order modelling and multi-fidelity applied to Monte Carlo neutronics calculations（[[2027, 3]]）↗</a><p>出版社登记题名级线索；未取得完整摘要的条目，不据此推断具体性能。</p></li><li><a href="https://doi.org/10.1016/j.cpc.2026.110303" target="_blank" rel="noopener">Accelerating iterative convergence of high-fidelity Monte Carlo neutronics and thermal-hydraulics coupling simulations using dynamic mode decomposition with global normalization correction（[[2026, 10]]）↗</a><p>出版社登记题名级线索；未取得完整摘要的条目，不据此推断具体性能。</p></li></ol></div></div></details>
+        </article><p class="research-note">这是面向选题的快速定向查新，不替代 Web of Science、Scopus 或专业数据库的系统综述。代表性工作用于判断拥挤度和可验证缺口，不据此保证论文录用。</p></section><aside class="method"><strong>阅读说明</strong><br>本页依据公开题录和摘要判断研究内容，提炼核心观点、创新点、不足与未来方向；“参数提醒”标出适合进一步下载全文并提取结构参数的文献。研究判断属于摘要证据上的分析推导，引用或开展工程分析前，请回到 DOI 或来源页面核对原文。<p>本次：X-MOL核能12页及All5页；27个英文候选逐篇详情读取，17篇完整且相关纳入，10篇缺结果/核对象/读取失败留在候选。DOI题名Crossref匹配，全部历史中英文日报及本地账本去重。维普真实UI检索与展开30篇摘要，按刊年标注。ORCID跟踪8条、符合新增材料方向0条，不据同名推定课题组。</p></aside></main>
+  <script>
+    const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.paper-card')],search=document.querySelector('#search'),empty=document.querySelector('#empty');let filter='all';
+    function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const ok=(filter==='all'||c.dataset.source===filter)&&(!q||c.dataset.search.includes(q));c.hidden=!ok;if(ok)shown++});empty.style.display=shown?'none':'block'}
+    buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;update()}));search.addEventListener('input',update);
+    document.querySelector('#share').addEventListener('click',async()=>{const data={title:document.title,text:'先进反应堆每日文献阅读',url:location.href};if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);const b=document.querySelector('#share');b.textContent='链接已复制';setTimeout(()=>b.textContent='分享本页',1800)}});
+  </script>
+</body></html>
